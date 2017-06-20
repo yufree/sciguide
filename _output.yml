@@ -1,0 +1,22 @@
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">现代科研指北</a></li>
+      after: |
+        <li><a href="https://github.com/yufree/sciguide" target="blank">Published with bookdown</a></li>
+    edit:
+      link: https://github.com/yufree/sciguide/edit/master/%s
+    sharing:
+      weibo: yes
+
+bookdown::epub_book: default
+

@@ -1,1 +1,13 @@
 # 专题二：现代科研兵刃谱
+
+## Google trends
+
+## Slack
+
+## Rmarkdown
+
+## Bookdown
+
+## Blogdown
+
+## Google scholar

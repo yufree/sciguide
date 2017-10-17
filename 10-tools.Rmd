@@ -1,13 +1,67 @@
 # 专题二：现代科研兵刃谱
 
-## Google trends
+## 文本编辑
 
-## Slack
+- 所见即所得
+    - 在线协作：google docs／石墨 
+    - 离线协作：word
+- 排版软件
+    - Overleaf
+    - sharelatex
+    - rstudio
 
-## Rmarkdown
+## 学术交流
 
-## Bookdown
+- 预先发表服务
+    - arxiv
+    - biorxiv
+    - peerj
+    - 接受预先发表期刊的列表https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy
+- 回复审稿人
+    - 逐条回复
+    - 指明文中修改的位置
+- 学术博客与幻灯片
+    - blogdown
+    - xaringan
+- 学术出版
+    - bookdown
+- 数据共享
+    - figshare
 
-## Blogdown
+## 审稿
 
-## Google scholar
+- Publons 记录审稿记录
+- 博客或微博审稿
+- 期刊网站评论
+- Pubmed Commons
+- https://f1000research.com/ 上付费发表
+
+## 数据分享
+
+- figshare
+- Open Science Framework
+- Dataverse
+- zenodo
+- 包含原始数据，处理后数据，数据收集的信息与处理代码
+- 随论文一同公布
+- 尊重数据生产者
+
+## 代码管理
+
+- 公开代码并记录版本 github或bitbucket
+- 链接到对应的论文上
+- 代码最好经过审查 cran bioconductor ropenscience pypi
+- rmarkdown jupyter 文学化编程
+- 给未来的自己做注释
+- 记录运行环境保证重复性
+- Good writers borrow from other authors, great authors steal outright 
+
+### R包管理
+
+- Rstudio 小抄
+- Rstudio package 模版
+- 格式化代码 formateR Rd2roxugen
+- 写文档 roxgen2
+- 写小品文 rmarkdown
+- 单元测试 testthat
+- 集成在线测试 travis-ci

@@ -18,5 +18,6 @@ bookdown::gitbook:
     sharing:
       weibo: yes
 
-bookdown::epub_book: default
+bookdown::tufte_book: default
 
+bookdown::epub_book: default

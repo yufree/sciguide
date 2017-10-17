@@ -2,6 +2,16 @@
 
 ## 文献管理
 
+- 科技类 nature／pnas／science
+- 健康类 NEJM／JAMA
+- 综合期刊 plos one/peerj
+- 专业顶级期刊
+- 会议论文
+- twitter上#icanhazpdf 文献求助 百度 小木虫
+- rss
+- 100%读题目 20-50%读摘要 5-10%看图 1-3%全文
+- 追踪课题组
+
 ### Zotero
 
 ### Mendeley

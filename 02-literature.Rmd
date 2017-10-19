@@ -2,4 +2,58 @@
 
 ## 国内版
 
+研究生人数比例 研究所：高校 1:3
+
 ## 国际版
+
+## 趋势
+
+### 科学方法
+
+- 基础学科信噪比高企与泛应用化
+- 假设检验的困局
+- 反馈对规律的影响：星座
+- 平均律的终结
+- 实际问题导向的基金流
+
+### 数据驱动的科研
+
+- 多重检验问题与p值
+
+疾病多个阶段都有指示物，根据不同阶段指示物进行综合判断，权重医生来定
+
+频率
+
+- 概率是一个过程特性而不是结果
+- 我不关心这个数可能是什么分布，只关心这个数具体是什么
+
+贝叶斯
+
+- 概率来自数据，长期表现需要分开讨论
+- 我不关心我没有做过的实验，只关心基于当前实验能让我对这个数的估计改变多少
+- 置信区间与可信区间（￼Confidence interval Credibility intervals）
+￼
+http://stats.stackexchange.com/questions/2272/whats-the-difference-between-a-confidence-interval-and-a-credible-interval
+
+不用p值不会有type 1 跟type 2 错误，但是会有type s跟type m问题，前者是正负标志，后者是数量级
+
+p值对个体研究者有意义但对群体有害，因为群体不知道个体研究的细节与尝试过程，例如找20个x与y关系总能发现有相关的，但只报道这个结果会导致其他人无法重复
+- 贝叶斯与频率学派之争
+
+http://andrewgelman.com/2012/07/31/what-is-a-bayesian/
+
+http://andrewgelman.com/2012/02/24/untangling-the-jeffreys-lindley-paradox/
+
+http://andrewgelman.com/2014/01/16/22571/
+
+https://en.wikipedia.org/wiki/Lindley's_paradox#The_lack_of_an_actual_paradox
+
+https://xianblog.wordpress.com/2014/02/04/posterior-predictive-p-values/
+- 可重复性问题
+
+### 社交网络中的科研
+
+- 多媒体 v.s. 文字
+- 快速反馈交流
+- 合作全球化与圈子化
+- 跨学科研究中的囚徒困境

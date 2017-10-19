@@ -1,1 +1,12 @@
 # 专题一：基于互联网数据的科研
+
+互联网指数
+
+- http://index.baidu.com/ 百度指数
+- https://www.google.com/trends/ 谷歌趋势
+- http://data.weibo.com/index 微博趋势
+- http://index.haosou.com/#index 360搜索趋势
+- http://shu.taobao.com/ 淘宝指数
+- https://alizs.taobao.com/
+- http://www.gapminder.org/world 世界人口基础数据可视化
+- https://books.google.com/ngrams 文学作品中词频变化趋势

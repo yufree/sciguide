@@ -18,6 +18,11 @@ bookdown::gitbook:
     sharing:
       weibo: yes
 
-bookdown::tufte_book: default
+bookdown::tufte_book2:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
 
 bookdown::epub_book: default

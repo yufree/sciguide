@@ -12,14 +12,24 @@
 
 ## 模型思维
 
+### 可编程
+
+- 正则表达式
+
+- 递归
+
+- 循环
+
+### 抽象
+
+### 交互作用
+
 ## 统计思维
 
 ## 估算法
 
+### 费米估计
+
 http://www.mathsisfun.com/numbers/estimation.html
 
 http://teachersinstitute.yale.edu/nationalcurriculum/units/2008/5/08.05.06.x.html
-
-### 费米估计
-
-

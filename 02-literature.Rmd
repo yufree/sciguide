@@ -26,6 +26,8 @@
 
 - 概率是一个过程特性而不是结果
 - 我不关心这个数可能是什么分布，只关心这个数具体是什么
+- [p值这个问题，重要的不是把0.05降到0.005，通用阈值这个想法太偷懒，应该让研究人员充分理解p值实际意义与使用方法，毕竟在有些研究领域控制fdr后阈值实际比0.005低得多](http://www.nature.com/news/one-size-fits-all-threshold-for-p-values-under-fire-1.22625)
+- [#nature# nature就近年来的科研可重复性危机采访了五组科学家，分别从认知、NHST、FDR、数据共享与范式转化的角度进行了论述，当然别忘了到 Gelman 大人的博客上围观他的花式吐槽](https://www.nature.com/articles/d41586-017-07522-z)
 
 贝叶斯
 

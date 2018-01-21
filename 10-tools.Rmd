@@ -64,4 +64,5 @@
 - 写文档 roxgen2
 - 写小品文 rmarkdown
 - 单元测试 testthat
+- 代码执行效率可视化 profvis
 - 集成在线测试 travis-ci

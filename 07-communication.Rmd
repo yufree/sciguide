@@ -81,6 +81,7 @@
 - 线上线下互联
 - 多使用图片
 - 谨慎介入糊涂账话题
+- [均值、中位数等单一数值常在媒体报道跟论文中用来指代群体，但其实牺牲了很多重要的分布细节进而产生误导，甚至让人产生被平均的感受，而直接展示整体其实并不困难，重要的是作者/研究者应放开心态，从引导读者认同自己观点转为让读者自己探索出结论](http://flowingdata.com/2017/07/07/small-summary-stats/)
 
 ## 讲课
 
@@ -175,4 +176,8 @@
 
 ## 案例
 
-- 科学新闻探索 http://www.statschat.org.nz/2017/02/04/tracing-a-science-story/
+- [科学新闻探索](http://www.statschat.org.nz/2017/02/04/tracing-a-science-story/) 
+
+- [华盛顿邮报根据一项研究成果写了篇科学报道，然后捅了统计学家的马蜂窝，Gelman称之为“beauty” ，因为这项研究基本把实验设计中常见的错误犯了个遍，而作为普利策奖得主的记者完全没看出来](http://andrewgelman.com/2017/09/19/2010s-never-happened/)
+
+- [学科是存在鄙视链的，例如这位物理学家看到皇家化学会发表一篇烤面包公式的论文后不但马上发明了一个 bullshit 公式，还声称如果物理学会敢发表这种东西，自己马上放弃会员](http://wordpress.mrreid.org/2013/08/20/the-equation-for-the-perfect-equation/)

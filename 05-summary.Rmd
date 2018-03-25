@@ -13,26 +13,40 @@
 ## 可视化
 
 - 周期性作图需要画两个周期来观察其变化 相关
+- 生物数据可视化 https://www.nature.com/articles/nbt.1567
 
 主题：
 
 - 假设检验与p值 q值与fdr 多重比较
-- 相关性分析与工具变量
+- 相关性分析与工具变量 https://www.nature.com/articles/nbt0309-255
 - 线性模型中混杂因素的判定与消除
-- 聚类与主成分分析
+- 聚类与主成分分析 https://www.nature.com/articles/nbt0308-303 https://www.nature.com/articles/nbt1205-1499
 - 列联表分析与流行病学研究
-- 多重比较问题
+- 多重比较问题 https://www.nature.com/articles/nbt1209-1135
+Bretz, F., Hothorn, T., Westfall, P., 2010. Multiple Comparisons Using R. CRC Press.
+Gabriel, K.R., 1978. A Simple Method of Multiple Comparisons of Means. J. Am. Stat. Assoc. 73, 724. https://doi.org/10.2307/2286265
+Gelman, A., Hill, J., Yajima, M., 2009. Why we (usually) don’t have to worry about multiple comparisons. ArXiv09072478 Stat.
+Plotting of multiple comparisons? [WWW Document], n.d. URL http://stackoverflow.com/questions/2286085/plotting-of-multiple-comparisons (accessed 11.9.13).
+Rafter, J.A., Abell, M.L., Braselton, J.P., 2002. Multiple comparison methods for means. Siam Rev. 44, 259–278.
+Stoline, M.R., Ury, H.K., 1979. Tables of the Studentized Maximum Modulus Distribution and an Application to Multiple Comparisons among Means. Technometrics 21, 87. https://doi.org/10.2307/1268584
+多重比较谬误, [编辑], n.d. . 维基百科，自由的百科全书.
+
 - 统计重采样模拟如bootstrap思想
 - 偏最小二乘分析在结构效应关系研究中的应用
 - logistic回归与剂量效应曲线
-- 人工神经网络与黑箱计算
+- 人工神经网络与黑箱计算 http://www.nature.com/doifinder/10.1038/nbt1386
 - 从lasso到岭回归，惩罚项在回归分析中的应用
 - 截断回归与缺失值处理
 - 线性混合模型
-- 支持向量机的回归与分类
-- 从决策树到随机森林
+- 支持向量机的回归与分类 https://www.nature.com/articles/nbt1206-1565
+- 从决策树到随机森林 http://www.nature.com/doifinder/10.1038/nbt0908-1011
 - 线性判别分析与特征发现
-- 经验贝叶斯与近似贝叶斯计算（ABC）及贝叶斯网络
+- 经验贝叶斯与近似贝叶斯计算（ABC）及贝叶斯网络 https://www.nature.com/articles/nbt0106-51
+https://www.nature.com/articles/nbt0806-959 
+https://www.nature.com/articles/nbt0904-1177
 - 时间序列分析
 - 结构方程模型
-
+- 分层模型 https://www.nature.com/articles/nbt.1619
+- EM 算法 https://www.nature.com/articles/nbt1406
+- 动态规划 https://www.nature.com/articles/nbt0704-909
+- MCMC方法 https://www.nature.com/articles/nbt1004-1315

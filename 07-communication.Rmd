@@ -59,6 +59,10 @@
 - 流程是主编确认投稿是否合乎范围，分配给专业副主编，副主编寻找审稿人
 - 如果对方改了也不能达到你认为的标准，拒绝而不是大修或小修
 
+- Leek, J.T., Taub, M.A., Pineda, F.J., 2011. Cooperation between Referees and Authors Increases Peer Review Accuracy. PLoS ONE 6, e26895. https://doi.org/10.1371/journal.pone.0026895
+- Logan, B.E., 2014. I Owe, I Owe, so Off To Review I Go. Environ. Sci. Technol. Lett. https://doi.org/10.1021/ez5001148
+- Lu, J., Law, N., 2012. Online peer assessment: effects of cognitive and affective feedback. Instr Sci 40, 257–275. https://doi.org/10.1007/s11251-011-9177-2
+
 ## 学术合作
 
 ### 数据共享
@@ -158,6 +162,10 @@
 - 估值：学术影响力
 
 - 竞争公司：研究方向
+
+### 基金申请
+
+- 基金透明度问题 http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002333
 
 ## 学术声誉
 

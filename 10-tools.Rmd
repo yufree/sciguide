@@ -3,12 +3,13 @@
 ## 文本编辑
 
 - 所见即所得
-    - 在线协作：google docs／石墨 
+    - 在线协作：google docs /石墨 /腾讯文档
     - 离线协作：word
-- 排版软件
+- 排版/文献管理软件
     - Overleaf
     - sharelatex
     - rstudio
+    - paperpile
 
 ## 学术交流
 
@@ -65,4 +66,6 @@
 - 写小品文 rmarkdown
 - 单元测试 testthat
 - 代码执行效率可视化 profvis
-- 集成在线测试 travis-ci
+- 集成在线测试 travis-ci(linux) appveyor(windows)
+- R包网站 pkgdown
+- R包教程 learnr

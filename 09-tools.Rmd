@@ -1,6 +1,6 @@
 # 附录：现代科研兵刃谱 {- #tool}
 
-## 文本编辑
+## 文本编辑 {-}
 
 - 所见即所得
     - 在线协作：google docs /石墨 /腾讯文档
@@ -11,7 +11,7 @@
     - rstudio
     - paperpile
 
-## 学术交流
+## 学术交流 {-}
 
 - 预先发表服务
     - arxiv
@@ -29,7 +29,7 @@
 - 数据共享
     - figshare
 
-## 审稿
+## 审稿 {-}
 
 - Publons 记录审稿记录
 - 博客或微博审稿
@@ -37,7 +37,7 @@
 - Pubmed Commons
 - https://f1000research.com/ 上付费发表
 
-## 数据分享
+## 数据分享 {-}
 
 - figshare
 - Open Science Framework
@@ -47,7 +47,7 @@
 - 随论文一同公布
 - 尊重数据生产者
 
-## 代码管理
+## 代码管理 {-}
 
 - 公开代码并记录版本 github或bitbucket
 - 链接到对应的论文上
@@ -57,7 +57,7 @@
 - 记录运行环境保证重复性
 - Good writers borrow from other authors, great authors steal outright 
 
-### R包管理
+### R包管理 {-}
 
 - Rstudio 小抄
 - Rstudio package 模版

@@ -3,31 +3,63 @@
 ## 文本编辑 {-}
 
 - 所见即所得
-    - 在线协作：google docs /石墨 /腾讯文档
+
+    - 在线协作：google docs /石墨 /腾讯文档 / Github
     - 离线协作：word
+
 - 排版/文献管理软件
+
     - Overleaf
     - sharelatex
-    - rstudio
     - paperpile
+    - crossref
+
+## 数据处理与绘图 {-}
+
+- 所见即所得
+
+  - 百度脑图
+  - autodraw 简笔画
+  - plotly
+  - 自动制图
+
+- 编程绘图
+
+  - R base
+  - ggplot
+  - python matplot
+  - matlab
+  
+- tidyverse
+
+- shiny
 
 ## 学术交流 {-}
 
 - 预先发表服务
+
     - arxiv
     - biorxiv
     - peerj
     - 接受预先发表期刊的列表https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy
-- 回复审稿人
-    - 逐条回复
-    - 指明文中修改的位置
+
 - 学术博客与幻灯片
+
     - blogdown
     - xaringan
+    
 - 学术出版
+
     - bookdown
-- 数据共享
-    - figshare
+    - rticle
+    
+- 网络身份
+
+    - ResearchGate
+    - ORCID
+    - ResearcherID
+    - Google Scholar
+    - Scopus Author ID
 
 ## 审稿 {-}
 
@@ -56,6 +88,7 @@
 - 给未来的自己做注释
 - 记录运行环境保证重复性
 - Good writers borrow from other authors, great authors steal outright 
+- Docker image
 
 ### R包管理 {-}
 

@@ -1,5 +1,7 @@
 # 附录：现代科研兵刃谱 {- #tool}
 
+工欲善其事，必先利其器。今天绝大多数知识都是工具生产出来的，也就是想使用知识，肯定要先学工具，而工具又需要知识铺垫，这就成了一个鸡生蛋蛋生鸡的问题。虽然事后总结都有千般道理，但就我人经验而言，工具与知识是相辅相成缺一不可的，过于关注知识会导致脱离实际而沉迷于工具选择则有很高的迁移成本。这里唯一的忠告就是不要想太多，先迈开步子，随便找个工具用起来，用实战来丰富需求，根据需求定向选择最适合自己的工具而不做工具的奴隶，如有必要，自己创造工具。
+
 ## 文本编辑 {-}
 
 - 所见即所得
@@ -13,22 +15,23 @@
     - sharelatex
     - paperpile
     - crossref
+    - zotero
 
 ## 数据处理与绘图 {-}
 
 - 所见即所得
 
-  - 百度脑图
-  - autodraw 简笔画
-  - plotly
-  - 自动制图
+        - 百度脑图
+        - autodraw 简笔画
+        - plotly
+        - 自动制图
 
 - 编程绘图
 
-  - R base
-  - ggplot
-  - python matplot
-  - matlab
+        - R base
+        - ggplot
+        - python matplot
+        - matlab
   
 - tidyverse
 
@@ -41,12 +44,17 @@
     - arxiv
     - biorxiv
     - peerj
-    - 接受预先发表期刊的列表https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy
+    - 接受预先发表期刊的[列表](https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy)
 
-- 学术博客与幻灯片
+- 学术博客
 
     - blogdown
-    - xaringan
+    - wordpress
+
+- 幻灯片
+        
+        - PPT
+        - xaringan
     
 - 学术出版
 
@@ -67,7 +75,7 @@
 - 博客或微博审稿
 - 期刊网站评论
 - Pubmed Commons
-- https://f1000research.com/ 上付费发表
+- [f1000research](https://f1000research.com/) 上付费发表
 
 ## 数据分享 {-}
 

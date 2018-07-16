@@ -1,10 +1,3 @@
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-
 bookdown::gitbook:
   css: style.css
   config:
@@ -17,6 +10,13 @@ bookdown::gitbook:
       link: https://github.com/yufree/sciguide/edit/master/%s
     sharing:
       weibo: yes
+
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
 
 bookdown::tufte_book2:
   includes:

@@ -53,7 +53,7 @@
 
 学术交流是科研生活中可以说最重要的一环，现代科研体系的分工合作都要通过学术交流来实现。主流趋势包括论文预印本服务器、开放获取与线上学术交流。
 
-预印本指在通过同行评议发表之前事先将论文手稿托管在公开服务器的研究工作。预印本服务器可以加速新思想的交流，接受预印本发表的期刊可以从维基百科上[查到](https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy)。比较知名的预印本服务器包括偏数学物理计算机科学的[arxiv](https://arxiv.org/)、偏生命科学的[biorxiv](https://www.biorxiv.org/) 与偏化学的[chemrxiv](https://chemrxiv.org/)。国内也有中科院的科技论文预发布[[平台](http://chinaxiv.org/home.htm)来服务国内科研人员。很多期刊出版方也在推广自己的预印本服务器来吸引高水平研究，所以可酌情选择。
+预印本指在通过同行评议发表之前事先将论文手稿托管在公开服务器的研究工作。预印本服务器可以加速新思想的交流，接受预印本发表的期刊可以从维基百科上[查到](https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy)。比较知名的预印本服务器包括偏数学物理计算机科学的[arxiv](https://arxiv.org/)、偏生命科学的[biorxiv](https://www.biorxiv.org/) 与偏化学的[chemrxiv](https://chemrxiv.org/)。国内也有中科院的科技论文预发布[平台](http://chinaxiv.org/home.htm)来服务国内科研人员。很多期刊出版方也在推广自己的预印本服务器来吸引高水平研究，所以可酌情选择。
 
 开放获取是另一个趋势，要求研究工作可以公开让大众阅读。目前很多科研基金都开始有了这方面的要求及预算。但值得注意的是虽然开放获取期刊可能有更好的阅读数与引用表现，但有很多机构的开放获取期刊属于掠夺性期刊，给钱就发表，对学术评价与学科发展非常不利，可以通过一些网络上的[列表](https://beallslist.weebly.com/)来鉴别。要实现开放获取或者说透明科研，[f1000research](https://f1000research.com/)、[PeerJ](https://peerj.org/)还有[Plos](https://www.plos.org/)都是还不错的先行者，它们在实践一些新理念，不过显然并不便宜。
 

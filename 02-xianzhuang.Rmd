@@ -8,6 +8,8 @@
 
 ## 趋势
 
+### 军备竞赛
+
 ### 科学方法
 
 - 基础学科信噪比高企与泛应用化
@@ -111,3 +113,8 @@ https://xianblog.wordpress.com/2014/02/04/posterior-predictive-p-values/
 - 快速反馈交流
 - 合作全球化与圈子化
 - 跨学科研究中的囚徒困境
+
+### 摘樱桃
+
+- 荟萃分析中的摘樱桃问题
+https://deevybee.blogspot.com/2018/07/standing-on-shoulders-of-giants-or.html

@@ -30,6 +30,7 @@
 
 ## 信息收集
 
+- RSS [古董阅读器](http://readerisdead.com/reader/view/#stream/feed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2FWorldWarIIToday)
 - 科技类 nature／pnas／science
 - 健康类 NEJM／JAMA
 - 综合期刊 plos one/peerj
@@ -39,6 +40,8 @@
 - rss
 - 100%读题目 20-50%读摘要 5-10%看图 1-3%全文
 - 追踪课题组
+- [科技文献已经超越了人脑处理信息的能力了](https://www.alternet.org/news-amp-politics/science-has-outgrown-human-mind-and-its-limited-capacities-process-information)
+- 论文的通货膨胀
 
 文献管理软件方面有收费的也有免费的，一般而言可通过咨询自己所在科研机构的图书馆来获取是否购买了相应的软件。收费软件我使用过 Endnote、 papers 及国产的 Noteexpress，应该说早期它们之间差异还是明显的，但到今天基本同质化了。
 

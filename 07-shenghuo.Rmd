@@ -226,3 +226,5 @@
 - [学科是存在鄙视链的，例如这位物理学家看到皇家化学会发表一篇烤面包公式的论文后不但马上发明了一个 bullshit 公式，还声称如果物理学会敢发表这种东西，自己马上放弃会员](http://wordpress.mrreid.org/2013/08/20/the-equation-for-the-perfect-equation/)
 
 - [巫毒娃娃的PNAS](http://andrewgelman.com/2018/04/01/april-fools-post-dead-serious/)
+
+- [数学家关于进化的争论](https://liorpachter.wordpress.com/2018/09/17/mathematics-matters/)

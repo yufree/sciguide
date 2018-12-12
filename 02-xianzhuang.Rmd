@@ -8,6 +8,19 @@
 
 ## 趋势
 
+### 可重复性危机
+
+```{r}
+library(scifigure)
+exps <- init_experiments(2)
+exps[c("analysis_plan","data"), 2] <- "unobserved"
+exps[c("experimenter", "analyst", "estimate","claim"), 2] <- "different"
+exps["code", 2] <- "incorrect"
+hide_stages = NULL
+sci_figure(exps)
+```
+
+
 ### 军备竞赛
 
 ### 科学方法
@@ -106,6 +119,7 @@ https://en.wikipedia.org/wiki/Lindley's_paradox#The_lack_of_an_actual_paradox
 
 https://xianblog.wordpress.com/2014/02/04/posterior-predictive-p-values/
 - 可重复性问题
+- 《思考，快与慢》中启动效应的问题 https://replicationindex.wordpress.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/
 
 ### 社交网络中的科研
 

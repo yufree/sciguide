@@ -214,6 +214,7 @@
 - 常用ID 简短难重复
 - 商用个人用email分开
 - 线上线下一致
+- [署名问题与可能性空间](https://liorpachter.wordpress.com/2018/11/03/the-combinatorics-of-authorship-in-the-biological-sciences/)
 
 ## 学术道德／伦理
 

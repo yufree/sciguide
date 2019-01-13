@@ -5,8 +5,6 @@
 
 - yufree.cn 上科研主题博文汇编
 - 现代科研趋势探索
-- 基于 R 的科学数据探索方法
-- 日常用数据探索技巧
 - Jeef Leek 《How to be a modern scientist》
 
 预览地址：https://yufree.github.io/sciguide/

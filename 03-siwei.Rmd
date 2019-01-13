@@ -60,21 +60,29 @@
 
 - [参考资料](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html)
 
-### 抽象
+### 预测模型
 
-### 交互作用
+### 仿真模型
 
 ## 统计思维
+
+### 统计量
 
 ### 回归
 
 ### 概率
 
+### 方差
+
 ## 最优化思维
 
 ### 梯度下降
 
+- EM 算法 https://www.nature.com/articles/nbt1406
+
 ### 动态规划
+
+- 动态规划 https://www.nature.com/articles/nbt0704-909
 
 ## 估算法
 

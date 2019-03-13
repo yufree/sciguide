@@ -1,4 +1,4 @@
 Package: placeholder
 Title: sciguide
 Version: 0.0.1
-Imports: survival (>= 2.40-1),bookdown,scifigure
+Imports: survival (>= 2.40-1),bookdown,scifigure,FrF2

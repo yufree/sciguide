@@ -25,7 +25,7 @@
 <meta name="author" content="于淼">
 
 
-<meta name="date" content="2019-01-13">
+<meta name="date" content="2019-03-13">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,41 +51,67 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -106,7 +132,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> 现代科研</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.1</b> 科研老鸭汤-科学哲学沿革</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 科学哲学沿革</a><ul>
 <li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#section-2.1.1"><i class="fa fa-check"></i><b>2.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 中世纪</a></li>
 <li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 1500年以后</a></li>
@@ -117,40 +143,37 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.1.8" data-path="intro.html"><a href="intro.html#section-2.1.8"><i class="fa fa-check"></i><b>2.1.8</b> 实用主义</a></li>
 <li class="chapter" data-level="2.1.9" data-path="intro.html"><a href="intro.html#section-2.1.9"><i class="fa fa-check"></i><b>2.1.9</b> 其他</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.2</b> 科研职业化-问题为导向</a></li>
-<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.3</b> 科研精细化-科研民工的突围</a></li>
-<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 科学知识的五个层次</a><ul>
-<li class="chapter" data-level="2.4.1" data-path="intro.html"><a href="intro.html#section-2.4.1"><i class="fa fa-check"></i><b>2.4.1</b> 背景组</a></li>
-<li class="chapter" data-level="2.4.2" data-path="intro.html"><a href="intro.html#section-2.4.2"><i class="fa fa-check"></i><b>2.4.2</b> 已知的已知组</a></li>
-<li class="chapter" data-level="2.4.3" data-path="intro.html"><a href="intro.html#section-2.4.3"><i class="fa fa-check"></i><b>2.4.3</b> 已知的未知组</a></li>
-<li class="chapter" data-level="2.4.4" data-path="intro.html"><a href="intro.html#section-2.4.4"><i class="fa fa-check"></i><b>2.4.4</b> 未知的已知组</a></li>
-<li class="chapter" data-level="2.4.5" data-path="intro.html"><a href="intro.html#section-2.4.5"><i class="fa fa-check"></i><b>2.4.5</b> 未知的未知组</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 科学知识的五个层次</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#section-2.2.1"><i class="fa fa-check"></i><b>2.2.1</b> 背景组</a></li>
+<li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#section-2.2.2"><i class="fa fa-check"></i><b>2.2.2</b> 已知的已知组</a></li>
+<li class="chapter" data-level="2.2.3" data-path="intro.html"><a href="intro.html#section-2.2.3"><i class="fa fa-check"></i><b>2.2.3</b> 已知的未知组</a></li>
+<li class="chapter" data-level="2.2.4" data-path="intro.html"><a href="intro.html#section-2.2.4"><i class="fa fa-check"></i><b>2.2.4</b> 未知的已知组</a></li>
+<li class="chapter" data-level="2.2.5" data-path="intro.html"><a href="intro.html#section-2.2.5"><i class="fa fa-check"></i><b>2.2.5</b> 未知的未知组</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 知识体系的时间构建</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 知识体系的时间构建</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="view.html"><a href="view.html"><i class="fa fa-check"></i><b>3</b> 科研现状概览</a><ul>
-<li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 国内版</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="view.html"><a href="view.html#section-3.1.1"><i class="fa fa-check"></i><b>3.1.1</b> 研究生教育的困境</a></li>
-<li class="chapter" data-level="3.1.2" data-path="view.html"><a href="view.html#section-3.1.2"><i class="fa fa-check"></i><b>3.1.2</b> 毕业延期问题</a></li>
-<li class="chapter" data-level="3.1.3" data-path="view.html"><a href="view.html#section-3.1.3"><i class="fa fa-check"></i><b>3.1.3</b> 博士的就业问题</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 国际版</a></li>
-<li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 趋势</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="view.html"><a href="view.html#section-3.3.1"><i class="fa fa-check"></i><b>3.3.1</b> 可重复性危机</a></li>
-<li class="chapter" data-level="3.3.2" data-path="view.html"><a href="view.html#section-3.3.2"><i class="fa fa-check"></i><b>3.3.2</b> 军备竞赛</a></li>
-<li class="chapter" data-level="3.3.3" data-path="view.html"><a href="view.html#section-3.3.3"><i class="fa fa-check"></i><b>3.3.3</b> 科学方法</a></li>
-<li class="chapter" data-level="3.3.4" data-path="view.html"><a href="view.html#section-3.3.4"><i class="fa fa-check"></i><b>3.3.4</b> 数据驱动的科研</a></li>
-<li class="chapter" data-level="3.3.5" data-path="view.html"><a href="view.html#section-3.3.5"><i class="fa fa-check"></i><b>3.3.5</b> 假设检验问题</a></li>
-<li class="chapter" data-level="3.3.6" data-path="view.html"><a href="view.html#section-3.3.6"><i class="fa fa-check"></i><b>3.3.6</b> 贝叶斯</a></li>
-<li class="chapter" data-level="3.3.7" data-path="view.html"><a href="view.html#section-3.3.7"><i class="fa fa-check"></i><b>3.3.7</b> 社交网络中的科研</a></li>
-<li class="chapter" data-level="3.3.8" data-path="view.html"><a href="view.html#section-3.3.8"><i class="fa fa-check"></i><b>3.3.8</b> 摘樱桃</a></li>
+<li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 问题为导向</a></li>
+<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 专业性与综合性的矛盾</a></li>
+<li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
+<li class="chapter" data-level="3.4" data-path="view.html"><a href="view.html#section-3.4"><i class="fa fa-check"></i><b>3.4</b> 毕业延期问题</a></li>
+<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#section-3.5"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
+<li class="chapter" data-level="3.6" data-path="view.html"><a href="view.html#section-3.6"><i class="fa fa-check"></i><b>3.6</b> 重要科研趋势</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="view.html"><a href="view.html#section-3.6.1"><i class="fa fa-check"></i><b>3.6.1</b> 可重复性危机</a></li>
+<li class="chapter" data-level="3.6.2" data-path="view.html"><a href="view.html#section-3.6.2"><i class="fa fa-check"></i><b>3.6.2</b> 军备竞赛</a></li>
+<li class="chapter" data-level="3.6.3" data-path="view.html"><a href="view.html#section-3.6.3"><i class="fa fa-check"></i><b>3.6.3</b> 科学方法</a></li>
+<li class="chapter" data-level="3.6.4" data-path="view.html"><a href="view.html#section-3.6.4"><i class="fa fa-check"></i><b>3.6.4</b> 数据驱动的科研</a></li>
+<li class="chapter" data-level="3.6.5" data-path="view.html"><a href="view.html#section-3.6.5"><i class="fa fa-check"></i><b>3.6.5</b> 假设检验问题</a></li>
+<li class="chapter" data-level="3.6.6" data-path="view.html"><a href="view.html#section-3.6.6"><i class="fa fa-check"></i><b>3.6.6</b> 贝叶斯</a></li>
+<li class="chapter" data-level="3.6.7" data-path="view.html"><a href="view.html#section-3.6.7"><i class="fa fa-check"></i><b>3.6.7</b> 社交网络中的科研</a></li>
+<li class="chapter" data-level="3.6.8" data-path="view.html"><a href="view.html#section-3.6.8"><i class="fa fa-check"></i><b>3.6.8</b> 摘樱桃</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#section-4.1.1"><i class="fa fa-check"></i><b>4.1.1</b> 规律的失效</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#section-4.1.2"><i class="fa fa-check"></i><b>4.1.2</b> 哈森奇效应</a></li>
-<li class="chapter" data-level="4.1.3" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>4.1.3</b> 观察研究的敌人-反馈</a></li>
+<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#-"><i class="fa fa-check"></i><b>4.1.3</b> 观察研究的敌人-反馈</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="thought.html"><a href="thought.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 模型思维</a><ul>
 <li class="chapter" data-level="4.2.1" data-path="thought.html"><a href="thought.html#section-4.2.1"><i class="fa fa-check"></i><b>4.2.1</b> 可编程</a></li>
@@ -184,6 +207,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#section-6.4"><i class="fa fa-check"></i><b>6.4</b> 模型</a></li>
 <li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#section-6.5"><i class="fa fa-check"></i><b>6.5</b> 可视化</a></li>
 <li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#section-6.6"><i class="fa fa-check"></i><b>6.6</b> 重采样</a></li>
+<li class="chapter" data-level="6.7" data-path="data.html"><a href="data.html#section-6.7"><i class="fa fa-check"></i><b>6.7</b> 常见算法解析</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#section-7.1"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -242,6 +266,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e5ada6e69cafe4baa4e6b581"><i class="fa fa-check"></i>学术交流</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e695b0e68daee58886e4baab"><i class="fa fa-check"></i>数据分享</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e4bba3e7a081e7aea1e79086"><i class="fa fa-check"></i>代码管理</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="tool.html"><a href="tool.html#section-8.10.1"><i class="fa fa-check"></i><b>8.10.1</b> 软件编译流程</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#r"><i class="fa fa-check"></i>R包管理</a></li>
 </ul></li>
 </ul></li>
@@ -269,6 +294,136 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">坑 5</span> 实验</h1>
 <div id="section-5.1" class="section level2">
 <h2><span class="header-section-number">5.1</span> 实验设计原则</h2>
+<p>试验设计一般是面向高年级本科生与研究生开的课程，但讲的都比较抽象。什么随机化、均匀性什么的道理都明白，但真到科研里面基本还是要依赖查表与软件分析。也正是因为如此很多人都是照葫芦画瓢来做，软件告诉哪个好就用哪个，在这种情况下软件实际充当了水晶球，你信就是了。</p>
+<p>《Statistics for experimenters》的第一章是值得所有试验学科人读一下的，因为George Box 在第一章里没有扯什么随机化、均匀性，而是聊了下认识论。开篇第一句就是“知识就是力量”，解决问题实际就是一个认识模型演进的过程。具体来说是一个归纳-演绎不断往复的过程，数据起了中介作用。例如下面这个认识过程：</p>
+<p>（模型）每天都一样</p>
+<p>（演绎）今天车会停在原位</p>
+<p>（数据）车不在</p>
+<p>（归纳）有人偷车</p>
+<p>（模型）车丢了</p>
+<p>（演绎）车不在原位</p>
+<p>（数据）车又回来了</p>
+<p>（归纳）有人偷了车还回来了</p>
+<p>不得不说我还是头一回发现认知过程可以这样描述的，具体到试验，这个过程就成了（模型）想法 -&gt;（演绎）实验设计 -&gt;（数据）结果分析 -&gt;（归纳）结论或新想法。这大概是试验设计能上升到的最高理论高度了。</p>
+<p>好了，不扯了，这本书非常适合读，但并不适合练。因为作者虽然用了很多很直观的解释方法让读者明白原理，但并未涉及软件层面。当然，提供代码也是最近才开始在技术书籍中流行的，这本书描绘了一个清晰的试验设计与分析框架，而我下面说的是结合R的一些从问题视角的实战。</p>
+<p>现实生活中需要试验设计的场景一般都是多因素多水平寻优问题，翻译成人话就是 <span class="math inline">\(y = f(x)\)</span> 中，y代表了你期望最优的东西，x代表了会对y产生影响的自变量，如果你的问题可以抽象成 <span class="math inline">\(y = f(x)\)</span>，那就可以通过构建模型来解决。试验设计主要关心的是方差分析这个视角，简单说就是y的变异可以拆分成不同x之间的独立变异或交互作用的线性组合。通过方差分析可以找到对y影响最大的x或所有x的影响方式，了解了影响方式，寻优什么的就比较简单了。</p>
+<p>一般而言，想找出多因素的最优组合，第一步是要确定哪些因素重要而哪些因素不重要，这是PB设计的应用场景。在不考虑交互作用的前提下，通过PB设计的表头进行两水平试验，然后进行方差分析并可视化就可以筛选出重要因素了。PB设计的试验次数一定是4的倍数，而且最大适合因子数会比试验次数少1。打个比方，我打算找出9个因素中哪个影响目标最大，那么我的试验次数至少选12，下面是个演示，这里我们使用 <code>FrF2</code>包：</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressMessages</span>(<span class="kw">library</span>(FrF2))
+<span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)</code></pre>
+<pre><code>##     A  B  C  D  E  F  G  H  J
+## 1  -1  1 -1  1  1 -1  1  1  1
+## 2  -1 -1  1 -1  1  1 -1  1  1
+## 3   1 -1 -1 -1  1 -1  1  1 -1
+## 4   1 -1  1  1 -1  1  1  1 -1
+## 5  -1  1  1  1 -1 -1 -1  1 -1
+## 6   1  1 -1  1  1  1 -1 -1 -1
+## 7  -1  1  1 -1  1  1  1 -1 -1
+## 8   1 -1  1  1  1 -1 -1 -1  1
+## 9   1  1  1 -1 -1 -1  1 -1  1
+## 10  1  1 -1 -1 -1  1 -1  1  1
+## 11 -1 -1 -1  1 -1  1  1 -1  1
+## 12 -1 -1 -1 -1 -1 -1 -1 -1 -1
+## class=design, type= pb</code></pre>
+<p>这里面1与-1分别代表两个水平，当然试验设计牵扯到分辨率问题，可以理解为对该试验设计的评价，分辨率高，能区分的影响就更细致，可以用<code>FrF2</code>包中的<code>GR</code>函数来计算。需要注意的是，<code>FrF2</code>包也可以用 <code>FrF2</code> 函数来进行两水平试验设计，这里是分辨率高时是可以考察交互作用的。</p>
+<p>那么当你收集了数据，该如何分析呢？<code>FrF2</code>包实际继承了 <code>DoE.base</code> 包的S3对象类型，你只需要用 <code>add.response</code> 增加你的试验结果到设计出的S3对象上，然后就可以用方差分析或线性回归进行分析了。结果同样可以用<code>MEPlot</code>函数来进行可视化。当然，也可以用<code>halfnormal</code>函数来评价因子影响。</p>
+<pre class="sourceCode r"><code class="sourceCode r">plan.annotated &lt;-<span class="st"> </span><span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)
+response &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">35</span>, <span class="dv">36</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">36</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">41</span>, <span class="dv">32</span>, <span class="dv">42</span>, <span class="dv">37</span>)
+plan.resp &lt;-<span class="st"> </span><span class="kw">add.response</span>(plan.annotated, response)
+<span class="kw">MEPlot</span>(plan.resp, <span class="dt">abbrev =</span> <span class="dv">5</span>, <span class="dt">cex.xax =</span> <span class="fl">1.6</span>, <span class="dt">cex.main =</span> <span class="dv">2</span>)</code></pre>
+<p><img src="sciguide_files/figure-html/pba-1.png" width="672" /></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(<span class="kw">lm</span>(plan.resp))</code></pre>
+<pre><code>## Number of observations used: 12 
+## Formula:
+## response ~ A + B + C + D + E + F + G + H + J
+## 
+## Call:
+## lm.default(formula = fo, data = model.frame(fo, data = formula))
+## 
+## Residuals:
+##      1      2      3      4      5      6      7      8      9     10 
+## -1.167  1.667 -1.167  1.667 -1.667  1.167  1.167 -1.167  1.667 -1.667 
+##     11     12 
+##  1.167 -1.667 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.4167     1.0172  36.784 0.000738 ***
+## A1            0.2500     1.0172   0.246 0.828781    
+## B1           -0.9167     1.0172  -0.901 0.462615    
+## C1            0.7500     1.0172   0.737 0.537701    
+## D1           -1.0833     1.0172  -1.065 0.398432    
+## E1            0.2500     1.0172   0.246 0.828781    
+## F1            0.2500     1.0172   0.246 0.828781    
+## G1            0.7500     1.0172   0.737 0.537701    
+## H1           -0.9167     1.0172  -0.901 0.462615    
+## J1           -0.5833     1.0172  -0.573 0.624220    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.524 on 2 degrees of freedom
+## Multiple R-squared:  0.6853, Adjusted R-squared:  -0.7307 
+## F-statistic: 0.484 on 9 and 2 DF,  p-value: 0.8174</code></pre>
+<p>在这里PB设计实际上是一种预选法，如果结果显示某些变量影响显著，那么事实上就可以针对这些变量进行进一步的精细筛选，其余的变量可以直接固定为一个水平进行进一步设计。PB法在工业届用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。</p>
+<p>当选出重要因素时，下一步常见是正交试验或响应面分析，用来优选参数。正交表这玩意我在书中没找到，文献里用得多的也是亚洲人，老外统一用析因试验来进行考察。其实正交表的设计原理就是用尽量少的步骤遍历掉因子空间，这样进行一定次数试验就可以发现最优组合。R中的实现基本都在<code>DoE.base</code> 包里，这个包内置了一堆可以直接调用的正交表，可以根据需求进行查询。例如我有6个因素，水平数分别是2，3，3，2，2，6，然后我只打算做不超过54次试验，这时可以直接调用<code>show.oas</code>函数进行查询，给出的正交表随意选一个就可以继续。</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">show.oas</span>(<span class="dt">nruns =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">showmetrics =</span> <span class="ot">TRUE</span>)</code></pre>
+<pre><code>## no suitable  resolution IV or more  array found
+## 5  orthogonal  arrays found
+##                name nruns lineage   GR GRind regular SCones    A3    A4
+## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4
+## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2
+## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2
+## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2
+## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1
+##      A5    A6      A7      A8
+## 78  426  1010  1753.2  2306.8
+## 81 3063 11096 31380.8 68828.1
+## 83 1025  2828  5507.5  7780.0
+## 87  912  2404  4354.2  5793.4
+## 88  120   125    63.5    13.9</code></pre>
+<p>这里我们选分辨率略高的<code>L36.2.10.3.8.6.1</code>，从名字上看，这是一个36次试验表，可以包含10个两水平，8个三水平与1个六水平因子，这也是唯一一个分辨率高于3，可以排除交互作用的设计方法。这里我反复提到分辨率，实际上就是一种考察试验设计合理性的指标，分辨率3一般指只能区分没有交互作用的各因子贡献差异，高于3就可以区分一定的因子交互作用，可以用<code>GR</code>去计算一个广义分辨率并用<code>oa.design</code>来进一步优化这个设计，因为其实符合正交表只是众多选择的一个子集，不过根据优化方法的不同，优化时间也不太一样。</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">columns =</span> <span class="st">&quot;min34&quot;</span>)</code></pre>
+<pre><code>##    A B C D E F
+## 1  1 1 3 1 2 2
+## 2  2 3 2 2 1 1
+## 3  1 3 2 1 2 6
+## 4  2 1 3 2 1 3
+## 5  2 2 3 1 1 2
+## 6  1 1 1 2 2 6
+## 7  2 2 1 2 2 3
+## 8  1 3 3 1 1 5
+## 9  1 3 2 2 1 2
+## 10 2 3 3 1 2 3
+## 11 2 3 1 1 1 4
+## 12 2 2 2 2 1 4
+## 13 2 1 2 1 2 4
+## 14 1 3 1 2 2 1
+## 15 2 3 1 1 2 2
+## 16 1 2 1 2 1 6
+## 17 2 2 1 2 1 5
+## 18 1 2 1 1 2 4
+## 19 2 1 3 2 2 1
+## 20 1 2 2 2 2 2
+## 21 2 1 2 1 1 6
+## 22 1 3 3 2 2 4
+## 23 1 2 3 1 1 1
+## 24 1 1 3 2 1 4
+## 25 2 2 2 1 2 1
+## 26 1 1 1 1 1 1
+## 27 1 3 1 1 1 3
+## 28 1 2 3 2 2 5
+## 29 1 1 2 1 1 5
+## 30 1 2 2 1 1 3
+## 31 2 1 1 1 2 5
+## 32 2 3 3 2 1 6
+## 33 2 3 2 2 2 5
+## 34 1 1 2 2 2 3
+## 35 2 1 1 2 1 2
+## 36 2 2 3 1 2 6
+## class=design, type= oa</code></pre>
+<p>使用这个函数你就不用费力去套正交表了，直接可以用输出的设计方案，记得要说明你的分辨率优化方案。如果你坚持套正交表，一定要理解如何去套，因为正交表的排列是很讲究的，特别是你要考虑交互作用的影响。如果一个表最多14个因子而你就设计了14个因子，那么分辨率不会超过3。正交设计的分析与前面PB设计是一致的，都是沿用添加响应，然后方差分析或线性分析随意来就是了，<code>DoE.base</code> 包为<code>design</code>这个对象类型设置了<code>lm</code>与<code>aov</code>方法。</p>
+<p>在进行数据分析时，有时会遇到方差分析与线性回归的区别问题，打比方你用线性回归来做分析，会有审稿人问你lack of fit检验有没有做。这个检验实质上也是个F检验，用来衡量线性模型之外残差里分组变异与纯误差变异的比值，如果分组变异还是比较大，那么线性假设可能就不合理。</p>
+<p>不过，目前试验设计结果分析更精细的会用响应面分析。顾名思义，响应面有点梯度下降迭代寻优的意思，而且如果是曲面通常考虑了二阶甚至更高阶的交互作用。在R中的实现是通过 <code>rsm</code> 包来进行的，这个包也是囊括了设计与分析两个部分，设计部分也有常见的 Box-Wilson Central Composite Designs 与Box-Behnken designs，分析部分自然还是基于<code>lm</code>的。同样，对于CCD设计，也提供了<code>ccd.pick</code>来选择好的设计，这里好自然意味着一些表征设计均衡的统计量。因为<code>rsm</code> 包小品文写的很清楚了，我就略过演示了。如果你面临多响应同步优化问题，那么<code>desirability</code>包考虑一下有没有，这个包其实是定义了一个多响应的联合满意度作为目标统计量，然后用响应面分析进行寻优，对于组学研究是有启发的。另外说个小八卦，狭义正交表也就是田口设计其实最初是两响应优化，只不过另一个响应是无法控制的噪音，田口搞了个信噪比来解决问题，熟悉了这套统计量构建策略，你也应该能做到根据实际情况构建指标体系。</p>
+<p>其实试验设计分析是可以用所有符合<span class="math inline">\(y = f(x)\)</span>的模型来操作的，说白了就是参数寻优。但试验设计更独特的点就在设计上，更广义地讲，A/B测试等纯计算试验也可以套用试验设计原理，这里要区分清楚设计与分析，设计不合理，分析会很头痛。如果再扩展些，观察研究的试验设计相比控制实验更关注配对或策略抽样。总之试验设计并不是什么水晶球，其原则从来都很清楚，只是后来流派出的太多，术语也越来越晦涩。然后你就会在网上看到哪个软件能做哪个分析的讨论了，其实这情况在工科可能更严重些，例如混料配比的<a href="https://support.minitab.com/zh-cn/minitab/18/help-and-how-to/modeling-statistics/doe/supporting-topics/mixture-designs/what-is-a-mixture-design/">三角坐标系设计</a>就完全是另一套，不过万变不离其宗，说白了还是个响应面分析。</p>
 </div>
 <div id="section-5.2" class="section level2">
 <h2><span class="header-section-number">5.2</span> 定性实验</h2>
@@ -327,7 +482,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["sciguide.epub"],
+"download": ["sciguide.pdf", "sciguide.epub"],
 "toc": {
 "collapse": "subsection"
 }
@@ -335,6 +490,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

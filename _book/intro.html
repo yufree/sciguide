@@ -25,7 +25,7 @@
 <meta name="author" content="于淼">
 
 
-<meta name="date" content="2019-01-13">
+<meta name="date" content="2019-03-13">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,41 +51,67 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -106,7 +132,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> 现代科研</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.1</b> 科研老鸭汤-科学哲学沿革</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 科学哲学沿革</a><ul>
 <li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#section-2.1.1"><i class="fa fa-check"></i><b>2.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#section-2.1.2"><i class="fa fa-check"></i><b>2.1.2</b> 中世纪</a></li>
 <li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#section-2.1.3"><i class="fa fa-check"></i><b>2.1.3</b> 1500年以后</a></li>
@@ -117,40 +143,37 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.1.8" data-path="intro.html"><a href="intro.html#section-2.1.8"><i class="fa fa-check"></i><b>2.1.8</b> 实用主义</a></li>
 <li class="chapter" data-level="2.1.9" data-path="intro.html"><a href="intro.html#section-2.1.9"><i class="fa fa-check"></i><b>2.1.9</b> 其他</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.2</b> 科研职业化-问题为导向</a></li>
-<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>2.3</b> 科研精细化-科研民工的突围</a></li>
-<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 科学知识的五个层次</a><ul>
-<li class="chapter" data-level="2.4.1" data-path="intro.html"><a href="intro.html#section-2.4.1"><i class="fa fa-check"></i><b>2.4.1</b> 背景组</a></li>
-<li class="chapter" data-level="2.4.2" data-path="intro.html"><a href="intro.html#section-2.4.2"><i class="fa fa-check"></i><b>2.4.2</b> 已知的已知组</a></li>
-<li class="chapter" data-level="2.4.3" data-path="intro.html"><a href="intro.html#section-2.4.3"><i class="fa fa-check"></i><b>2.4.3</b> 已知的未知组</a></li>
-<li class="chapter" data-level="2.4.4" data-path="intro.html"><a href="intro.html#section-2.4.4"><i class="fa fa-check"></i><b>2.4.4</b> 未知的已知组</a></li>
-<li class="chapter" data-level="2.4.5" data-path="intro.html"><a href="intro.html#section-2.4.5"><i class="fa fa-check"></i><b>2.4.5</b> 未知的未知组</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 科学知识的五个层次</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#section-2.2.1"><i class="fa fa-check"></i><b>2.2.1</b> 背景组</a></li>
+<li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#section-2.2.2"><i class="fa fa-check"></i><b>2.2.2</b> 已知的已知组</a></li>
+<li class="chapter" data-level="2.2.3" data-path="intro.html"><a href="intro.html#section-2.2.3"><i class="fa fa-check"></i><b>2.2.3</b> 已知的未知组</a></li>
+<li class="chapter" data-level="2.2.4" data-path="intro.html"><a href="intro.html#section-2.2.4"><i class="fa fa-check"></i><b>2.2.4</b> 未知的已知组</a></li>
+<li class="chapter" data-level="2.2.5" data-path="intro.html"><a href="intro.html#section-2.2.5"><i class="fa fa-check"></i><b>2.2.5</b> 未知的未知组</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 知识体系的时间构建</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 知识体系的时间构建</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="view.html"><a href="view.html"><i class="fa fa-check"></i><b>3</b> 科研现状概览</a><ul>
-<li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 国内版</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="view.html"><a href="view.html#section-3.1.1"><i class="fa fa-check"></i><b>3.1.1</b> 研究生教育的困境</a></li>
-<li class="chapter" data-level="3.1.2" data-path="view.html"><a href="view.html#section-3.1.2"><i class="fa fa-check"></i><b>3.1.2</b> 毕业延期问题</a></li>
-<li class="chapter" data-level="3.1.3" data-path="view.html"><a href="view.html#section-3.1.3"><i class="fa fa-check"></i><b>3.1.3</b> 博士的就业问题</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 国际版</a></li>
-<li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 趋势</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="view.html"><a href="view.html#section-3.3.1"><i class="fa fa-check"></i><b>3.3.1</b> 可重复性危机</a></li>
-<li class="chapter" data-level="3.3.2" data-path="view.html"><a href="view.html#section-3.3.2"><i class="fa fa-check"></i><b>3.3.2</b> 军备竞赛</a></li>
-<li class="chapter" data-level="3.3.3" data-path="view.html"><a href="view.html#section-3.3.3"><i class="fa fa-check"></i><b>3.3.3</b> 科学方法</a></li>
-<li class="chapter" data-level="3.3.4" data-path="view.html"><a href="view.html#section-3.3.4"><i class="fa fa-check"></i><b>3.3.4</b> 数据驱动的科研</a></li>
-<li class="chapter" data-level="3.3.5" data-path="view.html"><a href="view.html#section-3.3.5"><i class="fa fa-check"></i><b>3.3.5</b> 假设检验问题</a></li>
-<li class="chapter" data-level="3.3.6" data-path="view.html"><a href="view.html#section-3.3.6"><i class="fa fa-check"></i><b>3.3.6</b> 贝叶斯</a></li>
-<li class="chapter" data-level="3.3.7" data-path="view.html"><a href="view.html#section-3.3.7"><i class="fa fa-check"></i><b>3.3.7</b> 社交网络中的科研</a></li>
-<li class="chapter" data-level="3.3.8" data-path="view.html"><a href="view.html#section-3.3.8"><i class="fa fa-check"></i><b>3.3.8</b> 摘樱桃</a></li>
+<li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 问题为导向</a></li>
+<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 专业性与综合性的矛盾</a></li>
+<li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
+<li class="chapter" data-level="3.4" data-path="view.html"><a href="view.html#section-3.4"><i class="fa fa-check"></i><b>3.4</b> 毕业延期问题</a></li>
+<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#section-3.5"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
+<li class="chapter" data-level="3.6" data-path="view.html"><a href="view.html#section-3.6"><i class="fa fa-check"></i><b>3.6</b> 重要科研趋势</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="view.html"><a href="view.html#section-3.6.1"><i class="fa fa-check"></i><b>3.6.1</b> 可重复性危机</a></li>
+<li class="chapter" data-level="3.6.2" data-path="view.html"><a href="view.html#section-3.6.2"><i class="fa fa-check"></i><b>3.6.2</b> 军备竞赛</a></li>
+<li class="chapter" data-level="3.6.3" data-path="view.html"><a href="view.html#section-3.6.3"><i class="fa fa-check"></i><b>3.6.3</b> 科学方法</a></li>
+<li class="chapter" data-level="3.6.4" data-path="view.html"><a href="view.html#section-3.6.4"><i class="fa fa-check"></i><b>3.6.4</b> 数据驱动的科研</a></li>
+<li class="chapter" data-level="3.6.5" data-path="view.html"><a href="view.html#section-3.6.5"><i class="fa fa-check"></i><b>3.6.5</b> 假设检验问题</a></li>
+<li class="chapter" data-level="3.6.6" data-path="view.html"><a href="view.html#section-3.6.6"><i class="fa fa-check"></i><b>3.6.6</b> 贝叶斯</a></li>
+<li class="chapter" data-level="3.6.7" data-path="view.html"><a href="view.html#section-3.6.7"><i class="fa fa-check"></i><b>3.6.7</b> 社交网络中的科研</a></li>
+<li class="chapter" data-level="3.6.8" data-path="view.html"><a href="view.html#section-3.6.8"><i class="fa fa-check"></i><b>3.6.8</b> 摘樱桃</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#section-4.1.1"><i class="fa fa-check"></i><b>4.1.1</b> 规律的失效</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#section-4.1.2"><i class="fa fa-check"></i><b>4.1.2</b> 哈森奇效应</a></li>
-<li class="chapter" data-level="4.1.3" data-path="intro.html"><a href="intro.html#-"><i class="fa fa-check"></i><b>4.1.3</b> 观察研究的敌人-反馈</a></li>
+<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#-"><i class="fa fa-check"></i><b>4.1.3</b> 观察研究的敌人-反馈</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="thought.html"><a href="thought.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 模型思维</a><ul>
 <li class="chapter" data-level="4.2.1" data-path="thought.html"><a href="thought.html#section-4.2.1"><i class="fa fa-check"></i><b>4.2.1</b> 可编程</a></li>
@@ -184,6 +207,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#section-6.4"><i class="fa fa-check"></i><b>6.4</b> 模型</a></li>
 <li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#section-6.5"><i class="fa fa-check"></i><b>6.5</b> 可视化</a></li>
 <li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#section-6.6"><i class="fa fa-check"></i><b>6.6</b> 重采样</a></li>
+<li class="chapter" data-level="6.7" data-path="data.html"><a href="data.html#section-6.7"><i class="fa fa-check"></i><b>6.7</b> 常见算法解析</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#section-7.1"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -242,6 +266,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e5ada6e69cafe4baa4e6b581"><i class="fa fa-check"></i>学术交流</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e695b0e68daee58886e4baab"><i class="fa fa-check"></i>数据分享</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#e4bba3e7a081e7aea1e79086"><i class="fa fa-check"></i>代码管理</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="tool.html"><a href="tool.html#section-8.10.1"><i class="fa fa-check"></i><b>8.10.1</b> 软件编译流程</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#r"><i class="fa fa-check"></i>R包管理</a></li>
 </ul></li>
 </ul></li>
@@ -267,8 +292,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">坑 2</span> 现代科研</h1>
-<div id="-" class="section level2">
-<h2><span class="header-section-number">2.1</span> 科研老鸭汤-科学哲学沿革</h2>
+<div id="section-2.1" class="section level2">
+<h2><span class="header-section-number">2.1</span> 科学哲学沿革</h2>
 <p>做科研一般都不讨论哲学，太多形而上的东西，说也说不清道也道不明还无法证伪。但懂一点科学哲学还是很有必要的，不然很容易研究着研究着就会觉得自己做的东西是垃圾，是谋生的工具，虽然从某个角度看也没错，但科学哲学无疑是应对这种心态最好的老鸭汤。</p>
 <div id="section-2.1.1" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> 古希腊</h3>
@@ -314,52 +339,32 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>就科研本身而言，最开始属于观察现象然后总结规律的经验方式，后来慢慢形成学科体系与知识框架来设计实验预测解释事实，现在其实更多是逻辑与经验的混合来解决科学问题。也就是说，学科知识是基础，但问题总出在前沿也就是知识覆盖不到或部分覆盖的地方，经验论与唯理论的斗争时常出现，单纯看经验或者说观察与实验会推动问题的解决，但有时候也推不动：很多规律不一定经得起检验，还有很多规律需要的限定条件太多进而导致应用上矫枉过正，还有些学科提出规律本身产生的反馈会导致规律失效…</p>
 </div>
 </div>
-<div id="-" class="section level2">
-<h2><span class="header-section-number">2.2</span> 科研职业化-问题为导向</h2>
-<p>喝完老鸭汤我们还是回归现实吧，现代科研隶属于现代政治经济系统，满足社会的需求是其存在的基础，至于是否满足个人兴趣爱好与远大理想，可认为是副产品。当然，这是从社会层面说，具体到个人千差万别。</p>
-<p>首先，我们要了解现代社会运行的基本模式，其中陌生人大尺度分工协作是现代社会最突出的特色。社会，简单说就是一群人而不是一个人生存的行为与知识模式集合。相比宗族或家庭为单位的原始聚居，古代与近代社会的发展不断突破着人们行为与知识范围的地理与血缘限制。</p>
-<p>在原始聚居条件下，人们终生活动范围有限，语言隔阂等也限制了信息交流，好的生存模式很难传递到下一代或更远的地方，短暂的寿命基本都用在维持生存繁衍上了。当然，对原始部落的研究发现生活在其中的人并不比焦虑的现代人的快乐感受更少，但生活的自由度其实很有限（从另一方面讲，如果完全意识不到当今生活自由度可以改变其实也是一种内在幸福感，拥有更大自由度的人并不能完全体会到）。这种狩猎采集的原始聚居其实并不太需要共同的社会行为规则，但后来人们驯化了农作物与牲畜（其实很难讲谁驯化了谁，作物与牲畜也可能通过驯化更好的传播了基因），进而从流动走向了定居。</p>
-<p>定居后的社会出现了更细致的分工，例如一个村落需要祭祀、防卫、生产、医疗等部门维持生存结构，这种分工有着自己的生命力，一旦产生会让整体受益，同时也会让这种结构加强。同样的，这种分工模式并不惟一，但如果两个定居的社会共同体产生利益矛盾，最后剩下来的总是一种更有利群体生存的模式，这个模式下的规则并无道德可言，或者说这就是社会道德的起源。这同时也是一个路径依赖的过程，总会带有一些副产品，很多时候我们就是通过副产品来回溯过去。如同对进化过程的研究一致，使用幸存者就是最好的或最合理的逻辑是不恰当的，我们需要通过回溯来发现一些制度历史上的合理性与偶然性，逻辑自洽并不代表历史真相，这点对科研认识也是很重要的。然而，这个阶段的社会政治经济体制依然很大程度被自然条件所控制，多数规则要么偏向农业社会，要么偏向海洋经济，人类的视野逐渐开阔，但基于血缘与地域的多样化依然可以保留，直到更追求效率的技术与体制规则进一步交互作用，孕育出近代工业社会。</p>
-<p>近代工业社会将分工与效率推向了极致，影响的范围从多个国家推广到了全球。伴随而来的就是一套基本抛弃血缘关系与多样性的陌生人交流法则，地理限制被信息技术与交通技术打破，所有国家都会遵循同样的工业标准，语言也尽可能一致，法律也会去遵循共通的法则。科学研究在这个过程中起了很重要的作用，而工业化也不断向科研提出需求，此时科学研究从精英们的兴趣爱好变成了巨大的财富来源，每一次技术革新都服务了社会，而几乎所有的社会经济体都会拿出资金支持科研。务实一点的国家或企业会对工程学优先发展，而对自然科学的支持则颇有情怀意味，毕竟一旦经济下滑，最先拿不到钱的都是基础科研等见效慢的学科。这种社会整体的功利主义自产生之时就展示了巨大的生命力，甚至不断影响了社会中个体的决策行为。</p>
-<p>时至今日，现代社会基本延续了工业社会对分工与效率的追求，但维持文化多样性与个体-社会相互关系的思考不断涌现。现代社会塑造了个体认知，个体认知却反过来反思现代社会的诸多问题例如民族主义的崛起、环境保护、气候变化、社会隔离与歧视、机会公平、人口老龄化、战争暴力、谣言传播、经济危机、金融危机、人工智能等。这些问题的根源有相当比例是社会政治经济体制的构建过程出现了漏洞，而今的科技发展把一些问题放大了，或者说这个系统需要打补丁了。毋庸置疑，科研对于现实问题的解决是一个靠谱的选择，其他选择例如宗教、回归原始生活更多的是一种消极的保守策略，选择那些方法并不会真的解决问题。这样如果给科研立块大牌坊，我想最好的题词就是从方法论层面解决社会问题。换言之，科研总是面向问题解决问题的一个社会分工，是一个职业，既不神圣也不低俗，从事这个职业的人总在用科学方法论解决实际问题，有时候也是揭示问题或为问题找一个解释。这个需求是根源，也就是说如果你科研自认为做的不错但跟现实脱节，那么即使留在象牙塔，也会面临自我认同与社会认同不协调的困境，需要你有额外的资源平衡。</p>
-<p>放到经济视角下，这个职业也是有温饱小康问题的，也是一个利益集团，需要人代表到国会或人大去抢财政的分配，还要跟不同学科去抢所有的科研分配，充满了复杂的博弈过程，原来是陌生人之间，以后可能会发展到人跟机器或规则之间。这个职业有光环，但退却光环都是一个个为生计奔波劳碌的现代人，当然，不同人有着不同的生计标准。</p>
-</div>
-<div id="-" class="section level2">
-<h2><span class="header-section-number">2.3</span> 科研精细化-科研民工的突围</h2>
-<p>IT领域有一种职业叫做全栈工程师，指那种运用多领域知识完成产品的工作类型。最近发生的一些事让我越来越觉得科研领域也需要类似的概念，姑且就叫全栈科学家吧。</p>
-<p>国内研究生培养的一个短板就是综合性不强，或者说科研民工，走出自己专业就不太敢想了，国外的研究生则对不懂的部分也有自信，最终能攒出一个结果，而这个结果可能要同时用到电子工程、材料、分析化学、机械及数据分析等多个方面的技术，即使没学过，他们也会通过学校找到合作的人。反观国内，研究生选课都很保守，不是自己以后研究领域的东西不选或直接让导师选，国外也会这样，但真遇到需要跨学科解决的问题从导师到学生都会想办法而不是觉得这东西不是我的领域就不研究了。打比方我设计一个算法，效果不错，但问题是别人不会用，那么就应该把算法打包成函数甚至设计一个简易图形界面让明白用途但不想理解算法的人用。但这个过程就不能靠分工了，得有人全流程都明白并进行整合，这种综合性有点类似工程师思维，甲方是同行，你得让同行解决实际问题而不是看你炫技术。基础学科肯定是有发展空间的，但目前基础学科要解决的问题已经都很像工程问题了，所以这类综合能力的问题化聚焦是实验学科研究生很重要的竞争力，痴迷于单一技术而看不到要实际解决的科学问题培养的只能是专家而不是科学家。</p>
-<p>很多人觉得大学负责通识教育与精英教育，研究生要更多关注技能培训成为所谓专家，我觉得这可能是科研民工思想的源头。现状可能却是通识教育与精英教育从来都不如技能培训有吸引力，虽然可能潜力更高，这导致培养出的专家视野总是有局限性，需要在团队里合理配置才会提高解决问题的效率。</p>
-<p>不过专家在团队里并不总是起正面效用，分工促进效率在面对可分解为具体步骤的行业或学科是好使的，但面对真实问题例如实验研究，实验者与数据处理者是不能脱节的。这里团队中指望两拨人放下成见平等交谈是很不现实的，因为占据理论高度的数据处理者或者说统计学家总会觉得做实验的是啥都不懂的。不过你不可能不湿鞋就过河，不了解实验具体操作就在那边对实验设计指指点点只会让实验者与统计学家的隔阂越来越大。所以我觉得解决实际问题需要培养全栈科学家，就是那种从采样到样品分析再到数据分析都有概念的科学家，即使以后实验可以外包也必须要进行所谓脏活的训练，数据科学家需要洗数据，全栈科学家可能连样品都要亲自采集，纸上谈兵绝对不行，养出一堆赵括天天跟你扯术语用的对不对完全就是浪费资源，全部开掉完全不影响进度，他们只是想通过凸显自己的专业性来找面子，根本就不打算解决问题。</p>
-<p>现在的科研民工要有意识地训练自己成为全栈科学家，就算以后不做科研了，对实际问题解决的全流程理解也会让你很容易转行并与其他领域的人交流。更重要的是，这是所谓团队领导力的重要能力基础，几乎所有行业都对管理层培养有着基层轮岗的要求，公务员、医生、厨师、工程师还有律师等行业精英的训练过程都有着严格的全流程培训要求，搞空降或许会带来创新，但不了解步骤的空降几乎都是灾难。所以科研人员可以依赖专业人员，但心里要有问题解决的路线图与原理层的认识。不要过分依赖专家，他们都是为自己发声，只有你自己为你的项目负责，被专家牵着鼻子走对全栈科学家是一种耻辱，保证兼听则明就可以了。</p>
-<p>专业的人喜欢谈差异与术语，解决问题的人更关注问题背后的共性。而统计学家也不要拿起实验设计不够随机与混杂因素工具变量啥的一堆术语去居高临下教育别人，这些问题要是都解决了一个t检验不就天下太平了，还需要统计学家做什么。扎根实际问题然后抽象出可测量的统计量，然后在模型中进行控制或考察，让结果具有可比性与重复性才是更重要的。我觉得统计学家不能固步自封，新技术一直在出现，新理念也一直在出现，自己不懂就去打击是很幼稚的行为。</p>
-<p>现在教学与技术手段已经足够发达了，培养一个全栈科学家可能并不比培养一个专家更困难。上世纪科研界花费了大量精力去构建术语体系与专业学科的墙，这个世纪我们该尝试打破这些意义不大的墙去解决一些复杂而现实的问题了。</p>
-</div>
-<div id="section-2.4" class="section level2">
-<h2><span class="header-section-number">2.4</span> 科学知识的五个层次</h2>
-<div id="section-2.4.1" class="section level3">
-<h3><span class="header-section-number">2.4.1</span> 背景组</h3>
+<div id="section-2.2" class="section level2">
+<h2><span class="header-section-number">2.2</span> 科学知识的五个层次</h2>
+<div id="section-2.2.1" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> 背景组</h3>
 <p>高中毕业水平。不论你学的文还是理，知识一般侧重原理或事实本身，或者说学到的是通识，例如地球是圆的、力学有三大定律、元素周期表是按什么排的…这类知识其实就算老师不教，你看看《十万个为什么》什么的也大概能知道。</p>
 <p>一般而言，科普主要面向知识背景是高中组的，因为绝大多数人不进行科研，就算进行科研其很多科学背景知识也是高中的，因为你大学可能学了某个学科，但另外的学科最理想也是停留在高中阶段。但这部分知识基本不用科普，或者说包含在更广泛的知识普及中就好了，需要思考推理的部分不多，主要是了解事实，形成背景概念。</p>
 </div>
-<div id="section-2.4.2" class="section level3">
-<h3><span class="header-section-number">2.4.2</span> 已知的已知组</h3>
+<div id="section-2.2.2" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> 已知的已知组</h3>
 <p>大学毕业水平。主要指专业知识，例如pm2.5是怎么回事？行星间距离如何测量？端粒长度跟寿命关系…这个是社会大多数人科学背景知识的上限，也是职业化的下限。如果继续深究，基本就是做这一行的才了解，需要经验。目前这个层次的科学知识几乎可以被维基百科覆盖。如果你本科是理工学科，那么拿到学士学位就表明你已经掌握了这部分内容。这部分知识一般有自己的学科框架跟体系，但学科间壁垒明显，如果知识是构建在经验上的那么很有可能被机器超越而失业。</p>
 </div>
-<div id="section-2.4.3" class="section level3">
-<h3><span class="header-section-number">2.4.3</span> 已知的未知组</h3>
+<div id="section-2.2.3" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> 已知的未知组</h3>
 <p>这部分的知识是从已知走向未知，知识都是比较前沿的，很可能被后续结果推翻掉。所以这部分内容是需要不断研究的，但就研究思想层次看，其实即使一线科研工作者自己可能都比较迷糊，大部分人是站在前人基础上往前推进，前人的研究结论容易保存，但思想可能早就消散了。这阶段的知识因为开始走向应用所以学科间开始互通。科研人员的知识水平基本是这个层次的，知道前沿在哪里但还在探索。统计学也是这个阶段常用手段，但需要使用者理解方法本质，人工智能可作为研究方法但无法职业替代，因为探索性的思路还得人来启发。</p>
 </div>
-<div id="section-2.4.4" class="section level3">
-<h3><span class="header-section-number">2.4.4</span> 未知的已知组</h3>
+<div id="section-2.2.4" class="section level3">
+<h3><span class="header-section-number">2.2.4</span> 未知的已知组</h3>
 <p>这个类别文章侧重于整合已有知识进行创新得到的新知识，基本上只有经验很丰富的人才能站到一定高度上理解一个学科。此时谈思想谈逻辑之外要整合学科历史，把发展沿革搞清楚。学科间知识高度互通，只有有洞见的科研人员才能掌握，统计学或人工智能在这个层次知识的失灵，只能摸着石头过河。</p>
 </div>
-<div id="section-2.4.5" class="section level3">
-<h3><span class="header-section-number">2.4.5</span> 未知的未知组</h3>
+<div id="section-2.2.5" class="section level3">
+<h3><span class="header-section-number">2.2.5</span> 未知的未知组</h3>
 <p>这个组就是天花板了，或者走向科幻了。不过我觉得哪怕是科幻也是要读的，因为你可以体会其中思考的乐趣，当然知识背景设定就不要管了。这个组需要你能构建出一个逻辑自洽且符合现实的知识理论体系，其实就是形而上的东西了。我不认为现实世界中可以找出这样的人，但小说中是可以虚构出来的。</p>
 </div>
 </div>
-<div id="section-2.5" class="section level2">
-<h2><span class="header-section-number">2.5</span> 知识体系的时间构建</h2>
+<div id="section-2.3" class="section level2">
+<h2><span class="header-section-number">2.3</span> 知识体系的时间构建</h2>
 <p>除了基于已知未知这种简单的面向科研划分方法，个人知识还需要一个时间与逻辑上的构建，这样可以自洽于其他非科研知识，毕竟科研是有噪音边界的，但知识却不一定有。</p>
 <p>《四库全书》采用了经史子集的划分方法，内在逻辑是把经典的普世价值、过往的经验事实、学科知识与个人文集进行了区分，这样我们可以很容易找到知识的可靠性与归属。个人知识也可以分为形而上的观点理论与形而下的事实经验来区分，日常所见都是事实，前人所见则为历史，幻想与虚构的故事也是未来的存在，所以一个基础的形而下知识体系要有个人经验与历史，侧重对事实的准确描述，而关于未来则可单独开列，因为这类事实并不存在但不妨碍有思考的乐趣。至于形而上的东西，没必要确立经典，要按照逻辑自洽的原则去整理，包括有证据有逻辑的强理论；有逻辑无证据或弱证据的观点及个人经验；如果仅有证据没有观点，可移到形而下部分；仅有逻辑的理论是很危险的，若是科幻小说还值得看，否则不要随意吸收，因为这部分有可能指导改变世界，但尚属于探索，如果你不打算从政或成为企业家，可参考，但如果打算，就要考验个人决策能力了。科学探索恰恰可能也在这个地方，所以得学会用从观察与实验中提炼知识的能力，至于是否改变世界，那是你的自由。</p>
 <p>简单说就是你可以创建一个笔记系统来整合你的知识：形而下的基础数据与案例库、历史沿革及信息检索方法与形而上的理论观点库，区分强理论与弱理论并学会总结理论。要学会把新信息整合到这个知识体系中去并持续整合，形成完整独立的知识库，这样就不容易被新思想所迷惑，总能找到位置。</p>
@@ -409,7 +414,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["sciguide.epub"],
+"download": ["sciguide.pdf", "sciguide.epub"],
 "toc": {
 "collapse": "subsection"
 }
@@ -417,6 +422,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

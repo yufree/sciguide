@@ -10,9 +10,9 @@ bibliography:
 - book.bib
 - packages.bib
 site: bookdown::bookdown_site
-mainfontoptions: SimHei
-sansfontoptions: FangSong
-monofontoptions: KaiTi
+mainfontoptions: STHeiti
+sansfontoptions: STFangsong
+monofontoptions: STKaiti
 ---
 
 # 前言

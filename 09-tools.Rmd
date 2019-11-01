@@ -51,7 +51,7 @@
 
 ## 幻灯片制作 {-}
 
-幻灯片制作的工具不仅仅限于微软出品的PowerPoint（ppt）或苹果公司出品的 keynote，但不可否认的是可见即所得的工具对于幻灯片的制作是很方便的。基于 Beamer 的幻灯片虽然足够简洁美观，但也存在一定的制作难度，需要学习 TeX。基于 html5 技术的幻灯片一般支持 markdown 语法编辑，样式可用 CSS 模版进行控制。例如 [xaringan](https://github.com/yihui/xaringan) 就是基于[remark.js](https://remarkjs.com) 这一网页幻灯片制作工具配合Rmarkdown来制作幻灯片的。不过，幻灯片制作不要沉迷于模版选择，只要不出错就够了，太花哨的功能喧宾夺主。
+幻灯片制作的工具不仅仅限于微软出品的PowerPoint（ppt）或苹果公司出品的 keynote，但不可否认的是可见即所得的工具对于幻灯片的制作是很方便的。基于 Beamer 的幻灯片虽然足够简洁美观，但也存在一定的制作难度，需要学习 TeX。基于 html5 技术的幻灯片一般支持 markdown 语法编辑，样式可用 CSS 模版进行控制。例如 [xaringan](https://github.com/yihui/xaringan) 就是基于[remark.js](https://remarkjs.com) 这一网页幻灯片制作工具配合Rmarkdown来制作幻灯片的。不过，幻灯片制作不要沉迷于模版选择，只要不出错就够了，太花哨的功能喧宾夺主。不过从互动角度出发一些挂件例如[countdown](https://pkg.garrickadenbuie.com/countdown) 来进行倒计时, [DirectPoll](https://directpoll.com) 进行实时投票统计，也可以同时开[视频](https://yihui.name/en/2017/12/html5-camera/)或进行[语音输入](https://yihui.shinyapps.io/voice/)。 
 
 同样，[谷歌幻灯片](https://www.google.com/intl/zh-CN_us/slides/about/)可以实现在线制作幻灯片。很多网站可以直接制作网页版幻灯片，例如基于[reveal.js](https://revealjs.com)的[slides](https://slides.com/) 或基于有漂亮切换类似[prez](https://prezi.com/)的[impress.js](https://impress.js.org/#/source)的[strut](http://strut.io)。在线制作幻灯片可以让分享变得很容易并提高了曝光度，很多网站例如[slideshare](https://www.slideshare.net/) 或 [Speaker Deck](https://speakerdeck.com/) 也支持上传本地幻灯片进行分享。
 

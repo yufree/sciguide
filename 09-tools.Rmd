@@ -53,7 +53,7 @@
 
 科研数据在不涉密情况下一定要备份，实验室要配备专用数据处理电脑，用NAS来进行本地备份，工作文件夹原则上在实验室电脑上，通过远程登录软件例如 [TeamViewer](https://www.teamviewer.com/en-us/) 或终端来处理数据。如果使用个人电脑，工作文件夹要做好云存储，国内的话[iCloud](https://www.icloud.com/)或[OneDrive]( https://onedrive.live.com/about/en-us/)或[坚果云](https://www.jianguoyun.com/#/)就可以，国外可选[DropBox](https://www.dropbox.com/)或[谷歌云端硬盘](https://drive.google.com/drive/my-drive)。文献可以通过[坚果云](https://www.jianguoyun.com/#/)的 Webdev 来同步全文。完成的项目要及时存档，可使用[百度网盘](https://pan.baidu.com/)。
 
-## 实验室管理
+## 实验室管理 {-}
 
 实验室内部管理可使用[slack](https://slack.com/)或国内的[钉钉](https://www.dingtalk.com/)，最好区别工作与私人的交流工具。项目管理可以直接用GitHub项目功能来做，分为计划、进行中与完成三部分，每次组会进行更新。
 

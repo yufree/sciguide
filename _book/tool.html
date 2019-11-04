@@ -290,12 +290,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文献管理-1"><i class="fa fa-check"></i>文献管理</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据处理与绘图"><i class="fa fa-check"></i>数据处理与绘图</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据同步"><i class="fa fa-check"></i>数据同步</a></li>
-<li class="chapter" data-level="9.7" data-path="tool.html"><a href="tool.html#实验室管理"><i class="fa fa-check"></i><b>9.7</b> 实验室管理</a></li>
+<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#实验室管理"><i class="fa fa-check"></i>实验室管理</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#幻灯片制作"><i class="fa fa-check"></i>幻灯片制作</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#学术交流"><i class="fa fa-check"></i>学术交流</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据分享"><i class="fa fa-check"></i>数据分享</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#代码管理"><i class="fa fa-check"></i>代码管理</a><ul>
-<li class="chapter" data-level="9.7.1" data-path="tool.html"><a href="tool.html#软件编译流程"><i class="fa fa-check"></i><b>9.7.1</b> 软件编译流程</a></li>
+<li class="chapter" data-level="9.6.14" data-path="tool.html"><a href="tool.html#软件编译流程"><i class="fa fa-check"></i><b>9.6.14</b> 软件编译流程</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#r包管理"><i class="fa fa-check"></i>R包管理</a></li>
 </ul></li>
 </ul></li>
@@ -367,8 +367,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>数据同步</h2>
 <p>科研数据在不涉密情况下一定要备份，实验室要配备专用数据处理电脑，用NAS来进行本地备份，工作文件夹原则上在实验室电脑上，通过远程登录软件例如 <a href="https://www.teamviewer.com/en-us/">TeamViewer</a> 或终端来处理数据。如果使用个人电脑，工作文件夹要做好云存储，国内的话<a href="https://www.icloud.com/">iCloud</a>或<a href="https://onedrive.live.com/about/en-us/">OneDrive</a>或<a href="https://www.jianguoyun.com/#/">坚果云</a>就可以，国外可选<a href="https://www.dropbox.com/">DropBox</a>或<a href="https://drive.google.com/drive/my-drive">谷歌云端硬盘</a>。文献可以通过<a href="https://www.jianguoyun.com/#/">坚果云</a>的 Webdev 来同步全文。完成的项目要及时存档，可使用<a href="https://pan.baidu.com/">百度网盘</a>。</p>
 </div>
-<div id="实验室管理" class="section level2">
-<h2><span class="header-section-number">9.7</span> 实验室管理</h2>
+<div id="实验室管理" class="section level2 unnumbered">
+<h2>实验室管理</h2>
 <p>实验室内部管理可使用<a href="https://slack.com/">slack</a>或国内的<a href="https://www.dingtalk.com/">钉钉</a>，最好区别工作与私人的交流工具。项目管理可以直接用GitHub项目功能来做，分为计划、进行中与完成三部分，每次组会进行更新。</p>
 </div>
 <div id="幻灯片制作" class="section level2 unnumbered">
@@ -402,7 +402,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Good writers borrow from other authors, great authors steal outright</p>
 </blockquote>
 <div id="软件编译流程" class="section level3">
-<h3><span class="header-section-number">9.7.1</span> 软件编译流程</h3>
+<h3><span class="header-section-number">9.6.14</span> 软件编译流程</h3>
 <p>C语言源码编译运行过程是这样的：先预处理源码，调入模块，然后转换成汇编语言文件，汇编语言文件可以被汇编器转为机器码，然后通过连接器合并为可执行文件，最后加载到内存里运行。因为C语言是多数操作系统的基础，所以多数操作系统也自带对应的C编译器。更重要的是，C语言的库很丰富，也就是工具函数比较多，换别的就得自己写。这是很有意思的路径依赖案例，事实上任何语言都应该可以拿来写操作系统，不过C是在开发Unix时候设计出来的，现在流行的开发级操作系统都是unix/类unix操作系统，加上C在内存管理与CPU交互上的先天优势，历史机遇下成为了主流。</p>
 <p>C的核心地位还体现在很多高级语言的编译器是构建在C之上的，或者是C++之上，多数高级语言都通过限制自由度（例如不让操作内存、功能模块化等）来实现上手容易与较高的开发效率，但只要关注程序性能，肯定回去学C或C++的。GNU的GCC编译器是一个相对通用的编译器合集，可以用来编译包括C在内的多种语言。然而，GCC也是有历史包袱的，所有有人就另起炉灶单独针对C或C++重写了效率更高的编译器及其后台，这就是苹果的LLVM项目与clang编译器。但要注意的是LLVM支持的语言不如GCC多，所以如果你还要用到fortain或java编译器，那就还是老老实实用GCC吧，或者cmake的时候分别指定编译器，只要你不嫌麻烦。一般而言，效率与性能往往不能兼得。</p>
 <p>高级语言的编译过程跟相对底层的C或C++是不一样的，Java就是自己定义了一套运行环境JVM，编译出的文件也是JVM可读的，这就提高了Java的可移植性，降低了跨平台开发的难度，当然你得保证这些平台上可以运行JVM。其实很多高级语言是解释型的，REPL里可直接运行代码，但同样会有人为高级语言写编译器来提高运行性能，这个是按需求来。我个人感觉是用REPL的人一般是应用层的，关心有没有满足自己需求的函数；用编译语言的人一般是开发层的，关心软件工程及性能。然而，高级语言里如果打算提高运行效率，也会提供C或C++的接口让程序员可以通过外力来提高自由度。过度的功能封装实际也限制了高级语言的应用场景。</p>

@@ -126,6 +126,10 @@ elevator pitch
 - 多使用图片
 - 谨慎介入糊涂账话题
 - [均值、中位数等单一数值常在媒体报道跟论文中用来指代群体，但其实牺牲了很多重要的分布细节进而产生误导，甚至让人产生被平均的感受，而直接展示整体其实并不困难，重要的是作者/研究者应放开心态，从引导读者认同自己观点转为让读者自己探索出结论](http://flowingdata.com/2017/07/07/small-summary-stats/)
+- 多媒体 v.s. 文字
+- 快速反馈交流
+- 合作全球化与圈子化
+- 跨学科研究中的囚徒困境
 
 ## 讲课
 
@@ -160,7 +164,7 @@ elevator pitch
 
 ### 互动学习
 
-提高课堂参与度的组织形式，例如分组相互讨论
+提高课堂参与度的组织形式，例如分组相互讨论。翻转课堂。
 
 ### 课程设计
 
@@ -182,8 +186,8 @@ elevator pitch
 
 - slack／hipchat
 - 按项目交流
-- 定期交流
-- 人员管理要及时
+- 定期交流，组会分为个人组会与集体组会，个人组会两周一次，需要交进度报告存档，仅学生与老师讨论。集体组会一周一次，每次一个人讲项目大家讨论，一个人讲文献，然后讨论实验室内部管理问题，最后讨论聚会等科研以外问题，每学期初定下各次组会主持人。
+- 人员管理要及时，新成员两轮面试
 - 分享文献
 - 分享实验室内部规定
 
@@ -255,9 +259,9 @@ elevator pitch
 - 预算
 - 评审
 
-## 学术声誉
+## 学术评价
 
-- 论文第一
+- 论文第一 [影响因子优化问题](https://onlinelibrary.wiley.com/doi/full/10.1111/eci.13151)
 - 定量化
 - altmetric
 - cv优化
@@ -268,6 +272,8 @@ elevator pitch
 - 商用个人用email分开
 - 线上线下一致
 - [署名问题与可能性空间](https://liorpachter.wordpress.com/2018/11/03/the-combinatorics-of-authorship-in-the-biological-sciences/)
+- [预印本、开放获取期刊与社交网络互动是当前学术界的新潮流，不过也可能成为学术圈自恋的新战场，更高下载量与社交媒体转发评分有可能成为科研人员继SCI论文、影响因子与h指数后新的“优化”指数。](https://liorpachter.wordpress.com/2019/01/29/technologies-of-narcissism/)
+
 
 ## 学术道德／伦理
 
@@ -282,3 +288,7 @@ elevator pitch
 - [巫毒娃娃的PNAS](http://andrewgelman.com/2018/04/01/april-fools-post-dead-serious/)
 
 - [数学家关于进化的争论](https://liorpachter.wordpress.com/2018/09/17/mathematics-matters/)
+
+- 公民科学家
+
+-  [发表一篇好还是多篇好的讨论](https://deevybee.blogspot.com/2018/07/one-big-study-or-two-small-studies.html)

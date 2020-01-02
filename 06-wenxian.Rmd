@@ -42,6 +42,7 @@
 - 追踪课题组
 - [科技文献已经超越了人脑处理信息的能力了](https://www.alternet.org/news-amp-politics/science-has-outgrown-human-mind-and-its-limited-capacities-process-information)
 - 论文的通货膨胀
+- 以教带学
 
 文献管理软件方面有收费的也有免费的，一般而言可通过咨询自己所在科研机构的图书馆来获取是否购买了相应的软件。收费软件我使用过 Endnote、 papers 及国产的 Noteexpress，应该说早期它们之间差异还是明显的，但到今天基本同质化了。
 

@@ -2,8 +2,11 @@
 
 ## 简历
 
-cv v.s. resume
-cv 是完整的，resume一般1-2页，结果导向
+- cv v.s. resume
+- cv 是完整的，resume一般1-2页，结果导向
+- 常用ID 简短难重复
+- 商用个人用email分开
+- 线上线下一致
 
 ## 邮件
 
@@ -19,13 +22,64 @@ look into eye
 
 elevator pitch
 
+small talk
+
 了解公司运营、财报、新闻
+
+STAR 方法回答问题
+
+- Situation: Set the scene and give the necessary details of your example.
+- Task: Describe what your responsibility was in that situation.
+- Action: Explain exactly what steps you took to address it.
+- Result: Share what outcomes your actions achieved.
 
 ## 工资
 
 涨工资与向上管理
 
+## 高效反馈
+
+Performance feedback is the on-going process between employee and manager where information is exchanged concerning the performance expected and the performance exhibited.
+
+- Specific rather than general.
+- Focused on behavior rather than on the person. 
+- Given in order to help, not hurt.
+- Directed toward behavior which the receiver can do something about. 
+- Well-timed.
+- Limited to the amount of information the receiver can use rather than the amount you would like to give. 
+- Checked for clarity.
+- Followed up on at a later date.
+
+- Giving negative feedback: correcting poor performance
+
+Note poor performance immediately upon observing it. 
+Specify what does not meet expectations. 
+Refer to performance standards. 
+Note the effect of observed performance on work group/organization. 
+Model or restate appropriate performance. 
+Describe negative consequences. 
+Obtain agreement on the problem. 
+Mutually seek solutions. 
+Agree on action plan. 
+Encourage improvement. 
+Set date for check (if appropriate). 
+Don't belabor a point. 
+Move forward after the discussion. 
+Avoid giving correction in public. 
+
+- Giving positive feedback: praising good performance
+
+Praise immediately on observing good performance. 
+Be specific about what was good about performance, refer to performance standards. 
+Note how meeting (or exceeding) standards helps  work group/organization meet strategic objectives. 
+Encourage maintaining this level of performance. 
+
+
 ## 领导力
+
+## 职业规划
+
+- 三到五年一个周期
 
 ## 职业
 
@@ -37,11 +91,23 @@ elevator pitch
 
 hard money soft money
 
+企业博后
+
 ### 常任轨
+
+- 常任轨研究教授
+- 常任轨文理学院教授
 
 ### 非常任轨
 
-行政工作
+- 研究性教职
+- 行政工作
+
+### 非高等教育
+
+- k12教育
+
+### 政府
 
 ### 科学顾问
 
@@ -53,17 +119,42 @@ in house
 
 ### 咨询
 
+解决问题的方案
+
 ### 企业科研/药企
+
+药企与医学院
+
+### 销售与应用专家及营销
+
+主要在仪器公司工作，为科研需求提供支持。
 
 ### 创业
 
 ### 编辑/出版社
 
+认真严谨但更重要的是对学科前沿的把握
+
 ### NGO
+
+主要管理基金，产学研结合。
 
 ### 金融
 
+工作压力大，资金流全流程了解
+
 ### 公共卫生
+
+复杂性学科
+
+### 科学传播
+
+把自己的成果讲给别人
+
+### 医药交流
+
+把科研进展带给医生（medical science liaison）
+帮助药厂把新药与疗法传播给客户（medical communication）
 
 ### 数据科学家
 

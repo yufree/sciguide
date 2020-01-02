@@ -2,3 +2,5 @@ book_filename: "sciguide"
 language:
   ui:
     chapter_name: "坑 "
+output_dir: docs
+delete_merged_file: true

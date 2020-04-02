@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 3 科研现状概览 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 3 科研现状概览 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-01-02" />
+<meta name="date" content="2020-04-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,9 +53,9 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +64,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +82,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -133,29 +135,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> 现代科研</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#科学哲学沿革"><i class="fa fa-check"></i><b>2.1</b> 科学哲学沿革</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#古希腊"><i class="fa fa-check"></i><b>2.1.1</b> 古希腊</a></li>
-<li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#中世纪"><i class="fa fa-check"></i><b>2.1.2</b> 中世纪</a></li>
-<li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#年以后"><i class="fa fa-check"></i><b>2.1.3</b> 1500年以后</a></li>
-<li class="chapter" data-level="2.1.4" data-path="intro.html"><a href="intro.html#逻辑实证主义"><i class="fa fa-check"></i><b>2.1.4</b> 逻辑实证主义</a></li>
-<li class="chapter" data-level="2.1.5" data-path="intro.html"><a href="intro.html#否证主义"><i class="fa fa-check"></i><b>2.1.5</b> 否证主义</a></li>
-<li class="chapter" data-level="2.1.6" data-path="intro.html"><a href="intro.html#历史主义"><i class="fa fa-check"></i><b>2.1.6</b> 历史主义</a></li>
-<li class="chapter" data-level="2.1.7" data-path="intro.html"><a href="intro.html#无政府主义"><i class="fa fa-check"></i><b>2.1.7</b> 无政府主义</a></li>
-<li class="chapter" data-level="2.1.8" data-path="intro.html"><a href="intro.html#实用主义"><i class="fa fa-check"></i><b>2.1.8</b> 实用主义</a></li>
-<li class="chapter" data-level="2.1.9" data-path="intro.html"><a href="intro.html#其他"><i class="fa fa-check"></i><b>2.1.9</b> 其他</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#科学知识的五个层次"><i class="fa fa-check"></i><b>2.1</b> 科学知识的五个层次</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#背景组"><i class="fa fa-check"></i><b>2.1.1</b> 背景组</a></li>
+<li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#已知的已知组"><i class="fa fa-check"></i><b>2.1.2</b> 已知的已知组</a></li>
+<li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#已知的未知组"><i class="fa fa-check"></i><b>2.1.3</b> 已知的未知组</a></li>
+<li class="chapter" data-level="2.1.4" data-path="intro.html"><a href="intro.html#未知的已知组"><i class="fa fa-check"></i><b>2.1.4</b> 未知的已知组</a></li>
+<li class="chapter" data-level="2.1.5" data-path="intro.html"><a href="intro.html#未知的未知组"><i class="fa fa-check"></i><b>2.1.5</b> 未知的未知组</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#科学知识的五个层次"><i class="fa fa-check"></i><b>2.2</b> 科学知识的五个层次</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#背景组"><i class="fa fa-check"></i><b>2.2.1</b> 背景组</a></li>
-<li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#已知的已知组"><i class="fa fa-check"></i><b>2.2.2</b> 已知的已知组</a></li>
-<li class="chapter" data-level="2.2.3" data-path="intro.html"><a href="intro.html#已知的未知组"><i class="fa fa-check"></i><b>2.2.3</b> 已知的未知组</a></li>
-<li class="chapter" data-level="2.2.4" data-path="intro.html"><a href="intro.html#未知的已知组"><i class="fa fa-check"></i><b>2.2.4</b> 未知的已知组</a></li>
-<li class="chapter" data-level="2.2.5" data-path="intro.html"><a href="intro.html#未知的未知组"><i class="fa fa-check"></i><b>2.2.5</b> 未知的未知组</a></li>
-</ul></li>
-<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#知识体系的时间构建"><i class="fa fa-check"></i><b>2.3</b> 知识体系的时间构建</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#知识体系的时间构建"><i class="fa fa-check"></i><b>2.2</b> 知识体系的时间构建</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="view.html"><a href="view.html"><i class="fa fa-check"></i><b>3</b> 科研现状概览</a><ul>
 <li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#问题为导向"><i class="fa fa-check"></i><b>3.1</b> 问题为导向</a></li>
-<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#专业性与综合性的矛盾"><i class="fa fa-check"></i><b>3.2</b> 专业性与综合性的矛盾</a></li>
+<li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#专业与综合"><i class="fa fa-check"></i><b>3.2</b> 专业与综合</a></li>
 <li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#研究生教育的困境"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
 <li class="chapter" data-level="3.4" data-path="view.html"><a href="view.html#毕业延期问题"><i class="fa fa-check"></i><b>3.4</b> 毕业延期问题</a></li>
 <li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的就业问题"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
@@ -163,33 +154,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#规律的失效"><i class="fa fa-check"></i><b>4.1.1</b> 规律的失效</a></li>
-<li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#哈森奇效应"><i class="fa fa-check"></i><b>4.1.2</b> 哈森奇效应</a></li>
-<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#观察研究的敌人-反馈"><i class="fa fa-check"></i><b>4.1.3</b> 观察研究的敌人-反馈</a></li>
+<li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#古希腊"><i class="fa fa-check"></i><b>4.1.1</b> 古希腊</a></li>
+<li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#中世纪"><i class="fa fa-check"></i><b>4.1.2</b> 中世纪</a></li>
+<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#年以后"><i class="fa fa-check"></i><b>4.1.3</b> 1500年以后</a></li>
+<li class="chapter" data-level="4.1.4" data-path="thought.html"><a href="thought.html#逻辑实证主义"><i class="fa fa-check"></i><b>4.1.4</b> 逻辑实证主义</a></li>
+<li class="chapter" data-level="4.1.5" data-path="thought.html"><a href="thought.html#否证主义"><i class="fa fa-check"></i><b>4.1.5</b> 否证主义</a></li>
+<li class="chapter" data-level="4.1.6" data-path="thought.html"><a href="thought.html#历史主义"><i class="fa fa-check"></i><b>4.1.6</b> 历史主义</a></li>
+<li class="chapter" data-level="4.1.7" data-path="thought.html"><a href="thought.html#无政府主义"><i class="fa fa-check"></i><b>4.1.7</b> 无政府主义</a></li>
+<li class="chapter" data-level="4.1.8" data-path="thought.html"><a href="thought.html#实用主义"><i class="fa fa-check"></i><b>4.1.8</b> 实用主义</a></li>
+<li class="chapter" data-level="4.1.9" data-path="thought.html"><a href="thought.html#其他"><i class="fa fa-check"></i><b>4.1.9</b> 其他</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="thought.html"><a href="thought.html#模型思维"><i class="fa fa-check"></i><b>4.2</b> 模型思维</a><ul>
 <li class="chapter" data-level="4.2.1" data-path="thought.html"><a href="thought.html#可编程"><i class="fa fa-check"></i><b>4.2.1</b> 可编程</a></li>
-<li class="chapter" data-level="4.2.2" data-path="thought.html"><a href="thought.html#个体整体模型"><i class="fa fa-check"></i><b>4.2.2</b> 个体整体模型</a></li>
-<li class="chapter" data-level="4.2.3" data-path="thought.html"><a href="thought.html#仿真模型"><i class="fa fa-check"></i><b>4.2.3</b> 仿真模型</a></li>
+<li class="chapter" data-level="4.2.2" data-path="thought.html"><a href="thought.html#决策模型"><i class="fa fa-check"></i><b>4.2.2</b> 决策模型</a></li>
+<li class="chapter" data-level="4.2.3" data-path="thought.html"><a href="thought.html#个体-整体模型"><i class="fa fa-check"></i><b>4.2.3</b> 个体-整体模型</a></li>
+<li class="chapter" data-level="4.2.4" data-path="thought.html"><a href="thought.html#动力学模型"><i class="fa fa-check"></i><b>4.2.4</b> 动力学模型</a></li>
+<li class="chapter" data-level="4.2.5" data-path="thought.html"><a href="thought.html#求解模型"><i class="fa fa-check"></i><b>4.2.5</b> 求解模型</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="thought.html"><a href="thought.html#统计思维"><i class="fa fa-check"></i><b>4.3</b> 统计思维</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="thought.html"><a href="thought.html#统计量"><i class="fa fa-check"></i><b>4.3.1</b> 统计量</a></li>
-<li class="chapter" data-level="4.3.2" data-path="thought.html"><a href="thought.html#回归"><i class="fa fa-check"></i><b>4.3.2</b> 回归</a></li>
-<li class="chapter" data-level="4.3.3" data-path="thought.html"><a href="thought.html#概率"><i class="fa fa-check"></i><b>4.3.3</b> 概率</a></li>
-<li class="chapter" data-level="4.3.4" data-path="thought.html"><a href="thought.html#方差"><i class="fa fa-check"></i><b>4.3.4</b> 方差</a></li>
-<li class="chapter" data-level="4.3.5" data-path="thought.html"><a href="thought.html#因果推断"><i class="fa fa-check"></i><b>4.3.5</b> 因果推断</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="thought.html"><a href="thought.html#最优化思维"><i class="fa fa-check"></i><b>4.4</b> 最优化思维</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="thought.html"><a href="thought.html#梯度下降"><i class="fa fa-check"></i><b>4.4.1</b> 梯度下降</a></li>
-<li class="chapter" data-level="4.4.2" data-path="thought.html"><a href="thought.html#动态规划"><i class="fa fa-check"></i><b>4.4.2</b> 动态规划</a></li>
-</ul></li>
-<li class="chapter" data-level="4.5" data-path="thought.html"><a href="thought.html#估算法"><i class="fa fa-check"></i><b>4.5</b> 估算法</a><ul>
-<li class="chapter" data-level="4.5.1" data-path="thought.html"><a href="thought.html#费米估计"><i class="fa fa-check"></i><b>4.5.1</b> 费米估计</a></li>
+<li class="chapter" data-level="4.3.1" data-path="thought.html"><a href="thought.html#抽象"><i class="fa fa-check"></i><b>4.3.1</b> 抽象</a></li>
+<li class="chapter" data-level="4.3.2" data-path="thought.html"><a href="thought.html#似然度"><i class="fa fa-check"></i><b>4.3.2</b> 似然度</a></li>
+<li class="chapter" data-level="4.3.3" data-path="thought.html"><a href="thought.html#回归"><i class="fa fa-check"></i><b>4.3.3</b> 回归</a></li>
+<li class="chapter" data-level="4.3.4" data-path="thought.html"><a href="thought.html#因果分析"><i class="fa fa-check"></i><b>4.3.4</b> 因果分析</a></li>
+<li class="chapter" data-level="4.3.5" data-path="thought.html"><a href="thought.html#残差"><i class="fa fa-check"></i><b>4.3.5</b> 残差</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="exp.html"><a href="exp.html"><i class="fa fa-check"></i><b>5</b> 实验</a><ul>
 <li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#实验设计原则"><i class="fa fa-check"></i><b>5.1</b> 实验设计原则</a></li>
-<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a></li>
+<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="exp.html"><a href="exp.html#信度效度"><i class="fa fa-check"></i><b>5.2.1</b> 信度效度</a></li>
+<li class="chapter" data-level="5.2.2" data-path="exp.html"><a href="exp.html#均质异质性"><i class="fa fa-check"></i><b>5.2.2</b> 均质异质性</a></li>
+</ul></li>
 <li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#定量实验"><i class="fa fa-check"></i><b>5.3</b> 定量实验</a><ul>
 <li class="chapter" data-level="5.3.1" data-path="exp.html"><a href="exp.html#基线"><i class="fa fa-check"></i><b>5.3.1</b> 基线</a></li>
 <li class="chapter" data-level="5.3.2" data-path="exp.html"><a href="exp.html#指标化"><i class="fa fa-check"></i><b>5.3.2</b> 指标化</a></li>
@@ -206,18 +201,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1.6" data-path="data.html"><a href="data.html#多重比较简略选择指南"><i class="fa fa-check"></i><b>6.1.6</b> 多重比较简略选择指南</a></li>
 <li class="chapter" data-level="6.1.7" data-path="data.html"><a href="data.html#参考资料"><i class="fa fa-check"></i><b>6.1.7</b> 参考资料</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.2</b> 多重检验</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="data.html"><a href="data.html#整体错误率family-wise-error-rate控制"><i class="fa fa-check"></i><b>6.2.1</b> 整体错误率（Family-wise error rate）控制</a></li>
-<li class="chapter" data-level="6.2.2" data-path="data.html"><a href="data.html#小结"><i class="fa fa-check"></i><b>6.2.2</b> 小结</a></li>
-</ul></li>
+<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.2</b> 多重检验</a></li>
 <li class="chapter" data-level="6.3" data-path="data.html"><a href="data.html#贝叶斯统计"><i class="fa fa-check"></i><b>6.3</b> 贝叶斯统计</a></li>
 <li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#线性模型"><i class="fa fa-check"></i><b>6.4</b> 线性模型</a></li>
-<li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#模型"><i class="fa fa-check"></i><b>6.5</b> 模型</a></li>
-<li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#可视化"><i class="fa fa-check"></i><b>6.6</b> 可视化</a></li>
-<li class="chapter" data-level="6.7" data-path="data.html"><a href="data.html#重采样"><i class="fa fa-check"></i><b>6.7</b> 重采样</a></li>
-<li class="chapter" data-level="6.8" data-path="data.html"><a href="data.html#并行计算"><i class="fa fa-check"></i><b>6.8</b> 并行计算</a></li>
-<li class="chapter" data-level="6.9" data-path="data.html"><a href="data.html#集群计算"><i class="fa fa-check"></i><b>6.9</b> 集群计算</a></li>
-<li class="chapter" data-level="6.10" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.10</b> 容器技术</a></li>
+<li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#网络模型"><i class="fa fa-check"></i><b>6.5</b> 网络模型</a></li>
+<li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#算法"><i class="fa fa-check"></i><b>6.6</b> 算法</a></li>
+<li class="chapter" data-level="6.7" data-path="data.html"><a href="data.html#可视化"><i class="fa fa-check"></i><b>6.7</b> 可视化</a></li>
+<li class="chapter" data-level="6.8" data-path="data.html"><a href="data.html#重采样"><i class="fa fa-check"></i><b>6.8</b> 重采样</a></li>
+<li class="chapter" data-level="6.9" data-path="data.html"><a href="data.html#并行计算"><i class="fa fa-check"></i><b>6.9</b> 并行计算</a></li>
+<li class="chapter" data-level="6.10" data-path="data.html"><a href="data.html#集群计算"><i class="fa fa-check"></i><b>6.10</b> 集群计算</a></li>
+<li class="chapter" data-level="6.11" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.11</b> 容器技术</a></li>
+<li class="chapter" data-level="6.12" data-path="data.html"><a href="data.html#云计算"><i class="fa fa-check"></i><b>6.12</b> 云计算</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -237,9 +231,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8" data-path="life.html"><a href="life.html"><i class="fa fa-check"></i><b>8</b> 学术生活</a><ul>
 <li class="chapter" data-level="8.1" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.1</b> 项目管理</a><ul>
-<li class="chapter" data-level="8.1.1" data-path="life.html"><a href="life.html#香肠战术与拖延症"><i class="fa fa-check"></i><b>8.1.1</b> 香肠战术与拖延症</a></li>
-<li class="chapter" data-level="8.1.2" data-path="life.html"><a href="life.html#时间管理"><i class="fa fa-check"></i><b>8.1.2</b> 时间管理</a></li>
-<li class="chapter" data-level="8.1.3" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.1.3</b> 笔记管理</a></li>
+<li class="chapter" data-level="8.1.1" data-path="life.html"><a href="life.html#香肠战术"><i class="fa fa-check"></i><b>8.1.1</b> 香肠战术</a></li>
+<li class="chapter" data-level="8.1.2" data-path="life.html"><a href="life.html#风险管理"><i class="fa fa-check"></i><b>8.1.2</b> 风险管理</a></li>
+<li class="chapter" data-level="8.1.3" data-path="life.html"><a href="life.html#时间管理"><i class="fa fa-check"></i><b>8.1.3</b> 时间管理</a></li>
+<li class="chapter" data-level="8.1.4" data-path="life.html"><a href="life.html#思维导图"><i class="fa fa-check"></i><b>8.1.4</b> 思维导图</a></li>
+<li class="chapter" data-level="8.1.5" data-path="life.html"><a href="life.html#头脑风暴"><i class="fa fa-check"></i><b>8.1.5</b> 头脑风暴</a></li>
+<li class="chapter" data-level="8.1.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.1.6</b> SWOT分析</a></li>
+<li class="chapter" data-level="8.1.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.1.7</b> 笔记管理</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.2</b> 学术出版</a><ul>
 <li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.2.1</b> 期刊论文</a></li>
@@ -255,53 +253,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.3.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.3.4</b> 听报告</a></li>
 </ul></li>
 <li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.4</b> 审稿</a></li>
-<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.5</b> 学术合作</a><ul>
-<li class="chapter" data-level="8.5.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.5.1</b> 数据共享</a></li>
-<li class="chapter" data-level="8.5.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.5.2</b> 社交网络</a></li>
+<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.5</b> 学术合作</a></li>
+<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.6</b> 利益冲突</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.6.1</b> 数据共享</a></li>
+<li class="chapter" data-level="8.6.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.6.2</b> 社交网络</a></li>
 </ul></li>
-<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.6</b> 讲课</a><ul>
-<li class="chapter" data-level="8.6.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.6.1</b> 学生如何学习？</a></li>
-<li class="chapter" data-level="8.6.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.6.2</b> 如何激励学生？</a></li>
-<li class="chapter" data-level="8.6.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.6.3</b> 评价学习</a></li>
-<li class="chapter" data-level="8.6.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.6.4</b> 课程设计</a></li>
-<li class="chapter" data-level="8.6.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.6.5</b> 互动学习</a></li>
-<li class="chapter" data-level="8.6.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.6.6</b> 教学理念</a></li>
+<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.7</b> 讲课</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.7.1</b> 学生如何学习？</a></li>
+<li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.7.2</b> 如何激励学生？</a></li>
+<li class="chapter" data-level="8.7.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.7.3</b> 评价学习</a></li>
+<li class="chapter" data-level="8.7.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.7.4</b> 课程设计</a></li>
+<li class="chapter" data-level="8.7.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.7.5</b> 互动学习</a></li>
+<li class="chapter" data-level="8.7.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.7.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.7</b> 课题组管理</a><ul>
-<li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#科研的创业隐喻"><i class="fa fa-check"></i><b>8.7.1</b> 科研的创业隐喻</a></li>
-<li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#基金申请"><i class="fa fa-check"></i><b>8.7.2</b> 基金申请</a></li>
+<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.8</b> 课题组管理</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#科研的创业隐喻"><i class="fa fa-check"></i><b>8.8.1</b> 科研的创业隐喻</a></li>
+<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#基金申请"><i class="fa fa-check"></i><b>8.8.2</b> 基金申请</a></li>
 </ul></li>
-<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.8</b> 学术评价</a></li>
-<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#学术道德伦理"><i class="fa fa-check"></i><b>8.9</b> 学术道德／伦理</a></li>
-<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.10</b> 案例</a></li>
+<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.9</b> 学术评价</a></li>
+<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#学术道德伦理"><i class="fa fa-check"></i><b>8.10</b> 学术道德／伦理</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#剽窃"><i class="fa fa-check"></i><b>8.10.1</b> 剽窃</a></li>
+<li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#文章挂名"><i class="fa fa-check"></i><b>8.10.2</b> 文章挂名</a></li>
+<li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#双重发表"><i class="fa fa-check"></i><b>8.10.3</b> 双重发表</a></li>
+<li class="chapter" data-level="8.10.4" data-path="life.html"><a href="life.html#数据造假"><i class="fa fa-check"></i><b>8.10.4</b> 数据造假</a></li>
+<li class="chapter" data-level="8.10.5" data-path="life.html"><a href="life.html#有害研究实践"><i class="fa fa-check"></i><b>8.10.5</b> 有害研究实践</a></li>
+<li class="chapter" data-level="8.10.6" data-path="life.html"><a href="life.html#不合规"><i class="fa fa-check"></i><b>8.10.6</b> 不合规</a></li>
+<li class="chapter" data-level="8.10.7" data-path="life.html"><a href="life.html#性骚扰"><i class="fa fa-check"></i><b>8.10.7</b> 性骚扰</a></li>
+<li class="chapter" data-level="8.10.8" data-path="life.html"><a href="life.html#伦理"><i class="fa fa-check"></i><b>8.10.8</b> 伦理</a></li>
+</ul></li>
+<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
-<li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#简历"><i class="fa fa-check"></i><b>9.1</b> 简历</a></li>
-<li class="chapter" data-level="9.2" data-path="career.html"><a href="career.html#邮件"><i class="fa fa-check"></i><b>9.2</b> 邮件</a></li>
-<li class="chapter" data-level="9.3" data-path="career.html"><a href="career.html#面试"><i class="fa fa-check"></i><b>9.3</b> 面试</a></li>
-<li class="chapter" data-level="9.4" data-path="career.html"><a href="career.html#工资"><i class="fa fa-check"></i><b>9.4</b> 工资</a></li>
-<li class="chapter" data-level="9.5" data-path="career.html"><a href="career.html#高效反馈"><i class="fa fa-check"></i><b>9.5</b> 高效反馈</a></li>
-<li class="chapter" data-level="9.6" data-path="career.html"><a href="career.html#领导力"><i class="fa fa-check"></i><b>9.6</b> 领导力</a></li>
-<li class="chapter" data-level="9.7" data-path="career.html"><a href="career.html#职业规划"><i class="fa fa-check"></i><b>9.7</b> 职业规划</a></li>
-<li class="chapter" data-level="9.8" data-path="career.html"><a href="career.html#职业"><i class="fa fa-check"></i><b>9.8</b> 职业</a><ul>
-<li class="chapter" data-level="9.8.1" data-path="career.html"><a href="career.html#学科鄙视链"><i class="fa fa-check"></i><b>9.8.1</b> 学科鄙视链</a></li>
-<li class="chapter" data-level="9.8.2" data-path="career.html"><a href="career.html#博后"><i class="fa fa-check"></i><b>9.8.2</b> 博后</a></li>
-<li class="chapter" data-level="9.8.3" data-path="career.html"><a href="career.html#常任轨"><i class="fa fa-check"></i><b>9.8.3</b> 常任轨</a></li>
-<li class="chapter" data-level="9.8.4" data-path="career.html"><a href="career.html#非常任轨"><i class="fa fa-check"></i><b>9.8.4</b> 非常任轨</a></li>
-<li class="chapter" data-level="9.8.5" data-path="career.html"><a href="career.html#非高等教育"><i class="fa fa-check"></i><b>9.8.5</b> 非高等教育</a></li>
-<li class="chapter" data-level="9.8.6" data-path="career.html"><a href="career.html#政府"><i class="fa fa-check"></i><b>9.8.6</b> 政府</a></li>
-<li class="chapter" data-level="9.8.7" data-path="career.html"><a href="career.html#科学顾问"><i class="fa fa-check"></i><b>9.8.7</b> 科学顾问</a></li>
-<li class="chapter" data-level="9.8.8" data-path="career.html"><a href="career.html#咨询"><i class="fa fa-check"></i><b>9.8.8</b> 咨询</a></li>
-<li class="chapter" data-level="9.8.9" data-path="career.html"><a href="career.html#企业科研药企"><i class="fa fa-check"></i><b>9.8.9</b> 企业科研/药企</a></li>
-<li class="chapter" data-level="9.8.10" data-path="career.html"><a href="career.html#销售与应用专家及营销"><i class="fa fa-check"></i><b>9.8.10</b> 销售与应用专家及营销</a></li>
-<li class="chapter" data-level="9.8.11" data-path="career.html"><a href="career.html#创业"><i class="fa fa-check"></i><b>9.8.11</b> 创业</a></li>
-<li class="chapter" data-level="9.8.12" data-path="career.html"><a href="career.html#编辑出版社"><i class="fa fa-check"></i><b>9.8.12</b> 编辑/出版社</a></li>
-<li class="chapter" data-level="9.8.13" data-path="career.html"><a href="career.html#ngo"><i class="fa fa-check"></i><b>9.8.13</b> NGO</a></li>
-<li class="chapter" data-level="9.8.14" data-path="career.html"><a href="career.html#金融"><i class="fa fa-check"></i><b>9.8.14</b> 金融</a></li>
-<li class="chapter" data-level="9.8.15" data-path="career.html"><a href="career.html#公共卫生"><i class="fa fa-check"></i><b>9.8.15</b> 公共卫生</a></li>
-<li class="chapter" data-level="9.8.16" data-path="career.html"><a href="career.html#科学传播"><i class="fa fa-check"></i><b>9.8.16</b> 科学传播</a></li>
-<li class="chapter" data-level="9.8.17" data-path="career.html"><a href="career.html#医药交流"><i class="fa fa-check"></i><b>9.8.17</b> 医药交流</a></li>
-<li class="chapter" data-level="9.8.18" data-path="career.html"><a href="career.html#数据科学家"><i class="fa fa-check"></i><b>9.8.18</b> 数据科学家</a></li>
+<li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>
+<li class="chapter" data-level="9.2" data-path="career.html"><a href="career.html#简历"><i class="fa fa-check"></i><b>9.2</b> 简历</a></li>
+<li class="chapter" data-level="9.3" data-path="career.html"><a href="career.html#人脉"><i class="fa fa-check"></i><b>9.3</b> 人脉</a></li>
+<li class="chapter" data-level="9.4" data-path="career.html"><a href="career.html#面试"><i class="fa fa-check"></i><b>9.4</b> 面试</a></li>
+<li class="chapter" data-level="9.5" data-path="career.html"><a href="career.html#职场"><i class="fa fa-check"></i><b>9.5</b> 职场</a></li>
+<li class="chapter" data-level="9.6" data-path="career.html"><a href="career.html#职业"><i class="fa fa-check"></i><b>9.6</b> 职业</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="career.html"><a href="career.html#学科鄙视链"><i class="fa fa-check"></i><b>9.6.1</b> 学科鄙视链</a></li>
+<li class="chapter" data-level="9.6.2" data-path="career.html"><a href="career.html#博后"><i class="fa fa-check"></i><b>9.6.2</b> 博后</a></li>
+<li class="chapter" data-level="9.6.3" data-path="career.html"><a href="career.html#常任轨"><i class="fa fa-check"></i><b>9.6.3</b> 常任轨</a></li>
+<li class="chapter" data-level="9.6.4" data-path="career.html"><a href="career.html#非常任轨"><i class="fa fa-check"></i><b>9.6.4</b> 非常任轨</a></li>
+<li class="chapter" data-level="9.6.5" data-path="career.html"><a href="career.html#非高等教育"><i class="fa fa-check"></i><b>9.6.5</b> 非高等教育</a></li>
+<li class="chapter" data-level="9.6.6" data-path="career.html"><a href="career.html#政府"><i class="fa fa-check"></i><b>9.6.6</b> 政府</a></li>
+<li class="chapter" data-level="9.6.7" data-path="career.html"><a href="career.html#科学顾问"><i class="fa fa-check"></i><b>9.6.7</b> 科学顾问</a></li>
+<li class="chapter" data-level="9.6.8" data-path="career.html"><a href="career.html#咨询"><i class="fa fa-check"></i><b>9.6.8</b> 咨询</a></li>
+<li class="chapter" data-level="9.6.9" data-path="career.html"><a href="career.html#企业科研药企"><i class="fa fa-check"></i><b>9.6.9</b> 企业科研/药企</a></li>
+<li class="chapter" data-level="9.6.10" data-path="career.html"><a href="career.html#销售与应用专家及营销"><i class="fa fa-check"></i><b>9.6.10</b> 销售与应用专家及营销</a></li>
+<li class="chapter" data-level="9.6.11" data-path="career.html"><a href="career.html#创业"><i class="fa fa-check"></i><b>9.6.11</b> 创业</a></li>
+<li class="chapter" data-level="9.6.12" data-path="career.html"><a href="career.html#编辑出版社"><i class="fa fa-check"></i><b>9.6.12</b> 编辑/出版社</a></li>
+<li class="chapter" data-level="9.6.13" data-path="career.html"><a href="career.html#ngo"><i class="fa fa-check"></i><b>9.6.13</b> NGO</a></li>
+<li class="chapter" data-level="9.6.14" data-path="career.html"><a href="career.html#金融"><i class="fa fa-check"></i><b>9.6.14</b> 金融</a></li>
+<li class="chapter" data-level="9.6.15" data-path="career.html"><a href="career.html#公共卫生"><i class="fa fa-check"></i><b>9.6.15</b> 公共卫生</a></li>
+<li class="chapter" data-level="9.6.16" data-path="career.html"><a href="career.html#科学传播"><i class="fa fa-check"></i><b>9.6.16</b> 科学传播</a></li>
+<li class="chapter" data-level="9.6.17" data-path="career.html"><a href="career.html#医药交流"><i class="fa fa-check"></i><b>9.6.17</b> 医药交流</a></li>
+<li class="chapter" data-level="9.6.18" data-path="career.html"><a href="career.html#数据科学家"><i class="fa fa-check"></i><b>9.6.18</b> 数据科学家</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html"><i class="fa fa-check"></i>附录：现代科研兵刃谱</a><ul>
@@ -314,7 +320,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#学术交流"><i class="fa fa-check"></i>学术交流</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据分享"><i class="fa fa-check"></i>数据分享</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#代码管理"><i class="fa fa-check"></i>代码管理</a><ul>
-<li class="chapter" data-level="9.8.19" data-path="tool.html"><a href="tool.html#软件编译流程"><i class="fa fa-check"></i><b>9.8.19</b> 软件编译流程</a></li>
+<li class="chapter" data-level="9.6.19" data-path="tool.html"><a href="tool.html#软件编译流程"><i class="fa fa-check"></i><b>9.6.19</b> 软件编译流程</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#r包管理"><i class="fa fa-check"></i>R包管理</a></li>
 </ul></li>
 </ul></li>
@@ -350,8 +356,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>时至今日，现代社会基本延续了工业社会对分工与效率的追求，但维持文化多样性与个体-社会相互关系的思考不断涌现。现代社会塑造了个体认知，个体认知却反过来反思现代社会的诸多问题例如民族主义的崛起、环境保护、气候变化、社会隔离与歧视、机会公平、人口老龄化、战争暴力、谣言传播、经济危机、金融危机、人工智能等。这些问题的根源有相当比例是社会政治经济体制的构建过程出现了漏洞，而今的科技发展把一些问题放大了，或者说这个系统需要打补丁了。毋庸置疑，科研对于现实问题的解决是一个靠谱的选择，其他选择例如宗教、回归原始生活更多的是一种消极的保守策略，选择那些方法并不会真的解决问题。这样如果给科研立块大牌坊，我想最好的题词就是从方法论层面解决社会问题。换言之，科研总是面向问题解决问题的一个社会分工，是一个职业，既不神圣也不低俗，从事这个职业的人总在用科学方法论解决实际问题，有时候也是揭示问题或为问题找一个解释。这个需求是根源，也就是说如果你科研自认为做的不错但跟现实脱节，那么即使留在象牙塔，也会面临自我认同与社会认同不协调的困境，需要你有额外的资源平衡。一般来说，热点基础学科里悖论会比较多，热点应用学科则是看实际问题。</p>
 <p>放到经济视角下，这个职业也是有温饱小康问题的，也是一个利益集团，需要人代表到国会或人大去抢财政的分配，还要跟不同学科去抢所有的科研分配，充满了复杂的博弈过程，原来是陌生人之间，以后可能会发展到人跟机器或规则之间。这个职业有光环，但退却光环都是一个个为生计奔波劳碌的现代人，当然，不同人有着不同的生计标准。</p>
 </div>
-<div id="专业性与综合性的矛盾" class="section level2">
-<h2><span class="header-section-number">3.2</span> 专业性与综合性的矛盾</h2>
+<div id="专业与综合" class="section level2">
+<h2><span class="header-section-number">3.2</span> 专业与综合</h2>
 <p>IT领域有一种职业叫做全栈工程师，指那种运用多领域知识完成产品的工作类型。最近发生的一些事让我越来越觉得科研领域也需要类似的概念，姑且就叫全栈科学家吧。</p>
 <p>国内研究生培养的一个短板就是综合性不强，或者说科研民工，走出自己专业就不太敢想了，国外的研究生则对不懂的部分也有自信，最终能攒出一个结果，而这个结果可能要同时用到电子工程、材料、分析化学、机械及数据分析等多个方面的技术，即使没学过，他们也会通过学校找到合作的人。反观国内，研究生选课都很保守，不是自己以后研究领域的东西不选或直接让导师选，国外也会这样，但真遇到需要跨学科解决的问题从导师到学生都会想办法而不是觉得这东西不是我的领域就不研究了。打比方我设计一个算法，效果不错，但问题是别人不会用，那么就应该把算法打包成函数甚至设计一个简易图形界面让明白用途但不想理解算法的人用。但这个过程就不能靠分工了，得有人全流程都明白并进行整合，这种综合性有点类似工程师思维，甲方是同行，你得让同行解决实际问题而不是看你炫技术。基础学科肯定是有发展空间的，但目前基础学科要解决的问题已经都很像工程问题了，所以这类综合能力的问题化聚焦是实验学科研究生很重要的竞争力，痴迷于单一技术而看不到要实际解决的科学问题培养的只能是专家而不是科学家。</p>
 <p>很多人觉得大学负责通识教育与精英教育，研究生要更多关注技能培训成为所谓专家，我觉得这可能是科研民工思想的源头。现状可能却是通识教育与精英教育从来都不如技能培训有吸引力，虽然可能潜力更高，这导致培养出的专家视野总是有局限性，需要在团队里合理配置才会提高解决问题的效率。例如想成为生物医药领域pi的研究生博后要在10年内搞出8篇一作才有戏，而H指数预测性很差，业界可拿这个数据到<a href="https://peerj.com/articles/1262/">学术圈</a>挖人。越来越长时间的专家培养是不可避免的趋势。</p>
@@ -406,8 +412,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="博士的就业问题" class="section level2">
 <h2><span class="header-section-number">3.5</span> 博士的就业问题</h2>
-<p>2015年全国博士毕业生5.4万人，而去年大概到了6万人，按照很多人的说法，读到博士就应该去做学术，但我对这个问题做了一个费米估计，结果比较有意思，列出来供各位打算做学术的博士参考。</p>
-<p>如果成为院士（中国科学院／中国工程院）算学术巅峰的话，那么院士的选拔可以看作到达顶峰的路径。选拔方法是什么呢？两年一次，一次总共大概150人，工程科学对半分，平均一年75人。</p>
+<p>全国博士毕业生目前在几万人的水平，按照很多人的说法，读到博士就应该去做学术。如果成为院士（中国科学院／中国工程院）算学术巅峰的话，那么院士的选拔可以看作到达顶峰的路径。选拔方法是什么呢？两年一次，一次总共大概150人，工程科学对半分，平均一年75人。</p>
 <p>我们假定若干年后每年还是75人，因为两院院士总规模这么些年并未有很大规模的变化，就算加上文科一级教授也就是100这个数量级。</p>
 <p>那么若干年后竞争这个数的人选平均看大概都是同年级的博士同学。目前每年全国土鳖博士毕业生6万多人，算上海归，同一年龄组大概7万人应该比较合理。</p>
 <p>那么你看到了，你需要在同年级博士毕业生里成为千分之一左右的精英才算有希望成为院士级别的学者。这个似乎有点丧气，可能院士这个比较难搞，那么准院士的杰青呢？全国每年选拔200人为杰青，那么成功概率乐观估计是千分之三，杰青其实也很难了，我们再放宽到优青。全国每年选拔400人为优青，那么乐观估计成功几率大概是千分之五。即使我们大胆认为博士有一半不从事科研工作，几率翻倍成为优青也要是百里挑一。</p>
@@ -415,19 +420,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>你可能会说做学术要有一定理想，不能这么功利，说这话的有相当比例站着说话不腰疼。如果你已经走到教授研究员这个档次自然可以跟人谈理想，但坦白说现在的博导平均拿到学位都是20年前的事了，那个时候博士一年毕业7千多人，而现在博士毕业生数目翻了10倍，换句话在目前的晋升条件下你成为教授的概率大概是50%，如果有一半不做学术，几乎可以肯定就是教授了。10年前一年博士毕业人数大概是现在的一半多，这意味着其晋升教授可能性也有十分之一，尚算合理。但10年后如果博士年毕业生达到10万，那么其成为教授将跟现在成为优青差不多难度，代际不平衡是十分严重的。不了解基础状况就把人往坑里带的后果挺严重的，自上而下，金字塔顶端人数就那么多，一味扩大底端几乎意味着大量博士要陷入无尽的博后循环之中去拉伸等级。</p>
 <p>所以其实我挺理解很多劝博士毕业转行的看法的，那怕你手握博士学位，目前在国内想走到教授也是个p&lt;0.05的事，大概20个人里有一个。考虑到一般博士同学同院系大概也就是20个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？</p>
 <p>同时要注意，国内博士毕业生人数还在不断上升，一方面说明教职还是有空间的，另一方面则暗示了今后博士毕业生生存环境将会更加恶劣，竞争会更加激烈。同时，目前教职数目会逐渐趋稳，如果你没赶上新学科新方向的窗口期大爆发，基本就是始终要接纳这个竞争强度了，只会更强不会更弱。而且有些研究方向必然因为学科发展走向没落，没必要跟一伙老气横秋的人抱团取暖，该转方向就转，反正大家都没基础。</p>
+<p>同时我们看一下美国，美国生物医药博士最终走上常任轨的比例大概7-15%，另外那些人并不是人间蒸发，而是去了业界做研发（R&amp;D）、中间人（产品支持、技术支持、销售、科学写作等）、运营（制造业、分析人、产品经理等）、商业（融资、投资等）以及法律相关行业（专利、技术转移等）。这个比例比国内还要低，也就是转行对于美国博士而言是正常的职业选择，也是为社会输送人才的重要途径。需要明确的是博士阶段的培养虽然是学术主导，但相关技能其实在其他行业也是通用的，关于怎么转换技能与额外的就业技能我们会在第八章讨论。</p>
 <p>读博转行可能也是个好事，早点把青春奉献到知识洼地去才更能实现自己的价值，相比学术界科研，业界科研可能是一个很好的选择，毕竟能磕下博士学位，搞点别的也应该没啥问题。这个问题我们会在第八章详细讨论。</p>
 <p>同时，如果选择了科研道路也要知道上面的概率，当不成分子也可以先做分母，心态上说服自己静下心来做科研就OK了，乐在其中则何乐不为？切不可惶惶不可终日，空费时光。</p>
 </div>
 <div id="可重复性危机" class="section level2">
 <h2><span class="header-section-number">3.6</span> 可重复性危机</h2>
 <p>实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(scifigure)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">hide_stages =<span class="st"> </span><span class="ot">NULL</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">sci_figure</span>(exps)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="view.html#cb1-1"></a><span class="kw">library</span>(scifigure)</span>
+<span id="cb1-2"><a href="view.html#cb1-2"></a>exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</span>
+<span id="cb1-3"><a href="view.html#cb1-3"></a>exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></span>
+<span id="cb1-4"><a href="view.html#cb1-4"></a>exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></span>
+<span id="cb1-5"><a href="view.html#cb1-5"></a>exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></span>
+<span id="cb1-6"><a href="view.html#cb1-6"></a>hide_stages =<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb1-7"><a href="view.html#cb1-7"></a><span class="kw">sci_figure</span>(exps)</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>可重复性危机是当前科研领域里最大的问题，这里我们从空假设显著性检验（NHST）这一核心开始聊一下。NHST更常见的形式是p值，也就是在空假设成立的条件下某事件发生的概率。p值有多流行呢？根据 Jeff Leek 的<a href="https://docs.google.com/presentation/d/1hzdSDaPPSE9xUYZHhOVfQIRPPdwe0A9SdE7QDsK3bOA/edit#slide=id.g255a5ace66_3_796">估计</a>，如果把p值当成一篇文献，那么其被引次数已经超过300万次了，当之无愧的史上被引次数之王，甩<a href="http://www.nature.com/news/the-top-100-papers-1.16224">第二名</a>一个数量级。原因其实很简单，p值已经渗透到几乎所有学科的研究中了，特别是实验学科。可想而知，如果产生p值的 NHST 出了问题其影响力有多大。</p>
 <p>如果一个假设对另一个假设来说很稀少，NHST会在很低的条件概率下拒绝掉，然后那些稀少的事情在NHST里就成了无法被检验的事情。这个例子最早是 Cohen <a href="http://ist-socrates.berkeley.edu/~maccoun/PP279_Cohen1.pdf">提出</a>用来说明人们在使用NHST时的问题。空假设是某人是美国人，备择假设是非美国人。我们知道某人是国会议员的概率是百万分之二，空假设里很难发生，备择假设里无法发生。空假设我们拒绝了某人是美国人，那么根据NHST，他不是美国人。但问题是议员一定要是美国人，在此类问题里，NHST永远无法认定稀有事件，也就是功效永远不足，并会给出错误答案。稀有事件总会发生，NHST总会把此类事件当成显著，即使不那么稀有，例如小概率事件如果发生了，我们就可以拒绝了。本质上是多数人在使用p值时搞混了条件概率，拿上面美国国会议员的例子来说，我们的假设 H0 在面对张三这个数据 D 时给出了拒绝 p(H0|D) = 0，这个决定是构建在假设 H0 成立时出现 D 的概率太低（即p(D|H0)之上，也就是说NHST下，我们默认下面的概率是成立的：
@@ -500,7 +506,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["sciguide.epub"],
 "toc": {
 "collapse": "subsection"
 }

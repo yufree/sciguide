@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  2 JAN 2020 16:51
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 APR 2020 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,7 +1136,7 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
 (Font)              scaled to size 14.68153pt on input line 3.
 [3]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 74; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 69; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1146,13 +1146,13 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 74; it cannot be
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
 (Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 
-74.
+69.
 
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 69.
 [4]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 124; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 131; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1180,10 +1180,13 @@ Chapter 1.
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
-(Font)              scaled to size 11.74522pt on input line 141.
+(Font)              scaled to size 11.74522pt on input line 139.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [9]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 158; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 171; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1191,8 +1194,6 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 158; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Package fontspec Warning: \addfontfeature(s) ignored on line 175; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
@@ -1201,31 +1202,18 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 175; it cannot be
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[11]
+[11] [12
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 184; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
+]
+Chapter 3.
 
-[12]
+Underfull \vbox (badness 4416) has occurred while \output is active []
+
+[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 206; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[13]
-Underfull \vbox (badness 2351) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 223; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 191; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1233,8 +1221,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 223; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [14]
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 237; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 203; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1242,8 +1232,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 237; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 239; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 210; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1251,17 +1243,19 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 239; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [16]
-Chapter 3.
-
-Underfull \vbox (badness 4416) has occurred while \output is active []
-
-[17
-
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 255; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 220; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[17]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 252; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1272,7 +1266,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 255; it cannot be
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 267; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 265; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1280,7 +1274,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 267; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
 Package fontspec Warning: \addfontfeature(s) ignored on line 274; it cannot be
@@ -1294,7 +1288,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 274; it cannot be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 284; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 283; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1302,8 +1296,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 284; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 316; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 297; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1311,10 +1307,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 316; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [22]
-Underfull \vbox (badness 1546) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 329; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 307; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1322,10 +1318,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 329; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [23]
-Underfull \vbox (badness 1546) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 338; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 322; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1333,50 +1329,6 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 338; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 347; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 361; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 373; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[27]
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 386; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[28]
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
@@ -1402,17 +1354,69 @@ pping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.53937> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 389.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 325.
 File: sciguide_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-1-1.pdf>
 
-Overfull \hbox (12.01044pt too wide) in paragraph at lines 399--400
+Overfull \hbox (12.01044pt too wide) in paragraph at lines 335--336
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 404; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 339; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[25]
+LaTeX Font Info:    Try loading font information for U+msa on input line 340.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 340.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 346; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 351; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 356; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 362; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1420,18 +1424,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 404; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [29]
-LaTeX Font Info:    Try loading font information for U+msa on input line 404.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 404.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 410; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 368; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1439,43 +1435,21 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 410; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 416; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 374; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[31] [32
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 420; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 426; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+]
+Chapter 4.
 [33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 432; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 399; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1484,25 +1458,36 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 432; it cannot be
 
 [34]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 438; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 411; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[35] [36
-
-]
-Chapter 4.
-
-Underfull \vbox (badness 2042) has occurred while \output is active []
-
-[37]
+[35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 475; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 425; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[36]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 439; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[37]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 453; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1510,8 +1495,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 475; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 494; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 463; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1520,7 +1507,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 494; it cannot be
 
 [39]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 517; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 484; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1528,10 +1515,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 517; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 525; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 499; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1542,7 +1527,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 525; it cannot be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 533; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 503; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1551,25 +1536,38 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 533; it cannot be
 
 [42]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 587; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 512; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[43] [44
+[43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Chapter 5.
 
-Underfull \vbox (badness 4416) has occurred while \output is active []
+Package fontspec Warning: \addfontfeature(s) ignored on line 518; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 536; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
 
 [45]
-LaTeX Font Info:    Font shape `TU/FandolFang-Regular(0)/m/n' will be
-(Font)              scaled to size 9.91812pt on input line 627.
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 645; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 550; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1577,33 +1575,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 645; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [46]
-File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
-<use sciguide_files/figure-latex/pba-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 657--658
-[][]  
- []
-
-
-Overfull \hbox (58.72232pt too wide) in paragraph at lines 695--695
-[]\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
- = formula))[] 
- []
-
-
-Overfull \hbox (163.85278pt too wide) in paragraph at lines 695--695
-[]\TU/lmtt/m/n/10.53937 ##      1      2      3      4      5      6      7    
-  8      9     10     11     12[] 
- []
-
-
-Overfull \hbox (163.85255pt too wide) in paragraph at lines 695--695
-[]\TU/lmtt/m/n/10.53937 ## -1.167 -2.000  2.000 -1.167 -2.000 -2.000  1.167  1.
-167  2.000 -1.167  2.000  1.167[] 
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 695; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 561; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1611,25 +1584,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 695; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [47]
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 695--695
-[]\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
- 0.1 ' ' 1[] 
- []
 
-
-Overfull \hbox (14.45695pt too wide) in paragraph at lines 695--695
-[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.5924, Adjusted R-squared:  -1
-.242[] 
- []
-
-
-Overfull \hbox (246.85017pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ##                name nruns lineage   GR GRind regular
- SCones    A3    A4   A5    A6      A7      A8[] 
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 716; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 572; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1637,37 +1593,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 716; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [48]
-Overfull \hbox (246.85014pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE
-      6  45.3 158.4  426  1010  1753.2  2306.8[] 
- []
 
-
-Overfull \hbox (246.85014pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE
-      0 130.3 737.2 3063 11096 31380.8 68828.1[] 
- []
-
-
-Overfull \hbox (246.85014pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE
-     17  82.3 338.2 1025  2828  5507.5  7780.0[] 
- []
-
-
-Overfull \hbox (246.85014pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE
-     12  73.8 300.2  912  2404  4354.2  5793.4[] 
- []
-
-
-Overfull \hbox (246.85017pt too wide) in paragraph at lines 716--716
-[]\TU/lmtt/m/n/10.53937 ## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE
-     37  35.6  73.1  120   125    63.5    13.9[] 
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 765; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 583; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1676,7 +1603,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 765; it cannot be
 
 [49]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 772; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 601; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1684,23 +1611,43 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 772; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 803; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 609; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[51] [52
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Chapter 6.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 613; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 615; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
 [53]
-Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 859; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 627; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1708,13 +1655,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 859; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [54]
-LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
-(Font)              scaled to size 10.27707pt on input line 879.
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 946; it cannot be
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 631; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1722,117 +1666,328 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 946; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [55]
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1041; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 642; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [56]
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 647; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[57]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 654; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[58]
+Chapter 5.
+
+Underfull \vbox (badness 4416) has occurred while \output is active []
+
+[59
+
+]
+LaTeX Font Info:    Font shape `TU/FandolFang-Regular(0)/m/n' will be
+(Font)              scaled to size 9.91812pt on input line 694.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 709; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[60]
+File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
+<use sciguide_files/figure-latex/pba-1.pdf>
+
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 724--725
+[][]  
+ []
+
+
+Overfull \hbox (58.72232pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
+ = formula))[] 
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 764; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[61]
+Overfull \hbox (141.72012pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ##       1       2       3       4       5       6     
+  7       8       9      10[] 
+ []
+
+
+Overfull \hbox (141.71983pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## -0.1667  1.3333  1.3333  1.3333 -1.3333 -1.3333 -0.1
+667  0.1667 -0.1667 -1.3333[] 
+ []
+
+
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
+ 0.1 ' ' 1[] 
+ []
+
+
+Overfull \hbox (3.39063pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 2.327 on 2 degrees of freed
+om[] 
+ []
+
+
+Overfull \hbox (8.9238pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.8627, Adjusted R-squared:  0.
+245[] 
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 769; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[62]
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ##                name nruns lineage   GR GRind regular
+ SCones    A3    A4   A5[] 
+ []
+
+
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE
+      6  45.3 158.4  426[] 
+ []
+
+
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE
+      0 130.3 737.2 3063[] 
+ []
+
+
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE
+     17  82.3 338.2 1025[] 
+ []
+
+
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE
+     12  73.8 300.2  912[] 
+ []
+
+
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
+[]\TU/lmtt/m/n/10.53937 ## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE
+     37  35.6  73.1  120[] 
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 840; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[63]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 843; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 868; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[65]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 884; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[66]
+Chapter 6.
+[67
+
+]
+Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 940; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[68]
+LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
+(Font)              scaled to size 10.27707pt on input line 960.
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1133; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1027; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[57]
-Overfull \hbox (12.90504pt too wide) in paragraph at lines 1146--1148
+[69]
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1122; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[70]
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1214; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[71]
+Overfull \hbox (12.90504pt too wide) in paragraph at lines 1227--1229
 []\TU/FandolSong-Regular(0)/m/n/10.53937 多 重 比 较 问 题 []$[][][][][] [] [] [] [][
 ][] [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][][]
 $[]  
  []
 
 
-Overfull \hbox (142.24617pt too wide) in paragraph at lines 1153--1155
+Overfull \hbox (142.24617pt too wide) in paragraph at lines 1234--1236
 \TU/lmr/m/n/10.53937 URL []$[][][][] [] [] [] [][][][][][][][][][][][][] [] [][
 ][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][]$[] 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1165; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1246; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[58]
+[72]
 
 LaTeX Font Warning: Font shape `TU/FandolFang-Regular(0)/m/it' undefined
 (Font)              using `TU/FandolFang-Regular(0)/m/n' instead on input line 
-1179.
+1257.
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1182; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1261; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[59]
+[73]
 File: sciguide_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-4-1.pdf>
 
-Overfull \hbox (12.0201pt too wide) in paragraph at lines 1193--1194
+Overfull \hbox (12.0201pt too wide) in paragraph at lines 1271--1272
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1229; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1309; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[60]
+[74]
 File: sciguide_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-5-1.pdf>
 
-Overfull \hbox (12.02177pt too wide) in paragraph at lines 1234--1235
+Overfull \hbox (12.02177pt too wide) in paragraph at lines 1312--1313
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1272; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1352; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[61]
+[75]
 File: sciguide_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-6-1.pdf>
 
-Overfull \hbox (12.0201pt too wide) in paragraph at lines 1283--1284
+Overfull \hbox (12.0201pt too wide) in paragraph at lines 1361--1362
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1312; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1393; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[62]
+[76]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
@@ -1848,19 +2003,19 @@ File: sciguide_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-7-1.pdf>
 
-Overfull \hbox (12.00565pt too wide) in paragraph at lines 1337--1338
+Overfull \hbox (12.00565pt too wide) in paragraph at lines 1415--1416
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1342; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1420; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[63]
+[77]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
@@ -1873,199 +2028,33 @@ Missing character: There is no 著 in font [lmroman10-regular]:mapping=tex-text;
 Missing character: There is no 差 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 异 in font [lmroman10-regular]:mapping=tex-text;!
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1399; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1479; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[64]
+[78]
 File: sciguide_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-10-1.pdf>
 
-Overfull \hbox (12.0201pt too wide) in paragraph at lines 1454--1455
+Overfull \hbox (12.0201pt too wide) in paragraph at lines 1532--1533
 [][]  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1456; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1534; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[65]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1474; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[66]
-File: sciguide_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf
-)
-<use sciguide_files/figure-latex/unnamed-chunk-11-1.pdf>
-
-Overfull \hbox (12.0243pt too wide) in paragraph at lines 1477--1478
-[][]  
- []
-
-File: sciguide_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf
-)
-<use sciguide_files/figure-latex/unnamed-chunk-12-1.pdf>
-
-Overfull \hbox (12.0201pt too wide) in paragraph at lines 1508--1509
-[][]  
- []
-
-
-Underfull \vbox (badness 6032) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1510; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[67]
-Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
-
-Overfull \hbox (114.45477pt too wide) in paragraph at lines 1527--1530
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][]$[]  
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1540; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[68]
-Overfull \hbox (0.29132pt too wide) in paragraph at lines 1563--1564
-[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
-] [][] [] [][][][][][][][][][][][][][][][][][][][][][]$[]  
- []
-
-
-Overfull \hbox (116.98795pt too wide) in paragraph at lines 1565--1566
-[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
-] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][]$[]  
- []
-
-
-Overfull \hbox (99.88843pt too wide) in paragraph at lines 1571--1572
-[][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][][] [] [][][] [] []
-[][][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][]$[]  
- []
-
-
-Overfull \hbox (236.68457pt too wide) in paragraph at lines 1576--1577
-[][][][][][][][][] [] [][][] [] [][][][] [] [][] [] [][] [] [][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1587; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[69]
-Overfull \hbox (8.80524pt too wide) in paragraph at lines 1609--1611
-[]\TU/lmr/m/n/10.53937 MCMC \TU/FandolSong-Regular(0)/m/n/10.53937 方 法 []$[][][
-][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][][][]
-[][][][][][][][][]$[]  
- []
-
-
-Overfull \hbox (8.8341pt too wide) in paragraph at lines 1611--1613
-[][][][][][][][][][][][]$[] []$[][][][][] [] [] [] [][][] [] [][][][][][] [] []
-[][] [] [][][][][][][][] [] [][][][][][][][][][][][][]$[]  
- []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1640; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[70]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1652; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[71] [72
-
-]
-Chapter 7.
-[73]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1677; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[74]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1726; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1756; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[76]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1765; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[77] [78
-
-]
-Chapter 8.
 [79]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1892; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1552; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2073,8 +2062,27 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1892; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [80]
+File: sciguide_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf
+)
+<use sciguide_files/figure-latex/unnamed-chunk-11-1.pdf>
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1965; it cannot
+Overfull \hbox (12.0243pt too wide) in paragraph at lines 1555--1556
+[][]  
+ []
+
+File: sciguide_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf
+)
+<use sciguide_files/figure-latex/unnamed-chunk-12-1.pdf>
+
+Overfull \hbox (12.0201pt too wide) in paragraph at lines 1586--1587
+[][]  
+ []
+
+
+Underfull \vbox (badness 6032) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1588; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2082,8 +2090,17 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1965; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [81]
+Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2039; it cannot
+Overfull \hbox (114.45477pt too wide) in paragraph at lines 1602--1605
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][]$[]  
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1617; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2091,8 +2108,34 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2039; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [82]
+Overfull \hbox (0.29132pt too wide) in paragraph at lines 1638--1639
+[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
+] [][] [] [][][][][][][][][][][][][][][][][][][][][][]$[]  
+ []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2088; it cannot
+
+Overfull \hbox (116.98795pt too wide) in paragraph at lines 1640--1641
+[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
+] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][]$[]  
+ []
+
+
+Overfull \hbox (99.88843pt too wide) in paragraph at lines 1646--1647
+[][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][][] [] [][][] [] []
+[][][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][]$[]  
+ []
+
+
+Overfull \hbox (236.68457pt too wide) in paragraph at lines 1651--1652
+[][][][][][][][][] [] [][][] [] [][][][] [] [][] [] [][] [] [][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1662; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2100,10 +2143,20 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2088; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [83]
-Underfull \vbox (badness 1466) has occurred while \output is active []
+Overfull \hbox (8.80524pt too wide) in paragraph at lines 1705--1707
+[]\TU/lmr/m/n/10.53937 MCMC \TU/FandolSong-Regular(0)/m/n/10.53937 方 法 []$[][][
+][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][][][]
+[][][][][][][][][]$[]  
+ []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2141; it cannot
+Overfull \hbox (8.8341pt too wide) in paragraph at lines 1707--1709
+[][][][][][][][][][][][]$[] []$[][][][][] [] [] [] [][][] [] [][][][][][] [] []
+[][] [] [][][][][][][][] [] [][][][][][][][][][][][][]$[]  
+ []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1715; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2112,43 +2165,40 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2141; it cannot
 
 [84]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2190; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1753; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[85]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2252; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[86]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2283; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[87] [88
+[85] [86
 
 ]
-Chapter 9.
+Chapter 7.
+[87]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1778; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[88]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1827; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
 [89]
-Overfull \hbox (7.04758pt too wide) in paragraph at lines 2367--2381
-\TU/lmr/m/n/10.53937 Note the effect of observed performance on work group/orga
-nization. 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2394; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1857; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2157,32 +2207,20 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2394; it cannot
 
 [90]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2469; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1866; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[91]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2516; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[92]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 2523.
-
-[93
+[91] [92
 
 ]
+Chapter 8.
+[93]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2551; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2005; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2191,7 +2229,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2551; it cannot
 
 [94]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2580; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2075; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2199,10 +2237,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2580; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [95]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2614; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2140; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2211,7 +2247,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2614; it cannot
 
 [96]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2640; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2191; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2220,7 +2256,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2640; it cannot
 
 [97]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2656; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2251; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2228,8 +2264,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2656; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [98]
+Underfull \vbox (badness 6094) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2671; it cannot
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2298; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2237,26 +2275,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2671; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [99]
-Overfull \hbox (57.40028pt too wide) in paragraph at lines 2674--2677
-[]\TU/lmr/m/n/10.53937 CC=/usr/local/opt/llvm/bin/clang CXX=/usr/local/opt/llvm
-/bin/clang++ 
- []
 
-
-Overfull \hbox (82.90578pt too wide) in paragraph at lines 2680--2683
-[]\TU/lmr/m/n/10.53937 CC=/usr/local/bin/gcc-8 CXX=/usr/local/bin/gcc-8 CXX11=/
-usr/local/bin/gcc- 
- []
-
-
-Overfull \hbox (10.81653pt too wide) in paragraph at lines 2686--2688
-[]\TU/lmr/m/n/10.53937 SHLIB_OPENMP_CFLAGS= SHLIB_OPENMP_CXXFLAGS=  
- []
-
-No file sciguide.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2701.
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2701; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2354; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -2264,25 +2284,228 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2701; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [100]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2701.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2406; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[101]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2465; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[102]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2497; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[103]
+Underfull \vbox (badness 1173) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2538; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[104]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2563; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[105] [106
+
+]
+Chapter 9.
+[107]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2617; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2627; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[109]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2682; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[110]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2696; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[111]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2768; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[112]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2817; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[113] [114
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 2824.
+
+[115]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2852; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[116]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2881; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[117]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2915; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[118]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2941; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[119]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2957; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[120]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2972; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[121]
+Overfull \hbox (57.40028pt too wide) in paragraph at lines 2975--2978
+[]\TU/lmr/m/n/10.53937 CC=/usr/local/opt/llvm/bin/clang CXX=/usr/local/opt/llvm
+/bin/clang++ 
+ []
+
+
+Overfull \hbox (82.90578pt too wide) in paragraph at lines 2981--2984
+[]\TU/lmr/m/n/10.53937 CC=/usr/local/bin/gcc-8 CXX=/usr/local/bin/gcc-8 CXX11=/
+usr/local/bin/gcc- 
+ []
+
+
+Overfull \hbox (10.81653pt too wide) in paragraph at lines 2987--2989
+[]\TU/lmr/m/n/10.53937 SHLIB_OPENMP_CFLAGS= SHLIB_OPENMP_CXXFLAGS=  
+ []
+
+
+Package bibentry Warning: You have used \nobibliography* 
+(bibentry)                without a following \bibliography.
+(bibentry)                You may not be able to run BibTeX.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3000.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3000; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[122]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3000.
 (./sciguide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2701.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2701.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3000.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3000.
 
 Package rerunfilecheck Info: File `sciguide.out' has not changed.
-(rerunfilecheck)             Checksum: 6C54CA0D161559DDF38468353A056340.
+(rerunfilecheck)             Checksum: 1AFC5F5489014BAC18C7FDB94E62FE78.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2701.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3000.
  ) 
 Here is how much of TeX's memory you used:
- 28287 strings out of 492916
- 566492 string characters out of 6133346
- 669195 words of memory out of 5000000
- 31940 multiletter control sequences out of 15000+600000
+ 28335 strings out of 492916
+ 569973 string characters out of 6133346
+ 674235 words of memory out of 5000000
+ 31988 multiletter control sequences out of 15000+600000
  536316 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,12n,124p,1749b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,124p,1749b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sciguide.pdf (100 pages).
+Output written on sciguide.pdf (122 pages).

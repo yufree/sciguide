@@ -1,27 +1,28 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 APR 2020 19:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.10.15)  18 APR 2020 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **sciguide.tex
 (./sciguide.tex
-LaTeX2e <2018-12-01>
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tufte-latex/tufte-book.cls
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tufte-latex/tufte-book.cls
 Document Class: tufte-book 2015/06/21 v3.5.2 Tufte-book class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tufte-latex/tufte-common.def
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tufte-latex/tufte-common.def
 File: tufte-common.def 2015/06/21 v3.5.2 Common code for the Tufte-LaTeX styles
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
-/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
+/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
-(/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/keyval.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count80
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/xifthen/xifthen.sty
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count81
 \calc@Bcount=\count82
@@ -33,45 +34,49 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count83
 \calc@Cskip=\skip43
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
-Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/hardwrap/hardwrap.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/hardwrap/hardwrap.sty
 Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/shellesc.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/catchfile.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
 ))
 
 Package ifplatform Warning: 
     shell escape is disabled, so I can only detect \ifwindows.
 
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \hw@charcount=\count84
@@ -79,10 +84,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \hw@maxprintline=\count86
 )
 Class tufte-book Info: Loading the base class `book'
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count87
 \c@chapter=\count88
@@ -96,21 +101,21 @@ File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip44
 \belowcaptionskip=\skip45
 \bibindent=\dimen104
-) (/usr/local/texlive/2019/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
-Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
-(/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local
-/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/tex
-live/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-05-07 L3 programming layer (loader) 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-05-07 L3 programming layer (code)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2016/01/21 v0.6 Improvements for the "XeLaTeX" format
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local
+/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/tex
+live/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
 \c_max_int=\count96
 \l_tmpa_int=\count97
 \l_tmpb_int=\count98
 \g_tmpa_int=\count99
 \g_tmpb_int=\count100
-\g__kernel_prg_map_int=\count101
-\c__ior_term_ior=\count102
+\g__intarray_font_int=\count101
+\g__prg_map_int=\count102
 \c_log_iow=\count103
 \l_iow_line_count_int=\count104
 \l__iow_line_target_int=\count105
@@ -135,185 +140,393 @@ Package: expl3 2019-05-07 L3 programming layer (code)
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
 \l_keys_choice_int=\count108
-\l__intarray_loop_int=\count109
-\c__intarray_sp_dim=\dimen111
-\g__intarray_font_int=\count110
-\c__fp_leading_shift_int=\count111
-\c__fp_middle_shift_int=\count112
-\c__fp_trailing_shift_int=\count113
-\c__fp_big_leading_shift_int=\count114
-\c__fp_big_middle_shift_int=\count115
-\c__fp_big_trailing_shift_int=\count116
-\c__fp_Bigg_leading_shift_int=\count117
-\c__fp_Bigg_middle_shift_int=\count118
-\c__fp_Bigg_trailing_shift_int=\count119
-\g__fp_array_int=\count120
-\l__fp_array_loop_int=\count121
-\l__sort_length_int=\count122
-\l__sort_min_int=\count123
-\l__sort_top_int=\count124
-\l__sort_max_int=\count125
-\l__sort_true_max_int=\count126
-\l__sort_block_int=\count127
-\l__sort_begin_int=\count128
-\l__sort_end_int=\count129
-\l__sort_A_int=\count130
-\l__sort_B_int=\count131
-\l__sort_C_int=\count132
-\l__tl_analysis_normal_int=\count133
-\l__tl_analysis_index_int=\count134
-\l__tl_analysis_nesting_int=\count135
-\l__tl_analysis_type_int=\count136
-\l__regex_internal_a_int=\count137
-\l__regex_internal_b_int=\count138
-\l__regex_internal_c_int=\count139
-\l__regex_balance_int=\count140
-\l__regex_group_level_int=\count141
-\l__regex_mode_int=\count142
-\c__regex_cs_in_class_mode_int=\count143
-\c__regex_cs_mode_int=\count144
-\l__regex_catcodes_int=\count145
-\l__regex_default_catcodes_int=\count146
-\c__regex_catcode_L_int=\count147
-\c__regex_catcode_O_int=\count148
-\c__regex_catcode_A_int=\count149
-\c__regex_all_catcodes_int=\count150
-\l__regex_show_lines_int=\count151
-\l__regex_min_state_int=\count152
-\l__regex_max_state_int=\count153
-\l__regex_left_state_int=\count154
-\l__regex_right_state_int=\count155
-\l__regex_capturing_group_int=\count156
-\l__regex_min_pos_int=\count157
-\l__regex_max_pos_int=\count158
-\l__regex_curr_pos_int=\count159
-\l__regex_start_pos_int=\count160
-\l__regex_success_pos_int=\count161
-\l__regex_curr_char_int=\count162
-\l__regex_curr_catcode_int=\count163
-\l__regex_last_char_int=\count164
-\l__regex_case_changed_char_int=\count165
-\l__regex_curr_state_int=\count166
-\l__regex_step_int=\count167
-\l__regex_min_active_int=\count168
-\l__regex_max_active_int=\count169
-\l__regex_replacement_csnames_int=\count170
-\l__regex_match_count_int=\count171
-\l__regex_min_submatch_int=\count172
-\l__regex_submatch_int=\count173
-\l__regex_zeroth_submatch_int=\count174
-\g__regex_trace_regex_int=\count175
-\c_empty_box=\box27
-\l_tmpa_box=\box28
-\l_tmpb_box=\box29
-\g_tmpa_box=\box30
-\g_tmpb_box=\box31
-\l__box_top_dim=\dimen112
-\l__box_bottom_dim=\dimen113
-\l__box_left_dim=\dimen114
-\l__box_right_dim=\dimen115
-\l__box_top_new_dim=\dimen116
-\l__box_bottom_new_dim=\dimen117
-\l__box_left_new_dim=\dimen118
-\l__box_right_new_dim=\dimen119
-\l__box_internal_box=\box32
-\l__coffin_internal_box=\box33
-\l__coffin_internal_dim=\dimen120
-\l__coffin_offset_x_dim=\dimen121
-\l__coffin_offset_y_dim=\dimen122
-\l__coffin_x_dim=\dimen123
-\l__coffin_y_dim=\dimen124
-\l__coffin_x_prime_dim=\dimen125
-\l__coffin_y_prime_dim=\dimen126
-\c_empty_coffin=\box34
-\l__coffin_aligned_coffin=\box35
-\l__coffin_aligned_internal_coffin=\box36
-\l_tmpa_coffin=\box37
-\l_tmpb_coffin=\box38
-\g_tmpa_coffin=\box39
-\g_tmpb_coffin=\box40
-\l__coffin_bounding_shift_dim=\dimen127
-\l__coffin_left_corner_dim=\dimen128
-\l__coffin_right_corner_dim=\dimen129
-\l__coffin_bottom_corner_dim=\dimen130
-\l__coffin_top_corner_dim=\dimen131
-\l__coffin_scaled_total_height_dim=\dimen132
-\l__coffin_scaled_width_dim=\dimen133
-\c__coffin_empty_coffin=\box41
-\l__coffin_display_coffin=\box42
-\l__coffin_display_coord_coffin=\box43
-\l__coffin_display_pole_coffin=\box44
-\l__coffin_display_offset_dim=\dimen134
-\l__coffin_display_x_dim=\dimen135
-\l__coffin_display_y_dim=\dimen136
-\g__file_internal_ior=\read1
-\l__seq_internal_a_int=\count176
-\l__seq_internal_b_int=\count177
-\c__deprecation_minus_one=\count178
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
-File: l3xdvipdfmx.def 2019-04-06 v L3 Experimental driver: xdvipdfmx
-\g__driver_image_int=\count179
-\l__driver_pdf_tmp_box=\box45
-\g__driver_pdf_object_int=\count180
-\g__driver_pdf_annotation_int=\count181
+\c__fp_leading_shift_int=\count109
+\c__fp_middle_shift_int=\count110
+\c__fp_trailing_shift_int=\count111
+\c__fp_big_leading_shift_int=\count112
+\c__fp_big_middle_shift_int=\count113
+\c__fp_big_trailing_shift_int=\count114
+\c__fp_Bigg_leading_shift_int=\count115
+\c__fp_Bigg_middle_shift_int=\count116
+\c__fp_Bigg_trailing_shift_int=\count117
+\l__sort_length_int=\count118
+\l__sort_min_int=\count119
+\l__sort_top_int=\count120
+\l__sort_max_int=\count121
+\l__sort_true_max_int=\count122
+\l__sort_block_int=\count123
+\l__sort_begin_int=\count124
+\l__sort_end_int=\count125
+\l__sort_A_int=\count126
+\l__sort_B_int=\count127
+\l__sort_C_int=\count128
+\l__tl_build_start_index_int=\count129
+\l__tl_build_index_int=\count130
+\l__tl_analysis_normal_int=\count131
+\l__tl_analysis_index_int=\count132
+\l__tl_analysis_nesting_int=\count133
+\l__tl_analysis_type_int=\count134
+\l__regex_internal_a_int=\count135
+\l__regex_internal_b_int=\count136
+\l__regex_internal_c_int=\count137
+\l__regex_balance_int=\count138
+\l__regex_group_level_int=\count139
+\l__regex_mode_int=\count140
+\c__regex_cs_in_class_mode_int=\count141
+\c__regex_cs_mode_int=\count142
+\l__regex_catcodes_int=\count143
+\l__regex_default_catcodes_int=\count144
+\c__regex_catcode_L_int=\count145
+\c__regex_catcode_O_int=\count146
+\c__regex_catcode_A_int=\count147
+\c__regex_all_catcodes_int=\count148
+\l__regex_show_lines_int=\count149
+\l__regex_min_state_int=\count150
+\l__regex_max_state_int=\count151
+\l__regex_left_state_int=\count152
+\l__regex_right_state_int=\count153
+\l__regex_capturing_group_int=\count154
+\l__regex_min_pos_int=\count155
+\l__regex_max_pos_int=\count156
+\l__regex_curr_pos_int=\count157
+\l__regex_start_pos_int=\count158
+\l__regex_success_pos_int=\count159
+\l__regex_curr_char_int=\count160
+\l__regex_curr_catcode_int=\count161
+\l__regex_last_char_int=\count162
+\l__regex_case_changed_char_int=\count163
+\l__regex_curr_state_int=\count164
+\l__regex_step_int=\count165
+\l__regex_min_active_int=\count166
+\l__regex_max_active_int=\count167
+\l__regex_replacement_csnames_int=\count168
+\l__regex_match_count_int=\count169
+\l__regex_min_submatch_int=\count170
+\l__regex_submatch_int=\count171
+\l__regex_zeroth_submatch_int=\count172
+\g__regex_trace_regex_int=\count173
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+\l__box_top_dim=\dimen111
+\l__box_bottom_dim=\dimen112
+\l__box_left_dim=\dimen113
+\l__box_right_dim=\dimen114
+\l__box_top_new_dim=\dimen115
+\l__box_bottom_new_dim=\dimen116
+\l__box_left_new_dim=\dimen117
+\l__box_right_new_dim=\dimen118
+\l__box_internal_box=\box31
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen119
+\l__coffin_offset_x_dim=\dimen120
+\l__coffin_offset_y_dim=\dimen121
+\l__coffin_x_dim=\dimen122
+\l__coffin_y_dim=\dimen123
+\l__coffin_x_prime_dim=\dimen124
+\l__coffin_y_prime_dim=\dimen125
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen126
+\l__coffin_display_x_dim=\dimen127
+\l__coffin_display_y_dim=\dimen128
+\l__coffin_bounding_shift_dim=\dimen129
+\l__coffin_left_corner_dim=\dimen130
+\l__coffin_right_corner_dim=\dimen131
+\l__coffin_bottom_corner_dim=\dimen132
+\l__coffin_top_corner_dim=\dimen133
+\l__coffin_scaled_total_height_dim=\dimen134
+\l__coffin_scaled_width_dim=\dimen135
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count174
 ))
-Package: xparse 2019-05-03 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count182
-\g__xparse_grabber_int=\count183
-\l__xparse_m_args_int=\count184
-\l__xparse_v_nesting_int=\count185
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count175
+\g__xparse_grabber_int=\count176
+\l__xparse_m_args_int=\count177
+\l__xparse_mandatory_args_int=\count178
+\l__xparse_v_nesting_int=\count179
 )
-Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
-(/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count186
-\l__fontspec_language_int=\count187
-\l__fontspec_strnum_int=\count188
-\l__fontspec_tmp_int=\count189
-\l__fontspec_tmpa_int=\count190
-\l__fontspec_tmpb_int=\count191
-\l__fontspec_tmpc_int=\count192
-\l__fontspec_em_int=\count193
-\l__fontspec_emdef_int=\count194
-\l__fontspec_strong_int=\count195
-\l__fontspec_strongdef_int=\count196
-\l__fontspec_tmpa_dim=\dimen137
-\l__fontspec_tmpb_dim=\dimen138
-\l__fontspec_tmpc_dim=\dimen139
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/tuenc.def
-File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+\l__fontspec_script_int=\count180
+\l__fontspec_language_int=\count181
+\l__fontspec_strnum_int=\count182
+\l__fontspec_tmp_int=\count183
+\l__fontspec_em_int=\count184
+\l__fontspec_emdef_int=\count185
+\l__fontspec_strong_int=\count186
+\l__fontspec_strongdef_int=\count187
+\l__fontspec_tmpa_dim=\dimen136
+\l__fontspec_tmpb_dim=\dimen137
+\l__fontspec_tmpc_dim=\dimen138
+\g__file_internal_ior=\read1
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 4051.
-LaTeX Info: Redefining \slshape on input line 4056.
-LaTeX Info: Redefining \scshape on input line 4061.
-LaTeX Info: Redefining \upshape on input line 4066.
-LaTeX Info: Redefining \em on input line 4096.
-LaTeX Info: Redefining \emph on input line 4121.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/realscripts/realscripts.sty
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/realscripts/realscripts.sty
 Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
 ts
-\subsupersep=\dimen140
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/metalogo/metalogo.sty
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen139
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/metalogo/metalogo.sty
 Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 99.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/xetex.def
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen141
-\Gin@req@width=\dimen142
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 )
 \xl@everylogo=\toks16
 \xl@@everylogo=\toks17
@@ -321,30 +534,30 @@ LaTeX Info: Redefining \TeX on input line 193.
 LaTeX Info: Redefining \LaTeX on input line 202.
 LaTeX Info: Redefining \LaTeXe on input line 219.
 )
-\l__xetex_show_hyphens_wrapping_box=\box46
-\l__xetex_show_hyphens_temp_box=\box47
-\l__xetex_show_hyphens_final_box=\box48
-\g__xetex_show_hyphens_word_box=\box49
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
+\l__xetex_show_hyphens_wrapping_box=\box41
+\l__xetex_show_hyphens_temp_box=\box42
+\l__xetex_show_hyphens_final_box=\box43
+\g__xetex_show_hyphens_word_box=\box44
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box50
+\ttl@box=\box45
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
-\ttl@plus=\dimen143
-\ttl@minus=\dimen144
+\ttl@plus=\dimen142
+\ttl@minus=\dimen143
 \ttl@toksa=\toks18
-\titlewidth=\dimen145
-\titlewidthlast=\dimen146
-\titlewidthfirst=\dimen147
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titletoc.sty
+\titlewidth=\dimen144
+\titlewidthlast=\dimen145
+\titlewidthfirst=\dimen146
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2011/12/15 v1.6 TOC entries
-\ttl@leftsep=\dimen148
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+\ttl@leftsep=\dimen147
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -373,76 +586,76 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen149
-\Hy@linkcounter=\count197
-\Hy@pagecounter=\count198
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen148
+\Hy@linkcounter=\count188
+\Hy@pagecounter=\count189
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count199
-(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+\Hy@SavedSpaceFactor=\count190
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4393.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Package hyperref Info: Option `unicode' set `true' on input line 4383.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4393.
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count266
-(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count191
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen150
-\Fld@menulength=\count267
-\Field@Width=\dimen151
-\Fld@charsize=\dimen152
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count268
-\c@Item=\count269
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen149
+\Fld@menulength=\count192
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count193
+\c@Item=\count194
 )
 Package hyperref Info: Driver: hxetex.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2018/11/30 v6.88e Hyperref driver for XeTeX
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/stringenc.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/stringenc.sty
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box51
-\c@Hy@AnnotLevel=\count270
-\HyField@AnnotCount=\count271
-\Fld@listcount=\count272
-\c@bookmark@seq@number=\count273
-(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+\pdfm@box=\box46
+\c@Hy@AnnotLevel=\count195
+\HyField@AnnotCount=\count196
+\Fld@listcount=\count197
+\c@bookmark@seq@number=\count198
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip54
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ms/ragged2e.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everysel.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip55
@@ -459,38 +672,38 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedLeftParindent=\skip66
 \RaggedRightParindent=\skip67
 \JustifyingParindent=\skip68
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
 \Gm@dimlist=\toks19
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/changepage/changepage.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count277
-\cp@tempcnt=\count278
+\c@cp@cntr=\count268
+\cp@tempcnt=\count269
 )
 \@tufte@overhang=\skip69
 \@tufte@fullwidth=\skip70
 \@tufte@caption@fill=\skip71
-(/usr/local/texlive/2019/texmf-dist/tex/latex/paralist/paralist.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip72
 \plpartopsep=\skip73
 \plitemsep=\skip74
 \plparsep=\skip75
 \pl@lab=\toks20
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/textcase/textcase.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks21
 \SOUL@lasttoken=\toks22
@@ -498,17 +711,17 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks24
 \SOUL@token=\toks25
 \SOUL@spaceskip=\skip76
-\SOUL@ttwidth=\dimen161
-\SOUL@uldp=\dimen162
-\SOUL@ulht=\dimen163
+\SOUL@ttwidth=\dimen160
+\SOUL@uldp=\dimen161
+\SOUL@ulht=\dimen162
 )
 LaTeX Info: Redefining \allcapsspacing on input line 737.
 LaTeX Info: Redefining \smallcapsspacing on input line 737.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
@@ -521,35 +734,35 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/svgnam.def
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip77
 \bibsep=\skip78
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count279
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/bibentry.sty
+\c@NAT@ctr=\count270
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
 No file sciguide.bbl.
-\c@@tufte@num@bibkeys=\count280
-(/usr/local/texlive/2019/texmf-dist/tex/latex/sauerj/optparams.sty
+\c@@tufte@num@bibkeys=\count271
+(/usr/local/texlive/2018/texmf-dist/tex/latex/sauerj/optparams.sty
 Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
 )
 \@tufte@sidenote@vertical@offset=\skip79
-(/usr/local/texlive/2019/texmf-dist/tex/latex/placeins/placeins.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-\@tufte@margin@floatbox=\box52
-\@tufte@figure@box=\box53
-\@tufte@caption@box=\box54
+\@tufte@margin@floatbox=\box47
+\@tufte@figure@box=\box48
+\@tufte@caption@box=\box49
 \@tufte@caption@vertical@offset=\skip80
 \@tufte@float@contents@width=\skip81
-(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip82
 \f@nch@O@elh=\skip83
@@ -562,29 +775,34 @@ s
 \f@nch@O@orf=\skip90
 )
 \tufteskipamount=\skip91
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count281
-\mult@box=\box55
-\multicol@leftmargin=\dimen164
-\c@unbalance=\count282
-\c@collectmore=\count283
-\doublecol@number=\count284
-\multicoltolerance=\count285
-\multicolpretolerance=\count286
-\full@width=\dimen165
-\page@free=\dimen166
-\premulticols=\dimen167
-\postmulticols=\dimen168
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+\c@tracingmulticols=\count272
+\mult@box=\box50
+\multicol@leftmargin=\dimen163
+\c@unbalance=\count273
+\c@collectmore=\count274
+\doublecol@number=\count275
+\multicoltolerance=\count276
+\multicolpretolerance=\count277
+\full@width=\dimen164
+\page@free=\dimen165
+\premulticols=\dimen166
+\postmulticols=\dimen167
 \multicolsep=\skip92
 \multicolbaselineskip=\skip93
-\partial@page=\box56
-\last@line=\box57
-\maxbalancingoverflow=\dimen169
-\mult@rightbox=\box58
-\mult@grightbox=\box59
-\mult@gfirstbox=\box60
-\mult@firstbox=\box61
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen168
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@gfirstbox=\box55
+\mult@firstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
 \@tempa=\box62
 \@tempa=\box63
 \@tempa=\box64
@@ -597,82 +815,77 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box71
 \@tempa=\box72
 \@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\c@columnbadness=\count287
-\c@finalcolumnbadness=\count288
-\last@try=\dimen170
-\multicolovershoot=\dimen171
-\multicolundershoot=\dimen172
-\mult@nat@firstbox=\box79
-\colbreak@box=\box80
-\mc@col@check@num=\count289
-))) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\c@columnbadness=\count278
+\c@finalcolumnbadness=\count279
+\last@try=\dimen169
+\multicolovershoot=\dimen170
+\multicolundershoot=\dimen171
+\mult@nat@firstbox=\box74
+\colbreak@box=\box75
+\mc@col@check@num=\count280
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks26
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip94
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen173
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen172
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen174
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen173
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count290
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count291
-\leftroot@=\count292
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count293
-\DOTSCASE@=\count294
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box81
-\strutbox@=\box82
-\big@size=\dimen175
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count295
-\c@MaxMatrixCols=\count296
+\inf@bad=\count281
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count282
+\leftroot@=\count283
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count284
+\DOTSCASE@=\count285
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box76
+\strutbox@=\box77
+\big@size=\dimen174
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count286
+\c@MaxMatrixCols=\count287
 \dotsspace@=\muskip17
-\c@parentequation=\count297
-\dspbrk@lvl=\count298
+\c@parentequation=\count288
+\dspbrk@lvl=\count289
 \tag@help=\toks28
-\row@=\count299
-\column@=\count300
-\maxfields@=\count301
+\row@=\count290
+\column@=\count291
+\maxfields@=\count292
 \andhelp@=\toks29
-\eqnshift@=\dimen176
-\alignsep@=\dimen177
-\tagshift@=\dimen178
-\tagwidth@=\dimen179
-\totwidth@=\dimen180
-\lineht@=\dimen181
+\eqnshift@=\dimen175
+\alignsep@=\dimen176
+\tagshift@=\dimen177
+\tagwidth@=\dimen178
+\totwidth@=\dimen179
+\lineht@=\dimen180
 \@envbody=\toks30
 \multlinegap=\skip95
 \multlinetaggap=\skip96
 \mathdisplay@stack=\toks31
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fixltx2e.sty
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
 
@@ -681,116 +894,132 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen182
-\lightrulewidth=\dimen183
-\cmidrulewidth=\dimen184
-\belowrulesep=\dimen185
-\belowbottomsep=\dimen186
-\aboverulesep=\dimen187
-\abovetopsep=\dimen188
-\cmidrulesep=\dimen189
-\cmidrulekern=\dimen190
-\defaultaddspace=\dimen191
-\@cmidla=\count302
-\@cmidlb=\count303
-\@aboverulesep=\dimen192
-\@belowrulesep=\dimen193
-\@thisruleclass=\count304
-\@lastruleclass=\count305
-\@thisrulewidth=\dimen194
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/units/units.sty
+\heavyrulewidth=\dimen181
+\lightrulewidth=\dimen182
+\cmidrulewidth=\dimen183
+\belowrulesep=\dimen184
+\belowbottomsep=\dimen185
+\aboverulesep=\dimen186
+\abovetopsep=\dimen187
+\cmidrulesep=\dimen188
+\cmidrulekern=\dimen189
+\defaultaddspace=\dimen190
+\@cmidla=\count293
+\@cmidlb=\count294
+\@aboverulesep=\dimen191
+\@belowrulesep=\dimen192
+\@thisruleclass=\count295
+\@lastruleclass=\count296
+\@thisrulewidth=\dimen193
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
-(/usr/local/texlive/2019/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip97
 \L@UnitsRaiseTextstyle=\skip98
 \L@UnitsRaiseScriptstyle=\skip99
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2019/01/15
-Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
-\FV@CodeLineNo=\count306
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count297
 \FV@InFile=\read2
-\FV@TabBox=\box83
-\c@FancyVerbLine=\count307
-\FV@StepNumber=\count308
+\FV@TabBox=\box78
+\c@FancyVerbLine=\count298
+\FV@StepNumber=\count299
 \FV@OutFile=\write3
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip100
 \LTright=\skip101
 \LTpre=\skip102
 \LTpost=\skip103
-\LTchunksize=\count309
-\LTcapwidth=\dimen195
-\LT@head=\box84
-\LT@firsthead=\box85
-\LT@foot=\box86
-\LT@lastfoot=\box87
-\LT@cols=\count310
-\LT@rows=\count311
-\c@LT@tables=\count312
-\c@LT@chunks=\count313
+\LTchunksize=\count300
+\LTcapwidth=\dimen194
+\LT@head=\box79
+\LT@firsthead=\box80
+\LT@foot=\box81
+\LT@lastfoot=\box82
+\LT@cols=\count301
+\LT@rows=\count302
+\c@LT@tables=\count303
+\c@LT@chunks=\count304
 \LT@p@ftn=\toks32
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box88
-\UL@hyphenbox=\box89
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box83
+\UL@hyphenbox=\box84
 \UL@skip=\skip104
 \UL@hook=\toks33
-\UL@height=\dimen196
-\UL@pe=\count314
-\UL@pixel=\dimen197
-\ULC@box=\box90
+\UL@height=\dimen195
+\UL@pe=\count305
+\UL@pixel=\dimen196
+\ULC@box=\box85
 Package: ulem 2012/05/18
-\ULdepth=\dimen198
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/morefloats/morefloats.sty
+\ULdepth=\dimen197
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/morefloats/morefloats.sty
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
 Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             (i.e. 18 more floats).
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/ctex.sty
-Package: ctex 2019/04/07 v2.4.15 Chinese adapter in LaTeX (CTEX)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/ctexhook.sty
-Package: ctexhook 2019/04/07 v2.4.15 Document and package hooks (CTEX)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/ctexpatch.sty
-Package: ctexpatch 2019/04/07 v2.4.15 Patching commands (CTEX)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fix-cm.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/ctex.sty
+Package: ctex 2018/01/28 v2.4.12 Chinese adapter in LaTeX (CTEX)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2018/01/28 v2.4.12 Document and package hooks (CTEX)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2018/01/28 v2.4.12 Patching commands (CTEX)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-\l__ctex_tmp_int=\count315
-\l__ctex_tmp_box=\box91
-\l__ctex_tmp_dim=\dimen199
-\g__ctex_section_depth_int=\count316
-\g__ctex_font_size_int=\count317
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
-File: ctexopts.cfg 2019/04/07 v2.4.15 Option configuration file (CTEX)
+\l__ctex_tmp_int=\count306
+\l__ctex_tmp_box=\box86
+\l__ctex_tmp_dim=\dimen198
+\g__ctex_font_size_flag=\count307
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2018/01/28 v2.4.12 Option configuration file (CTEX)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
-File: ctex-engine-xetex.def 2019/04/07 v2.4.15 XeLaTeX adapter (CTEX)
-(/usr/local/texlive/2019/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
-Package: xeCJK 2019/04/07 v3.7.2 Typesetting CJK scripts with XeLaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2018/01/28 v2.4.12 XeLaTeX adapter (CTEX)
+(/usr/local/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2018/04/07 v3.7.0 Typesetting CJK scripts with XeLaTeX
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
 y
-Package: xtemplate 2019-05-03 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen256
-\l__xtemplate_tmp_int=\count318
+Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen199
+\l__xtemplate_tmp_int=\count308
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip105
 )
-\l__xeCJK_tmp_int=\count319
-\l__xeCJK_tmp_box=\box92
-\l__xeCJK_tmp_dim=\dimen257
+\l__xeCJK_tmp_int=\count309
+\l__xeCJK_tmp_box=\box87
+\l__xeCJK_tmp_dim=\dimen256
 \l__xeCJK_tmp_skip=\skip106
-\g__xeCJK_space_factor_int=\count320
-\l__xeCJK_begin_int=\count321
-\l__xeCJK_end_int=\count322
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKShipoutHook with sig. '' on line 150.
+.................................................
+\g__xeCJK_space_factor_int=\count310
+\l__xeCJK_begin_int=\count311
+\l__xeCJK_end_int=\count312
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \makexeCJKactive with sig. '' on line 396.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \makexeCJKinactive with sig. '' on line 398.
+.................................................
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -799,133 +1028,552 @@ Package: xtemplate 2019-05-03 L3 Experimental prototype document functions
 \c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclareCharClass with sig. 's>{\TrimSpaces }mm' on
+. line 580.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__xeCJK_set_char_class_aux:Nnw with sig.
+. 'm>{\SplitArgument {1}{->}}m' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \normalspacedchars with sig. 'm' on line 647.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKResetPunctClass with sig. '' on line 658.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKResetCharClass with sig. '' on line 670.
+.................................................
 \l__xeCJK_last_skip=\skip107
-\g__xeCJK_node_int=\count323
-\c__xeCJK_CJK_node_dim=\dimen258
-\c__xeCJK_CJK-space_node_dim=\dimen259
-\c__xeCJK_default_node_dim=\dimen260
-\c__xeCJK_default-space_node_dim=\dimen261
-\c__xeCJK_CJK-widow_node_dim=\dimen262
-\c__xeCJK_normalspace_node_dim=\dimen263
+\g__xeCJK_node_int=\count313
+\c__xeCJK_CJK_node_dim=\dimen257
+\c__xeCJK_CJK-space_node_dim=\dimen258
+\c__xeCJK_default_node_dim=\dimen259
+\c__xeCJK_default-space_node_dim=\dimen260
+\c__xeCJK_CJK-widow_node_dim=\dimen261
+\c__xeCJK_normalspace_node_dim=\dimen262
 \l__xeCJK_ccglue_skip=\skip108
 \l__xeCJK_ecglue_skip=\skip109
 \l__xeCJK_punct_kern_skip=\skip110
-\l__xeCJK_last_penalty_int=\count324
-\l__xeCJK_last_bound_dim=\dimen264
-\l__xeCJK_last_kern_dim=\dimen265
-\l__xeCJK_widow_penalty_int=\count325
-
-Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
-(xtemplate)             argument(s) on line 2352.
-
-\l__xeCJK_fixed_punct_width_dim=\dimen266
-\l__xeCJK_mixed_punct_width_dim=\dimen267
-\l__xeCJK_middle_punct_width_dim=\dimen268
-\l__xeCJK_fixed_margin_width_dim=\dimen269
-\l__xeCJK_mixed_margin_width_dim=\dimen270
-\l__xeCJK_middle_margin_width_dim=\dimen271
-\l__xeCJK_bound_punct_width_dim=\dimen272
-\l__xeCJK_bound_margin_width_dim=\dimen273
-\l__xeCJK_margin_minimum_dim=\dimen274
-\l__xeCJK_kerning_total_width_dim=\dimen275
-\l__xeCJK_same_align_margin_dim=\dimen276
-\l__xeCJK_different_align_margin_dim=\dimen277
-\l__xeCJK_kerning_margin_width_dim=\dimen278
-\l__xeCJK_kerning_margin_minimum_dim=\dimen279
-\l__xeCJK_bound_dim=\dimen280
-\l__xeCJK_reverse_bound_dim=\dimen281
-\l__xeCJK_minimum_bound_dim=\dimen282
-\l__xeCJK_kerning_margin_dim=\dimen283
-\l__xeCJK_original_margin_dim=\dimen284
-\g__xeCJK_family_int=\count326
-\l__xeCJK_fam_int=\count327
-\g__xeCJK_fam_allocation_int=\count328
-\l__xeCJK_verb_case_int=\count329
+\l__xeCJK_last_penalty_int=\count314
+\l__xeCJK_last_bound_dim=\dimen263
+\l__xeCJK_last_kern_dim=\dimen264
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKnobreak with sig. '' on line 1889.
+.................................................
+\l__xeCJK_widow_penalty_int=\count315
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclareSubCJKBlock with sig. 's>{\TrimSpaces }mm' on
+. line 2084.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKCancelSubCJKBlock with sig. 'sm' on line 2095.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKRestoreSubCJKBlock with sig. 'sm' on line 2104.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetwidth with sig. 'smm' on line 2202.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetkern with sig. 'mmm' on line 2206.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'xeCJK/punctuation' taking 0 argument(s) on line 2362.
+.................................................
+\l__xeCJK_fixed_punct_width_dim=\dimen265
+\l__xeCJK_mixed_punct_width_dim=\dimen266
+\l__xeCJK_middle_punct_width_dim=\dimen267
+\l__xeCJK_fixed_margin_width_dim=\dimen268
+\l__xeCJK_mixed_margin_width_dim=\dimen269
+\l__xeCJK_middle_margin_width_dim=\dimen270
+\l__xeCJK_bound_punct_width_dim=\dimen271
+\l__xeCJK_bound_margin_width_dim=\dimen272
+\l__xeCJK_margin_minimum_dim=\dimen273
+\l__xeCJK_kerning_total_width_dim=\dimen274
+\l__xeCJK_same_align_margin_dim=\dimen275
+\l__xeCJK_different_align_margin_dim=\dimen276
+\l__xeCJK_kerning_margin_width_dim=\dimen277
+\l__xeCJK_kerning_margin_minimum_dim=\dimen278
+\l__xeCJK_bound_dim=\dimen279
+\l__xeCJK_reverse_bound_dim=\dimen280
+\l__xeCJK_minimum_bound_dim=\dimen281
+\l__xeCJK_kerning_margin_dim=\dimen282
+\l__xeCJK_original_margin_dim=\dimen283
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclarePunctStyle with sig. '>{\TrimSpaces }mm' on
+. line 2942.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKEditPunctStyle with sig. '>{\TrimSpaces }mm' on line
+. 2955.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKfallbackfamilyfont with sig. 'mom' on line 3059.
+.................................................
+\g__xeCJK_family_int=\count316
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKfamily with sig. 't+t-m' on line 3493.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__xeCJK_gobble_CJKfamily:wn with sig. 't+t-m' on line
+. 3558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__xeCJK_post_arg:w with sig. 'mmmO{}' on line 3618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmainfont with sig. 'om' on line 3624.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKsansfont with sig. 'om' on line 3631.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmonofont with sig. 'om' on line 3637.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKfamilyfont with sig. 'mom' on line 3648.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newCJKfontfamily with sig. 'omom' on line 3658.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKfontspec with sig. 'om' on line 3664.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultCJKfontfeatures with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addCJKfontfeatures with sig. 'sO{}m' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmathfont with sig. 'om' on line 3870.
+.................................................
+\l__xeCJK_fam_int=\count317
+\g__xeCJK_fam_allocation_int=\count318
+\l__xeCJK_verb_case_int=\count319
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKVerbAddon with sig. '' on line 4117.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKOffVerbAddon with sig. '' on line 4121.
+.................................................
 \l__xeCJK_verb_exspace_skip=\skip111
-(/usr/local/texlive/2019/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
-File: xeCJK.cfg 2019/04/07 v3.7.2 Configuration file for xeCJK package
-)) (/usr/local/texlive/2019/texmf-dist/tex/xelatex/xecjk/xeCJKfntef.sty
-Package: xeCJKfntef 2019/04/07 v3.7.2 xeCJK font effect
-(/usr/local/texlive/2019/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetup with sig. '+m' on line 4422.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetemboldenfactor with sig. 'm' on line 4424.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetslantfactor with sig. 'm' on line 4426.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \punctstyle with sig. 'm' on line 4427.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKplainchr with sig. '' on line 4428.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKsetecglue with sig. 'm' on line 4429.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKspace with sig. '' on line 4431.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKnospace with sig. '' on line 4432.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKallowbreakbetweenpuncts with sig. '' on line 4434.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKnobreakbetweenpuncts with sig. '' on line 4436.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKenablefallback with sig. '' on line 4438.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKdisablefallback with sig. '' on line 4440.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetcharclass with sig. 'mmm' on line 4445.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \fontfamily with sig. 'm' on line 4628.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2018/04/07 v3.7.0 Configuration file for xeCJK package
+)) (/usr/local/texlive/2018/texmf-dist/tex/xelatex/xecjk/xeCJKfntef.sty
+Package: xeCJKfntef 2018/04/07 v3.7.0 xeCJK font effect
+(/usr/local/texlive/2018/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2018/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty
 Package: CJKfntef 2015/04/18 4.8.4
 \CJK@fntefSkip=\skip112
-\CJK@nest=\count330
-\CJK@fntefDimen=\dimen285
-\CJK@underdotBox=\box93
-\CJK@ULbox=\box94
-\CJK@underanyskip=\dimen286
+\CJK@nest=\count320
+\CJK@fntefDimen=\dimen284
+\CJK@underdotBox=\box88
+\CJK@ULbox=\box89
+\CJK@underanyskip=\dimen285
 )
 \l__xeCJK_space_skip=\skip113
-\c__xeCJK_ulem-begin_node_dim=\dimen287
-\c__xeCJK_null_box=\box95
-\l__xeCJK_fntef_box=\box96
-\l__xeCJK_under_symbol_box=\box97
+\c__xeCJK_ulem-begin_node_dim=\dimen286
+\c__xeCJK_null_box=\box90
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKfntefon with sig. 'st-so' on line 657.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderline with sig. 'st-so' on line 673.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \varCJKunderline with sig. '' on line 675.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderwave with sig. 'st-so' on line 685.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderdblline with sig. 'st-so' on line 709.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKsout with sig. 'st-so' on line 728.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKxout with sig. 'st-so' on line 745.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderanyline with sig. 'st-somm' on line 766.
+.................................................
+\l__xeCJK_fntef_box=\box91
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderanysymbol with sig. 'ommm' on line 940.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \CJKunderdot with sig. 'om' on line 949.
+.................................................
+\l__xeCJK_under_symbol_box=\box92
+.................................................
+. LaTeX info: "xparse/redefine-environment"
+. 
+. Redefining environment 'CJKfilltwosides' with sig. 'O{c}m' on line 1053.
+.................................................
 \c__xeCJK_filll_skip=\skip114
 )
-\ccwd=\dimen288
+\ccwd=\dimen287
 \l__ctex_ccglue_skip=\skip115
 )
-\l__ctex_ziju_dim=\dimen289
-(/usr/local/texlive/2019/texmf-dist/tex/latex/zhnumber/zhnumber.sty
-Package: zhnumber 2019/04/07 v2.7 Typesetting numbers with Chinese glyphs
-\l__zhnum_scale_int=\count331
-(/usr/local/texlive/2019/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
-File: zhnumber-utf8.cfg 2019/04/07 v2.7 Chinese numerals with UTF8 encoding
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ctexset with sig. '' on line 377.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXsetup with sig. '+o>{\TrimSpaces }m' on line 383.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXoptions with sig. '+o' on line 389.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXsetfont with sig. '' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ziju with sig. 'm' on line 479.
+.................................................
+\l__ctex_ziju_dim=\dimen288
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXindent with sig. '' on line 520.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXnoindent with sig. '' on line 526.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2018/01/28 v2.6 Typesetting numbers with Chinese glyphs
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumber with sig. '+o+m' on line 50.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumberwithoptions with sig. '+m+m' on line 57.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnum with sig. '+o+m' on line 111.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumwithoptions with sig. '+m+m' on line 118.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdig with sig. '+o+m' on line 295.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigwithoptions with sig. '+m+m' on line 302.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigits with sig. '+s+o+m' on line 316.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigitswithoptions with sig. '+m+m+m' on line 323.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdate with sig. '+s+m' on line 382.
+.................................................
+\l__zhnum_scale_int=\count321
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumExtendScaleMap with sig. '>{\TrimSpaces }+o+m' on
+. line 504.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumsetup with sig. '+m' on line 934.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2018/01/28 v2.6 Chinese numerals with UTF8 encoding
 ))
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.d
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXnumber with sig. 'mm' on line 543.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXdigits with sig. 'mm' on line 545.
+.................................................
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.d
 ef
-File: ctex-scheme-chinese.def 2019/04/07 v2.4.15 Chinese scheme for generic (CT
+File: ctex-scheme-chinese.def 2018/01/28 v2.4.12 Chinese scheme for generic (CT
 EX)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
-File: ctex-name-utf8.cfg 2019/04/07 v2.4.15 Caption with encoding UTF8 (CTEX)
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2018/01/28 v2.4.12 Caption with encoding UTF8 (CTEX)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/ctex-c5size.clo
-File: ctex-c5size.clo 2019/04/07 v2.4.15 c5size option (CTEX)
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zihao with sig. 'm' on line 642.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2018/01/28 v2.4.12 c5size option (CTEX)
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTeX with sig. '' on line 746.
+.................................................
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.
 def
-File: ctex-fontset-fandol.def 2019/04/07 v2.4.15 Fandol fonts definition (CTEX)
+File: ctex-fontset-fandol.def 2018/01/28 v2.4.12 Fandol fonts definition (CTEX)
 
-
-Package fontspec Warning: Font "FandolSong-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: FandolSong-Regular scale = 1.
-
-
-Package fontspec Info: FandolSong-Regular scale = 1.
-
-
-Package fontspec Info: FandolSong-Bold scale = 0.9707213523154882.
-
-
-Package fontspec Info: FandolKai-Regular scale = 0.975112432974225.
-
-
-Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
-(fontspec)             'FandolSong-Regular' with options
-(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extensi
-on={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[FandolSong-Regular.otf]/OT:mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.9707213523154882]"[FandolSong-Bold.otf]/OT:mappi
-ng=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[0.975112432974225]"[FandolKai-Regular.otf]/OT:mapp
-ing=tex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
-
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2019/04/07 v2.4.15 Configuration file (CTEX)
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'FandolSong-Regular' does not contain script 'CJK'.
+*************************************************
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolSong-Regular scale = 1.
+.................................................
+\g__fontspec_family_FandolSong-Regular_int=\count322
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolSong-Regular scale = 1.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolSong-Bold scale = 0.9707213523154882.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolKai-Regular scale = 0.975112432974225.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FandolSong-Regular(0)' created for font 'FandolSong-Regular'
+. with options
+. [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extension={.otf},BoldFont={F
+andolSong-Bold},ItalicFont={FandolKai-Regular}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FandolSong-Regular.otf]/OT:mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[0.9707213523154882]"[FandolSong-Bold.otf]/OT:mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[0.975112432974225]"[FandolKai-Regular.otf]/OT:mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \songti with sig. '' on line 114.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \heiti with sig. '' on line 115.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fangsong with sig. '' on line 116.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \kaishu with sig. '' on line 117.
+.................................................
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2018/01/28 v2.4.12 Configuration file (CTEX)
 ) (./sciguide.aux)
 \openout1 = `sciguide.aux'.
 
@@ -949,10 +1597,11 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
 LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
 LaTeX Font Info:    ... okay on input line 116.
-
-Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
-(fontspec)             this).
-
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 116.
@@ -1006,14 +1655,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 116.
-\AtBeginShipoutBox=\box98
+\AtBeginShipoutBox=\box93
 Package hyperref Info: Link coloring OFF on input line 116.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count323
 )
 LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
@@ -1059,65 +1708,75 @@ LaTeX Info: Redefining \selectfont on input line 116.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \langwohyphens=\language84
-
-Package fontspec Warning: Font "FandolHei-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: FandolHei-Regular scale = 0.968539033396776.
-
-
-Package fontspec Info: FandolHei-Regular scale = 0.968539033396776.
-
-
-Package fontspec Info: FandolHei-Bold scale = 0.9131356322121137.
-
-
-Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
-(fontspec)             'FandolHei-Regular' with options
-(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extensi
-on={.otf},BoldFont={FandolHei-Bold}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.968539033396776]"[FandolHei-Regular.otf]/OT:mapp
-ing=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->s*[0.9131356322121137]"[FandolHei-Bold.otf]/OT:mappin
-g=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 118; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmss/m/n/18 ".
-(fontspec)                  The requested feature is "LetterSpace=15". 
-
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'FandolHei-Regular' does not contain script 'CJK'.
+*************************************************
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolHei-Regular scale = 0.968539033396776.
+.................................................
+\g__fontspec_family_FandolHei-Regular_int=\count324
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolHei-Regular scale = 0.968539033396776.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolHei-Bold scale = 0.9131356322121137.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FandolHei-Regular(0)' created for font 'FandolHei-Regular' with
+. options
+. [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extension={.otf},BoldFont={F
+andolHei-Bold}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[0.968539033396776]"[FandolHei-Regular.otf]/OT:mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[0.9131356322121137]"[FandolHei-Bold.otf]/OT:mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+.................................................
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 118; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmss/m/n/18 ".
+*   The requested feature is "LetterSpace=15". 
+*************************************************
 LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
 (Font)              scaled to size 17.43365pt on input line 118.
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 118; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmss/m/n/36 ".
-(fontspec)                  The requested feature is "LetterSpace=15". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 118; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmss/m/n/36 ".
+*   The requested feature is "LetterSpace=15". 
+*************************************************
 LaTeX Font Info:    Font shape `TU/FandolHei-Regular(0)/m/n' will be
 (Font)              scaled to size 34.86731pt on input line 118.
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 118; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmss/m/n/14 ".
-(fontspec)                  The requested feature is "LetterSpace=15". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 118; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmss/m/n/14 ".
+*   The requested feature is "LetterSpace=15". 
+*************************************************
 [1
 
 
@@ -1135,14 +1794,15 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
 (Font)              scaled to size 14.68153pt on input line 3.
 [3]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 69; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 69; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
 (Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 
@@ -1151,26 +1811,28 @@ LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 69.
 [4]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 131; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 131; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [5])
 \tf@toc=\write5
 \openout5 = `sciguide.toc'.
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 128; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 128; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [6]
 Chapter 1.
 [7
@@ -1185,23 +1847,25 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 171; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 171; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [10]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 175; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 175; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [11] [12
 
 ]
@@ -1212,147 +1876,163 @@ Underfull \vbox (badness 4416) has occurred while \output is active []
 [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 191; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 191; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [14]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 203; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 203; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 210; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 210; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 220; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 220; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [17]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 252; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 252; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [18]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 265; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 265; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [19]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 274; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 274; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 283; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 283; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 297; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 297; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 307; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 307; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 322; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 322; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [24]
-
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: FandolFang-Regular scale = 0.9410483524264726.
-
-
-Package fontspec Info: FandolFang-Regular scale = 0.9410483524264726.
-
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extensi
-on={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9410483524264726]"[FandolFang-Regular.otf]/OT:ma
-pping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'FandolFang-Regular' does not contain script 'CJK'.
+*************************************************
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolFang-Regular scale = 0.9410483524264726.
+.................................................
+\g__fontspec_family_FandolFang-Regular_int=\count325
+.................................................
+. fontspec info: "set-scale"
+. 
+. FandolFang-Regular scale = 0.9410483524264726.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FandolFang-Regular(0)' created for font 'FandolFang-Regular'
+. with options
+. [Ligatures=TeX,Scale=MatchLowercase,Script={CJK},Extension={.otf}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[0.9410483524264726]"[FandolFang-Regular.otf]/OT:mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.53937> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 325.
 File: sciguide_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf)
@@ -1363,339 +2043,371 @@ Overfull \hbox (12.01044pt too wide) in paragraph at lines 335--336
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 339; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 339; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [25]
 LaTeX Font Info:    Try loading font information for U+msa on input line 340.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 340.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 346; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 346; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 351; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 351; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 356; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 356; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 362; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 362; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 368; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 368; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [30]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 374; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 374; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [31] [32
 
 ]
 Chapter 4.
 [33]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 399; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 399; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [34]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 411; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 411; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 425; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 425; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [36]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 439; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 439; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [37]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 453; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 453; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 463; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 463; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [39]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 484; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 484; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [40]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 499; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 499; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 503; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 503; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [42]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 512; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 512; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 518; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 518; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 536; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 536; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [45]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 550; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 550; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [46]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 561; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 561; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [47]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 572; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 572; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [48]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 583; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 583; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [49]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 601; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 601; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 609; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 609; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 613; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 613; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 615; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 615; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 627; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 627; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 631; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 631; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 642; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 642; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 647; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 647; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [57]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 654; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 654; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [58]
 Chapter 5.
 
@@ -1706,14 +2418,15 @@ Underfull \vbox (badness 4416) has occurred while \output is active []
 ]
 LaTeX Font Info:    Font shape `TU/FandolFang-Regular(0)/m/n' will be
 (Font)              scaled to size 9.91812pt on input line 694.
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 709; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 709; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [60]
 File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
 <use sciguide_files/figure-latex/pba-1.pdf>
@@ -1728,24 +2441,25 @@ Overfull \hbox (58.72232pt too wide) in paragraph at lines 764--764
  = formula))[] 
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 764; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 764; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [61]
-Overfull \hbox (141.72012pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ##       1       2       3       4       5       6     
-  7       8       9      10[] 
+Overfull \hbox (125.12059pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ##      1      2      3      4      5      6      7    
+  8      9     10     11[] 
  []
 
 
-Overfull \hbox (141.71983pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## -0.1667  1.3333  1.3333  1.3333 -1.3333 -1.3333 -0.1
-667  0.1667 -0.1667 -1.3333[] 
+Overfull \hbox (125.12038pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ##  0.500 -0.500 -0.500 -1.667  0.500 -0.500  1.667  1.
+667  0.500 -1.667  1.667[] 
  []
 
 
@@ -1756,24 +2470,25 @@ Overfull \hbox (47.65602pt too wide) in paragraph at lines 764--764
 
 
 Overfull \hbox (3.39063pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 2.327 on 2 degrees of freed
+[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 3.014 on 2 degrees of freed
 om[] 
  []
 
 
-Overfull \hbox (8.9238pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.8627, Adjusted R-squared:  0.
-245[] 
+Overfull \hbox (19.99013pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.7698, Adjusted R-squared:  -0
+.2661[] 
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 769; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 769; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [62]
 Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
 []\TU/lmtt/m/n/10.53937 ##                name nruns lineage   GR GRind regular
@@ -1810,43 +2525,47 @@ Overfull \hbox (125.12042pt too wide) in paragraph at lines 791--791
      37  35.6  73.1  120[] 
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 840; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 840; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [63]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 843; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 843; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 868; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 868; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [65]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 884; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 884; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [66]
 Chapter 6.
 [67
@@ -1854,52 +2573,56 @@ Chapter 6.
 ]
 Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 940; it cannot be
-(fontspec)                used with a font that wasn't selected by a fontspec
-(fontspec)                command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 940; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [68]
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/it' will be
 (Font)              scaled to size 10.27707pt on input line 960.
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1027; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1027; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [69]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1122; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1122; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [70]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1214; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1214; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [71]
 Overfull \hbox (12.90504pt too wide) in paragraph at lines 1227--1229
 []\TU/FandolSong-Regular(0)/m/n/10.53937 多 重 比 较 问 题 []$[][][][][] [] [] [] [][
@@ -1914,28 +2637,30 @@ Overfull \hbox (142.24617pt too wide) in paragraph at lines 1234--1236
 [][][][][][][][][][][][][][][][][][][]$[] 
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1246; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1246; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [72]
 
 LaTeX Font Warning: Font shape `TU/FandolFang-Regular(0)/m/it' undefined
 (Font)              using `TU/FandolFang-Regular(0)/m/n' instead on input line 
 1257.
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1261; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1261; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [73]
 File: sciguide_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
@@ -1945,14 +2670,15 @@ Overfull \hbox (12.0201pt too wide) in paragraph at lines 1271--1272
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1309; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1309; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [74]
 File: sciguide_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
@@ -1962,14 +2688,15 @@ Overfull \hbox (12.02177pt too wide) in paragraph at lines 1312--1313
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1352; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1352; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [75]
 File: sciguide_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
@@ -1979,14 +2706,15 @@ Overfull \hbox (12.0201pt too wide) in paragraph at lines 1361--1362
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1393; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1393; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [76]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
@@ -2007,14 +2735,15 @@ Overfull \hbox (12.00565pt too wide) in paragraph at lines 1415--1416
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1420; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1420; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [77]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
@@ -2027,14 +2756,15 @@ Missing character: There is no 显 in font [lmroman10-regular]:mapping=tex-text;
 Missing character: There is no 著 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 差 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 异 in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1479; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1479; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [78]
 File: sciguide_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf
 )
@@ -2044,23 +2774,25 @@ Overfull \hbox (12.0201pt too wide) in paragraph at lines 1532--1533
 [][]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1534; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1534; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [79]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1552; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1552; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [80]
 File: sciguide_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf
 )
@@ -2081,14 +2813,15 @@ Overfull \hbox (12.0201pt too wide) in paragraph at lines 1586--1587
 
 Underfull \vbox (badness 6032) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1588; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1588; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [81]
 Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
@@ -2099,14 +2832,15 @@ Overfull \hbox (114.45477pt too wide) in paragraph at lines 1602--1605
 [][][][][]$[]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1617; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1617; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [82]
 Overfull \hbox (0.29132pt too wide) in paragraph at lines 1638--1639
 [][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
@@ -2134,14 +2868,15 @@ Overfull \hbox (236.68457pt too wide) in paragraph at lines 1651--1652
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1662; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1662; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [83]
 Overfull \hbox (8.80524pt too wide) in paragraph at lines 1705--1707
 []\TU/lmr/m/n/10.53937 MCMC \TU/FandolSong-Regular(0)/m/n/10.53937 方 法 []$[][][
@@ -2155,243 +2890,267 @@ Overfull \hbox (8.8341pt too wide) in paragraph at lines 1707--1709
 [][] [] [][][][][][][][] [] [][][][][][][][][][][][][]$[]  
  []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1715; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1715; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [84]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1753; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1753; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [85] [86
 
 ]
 Chapter 7.
 [87]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1778; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1778; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [88]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1827; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1827; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1857; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1857; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [90]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1866; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 1866; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [91] [92
 
 ]
 Chapter 8.
 [93]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2005; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2005; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [94]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2075; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2075; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [95]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2140; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2140; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [96]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2191; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2191; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [97]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2251; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2251; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [98]
 Underfull \vbox (badness 6094) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2298; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2298; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [99]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2354; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2354; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [100]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2406; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2406; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [101]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2465; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2465; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [102]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2497; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2497; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [103]
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2538; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2538; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [104]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2563; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2563; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [105] [106
 
 ]
 Chapter 9.
 [107]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2617; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2617; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2627; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2627; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [109]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2682; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2682; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [110]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2696; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2696; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [111]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2768; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2768; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [112]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2817; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2817; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [113] [114
 
 ]
@@ -2400,61 +3159,67 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 2824.
 
 [115]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2852; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2852; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [116]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2881; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2881; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [117]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2915; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2915; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [118]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2941; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2941; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [119]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2957; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2957; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [120]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2972; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 2972; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [121]
 Overfull \hbox (57.40028pt too wide) in paragraph at lines 2975--2978
 []\TU/lmr/m/n/10.53937 CC=/usr/local/opt/llvm/bin/clang CXX=/usr/local/opt/llvm
@@ -2478,14 +3243,15 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                You may not be able to run BibTeX.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3000.
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3000; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 3000; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\TU/lmr/m/n/10 ".
+*   The requested feature is "LetterSpace=10". 
+*************************************************
 [122]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 3000.
 (./sciguide.aux)
@@ -2500,12 +3266,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3000.
  ) 
 Here is how much of TeX's memory you used:
- 28335 strings out of 492916
- 569973 string characters out of 6133346
- 674235 words of memory out of 5000000
- 31988 multiletter control sequences out of 15000+600000
- 536316 words of font info for 84 fonts, out of 8000000 for 9000
+ 26818 strings out of 492970
+ 540860 string characters out of 6133937
+ 649056 words of memory out of 5000000
+ 30419 multiletter control sequences out of 15000+600000
+ 534226 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,12n,124p,1749b,1016s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,127p,10446b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on sciguide.pdf (122 pages).

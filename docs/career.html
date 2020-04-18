@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 9 就业 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 9 就业 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-04-05" />
+<meta name="date" content="2020-04-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="life.html"/>
 <link rel="next" href="tool.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -53,25 +54,26 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +82,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -132,8 +134,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 前言</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> 现代科研</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#科学知识的五个层次"><i class="fa fa-check"></i><b>2.1</b> 科学知识的五个层次</a><ul>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> 现代科研</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#科学知识的五个层次"><i class="fa fa-check"></i><b>2.1</b> 科学知识的五个层次</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#背景组"><i class="fa fa-check"></i><b>2.1.1</b> 背景组</a></li>
 <li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#已知的已知组"><i class="fa fa-check"></i><b>2.1.2</b> 已知的已知组</a></li>
 <li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#已知的未知组"><i class="fa fa-check"></i><b>2.1.3</b> 已知的未知组</a></li>
@@ -142,7 +146,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#知识体系的时间构建"><i class="fa fa-check"></i><b>2.2</b> 知识体系的时间构建</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="view.html"><a href="view.html"><i class="fa fa-check"></i><b>3</b> 科研现状概览</a><ul>
+<li class="chapter" data-level="3" data-path="view.html"><a href="view.html"><i class="fa fa-check"></i><b>3</b> 科研现状概览</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="view.html"><a href="view.html#问题为导向"><i class="fa fa-check"></i><b>3.1</b> 问题为导向</a></li>
 <li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#专业与综合"><i class="fa fa-check"></i><b>3.2</b> 专业与综合</a></li>
 <li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#研究生教育的困境"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
@@ -150,8 +155,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的就业问题"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
 <li class="chapter" data-level="3.6" data-path="view.html"><a href="view.html#可重复性危机"><i class="fa fa-check"></i><b>3.6</b> 可重复性危机</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
-<li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
+<li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#古希腊"><i class="fa fa-check"></i><b>4.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#中世纪"><i class="fa fa-check"></i><b>4.1.2</b> 中世纪</a></li>
 <li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#年以后"><i class="fa fa-check"></i><b>4.1.3</b> 1500年以后</a></li>
@@ -162,14 +169,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.8" data-path="thought.html"><a href="thought.html#实用主义"><i class="fa fa-check"></i><b>4.1.8</b> 实用主义</a></li>
 <li class="chapter" data-level="4.1.9" data-path="thought.html"><a href="thought.html#其他"><i class="fa fa-check"></i><b>4.1.9</b> 其他</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="thought.html"><a href="thought.html#模型思维"><i class="fa fa-check"></i><b>4.2</b> 模型思维</a><ul>
+<li class="chapter" data-level="4.2" data-path="thought.html"><a href="thought.html#模型思维"><i class="fa fa-check"></i><b>4.2</b> 模型思维</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="thought.html"><a href="thought.html#可编程"><i class="fa fa-check"></i><b>4.2.1</b> 可编程</a></li>
 <li class="chapter" data-level="4.2.2" data-path="thought.html"><a href="thought.html#决策模型"><i class="fa fa-check"></i><b>4.2.2</b> 决策模型</a></li>
 <li class="chapter" data-level="4.2.3" data-path="thought.html"><a href="thought.html#个体-整体模型"><i class="fa fa-check"></i><b>4.2.3</b> 个体-整体模型</a></li>
 <li class="chapter" data-level="4.2.4" data-path="thought.html"><a href="thought.html#动力学模型"><i class="fa fa-check"></i><b>4.2.4</b> 动力学模型</a></li>
 <li class="chapter" data-level="4.2.5" data-path="thought.html"><a href="thought.html#求解模型"><i class="fa fa-check"></i><b>4.2.5</b> 求解模型</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="thought.html"><a href="thought.html#统计思维"><i class="fa fa-check"></i><b>4.3</b> 统计思维</a><ul>
+<li class="chapter" data-level="4.3" data-path="thought.html"><a href="thought.html#统计思维"><i class="fa fa-check"></i><b>4.3</b> 统计思维</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="thought.html"><a href="thought.html#抽象"><i class="fa fa-check"></i><b>4.3.1</b> 抽象</a></li>
 <li class="chapter" data-level="4.3.2" data-path="thought.html"><a href="thought.html#似然度"><i class="fa fa-check"></i><b>4.3.2</b> 似然度</a></li>
 <li class="chapter" data-level="4.3.3" data-path="thought.html"><a href="thought.html#回归"><i class="fa fa-check"></i><b>4.3.3</b> 回归</a></li>
@@ -177,20 +186,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.3.5" data-path="thought.html"><a href="thought.html#残差"><i class="fa fa-check"></i><b>4.3.5</b> 残差</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="exp.html"><a href="exp.html"><i class="fa fa-check"></i><b>5</b> 实验</a><ul>
+<li class="chapter" data-level="5" data-path="exp.html"><a href="exp.html"><i class="fa fa-check"></i><b>5</b> 实验</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#实验设计原则"><i class="fa fa-check"></i><b>5.1</b> 实验设计原则</a></li>
-<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a><ul>
+<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="exp.html"><a href="exp.html#信度效度"><i class="fa fa-check"></i><b>5.2.1</b> 信度效度</a></li>
 <li class="chapter" data-level="5.2.2" data-path="exp.html"><a href="exp.html#均质异质性"><i class="fa fa-check"></i><b>5.2.2</b> 均质异质性</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#定量实验"><i class="fa fa-check"></i><b>5.3</b> 定量实验</a><ul>
+<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#定量实验"><i class="fa fa-check"></i><b>5.3</b> 定量实验</a>
+<ul>
 <li class="chapter" data-level="5.3.1" data-path="exp.html"><a href="exp.html#基线"><i class="fa fa-check"></i><b>5.3.1</b> 基线</a></li>
 <li class="chapter" data-level="5.3.2" data-path="exp.html"><a href="exp.html#指标化"><i class="fa fa-check"></i><b>5.3.2</b> 指标化</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="exp.html"><a href="exp.html#思想实验"><i class="fa fa-check"></i><b>5.4</b> 思想实验</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>6</b> 数据处理</a><ul>
-<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.1</b> 多重比较</a><ul>
+<li class="chapter" data-level="6" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>6</b> 数据处理</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.1</b> 多重比较</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="data.html"><a href="data.html#单步法等方差"><i class="fa fa-check"></i><b>6.1.1</b> 单步法等方差</a></li>
 <li class="chapter" data-level="6.1.2" data-path="data.html"><a href="data.html#单步法异方差对比与两两比较"><i class="fa fa-check"></i><b>6.1.2</b> 单步法异方差(对比与两两比较)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="data.html"><a href="data.html#单步法空白对比"><i class="fa fa-check"></i><b>6.1.3</b> 单步法空白对比</a></li>
@@ -211,15 +225,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.11" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.11</b> 容器技术</a></li>
 <li class="chapter" data-level="6.12" data-path="data.html"><a href="data.html#云计算"><i class="fa fa-check"></i><b>6.12</b> 云计算</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
-<li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
+<li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a>
+<ul>
 <li class="chapter" data-level="7.1.1" data-path="lib.html"><a href="lib.html#从无到有"><i class="fa fa-check"></i><b>7.1.1</b> 从无到有</a></li>
 <li class="chapter" data-level="7.1.2" data-path="lib.html"><a href="lib.html#从有到精"><i class="fa fa-check"></i><b>7.1.2</b> 从有到精</a></li>
 <li class="chapter" data-level="7.1.3" data-path="lib.html"><a href="lib.html#从精到用"><i class="fa fa-check"></i><b>7.1.3</b> 从精到用</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="lib.html"><a href="lib.html#信息收集"><i class="fa fa-check"></i><b>7.2</b> 信息收集</a></li>
 <li class="chapter" data-level="7.3" data-path="lib.html"><a href="lib.html#文献引用"><i class="fa fa-check"></i><b>7.3</b> 文献引用</a></li>
-<li class="chapter" data-level="7.4" data-path="lib.html"><a href="lib.html#文本挖掘"><i class="fa fa-check"></i><b>7.4</b> 文本挖掘</a><ul>
+<li class="chapter" data-level="7.4" data-path="lib.html"><a href="lib.html#文本挖掘"><i class="fa fa-check"></i><b>7.4</b> 文本挖掘</a>
+<ul>
 <li class="chapter" data-level="7.4.1" data-path="lib.html"><a href="lib.html#关键词"><i class="fa fa-check"></i><b>7.4.1</b> 关键词</a></li>
 <li class="chapter" data-level="7.4.2" data-path="lib.html"><a href="lib.html#作者"><i class="fa fa-check"></i><b>7.4.2</b> 作者</a></li>
 <li class="chapter" data-level="7.4.3" data-path="lib.html"><a href="lib.html#时空分布"><i class="fa fa-check"></i><b>7.4.3</b> 时空分布</a></li>
@@ -227,8 +244,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="lib.html"><a href="lib.html#荟萃分析"><i class="fa fa-check"></i><b>7.5</b> 荟萃分析</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="life.html"><a href="life.html"><i class="fa fa-check"></i><b>8</b> 学术生活</a><ul>
-<li class="chapter" data-level="8.1" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.1</b> 项目管理</a><ul>
+<li class="chapter" data-level="8" data-path="life.html"><a href="life.html"><i class="fa fa-check"></i><b>8</b> 学术生活</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.1</b> 项目管理</a>
+<ul>
 <li class="chapter" data-level="8.1.1" data-path="life.html"><a href="life.html#香肠战术"><i class="fa fa-check"></i><b>8.1.1</b> 香肠战术</a></li>
 <li class="chapter" data-level="8.1.2" data-path="life.html"><a href="life.html#风险管理"><i class="fa fa-check"></i><b>8.1.2</b> 风险管理</a></li>
 <li class="chapter" data-level="8.1.3" data-path="life.html"><a href="life.html#时间管理"><i class="fa fa-check"></i><b>8.1.3</b> 时间管理</a></li>
@@ -237,14 +256,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.1.6</b> SWOT分析</a></li>
 <li class="chapter" data-level="8.1.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.1.7</b> 笔记管理</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.2</b> 学术出版</a><ul>
+<li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.2</b> 学术出版</a>
+<ul>
 <li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.2.1</b> 期刊论文</a></li>
 <li class="chapter" data-level="8.2.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.2.2</b> 会议摘要</a></li>
 <li class="chapter" data-level="8.2.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.2.3</b> 专著</a></li>
 <li class="chapter" data-level="8.2.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.2.4</b> 专利</a></li>
 <li class="chapter" data-level="8.2.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.2.5</b> 软件</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.3</b> 学术会议</a><ul>
+<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.3</b> 学术会议</a>
+<ul>
 <li class="chapter" data-level="8.3.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.3.1</b> 口头报告</a></li>
 <li class="chapter" data-level="8.3.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.3.2</b> 海报报告</a></li>
 <li class="chapter" data-level="8.3.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.3.3</b> 电梯报告</a></li>
@@ -252,11 +273,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.4</b> 审稿</a></li>
 <li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.5</b> 学术合作</a></li>
-<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.6</b> 利益冲突</a><ul>
+<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.6</b> 利益冲突</a>
+<ul>
 <li class="chapter" data-level="8.6.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.6.1</b> 数据共享</a></li>
 <li class="chapter" data-level="8.6.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.6.2</b> 社交网络</a></li>
 </ul></li>
-<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.7</b> 讲课</a><ul>
+<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.7</b> 讲课</a>
+<ul>
 <li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.7.1</b> 学生如何学习？</a></li>
 <li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.7.2</b> 如何激励学生？</a></li>
 <li class="chapter" data-level="8.7.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.7.3</b> 评价学习</a></li>
@@ -264,12 +287,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.7.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.7.5</b> 互动学习</a></li>
 <li class="chapter" data-level="8.7.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.7.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.8</b> 课题组管理</a><ul>
+<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.8</b> 课题组管理</a>
+<ul>
 <li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#科研的创业隐喻"><i class="fa fa-check"></i><b>8.8.1</b> 科研的创业隐喻</a></li>
 <li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#基金申请"><i class="fa fa-check"></i><b>8.8.2</b> 基金申请</a></li>
 </ul></li>
 <li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.9</b> 学术评价</a></li>
-<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#学术道德伦理"><i class="fa fa-check"></i><b>8.10</b> 学术道德／伦理</a><ul>
+<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#学术道德伦理"><i class="fa fa-check"></i><b>8.10</b> 学术道德／伦理</a>
+<ul>
 <li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#剽窃"><i class="fa fa-check"></i><b>8.10.1</b> 剽窃</a></li>
 <li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#文章挂名"><i class="fa fa-check"></i><b>8.10.2</b> 文章挂名</a></li>
 <li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#双重发表"><i class="fa fa-check"></i><b>8.10.3</b> 双重发表</a></li>
@@ -281,13 +306,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
+<li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>
 <li class="chapter" data-level="9.2" data-path="career.html"><a href="career.html#简历"><i class="fa fa-check"></i><b>9.2</b> 简历</a></li>
 <li class="chapter" data-level="9.3" data-path="career.html"><a href="career.html#人脉"><i class="fa fa-check"></i><b>9.3</b> 人脉</a></li>
 <li class="chapter" data-level="9.4" data-path="career.html"><a href="career.html#面试"><i class="fa fa-check"></i><b>9.4</b> 面试</a></li>
 <li class="chapter" data-level="9.5" data-path="career.html"><a href="career.html#职场"><i class="fa fa-check"></i><b>9.5</b> 职场</a></li>
-<li class="chapter" data-level="9.6" data-path="career.html"><a href="career.html#职业"><i class="fa fa-check"></i><b>9.6</b> 职业</a><ul>
+<li class="chapter" data-level="9.6" data-path="career.html"><a href="career.html#职业"><i class="fa fa-check"></i><b>9.6</b> 职业</a>
+<ul>
 <li class="chapter" data-level="9.6.1" data-path="career.html"><a href="career.html#学科鄙视链"><i class="fa fa-check"></i><b>9.6.1</b> 学科鄙视链</a></li>
 <li class="chapter" data-level="9.6.2" data-path="career.html"><a href="career.html#博后"><i class="fa fa-check"></i><b>9.6.2</b> 博后</a></li>
 <li class="chapter" data-level="9.6.3" data-path="career.html"><a href="career.html#常任轨"><i class="fa fa-check"></i><b>9.6.3</b> 常任轨</a></li>
@@ -308,7 +335,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.6.18" data-path="career.html"><a href="career.html#数据科学家"><i class="fa fa-check"></i><b>9.6.18</b> 数据科学家</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html"><i class="fa fa-check"></i>附录：现代科研兵刃谱</a><ul>
+<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html"><i class="fa fa-check"></i>附录：现代科研兵刃谱</a>
+<ul>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文本编辑"><i class="fa fa-check"></i>文本编辑</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文献管理-1"><i class="fa fa-check"></i>文献管理</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据处理与绘图"><i class="fa fa-check"></i>数据处理与绘图</a></li>
@@ -317,7 +345,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#幻灯片制作"><i class="fa fa-check"></i>幻灯片制作</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#学术交流"><i class="fa fa-check"></i>学术交流</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据分享"><i class="fa fa-check"></i>数据分享</a></li>
-<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#代码管理"><i class="fa fa-check"></i>代码管理</a><ul>
+<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#代码管理"><i class="fa fa-check"></i>代码管理</a>
+<ul>
 <li class="chapter" data-level="9.6.19" data-path="tool.html"><a href="tool.html#软件编译流程"><i class="fa fa-check"></i><b>9.6.19</b> 软件编译流程</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#r包管理"><i class="fa fa-check"></i>R包管理</a></li>
 </ul></li>
@@ -342,10 +371,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="career" class="section level1">
+<div id="career" class="section level1" number="9">
 <h1><span class="header-section-number">坑 9</span> 就业</h1>
 <p>在第二章中我们提到了博士存在的就业问题，就结果而言，博士在博士阶段结束后选择博士后更多是为了下一人生阶段的就业制造机会，而就业不仅仅只是学术界。本章将重点讨论就业相关议题。求职过程一般包括投简历、搭人脉、面试、获得职位、事业发展等流程。</p>
-<div id="商业与学术" class="section level2">
+<div id="商业与学术" class="section level2" number="9.1">
 <h2><span class="header-section-number">9.1</span> 商业与学术</h2>
 <p>商业的两条规则：营利与持续改进，所有的招聘信息会根据这两条规则来设计。学术界与之对应的则是成果发表与持续改进。其实商业与学术界都有周期性，在学术界，你的周期是：</p>
 <ul>
@@ -364,13 +393,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>你会发现这两个并不矛盾，技能要求也类似，你所需要的是把学术用语转为商业用语。而商业所需要的技能集主要包括创新与风险管理、生产力改进、执行控制与财务规划。</p>
 <p>同时有些技能在学术界与商界是通用的，那就是团队管理与交流等社交技能。当你具备这些技能后，进行职业转换其实就是换一套术语体系讲故事。有些主题例如项目管理与时间管理等内容前面章节已经叙述可自行对应。</p>
 </div>
-<div id="简历" class="section level2">
+<div id="简历" class="section level2" number="9.2">
 <h2><span class="header-section-number">9.2</span> 简历</h2>
 <p>cv 是完整的个人信息，resume一般1-2页，结果导向。招聘中一般只用resume而cv一般是存档或背景检查用的。resume会包含个人陈述部分而cv更多是事实罗列。你需要日常维护cv，求职时则要根据招聘信息对cv进行优化。有两点要注意：对外对内要用不同邮箱进行区分且最好有个人简短不重复的ID，这对招聘方来说比较有利。</p>
 <p>一条招聘信息通常包含三层技能需求：科研技能要求、商业技能要求与社交技能要求。毕业生通常只会关注科研技能要求但其实科研技能要求虽然是门槛，但造成职业竞争力差异的并不是科研技能，而是商业技能与社交要求是否在简历中体现，特别是那些在招聘信息里写的很清楚的却常被忽视的。一份招聘如果标注了团队能力、项目管理就要针对性对你自己的经历进行描述。这些三层内容要在简历的个人陈述中分段体现，给招聘者的信号就是你不但读了招聘信息还读懂了企业的需求。</p>
 <p>与简历相关的是求职信（cover letter），通常来说如果没有特别说你要提交就可以告诉招聘者简历是不是目的性的及覆盖的内容，然后就是留下联系方式。如果你有与招聘者的社交联系或正面评论等简历里不合适出现的内容可以在求职信里提，例如读过论文及会议上留意过展台，一定要诚实，不要能巧成拙！在邮件联系时要礼貌（及时发送感谢信）且及时跟进（follow up），正常人都想做个好人，特别是对弱联系或一面之缘的人。</p>
 </div>
-<div id="人脉" class="section level2">
+<div id="人脉" class="section level2" number="9.3">
 <h2><span class="header-section-number">9.3</span> 人脉</h2>
 <p>简历的准备主要不是指望海投可以投中，而是在理想职位出现后通过最合适的人替你内推并拿到面试机会（占比80%）。不论职场还是学术界，人们都喜欢从了解的人那里获得推荐候选人，一方面有人背书，另一方面海投过来的信息存在大量非目的性简历而筛选简历经常是很任性的过程。你的求职目标就是找一个自己喜欢且招聘方也会对你满意的职位，不了解自己与对方需求的简历是对双方时间精力的浪费。</p>
 <p>在于陌生人建立联系时，可通过亲朋好友或校友老乡等入手，也可以参与主题聚会并通过共同场景建立联系。不同于学术界，社会职场每个人的知识背景是不一样的，不要使用专业术语来跟非专业人士交流。一个合格博士需要有能力用通俗语言跟他人交流，特别是你的研究内容，全是专业术语更多显示的是对本质的不理解。事物可以是复杂的，但不能是说不清楚的。</p>
@@ -380,7 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>具体训练交际技能可参考3M&amp;M方法。当A问B一个问题时，B反问A三个问题，问问题前吃一颗糖豆来给自己思考时间，得到答案后再回答A最初问题，提问过程中要注意对方性格类型与情感诉求，然后用个人角色出发在理解同情角度解决或回答对方提出的问题。另一种练习的方式叫做 elevator pitch，也就是模拟两个人在电梯里偶遇然后用大概1-3分钟时间把你想说的事说清楚。</p>
 <p>在建立了有效的联系后，你需要一定的维护，可以通过邮件往来或社交网络关注。注意，你不需要很密切的联系而是更多让对方对你有一个角色标签，这样对方遇到合适职位时会联想到你。而另一种联系方式就是信息面试（ information interview），当你特别想取得一个职位时，需要通过人脉来非正式了解情况，此时可以约下相关人来聊天。首先你要自己进行一定调研，这样不浪费双方时间，然后准备好帮助对方想起你的自我介绍，然后对话以寻求建议与背景信息为主而非针对职位，特别是在招聘信息或官方网站上没有提及的内容，对话后发送邮件表示感谢。</p>
 </div>
-<div id="面试" class="section level2">
+<div id="面试" class="section level2" number="9.4">
 <h2><span class="header-section-number">9.4</span> 面试</h2>
 <p>要做好充分准备，了解公司运营、财报、新闻，从社交网络里获取面试人的角色信息。要尊重面试官，眼神要直视，回答问题前要停顿一下过脑子，多听少说别打岔。回答问题可采用 STAR 方法，也就是场景（situation）- 任务（task）- 行动（action）- 结果（result）。先给出场景，然后描述你的任务，然后叙述你采取的行动并最终总结结果，要言之有物。</p>
 <p>下面是常见的面试问题，可事先准备或练习：</p>
@@ -411,7 +440,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>你当前工作的里程碑是什么</li>
 </ul>
 </div>
-<div id="职场" class="section level2">
+<div id="职场" class="section level2" number="9.5">
 <h2><span class="header-section-number">9.5</span> 职场</h2>
 <p>日常工作中要懂得向上管理，也就是合理向你的上级表述你的需求、意愿来达成你的工作目标。向上管理意味着你的角色是主动的而不是被动的，对于工作推进总是积极态度而不是一味听指挥。与上级不同意见时，要用对事不对人的态度从数据、外部环境等客观事实出发解释不同决策下会出现的不同境遇，把决策权有导向性的给上级进行传递。同时，要对上级利益关系有清楚了解，如果上级阻碍你的长期个人发展，尽早考虑下一份工作而不是长期内耗。</p>
 <p>给同事或上下级反馈要采取绩效反馈（performance feedback）的方式来进行持续改进与量化评价管理（例如six sigma 的黑带认证）。不要泛泛而谈大道理而是专注到具体的事，不要针对个人而是针对行为表现进行反馈，目标是为了帮助而不是打击，给出的意见要具备可执行性且点到为止，要在反馈中询问对方是否听明白，然后之后要跟进结果。在发现低效行为时马上进行反馈纠正，指出期望与评价标准，阐述行为后果与高效的行为后果并鼓励改进，不要抓着一点不妨且避免公开指责，设定截止日期来检查结果，向前推进。发现高效行为时要马上嘉奖给予正反馈，也要指出你的评价标准与该行为对目标的帮助，鼓励是为了保持高水平绩效。</p>
@@ -421,87 +450,87 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>搞清楚自己实力与运气的比例，如果你运气很好，那么某个职位上就要虚心多去请教前辈才能更上层楼而不是感觉无所谓。运气只有在实力相当时才会起作用（实力悖论），否则德不配位就比较麻烦。</p>
 <p>职场中的项目管理与学术项目管理类似，参考前一章内容。</p>
 </div>
-<div id="职业" class="section level2">
+<div id="职业" class="section level2" number="9.6">
 <h2><span class="header-section-number">9.6</span> 职业</h2>
-<div id="学科鄙视链" class="section level3">
+<div id="学科鄙视链" class="section level3" number="9.6.1">
 <h3><span class="header-section-number">9.6.1</span> 学科鄙视链</h3>
 </div>
-<div id="博后" class="section level3">
+<div id="博后" class="section level3" number="9.6.2">
 <h3><span class="header-section-number">9.6.2</span> 博后</h3>
 <p>欧洲</p>
 <p>hard money soft money</p>
 <p>企业博后</p>
 </div>
-<div id="常任轨" class="section level3">
+<div id="常任轨" class="section level3" number="9.6.3">
 <h3><span class="header-section-number">9.6.3</span> 常任轨</h3>
 <ul>
 <li>常任轨研究教授</li>
 <li>常任轨文理学院教授</li>
 </ul>
 </div>
-<div id="非常任轨" class="section level3">
+<div id="非常任轨" class="section level3" number="9.6.4">
 <h3><span class="header-section-number">9.6.4</span> 非常任轨</h3>
 <ul>
 <li>研究性教职</li>
 <li>行政工作</li>
 </ul>
 </div>
-<div id="非高等教育" class="section level3">
+<div id="非高等教育" class="section level3" number="9.6.5">
 <h3><span class="header-section-number">9.6.5</span> 非高等教育</h3>
 <ul>
 <li>k12教育</li>
 </ul>
 </div>
-<div id="政府" class="section level3">
+<div id="政府" class="section level3" number="9.6.6">
 <h3><span class="header-section-number">9.6.6</span> 政府</h3>
 </div>
-<div id="科学顾问" class="section level3">
+<div id="科学顾问" class="section level3" number="9.6.7">
 <h3><span class="header-section-number">9.6.7</span> 科学顾问</h3>
 <p>in house</p>
 <p>专利考试</p>
 <p>注意细节拼写与写作</p>
 </div>
-<div id="咨询" class="section level3">
+<div id="咨询" class="section level3" number="9.6.8">
 <h3><span class="header-section-number">9.6.8</span> 咨询</h3>
 <p>解决问题的方案</p>
 </div>
-<div id="企业科研药企" class="section level3">
+<div id="企业科研药企" class="section level3" number="9.6.9">
 <h3><span class="header-section-number">9.6.9</span> 企业科研/药企</h3>
 <p>药企与医学院</p>
 </div>
-<div id="销售与应用专家及营销" class="section level3">
+<div id="销售与应用专家及营销" class="section level3" number="9.6.10">
 <h3><span class="header-section-number">9.6.10</span> 销售与应用专家及营销</h3>
 <p>主要在仪器公司工作，为科研需求提供支持。</p>
 </div>
-<div id="创业" class="section level3">
+<div id="创业" class="section level3" number="9.6.11">
 <h3><span class="header-section-number">9.6.11</span> 创业</h3>
 </div>
-<div id="编辑出版社" class="section level3">
+<div id="编辑出版社" class="section level3" number="9.6.12">
 <h3><span class="header-section-number">9.6.12</span> 编辑/出版社</h3>
 <p>认真严谨但更重要的是对学科前沿的把握</p>
 </div>
-<div id="ngo" class="section level3">
+<div id="ngo" class="section level3" number="9.6.13">
 <h3><span class="header-section-number">9.6.13</span> NGO</h3>
 <p>主要管理基金，产学研结合。</p>
 </div>
-<div id="金融" class="section level3">
+<div id="金融" class="section level3" number="9.6.14">
 <h3><span class="header-section-number">9.6.14</span> 金融</h3>
 <p>工作压力大，资金流全流程了解</p>
 </div>
-<div id="公共卫生" class="section level3">
+<div id="公共卫生" class="section level3" number="9.6.15">
 <h3><span class="header-section-number">9.6.15</span> 公共卫生</h3>
 <p>复杂性学科</p>
 </div>
-<div id="科学传播" class="section level3">
+<div id="科学传播" class="section level3" number="9.6.16">
 <h3><span class="header-section-number">9.6.16</span> 科学传播</h3>
 <p>把自己的成果讲给别人</p>
 </div>
-<div id="医药交流" class="section level3">
+<div id="医药交流" class="section level3" number="9.6.17">
 <h3><span class="header-section-number">9.6.17</span> 医药交流</h3>
 <p>把科研进展带给医生（medical science liaison）
 帮助药厂把新药与疗法传播给客户（medical communication）</p>
 </div>
-<div id="数据科学家" class="section level3">
+<div id="数据科学家" class="section level3" number="9.6.18">
 <h3><span class="header-section-number">9.6.18</span> 数据科学家</h3>
 <p>分析数据</p>
 

@@ -12,3 +12,14 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+@font-face {
+  font-family: "source-serif";
+  src: url("./fonts/source-serif/SourceHanSerifCN-Light.otf");
+}
+
+.book.font-family-0 {
+  font-family: source-han-serif-sc, serif;
+  font-weight: 400;
+  font-style: normal;
+}

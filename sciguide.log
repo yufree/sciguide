@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  5 APR 2020 19:34
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  19 APR 2020 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1737,15 +1737,15 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 764; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [61]
-Overfull \hbox (141.72012pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ##       1       2       3       4       5       6     
-  7       8       9      10[] 
+Overfull \hbox (125.12059pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ##      1      2      3      4      5      6      7    
+  8      9     10     11[] 
  []
 
 
-Overfull \hbox (141.71983pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## -0.1667  1.3333  1.3333  1.3333 -1.3333 -1.3333 -0.1
-667  0.1667 -0.1667 -1.3333[] 
+Overfull \hbox (125.12036pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## -1.167 -2.000  2.000 -1.167 -2.000 -2.000  1.167  1.
+167  2.000 -1.167  2.000[] 
  []
 
 
@@ -1755,15 +1755,9 @@ Overfull \hbox (47.65602pt too wide) in paragraph at lines 764--764
  []
 
 
-Overfull \hbox (3.39063pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 2.327 on 2 degrees of freed
-om[] 
- []
-
-
-Overfull \hbox (8.9238pt too wide) in paragraph at lines 764--764
-[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.8627, Adjusted R-squared:  0.
-245[] 
+Overfull \hbox (14.45695pt too wide) in paragraph at lines 764--764
+[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.5924, Adjusted R-squared:  -1
+.242[] 
  []
 
 

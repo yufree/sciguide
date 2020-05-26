@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 8 学术生活 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 8 学术生活 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-04-19" />
+<meta name="date" content="2020-05-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,9 +53,9 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +64,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +82,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -147,14 +149,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#专业与综合"><i class="fa fa-check"></i><b>3.2</b> 专业与综合</a></li>
 <li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#研究生教育的困境"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
 <li class="chapter" data-level="3.4" data-path="view.html"><a href="view.html#毕业延期问题"><i class="fa fa-check"></i><b>3.4</b> 毕业延期问题</a></li>
-<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的就业问题"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
+<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的学术路径"><i class="fa fa-check"></i><b>3.5</b> 博士的学术路径</a></li>
 <li class="chapter" data-level="3.6" data-path="view.html"><a href="view.html#可重复性危机"><i class="fa fa-check"></i><b>3.6</b> 可重复性危机</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#古希腊"><i class="fa fa-check"></i><b>4.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#中世纪"><i class="fa fa-check"></i><b>4.1.2</b> 中世纪</a></li>
-<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#年以后"><i class="fa fa-check"></i><b>4.1.3</b> 1500年以后</a></li>
+<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#文艺复兴之后"><i class="fa fa-check"></i><b>4.1.3</b> 文艺复兴之后</a></li>
 <li class="chapter" data-level="4.1.4" data-path="thought.html"><a href="thought.html#逻辑实证主义"><i class="fa fa-check"></i><b>4.1.4</b> 逻辑实证主义</a></li>
 <li class="chapter" data-level="4.1.5" data-path="thought.html"><a href="thought.html#否证主义"><i class="fa fa-check"></i><b>4.1.5</b> 否证主义</a></li>
 <li class="chapter" data-level="4.1.6" data-path="thought.html"><a href="thought.html#历史主义"><i class="fa fa-check"></i><b>4.1.6</b> 历史主义</a></li>
@@ -236,6 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.5" data-path="life.html"><a href="life.html#头脑风暴"><i class="fa fa-check"></i><b>8.1.5</b> 头脑风暴</a></li>
 <li class="chapter" data-level="8.1.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.1.6</b> SWOT分析</a></li>
 <li class="chapter" data-level="8.1.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.1.7</b> 笔记管理</a></li>
+<li class="chapter" data-level="8.1.8" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.1.8</b> 邮件</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.2</b> 学术出版</a><ul>
 <li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.2.1</b> 期刊论文</a></li>
@@ -349,10 +352,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="香肠战术" class="section level3">
 <h3><span class="header-section-number">8.1.1</span> 香肠战术</h3>
 <ul>
-<li>不断切分到具体可执行</li>
-<li>执行成本可控</li>
-<li>执行时不思考整体，关注当下</li>
-<li>转移注意力可放松，但要设计成杨白劳模式</li>
+<li><p>不断切分到具体可执行</p></li>
+<li><p>执行成本可控</p></li>
+<li><p>执行时不思考整体，关注当下</p></li>
+<li><p>转移注意力可放松，但要设计成杨白劳模式</p></li>
 <li><p>分阶段有始有终</p></li>
 <li><p><a href="https://www.allthingsdistributed.com/2006/11/working_backwards.html">向后工作法</a>
 1、写新闻稿
@@ -411,30 +414,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>费曼学习法，通过教或写文章总结来学</li>
 </ul>
 </div>
+<div id="邮件" class="section level3">
+<h3><span class="header-section-number">8.1.8</span> 邮件</h3>
+<ul>
+<li>回复要快，24小时以内</li>
+<li>题目要有辨识度，简明扼要</li>
+<li>题目/正文要有关键词方便检索</li>
+<li>一封邮件讨论一件事</li>
+<li>简短，让读者有可操作性</li>
+<li>时间紧急时告诉收信人无回复的结果</li>
+<li>有后续追踪</li>
+<li>有附件一定在正文中说明</li>
+<li>提供自己联系方式</li>
+<li>尽量纯文本文件</li>
+<li>抄送的人没有回复义务</li>
+<li>注意回复一个人还是所有人</li>
+<li>秘密抄送尽量不要用</li>
+<li>收到回信根据落款选择下一次名字</li>
+<li>给陌生人邮件第一句介绍自己</li>
+<li>第二句介绍你如何直到对方</li>
+<li>不用 I wanted 或 I would like，用 I was wondering</li>
+<li>可使用列表</li>
+<li>避免 please</li>
+<li>检查拼写</li>
+<li>结尾表示感谢</li>
+<li>落款可用 Sincerely，Best wishes</li>
+</ul>
+</div>
 </div>
 <div id="学术出版" class="section level2">
 <h2><span class="header-section-number">8.2</span> 学术出版</h2>
 <div id="期刊论文" class="section level3">
 <h3><span class="header-section-number">8.2.1</span> 期刊论文</h3>
 <ul>
-<li>合作者人数与版本控制</li>
+<li><p>合作者人数与版本控制</p></li>
 <li><p>先画图后写作</p>
 <ul>
 <li>可视化陷阱</li>
 <li>模块化制图</li>
 </ul></li>
-<li>语言简洁可能不利于发表，但有利于传播</li>
-<li>公开代码、数据、软件来提高研究的可重复性，被重复有利于提高学术影响力</li>
-<li>信任合作者</li>
-<li>马上动笔，拒绝完美</li>
-<li>博客文章、软件包在传播上与论文一样重要，甚至更重要</li>
-<li>论文由方法、数据、结果跟结论组成，先完成前三个</li>
-<li>阴性结果也是结果，对其他科研人员也有参考价值，也要考虑发表，哪怕是博客发表</li>
-<li>预先发表 <a href="https://deevybee.blogspot.com/2018/06/preprint-publication-as-karaoke.html">资料</a></li>
-<li>投稿到你设想中读者会读到的地方</li>
-<li>通过社交网络传播你的发现</li>
-<li>开放获取？？？基金与影响力传播</li>
-<li>延长论文的半衰期</li>
+<li><p>语言简洁可能不利于发表，但有利于传播</p></li>
+<li><p>公开代码、数据、软件来提高研究的可重复性，被重复有利于提高学术影响力</p></li>
+<li><p>信任合作者</p></li>
+<li><p>马上动笔，拒绝完美</p></li>
+<li><p>博客文章、软件包在传播上与论文一样重要，甚至更重要</p></li>
+<li><p>论文由方法、数据、结果跟结论组成，先完成前三个</p></li>
+<li><p>阴性结果也是结果，对其他科研人员也有参考价值，也要考虑发表，哪怕是博客发表</p></li>
+<li><p>预先发表 <a href="https://deevybee.blogspot.com/2018/06/preprint-publication-as-karaoke.html">资料</a></p></li>
+<li><p>投稿到你设想中读者会读到的地方</p></li>
+<li><p>通过社交网络传播你的发现</p></li>
+<li><p>开放获取？？？基金与影响力传播</p></li>
+<li><p>延长论文的半衰期</p></li>
 <li><p><a href="https://rayyan.qcri.org">综述</a></p></li>
 <li><p>回复审稿人</p>
 <ul>
@@ -525,6 +555,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>可以进行发表后审稿或公开评论</li>
 <li>流程是主编确认投稿是否合乎范围，分配给专业副主编，副主编寻找审稿人</li>
 <li>如果对方改了也不能达到你认为的标准，拒绝而不是大修或小修</li>
+<li>不要在审稿意见中推广自己的观点，就事论事</li>
 <li><a href="https://doi.org/10.1371/journal.pone.0026895">开放审稿会提高同行评议准确率</a></li>
 <li><a href="https://doi.org/10.1021/ez5001148">审稿指数</a></li>
 </ul>

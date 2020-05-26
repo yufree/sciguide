@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 3 科研现状概览 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 3 科研现状概览 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-04-19" />
+<meta name="date" content="2020-05-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,9 +53,9 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +64,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +82,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -147,14 +149,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="view.html"><a href="view.html#专业与综合"><i class="fa fa-check"></i><b>3.2</b> 专业与综合</a></li>
 <li class="chapter" data-level="3.3" data-path="view.html"><a href="view.html#研究生教育的困境"><i class="fa fa-check"></i><b>3.3</b> 研究生教育的困境</a></li>
 <li class="chapter" data-level="3.4" data-path="view.html"><a href="view.html#毕业延期问题"><i class="fa fa-check"></i><b>3.4</b> 毕业延期问题</a></li>
-<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的就业问题"><i class="fa fa-check"></i><b>3.5</b> 博士的就业问题</a></li>
+<li class="chapter" data-level="3.5" data-path="view.html"><a href="view.html#博士的学术路径"><i class="fa fa-check"></i><b>3.5</b> 博士的学术路径</a></li>
 <li class="chapter" data-level="3.6" data-path="view.html"><a href="view.html#可重复性危机"><i class="fa fa-check"></i><b>3.6</b> 可重复性危机</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#古希腊"><i class="fa fa-check"></i><b>4.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#中世纪"><i class="fa fa-check"></i><b>4.1.2</b> 中世纪</a></li>
-<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#年以后"><i class="fa fa-check"></i><b>4.1.3</b> 1500年以后</a></li>
+<li class="chapter" data-level="4.1.3" data-path="thought.html"><a href="thought.html#文艺复兴之后"><i class="fa fa-check"></i><b>4.1.3</b> 文艺复兴之后</a></li>
 <li class="chapter" data-level="4.1.4" data-path="thought.html"><a href="thought.html#逻辑实证主义"><i class="fa fa-check"></i><b>4.1.4</b> 逻辑实证主义</a></li>
 <li class="chapter" data-level="4.1.5" data-path="thought.html"><a href="thought.html#否证主义"><i class="fa fa-check"></i><b>4.1.5</b> 否证主义</a></li>
 <li class="chapter" data-level="4.1.6" data-path="thought.html"><a href="thought.html#历史主义"><i class="fa fa-check"></i><b>4.1.6</b> 历史主义</a></li>
@@ -236,6 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.5" data-path="life.html"><a href="life.html#头脑风暴"><i class="fa fa-check"></i><b>8.1.5</b> 头脑风暴</a></li>
 <li class="chapter" data-level="8.1.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.1.6</b> SWOT分析</a></li>
 <li class="chapter" data-level="8.1.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.1.7</b> 笔记管理</a></li>
+<li class="chapter" data-level="8.1.8" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.1.8</b> 邮件</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.2</b> 学术出版</a><ul>
 <li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.2.1</b> 期刊论文</a></li>
@@ -408,15 +411,119 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>我们都知道研究生学历在贬值，那么究竟贬到什么状况了呢？我计算了同年毕业的博士与硕士人数比例，很明显，硕士的贬值效果更强，博士相比之下反而在升值，女博士升值更高。当然，大前提是五十步笑百步，你懂的。基本的情况就是1个博士大概对应10个硕士，显然硕士作为一个学位扩的有点太猛了。后面的分析就不考虑硕士找教职了，基本没戏。</p>
 <p>新增教职数这些年基本稳定在2万这个水平，博士毕业生大概超过5万，也就是说教职市场在今后可预期的时间里撑死也就能解决一半博士的就业，另外有一半肯定会转行。考虑到博士学位对硕士学位是升值的，估计非教职市场上应该挺容易就业的，当然看你干不干了。新教职里女性比例是低于人口比例的，但这二十年却一直在增长，同样在增长的则是博士毕业生中女性的比例，伴随这个趋势，教职里对女性的歧视似乎是要好于社会其他行业的。</p>
 </div>
-<div id="博士的就业问题" class="section level2">
-<h2><span class="header-section-number">3.5</span> 博士的就业问题</h2>
-<p>全国博士毕业生目前在几万人的水平，按照很多人的说法，读到博士就应该去做学术。如果成为院士（中国科学院／中国工程院）算学术巅峰的话，那么院士的选拔可以看作到达顶峰的路径。选拔方法是什么呢？两年一次，一次总共大概150人，工程科学对半分，平均一年75人。</p>
-<p>我们假定若干年后每年还是75人，因为两院院士总规模这么些年并未有很大规模的变化，就算加上文科一级教授也就是100这个数量级。</p>
-<p>那么若干年后竞争这个数的人选平均看大概都是同年级的博士同学。目前每年全国土鳖博士毕业生6万多人，算上海归，同一年龄组大概7万人应该比较合理。</p>
-<p>那么你看到了，你需要在同年级博士毕业生里成为千分之一左右的精英才算有希望成为院士级别的学者。这个似乎有点丧气，可能院士这个比较难搞，那么准院士的杰青呢？全国每年选拔200人为杰青，那么成功概率乐观估计是千分之三，杰青其实也很难了，我们再放宽到优青。全国每年选拔400人为优青，那么乐观估计成功几率大概是千分之五。即使我们大胆认为博士有一半不从事科研工作，几率翻倍成为优青也要是百里挑一。</p>
-<p>也许你会说优青杰青比较遥远，那么教授或者正高不算遥远了吧，毕竟每个博士背后都有一个博导。那么全国博导能有多少呢，乐观估计6万，年龄分布从35岁到65岁，如果是均匀分布的话且保证65岁退休，那么每年能产生出2千正高岗位，除以当年大约7万的博士人数，这个比例不到百分之三。就算我把那些做学术但不培养博士的岗位算上，这个比例也不会超过5%。硕士毕业生15年大概50万，说明副高大概最多也就这个数，每年也就1-2万岗位，也就是说大概20%的博士最终能走到副高，其实这个比例也不算高，不过可以作为大多数人可以预想的目标。</p>
+<div id="博士的学术路径" class="section level2">
+<h2><span class="header-section-number">3.5</span> 博士的学术路径</h2>
+<p>全国博士毕业生目前在几万人的水平，按照很多人的说法，读到博士就应该去做学术。但学术路径可能并不好走，简单划分，学术路径包括以下几个阶段：</p>
+<ul>
+<li><p>博士博后阶段，主要目标累积文章拿教职，占当年博士毕业生30%</p></li>
+<li><p>独立课题组阶段，主要目标能自己课题组正常运行，占当年博士毕业生5%</p></li>
+<li><p>学术带头人阶段，主要目标其平台或方向可以持续运行，占当年博士毕业生1%</p></li>
+<li><p>学科带头人阶段，主要目标是为自己学科从国家那边争取资源，占当年博士毕业生0.1%</p></li>
+</ul>
+<p>下面是一个图表，可用来评估不同阶段的状态。</p>
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 3.1: </span>理想学术路径</caption>
+<thead>
+<tr class="header">
+<th align="left">指标</th>
+<th align="left">博士博后</th>
+<th align="left">独立课题组</th>
+<th align="left">学术带头人</th>
+<th align="left">学科带头人</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">年产文章</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">～10</td>
+<td align="left">&gt;10</td>
+</tr>
+<tr class="even">
+<td align="left">文章档次</td>
+<td align="left">专业期刊</td>
+<td align="left">一超多强</td>
+<td align="left">综述</td>
+<td align="left">CNS</td>
+</tr>
+<tr class="odd">
+<td align="left">年龄</td>
+<td align="left">32</td>
+<td align="left">35</td>
+<td align="left">45</td>
+<td align="left">70</td>
+</tr>
+<tr class="even">
+<td align="left">规模</td>
+<td align="left">1</td>
+<td align="left">&lt;10</td>
+<td align="left">20-30/有梯队</td>
+<td align="left">50-100/有传承</td>
+</tr>
+<tr class="odd">
+<td align="left">课程</td>
+<td align="left">带学生</td>
+<td align="left">本科研究生教学</td>
+<td align="left">学位培养计划</td>
+<td align="left">学科前沿指导</td>
+</tr>
+<tr class="even">
+<td align="left">会议</td>
+<td align="left">口头报告</td>
+<td align="left">keynote</td>
+<td align="left">分会场主席</td>
+<td align="left">大会报告</td>
+</tr>
+<tr class="odd">
+<td align="left">职称</td>
+<td align="left">讲师/研究员</td>
+<td align="left">副教授</td>
+<td align="left">教授</td>
+<td align="left">学生教授</td>
+</tr>
+<tr class="even">
+<td align="left">期刊</td>
+<td align="left">审稿人</td>
+<td align="left">编委</td>
+<td align="left">副主编</td>
+<td align="left">主编</td>
+</tr>
+<tr class="odd">
+<td align="left">帽子</td>
+<td align="left">百篇优博</td>
+<td align="left">百人/优青/青千</td>
+<td align="left">长江/杰青/千人</td>
+<td align="left">院士</td>
+</tr>
+<tr class="even">
+<td align="left">年新增人数/总人数</td>
+<td align="left">10万/100万</td>
+<td align="left">2000/50万</td>
+<td align="left">500/2万</td>
+<td align="left">50/2000</td>
+</tr>
+<tr class="odd">
+<td align="left">基金/年审批数目</td>
+<td align="left">青基 /20000</td>
+<td align="left">面上 /20000</td>
+<td align="left">重点 /1000</td>
+<td align="left">重大 /个位数</td>
+</tr>
+<tr class="even">
+<td align="left">行政</td>
+<td align="left">跑腿</td>
+<td align="left">自给自足</td>
+<td align="left">院系领导</td>
+<td align="left">院长校长</td>
+</tr>
+</tbody>
+</table>
+<p>如果成为院士（中国科学院／中国工程院）算学术巅峰的话，那么院士的选拔可以看作到达顶峰的路径。选拔方法是什么呢？两年一次，一次总共大概150人，工程科学对半分，平均一年75人。我们假定若干年后每年还是75人，因为两院院士总规模这么些年并未有很大规模的变化，就算加上文科一级教授也就是100这个数量级。那么若干年后竞争这个数的人选平均看大概都是同年级的博士同学。目前每年全国土鳖博士毕业生6万多人，算上海归，同一年龄组大概7万人应该比较合理。也就是说，你需要在同年级博士毕业生里成为千分之一左右的精英才算有希望成为院士级别的学者。</p>
+<p>另一个算法可以用博导数量估计，毕竟每个博士背后都有一个博导。那么全国博导能有多少呢，乐观估计6万，年龄分布从35岁到65岁，如果是均匀分布的话且保证65岁退休，那么每年能产生出2千正高岗位，除以当年大约7万的博士人数，这个比例不到百分之三。就算我把那些做学术但不培养博士的岗位算上，这个比例也不会超过5%。硕士毕业生15年大概50万，说明副高大概最多也就这个数，每年也就1-2万岗位，也就是说大概20%的博士最终能走到副高，其实这个比例也不算高，不过可以作为大多数人可以预想的目标。而副高里其实也就四分之一的人是真正可以独立科研的，其余的都是小老板，有自己独立课题组的人占当年毕业生的比例都是5%以下。</p>
+<p>也就是说，留在学术界的博士里面大部分人最后都是没法继续攀爬到学术带头人甚至独立课题组的。或者错过了年龄，或者需要照顾家庭，这才是常态，绝大部分博士止步副高二十年是很正常的事，上面那条学术路径只适合千分之一的人走完。所以说选了科研的很多人最后会有副业或其他重心，通过咨询、培训与职业化路径例如教书、律师、医生还有工程师来实现社会价值与自我价值，在前沿努力的科学家固然可敬，但机会总数固定后人数增加就会造成人才外溢。</p>
 <p>你可能会说做学术要有一定理想，不能这么功利，说这话的有相当比例站着说话不腰疼。如果你已经走到教授研究员这个档次自然可以跟人谈理想，但坦白说现在的博导平均拿到学位都是20年前的事了，那个时候博士一年毕业7千多人，而现在博士毕业生数目翻了10倍，换句话在目前的晋升条件下你成为教授的概率大概是50%，如果有一半不做学术，几乎可以肯定就是教授了。10年前一年博士毕业人数大概是现在的一半多，这意味着其晋升教授可能性也有十分之一，尚算合理。但10年后如果博士年毕业生达到10万，那么其成为教授将跟现在成为优青差不多难度，代际不平衡是十分严重的。不了解基础状况就把人往坑里带的后果挺严重的，自上而下，金字塔顶端人数就那么多，一味扩大底端几乎意味着大量博士要陷入无尽的博后循环之中去拉伸等级。</p>
-<p>所以其实我挺理解很多劝博士毕业转行的看法的，那怕你手握博士学位，目前在国内想走到教授也是个p&lt;0.05的事，大概20个人里有一个。考虑到一般博士同学同院系大概也就是20个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？</p>
+<p>所以其实我挺理解很多劝博士毕业转行的看法的，那怕你手握博士学位，目前在国内想走到独立课题组也是个p&lt;0.05的事，大概20个人里有一个。考虑到一般博士同学同院系大概也就是20个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？</p>
 <p>同时要注意，国内博士毕业生人数还在不断上升，一方面说明教职还是有空间的，另一方面则暗示了今后博士毕业生生存环境将会更加恶劣，竞争会更加激烈。同时，目前教职数目会逐渐趋稳，如果你没赶上新学科新方向的窗口期大爆发，基本就是始终要接纳这个竞争强度了，只会更强不会更弱。而且有些研究方向必然因为学科发展走向没落，没必要跟一伙老气横秋的人抱团取暖，该转方向就转，反正大家都没基础。</p>
 <p>同时我们看一下美国，美国生物医药博士最终走上常任轨的比例大概7-15%，另外那些人并不是人间蒸发，而是去了业界做研发（R&amp;D）、中间人（产品支持、技术支持、销售、科学写作等）、运营（制造业、分析人、产品经理等）、商业（融资、投资等）以及法律相关行业（专利、技术转移等）。这个比例比国内还要低，也就是转行对于美国博士而言是正常的职业选择，也是为社会输送人才的重要途径。需要明确的是博士阶段的培养虽然是学术主导，但相关技能其实在其他行业也是通用的，关于怎么转换技能与额外的就业技能我们会在第八章讨论。</p>
 <p>读博转行可能也是个好事，早点把青春奉献到知识洼地去才更能实现自己的价值，相比学术界科研，业界科研可能是一个很好的选择，毕竟能磕下博士学位，搞点别的也应该没啥问题。这个问题我们会在第八章详细讨论。</p>
@@ -425,14 +532,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="可重复性危机" class="section level2">
 <h2><span class="header-section-number">3.6</span> 可重复性危机</h2>
 <p>实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(scifigure)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">hide_stages =<span class="st"> </span><span class="ot">NULL</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">sci_figure</span>(exps)</a></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="view.html#cb1-1"></a><span class="kw">library</span>(scifigure)</span>
+<span id="cb1-2"><a href="view.html#cb1-2"></a>exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</span>
+<span id="cb1-3"><a href="view.html#cb1-3"></a>exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></span>
+<span id="cb1-4"><a href="view.html#cb1-4"></a>exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></span>
+<span id="cb1-5"><a href="view.html#cb1-5"></a>exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></span>
+<span id="cb1-6"><a href="view.html#cb1-6"></a>hide_stages =<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb1-7"><a href="view.html#cb1-7"></a><span class="kw">sci_figure</span>(exps)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>可重复性危机是当前科研领域里最大的问题，这里我们从空假设显著性检验（NHST）这一核心开始聊一下。NHST更常见的形式是p值，也就是在空假设成立的条件下某事件发生的概率。p值有多流行呢？根据 Jeff Leek 的<a href="https://docs.google.com/presentation/d/1hzdSDaPPSE9xUYZHhOVfQIRPPdwe0A9SdE7QDsK3bOA/edit#slide=id.g255a5ace66_3_796">估计</a>，如果把p值当成一篇文献，那么其被引次数已经超过300万次了，当之无愧的史上被引次数之王，甩<a href="http://www.nature.com/news/the-top-100-papers-1.16224">第二名</a>一个数量级。原因其实很简单，p值已经渗透到几乎所有学科的研究中了，特别是实验学科。可想而知，如果产生p值的 NHST 出了问题其影响力有多大。</p>
 <p>如果一个假设对另一个假设来说很稀少，NHST会在很低的条件概率下拒绝掉，然后那些稀少的事情在NHST里就成了无法被检验的事情。这个例子最早是 Cohen <a href="http://ist-socrates.berkeley.edu/~maccoun/PP279_Cohen1.pdf">提出</a>用来说明人们在使用NHST时的问题。空假设是某人是美国人，备择假设是非美国人。我们知道某人是国会议员的概率是百万分之二，空假设里很难发生，备择假设里无法发生。空假设我们拒绝了某人是美国人，那么根据NHST，他不是美国人。但问题是议员一定要是美国人，在此类问题里，NHST永远无法认定稀有事件，也就是功效永远不足，并会给出错误答案。稀有事件总会发生，NHST总会把此类事件当成显著，即使不那么稀有，例如小概率事件如果发生了，我们就可以拒绝了。本质上是多数人在使用p值时搞混了条件概率，拿上面美国国会议员的例子来说，我们的假设 H0 在面对张三这个数据 D 时给出了拒绝 p(H0|D) = 0，这个决定是构建在假设 H0 成立时出现 D 的概率太低（即p(D|H0)之上，也就是说NHST下，我们默认下面的概率是成立的：
 <span class="math display">\[

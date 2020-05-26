@@ -498,6 +498,8 @@ https://www.nature.com/articles/nbt0904-1177
 
 - bootstrap思想
 
+- MCMC方法
+
 ## 并行计算
 
 ## 集群计算

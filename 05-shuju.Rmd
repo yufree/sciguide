@@ -417,6 +417,7 @@ points(q$qvalues~pvalue,col='blue')
 - 线性判别分析与特征发现
 - logistic回归与剂量效应曲线
 - 相关性分析与工具变量 https://www.nature.com/articles/nbt0309-255
+- 结构方程模型
 - 偏最小二乘分析在结构效应关系研究中的应用
 - 非线性模型包括凸函数与凹函数
 - 最常见凸函数是指数函数，掌握72法制，也就是72除以速率大概就是翻倍用的时间
@@ -452,5 +453,4 @@ points(q$qvalues~pvalue,col='blue')
 https://www.nature.com/articles/nbt0806-959 
 https://www.nature.com/articles/nbt0904-1177
 - 时间序列分析
-- 结构方程模型
 - 动态规划 https://www.nature.com/articles/nbt0704-909

@@ -1126,18 +1126,18 @@ X 与 B 之间没有直接因果，在效应计算中，X 与 B 的相关只会�
 
 \begin{verbatim}
 ##     A  B  C  D  E  F  G  H  J
-## 1   1 -1 -1 -1  1 -1  1  1 -1
-## 2  -1  1  1 -1  1  1  1 -1 -1
+## 1  -1  1 -1  1  1 -1  1  1  1
+## 2   1 -1  1  1 -1  1  1  1 -1
 ## 3   1  1 -1  1  1  1 -1 -1 -1
-## 4  -1 -1 -1  1 -1  1  1 -1  1
-## 5  -1 -1  1 -1  1  1 -1  1  1
-## 6   1 -1  1  1 -1  1  1  1 -1
-## 7  -1  1  1  1 -1 -1 -1  1 -1
-## 8   1  1 -1 -1 -1  1 -1  1  1
-## 9  -1  1 -1  1  1 -1  1  1  1
+## 4  -1  1  1 -1  1  1  1 -1 -1
+## 5   1 -1  1  1  1 -1 -1 -1  1
+## 6  -1 -1  1 -1  1  1 -1  1  1
+## 7   1  1 -1 -1 -1  1 -1  1  1
+## 8  -1 -1 -1 -1 -1 -1 -1 -1 -1
+## 9  -1 -1 -1  1 -1  1  1 -1  1
 ## 10  1  1  1 -1 -1 -1  1 -1  1
-## 11 -1 -1 -1 -1 -1 -1 -1 -1 -1
-## 12  1 -1  1  1  1 -1 -1 -1  1
+## 11  1 -1 -1 -1  1 -1  1  1 -1
+## 12 -1  1  1  1 -1 -1 -1  1 -1
 ## class=design, type= pb
 \end{verbatim}
 
@@ -1172,29 +1172,29 @@ X 与 B 之间没有直接因果，在效应计算中，X 与 B 的相关只会�
 ## 
 ## Residuals:
 ##      1      2      3      4      5      6      7      8 
-## -1.167 -2.000  2.000 -1.167 -2.000 -2.000  1.167  1.167 
+##  1.167  1.333 -1.167  1.333 -1.333 -1.167  1.333 -1.333 
 ##      9     10     11     12 
-##  2.000 -1.167  2.000  1.167 
+##  1.167 -1.333  1.167 -1.167 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept) 37.41667    1.15770  32.320 0.000956 ***
-## A1          -0.58333    1.15770  -0.504 0.664376    
-## B1          -0.08333    1.15770  -0.072 0.949167    
-## C1          -0.08333    1.15770  -0.072 0.949167    
-## D1          -0.75000    1.15770  -0.648 0.583530    
-## E1          -0.75000    1.15770  -0.648 0.583530    
-## F1           0.08333    1.15770   0.072 0.949167    
-## G1           0.91667    1.15770   0.792 0.511473    
-## H1          -0.08333    1.15770  -0.072 0.949167    
-## J1          -1.25000    1.15770  -1.080 0.393165    
+## (Intercept) 37.41667    0.88585  42.238  0.00056 ***
+## A1          -0.08333    0.88585  -0.094  0.93363    
+## B1           0.25000    0.88585   0.282  0.80430    
+## C1          -0.08333    0.88585  -0.094  0.93363    
+## D1           0.25000    0.88585   0.282  0.80430    
+## E1          -0.58333    0.88585  -0.659  0.57788    
+## F1          -0.08333    0.88585  -0.094  0.93363    
+## G1          -1.41667    0.88585  -1.599  0.25089    
+## H1          -0.08333    0.88585  -0.094  0.93363    
+## J1           1.58333    0.88585   1.787  0.21579    
 ## ---
 ## Signif. codes:  
 ## 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 4.01 on 2 degrees of freedom
-## Multiple R-squared:  0.5924,	Adjusted R-squared:  -1.242 
-## F-statistic: 0.323 on 9 and 2 DF,  p-value: 0.9052
+## Residual standard error: 3.069 on 2 degrees of freedom
+## Multiple R-squared:  0.7614,	Adjusted R-squared:  -0.3126 
+## F-statistic: 0.7089 on 9 and 2 DF,  p-value: 0.7068
 \end{verbatim}
 
 在这里PB设计实际上是一种预选法，如果结果显示某些变量影响显著，那么事实上就可以针对这些变量进行进一步的精细筛选，其余的变量可以直接固定为一个水平进行进一步设计。PB法在工业届用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。
@@ -1234,42 +1234,42 @@ X 与 B 之间没有直接因果，在效应计算中，X 与 B 的相关只会�
 
 \begin{verbatim}
 ##    A B C D E F
-## 1  1 3 1 1 1 3
-## 2  1 1 2 1 1 5
-## 3  1 2 1 2 1 6
-## 4  1 3 2 2 1 2
-## 5  1 2 2 2 2 2
-## 6  2 2 1 2 2 3
-## 7  2 2 3 1 2 6
-## 8  1 1 1 2 2 6
-## 9  2 3 3 2 1 6
-## 10 2 3 2 2 2 5
-## 11 2 3 3 1 2 3
-## 12 1 1 2 2 2 3
-## 13 1 1 1 1 1 1
-## 14 2 2 3 1 1 2
-## 15 2 3 1 1 2 2
-## 16 1 1 3 2 1 4
-## 17 2 2 1 2 1 5
-## 18 1 2 2 1 1 3
-## 19 1 2 1 1 2 4
-## 20 2 1 3 2 2 1
-## 21 2 1 2 1 2 4
-## 22 1 3 3 1 1 5
-## 23 2 1 1 2 1 2
-## 24 2 1 2 1 1 6
-## 25 2 2 2 1 2 1
-## 26 1 3 1 2 2 1
-## 27 2 2 2 2 1 4
-## 28 1 2 3 1 1 1
-## 29 1 3 2 1 2 6
-## 30 1 2 3 2 2 5
-## 31 2 1 1 1 2 5
-## 32 2 3 1 1 1 4
-## 33 1 1 3 1 2 2
-## 34 2 1 3 2 1 3
-## 35 2 3 2 2 1 1
-## 36 1 3 3 2 2 4
+## 1  1 1 3 2 1 4
+## 2  2 2 1 2 2 3
+## 3  1 2 3 1 1 1
+## 4  2 2 1 2 1 5
+## 5  1 1 1 1 1 1
+## 6  2 1 1 2 1 2
+## 7  1 2 2 2 2 2
+## 8  2 3 3 1 2 3
+## 9  1 3 1 1 1 3
+## 10 1 2 1 1 2 4
+## 11 1 3 2 2 1 2
+## 12 2 1 2 1 2 4
+## 13 2 3 1 1 1 4
+## 14 1 1 2 2 2 3
+## 15 1 2 2 1 1 3
+## 16 2 1 3 2 2 1
+## 17 1 2 3 2 2 5
+## 18 1 1 3 1 2 2
+## 19 1 3 2 1 2 6
+## 20 1 1 2 1 1 5
+## 21 2 1 1 1 2 5
+## 22 2 3 2 2 1 1
+## 23 2 3 2 2 2 5
+## 24 2 2 2 1 2 1
+## 25 2 1 2 1 1 6
+## 26 2 2 2 2 1 4
+## 27 1 1 1 2 2 6
+## 28 2 3 3 2 1 6
+## 29 2 2 3 1 1 2
+## 30 2 2 3 1 2 6
+## 31 1 3 3 1 1 5
+## 32 2 1 3 2 1 3
+## 33 2 3 1 1 2 2
+## 34 1 3 1 2 2 1
+## 35 1 3 3 2 2 4
+## 36 1 2 1 2 1 6
 ## class=design, type= oa
 \end{verbatim}
 
@@ -2183,29 +2183,312 @@ p_i \leq \frac{i}{m} \alpha
 \hypertarget{ux6587ux672cux6316ux6398}{%
 \section{文本挖掘}\label{ux6587ux672cux6316ux6398}}
 
+我们可以借助文本挖掘的工具来探索大量文献中的趋势，这对快速了解某期刊或某关键词的学术界研究趋势很有帮助，也可以作为论文前言的论据。文本挖掘不依赖逐字逐篇阅读文献，更多是依赖文献标题或摘要甚至全文中词汇的词频与相关性等统计指标来推测研究趋势。
+
+文本挖掘目前技术上虽然成熟但精度上并不高，要谨慎使用该技术。一般而言，文本挖掘的时间跨度不超过10年且最好5年以内，因为综述跨度一般不超过10年，可以直接依赖10年内出版的综述来了解研究现状。在实战上，我们可以直接使用支持自然语言学习的统计软件来进行文本挖掘，也可以通过文献信息学软件来做，前提是准备好搜索语句或文献题录库。这里我们用案例来理解下这种文献分析方法。
+
 \hypertarget{ux5173ux952eux8bcd}{%
 \subsection{关键词}\label{ux5173ux952eux8bcd}}
+
+以关键词为核心的文本挖掘旨在寻找所有该关键词相关研究的时间变化趋势与相关子领域。技术上首先利用关键词去寻找在线文摘数据库中的论文题录，然后提取摘要部分进行分词并统计词频。这里我们用``mass spectrometry''作为关键词搜索2010到2020年间发表在 ES\&T 上的论文做演示。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(scifetch)}
+\KeywordTok{library}\NormalTok{(lubridate)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\KeywordTok{library}\NormalTok{(tidytext)}
+\KeywordTok{library}\NormalTok{(stringr)}
+\KeywordTok{library}\NormalTok{(ggplot2)}
+\KeywordTok{library}\NormalTok{(tidyr)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{library}\NormalTok{(purrr)}
+\KeywordTok{library}\NormalTok{(scales)}
+\CommentTok{# 10年跨度 MeSH 关键词 期刊ES&T}
+\NormalTok{query <-}\StringTok{ "}\CharTok{\textbackslash{}"}\StringTok{mass spectrometry}\CharTok{\textbackslash{}"}\StringTok{[MeSH Terms] AND 2010/01:2020/01[DP] AND 0013-936X[TA]"}
+\NormalTok{tmdf <-}\StringTok{ }\KeywordTok{getpubmed}\NormalTok{(query, }\DataTypeTok{start =} \DecValTok{1}\NormalTok{, }\DataTypeTok{end =} \DecValTok{10000}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{getpubmedtbl}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{time =} \KeywordTok{as.POSIXct}\NormalTok{(date, }\DataTypeTok{origin =} \StringTok{"1970-01-01"}\NormalTok{), }\DataTypeTok{month =} \KeywordTok{round_date}\NormalTok{(date, }
+        \StringTok{"month"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 822 records founds
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 摘要分词}
+\NormalTok{wordfabs <-}\StringTok{ }\NormalTok{tmdf }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\KeywordTok{nchar}\NormalTok{(abstract) }\OperatorTok{>}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{unnest_tokens}\NormalTok{(word, }
+\NormalTok{    abstract, }\DataTypeTok{drop =}\NormalTok{ F) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{anti_join}\NormalTok{(stop_words) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\KeywordTok{str_detect}\NormalTok{(word, }
+    \StringTok{"[^}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d]"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\OperatorTok{!}\KeywordTok{str_detect}\NormalTok{(word, }\StringTok{"abs"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(word) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word_total =} \KeywordTok{n}\NormalTok{()) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{source =} \StringTok{"abstract"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Joining, by = "word"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 可视化词频前20的关键词}
+\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(word, }\DataTypeTok{sort =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{top_n}\NormalTok{(}\DecValTok{20}\NormalTok{, n) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, }
+\NormalTok{    n)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(word, n)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_col}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Top 20 commonly used words in abstracts"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{coord_flip}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-14-1}
+
+同时我们可以看下这10年关键词的变化趋势。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{papers_per_month <-}\StringTok{ }\NormalTok{tmdf }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(month) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{month_total =} \KeywordTok{n}\NormalTok{())}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `summarise()` ungrouping output (override with `.groups` argument)
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 摘要中关键词}
+\NormalTok{word_month_counts <-}\StringTok{ }\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(word_total }\OperatorTok{>=}\StringTok{ }\DecValTok{100}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{count}\NormalTok{(word, month) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{complete}\NormalTok{(word, month, }\DataTypeTok{fill =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{n =} \DecValTok{0}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{inner_join}\NormalTok{(papers_per_month, }\DataTypeTok{by =} \StringTok{"month"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =}\NormalTok{ n}\OperatorTok{/}\NormalTok{month_total) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{year =} \KeywordTok{year}\NormalTok{(month) }\OperatorTok{+}\StringTok{ }\KeywordTok{yday}\NormalTok{(month)}\OperatorTok{/}\DecValTok{365}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(percent }\OperatorTok{<}\StringTok{ }
+\StringTok{    }\DecValTok{1}\NormalTok{)}
+\CommentTok{# 计数数据广义二项回归}
+\NormalTok{mod <-}\StringTok{ }\ErrorTok{~}\KeywordTok{glm}\NormalTok{(}\KeywordTok{cbind}\NormalTok{(n, month_total }\OperatorTok{-}\StringTok{ }\NormalTok{n) }\OperatorTok{~}\StringTok{ }\NormalTok{year, ., }\DataTypeTok{family =} \StringTok{"binomial"}\NormalTok{)}
+\CommentTok{# 计算斜率}
+\NormalTok{slopes <-}\StringTok{ }\NormalTok{word_month_counts }\OperatorTok{%>%}\StringTok{ }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{word) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{model =} \KeywordTok{map}\NormalTok{(data, }
+\NormalTok{    mod)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{models =} \KeywordTok{map}\NormalTok{(model, tidy)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{unnest}\NormalTok{(}\DataTypeTok{cols =} \KeywordTok{c}\NormalTok{(models)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{filter}\NormalTok{(term }\OperatorTok{==}\StringTok{ "year"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(estimate))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: All elements of `...` must be named.
+## Did you want `data = c(month, n, month_total, percent, year)`?
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 快速成长关键词}
+\NormalTok{slopes }\OperatorTok{%>%}\StringTok{ }\KeywordTok{head}\NormalTok{(}\DecValTok{9}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{inner_join}\NormalTok{(word_month_counts, }\DataTypeTok{by =} \StringTok{"word"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, }\OperatorTok{-}\NormalTok{estimate)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(month, }
+\NormalTok{    n}\OperatorTok{/}\NormalTok{month_total, }\DataTypeTok{color =}\NormalTok{ word)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_line}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{percent_format}\NormalTok{()) }\OperatorTok{+}\StringTok{ }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{word, }
+    \DataTypeTok{scales =} \StringTok{"free_y"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{expand_limits}\NormalTok{(}\DataTypeTok{y =} \DecValTok{0}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Year"}\NormalTok{, }
+    \DataTypeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"9 fastest growing words"}\NormalTok{, }
+    \DataTypeTok{subtitle =} \StringTok{"Judged by growth rate"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-15-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 衰退关键词}
+\NormalTok{slopes }\OperatorTok{%>%}\StringTok{ }\KeywordTok{tail}\NormalTok{(}\DecValTok{9}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{inner_join}\NormalTok{(word_month_counts, }\DataTypeTok{by =} \StringTok{"word"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, estimate)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(month, }
+\NormalTok{    n}\OperatorTok{/}\NormalTok{month_total, }\DataTypeTok{color =}\NormalTok{ word)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_line}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{percent_format}\NormalTok{()) }\OperatorTok{+}\StringTok{ }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{word, }
+    \DataTypeTok{scales =} \StringTok{"free_y"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{expand_limits}\NormalTok{(}\DataTypeTok{y =} \DecValTok{0}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Year"}\NormalTok{, }
+    \DataTypeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"9 fastest shrinking words"}\NormalTok{, }
+    \DataTypeTok{subtitle =} \StringTok{"Judged by growth rate"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-15-2}
+
+同时，我们也可以利用词频相关来研究关键词聚类情况。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(widyr)}
+\KeywordTok{library}\NormalTok{(igraph)}
+\KeywordTok{library}\NormalTok{(ggraph)}
+
+\NormalTok{title_word_pairs <-}\StringTok{ }\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{pairwise_count}\NormalTok{(word, line, }\DataTypeTok{sort =} \OtherTok{TRUE}\NormalTok{)}
+
+\KeywordTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
+\NormalTok{title_word_pairs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(n }\OperatorTok{>=}\StringTok{ }\DecValTok{150}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{graph_from_data_frame}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{ggraph}\NormalTok{(}\DataTypeTok{layout =} \StringTok{"fr"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_edge_link}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{edge_alpha =}\NormalTok{ n, }
+    \DataTypeTok{edge_width =}\NormalTok{ n), }\DataTypeTok{edge_colour =} \StringTok{"cyan4"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_node_point}\NormalTok{(}\DataTypeTok{size =} \DecValTok{1}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_node_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ name), }\DataTypeTok{repel =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{point.padding =} \KeywordTok{unit}\NormalTok{(}\FloatTok{0.2}\NormalTok{, }
+        \StringTok{"lines"}\NormalTok{)) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Bigrams in title"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_void}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-16-1}
+
+更直接的方法是用主题模型来寻找子领域，例如我们可以指定6个子领域输出其前10关键词。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{desc_dtm <-}\StringTok{ }\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(line, word, }\DataTypeTok{sort =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{cast_dtm}\NormalTok{(line, word, n)}
+\KeywordTok{library}\NormalTok{(topicmodels)}
+\NormalTok{desc_lda <-}\StringTok{ }\KeywordTok{LDA}\NormalTok{(desc_dtm, }\DataTypeTok{k =} \DecValTok{6}\NormalTok{, }\DataTypeTok{control =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{seed =} \DecValTok{42}\NormalTok{))}
+\NormalTok{tidy_lda <-}\StringTok{ }\KeywordTok{tidy}\NormalTok{(desc_lda)}
+
+\NormalTok{top_terms <-}\StringTok{ }\NormalTok{tidy_lda }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(topic) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{top_n}\NormalTok{(}\DecValTok{10}\NormalTok{, beta) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{(topic, }\OperatorTok{-}\NormalTok{beta)}
+
+\NormalTok{top_terms }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{term =} \KeywordTok{reorder}\NormalTok{(term, beta)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(topic, }
+\NormalTok{    term) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(beta)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{term =} \KeywordTok{factor}\NormalTok{(}\KeywordTok{paste}\NormalTok{(term, }
+\NormalTok{    topic, }\DataTypeTok{sep =} \StringTok{"__"}\NormalTok{), }\DataTypeTok{levels =} \KeywordTok{rev}\NormalTok{(}\KeywordTok{paste}\NormalTok{(term, topic, }\DataTypeTok{sep =} \StringTok{"__"}\NormalTok{)))) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(term, beta, }\DataTypeTok{fill =} \KeywordTok{as.factor}\NormalTok{(topic))) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_col}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{coord_flip}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{scale_x_discrete}\NormalTok{(}\DataTypeTok{labels =} \ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{gsub}\NormalTok{(}\StringTok{"__.+$"}\NormalTok{, }
+    \StringTok{""}\NormalTok{, x)) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{title =} \StringTok{"Top 10 terms in each LDA topic"}\NormalTok{, }
+    \DataTypeTok{x =} \OtherTok{NULL}\NormalTok{, }\DataTypeTok{y =} \KeywordTok{expression}\NormalTok{(beta)) }\OperatorTok{+}\StringTok{ }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{topic, }\DataTypeTok{ncol =} \DecValTok{2}\NormalTok{, }
+    \DataTypeTok{scales =} \StringTok{"free"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-17-1}
 
 \hypertarget{ux4f5cux8005}{%
 \subsection{作者}\label{ux4f5cux8005}}
 
-\hypertarget{ux65f6ux7a7aux5206ux5e03}{%
-\subsection{时空分布}\label{ux65f6ux7a7aux5206ux5e03}}
+同样的，我们也可以研究某个作者的研究主题与变化趋势。这里用加拿大滑铁卢大学 Jaunsz Pawliszyn 教授的数据来说明下。
 
-\hypertarget{ux5f71ux54cdux529b}{%
-\subsection{影响力}\label{ux5f71ux54cdux529b}}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 10年跨度}
+\NormalTok{query <-}\StringTok{ "janusz pawliszyn[AU] AND 2010/01:2020/01[DP]"}
+\NormalTok{tmdf <-}\StringTok{ }\KeywordTok{getpubmed}\NormalTok{(query, }\DataTypeTok{start =} \DecValTok{1}\NormalTok{, }\DataTypeTok{end =} \DecValTok{10000}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{getpubmedtbl}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{time =} \KeywordTok{as.POSIXct}\NormalTok{(date, }\DataTypeTok{origin =} \StringTok{"1970-01-01"}\NormalTok{), }\DataTypeTok{month =} \KeywordTok{round_date}\NormalTok{(date, }
+        \StringTok{"month"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
-\begin{itemize}
-\tightlist
-\item
-  科学家的奖励信号 \url{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142537}
-\item
-  提前发表可以提高影响因子 \url{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374}
-\item
-  题目越短引用越多 \url{http://rsos.royalsocietypublishing.org/content/2/8/150266}
-\end{itemize}
+\begin{verbatim}
+## 195 records founds
+\end{verbatim}
 
-\href{https://www.crossref.org/education/event-data/}{CrossRef Event Data}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 摘要分词}
+\NormalTok{wordfabs <-}\StringTok{ }\NormalTok{tmdf }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\KeywordTok{nchar}\NormalTok{(abstract) }\OperatorTok{>}\StringTok{ }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{unnest_tokens}\NormalTok{(word, }
+\NormalTok{    abstract, }\DataTypeTok{drop =}\NormalTok{ F) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{anti_join}\NormalTok{(stop_words) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\KeywordTok{str_detect}\NormalTok{(word, }
+    \StringTok{"[^}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d]"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(}\OperatorTok{!}\KeywordTok{str_detect}\NormalTok{(word, }\StringTok{"abs"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(word) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word_total =} \KeywordTok{n}\NormalTok{()) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{source =} \StringTok{"abstract"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Joining, by = "word"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{papers_per_month <-}\StringTok{ }\NormalTok{tmdf }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(month) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{month_total =} \KeywordTok{n}\NormalTok{())}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `summarise()` ungrouping output (override with `.groups` argument)
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 可视化词频前20的关键词}
+\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{count}\NormalTok{(word, }\DataTypeTok{sort =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{top_n}\NormalTok{(}\DecValTok{20}\NormalTok{, n) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, }
+\NormalTok{    n)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(word, n)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_col}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{ylab}\NormalTok{(}\StringTok{"Top 20 commonly used words in abstracts"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{coord_flip}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-18-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 摘要中关键词}
+\NormalTok{word_month_counts <-}\StringTok{ }\NormalTok{wordfabs }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(word_total }\OperatorTok{>=}\StringTok{ }\DecValTok{100}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{count}\NormalTok{(word, month) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{complete}\NormalTok{(word, month, }\DataTypeTok{fill =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{n =} \DecValTok{0}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{inner_join}\NormalTok{(papers_per_month, }\DataTypeTok{by =} \StringTok{"month"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =}\NormalTok{ n}\OperatorTok{/}\NormalTok{month_total) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{year =} \KeywordTok{year}\NormalTok{(month) }\OperatorTok{+}\StringTok{ }\KeywordTok{yday}\NormalTok{(month)}\OperatorTok{/}\DecValTok{365}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{filter}\NormalTok{(percent }\OperatorTok{<}\StringTok{ }
+\StringTok{    }\DecValTok{1}\NormalTok{)}
+\CommentTok{# 计数数据广义二项回归}
+\NormalTok{mod <-}\StringTok{ }\ErrorTok{~}\KeywordTok{glm}\NormalTok{(}\KeywordTok{cbind}\NormalTok{(n, month_total }\OperatorTok{-}\StringTok{ }\NormalTok{n) }\OperatorTok{~}\StringTok{ }\NormalTok{year, ., }\DataTypeTok{family =} \StringTok{"binomial"}\NormalTok{)}
+\CommentTok{# 计算斜率}
+\NormalTok{slopes <-}\StringTok{ }\NormalTok{word_month_counts }\OperatorTok{%>%}\StringTok{ }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{word) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{model =} \KeywordTok{map}\NormalTok{(data, }
+\NormalTok{    mod)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{models =} \KeywordTok{map}\NormalTok{(model, tidy)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{unnest}\NormalTok{(}\DataTypeTok{cols =} \KeywordTok{c}\NormalTok{(models)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{filter}\NormalTok{(term }\OperatorTok{==}\StringTok{ "year"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(estimate))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: All elements of `...` must be named.
+## Did you want `data = c(month, n, month_total, percent, year)`?
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 快速成长关键词}
+\NormalTok{slopes }\OperatorTok{%>%}\StringTok{ }\KeywordTok{head}\NormalTok{(}\DecValTok{9}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{inner_join}\NormalTok{(word_month_counts, }\DataTypeTok{by =} \StringTok{"word"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, }\OperatorTok{-}\NormalTok{estimate)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(month, }
+\NormalTok{    n}\OperatorTok{/}\NormalTok{month_total, }\DataTypeTok{color =}\NormalTok{ word)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_line}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{percent_format}\NormalTok{()) }\OperatorTok{+}\StringTok{ }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{word, }
+    \DataTypeTok{scales =} \StringTok{"free_y"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{expand_limits}\NormalTok{(}\DataTypeTok{y =} \DecValTok{0}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Year"}\NormalTok{, }
+    \DataTypeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"9 fastest growing words"}\NormalTok{, }
+    \DataTypeTok{subtitle =} \StringTok{"Judged by growth rate"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-18-2}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 衰退关键词}
+\NormalTok{slopes }\OperatorTok{%>%}\StringTok{ }\KeywordTok{tail}\NormalTok{(}\DecValTok{9}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{inner_join}\NormalTok{(word_month_counts, }\DataTypeTok{by =} \StringTok{"word"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{word =} \KeywordTok{reorder}\NormalTok{(word, estimate)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(month, }
+\NormalTok{    n}\OperatorTok{/}\NormalTok{month_total, }\DataTypeTok{color =}\NormalTok{ word)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_line}\NormalTok{(}\DataTypeTok{show.legend =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{scale_y_continuous}\NormalTok{(}\DataTypeTok{labels =} \KeywordTok{percent_format}\NormalTok{()) }\OperatorTok{+}\StringTok{ }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{word, }
+    \DataTypeTok{scales =} \StringTok{"free_y"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{expand_limits}\NormalTok{(}\DataTypeTok{y =} \DecValTok{0}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Year"}\NormalTok{, }
+    \DataTypeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"9 fastest shrinking words"}\NormalTok{, }
+    \DataTypeTok{subtitle =} \StringTok{"Judged by growth rate"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-18-3}
+
+同样，我们可以研究下其发表的期刊偏好。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{table}\NormalTok{(tmdf}\OperatorTok{$}\NormalTok{journal)[}\KeywordTok{order}\NormalTok{(}\KeywordTok{table}\NormalTok{(tmdf}\OperatorTok{$}\NormalTok{journal), }\DataTypeTok{decreasing =}\NormalTok{ T)][}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##                 Anal. Chem.            Anal. Chim. Acta 
+##                          44                          33 
+##              J Chromatogr A                 Bioanalysis 
+##                          32                           9 
+##      Environ. Sci. Technol.                   J Sep Sci 
+##                           7                           7 
+## Angew. Chem. Int. Ed. Engl.                     Sci Rep 
+##                           6                           6 
+##                     Talanta                     Analyst 
+##                           6                           4
+\end{verbatim}
+
+\hypertarget{ux671fux520a}{%
+\subsection{期刊}\label{ux671fux520a}}
+
+期刊也可以用上述分析来研究期刊偏好与学科发展趋势。
+
+\hypertarget{ux6587ux732eux4fe1ux606fux5b66}{%
+\section{文献信息学}\label{ux6587ux732eux4fe1ux606fux5b66}}
+
+专门的文献信息学工具也可以拿来进行学术趋势的挖掘，因为文献题录是高度结构化的数据，所以文献间关系可以用结构化数据来构建联系。基于引用关系我们可以找到某个关键词或期刊的节点论文。引用也可以跟文本分析相联系，用来寻找高引论文的文本写作风格。而基于研究人员的时空分布我们可以评估研究国际化与合作水平。文献信息学中也有专门的指标用来评估研究趋势或文章/学者影响力，可了解相关概念与使用，但不要过度解读与依赖，学科前沿并不稳定，量化指标通常只能描述一部分趋势。
 
 \hypertarget{ux835fux8403ux5206ux6790}{%
 \section{荟萃分析}\label{ux835fux8403ux5206ux6790}}
@@ -2950,9 +3233,17 @@ p_i \leq \frac{i}{m} \alpha
 \item
   影响力评价 altmetric
 \item
+  \href{https://www.crossref.org/education/event-data/}{CrossRef Event Data}
+\item
   \href{https://liorpachter.wordpress.com/2019/01/29/technologies-of-narcissism/}{预印本、开放获取期刊与社交网络互动是当前学术界的新潮流，不过也可能成为学术圈自恋的新战场，更高下载量与社交媒体转发评分有可能成为科研人员继SCI论文、影响因子与h指数后新的``优化''指数。}
 \item
   青年学者压力过大
+\item
+  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142537}{科学家的奖励信号}
+\item
+  \href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374}{提前发表可以提高影响因子}
+\item
+  \href{http://rsos.royalsocietypublishing.org/content/2/8/150266}{题目越短引用越多}
 \end{itemize}
 
 \hypertarget{ux6848ux4f8b}{%
@@ -3243,6 +3534,8 @@ k12教育，教育研究为主
 \href{https://endnote.com/}{Endnote}是比较老牌的文献管理工具，不同于前面所说的网页采集，其自身就有与常见数据库的搜索接口，国内科研机构图书馆大都提供培训。与之类似的\href{http://www.inoteexpress.com/aegean/}{NoteExpress}则属于国产软件，据说对中文期刊格式支持更好，类似的还有\href{https://www.mendeley.com/}{Mendeley}、\href{http://refer.medlive.cn/}{医学文献王}、服务 TeX 里 BibTex 的 \href{http://www.jabref.org/}{JabRef} 与Mac OS 下的\href{https://www.readcube.com/papers/mac}{Papers}。这些工具起步较早，从单机时代就有用户，还有些工具诞生于互联网时代，有着更丰富的功能。
 
 \href{https://www.zotero.org/}{Zotero} 属于互联网精神的产物，特别是前者本身就是基于火狐浏览器，其支持的文献格式样式都非常多，而且也有着丰富的文本分析扩展应用。\href{https://paperpile.com/app}{Paperpile}则属于基于谷歌文档的应用，可以很方便地管理在谷歌文档中使用到的文献。\href{https://www.doi.org/}{DOI}与\href{https://www.crossref.org/}{crossref}的出现则更方便了文献的搜索定位。可以说基于互联网的团队化文献管理正在成为趋势。
+
+如果需要文献信息学方面的研究，\href{http://cluster.cis.drexel.edu/~cchen/citespace/}{CiteSpace} 功能比较全，如果需要文本分析，可以利用 R 语言中的自然语言处理包来进行。
 
 总结一下，作为现代科研工具，理想文献管理软件需要至少有以下功能：
 

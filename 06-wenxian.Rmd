@@ -46,19 +46,266 @@
 
 ## 文本挖掘
 
+我们可以借助文本挖掘的工具来探索大量文献中的趋势，这对快速了解某期刊或某关键词的学术界研究趋势很有帮助，也可以作为论文前言的论据。文本挖掘不依赖逐字逐篇阅读文献，更多是依赖文献标题或摘要甚至全文中词汇的词频与相关性等统计指标来推测研究趋势。
+
+文本挖掘目前技术上虽然成熟但精度上并不高，要谨慎使用该技术。一般而言，文本挖掘的时间跨度不超过10年且最好5年以内，因为综述跨度一般不超过10年，可以直接依赖10年内出版的综述来了解研究现状。在实战上，我们可以直接使用支持自然语言学习的统计软件来进行文本挖掘，也可以通过文献信息学软件来做，前提是准备好搜索语句或文献题录库。这里我们用案例来理解下这种文献分析方法。
+
 ### 关键词
+
+以关键词为核心的文本挖掘旨在寻找所有该关键词相关研究的时间变化趋势与相关子领域。技术上首先利用关键词去寻找在线文摘数据库中的论文题录，然后提取摘要部分进行分词并统计词频。这里我们用“mass spectrometry”作为关键词搜索2010到2020年间发表在 ES&T 上的论文做演示。
+
+```{r}
+library(scifetch)
+library(lubridate)
+library(dplyr)
+library(tidytext)
+library(stringr)
+library(ggplot2)
+library(tidyr)
+library(broom)
+library(purrr)
+library(scales)
+# 10年跨度 MeSH 关键词 期刊ES&T
+query <- '"mass spectrometry"[MeSH Terms] AND 2010/01:2020/01[DP] AND 0013-936X[TA]'
+tmdf <- getpubmed(query, start = 1, end = 10000) %>%
+        getpubmedtbl() %>%
+        mutate(time = as.POSIXct(date, origin = "1970-01-01"),
+         month = round_date(date, "month"))
+# 摘要分词
+wordfabs <- tmdf %>%
+        filter(nchar(abstract) > 0) %>%
+        unnest_tokens(word, abstract,drop = F) %>%
+        anti_join(stop_words) %>%
+        filter(str_detect(word, "[^\\d]")) %>%
+        filter(!str_detect(word, "abs")) %>%
+        group_by(word) %>%
+        mutate(word_total = n()) %>%
+        ungroup() %>%
+        mutate(source = 'abstract')
+# 可视化词频前20的关键词
+wordfabs %>%
+        count(word, sort = TRUE) %>%
+        top_n(20,n) %>%
+        mutate(word = reorder(word, n)) %>%
+        ggplot(aes(word, n)) +
+  geom_col(show.legend = FALSE) +
+  ylab("Top 20 commonly used words in abstracts") +
+  coord_flip()
+```
+
+同时我们可以看下这10年关键词的变化趋势。
+
+```{r}
+papers_per_month <- tmdf %>%
+  group_by(month) %>%
+  summarize(month_total = n())
+# 摘要中关键词
+word_month_counts <- wordfabs %>%
+  filter(word_total >= 100) %>%
+  count(word, month) %>%
+  complete(word, month, fill = list(n = 0)) %>%
+  inner_join(papers_per_month, by = "month") %>%
+  mutate(percent = n / month_total) %>%
+  mutate(year = year(month) + yday(month) / 365) %>%
+        filter(percent<1)
+# 计数数据广义二项回归
+mod <- ~ glm(cbind(n, month_total - n) ~ year, ., family = "binomial")
+# 计算斜率
+slopes <- word_month_counts %>%
+  nest(-word) %>%
+  mutate(model = map(data, mod)) %>%
+  mutate(models = map(model,tidy)) %>%
+  unnest(cols = c(models)) %>%
+  filter(term == "year") %>%
+  arrange(desc(estimate))
+# 快速成长关键词
+slopes %>%
+  head(9) %>%
+  inner_join(word_month_counts, by = "word") %>%
+  mutate(word = reorder(word, -estimate)) %>%
+  ggplot(aes(month, n / month_total, color = word)) +
+  geom_line(show.legend = FALSE) +
+  scale_y_continuous(labels = percent_format()) +
+  facet_wrap(~ word, scales = "free_y") +
+  expand_limits(y = 0) +
+  labs(x = "Year",
+       y = "Percentage of abstracts containing this term",
+       title = "9 fastest growing words",
+       subtitle = "Judged by growth rate"
+              )
+
+# 衰退关键词
+slopes %>%
+  tail(9) %>%
+  inner_join(word_month_counts, by = "word") %>%
+  mutate(word = reorder(word, estimate)) %>%
+  ggplot(aes(month, n / month_total, color = word)) +
+  geom_line(show.legend = FALSE) +
+  scale_y_continuous(labels = percent_format()) +
+  facet_wrap(~ word, scales = "free_y") +
+  expand_limits(y = 0) +
+  labs(x = "Year",
+       y = "Percentage of abstracts containing this term",
+       title = "9 fastest shrinking words",
+       subtitle = "Judged by growth rate"
+              )
+```
+
+同时，我们也可以利用词频相关来研究关键词聚类情况。
+
+```{r}
+library(widyr)
+library(igraph)
+library(ggraph)
+
+title_word_pairs <- wordfabs %>%
+        pairwise_count(word,line,sort = TRUE)
+
+set.seed(42)
+title_word_pairs %>%
+  filter(n >= 150) %>%
+  graph_from_data_frame() %>%
+  ggraph(layout = "fr") +
+  geom_edge_link(aes(edge_alpha = n, edge_width = n), edge_colour = "cyan4") +
+  geom_node_point(size = 1) +
+  geom_node_text(aes(label = name), repel = TRUE, 
+                 point.padding = unit(0.2, "lines")) +
+  labs(title = "Bigrams in title") +
+  theme_void()
+```
+
+更直接的方法是用主题模型来寻找子领域，例如我们可以指定6个子领域输出其前10关键词。
+
+```{r}
+desc_dtm <- wordfabs %>%
+        count(line, word, sort = TRUE) %>%
+        ungroup() %>%
+        cast_dtm(line, word, n)
+library(topicmodels)
+desc_lda <- LDA(desc_dtm, k = 6, control = list(seed = 42))
+tidy_lda <- tidy(desc_lda)
+
+top_terms <- tidy_lda %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+top_terms %>%
+  mutate(term = reorder(term, beta)) %>%
+  group_by(topic, term) %>%    
+  arrange(desc(beta)) %>%  
+  ungroup() %>%
+  mutate(term = factor(paste(term, topic, sep = "__"), 
+                       levels = rev(paste(term, topic, sep = "__")))) %>%
+  ggplot(aes(term, beta, fill = as.factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  scale_x_discrete(labels = function(x) gsub("__.+$", "", x)) +
+  labs(title = "Top 10 terms in each LDA topic",
+       x = NULL, y = expression(beta)) +
+  facet_wrap(~ topic, ncol = 2, scales = "free")
+```
 
 ### 作者
 
-### 时空分布
+同样的，我们也可以研究某个作者的研究主题与变化趋势。这里用加拿大滑铁卢大学 Jaunsz Pawliszyn 教授的数据来说明下。
 
-### 影响力
+```{r}
+# 10年跨度
+query <- 'janusz pawliszyn[AU] AND 2010/01:2020/01[DP]'
+tmdf <- getpubmed(query, start = 1, end = 10000) %>%
+        getpubmedtbl() %>%
+        mutate(time = as.POSIXct(date, origin = "1970-01-01"),
+         month = round_date(date, "month"))
+# 摘要分词
+wordfabs <- tmdf %>%
+        filter(nchar(abstract) > 0) %>%
+        unnest_tokens(word, abstract,drop = F) %>%
+        anti_join(stop_words) %>%
+        filter(str_detect(word, "[^\\d]")) %>%
+        filter(!str_detect(word, "abs")) %>%
+        group_by(word) %>%
+        mutate(word_total = n()) %>%
+        ungroup() %>%
+        mutate(source = 'abstract')
+papers_per_month <- tmdf %>%
+  group_by(month) %>%
+  summarize(month_total = n())
+# 可视化词频前20的关键词
+wordfabs %>%
+        count(word, sort = TRUE) %>%
+        top_n(20,n) %>%
+        mutate(word = reorder(word, n)) %>%
+        ggplot(aes(word, n)) +
+  geom_col(show.legend = FALSE) +
+  ylab("Top 20 commonly used words in abstracts") +
+  coord_flip()
+# 摘要中关键词
+word_month_counts <- wordfabs %>%
+  filter(word_total >= 100) %>%
+  count(word, month) %>%
+  complete(word, month, fill = list(n = 0)) %>%
+  inner_join(papers_per_month, by = "month") %>%
+  mutate(percent = n / month_total) %>%
+  mutate(year = year(month) + yday(month) / 365) %>%
+        filter(percent<1)
+# 计数数据广义二项回归
+mod <- ~ glm(cbind(n, month_total - n) ~ year, ., family = "binomial")
+# 计算斜率
+slopes <- word_month_counts %>%
+  nest(-word) %>%
+  mutate(model = map(data, mod)) %>%
+  mutate(models = map(model,tidy)) %>%
+  unnest(cols = c(models)) %>%
+  filter(term == "year") %>%
+  arrange(desc(estimate))
+# 快速成长关键词
+slopes %>%
+  head(9) %>%
+  inner_join(word_month_counts, by = "word") %>%
+  mutate(word = reorder(word, -estimate)) %>%
+  ggplot(aes(month, n / month_total, color = word)) +
+  geom_line(show.legend = FALSE) +
+  scale_y_continuous(labels = percent_format()) +
+  facet_wrap(~ word, scales = "free_y") +
+  expand_limits(y = 0) +
+  labs(x = "Year",
+       y = "Percentage of abstracts containing this term",
+       title = "9 fastest growing words",
+       subtitle = "Judged by growth rate"
+              )
 
-- 科学家的奖励信号 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142537
-- 提前发表可以提高影响因子 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374
-- 题目越短引用越多 http://rsos.royalsocietypublishing.org/content/2/8/150266
+# 衰退关键词
+slopes %>%
+  tail(9) %>%
+  inner_join(word_month_counts, by = "word") %>%
+  mutate(word = reorder(word, estimate)) %>%
+  ggplot(aes(month, n / month_total, color = word)) +
+  geom_line(show.legend = FALSE) +
+  scale_y_continuous(labels = percent_format()) +
+  facet_wrap(~ word, scales = "free_y") +
+  expand_limits(y = 0) +
+  labs(x = "Year",
+       y = "Percentage of abstracts containing this term",
+       title = "9 fastest shrinking words",
+       subtitle = "Judged by growth rate"
+              )
+```
 
-[CrossRef Event Data](https://www.crossref.org/education/event-data/) 
+同样，我们可以研究下其发表的期刊偏好。
+
+```{r}
+table(tmdf$journal)[order(table(tmdf$journal),decreasing = T)][1:10]   
+```
+
+### 期刊
+
+期刊也可以用上述分析来研究期刊偏好与学科发展趋势。
+
+## 文献信息学
+
+专门的文献信息学工具也可以拿来进行学术趋势的挖掘，因为文献题录是高度结构化的数据，所以文献间关系可以用结构化数据来构建联系。基于引用关系我们可以找到某个关键词或期刊的节点论文。引用也可以跟文本分析相联系，用来寻找高引论文的文本写作风格。而基于研究人员的时空分布我们可以评估研究国际化与合作水平。文献信息学中也有专门的指标用来评估研究趋势或文章/学者影响力，可了解相关概念与使用，但不要过度解读与依赖，学科前沿并不稳定，量化指标通常只能描述一部分趋势。
 
 ## 荟萃分析
 

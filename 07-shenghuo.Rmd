@@ -375,8 +375,12 @@
 - 定量化，论文第一 [影响因子优化问题](https://onlinelibrary.wiley.com/doi/full/10.1111/eci.13151)
 - 学术评奖存在身份限制
 - 影响力评价 altmetric
+- [CrossRef Event Data](https://www.crossref.org/education/event-data/) 
 - [预印本、开放获取期刊与社交网络互动是当前学术界的新潮流，不过也可能成为学术圈自恋的新战场，更高下载量与社交媒体转发评分有可能成为科研人员继SCI论文、影响因子与h指数后新的“优化”指数。](https://liorpachter.wordpress.com/2019/01/29/technologies-of-narcissism/)
 - 青年学者压力过大
+- [科学家的奖励信号](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142537) 
+- [提前发表可以提高影响因子](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053374) 
+- [题目越短引用越多](http://rsos.royalsocietypublishing.org/content/2/8/150266) 
 
 ## 案例
 

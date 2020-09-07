@@ -237,10 +237,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.4" data-path="lib.html"><a href="lib.html#文本挖掘"><i class="fa fa-check"></i><b>7.4</b> 文本挖掘</a><ul>
 <li class="chapter" data-level="7.4.1" data-path="lib.html"><a href="lib.html#关键词"><i class="fa fa-check"></i><b>7.4.1</b> 关键词</a></li>
 <li class="chapter" data-level="7.4.2" data-path="lib.html"><a href="lib.html#作者"><i class="fa fa-check"></i><b>7.4.2</b> 作者</a></li>
-<li class="chapter" data-level="7.4.3" data-path="lib.html"><a href="lib.html#时空分布"><i class="fa fa-check"></i><b>7.4.3</b> 时空分布</a></li>
-<li class="chapter" data-level="7.4.4" data-path="lib.html"><a href="lib.html#影响力"><i class="fa fa-check"></i><b>7.4.4</b> 影响力</a></li>
+<li class="chapter" data-level="7.4.3" data-path="lib.html"><a href="lib.html#期刊"><i class="fa fa-check"></i><b>7.4.3</b> 期刊</a></li>
 </ul></li>
-<li class="chapter" data-level="7.5" data-path="lib.html"><a href="lib.html#荟萃分析"><i class="fa fa-check"></i><b>7.5</b> 荟萃分析</a></li>
+<li class="chapter" data-level="7.5" data-path="lib.html"><a href="lib.html#文献信息学"><i class="fa fa-check"></i><b>7.5</b> 文献信息学</a></li>
+<li class="chapter" data-level="7.6" data-path="lib.html"><a href="lib.html#荟萃分析"><i class="fa fa-check"></i><b>7.6</b> 荟萃分析</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="life.html"><a href="life.html"><i class="fa fa-check"></i><b>8</b> 学术生活</a><ul>
 <li class="chapter" data-level="8.1" data-path="life.html"><a href="life.html#学术道德伦理"><i class="fa fa-check"></i><b>8.1</b> 学术道德／伦理</a><ul>
@@ -578,7 +578,7 @@ Stoline, M.R., Ury, H.K., 1979. Tables of the Studentized Maximum Modulus Distri
 <span id="cb11-9"><a href="data.html#cb11-9"></a>}</span>
 <span id="cb11-10"><a href="data.html#cb11-10"></a><span class="co"># 看下p值分布</span></span>
 <span id="cb11-11"><a href="data.html#cb11-11"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data.html#cb12-1"></a><span class="co"># 小于0.05的个数</span></span>
 <span id="cb12-2"><a href="data.html#cb12-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 477</code></pre>
@@ -596,7 +596,7 @@ Stoline, M.R., Ury, H.K., 1979. Tables of the Studentized Maximum Modulus Distri
 <span id="cb16-8"><a href="data.html#cb16-8"></a>}</span>
 <span id="cb16-9"><a href="data.html#cb16-9"></a><span class="co"># 看下p值分布</span></span>
 <span id="cb16-10"><a href="data.html#cb16-10"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="data.html#cb17-1"></a><span class="co"># 小于0.05的个数</span></span>
 <span id="cb17-2"><a href="data.html#cb17-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 6559</code></pre>
@@ -621,7 +621,7 @@ Stoline, M.R., Ury, H.K., 1979. Tables of the Studentized Maximum Modulus Distri
 <span id="cb21-14"><a href="data.html#cb21-14"></a>}</span>
 <span id="cb21-15"><a href="data.html#cb21-15"></a><span class="co"># 看下p值分布</span></span>
 <span id="cb21-16"><a href="data.html#cb21-16"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="data.html#cb22-1"></a><span class="co"># 小于0.05的个数</span></span>
 <span id="cb22-2"><a href="data.html#cb22-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 3499</code></pre>
@@ -646,7 +646,7 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha/n)^n
 <span id="cb26-5"><a href="data.html#cb26-5"></a><span class="kw">plot</span>(p0<span class="op">~</span>n,<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</span>
 <span id="cb26-6"><a href="data.html#cb26-6"></a><span class="co"># Bonferroni方法控制</span></span>
 <span id="cb26-7"><a href="data.html#cb26-7"></a><span class="kw">points</span>(p<span class="op">~</span>n,<span class="dt">pch=</span><span class="dv">19</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>其实，这样的控制得到的整体错误率是略低于0.05的，并且数目越大，整体错误率越低。这个方法十分保守，有可能什么差异你都看不到，因为都变成假阴性了。在实际应用中一般不调节p值的假阳性比率而直接调节p值，取原始p值跟整体检验数目的乘积与1的最小值作为调节p值，还可以用0.05或0.01进行判断，不过这时候控制的整体而不是单一检验了。</p>
 <p>当然这只是最原始的Bonferroni方法，后来Holm改进了这种一步法为逐步法，此时我们需要首先对原始p值进行排序，然后每个原始p值乘上其排序作为调节p值。例如三次多重检验的p值分别是0.01、0.03与0.06，其调节后的p值为0.03，0.06，0.06。如果我们控制整体假阳性比率低于0.05，那么调解后只有第一个检验可以拒绝空假设。值得注意的是Holm的改进是全面优于原始方法的，也就是说当你一定要去用Bonferroni方法控制整体错误率，优先选Holm的改进版。</p>
 </div>
@@ -698,7 +698,7 @@ p_i \leq \frac{i}{m} \alpha
 <span id="cb39-2"><a href="data.html#cb39-2"></a>ph &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
 <span id="cb39-3"><a href="data.html#cb39-3"></a><span class="kw">plot</span>(pbh<span class="op">~</span>pvalue)</span>
 <span id="cb39-4"><a href="data.html#cb39-4"></a><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>从上面图我们可以看出，如果控制整体错误率（红色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。当然至于这个方法的推演细节，可以去读原始论文。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。</p>
 <p><em>Storey方法（q值）</em></p>
 <p>如果说BH方法还算是调节了p值，那么Storey提出的方法则直接去估计了错误发现率本身。刚才介绍BH算法时我提到总数m与p值的乘积是基于这里的分布是均匀分布，但实际上按照错误发现率的定义，这里应该出现的是空假设总数。直接使用所有检验数会造成一个问题，那就是对错误发现率的高估，为了保证功效，这里应该去估计空假设的总体比例。这里我们去观察混合分布会发现在p值较大的时候基本可以认为这里分布的都是空假设的p值，那么我们可以用：</p>
@@ -710,7 +710,7 @@ p_i \leq \frac{i}{m} \alpha
 <span id="cb40-2"><a href="data.html#cb40-2"></a>q &lt;-<span class="st"> </span><span class="kw">qvalue</span>(pvalue)</span>
 <span id="cb40-3"><a href="data.html#cb40-3"></a><span class="co"># Q值</span></span>
 <span id="cb40-4"><a href="data.html#cb40-4"></a><span class="kw">plot</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>如上图所示，q值增大后会最终逼近到0.5，而我们的模拟中空假设的比例就设定就是50%。我们重新模拟一个空假设比例5%的实验：</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data.html#cb41-1"></a><span class="kw">set.seed</span>(<span class="dv">42</span>)</span>
 <span id="cb41-2"><a href="data.html#cb41-2"></a>pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
@@ -734,7 +734,7 @@ p_i \leq \frac{i}{m} \alpha
 <span id="cb41-20"><a href="data.html#cb41-20"></a><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span>
 <span id="cb41-21"><a href="data.html#cb41-21"></a><span class="co"># Q值</span></span>
 <span id="cb41-22"><a href="data.html#cb41-22"></a><span class="kw">points</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>此时我们可以看到两者结果较为接近，q值理论上更完备，功效也更强，但算法上对<span class="math inline">\(\hat\pi_0\)</span>的估计并不稳定，特别是比例靠近1的时候，所以BH方法可能还是更容易让人接受的保守错误发现率控制。详细的估计方法还得去啃Storey的<a href="http://www.pnas.org/content/100/16/9440.full">论文</a>。</p>
 <p>多重检验问题是高通量数据里逃不掉的问题，要想找出真正的差异数据就要面对假阳性跟假阴性问题，这是一个不可兼得的过程，看重假阳性就用整体错误率，看重功效就用错误发现率控制。并不是说哪种方法会好一些，更本质的问题在于你对实际问题的了解程度及统计方法的适用范围。例如你选基因芯片时实际也进行了一次选择，改变了整体检验的p值分布，而不同的p值分布对应的处理方法也不太一样，有兴趣可以读下<a href="http://varianceexplained.org/statistics/interpreting-pvalue-histogram/">这篇</a>。有时候你的实验设计本身就会影响数据的统计行为，而这个恰恰是最容易被忽视的。</p>
 </div>

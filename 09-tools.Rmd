@@ -24,6 +24,8 @@
 
 [Zotero](https://www.zotero.org/) 属于互联网精神的产物，特别是前者本身就是基于火狐浏览器，其支持的文献格式样式都非常多，而且也有着丰富的文本分析扩展应用。[Paperpile](https://paperpile.com/app)则属于基于谷歌文档的应用，可以很方便地管理在谷歌文档中使用到的文献。[DOI](https://www.doi.org/)与[crossref](https://www.crossref.org/)的出现则更方便了文献的搜索定位。可以说基于互联网的团队化文献管理正在成为趋势。
 
+如果需要文献信息学方面的研究，[CiteSpace](http://cluster.cis.drexel.edu/~cchen/citespace/) 功能比较全，如果需要文本分析，可以利用 R 语言中的自然语言处理包来进行。
+
 总结一下，作为现代科研工具，理想文献管理软件需要至少有以下功能：
     
 - 支持常见文本编辑器

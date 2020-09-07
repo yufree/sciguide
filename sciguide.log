@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.25)  25 MAY 2020 23:47
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.8.19)  7 SEP 2020 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **sciguide.tex
 (./sciguide.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-05-15> (/Users/yufree/Library/TinyTeX/texmf-dist/tex
+L3 programming layer <2020-08-07> (/Users/yufree/Library/TinyTeX/texmf-dist/tex
 /latex/tufte-latex/tufte-book.cls
 Document Class: tufte-book 2015/06/21 v3.5.2 Tufte-book class
 
@@ -20,21 +20,21 @@ rs/yufree/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks15
 \XKV@tempa@toks=\toks16
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count163
+\XKV@depth=\count164
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count164
-\calc@Bcount=\count165
+\calc@Acount=\count165
+\calc@Bcount=\count166
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count166
+\calc@Ccount=\count167
 \calc@Cskip=\skip49
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -42,8 +42,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/hardwrap/hardwrap.sty
 Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
-(/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+
+(/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
@@ -58,9 +59,9 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-\hw@charcount=\count167
-\hw@wordcount=\count168
-\hw@maxprintline=\count169
+\hw@charcount=\count168
+\hw@wordcount=\count169
+\hw@maxprintline=\count170
 )
 Class tufte-book Info: Loading the base class `book'
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
@@ -68,15 +69,15 @@ Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count170
-\c@chapter=\count171
-\c@section=\count172
-\c@subsection=\count173
-\c@subsubsection=\count174
-\c@paragraph=\count175
-\c@subparagraph=\count176
-\c@figure=\count177
-\c@table=\count178
+\c@part=\count171
+\c@chapter=\count172
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
+\c@figure=\count178
+\c@table=\count179
 \abovecaptionskip=\skip50
 \belowcaptionskip=\skip51
 \bibindent=\dimen136
@@ -89,41 +90,41 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.st
 y (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-05-15 L3 programming layer (loader) 
+Package: expl3 2020-08-07 L3 programming layer (loader) 
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xdvipdf
 mx.def
-File: l3backend-xdvipdfmx.def 2020-05-05 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count179
+File: l3backend-xdvipdfmx.def 2020-08-07 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count180
 \l__pdf_internal_box=\box45
-\g__pdf_backend_object_int=\count180
-\g__pdf_backend_annotation_int=\count181
+\g__pdf_backend_object_int=\count181
+\g__pdf_backend_annotation_int=\count182
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse-ge
 neric.tex
-\l__xparse_current_arg_int=\count182
-\g__xparse_grabber_int=\count183
-\l__xparse_m_args_int=\count184
-\l__xparse_v_nesting_int=\count185
+\l__xparse_current_arg_int=\count183
+\g__xparse_grabber_int=\count184
+\l__xparse_m_args_int=\count185
+\l__xparse_v_nesting_int=\count186
 ))
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count186
-\l__fontspec_language_int=\count187
-\l__fontspec_strnum_int=\count188
-\l__fontspec_tmp_int=\count189
-\l__fontspec_tmpa_int=\count190
-\l__fontspec_tmpb_int=\count191
-\l__fontspec_tmpc_int=\count192
-\l__fontspec_em_int=\count193
-\l__fontspec_emdef_int=\count194
-\l__fontspec_strong_int=\count195
-\l__fontspec_strongdef_int=\count196
+\l__fontspec_script_int=\count187
+\l__fontspec_language_int=\count188
+\l__fontspec_strnum_int=\count189
+\l__fontspec_tmp_int=\count190
+\l__fontspec_tmpa_int=\count191
+\l__fontspec_tmpb_int=\count192
+\l__fontspec_tmpc_int=\count193
+\l__fontspec_em_int=\count194
+\l__fontspec_emdef_int=\count195
+\l__fontspec_strong_int=\count196
+\l__fontspec_strongdef_int=\count197
 \l__fontspec_tmpa_dim=\dimen137
 \l__fontspec_tmpb_dim=\dimen138
 \l__fontspec_tmpc_dim=\dimen139
@@ -197,8 +198,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen149
-\Hy@linkcounter=\count197
-\Hy@pagecounter=\count198
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -206,7 +207,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count199
+\Hy@SavedSpaceFactor=\count266
 Package hyperref Info: Option `unicode' set `true' on input line 4338.
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
@@ -219,7 +220,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count266
+\c@Hy@tempcnt=\count267
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -233,7 +234,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count267
+\Fld@menulength=\count268
 \Field@Width=\dimen151
 \Fld@charsize=\dimen152
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -248,8 +249,8 @@ LaTeX Info: Redefining \pageref on input line 6421.
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count268
-\c@Item=\count269
+\Hy@abspage=\count269
+\c@Item=\count270
 )
 Package hyperref Info: Driver: hxetex.
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -259,10 +260,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box51
-\c@Hy@AnnotLevel=\count270
-\HyField@AnnotCount=\count271
-\Fld@listcount=\count272
-\c@bookmark@seq@number=\count273
+\c@Hy@AnnotLevel=\count271
+\HyField@AnnotCount=\count272
+\Fld@listcount=\count273
+\c@bookmark@seq@number=\count274
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfileche
 ck.sty
@@ -303,9 +304,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
+\Gm@cnth=\count275
+\Gm@cntv=\count276
+\c@Gm@tempcnt=\count277
 \Gm@bindingoffset=\dimen153
 \Gm@wd@mp=\dimen154
 \Gm@odd@mp=\dimen155
@@ -317,8 +318,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks20
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count277
-\cp@tempcnt=\count278
+\c@cp@cntr=\count278
+\cp@tempcnt=\count279
 )
 \@tufte@overhang=\skip69
 \@tufte@fullwidth=\skip70
@@ -362,12 +363,12 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip76
 \bibsep=\skip77
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count279
+\c@NAT@ctr=\count280
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
 No file sciguide.bbl.
-\c@@tufte@num@bibkeys=\count280
+\c@@tufte@num@bibkeys=\count281
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/sauerj/optparams.sty
 Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
 )
@@ -396,14 +397,14 @@ s
 \tufteskipamount=\skip90
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count281
+\c@tracingmulticols=\count282
 \mult@box=\box55
 \multicol@leftmargin=\dimen161
-\c@unbalance=\count282
-\c@collectmore=\count283
-\doublecol@number=\count284
-\multicoltolerance=\count285
-\multicolpretolerance=\count286
+\c@unbalance=\count283
+\c@collectmore=\count284
+\doublecol@number=\count285
+\multicoltolerance=\count286
+\multicolpretolerance=\count287
 \full@width=\dimen162
 \page@free=\dimen163
 \premulticols=\dimen164
@@ -454,15 +455,15 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box96
 \@tempa=\box97
 \@tempa=\box98
-\c@minrows=\count287
-\c@columnbadness=\count288
-\c@finalcolumnbadness=\count289
+\c@minrows=\count288
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
 \last@try=\dimen167
 \multicolovershoot=\dimen168
 \multicolundershoot=\dimen169
 \mult@nat@firstbox=\box99
 \colbreak@box=\box100
-\mc@col@check@num=\count290
+\mc@col@check@num=\count291
 ))) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -489,13 +490,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count291
+\inf@bad=\count292
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count292
-\leftroot@=\count293
+\uproot@=\count293
+\leftroot@=\count294
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count294
-\DOTSCASE@=\count295
+\classnum@=\count295
+\DOTSCASE@=\count296
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -504,15 +505,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen172
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count296
-\c@MaxMatrixCols=\count297
+\macc@depth=\count297
+\c@MaxMatrixCols=\count298
 \dotsspace@=\muskip17
-\c@parentequation=\count298
-\dspbrk@lvl=\count299
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
 \tag@help=\toks24
-\row@=\count300
-\column@=\count301
-\maxfields@=\count302
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
 \andhelp@=\toks25
 \eqnshift@=\dimen173
 \alignsep@=\dimen174
@@ -547,12 +548,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen186
 \cmidrulekern=\dimen187
 \defaultaddspace=\dimen188
-\@cmidla=\count303
-\@cmidlb=\count304
+\@cmidla=\count304
+\@cmidlb=\count305
 \@aboverulesep=\dimen189
 \@belowrulesep=\dimen190
-\@thisruleclass=\count305
-\@lastruleclass=\count306
+\@thisruleclass=\count306
+\@lastruleclass=\count307
 \@thisrulewidth=\dimen191
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
@@ -563,11 +564,11 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseScriptstyle=\skip98
 )) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count307
+\FV@CodeLineNo=\count308
 \FV@InFile=\read2
 \FV@TabBox=\box103
-\c@FancyVerbLine=\count308
-\FV@StepNumber=\count309
+\c@FancyVerbLine=\count309
+\FV@StepNumber=\count310
 \FV@OutFile=\write3
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
@@ -575,16 +576,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip100
 \LTpre=\skip101
 \LTpost=\skip102
-\LTchunksize=\count310
+\LTchunksize=\count311
 \LTcapwidth=\dimen192
 \LT@head=\box104
 \LT@firsthead=\box105
 \LT@foot=\box106
 \LT@lastfoot=\box107
-\LT@cols=\count311
-\LT@rows=\count312
-\c@LT@tables=\count313
-\c@LT@chunks=\count314
+\LT@cols=\count312
+\LT@rows=\count313
+\c@LT@tables=\count314
+\c@LT@chunks=\count315
 \LT@p@ftn=\toks28
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box108
@@ -592,7 +593,7 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \UL@skip=\skip103
 \UL@hook=\toks29
 \UL@height=\dimen193
-\UL@pe=\count315
+\UL@pe=\count316
 \UL@pixel=\dimen194
 \ULC@box=\box110
 Package: ulem 2019/11/18
@@ -604,50 +605,50 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex.sty
-Package: ctex 2020/05/16 v2.5.2 Chinese adapter in LaTeX (CTEX)
+Package: ctex 2020/06/06 v2.5.3 Chinese adapter in LaTeX (CTEX)
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2
 e.sty
 Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty
-Package: ctexhook 2020/05/16 v2.5.2 Document and package hooks (CTEX)
+Package: ctexhook 2020/06/06 v2.5.3 Document and package hooks (CTEX)
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
-Package: ctexpatch 2020/05/16 v2.5.2 Patching commands (CTEX)
+Package: ctexpatch 2020/06/06 v2.5.3 Patching commands (CTEX)
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\l__ctex_tmp_int=\count316
+\l__ctex_tmp_int=\count317
 \l__ctex_tmp_box=\box111
 \l__ctex_tmp_dim=\dimen196
-\g__ctex_section_depth_int=\count317
-\g__ctex_font_size_int=\count318
+\g__ctex_section_depth_int=\count318
+\g__ctex_font_size_int=\count319
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
-File: ctexopts.cfg 2020/05/16 v2.5.2 Option configuration file (CTEX)
+File: ctexopts.cfg 2020/06/06 v2.5.3 Option configuration file (CTEX)
 )
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xet
 ex.def
-File: ctex-engine-xetex.def 2020/05/16 v2.5.2 XeLaTeX adapter (CTEX)
+File: ctex-engine-xetex.def 2020/06/06 v2.5.3 XeLaTeX adapter (CTEX)
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
-Package: xeCJK 2020/05/01 v3.8.3 Typesetting CJK scripts with XeLaTeX
+Package: xeCJK 2020/06/06 v3.8.4 Typesetting CJK scripts with XeLaTeX
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtempl
 ate.sty
 Package: xtemplate 2020-05-15 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen197
-\l__xtemplate_tmp_int=\count319
+\l__xtemplate_tmp_int=\count320
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip104
 )
-\l__xeCJK_tmp_int=\count320
+\l__xeCJK_tmp_int=\count321
 \l__xeCJK_tmp_box=\box112
 \l__xeCJK_tmp_dim=\dimen198
 \l__xeCJK_tmp_skip=\skip105
-\g__xeCJK_space_factor_int=\count321
-\l__xeCJK_begin_int=\count322
-\l__xeCJK_end_int=\count323
+\g__xeCJK_space_factor_int=\count322
+\l__xeCJK_begin_int=\count323
+\l__xeCJK_end_int=\count324
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -657,7 +658,7 @@ Package: xtemplate 2020-05-15 L3 Experimental prototype document functions
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip106
-\g__xeCJK_node_int=\count324
+\g__xeCJK_node_int=\count325
 \c__xeCJK_CJK_node_dim=\dimen199
 \c__xeCJK_CJK-space_node_dim=\dimen256
 \c__xeCJK_default_node_dim=\dimen257
@@ -667,13 +668,13 @@ Package: xtemplate 2020-05-15 L3 Experimental prototype document functions
 \l__xeCJK_ccglue_skip=\skip107
 \l__xeCJK_ecglue_skip=\skip108
 \l__xeCJK_punct_kern_skip=\skip109
-\l__xeCJK_last_penalty_int=\count325
+\l__xeCJK_last_penalty_int=\count326
 \l__xeCJK_last_bound_dim=\dimen261
 \l__xeCJK_last_kern_dim=\dimen262
-\l__xeCJK_widow_penalty_int=\count326
+\l__xeCJK_widow_penalty_int=\count327
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
-(xtemplate)             argument(s) on line 2302.
+(xtemplate)             argument(s) on line 2329.
 
 \l__xeCJK_fixed_punct_width_dim=\dimen263
 \l__xeCJK_mixed_punct_width_dim=\dimen264
@@ -694,13 +695,13 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_margin_dim=\dimen279
 \l__xeCJK_minimum_bound_dim=\dimen280
 \l__xeCJK_kerning_margin_dim=\dimen281
-\g__xeCJK_family_int=\count327
-\l__xeCJK_fam_int=\count328
-\g__xeCJK_fam_allocation_int=\count329
-\l__xeCJK_verb_case_int=\count330
+\g__xeCJK_family_int=\count328
+\l__xeCJK_fam_int=\count329
+\g__xeCJK_fam_allocation_int=\count330
+\l__xeCJK_verb_case_int=\count331
 \l__xeCJK_verb_exspace_skip=\skip110
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
-File: xeCJK.cfg 2020/05/01 v3.8.3 Configuration file for xeCJK package
+File: xeCJK.cfg 2020/06/06 v3.8.4 Configuration file for xeCJK package
 ))
 \ccwd=\dimen282
 \l__ctex_ccglue_skip=\skip111
@@ -708,30 +709,30 @@ File: xeCJK.cfg 2020/05/01 v3.8.3 Configuration file for xeCJK package
 \l__ctex_ziju_dim=\dimen283
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
-\l__zhnum_scale_int=\count331
+\l__zhnum_scale_int=\count332
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
 ))
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chi
 nese.def
-File: ctex-scheme-chinese.def 2020/05/16 v2.5.2 Chinese scheme for generic (CTE
+File: ctex-scheme-chinese.def 2020/06/06 v2.5.3 Chinese scheme for generic (CTE
 X)
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.
 cfg
-File: ctex-name-utf8.cfg 2020/05/16 v2.5.2 Caption with encoding UTF-8 (CTEX)
+File: ctex-name-utf8.cfg 2020/06/06 v2.5.3 Caption with encoding UTF-8 (CTEX)
 )) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo
-File: ctex-c5size.clo 2020/05/16 v2.5.2 c5size option (CTEX)
+File: ctex-c5size.clo 2020/06/06 v2.5.3 c5size option (CTEX)
 )
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-m
 ac.def
-File: ctex-fontset-mac.def 2020/05/16 v2.5.2 macOS fonts definition (CTEX)
+File: ctex-fontset-mac.def 2020/06/06 v2.5.3 macOS fonts definition (CTEX)
 
 (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-m
 acnew.def
-File: ctex-fontset-macnew.def 2020/05/16 v2.5.2 macOS fonts definition for El C
+File: ctex-fontset-macnew.def 2020/06/06 v2.5.3 macOS fonts definition for El C
 apitan or later version (CTEX)
 
 Package fontspec Warning: Font "Songti SC Light" does not contain requested
@@ -781,8 +782,12 @@ licFont={Kaiti
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 ))) (/Users/yufree/Library/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2020/05/16 v2.5.2 Configuration file (CTEX)
-) (./sciguide.aux)
+File: ctex.cfg 2020/06/06 v2.5.3 Configuration file (CTEX)
+) (./sciguide.aux
+
+LaTeX Warning: Label `ux6587ux732eux7ba1ux7406' multiply defined.
+
+)
 \openout1 = `sciguide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
@@ -873,7 +878,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count333
 )
 LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
@@ -995,15 +1000,15 @@ LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/it' will be
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 69.
+This message occurred on input line 83.
 
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/n' will be
-(Font)              scaled to size 9.6637pt on input line 69.
+(Font)              scaled to size 9.6637pt on input line 83.
 [4]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 132.
+This message occurred on input line 142.
 
 [5])
 \tf@toc=\write5
@@ -1245,81 +1250,83 @@ This message occurred on input line 403.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 407.
+This message occurred on input line 470.
 
 [32]
-Chapter 4.
-[33
-
-]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 431.
-
-[34]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 442.
-
-[35]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 456.
-
-[36]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 465.
-
-[37]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 482.
-
-[38]
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 493.
-
-[39]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 507.
-
-[40]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 525.
-
-[41]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 544.
-
-[42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 550.
+This message occurred on input line 544.
 
-[43]
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 559.
+This message occurred on input line 611.
+
+[34]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 692.
+
+[35]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 754.
+
+[36]
+Chapter 4.
+[37
+
+]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 778.
+
+[38]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 789.
+
+[39]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 798.
+
+[40]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 811.
+
+[41]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 818.
+
+[42]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 835.
+
+[43]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 846.
 
 [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1327,45 +1334,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 565.
+This message occurred on input line 856.
 
 [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 583.
+This message occurred on input line 872.
 
 [46]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 597.
+This message occurred on input line 883.
 
 [47]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 610.
+This message occurred on input line 896.
 
 [48]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 621.
+This message occurred on input line 905.
 
 [49]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 631.
+This message occurred on input line 921.
 
 [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 648.
+This message occurred on input line 929.
 
 [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1373,7 +1380,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 656.
+This message occurred on input line 933.
 
 [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1381,7 +1388,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 660.
+This message occurred on input line 941.
 
 [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1389,7 +1396,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 668.
+This message occurred on input line 948.
 
 [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1397,7 +1404,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 674.
+This message occurred on input line 953.
 
 [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1405,92 +1412,67 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 678.
+This message occurred on input line 965.
 
 [56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 690.
+This message occurred on input line 972.
 
 [57]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 988.
+
+[58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 694.
+This message occurred on input line 998.
 
-[58]
+[59]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 701.
+This message occurred on input line 1021.
 
-[59] [60
+[60]
 
-]
-Chapter 5.
-
-Underfull \vbox (badness 4416) has occurred while \output is active []
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1034.
 
 [61]
-LaTeX Font Info:    Font shape `TU/STFangsong(0)/m/n' will be
-(Font)              scaled to size 10.23074pt on input line 741.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 756.
+This message occurred on input line 1043.
 
 [62]
-File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
-<use sciguide_files/figure-latex/pba-1.pdf>
-
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 771--772
-[][]  
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 812.
+This message occurred on input line 1048.
 
 [63]
-Overfull \hbox (58.72232pt too wide) in paragraph at lines 812--812
-[]\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
- = formula))[] 
- []
-
-
-Overfull \hbox (8.924pt too wide) in paragraph at lines 812--812
-[]\TU/lmtt/m/n/10.53937 ##      1      2      3      4      5      6      7    
-  8[] 
- []
-
-
-Overfull \hbox (8.9238pt too wide) in paragraph at lines 812--812
-[]\TU/lmtt/m/n/10.53937 ## -1.167 -2.000  2.000 -1.167 -2.000 -2.000  1.167  1.
-167[] 
- []
-
-
-Overfull \hbox (14.45695pt too wide) in paragraph at lines 812--812
-[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.5924, Adjusted R-squared:  -1
-.242[] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 815.
+This message occurred on input line 1060.
 
 [64]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 888.
+This message occurred on input line 1073.
 
 [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1498,25 +1480,135 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 888.
+This message occurred on input line 1083.
 
 [66]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1089.
+
+[67] [68
+
+]
+Chapter 5.
+
+Underfull \vbox (badness 4416) has occurred while \output is active []
+
+[69]
+LaTeX Font Info:    Font shape `TU/STFangsong(0)/m/n' will be
+(Font)              scaled to size 10.23074pt on input line 1127.
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1142.
+
+[70]
+File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
+<use sciguide_files/figure-latex/pba-1.pdf>
+
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1157--1158
+[][]  
+ []
+
+
+Overfull \hbox (58.72232pt too wide) in paragraph at lines 1198--1198
+[]\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
+ = formula))[] 
+ []
+
+
+Overfull \hbox (8.924pt too wide) in paragraph at lines 1198--1198
+[]\TU/lmtt/m/n/10.53937 ##      1      2      3      4      5      6      7    
+  8[] 
+ []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1198.
+
+[71]
+Overfull \hbox (8.9238pt too wide) in paragraph at lines 1198--1198
+[]\TU/lmtt/m/n/10.53937 ## -1.167 -2.000  2.000 -1.167 -2.000 -2.000  1.167  1.
+167[] 
+ []
+
+
+Overfull \hbox (8.92377pt too wide) in paragraph at lines 1198--1198
+[]\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.5924,Adjusted R-squared:  -1.
+242[] 
+ []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1203.
+
+[72]
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ##                name nruns lineage   GR GRind regular
+ SCones[] 
+ []
+
+
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE
+      6[] 
+ []
+
+
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE
+      0[] 
+ []
+
+
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE
+     17[] 
+ []
+
+
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE
+     12[] 
+ []
+
+
+Overfull \hbox (31.05653pt too wide) in paragraph at lines 1225--1225
+[]\TU/lmtt/m/n/10.53937 ## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE
+     37[] 
+ []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1274.
+
+[73]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1277.
+
+[74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 916.
+This message occurred on input line 1302.
 
-[67]
+[75]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 932.
+This message occurred on input line 1321.
 
-[68]
+[76]
 Chapter 6.
-[69
+[77
 
 ]
 Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
@@ -1524,46 +1616,46 @@ Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 990.
+This message occurred on input line 1373.
 
-[70]
+[78]
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/it' will be
-(Font)              scaled to size 10.18492pt on input line 1008.
+(Font)              scaled to size 10.18492pt on input line 1400.
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1083.
+This message occurred on input line 1467.
 
-[71]
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1172.
-
-[72]
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+[79]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1262.
+This message occurred on input line 1562.
 
-[73]
-Overfull \hbox (10.77837pt too wide) in paragraph at lines 1275--1277
+[80]
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1654.
+
+[81]
+Overfull \hbox (10.77837pt too wide) in paragraph at lines 1667--1669
 []\TU/SongtiSCLight(0)/m/n/10.53937 多 重 比 较 问 题 []$[][][][][] [] [] [] [][][] [
 ] [][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][][]$[]  
 
  []
 
 
-Overfull \hbox (142.24617pt too wide) in paragraph at lines 1282--1284
+Overfull \hbox (142.24617pt too wide) in paragraph at lines 1674--1676
 \TU/lmr/m/n/10.53937 URL []$[][][][] [] [] [] [][][][][][][][][][][][][] [] [][
 ][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][]$[] 
@@ -1572,61 +1664,61 @@ Overfull \hbox (142.24617pt too wide) in paragraph at lines 1282--1284
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1294.
+This message occurred on input line 1686.
 
-[74]
+[82]
 
 LaTeX Font Warning: Font shape `TU/STFangsong(0)/m/it' undefined
-(Font)              using `TU/STFangsong(0)/m/n' instead on input line 1305.
+(Font)              using `TU/STFangsong(0)/m/n' instead on input line 1697.
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1309.
+This message occurred on input line 1701.
 
-[75]
+[83]
 File: sciguide_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-5-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1319--1320
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1711--1712
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1355.
+This message occurred on input line 1747.
 
-[76]
+[84]
 File: sciguide_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-6-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1360--1361
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1752--1753
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1398.
+This message occurred on input line 1790.
 
-[77]
+[85]
 File: sciguide_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-7-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1409--1410
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1801--1802
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1438.
+This message occurred on input line 1830.
 
-[78]
+[86]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
@@ -1642,16 +1734,16 @@ File: sciguide_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-8-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1463--1464
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1856--1857
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1467.
+This message occurred on input line 1859.
 
-[79]
+[87]
 Missing character: There is no 至 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 少 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text;!
@@ -1666,332 +1758,294 @@ Missing character: There is no 异 in font [lmroman10-regular]:mapping=tex-text;
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1517.
+This message occurred on input line 1897.
 
-[80]
+[88]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1577.
+This message occurred on input line 1970.
 
-[81]
+[89]
 File: sciguide_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-11-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1580--1581
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1975--1976
 [][]  
  []
 
 
-Underfull \vbox (badness 3029) has occurred while \output is active []
-
-
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1593.
+This message occurred on input line 1988.
 
-[82]
+[90]
 File: sciguide_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-12-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1603--1604
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1998--1999
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1626.
+This message occurred on input line 2016.
 
-[83]
+[91]
 File: sciguide_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-13-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1634--1635
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 2029--2030
 [][]  
  []
 
-Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ￼ in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (114.45477pt too wide) in paragraph at lines 1650--1653
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][]$[]  
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1653.
+This message occurred on input line 2043.
 
-[84]
-Overfull \hbox (0.29132pt too wide) in paragraph at lines 1686--1687
-[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
-] [][] [] [][][][][][][][][][][][][][][][][][][][][][]$[]  
- []
-
-
-Overfull \hbox (116.98795pt too wide) in paragraph at lines 1688--1689
-[][]$[][][][] [] [] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][] [
-] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][]$[]  
- []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1692.
-
-[85]
-Overfull \hbox (99.88843pt too wide) in paragraph at lines 1694--1695
-[][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][][] [] [][][] [] []
-[][][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][]$[]  
- []
-
-
-Overfull \hbox (236.68457pt too wide) in paragraph at lines 1699--1700
-[][][][][][][][][] [] [][][] [] [][][][] [] [][] [] [][] [] [][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
- []
-
-
-Overfull \hbox (8.09634pt too wide) in paragraph at lines 1753--1755
+[92]
+Overfull \hbox (8.09634pt too wide) in paragraph at lines 2101--2103
 []\TU/lmr/m/n/10.53937 MCMC \TU/SongtiSCLight(0)/m/n/10.53937 方 法 []$[][][][][]
  [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][]$[]  
  []
 
 
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1755.
-
-[86]
-Overfull \hbox (8.8341pt too wide) in paragraph at lines 1755--1757
+Overfull \hbox (8.8341pt too wide) in paragraph at lines 2103--2105
 [][][][][][][][][][][][]$[] []$[][][][][] [] [] [] [][][] [] [][][][][][] [] []
 [][] [] [][][][][][][][] [] [][][][][][][][][][][][][]$[]  
  []
 
 
-Underfull \vbox (badness 1360) has occurred while \output is active []
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2105.
 
+[93]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1802.
+This message occurred on input line 2125.
 
-[87]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1802.
-
-[88]
+[94]
 Chapter 7.
-[89
+[95
 
 ]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1827.
-
-[90]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1881.
-
-[91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1906.
-
-[92]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1915.
-
-[93] [94
-
-]
-Chapter 8.
-[95]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2058.
+This message occurred on input line 2150.
 
 [96]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2121.
+This message occurred on input line 2178.
 
 [97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2198.
+This message occurred on input line 2203.
 
 [98]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2265.
+This message occurred on input line 2222.
 
 [99]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2321.
+This message occurred on input line 2236.
 
 [100]
+Chapter 8.
+[101
+
+]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2379.
-
-[101]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2423.
+This message occurred on input line 2304.
 
 [102]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2482.
+This message occurred on input line 2365.
 
 [103]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2545.
+This message occurred on input line 2446.
 
 [104]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2589.
+This message occurred on input line 2511.
 
 [105]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2628.
+This message occurred on input line 2589.
 
 [106]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2665.
+This message occurred on input line 2655.
 
-[107] [108
+[107]
 
-]
-Chapter 9.
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2706.
+
+[108]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2765.
+
 [109]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2719.
+This message occurred on input line 2815.
 
 [110]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2729.
+This message occurred on input line 2871.
 
 [111]
-Underfull \vbox (badness 1331) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2793.
-
-[112]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2803.
+This message occurred on input line 2913.
+
+[112]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2969.
 
 [113]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2875.
+This message occurred on input line 2979.
 
 [114]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2919.
-
-[115] [116
+Chapter 9.
+[115
 
 ]
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 2926.
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3033.
+
+[116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3043.
 
 [117]
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2955.
+This message occurred on input line 3107.
 
 [118]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2983.
+This message occurred on input line 3117.
 
 [119]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3017.
+This message occurred on input line 3169.
 
 [120]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3045.
+This message occurred on input line 3208.
 
-[121]
+[121] [122
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 3215.
+
+[123]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3068.
+This message occurred on input line 3244.
 
-[122]
-Overfull \hbox (57.40028pt too wide) in paragraph at lines 3077--3080
+[124]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3272.
+
+[125]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3306.
+
+[126]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3334.
+
+[127]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3357.
+
+[128]
+Overfull \hbox (57.40028pt too wide) in paragraph at lines 3366--3369
 []\TU/lmr/m/n/10.53937 CC=/usr/local/opt/llvm/bin/clang CXX=/usr/local/opt/llvm
 /bin/clang++ 
  []
 
 
-Overfull \hbox (82.90578pt too wide) in paragraph at lines 3083--3086
+Overfull \hbox (82.90578pt too wide) in paragraph at lines 3372--3375
 []\TU/lmr/m/n/10.53937 CC=/usr/local/bin/gcc-8 CXX=/usr/local/bin/gcc-8 CXX11=/
 usr/local/bin/gcc- 
  []
@@ -2002,44 +2056,150 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3088.
+This message occurred on input line 3376.
 
-[123]
-Overfull \hbox (10.81653pt too wide) in paragraph at lines 3089--3091
+[129]
+Overfull \hbox (10.81653pt too wide) in paragraph at lines 3378--3380
 []\TU/lmr/m/n/10.53937 SHLIB_OPENMP_CFLAGS= SHLIB_OPENMP_CXXFLAGS=  
  []
 
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3390.
+
+[130] [131
+
+]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3489.
+
+[132]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3539.
+
+[133]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3549.
+
+[134]
+Underfull \vbox (badness 6758) has occurred while \output is active []
+
+[135
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3628.
+
+[136]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3686.
+
+[137]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3736.
+
+[138]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3796.
+
+[139]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3855.
+
+[140]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3907.
+
+[141]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3965.
+
+[142]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 4015.
+
+[143]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 4072.
+
+[144]
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3102.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4129.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3102.
+This message occurred on input line 4129.
 
-[124]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3102.
+[145]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4129.
 (./sciguide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3102.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4129.
 
 Package rerunfilecheck Info: File `sciguide.out' has not changed.
-(rerunfilecheck)             Checksum: 309FBADD66C546DE59220354546DE1FB;5931.
+(rerunfilecheck)             Checksum: A30169D585EDF36795C0550FF7FB9BAE;6364.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3102.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4129.
  ) 
 Here is how much of TeX's memory you used:
- 19319 strings out of 481274
- 393357 string characters out of 5921294
- 711057 words of memory out of 5000000
- 36414 multiletter control sequences out of 15000+600000
- 536043 words of font info for 88 fonts, out of 8000000 for 9000
+ 19395 strings out of 481691
+ 397337 string characters out of 5932655
+ 716439 words of memory out of 5000000
+ 36075 multiletter control sequences out of 15000+600000
+ 538793 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,12n,128p,1743b,1005s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,136p,1743b,1005s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sciguide.pdf (124 pages).
+Output written on sciguide.pdf (145 pages).

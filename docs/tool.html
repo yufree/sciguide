@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-09-07" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,13 +50,12 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -65,16 +64,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -83,9 +80,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -188,43 +185,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5" data-path="thought.html"><a href="thought.html#启发法"><i class="fa fa-check"></i><b>4.5</b> 启发法</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="exp.html"><a href="exp.html"><i class="fa fa-check"></i><b>5</b> 实验</a><ul>
-<li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#实验设计原则"><i class="fa fa-check"></i><b>5.1</b> 实验设计原则</a></li>
-<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="exp.html"><a href="exp.html#信度效度"><i class="fa fa-check"></i><b>5.2.1</b> 信度效度</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exp.html"><a href="exp.html#均质异质性"><i class="fa fa-check"></i><b>5.2.2</b> 均质异质性</a></li>
-</ul></li>
-<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#定量实验"><i class="fa fa-check"></i><b>5.3</b> 定量实验</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="exp.html"><a href="exp.html#基线"><i class="fa fa-check"></i><b>5.3.1</b> 基线</a></li>
-<li class="chapter" data-level="5.3.2" data-path="exp.html"><a href="exp.html#指标化"><i class="fa fa-check"></i><b>5.3.2</b> 指标化</a></li>
-</ul></li>
-<li class="chapter" data-level="5.4" data-path="exp.html"><a href="exp.html#预实验"><i class="fa fa-check"></i><b>5.4</b> 预实验</a></li>
-<li class="chapter" data-level="5.5" data-path="exp.html"><a href="exp.html#思想实验"><i class="fa fa-check"></i><b>5.5</b> 思想实验</a></li>
+<li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#思想实验"><i class="fa fa-check"></i><b>5.1</b> 思想实验</a></li>
+<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#仿真实验"><i class="fa fa-check"></i><b>5.2</b> 仿真实验</a></li>
+<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#观察实验"><i class="fa fa-check"></i><b>5.3</b> 观察实验</a></li>
+<li class="chapter" data-level="5.4" data-path="exp.html"><a href="exp.html#控制实验"><i class="fa fa-check"></i><b>5.4</b> 控制实验</a></li>
+<li class="chapter" data-level="5.5" data-path="exp.html"><a href="exp.html#因素选择"><i class="fa fa-check"></i><b>5.5</b> 因素选择</a></li>
+<li class="chapter" data-level="5.6" data-path="exp.html"><a href="exp.html#效应指标"><i class="fa fa-check"></i><b>5.6</b> 效应指标</a></li>
+<li class="chapter" data-level="5.7" data-path="exp.html"><a href="exp.html#采样与样品预处理"><i class="fa fa-check"></i><b>5.7</b> 采样与样品预处理</a></li>
+<li class="chapter" data-level="5.8" data-path="exp.html"><a href="exp.html#预实验"><i class="fa fa-check"></i><b>5.8</b> 预实验</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>6</b> 数据处理</a><ul>
-<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#探索性数据分析与可视化"><i class="fa fa-check"></i><b>6.1</b> 探索性数据分析与可视化</a></li>
-<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.2</b> 多重比较</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="data.html"><a href="data.html#单步法等方差"><i class="fa fa-check"></i><b>6.2.1</b> 单步法等方差</a></li>
-<li class="chapter" data-level="6.2.2" data-path="data.html"><a href="data.html#单步法异方差对比与两两比较"><i class="fa fa-check"></i><b>6.2.2</b> 单步法异方差(对比与两两比较)</a></li>
-<li class="chapter" data-level="6.2.3" data-path="data.html"><a href="data.html#单步法空白对比"><i class="fa fa-check"></i><b>6.2.3</b> 单步法空白对比</a></li>
-<li class="chapter" data-level="6.2.4" data-path="data.html"><a href="data.html#stepdown-procedures"><i class="fa fa-check"></i><b>6.2.4</b> Stepdown procedures</a></li>
-<li class="chapter" data-level="6.2.5" data-path="data.html"><a href="data.html#step-up-procedures"><i class="fa fa-check"></i><b>6.2.5</b> step-up procedures</a></li>
-<li class="chapter" data-level="6.2.6" data-path="data.html"><a href="data.html#多重比较简略选择指南"><i class="fa fa-check"></i><b>6.2.6</b> 多重比较简略选择指南</a></li>
-<li class="chapter" data-level="6.2.7" data-path="data.html"><a href="data.html#参考资料"><i class="fa fa-check"></i><b>6.2.7</b> 参考资料</a></li>
+<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#探索性数据分析"><i class="fa fa-check"></i><b>6.1</b> 探索性数据分析</a></li>
+<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#线性模型"><i class="fa fa-check"></i><b>6.2</b> 线性模型</a></li>
+<li class="chapter" data-level="6.3" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.3</b> 多重比较</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="data.html"><a href="data.html#单步法等方差"><i class="fa fa-check"></i><b>6.3.1</b> 单步法等方差</a></li>
+<li class="chapter" data-level="6.3.2" data-path="data.html"><a href="data.html#单步法异方差对比与两两比较"><i class="fa fa-check"></i><b>6.3.2</b> 单步法异方差(对比与两两比较)</a></li>
+<li class="chapter" data-level="6.3.3" data-path="data.html"><a href="data.html#单步法空白对比"><i class="fa fa-check"></i><b>6.3.3</b> 单步法空白对比</a></li>
+<li class="chapter" data-level="6.3.4" data-path="data.html"><a href="data.html#stepdown-procedures"><i class="fa fa-check"></i><b>6.3.4</b> Stepdown procedures</a></li>
+<li class="chapter" data-level="6.3.5" data-path="data.html"><a href="data.html#step-up-procedures"><i class="fa fa-check"></i><b>6.3.5</b> step-up procedures</a></li>
+<li class="chapter" data-level="6.3.6" data-path="data.html"><a href="data.html#多重比较简略选择指南"><i class="fa fa-check"></i><b>6.3.6</b> 多重比较简略选择指南</a></li>
+<li class="chapter" data-level="6.3.7" data-path="data.html"><a href="data.html#参考资料"><i class="fa fa-check"></i><b>6.3.7</b> 参考资料</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.3</b> 多重检验</a><ul>
-<li class="chapter" data-level="6.3.1" data-path="data.html"><a href="data.html#bonferroni-方法"><i class="fa fa-check"></i><b>6.3.1</b> Bonferroni 方法</a></li>
-<li class="chapter" data-level="6.3.2" data-path="data.html"><a href="data.html#sidak-方法"><i class="fa fa-check"></i><b>6.3.2</b> Sidak 方法</a></li>
-<li class="chapter" data-level="6.3.3" data-path="data.html"><a href="data.html#错误发现率false-discovery-rate控制"><i class="fa fa-check"></i><b>6.3.3</b> 错误发现率（False Discovery Rate）控制</a></li>
+<li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.4</b> 多重检验</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="data.html"><a href="data.html#bonferroni-方法"><i class="fa fa-check"></i><b>6.4.1</b> Bonferroni 方法</a></li>
+<li class="chapter" data-level="6.4.2" data-path="data.html"><a href="data.html#sidak-方法"><i class="fa fa-check"></i><b>6.4.2</b> Sidak 方法</a></li>
+<li class="chapter" data-level="6.4.3" data-path="data.html"><a href="data.html#错误发现率false-discovery-rate控制"><i class="fa fa-check"></i><b>6.4.3</b> 错误发现率（False Discovery Rate）控制</a></li>
 </ul></li>
-<li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#线性模型"><i class="fa fa-check"></i><b>6.4</b> 线性模型</a></li>
 <li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#计算方法"><i class="fa fa-check"></i><b>6.5</b> 计算方法</a><ul>
 <li class="chapter" data-level="6.5.1" data-path="data.html"><a href="data.html#并行计算"><i class="fa fa-check"></i><b>6.5.1</b> 并行计算</a></li>
 <li class="chapter" data-level="6.5.2" data-path="data.html"><a href="data.html#集群计算"><i class="fa fa-check"></i><b>6.5.2</b> 集群计算</a></li>
 <li class="chapter" data-level="6.5.3" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.5.3</b> 容器技术</a></li>
 <li class="chapter" data-level="6.5.4" data-path="data.html"><a href="data.html#云计算"><i class="fa fa-check"></i><b>6.5.4</b> 云计算</a></li>
 <li class="chapter" data-level="6.5.5" data-path="data.html"><a href="data.html#仿真模拟"><i class="fa fa-check"></i><b>6.5.5</b> 仿真模拟</a></li>
+<li class="chapter" data-level="6.5.6" data-path="data.html"><a href="data.html#常见算法"><i class="fa fa-check"></i><b>6.5.6</b> 常见算法</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#常见算法"><i class="fa fa-check"></i><b>6.6</b> 常见算法</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -254,48 +248,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.8" data-path="life.html"><a href="life.html#伦理"><i class="fa fa-check"></i><b>8.1.8</b> 伦理</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.2</b> 项目管理</a><ul>
-<li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#香肠战术"><i class="fa fa-check"></i><b>8.2.1</b> 香肠战术</a></li>
-<li class="chapter" data-level="8.2.2" data-path="life.html"><a href="life.html#风险管理"><i class="fa fa-check"></i><b>8.2.2</b> 风险管理</a></li>
-<li class="chapter" data-level="8.2.3" data-path="life.html"><a href="life.html#时间管理"><i class="fa fa-check"></i><b>8.2.3</b> 时间管理</a></li>
-<li class="chapter" data-level="8.2.4" data-path="life.html"><a href="life.html#思维导图"><i class="fa fa-check"></i><b>8.2.4</b> 思维导图</a></li>
-<li class="chapter" data-level="8.2.5" data-path="life.html"><a href="life.html#头脑风暴"><i class="fa fa-check"></i><b>8.2.5</b> 头脑风暴</a></li>
-<li class="chapter" data-level="8.2.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.2.6</b> SWOT分析</a></li>
-<li class="chapter" data-level="8.2.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.2.7</b> 笔记管理</a></li>
-<li class="chapter" data-level="8.2.8" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.2.8</b> 邮件</a></li>
+<li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#项目报告模版"><i class="fa fa-check"></i><b>8.2.1</b> 项目报告模版</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.3</b> 学术出版</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.3.1</b> 期刊论文</a></li>
-<li class="chapter" data-level="8.3.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.3.2</b> 会议摘要</a></li>
-<li class="chapter" data-level="8.3.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.3.3</b> 专著</a></li>
-<li class="chapter" data-level="8.3.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.3.4</b> 专利</a></li>
-<li class="chapter" data-level="8.3.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.3.5</b> 软件</a></li>
+<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.3</b> 邮件</a></li>
+<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.4</b> 学术出版</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.4.1</b> 期刊论文</a></li>
+<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.4.2</b> 会议摘要</a></li>
+<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.4.3</b> 专著</a></li>
+<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.4.4</b> 专利</a></li>
+<li class="chapter" data-level="8.4.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.4.5</b> 软件</a></li>
 </ul></li>
-<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.4</b> 学术会议</a><ul>
-<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.4.1</b> 口头报告</a></li>
-<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.4.2</b> 海报报告</a></li>
-<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.4.3</b> 电梯报告</a></li>
-<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.4.4</b> 听报告</a></li>
+<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.5</b> 学术会议</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.5.1</b> 口头报告</a></li>
+<li class="chapter" data-level="8.5.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.5.2</b> 海报报告</a></li>
+<li class="chapter" data-level="8.5.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.5.3</b> 电梯报告</a></li>
+<li class="chapter" data-level="8.5.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.5.4</b> 听报告</a></li>
 </ul></li>
-<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.5</b> 审稿</a></li>
-<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.6</b> 学术合作</a></li>
-<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.7</b> 利益冲突</a><ul>
-<li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.7.1</b> 数据共享</a></li>
-<li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.7.2</b> 社交网络</a></li>
+<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.6</b> 审稿</a></li>
+<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.7</b> 学术合作</a></li>
+<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.8</b> 利益冲突</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.8.1</b> 数据共享</a></li>
+<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.8.2</b> 社交网络</a></li>
 </ul></li>
-<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.8</b> 讲课</a><ul>
-<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.8.1</b> 学生如何学习？</a></li>
-<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.8.2</b> 如何激励学生？</a></li>
-<li class="chapter" data-level="8.8.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.8.3</b> 评价学习</a></li>
-<li class="chapter" data-level="8.8.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.8.4</b> 课程设计</a></li>
-<li class="chapter" data-level="8.8.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.8.5</b> 互动学习</a></li>
-<li class="chapter" data-level="8.8.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.8.6</b> 教学理念</a></li>
+<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.9</b> 讲课</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.9.1</b> 学生如何学习？</a></li>
+<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.9.2</b> 如何激励学生？</a></li>
+<li class="chapter" data-level="8.9.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.9.3</b> 评价学习</a></li>
+<li class="chapter" data-level="8.9.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.9.4</b> 课程设计</a></li>
+<li class="chapter" data-level="8.9.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.9.5</b> 互动学习</a></li>
+<li class="chapter" data-level="8.9.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.9.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.9</b> 课题组管理</a><ul>
-<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.9.1</b> 课题组规章</a></li>
-<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#基金申请"><i class="fa fa-check"></i><b>8.9.2</b> 基金申请</a></li>
+<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.10</b> 课题组管理</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.10.1</b> 课题组规章</a></li>
+<li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#实验室规章"><i class="fa fa-check"></i><b>8.10.2</b> 实验室规章</a></li>
+<li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#经费管理"><i class="fa fa-check"></i><b>8.10.3</b> 经费管理</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.10</b> 学术评价</a></li>
-<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
+<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.11</b> 学术评价</a></li>
+<li class="chapter" data-level="8.12" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.12</b> 案例</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
 <li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>
@@ -339,9 +328,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="scitest.html"><a href="scitest.html"><i class="fa fa-check"></i>附录二：全栈科学家自测题</a></li>
 <li class="chapter" data-level="" data-path="dict.html"><a href="dict.html"><i class="fa fa-check"></i>附录三：科研日常词典</a><ul>
-<li class="chapter" data-level="9.7" data-path="dict.html"><a href="dict.html#研究生版"><i class="fa fa-check"></i><b>9.7</b> 研究生版</a></li>
-<li class="chapter" data-level="9.8" data-path="dict.html"><a href="dict.html#留学生版"><i class="fa fa-check"></i><b>9.8</b> 留学生版</a></li>
-<li class="chapter" data-level="9.9" data-path="dict.html"><a href="dict.html#创业隐喻"><i class="fa fa-check"></i><b>9.9</b> 创业隐喻</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#研究生版"><i class="fa fa-check"></i>研究生版</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#留学生版"><i class="fa fa-check"></i>留学生版</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#创业隐喻"><i class="fa fa-check"></i>创业隐喻</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/yufree/sciguide" target="blank">Published with bookdown</a></li>
@@ -433,12 +422,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>学术交流是科研生活中可以说最重要的一环，现代科研体系的分工合作都要通过学术交流来实现。主流趋势包括论文预印本服务器、开放获取与线上学术交流。</p>
 <p>预印本指在通过同行评议发表之前事先将论文手稿托管在公开服务器的研究工作。预印本服务器可以加速新思想的交流，接受预印本发表的期刊可以从维基百科上<a href="https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy">查到</a>。比较知名的预印本服务器包括偏数学物理计算机科学的<a href="https://arxiv.org/">arxiv</a>、偏生命科学的<a href="https://www.biorxiv.org/">biorxiv</a> 与偏化学的<a href="https://chemrxiv.org/">chemrxiv</a>。国内也有中科院的科技论文预发布<a href="http://chinaxiv.org/home.htm">平台</a>来服务国内科研人员。很多期刊出版方也在推广自己的预印本服务器来吸引高水平研究，所以可酌情选择。</p>
 <p>开放获取是另一个趋势，要求研究工作可以公开让大众阅读。目前很多科研基金都开始有了这方面的要求及预算。但值得注意的是虽然开放获取期刊可能有更好的阅读数与引用表现，但有很多机构的开放获取期刊属于掠夺性期刊，给钱就发表，对学术评价与学科发展非常不利，可以通过一些网络上的<a href="https://beallslist.weebly.com/">列表</a>来鉴别。要实现开放获取或者说透明科研，<a href="https://f1000research.com/">f1000research</a>、<a href="https://peerj.org/">PeerJ</a>还有<a href="https://www.plos.org/">Plos</a>都是还不错的先行者，它们在实践一些新理念，不过显然并不便宜。</p>
-<p>线上学术交流除了期刊外，实际还要包括学术博客、多媒体展示、学术出版与网络身份。制作学术博客的工具可以直接借助平台例如<a href="http://blog.sciencenet.cn/">科学网博客</a>，也可以自己搭建例如使用<a href="https://zh-cn.wordpress.com/">Wordpress</a>、<a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>或者<a href="https://www.netlify.com/">Netlify</a>等工具。幻灯片制作也最好使用网页模式方便交流，<a href="https://github.com/yihui/xaringan">xaringan</a>、<a href="https://rstudio.github.io/learnr/">learnr</a>等其他基于Markdown语言的幻灯片制作工具可以满足要求。学术出版物则可以通过<a href="https://bookdown.org/">bookdown</a>或<a href="https://github.com/rstudio/rticles">rticles</a>等工具来完成。线上的学术身份识别对于存在大量重名现象的中国科研人员也是很有必要的，<a href="https://orcid.org/">ORCID</a>、<a href="http://www.researcherid.com/">Researcher ID</a>、<a href="https://www.scopus.com/">Scopus Auther ID</a>、<a href="https://scholar.google.com">谷歌学术个人主页</a>及国内的<a href="https://xueshu.baidu.com/">百度学术个人主页</a>都是不错的网上学术名片。而在线交流的手段则可通过<a href="https://www.researchgate.net/">ResearchGate</a>、<a href="https://www.academia.edu/">Academia</a>、<a href="https://www.linkedin.com/">Linkedin</a>及<a href="https://twitter.com/">twitter</a>来完成。</p>
+<p>线上学术交流除了期刊外，实际还要包括学术博客、多媒体展示、学术出版与网络身份。制作学术博客的工具可以直接借助平台例如<a href="http://blog.sciencenet.cn/">科学网博客</a>，也可以自己搭建例如使用<a href="https://zh-cn.wordpress.com/">Wordpress</a>、<a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>或者<a href="https://www.netlify.com/">Netlify</a>等工具。幻灯片制作也最好使用网页模式方便交流，<a href="https://github.com/yihui/xaringan">xaringan</a>、<a href="https://rstudio.github.io/learnr/">learnr</a>等其他基于Markdown语言的幻灯片制作工具可以满足要求。学术出版物则可以通过<a href="https://bookdown.org/">bookdown</a>或<a href="https://github.com/rstudio/rticles">rticles</a>等工具来完成。线上的学术身份识别对于存在大量重名现象的中国科研人员也是很有必要的，<a href="https://orcid.org/">ORCID</a>、<a href="http://www.researcherid.com/">Researcher ID</a>、<a href="https://www.scopus.com/">Scopus Auther ID</a>、<a href="https://scholar.google.com">谷歌学术个人主页</a>及国内的<a href="https://xueshu.baidu.com/">百度学术个人主页</a>都是不错的网上学术名片。在线出版可以考虑leanpub／gitbook／amazon kindle direct publishing或者按需求出版纸质版的 lulu.com。而在线交流的手段则可通过<a href="https://www.researchgate.net/">ResearchGate</a>、<a href="https://www.academia.edu/">Academia</a>、<a href="https://www.linkedin.com/">Linkedin</a>及<a href="https://twitter.com/">twitter</a>来完成。</p>
 <p>审稿也是很重要的学术交流方式，建议使用 <a href="https://publons.com/home/">Publons</a> 来构建自己的学术审稿记录。当然你可以在博客或微博上评论最新研究，甚至很多网络期刊网站的评论也有很好的思想碰撞，这里最关键的是要搞清楚你所在学科最活跃的网络交流平台，如果没有，自己搭建一个也无妨。</p>
 </div>
 <div id="数据分享" class="section level2 unnumbered">
 <h2>数据分享</h2>
-<p>数据分享是一个很重要现代科研特征，越来越多的科研成果正在开放自己的原始数据供社区推动学科进步。其中，<a href="https://figshare.com/">figshare</a>、<a href="https://osf.io/">Open Science Framework</a>、<a href="https://dataverse.org/">Dataverse</a>与<a href="https://zenodo.org/">Zenodo</a>都是这一潮流的引领者。良好的数据分享不仅包含原始数据，还要包括处理后数据、数据收集相关信息与处理代码，另外对于共享数据的使用也要尊重数据生产者。</p>
+<p>数据分享是一个很重要现代科研特征，越来越多的科研成果正在开放自己的原始数据供社区推动学科进步。其中，<a href="https://figshare.com/">figshare</a>、<a href="https://osf.io/">Open Science Framework</a>、<a href="https://dataverse.org/">Dataverse</a>与<a href="https://zenodo.org/">Zenodo</a>都是这一潮流的引领者。良好的数据分享不仅包含原始数据，还要包括处理后数据、数据收集相关信息与处理代码，另外对于共享数据的使用也要尊重数据生产者。这里有一份<a href="https://www.nature.com/sdata/policies/repositories">列表</a>对不同学科的数据分享提供指南。</p>
 </div>
 <div id="代码管理" class="section level2 unnumbered">
 <h2>代码管理</h2>

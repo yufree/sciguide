@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-09-07" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,13 +50,12 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -65,16 +64,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -83,9 +80,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -188,43 +185,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5" data-path="thought.html"><a href="thought.html#启发法"><i class="fa fa-check"></i><b>4.5</b> 启发法</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="exp.html"><a href="exp.html"><i class="fa fa-check"></i><b>5</b> 实验</a><ul>
-<li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#实验设计原则"><i class="fa fa-check"></i><b>5.1</b> 实验设计原则</a></li>
-<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#定性实验"><i class="fa fa-check"></i><b>5.2</b> 定性实验</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="exp.html"><a href="exp.html#信度效度"><i class="fa fa-check"></i><b>5.2.1</b> 信度效度</a></li>
-<li class="chapter" data-level="5.2.2" data-path="exp.html"><a href="exp.html#均质异质性"><i class="fa fa-check"></i><b>5.2.2</b> 均质异质性</a></li>
-</ul></li>
-<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#定量实验"><i class="fa fa-check"></i><b>5.3</b> 定量实验</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="exp.html"><a href="exp.html#基线"><i class="fa fa-check"></i><b>5.3.1</b> 基线</a></li>
-<li class="chapter" data-level="5.3.2" data-path="exp.html"><a href="exp.html#指标化"><i class="fa fa-check"></i><b>5.3.2</b> 指标化</a></li>
-</ul></li>
-<li class="chapter" data-level="5.4" data-path="exp.html"><a href="exp.html#预实验"><i class="fa fa-check"></i><b>5.4</b> 预实验</a></li>
-<li class="chapter" data-level="5.5" data-path="exp.html"><a href="exp.html#思想实验"><i class="fa fa-check"></i><b>5.5</b> 思想实验</a></li>
+<li class="chapter" data-level="5.1" data-path="exp.html"><a href="exp.html#思想实验"><i class="fa fa-check"></i><b>5.1</b> 思想实验</a></li>
+<li class="chapter" data-level="5.2" data-path="exp.html"><a href="exp.html#仿真实验"><i class="fa fa-check"></i><b>5.2</b> 仿真实验</a></li>
+<li class="chapter" data-level="5.3" data-path="exp.html"><a href="exp.html#观察实验"><i class="fa fa-check"></i><b>5.3</b> 观察实验</a></li>
+<li class="chapter" data-level="5.4" data-path="exp.html"><a href="exp.html#控制实验"><i class="fa fa-check"></i><b>5.4</b> 控制实验</a></li>
+<li class="chapter" data-level="5.5" data-path="exp.html"><a href="exp.html#因素选择"><i class="fa fa-check"></i><b>5.5</b> 因素选择</a></li>
+<li class="chapter" data-level="5.6" data-path="exp.html"><a href="exp.html#效应指标"><i class="fa fa-check"></i><b>5.6</b> 效应指标</a></li>
+<li class="chapter" data-level="5.7" data-path="exp.html"><a href="exp.html#采样与样品预处理"><i class="fa fa-check"></i><b>5.7</b> 采样与样品预处理</a></li>
+<li class="chapter" data-level="5.8" data-path="exp.html"><a href="exp.html#预实验"><i class="fa fa-check"></i><b>5.8</b> 预实验</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>6</b> 数据处理</a><ul>
-<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#探索性数据分析与可视化"><i class="fa fa-check"></i><b>6.1</b> 探索性数据分析与可视化</a></li>
-<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.2</b> 多重比较</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="data.html"><a href="data.html#单步法等方差"><i class="fa fa-check"></i><b>6.2.1</b> 单步法等方差</a></li>
-<li class="chapter" data-level="6.2.2" data-path="data.html"><a href="data.html#单步法异方差对比与两两比较"><i class="fa fa-check"></i><b>6.2.2</b> 单步法异方差(对比与两两比较)</a></li>
-<li class="chapter" data-level="6.2.3" data-path="data.html"><a href="data.html#单步法空白对比"><i class="fa fa-check"></i><b>6.2.3</b> 单步法空白对比</a></li>
-<li class="chapter" data-level="6.2.4" data-path="data.html"><a href="data.html#stepdown-procedures"><i class="fa fa-check"></i><b>6.2.4</b> Stepdown procedures</a></li>
-<li class="chapter" data-level="6.2.5" data-path="data.html"><a href="data.html#step-up-procedures"><i class="fa fa-check"></i><b>6.2.5</b> step-up procedures</a></li>
-<li class="chapter" data-level="6.2.6" data-path="data.html"><a href="data.html#多重比较简略选择指南"><i class="fa fa-check"></i><b>6.2.6</b> 多重比较简略选择指南</a></li>
-<li class="chapter" data-level="6.2.7" data-path="data.html"><a href="data.html#参考资料"><i class="fa fa-check"></i><b>6.2.7</b> 参考资料</a></li>
+<li class="chapter" data-level="6.1" data-path="data.html"><a href="data.html#探索性数据分析"><i class="fa fa-check"></i><b>6.1</b> 探索性数据分析</a></li>
+<li class="chapter" data-level="6.2" data-path="data.html"><a href="data.html#线性模型"><i class="fa fa-check"></i><b>6.2</b> 线性模型</a></li>
+<li class="chapter" data-level="6.3" data-path="data.html"><a href="data.html#多重比较"><i class="fa fa-check"></i><b>6.3</b> 多重比较</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="data.html"><a href="data.html#单步法等方差"><i class="fa fa-check"></i><b>6.3.1</b> 单步法等方差</a></li>
+<li class="chapter" data-level="6.3.2" data-path="data.html"><a href="data.html#单步法异方差对比与两两比较"><i class="fa fa-check"></i><b>6.3.2</b> 单步法异方差(对比与两两比较)</a></li>
+<li class="chapter" data-level="6.3.3" data-path="data.html"><a href="data.html#单步法空白对比"><i class="fa fa-check"></i><b>6.3.3</b> 单步法空白对比</a></li>
+<li class="chapter" data-level="6.3.4" data-path="data.html"><a href="data.html#stepdown-procedures"><i class="fa fa-check"></i><b>6.3.4</b> Stepdown procedures</a></li>
+<li class="chapter" data-level="6.3.5" data-path="data.html"><a href="data.html#step-up-procedures"><i class="fa fa-check"></i><b>6.3.5</b> step-up procedures</a></li>
+<li class="chapter" data-level="6.3.6" data-path="data.html"><a href="data.html#多重比较简略选择指南"><i class="fa fa-check"></i><b>6.3.6</b> 多重比较简略选择指南</a></li>
+<li class="chapter" data-level="6.3.7" data-path="data.html"><a href="data.html#参考资料"><i class="fa fa-check"></i><b>6.3.7</b> 参考资料</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.3</b> 多重检验</a><ul>
-<li class="chapter" data-level="6.3.1" data-path="data.html"><a href="data.html#bonferroni-方法"><i class="fa fa-check"></i><b>6.3.1</b> Bonferroni 方法</a></li>
-<li class="chapter" data-level="6.3.2" data-path="data.html"><a href="data.html#sidak-方法"><i class="fa fa-check"></i><b>6.3.2</b> Sidak 方法</a></li>
-<li class="chapter" data-level="6.3.3" data-path="data.html"><a href="data.html#错误发现率false-discovery-rate控制"><i class="fa fa-check"></i><b>6.3.3</b> 错误发现率（False Discovery Rate）控制</a></li>
+<li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#多重检验"><i class="fa fa-check"></i><b>6.4</b> 多重检验</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="data.html"><a href="data.html#bonferroni-方法"><i class="fa fa-check"></i><b>6.4.1</b> Bonferroni 方法</a></li>
+<li class="chapter" data-level="6.4.2" data-path="data.html"><a href="data.html#sidak-方法"><i class="fa fa-check"></i><b>6.4.2</b> Sidak 方法</a></li>
+<li class="chapter" data-level="6.4.3" data-path="data.html"><a href="data.html#错误发现率false-discovery-rate控制"><i class="fa fa-check"></i><b>6.4.3</b> 错误发现率（False Discovery Rate）控制</a></li>
 </ul></li>
-<li class="chapter" data-level="6.4" data-path="data.html"><a href="data.html#线性模型"><i class="fa fa-check"></i><b>6.4</b> 线性模型</a></li>
 <li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#计算方法"><i class="fa fa-check"></i><b>6.5</b> 计算方法</a><ul>
 <li class="chapter" data-level="6.5.1" data-path="data.html"><a href="data.html#并行计算"><i class="fa fa-check"></i><b>6.5.1</b> 并行计算</a></li>
 <li class="chapter" data-level="6.5.2" data-path="data.html"><a href="data.html#集群计算"><i class="fa fa-check"></i><b>6.5.2</b> 集群计算</a></li>
 <li class="chapter" data-level="6.5.3" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.5.3</b> 容器技术</a></li>
 <li class="chapter" data-level="6.5.4" data-path="data.html"><a href="data.html#云计算"><i class="fa fa-check"></i><b>6.5.4</b> 云计算</a></li>
 <li class="chapter" data-level="6.5.5" data-path="data.html"><a href="data.html#仿真模拟"><i class="fa fa-check"></i><b>6.5.5</b> 仿真模拟</a></li>
+<li class="chapter" data-level="6.5.6" data-path="data.html"><a href="data.html#常见算法"><i class="fa fa-check"></i><b>6.5.6</b> 常见算法</a></li>
 </ul></li>
-<li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#常见算法"><i class="fa fa-check"></i><b>6.6</b> 常见算法</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -254,48 +248,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.8" data-path="life.html"><a href="life.html#伦理"><i class="fa fa-check"></i><b>8.1.8</b> 伦理</a></li>
 </ul></li>
 <li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.2</b> 项目管理</a><ul>
-<li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#香肠战术"><i class="fa fa-check"></i><b>8.2.1</b> 香肠战术</a></li>
-<li class="chapter" data-level="8.2.2" data-path="life.html"><a href="life.html#风险管理"><i class="fa fa-check"></i><b>8.2.2</b> 风险管理</a></li>
-<li class="chapter" data-level="8.2.3" data-path="life.html"><a href="life.html#时间管理"><i class="fa fa-check"></i><b>8.2.3</b> 时间管理</a></li>
-<li class="chapter" data-level="8.2.4" data-path="life.html"><a href="life.html#思维导图"><i class="fa fa-check"></i><b>8.2.4</b> 思维导图</a></li>
-<li class="chapter" data-level="8.2.5" data-path="life.html"><a href="life.html#头脑风暴"><i class="fa fa-check"></i><b>8.2.5</b> 头脑风暴</a></li>
-<li class="chapter" data-level="8.2.6" data-path="life.html"><a href="life.html#swot分析"><i class="fa fa-check"></i><b>8.2.6</b> SWOT分析</a></li>
-<li class="chapter" data-level="8.2.7" data-path="life.html"><a href="life.html#笔记管理"><i class="fa fa-check"></i><b>8.2.7</b> 笔记管理</a></li>
-<li class="chapter" data-level="8.2.8" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.2.8</b> 邮件</a></li>
+<li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#项目报告模版"><i class="fa fa-check"></i><b>8.2.1</b> 项目报告模版</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.3</b> 学术出版</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.3.1</b> 期刊论文</a></li>
-<li class="chapter" data-level="8.3.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.3.2</b> 会议摘要</a></li>
-<li class="chapter" data-level="8.3.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.3.3</b> 专著</a></li>
-<li class="chapter" data-level="8.3.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.3.4</b> 专利</a></li>
-<li class="chapter" data-level="8.3.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.3.5</b> 软件</a></li>
+<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.3</b> 邮件</a></li>
+<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.4</b> 学术出版</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.4.1</b> 期刊论文</a></li>
+<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.4.2</b> 会议摘要</a></li>
+<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.4.3</b> 专著</a></li>
+<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.4.4</b> 专利</a></li>
+<li class="chapter" data-level="8.4.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.4.5</b> 软件</a></li>
 </ul></li>
-<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.4</b> 学术会议</a><ul>
-<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.4.1</b> 口头报告</a></li>
-<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.4.2</b> 海报报告</a></li>
-<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.4.3</b> 电梯报告</a></li>
-<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.4.4</b> 听报告</a></li>
+<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.5</b> 学术会议</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.5.1</b> 口头报告</a></li>
+<li class="chapter" data-level="8.5.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.5.2</b> 海报报告</a></li>
+<li class="chapter" data-level="8.5.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.5.3</b> 电梯报告</a></li>
+<li class="chapter" data-level="8.5.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.5.4</b> 听报告</a></li>
 </ul></li>
-<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.5</b> 审稿</a></li>
-<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.6</b> 学术合作</a></li>
-<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.7</b> 利益冲突</a><ul>
-<li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.7.1</b> 数据共享</a></li>
-<li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.7.2</b> 社交网络</a></li>
+<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.6</b> 审稿</a></li>
+<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.7</b> 学术合作</a></li>
+<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.8</b> 利益冲突</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.8.1</b> 数据共享</a></li>
+<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.8.2</b> 社交网络</a></li>
 </ul></li>
-<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.8</b> 讲课</a><ul>
-<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.8.1</b> 学生如何学习？</a></li>
-<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.8.2</b> 如何激励学生？</a></li>
-<li class="chapter" data-level="8.8.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.8.3</b> 评价学习</a></li>
-<li class="chapter" data-level="8.8.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.8.4</b> 课程设计</a></li>
-<li class="chapter" data-level="8.8.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.8.5</b> 互动学习</a></li>
-<li class="chapter" data-level="8.8.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.8.6</b> 教学理念</a></li>
+<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.9</b> 讲课</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.9.1</b> 学生如何学习？</a></li>
+<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.9.2</b> 如何激励学生？</a></li>
+<li class="chapter" data-level="8.9.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.9.3</b> 评价学习</a></li>
+<li class="chapter" data-level="8.9.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.9.4</b> 课程设计</a></li>
+<li class="chapter" data-level="8.9.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.9.5</b> 互动学习</a></li>
+<li class="chapter" data-level="8.9.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.9.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.9</b> 课题组管理</a><ul>
-<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.9.1</b> 课题组规章</a></li>
-<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#基金申请"><i class="fa fa-check"></i><b>8.9.2</b> 基金申请</a></li>
+<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.10</b> 课题组管理</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.10.1</b> 课题组规章</a></li>
+<li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#实验室规章"><i class="fa fa-check"></i><b>8.10.2</b> 实验室规章</a></li>
+<li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#经费管理"><i class="fa fa-check"></i><b>8.10.3</b> 经费管理</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.10</b> 学术评价</a></li>
-<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
+<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.11</b> 学术评价</a></li>
+<li class="chapter" data-level="8.12" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.12</b> 案例</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
 <li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>
@@ -339,9 +328,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="scitest.html"><a href="scitest.html"><i class="fa fa-check"></i>附录二：全栈科学家自测题</a></li>
 <li class="chapter" data-level="" data-path="dict.html"><a href="dict.html"><i class="fa fa-check"></i>附录三：科研日常词典</a><ul>
-<li class="chapter" data-level="9.7" data-path="dict.html"><a href="dict.html#研究生版"><i class="fa fa-check"></i><b>9.7</b> 研究生版</a></li>
-<li class="chapter" data-level="9.8" data-path="dict.html"><a href="dict.html#留学生版"><i class="fa fa-check"></i><b>9.8</b> 留学生版</a></li>
-<li class="chapter" data-level="9.9" data-path="dict.html"><a href="dict.html#创业隐喻"><i class="fa fa-check"></i><b>9.9</b> 创业隐喻</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#研究生版"><i class="fa fa-check"></i>研究生版</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#留学生版"><i class="fa fa-check"></i>留学生版</a></li>
+<li class="chapter" data-level="" data-path="dict.html"><a href="dict.html#创业隐喻"><i class="fa fa-check"></i>创业隐喻</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/yufree/sciguide" target="blank">Published with bookdown</a></li>
@@ -365,13 +354,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="data" class="section level1">
 <h1><span class="header-section-number">坑 6</span> 数据处理</h1>
-<p>数据处理是科研中很重要的一环，同样的数据不同的人处理会得到不同的结论。事实只有一个，但解释可以有很多，数据处理方式本身就会对解释产生影响。这里重点讨论几个常见的数据处理问题。</p>
-<div id="探索性数据分析与可视化" class="section level2">
-<h2><span class="header-section-number">6.1</span> 探索性数据分析与可视化</h2>
+<p>数据处理是科研中很重要的一环，同样的实验或观察数据不同的人处理会得到不同的结论。事实只有一个，但解释可以有很多，数据处理方式本身就会对解释产生影响。本章先讨论探索性数据分析，然后解释线性模型，因为科研中数据分析基本就是这两部分的反复迭代。之后对常见的多重比较及多重检验问题进行讨论，最后会讨论下现代科研中涉及的一些计算方法与技术。</p>
+<div id="探索性数据分析" class="section level2">
+<h2><span class="header-section-number">6.1</span> 探索性数据分析</h2>
+<p>数据处理的第一步是探索性数据分析。本质上，所有数据分析都是从数据中挖掘规律，在有明确假设驱动的研究中，规律的探索是与数据收集实验设计紧密结合在一起的。探索性数据分析这对于观察数据或监测数据尤为重要，但对于假设驱动研究的数据探索性数据分析也有助于发现未预期的现象或进行故障诊断。探索性数据分析需要摒弃固有分析模式，用从头开始的思路对数据进行探索，可视化等手段有助于直观进行探索性数据分析。</p>
+<p>所谓从头开始，就是从对数据本身的描述开始。基本的原则是：</p>
+<ul>
+<li>一维数据看分布与异常值</li>
+<li>二维数据看关系与趋势</li>
+<li>三维看维度间两两关系</li>
+<li>高维数据降维</li>
+<li>相似个体聚类与网络结构</li>
+</ul>
+<p>这些原则的核心就是对数据中规律性的本质进行直观展示，也因此可视化手段尤为重要。</p>
+<p>对于一维数据，均值、中位数等单一数值常在媒体报道跟论文中用来指代群体，但其实牺牲了很多重要的分布细节进而产生误导，甚至让人产生被平均的感受，而直接展示整体其实并不困难，重要的是作者/研究者应放开心态，从引导读者认同自己观点转为让读者自己探索出<a href="http://flowingdata.com/2017/07/07/small-summary-stats/">结论</a>。一维数据可以被抽象为单一数值，但更可能是多种基础分布的叠加，探索性分析就是要从中找出数据中均质性与异质性。此外，一维数据会存在异常值，这些异常值可能需要其他数据来探索出现的原因，也可能仅仅就是随机出现，这时候大样本量会有帮助。一维数据的可视化方式一般为直方图或概率密度曲线或箱式图等。</p>
+<p>二维数据如果不是坐标，那么优先考察样本中两个维度描述的关系，特别是存在时间这个维度时，考察的就是动力学过程，动力学过程一般会存在自相关，也就是相邻时间采集数据会接近，并不是独立的，此时可考虑求导数，不仅一阶导数，更高阶的导数也可以考虑。如果是坐标，那就要展示到平面上看下空间分布的离散情况，有没有聚集或其他趋势，然后可引入其他维度来寻找原因。二维数据可视化方式为散点图、折线图、地图等，要辅助一维展示方式来保留更多的细节。</p>
+<p>三维数据可视化其实也是通过二维展示的，可以分拆为两两的二维数据关系来探索，或者用透视的方式来展示。另外常见的三维数据可视化方式是引入除了坐标外的其他展示要素来二维展示其他的维度，例如通过颜色、大小、长度、宽度等，例如热图。也可以单纯用柱形图或雷达图来并列展示多个维度。不过当维度不断增长后，同时展示多维度会造成阅读困难，这与探索分析的初衷违背，此时要分而析之而不是盲目追求可视化的复杂度。</p>
+<p>高维数据的探索需要先降维，基本思路是趋势相对一致的维度重新整合为一个独立维度，提取出一个新维度。最常见的降维方式是主成分分析或因子分析，可理解为通过坐标轴映射让方差方向相对一致的因子重组为单一因子。另外的降维方式则有流形分析的一些技术例如 t-SNE，可以用来非线性降维。这里一定要清楚降维的前提是维度间存在某种相似性可以被降维，如果都是相对独立的，例如第一主成分对方差解释连5%都不到，那么优先要做的不是降维，而是冗余分析，把不相关的维度先筛掉。大量不相关的维度会增加数据整体方差且降低发现真正规律的统计方法功效，因此不要盲目迷信方法，根据探索的方向来保留有意义的数据维度。</p>
+<p>除了在样品维度上进行探索，样本间的关系可能也不是独立的。此时可以引入聚类分析来探索样本间的关系，聚类分析的核心在于样品间距离的定义，要根据数据本身的情况来定，但欧式距离比较常见。除了聚类分析，也可以考虑探索样本间层级关系或更一般的网络关系，此时要定义好层级间或节点间的连接条件，例如最常见的相关性，这样就可以对样品间的相互关系进行探索，看是否存在样本聚类的情况。当然，该方法也可用来探索维度间关系。</p>
+<p>探索性分析不同于下一步基于假设的统计推断，往往更侧重直观展示与形成假设，后者则侧重验证与预测。探索性数据分析对于科研非常重要，因为很多新现象规律的发现都是在这阶段完成的。相应的，科研人员应掌握足够多的可视化工具，了解其探索的关系与原理，基于 R 语言可参考<a href="https://bookdown.org/xiangyun/msg/">《现代统计图形》</a>。</p>
+</div>
+<div id="线性模型" class="section level2">
+<h2><span class="header-section-number">6.2</span> 线性模型</h2>
+<p>探索性分析之后对于数据应该形成一定的假设或模型，然后通过统计学方法进行验证，如果需要可进一步进行预测。科研中常用的假设检验大都可以用线性模型的框架来<a href="https://cosx.org/2019/09/common-tests-as-linear-models/">解释</a>。例如双样本t检验可算作方差分析的特例，方差分析可以看作带有伪变量的回归，协方差分析可以看作回归中的交互作用…</p>
+<p>线性模型的基本形式就是因变量是由自变量作用加和而成，在这个语境下，其实把自变量改为变量，放宽独立性限制，也能将一些非线性部分，例如高幂次的自变量及变量间的乘积或交互作用考虑进去，这样，线性模型几乎可以覆盖绝大多数科研中常用的假设检验与模型。在实际问题的抽象上，只要可以把目标数值的变动用其他数值的拆解或组合表示出来，那么可以粗略认为标准化后其他数值的回归系数可用来比较不同数值间的贡献，而对于该系数的显著性检验则可以说明该系数的影响是否显著。</p>
+<p>打个比方，流行病学里常说的某种疾病发病率或风险比在考虑了人群性别、年龄、BMI、吸烟史等的影响后发现某污染物起了显著影响，这就是说在一个目标变量为病发病率或风险比的线性模型中，性别、年龄、BMI、吸烟史作为协变量而污染物作为自变量，模型拟合结束后发现污染物的系数经假设检验为显著差异于零，也就是没影响。这里，协变量与自变量在回归上是平等的，可以把协变量理解为控制变量，如果你考察吸烟的影响，那么吸烟与否就是自变量，包含污染物在内其他项就成了协变量。不过所有考察变量选择的原则在于其理论上或经验上被认为与目标变量有关系且无法通过随机采样、配对等手段消除影响，这种情况对于观测数据比较常见。</p>
+<p>当线性模型的自变量只有一项时，其实考察的就是自变量与响应变量间的相关性。当自变量为多项时，也就是多元线性回归，考察的是你自己定义的“自变量”与“协变量”还有响应变量的关系。如果自变量间不能互相独立，那么最好将独立的部分提取出来作为新的变量，这种发现潜在变量的过程归属于因子分析，可以用来降维。自变量本身存在随机性，特别是个体差异，这种随机性可能影响线性模型自变量的系数或斜率，也可能影响线性模型的截距，甚至可能同时影响，此时考虑了自变量的随机性的模型就是线性混合模型。线性混合模型其实已经是层级模型了，自变量的随机性来源于共同的分布。如果自变量间存在层级，例如有些变量会直接影响其他变量，那么此时线性模型就成了决策/回归树模型的特例了。如果层级关系错综复杂，那不依赖结构方程模型是没办法搞清楚各参数影响的。然而模型越复杂，对数据的假设就越多，对样本量的要求也就越高。同时，自变量或因变量有些时候也要事先进行连续性转换，这就给出了logistics回归、生存分析等特殊的回归模型。科研模型如果是依赖控制实验的，那么会在设计阶段随机化绝大部分变量，数据处理方面到线性混合模型就已经很少见了。但对于观测数据，线性混合模型只是起点，对于侧重观察数据的社会科学研究，样本量与效应大小是结论可靠性的关键，精细的模型无法消除太多的个体差异。</p>
+<p>高维数据是线性模型的一大挑战，当维度升高后，变量间要么可能因为变异来源相似而共相关，要么干脆就是随机共相关。在某些场景下，高维数据可能都没有目标变量，需要先通过探索性数据分析找出样本或变量间的组织结构。这种场景下应通过变量选择过程来保留独立且与目标变量有潜在关系的变量。也就是说，变量选择的出发点是对数据的理解，优先考虑相关变量而非简单套用统计分析流程。当然，统计方法上也有变量选择的套路，评判标准可能是信息熵或模型稳健度的一些统计量，可以借助这些过程来简化模型或者说降维。对于线性模型而言，就是均方误、Mallow’s <span class="math inline">\(C_p\)</span>、AIC、BIC还有调节R方等，可借助回归模型软件来完成。</p>
+<p>回归或模型拟合都存在过拟合的风险，所谓过拟合，就是模型对于用来构建模型的数据表现良好，但在新数据的预测性上却不足的情况。与过拟合对应的是欠拟合，此时拟合出的模型连在构建模型的数据验证上表现都不好。这里的表现可以用模型评价的一些指标，其实跟上面进行变量选择的指标是一样的，好的模型应该能捕捉到数据背后真实的关系，也因此在训练数据与新数据上表现一致。</p>
+<p>在统计学习领域里，工程实践上最简单的验证过拟合与欠拟合的方法就是对数据进行切分，分为用来构建模型的训练集与验证模型预测性能的检测集，更细的分法则将检测集分为可在模型调参过程中使用多次的检测集与最后最终评价模型的一次性验证集，三者比例大概6:3:1，也可根据实际情况来定。也就是说，模型的构建不是一次性完成的，而是一个反复调整模型参数的过程来保证最终的模型具备良好的预测性与稳健度。</p>
+<p>在技术层面上，调参过程有两种基本应对方法，第一种是重采样技术，第二种是正则化，两种方法可以组合使用。重采样技术指的是通过对训练集反复采样多次建模来调参的过程。常见的重采样技术有留一法，交叉检验与bootstrap。留一法在每次建模留一个数据点作为验证集，重复n次，得到一个CV值作为对错误率的估计。交叉检验将训练集分为多份，每次建模用一份检验，用其他份建模。bootstrap更可看作一种思想，在训练集里有放回的重采样等长的数据形成新的数据集并计算相关参数，重复多次得到对参数的估计，计算标准误。在这些重采样技术中，因为进行的多次建模，也有多次评价，最佳的模型就是多次评价中在验证集上表现最好的那一组。</p>
+<p>正则化则是在模型构建过程中在模型上对参数的效应进行人为减弱，用来降低过拟合风险。具体到线性模型上，就是在模型训练的目标上由单纯最小化均方误改为最小化均方误加上一个对包含模型参数线性组合的惩罚项，这样拟合后的模型参数对自变量的影响就会减弱，更容易影响不显著，如果自变量过拟合的话就会被这个正则化过程削弱。当惩罚项为模型参数的二次组合时，这种回归就是岭回归；当惩罚项为模型参数的一次绝对值组合时，这种回归就是lasso；当惩罚项为一次与二次的组合时，这种回归就是弹性网络回归。实践上正则化过程对于降低过拟合经常有神奇效果，同时正则化也可作为变量选择的手段，虽然岭回归无法将系数惩罚为0，但lasso可以，这样在参数收缩过程中也就同时实现了变量选择。</p>
+<p>为了说明实际问题，有时候单一形式的模型是不能完全捕捉数据中的变动细节的，我们可以在工程角度通过模型组合来达到单一模型无法达到的预测性能。模型组合的基本思想就是对同一组数据生成不同模型的预测结果，然后对这些结果进行二次建模，考虑在不同情况下对不同模型预测结果给予不同的权重。这种技术手段可以突破原理限制，而最出名的例子就是人工神经网络里不同神经元采用不同核函数的做法了。</p>
+<p>对于科研数据的线性回归，还有两个常见问题，一个是截断问题，另一个是缺失值处理。截断问题一般是采样精度或技术手段决定的，在数值的高位或低位无法采集高质量数据，此时可以借助截断回归等统计学方法来弥补。另一种思路则是在断点前后构建不同的模型，这样分别应对不同质量的数据。对于数据缺失值的问题，统计学上也提供了很多用来删除或填充缺失值的方法，填充数据不应影响统计推断，越是接近的样本，就越是可以用来填充缺失值，当然这个思路反着用就是个性化推荐系统模型的构建了。</p>
+<p>除了线性模型，非线性模型在某些研究中也经常用，特别是对一些机理的验证上，经常要拟合S型曲线，此时模型的形式往往是固定的，用来给出一些过程中重要的参数。但如果你打算提出新的模型，就要认真考虑这些模型参数的物理意义及新模型如何在这个过程中逻辑上说通。非线性模型包括凸函数与凹函数，最常见凸函数是指数函数，掌握72法制，也就是72除以速率大概就是翻倍用的时间。最常见凹函数是收益递减函数，平均价值大于价值的平均，具有风险规避特性。例如劳动力和资本凹函数，新的投资得到的收益会越来越低。</p>
 </div>
 <div id="多重比较" class="section level2">
-<h2><span class="header-section-number">6.2</span> 多重比较</h2>
-<p>方差分析解决的是分类变量对响应变量的影响问题，通常是用分类变量所解释的变异比上分类变量以外的变异去进行F检验。换句话讲，如果分类变量可以解释大部分响应变量的变异，我们就说这种分类变量对响应变量的解释有意义。例如下面这组数据：</p>
+<h2><span class="header-section-number">6.3</span> 多重比较</h2>
+<p>研究中方差分析解决的是分类变量对响应变量的影响问题，通常是用分类变量所解释的变异比上分类变量以外的变异去进行F检验。换句话讲，如果分类变量可以解释大部分响应变量的变异，我们就说这种分类变量对响应变量的解释有意义。例如下面这组数据：</p>
 <blockquote>
 <p>1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3</p>
 </blockquote>
@@ -406,7 +426,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>对比 除了考虑不同组间均值比较，还考虑均值间线性组合的新均值的差异性，F检验有时是因为对比而不是两两比较产生的显著性</li>
 </ul>
 <div id="单步法等方差" class="section level3">
-<h3><span class="header-section-number">6.2.1</span> 单步法等方差</h3>
+<h3><span class="header-section-number">6.3.1</span> 单步法等方差</h3>
 <p><em>Tukey’s HSD(两两比较)</em></p>
 <ul>
 <li>基于t范围分布</li>
@@ -456,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="单步法异方差对比与两两比较" class="section level3">
-<h3><span class="header-section-number">6.2.2</span> 单步法异方差(对比与两两比较)</h3>
+<h3><span class="header-section-number">6.3.2</span> 单步法异方差(对比与两两比较)</h3>
 <p><em>GH procedure</em></p>
 <ul>
 <li>不保证整体错误率，有时会超过，保守但功效高</li>
@@ -475,7 +495,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="单步法空白对比" class="section level3">
-<h3><span class="header-section-number">6.2.3</span> 单步法空白对比</h3>
+<h3><span class="header-section-number">6.3.3</span> 单步法空白对比</h3>
 <p><em>Dunnett</em></p>
 <ul>
 <li>用于对比controls的变化</li>
@@ -489,7 +509,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="stepdown-procedures" class="section level3">
-<h3><span class="header-section-number">6.2.4</span> Stepdown procedures</h3>
+<h3><span class="header-section-number">6.3.4</span> Stepdown procedures</h3>
 <ul>
 <li>基于Tukey法</li>
 <li>先比较最大最小，q值取分组数</li>
@@ -516,7 +536,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="step-up-procedures" class="section level3">
-<h3><span class="header-section-number">6.2.5</span> step-up procedures</h3>
+<h3><span class="header-section-number">6.3.5</span> step-up procedures</h3>
 <ul>
 <li>Welsch</li>
 <li>Hochberg</li>
@@ -524,7 +544,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="多重比较简略选择指南" class="section level3">
-<h3><span class="header-section-number">6.2.6</span> 多重比较简略选择指南</h3>
+<h3><span class="header-section-number">6.3.6</span> 多重比较简略选择指南</h3>
 <p><em>总体控制错误率</em></p>
 <ul>
 <li>两两比较用Tukey法</li>
@@ -545,7 +565,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <div id="参考资料" class="section level3">
-<h3><span class="header-section-number">6.2.7</span> 参考资料</h3>
+<h3><span class="header-section-number">6.3.7</span> 参考资料</h3>
 <ul>
 <li>Rafter, J.A., Abell, M.L., Braselton, J.P., 2002. Multiple comparison methods for means. Siam Review 44, 259–278.</li>
 <li><a href="http://cos.name/cn/topic/142002" class="uri">http://cos.name/cn/topic/142002</a></li>
@@ -561,97 +581,97 @@ Stoline, M.R., Ury, H.K., 1979. Tables of the Studentized Maximum Modulus Distri
 </div>
 </div>
 <div id="多重检验" class="section level2">
-<h2><span class="header-section-number">6.3</span> 多重检验</h2>
+<h2><span class="header-section-number">6.4</span> 多重检验</h2>
 <p>各种组学分析技术的进展导致了我们在收集数据时更侧重数据信息的保存，然而我们收集的数据最终也会根据我们的想探索的问题来寻找答案，甚至有时候我们在实验设计分组时就打算考察某一个变量而为了获取更多的相关信息而采用了组学技术。这点是尤其要强调的，科研人员一定是面向科学问题解决科学问题，而不要为了应用新技术而应用新技术。当然，现实的情况是新技术特别是组学技术的发展为我们提供了大量的可同时测定的生物学指标（例如基因表达水平、蛋白表达水平、代谢产物表达水平）数据，大到我们事先也不知道会有什么模式会出现，这样就需要数据挖掘，特别是统计学知识来帮助我们发现新知。然而，组学技术产生的这类高通量数据是具有一些特质的，数据里确实会有我们关心分组的差异表达，但同时也有大量测量值对于我们设定的分组不敏感，然而当我们去对比组间差异时就会被这些数据干扰。</p>
 <p>举例而言，我对两组样品（暴露组跟对照组）中每一个样品测定了10000个指标，每组有10个样品，那么如果我想知道差异有多大就需要对比10000次，具体说就是10000次双样本t检验。那么如果我对t检验的置信水平设置在0.05，也就是5%假阳性，做完这10000次检验，我会期望看到500个假阳性，而这500个有显著差异的指标其实对分组不敏感也可以随机生成。假如真实测到了600个有显著差异的指标，那么如何区分其中哪些是对分组敏感？哪些又仅仅只是随机的呢？随机的会不会只有500个整呢？</p>
 <p>这就是多重检验问题，做经典科研实验时往往会忽略，深层次的原因是经典的科研实验往往是理论或经验主导需要进行检验的假说。例如，我测定血液中白血球的数目就可以知道你是不是处于炎症中，其背后是医学知识的支撑。然而，再组学或其他高通量实验中，研究实际是数据导向的，也就是不管有用没用反正我测了一堆指标，然后就去对比差异，然后就是上面的问题了，我们可能分不清楚哪些是真的相关，哪些又是随机出现的。</p>
 <p>当然这个问题出现也不是一天两天了，在<a href="http://yufree.cn/blogcn/2013/12/16/rgabriel-package.html">多重比较</a>问题上就已经被提出过，只不过在多重比较里对比数因为排列组合比较多而在多重检验里纯粹就是因为同时进行的假设检验数目多。那么其实从统计角度解决的方法也基本来源于此。</p>
 <p>对于单次比较，当我们看到显著差异的p值脑子里想的是空假设为真时发生的概率，当我们置信水平设定在0.95（I型错误率0.05）而p值低于对应的阈值，那么我们应该拒绝空假设。但对比次数多了从概率上就会出现已经被拒绝的假设实际是错误的而你不知道是哪一个。整体错误率控制的思路就是我不管单次比较了，我只对你这所有的对比次数的总错误率进行控制。还是上面的例子，对于10000次假设检验我只能接受1个错误，整体犯错概率为0.0001，那么对于单次比较，其I型错误率也得设定在这个水平上去进行假设检验，结果整体上错误率是控制住了，但对于单次比较就显得十分严格了。下面用一个仿真实验来说明：</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="data.html#cb11-1"></a><span class="co"># 随机数的10000次比较</span></span>
-<span id="cb11-2"><a href="data.html#cb11-2"></a><span class="kw">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb11-3"><a href="data.html#cb11-3"></a>pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
-<span id="cb11-4"><a href="data.html#cb11-4"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10000</span>){</span>
-<span id="cb11-5"><a href="data.html#cb11-5"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</span>
-<span id="cb11-6"><a href="data.html#cb11-6"></a>  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</span>
-<span id="cb11-7"><a href="data.html#cb11-7"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb11-8"><a href="data.html#cb11-8"></a>  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb11-9"><a href="data.html#cb11-9"></a>}</span>
-<span id="cb11-10"><a href="data.html#cb11-10"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb11-11"><a href="data.html#cb11-11"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data.html#cb12-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb12-2"><a href="data.html#cb12-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># 随机数的10000次比较</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">set.seed</span>(<span class="dv">42</span>)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10000</span>){</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">}</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="co"># 看下p值分布</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="kw">hist</span>(pvalue)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># 小于0.05的个数</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</a></code></pre></div>
 <pre><code>## [1] 477</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="data.html#cb14-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb14-2"><a href="data.html#cb14-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="co"># 小于0.0001的个数</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</a></code></pre></div>
 <pre><code>## [1] 0</code></pre>
 <p>这样我们会看到进行了整体的控制之后，确实是找不到有差异的了，但假如里面本来就有有差异的呢？</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data.html#cb16-1"></a><span class="kw">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb16-2"><a href="data.html#cb16-2"></a>pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
-<span id="cb16-3"><a href="data.html#cb16-3"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10000</span>){</span>
-<span id="cb16-4"><a href="data.html#cb16-4"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb16-5"><a href="data.html#cb16-5"></a>  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></span>
-<span id="cb16-6"><a href="data.html#cb16-6"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb16-7"><a href="data.html#cb16-7"></a>  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb16-8"><a href="data.html#cb16-8"></a>}</span>
-<span id="cb16-9"><a href="data.html#cb16-9"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb16-10"><a href="data.html#cb16-10"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="data.html#cb17-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb17-2"><a href="data.html#cb17-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">42</span>)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10000</span>){</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7">  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb6-8" data-line-number="8">}</a>
+<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="co"># 看下p值分布</span></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="kw">hist</span>(pvalue)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># 小于0.05的个数</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</a></code></pre></div>
 <pre><code>## [1] 6559</code></pre>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="data.html#cb19-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb19-2"><a href="data.html#cb19-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="co"># 小于0.0001的个数</span></a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</a></code></pre></div>
 <pre><code>## [1] 45</code></pre>
 <p>上面我们模拟了10000次有真实差异的假设检验，结果按照单次检验0.05的阈值能发现约7000有差异，而使用0.0001却只能发现不到100次有显著差异。那么问题很明显，或许控制整体错误率可以让我们远离假阳性，但假阴性也就是II型错误率就大幅提高了，最后的结果可能是什么差异也看不到。</p>
 <p>下面我们尝试一个更实际的模拟，混合有差异跟无差异的检验：</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data.html#cb21-1"></a><span class="kw">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb21-2"><a href="data.html#cb21-2"></a>pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
-<span id="cb21-3"><a href="data.html#cb21-3"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>){</span>
-<span id="cb21-4"><a href="data.html#cb21-4"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb21-5"><a href="data.html#cb21-5"></a>  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></span>
-<span id="cb21-6"><a href="data.html#cb21-6"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb21-7"><a href="data.html#cb21-7"></a>  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb21-8"><a href="data.html#cb21-8"></a>}</span>
-<span id="cb21-9"><a href="data.html#cb21-9"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>){</span>
-<span id="cb21-10"><a href="data.html#cb21-10"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb21-11"><a href="data.html#cb21-11"></a>  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb21-12"><a href="data.html#cb21-12"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb21-13"><a href="data.html#cb21-13"></a>  pvalue[i<span class="op">+</span><span class="dv">5000</span>] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb21-14"><a href="data.html#cb21-14"></a>}</span>
-<span id="cb21-15"><a href="data.html#cb21-15"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb21-16"><a href="data.html#cb21-16"></a><span class="kw">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="data.html#cb22-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb22-2"><a href="data.html#cb22-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">42</span>)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2">pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb11-3" data-line-number="3"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>){</a>
+<a class="sourceLine" id="cb11-4" data-line-number="4">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb11-6" data-line-number="6">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb11-7" data-line-number="7">  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb11-8" data-line-number="8">}</a>
+<a class="sourceLine" id="cb11-9" data-line-number="9"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>){</a>
+<a class="sourceLine" id="cb11-10" data-line-number="10">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb11-11" data-line-number="11">  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb11-12" data-line-number="12">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb11-13" data-line-number="13">  pvalue[i<span class="op">+</span><span class="dv">5000</span>] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb11-14" data-line-number="14">}</a>
+<a class="sourceLine" id="cb11-15" data-line-number="15"><span class="co"># 看下p值分布</span></a>
+<a class="sourceLine" id="cb11-16" data-line-number="16"><span class="kw">hist</span>(pvalue)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="co"># 小于0.05的个数</span></a>
+<a class="sourceLine" id="cb12-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</a></code></pre></div>
 <pre><code>## [1] 3499</code></pre>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data.html#cb24-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb24-2"><a href="data.html#cb24-2"></a><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="co"># 小于0.0001的个数</span></a>
+<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.0001</span>)</a></code></pre></div>
 <pre><code>## [1] 21</code></pre>
 <p>此时结果就更有意思了，明明应该有5000次是有差异的，但阈值设定在0.05只能看到约3500次，而0.0001只能看到24次。</p>
 <p>上面的模拟告诉我们，降低假阳性会提高假阴性的比率，而且似乎本来0.05的阈值对于真阳性也是偏小的。同时，面对假设检验概率低于0.05的那些差异，我们也没有很好的方法区别哪些是真的，哪些是随机的。</p>
 <p>其实很多人都知道整体错误率控制是比较严格的，但也不是完全没人用，例如寻找生物标记物做重大疾病诊断时就不太能接受假阳性而可以接受一定的假阴性，此时如果标准放宽就会找到一大堆假信号，到时候标记不准就会对诊断产生负面影响。</p>
 <p>下面介绍下常见的两种整体错误率控制方法。</p>
 <div id="bonferroni-方法" class="section level3">
-<h3><span class="header-section-number">6.3.1</span> Bonferroni 方法</h3>
+<h3><span class="header-section-number">6.4.1</span> Bonferroni 方法</h3>
 <p>思路很简单，就是控制显著性，例如单次检验假阳性比率<span class="math inline">\(\alpha\)</span>控制在0.05，那么n次检验假阳性比率控制为<span class="math inline">\(\frac{\alpha}{n}\)</span>。这样实际是对整体采用了个体控制的控制思路：</p>
 <p><span class="math display">\[
 P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha/n)^n
 \]</span></p>
 <p>我们来看下<span class="math inline">\(\alpha = 0.05\)</span>随比较数增加的效果：</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="data.html#cb26-1"></a>n &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span> <span class="op">%o%</span><span class="st"> </span><span class="dv">10</span><span class="op">^</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>))</span>
-<span id="cb26-2"><a href="data.html#cb26-2"></a>p0 &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span>(<span class="dv">1</span><span class="fl">-0.05</span>)<span class="op">^</span>n</span>
-<span id="cb26-3"><a href="data.html#cb26-3"></a>p &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span>(<span class="dv">1</span><span class="fl">-0.05</span><span class="op">/</span>n)<span class="op">^</span>n</span>
-<span id="cb26-4"><a href="data.html#cb26-4"></a><span class="co"># 不进行控制</span></span>
-<span id="cb26-5"><a href="data.html#cb26-5"></a><span class="kw">plot</span>(p0<span class="op">~</span>n,<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</span>
-<span id="cb26-6"><a href="data.html#cb26-6"></a><span class="co"># Bonferroni方法控制</span></span>
-<span id="cb26-7"><a href="data.html#cb26-7"></a><span class="kw">points</span>(p<span class="op">~</span>n,<span class="dt">pch=</span><span class="dv">19</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">n &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span> <span class="op">%o%</span><span class="st"> </span><span class="dv">10</span><span class="op">^</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">p0 &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span>(<span class="dv">1</span><span class="fl">-0.05</span>)<span class="op">^</span>n</a>
+<a class="sourceLine" id="cb16-3" data-line-number="3">p &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span>(<span class="dv">1</span><span class="fl">-0.05</span><span class="op">/</span>n)<span class="op">^</span>n</a>
+<a class="sourceLine" id="cb16-4" data-line-number="4"><span class="co"># 不进行控制</span></a>
+<a class="sourceLine" id="cb16-5" data-line-number="5"><span class="kw">plot</span>(p0<span class="op">~</span>n,<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb16-6" data-line-number="6"><span class="co"># Bonferroni方法控制</span></a>
+<a class="sourceLine" id="cb16-7" data-line-number="7"><span class="kw">points</span>(p<span class="op">~</span>n,<span class="dt">pch=</span><span class="dv">19</span>)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>其实，这样的控制得到的整体错误率是略低于0.05的，并且数目越大，整体错误率越低。这个方法十分保守，有可能什么差异你都看不到，因为都变成假阴性了。在实际应用中一般不调节p值的假阳性比率而直接调节p值，取原始p值跟整体检验数目的乘积与1的最小值作为调节p值，还可以用0.05或0.01进行判断，不过这时候控制的整体而不是单一检验了。</p>
 <p>当然这只是最原始的Bonferroni方法，后来Holm改进了这种一步法为逐步法，此时我们需要首先对原始p值进行排序，然后每个原始p值乘上其排序作为调节p值。例如三次多重检验的p值分别是0.01、0.03与0.06，其调节后的p值为0.03，0.06，0.06。如果我们控制整体假阳性比率低于0.05，那么调解后只有第一个检验可以拒绝空假设。值得注意的是Holm的改进是全面优于原始方法的，也就是说当你一定要去用Bonferroni方法控制整体错误率，优先选Holm的改进版。</p>
 </div>
 <div id="sidak-方法" class="section level3">
-<h3><span class="header-section-number">6.3.2</span> Sidak 方法</h3>
+<h3><span class="header-section-number">6.4.2</span> Sidak 方法</h3>
 <p>上面那种方法其实有点非参的意思，其实数学上我们是可以精确的把假阳性比率控制在某个数值的：</p>
 <p><span class="math display">\[
 P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha&#39;)^n = 0.05
@@ -659,32 +679,32 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha&#39;)^n = 0.05
 <p>求解可得到<span class="math inline">\(\alpha&#39; = 1-0.95^{\frac{1}{n}}\)</span>，此时我们就可以比较精确的控制整体错误率了，但是，这个方法有个前提就是各个检验必须是独立的，这在生物学实验里几乎不可能，所以这个方法的应用远没有Bonferroni方法广。</p>
 </div>
 <div id="错误发现率false-discovery-rate控制" class="section level3">
-<h3><span class="header-section-number">6.3.3</span> 错误发现率（False Discovery Rate）控制</h3>
+<h3><span class="header-section-number">6.4.3</span> 错误发现率（False Discovery Rate）控制</h3>
 <p>刚才的模拟中我们可以看到，控制整体错误率比较严格，假阴性比率高，那么有没有办法找到假阴性比率低的呢？要知道我们其实只关心有差异的那部分中那些是真的，哪些是假的，无差异的可以完全不用考虑。那么我们可以尝试控制错误发现率，也就是在有差异的那一部分指标中控制错误率低于某一水平。</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data.html#cb27-1"></a><span class="co"># 所有有差异的</span></span>
-<span id="cb27-2"><a href="data.html#cb27-2"></a>R &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</span>
-<span id="cb27-3"><a href="data.html#cb27-3"></a><span class="co"># 假阳性</span></span>
-<span id="cb27-4"><a href="data.html#cb27-4"></a>V &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue[<span class="dv">5001</span><span class="op">:</span><span class="dv">10000</span>]<span class="op">&lt;</span><span class="fl">0.05</span>)</span>
-<span id="cb27-5"><a href="data.html#cb27-5"></a><span class="co"># 错误发现率</span></span>
-<span id="cb27-6"><a href="data.html#cb27-6"></a>Q &lt;-<span class="st"> </span>V<span class="op">/</span>R</span>
-<span id="cb27-7"><a href="data.html#cb27-7"></a>R</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="co"># 所有有差异的</span></a>
+<a class="sourceLine" id="cb17-2" data-line-number="2">R &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.05</span>)</a>
+<a class="sourceLine" id="cb17-3" data-line-number="3"><span class="co"># 假阳性</span></a>
+<a class="sourceLine" id="cb17-4" data-line-number="4">V &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue[<span class="dv">5001</span><span class="op">:</span><span class="dv">10000</span>]<span class="op">&lt;</span><span class="fl">0.05</span>)</a>
+<a class="sourceLine" id="cb17-5" data-line-number="5"><span class="co"># 错误发现率</span></a>
+<a class="sourceLine" id="cb17-6" data-line-number="6">Q &lt;-<span class="st"> </span>V<span class="op">/</span>R</a>
+<a class="sourceLine" id="cb17-7" data-line-number="7">R</a></code></pre></div>
 <pre><code>## [1] 3499</code></pre>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data.html#cb29-1"></a>V</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">V</a></code></pre></div>
 <pre><code>## [1] 225</code></pre>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data.html#cb31-1"></a>Q</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">Q</a></code></pre></div>
 <pre><code>## [1] 0.06430409</code></pre>
 <p>上面的计算显示虽然我们漏掉了很多阳性结果，但错误发现率并不高。事实上如果我们控制错误率到0.01，错误发现率会更低：</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data.html#cb33-1"></a><span class="co"># 所有有差异的</span></span>
-<span id="cb33-2"><a href="data.html#cb33-2"></a>R &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.01</span>)</span>
-<span id="cb33-3"><a href="data.html#cb33-3"></a><span class="co"># 假阳性</span></span>
-<span id="cb33-4"><a href="data.html#cb33-4"></a>V &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue[<span class="dv">5001</span><span class="op">:</span><span class="dv">10000</span>]<span class="op">&lt;</span><span class="fl">0.01</span>)</span>
-<span id="cb33-5"><a href="data.html#cb33-5"></a><span class="co"># 错误发现率</span></span>
-<span id="cb33-6"><a href="data.html#cb33-6"></a>Q &lt;-<span class="st"> </span>V<span class="op">/</span>R</span>
-<span id="cb33-7"><a href="data.html#cb33-7"></a>R</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1"><span class="co"># 所有有差异的</span></a>
+<a class="sourceLine" id="cb23-2" data-line-number="2">R &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue<span class="op">&lt;</span><span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb23-3" data-line-number="3"><span class="co"># 假阳性</span></a>
+<a class="sourceLine" id="cb23-4" data-line-number="4">V &lt;-<span class="st"> </span><span class="kw">sum</span>(pvalue[<span class="dv">5001</span><span class="op">:</span><span class="dv">10000</span>]<span class="op">&lt;</span><span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb23-5" data-line-number="5"><span class="co"># 错误发现率</span></a>
+<a class="sourceLine" id="cb23-6" data-line-number="6">Q &lt;-<span class="st"> </span>V<span class="op">/</span>R</a>
+<a class="sourceLine" id="cb23-7" data-line-number="7">R</a></code></pre></div>
 <pre><code>## [1] 999</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data.html#cb35-1"></a>V</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">V</a></code></pre></div>
 <pre><code>## [1] 34</code></pre>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data.html#cb37-1"></a>Q</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1">Q</a></code></pre></div>
 <pre><code>## [1] 0.03403403</code></pre>
 <p>其实出现这个问题不难理解，空假设检验里p值是均匀分布的而有差异检验的p值是有偏分布且偏向于较小的数值，所以假阳性控制的越小，有偏分布占比例就越高，但同时会造成假阴性提高的问题。</p>
 <p>那么错误发现率会不会比整体错误率的控制更好呢？这里通过两种常见的控制方法进行说明。</p>
@@ -694,11 +714,11 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha&#39;)^n = 0.05
 p_i \leq \frac{i}{m} \alpha
 \]</span></p>
 <p>举例来说就是假设三次多重检验的p值分别是0.01、0.03与0.06，其调节后的p值为0.03，0.45，0.06。那么为什么说这种方法控制的是错误发现率呢？我们来看下<span class="math inline">\(\alpha\)</span>是如何得到的：p值乘总数m得到的是在该p值下理论发现数，而除以其排序实际是该p值下实际发现数，理论发现数基于在这里的分布是均匀分布，也就是空假设的分布，这两个的比值自然就是错误发现率。下面我用仿真实验来说明一下：</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data.html#cb39-1"></a>pbh &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
-<span id="cb39-2"><a href="data.html#cb39-2"></a>ph &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
-<span id="cb39-3"><a href="data.html#cb39-3"></a><span class="kw">plot</span>(pbh<span class="op">~</span>pvalue)</span>
-<span id="cb39-4"><a href="data.html#cb39-4"></a><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1">pbh &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;BH&#39;</span>)</a>
+<a class="sourceLine" id="cb29-2" data-line-number="2">ph &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;holm&#39;</span>)</a>
+<a class="sourceLine" id="cb29-3" data-line-number="3"><span class="kw">plot</span>(pbh<span class="op">~</span>pvalue)</a>
+<a class="sourceLine" id="cb29-4" data-line-number="4"><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>从上面图我们可以看出，如果控制整体错误率（红色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。当然至于这个方法的推演细节，可以去读原始论文。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。</p>
 <p><em>Storey方法（q值）</em></p>
 <p>如果说BH方法还算是调节了p值，那么Storey提出的方法则直接去估计了错误发现率本身。刚才介绍BH算法时我提到总数m与p值的乘积是基于这里的分布是均匀分布，但实际上按照错误发现率的定义，这里应该出现的是空假设总数。直接使用所有检验数会造成一个问题，那就是对错误发现率的高估，为了保证功效，这里应该去估计空假设的总体比例。这里我们去观察混合分布会发现在p值较大的时候基本可以认为这里分布的都是空假设的p值，那么我们可以用：</p>
@@ -706,56 +726,38 @@ p_i \leq \frac{i}{m} \alpha
 \hat\pi_0 = \frac{\#\{p_i&gt;\lambda\}}{(1-\lambda)m}
 \]</span></p>
 <p>估计这个比例<span class="math inline">\(\hat\pi_0\)</span>，其中参数<span class="math inline">\(\lambda\)</span>的跟<span class="math inline">\(\hat\pi_0\)</span>的关系可以用一个三阶方程拟合，然后计算出整体假阳性比例。有了这个比例，我们再去按照BH方法计算p值，然后两个相乘就会得到q值，而q值的理论含义就是在某一概率上低于这个概率所有数里假阳性的比重。打个比方，我测到某个指标的q值是0.05，这意味着q值低于这个数所有检验中我有0.05的可能性得到的是假阳性。。但我们会发现当空假设比重较高时BH结果跟q值很接近，而比重很低的话q值会变得更小，功效会提高，基本也符合我们对错误发现率的预期。</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="data.html#cb40-1"></a><span class="kw">library</span>(qvalue)</span>
-<span id="cb40-2"><a href="data.html#cb40-2"></a>q &lt;-<span class="st"> </span><span class="kw">qvalue</span>(pvalue)</span>
-<span id="cb40-3"><a href="data.html#cb40-3"></a><span class="co"># Q值</span></span>
-<span id="cb40-4"><a href="data.html#cb40-4"></a><span class="kw">plot</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1"><span class="kw">library</span>(qvalue)</a>
+<a class="sourceLine" id="cb30-2" data-line-number="2">q &lt;-<span class="st"> </span><span class="kw">qvalue</span>(pvalue)</a>
+<a class="sourceLine" id="cb30-3" data-line-number="3"><span class="co"># Q值</span></a>
+<a class="sourceLine" id="cb30-4" data-line-number="4"><span class="kw">plot</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>如上图所示，q值增大后会最终逼近到0.5，而我们的模拟中空假设的比例就设定就是50%。我们重新模拟一个空假设比例5%的实验：</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data.html#cb41-1"></a><span class="kw">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb41-2"><a href="data.html#cb41-2"></a>pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
-<span id="cb41-3"><a href="data.html#cb41-3"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">500</span>){</span>
-<span id="cb41-4"><a href="data.html#cb41-4"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb41-5"><a href="data.html#cb41-5"></a>  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></span>
-<span id="cb41-6"><a href="data.html#cb41-6"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb41-7"><a href="data.html#cb41-7"></a>  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb41-8"><a href="data.html#cb41-8"></a>}</span>
-<span id="cb41-9"><a href="data.html#cb41-9"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">9500</span>){</span>
-<span id="cb41-10"><a href="data.html#cb41-10"></a>  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb41-11"><a href="data.html#cb41-11"></a>  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb41-12"><a href="data.html#cb41-12"></a>  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</span>
-<span id="cb41-13"><a href="data.html#cb41-13"></a>  pvalue[i<span class="op">+</span><span class="dv">500</span>] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</span>
-<span id="cb41-14"><a href="data.html#cb41-14"></a>}</span>
-<span id="cb41-15"><a href="data.html#cb41-15"></a>pbh &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
-<span id="cb41-16"><a href="data.html#cb41-16"></a>ph &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
-<span id="cb41-17"><a href="data.html#cb41-17"></a>q &lt;-<span class="st"> </span><span class="kw">qvalue</span>(pvalue)</span>
-<span id="cb41-18"><a href="data.html#cb41-18"></a><span class="kw">plot</span>(pbh<span class="op">~</span>pvalue)</span>
-<span id="cb41-19"><a href="data.html#cb41-19"></a><span class="co"># Holm 方法</span></span>
-<span id="cb41-20"><a href="data.html#cb41-20"></a><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span>
-<span id="cb41-21"><a href="data.html#cb41-21"></a><span class="co"># Q值</span></span>
-<span id="cb41-22"><a href="data.html#cb41-22"></a><span class="kw">points</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">42</span>)</a>
+<a class="sourceLine" id="cb31-2" data-line-number="2">pvalue &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb31-3" data-line-number="3"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">500</span>){</a>
+<a class="sourceLine" id="cb31-4" data-line-number="4">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb31-5" data-line-number="5">  b &lt;-<span class="st"> </span>a<span class="op">+</span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb31-6" data-line-number="6">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb31-7" data-line-number="7">  pvalue[i] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb31-8" data-line-number="8">}</a>
+<a class="sourceLine" id="cb31-9" data-line-number="9"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">9500</span>){</a>
+<a class="sourceLine" id="cb31-10" data-line-number="10">  a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb31-11" data-line-number="11">  b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb31-12" data-line-number="12">  c &lt;-<span class="st"> </span><span class="kw">t.test</span>(a,b)</a>
+<a class="sourceLine" id="cb31-13" data-line-number="13">  pvalue[i<span class="op">+</span><span class="dv">500</span>] &lt;-<span class="st"> </span>c<span class="op">$</span>p.value</a>
+<a class="sourceLine" id="cb31-14" data-line-number="14">}</a>
+<a class="sourceLine" id="cb31-15" data-line-number="15">pbh &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;BH&#39;</span>)</a>
+<a class="sourceLine" id="cb31-16" data-line-number="16">ph &lt;-<span class="st"> </span><span class="kw">p.adjust</span>(pvalue,<span class="dt">method =</span> <span class="st">&#39;holm&#39;</span>)</a>
+<a class="sourceLine" id="cb31-17" data-line-number="17">q &lt;-<span class="st"> </span><span class="kw">qvalue</span>(pvalue)</a>
+<a class="sourceLine" id="cb31-18" data-line-number="18"><span class="kw">plot</span>(pbh<span class="op">~</span>pvalue)</a>
+<a class="sourceLine" id="cb31-19" data-line-number="19"><span class="co"># Holm 方法</span></a>
+<a class="sourceLine" id="cb31-20" data-line-number="20"><span class="kw">points</span>(ph<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</a>
+<a class="sourceLine" id="cb31-21" data-line-number="21"><span class="co"># Q值</span></a>
+<a class="sourceLine" id="cb31-22" data-line-number="22"><span class="kw">points</span>(q<span class="op">$</span>qvalues<span class="op">~</span>pvalue,<span class="dt">col=</span><span class="st">&#39;blue&#39;</span>)</a></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>此时我们可以看到两者结果较为接近，q值理论上更完备，功效也更强，但算法上对<span class="math inline">\(\hat\pi_0\)</span>的估计并不稳定，特别是比例靠近1的时候，所以BH方法可能还是更容易让人接受的保守错误发现率控制。详细的估计方法还得去啃Storey的<a href="http://www.pnas.org/content/100/16/9440.full">论文</a>。</p>
 <p>多重检验问题是高通量数据里逃不掉的问题，要想找出真正的差异数据就要面对假阳性跟假阴性问题，这是一个不可兼得的过程，看重假阳性就用整体错误率，看重功效就用错误发现率控制。并不是说哪种方法会好一些，更本质的问题在于你对实际问题的了解程度及统计方法的适用范围。例如你选基因芯片时实际也进行了一次选择，改变了整体检验的p值分布，而不同的p值分布对应的处理方法也不太一样，有兴趣可以读下<a href="http://varianceexplained.org/statistics/interpreting-pvalue-histogram/">这篇</a>。有时候你的实验设计本身就会影响数据的统计行为，而这个恰恰是最容易被忽视的。</p>
 </div>
-</div>
-<div id="线性模型" class="section level2">
-<h2><span class="header-section-number">6.4</span> 线性模型</h2>
-<ul>
-<li>从lasso到岭回归，惩罚项在回归分析中的应用</li>
-<li>截断回归与缺失值处理</li>
-<li>线性混合模型</li>
-<li>线性模型中非考察变量的判定与消除</li>
-<li>分层模型 <a href="https://www.nature.com/articles/nbt.1619" class="uri">https://www.nature.com/articles/nbt.1619</a></li>
-<li>线性判别分析与特征发现</li>
-<li>logistic回归与剂量效应曲线</li>
-<li>相关性分析与工具变量 <a href="https://www.nature.com/articles/nbt0309-255" class="uri">https://www.nature.com/articles/nbt0309-255</a></li>
-<li>偏最小二乘分析在结构效应关系研究中的应用</li>
-<li>非线性模型包括凸函数与凹函数</li>
-<li>最常见凸函数是指数函数，掌握72法制，也就是72除以速率大概就是翻倍用的时间</li>
-<li>最常见凹函数是收益递减函数，平均价值大于价值的平均，具有风险规避特性</li>
-<li>劳动力和资本凹函数，新的投资得到的收益会越来越低</li>
-</ul>
 </div>
 <div id="计算方法" class="section level2">
 <h2><span class="header-section-number">6.5</span> 计算方法</h2>
@@ -779,24 +781,25 @@ p_i \leq \frac{i}{m} \alpha
 <li>MCMC方法</li>
 </ul>
 </div>
-</div>
-<div id="常见算法" class="section level2">
-<h2><span class="header-section-number">6.6</span> 常见算法</h2>
+<div id="常见算法" class="section level3">
+<h3><span class="header-section-number">6.5.6</span> 常见算法</h3>
 <ul>
-<li><p>MCMC方法 <a href="https://www.nature.com/articles/nbt1004-1315" class="uri">https://www.nature.com/articles/nbt1004-1315</a></p></li>
-<li><p>聚类与主成分分析 <a href="https://www.nature.com/articles/nbt0308-303" class="uri">https://www.nature.com/articles/nbt0308-303</a> <a href="https://www.nature.com/articles/nbt1205-1499" class="uri">https://www.nature.com/articles/nbt1205-1499</a></p></li>
-<li><p>列联表分析与流行病学研究</p></li>
-<li><p>人工神经网络与黑箱计算 <a href="http://www.nature.com/doifinder/10.1038/nbt1386" class="uri">http://www.nature.com/doifinder/10.1038/nbt1386</a></p></li>
-<li><p>支持向量机的回归与分类 <a href="https://www.nature.com/articles/nbt1206-1565" class="uri">https://www.nature.com/articles/nbt1206-1565</a></p></li>
+<li>MCMC方法 <a href="https://www.nature.com/articles/nbt1004-1315" class="uri">https://www.nature.com/articles/nbt1004-1315</a></li>
+<li>聚类与主成分分析 <a href="https://www.nature.com/articles/nbt0308-303" class="uri">https://www.nature.com/articles/nbt0308-303</a> <a href="https://www.nature.com/articles/nbt1205-1499" class="uri">https://www.nature.com/articles/nbt1205-1499</a></li>
+<li>列联表分析与流行病学研究</li>
+<li>人工神经网络与黑箱计算 <a href="http://www.nature.com/doifinder/10.1038/nbt1386" class="uri">http://www.nature.com/doifinder/10.1038/nbt1386</a></li>
+<li>支持向量机的回归与分类 <a href="https://www.nature.com/articles/nbt1206-1565" class="uri">https://www.nature.com/articles/nbt1206-1565</a></li>
 <li><p>从决策树到随机森林 <a href="http://www.nature.com/doifinder/10.1038/nbt0908-1011" class="uri">http://www.nature.com/doifinder/10.1038/nbt0908-1011</a></p></li>
-<li><p>经验贝叶斯与近似贝叶斯计算（ABC）及贝叶斯网络 <a href="https://www.nature.com/articles/nbt0106-51" class="uri">https://www.nature.com/articles/nbt0106-51</a>
+<li>经验贝叶斯与近似贝叶斯计算（ABC）及贝叶斯网络 <a href="https://www.nature.com/articles/nbt0106-51" class="uri">https://www.nature.com/articles/nbt0106-51</a>
 <a href="https://www.nature.com/articles/nbt0806-959" class="uri">https://www.nature.com/articles/nbt0806-959</a>
-<a href="https://www.nature.com/articles/nbt0904-1177" class="uri">https://www.nature.com/articles/nbt0904-1177</a></p></li>
-<li><p>时间序列分析</p></li>
-<li><p>结构方程模型</p></li>
-<li><p>动态规划 <a href="https://www.nature.com/articles/nbt0704-909" class="uri">https://www.nature.com/articles/nbt0704-909</a></p></li>
+<a href="https://www.nature.com/articles/nbt0904-1177" class="uri">https://www.nature.com/articles/nbt0904-1177</a></li>
+<li>时间序列分析</li>
+<li>动态规划 <a href="https://www.nature.com/articles/nbt0704-909" class="uri">https://www.nature.com/articles/nbt0704-909</a></li>
+<li>SVD</li>
+<li><p>分层模型 <a href="https://www.nature.com/articles/nbt.1619" class="uri">https://www.nature.com/articles/nbt.1619</a></p></li>
 </ul>
 
+</div>
 </div>
 </div>
             </section>

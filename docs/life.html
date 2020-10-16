@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-10-12" />
+<meta name="date" content="2020-10-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,12 +213,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6.5" data-path="data.html"><a href="data.html#计算方法"><i class="fa fa-check"></i><b>6.5</b> 计算方法</a><ul>
 <li class="chapter" data-level="6.5.1" data-path="data.html"><a href="data.html#并行计算"><i class="fa fa-check"></i><b>6.5.1</b> 并行计算</a></li>
-<li class="chapter" data-level="6.5.2" data-path="data.html"><a href="data.html#集群计算"><i class="fa fa-check"></i><b>6.5.2</b> 集群计算</a></li>
-<li class="chapter" data-level="6.5.3" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.5.3</b> 容器技术</a></li>
-<li class="chapter" data-level="6.5.4" data-path="data.html"><a href="data.html#云计算"><i class="fa fa-check"></i><b>6.5.4</b> 云计算</a></li>
-<li class="chapter" data-level="6.5.5" data-path="data.html"><a href="data.html#仿真模拟"><i class="fa fa-check"></i><b>6.5.5</b> 仿真模拟</a></li>
-<li class="chapter" data-level="6.5.6" data-path="data.html"><a href="data.html#常见算法"><i class="fa fa-check"></i><b>6.5.6</b> 常见算法</a></li>
+<li class="chapter" data-level="6.5.2" data-path="data.html"><a href="data.html#容器技术"><i class="fa fa-check"></i><b>6.5.2</b> 容器技术</a></li>
+<li class="chapter" data-level="6.5.3" data-path="data.html"><a href="data.html#云"><i class="fa fa-check"></i><b>6.5.3</b> 云</a></li>
 </ul></li>
+<li class="chapter" data-level="6.6" data-path="data.html"><a href="data.html#常见算法模型"><i class="fa fa-check"></i><b>6.6</b> 常见算法模型</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="lib.html"><a href="lib.html"><i class="fa fa-check"></i><b>7</b> 文献</a><ul>
 <li class="chapter" data-level="7.1" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i><b>7.1</b> 文献管理</a><ul>
@@ -624,17 +622,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>有害化学品包括腐蚀性的（corrosive）、急性毒性的（acutely toxic）、可燃性的（flammable）、氧化物（oxidizer/reactive）、爆炸性的（explosive）、有害健康的（health hazard）、压缩气体（compressed gas）、刺激性的（warning/irritant）、有害环境的（environmental hazard）</li>
 <li>标记物图示</li>
 </ul>
-<div class="figure">
-<img src="https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png" alt="危险品图示" />
-<p class="caption">危险品图示</p>
-</div>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb68-1" data-line-number="1">cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png&#39;</span></a>
+<a class="sourceLine" id="cb68-2" data-line-number="2"><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig1.png&#39;</span>))</a>
+<a class="sourceLine" id="cb68-3" data-line-number="3">  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</a>
+<a class="sourceLine" id="cb68-4" data-line-number="4">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</a></code></pre></div>
+<p><img src="https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png" /><!-- --></p>
 <ul>
 <li>使用化学品要进行标记，购买的药品会有厂家标注，但自己转移到其他容器的药品要自己标注，至少包括名称、危险性、CAS#、过期日期。</li>
 </ul>
-<div class="figure">
-<img src="https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png" alt="化学品标记" />
-<p class="caption">化学品标记</p>
-</div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb69-1" data-line-number="1">cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png&#39;</span></a>
+<a class="sourceLine" id="cb69-2" data-line-number="2"><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig2.png&#39;</span>))</a>
+<a class="sourceLine" id="cb69-3" data-line-number="3">  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</a>
+<a class="sourceLine" id="cb69-4" data-line-number="4">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</a></code></pre></div>
+<p><img src="https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png" /><!-- --></p>
 <ul>
 <li>化学品要登记到实验室备查，注明名称、储存位置、过期日期、危险性等信息，危险性高的药品要对每次使用进行登记，记录使用量</li>
 <li>所有化学品要包括纸质版安全数据表（safety data sheets），集中放在一处方便随时查询，此表可从生产商或网上找到。</li>

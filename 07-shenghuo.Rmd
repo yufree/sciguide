@@ -291,11 +291,21 @@
 - 有害化学品包括腐蚀性的（corrosive）、急性毒性的（acutely toxic）、可燃性的（flammable）、氧化物（oxidizer/reactive）、爆炸性的（explosive）、有害健康的（health hazard）、压缩气体（compressed gas）、刺激性的（warning/irritant）、有害环境的（environmental hazard）
 - 标记物图示
 
-![危险品图示](https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png)
+```{r}
+cover_url = 'https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png'
+if (!file.exists(cover_file <- 'fig1.png'))
+  download.file(cover_url, cover_file, mode = 'wb')
+knitr::include_graphics(if (identical(knitr:::pandoc_to(), 'html')) cover_url else cover_file)
+```
 
 - 使用化学品要进行标记，购买的药品会有厂家标注，但自己转移到其他容器的药品要自己标注，至少包括名称、危险性、CAS#、过期日期。
 
-![化学品标记](https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png)
+```{r}
+cover_url = 'https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png'
+if (!file.exists(cover_file <- 'fig2.png'))
+  download.file(cover_url, cover_file, mode = 'wb')
+knitr::include_graphics(if (identical(knitr:::pandoc_to(), 'html')) cover_url else cover_file)
+```
 
 - 化学品要登记到实验室备查，注明名称、储存位置、过期日期、危险性等信息，危险性高的药品要对每次使用进行登记，记录使用量
 - 所有化学品要包括纸质版安全数据表（safety data sheets），集中放在一处方便随时查询，此表可从生产商或网上找到。

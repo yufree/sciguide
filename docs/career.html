@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-10-16" />
+<meta name="date" content="2020-10-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +65,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -156,7 +159,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.7.4" data-path="view.html"><a href="view.html#通识学科"><i class="fa fa-check"></i><b>3.7.4</b> 通识学科</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具篇</a><ul>
+<li class="chapter" data-level="4" data-path="thought.html"><a href="thought.html"><i class="fa fa-check"></i><b>4</b> 思维工具</a><ul>
 <li class="chapter" data-level="4.1" data-path="thought.html"><a href="thought.html#科学思维"><i class="fa fa-check"></i><b>4.1</b> 科学思维</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="thought.html"><a href="thought.html#古希腊"><i class="fa fa-check"></i><b>4.1.1</b> 古希腊</a></li>
 <li class="chapter" data-level="4.1.2" data-path="thought.html"><a href="thought.html#中世纪"><i class="fa fa-check"></i><b>4.1.2</b> 中世纪</a></li>
@@ -245,44 +248,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1.7" data-path="life.html"><a href="life.html#性骚扰"><i class="fa fa-check"></i><b>8.1.7</b> 性骚扰</a></li>
 <li class="chapter" data-level="8.1.8" data-path="life.html"><a href="life.html#伦理"><i class="fa fa-check"></i><b>8.1.8</b> 伦理</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.2</b> 项目管理</a><ul>
-<li class="chapter" data-level="8.2.1" data-path="life.html"><a href="life.html#项目报告模版"><i class="fa fa-check"></i><b>8.2.1</b> 项目报告模版</a></li>
+<li class="chapter" data-level="8.2" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.2</b> 邮件</a></li>
+<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.3</b> 学术出版</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.3.1</b> 期刊论文</a></li>
+<li class="chapter" data-level="8.3.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.3.2</b> 会议摘要</a></li>
+<li class="chapter" data-level="8.3.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.3.3</b> 专著</a></li>
+<li class="chapter" data-level="8.3.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.3.4</b> 专利</a></li>
+<li class="chapter" data-level="8.3.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.3.5</b> 软件</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="life.html"><a href="life.html#邮件"><i class="fa fa-check"></i><b>8.3</b> 邮件</a></li>
-<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术出版"><i class="fa fa-check"></i><b>8.4</b> 学术出版</a><ul>
-<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#期刊论文"><i class="fa fa-check"></i><b>8.4.1</b> 期刊论文</a></li>
-<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#会议摘要"><i class="fa fa-check"></i><b>8.4.2</b> 会议摘要</a></li>
-<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#专著"><i class="fa fa-check"></i><b>8.4.3</b> 专著</a></li>
-<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#专利"><i class="fa fa-check"></i><b>8.4.4</b> 专利</a></li>
-<li class="chapter" data-level="8.4.5" data-path="life.html"><a href="life.html#软件"><i class="fa fa-check"></i><b>8.4.5</b> 软件</a></li>
+<li class="chapter" data-level="8.4" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.4</b> 学术会议</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.4.1</b> 口头报告</a></li>
+<li class="chapter" data-level="8.4.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.4.2</b> 海报报告</a></li>
+<li class="chapter" data-level="8.4.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.4.3</b> 电梯报告</a></li>
+<li class="chapter" data-level="8.4.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.4.4</b> 听报告</a></li>
 </ul></li>
-<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#学术会议"><i class="fa fa-check"></i><b>8.5</b> 学术会议</a><ul>
-<li class="chapter" data-level="8.5.1" data-path="life.html"><a href="life.html#口头报告"><i class="fa fa-check"></i><b>8.5.1</b> 口头报告</a></li>
-<li class="chapter" data-level="8.5.2" data-path="life.html"><a href="life.html#海报报告"><i class="fa fa-check"></i><b>8.5.2</b> 海报报告</a></li>
-<li class="chapter" data-level="8.5.3" data-path="life.html"><a href="life.html#电梯报告"><i class="fa fa-check"></i><b>8.5.3</b> 电梯报告</a></li>
-<li class="chapter" data-level="8.5.4" data-path="life.html"><a href="life.html#听报告"><i class="fa fa-check"></i><b>8.5.4</b> 听报告</a></li>
+<li class="chapter" data-level="8.5" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.5</b> 审稿</a></li>
+<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.6</b> 学术合作</a></li>
+<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.7</b> 利益冲突</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.7.1</b> 数据共享</a></li>
+<li class="chapter" data-level="8.7.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.7.2</b> 社交网络</a></li>
 </ul></li>
-<li class="chapter" data-level="8.6" data-path="life.html"><a href="life.html#审稿"><i class="fa fa-check"></i><b>8.6</b> 审稿</a></li>
-<li class="chapter" data-level="8.7" data-path="life.html"><a href="life.html#学术合作"><i class="fa fa-check"></i><b>8.7</b> 学术合作</a></li>
-<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#利益冲突"><i class="fa fa-check"></i><b>8.8</b> 利益冲突</a><ul>
-<li class="chapter" data-level="8.8.1" data-path="life.html"><a href="life.html#数据共享"><i class="fa fa-check"></i><b>8.8.1</b> 数据共享</a></li>
-<li class="chapter" data-level="8.8.2" data-path="life.html"><a href="life.html#社交网络"><i class="fa fa-check"></i><b>8.8.2</b> 社交网络</a></li>
+<li class="chapter" data-level="8.8" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.8</b> 学术评价</a></li>
+<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.9</b> 课题组管理</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.9.1</b> 课题组规章</a></li>
+<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#实验室规章"><i class="fa fa-check"></i><b>8.9.2</b> 实验室规章</a></li>
+<li class="chapter" data-level="8.9.3" data-path="life.html"><a href="life.html#项目管理"><i class="fa fa-check"></i><b>8.9.3</b> 项目管理</a></li>
+<li class="chapter" data-level="8.9.4" data-path="life.html"><a href="life.html#经费管理"><i class="fa fa-check"></i><b>8.9.4</b> 经费管理</a></li>
+<li class="chapter" data-level="8.9.5" data-path="life.html"><a href="life.html#心理辅导"><i class="fa fa-check"></i><b>8.9.5</b> 心理辅导</a></li>
 </ul></li>
-<li class="chapter" data-level="8.9" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.9</b> 讲课</a><ul>
-<li class="chapter" data-level="8.9.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.9.1</b> 学生如何学习？</a></li>
-<li class="chapter" data-level="8.9.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.9.2</b> 如何激励学生？</a></li>
-<li class="chapter" data-level="8.9.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.9.3</b> 评价学习</a></li>
-<li class="chapter" data-level="8.9.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.9.4</b> 课程设计</a></li>
-<li class="chapter" data-level="8.9.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.9.5</b> 互动学习</a></li>
-<li class="chapter" data-level="8.9.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.9.6</b> 教学理念</a></li>
+<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#讲课"><i class="fa fa-check"></i><b>8.10</b> 讲课</a><ul>
+<li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#学生如何学习"><i class="fa fa-check"></i><b>8.10.1</b> 学生如何学习？</a></li>
+<li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#如何激励学生"><i class="fa fa-check"></i><b>8.10.2</b> 如何激励学生？</a></li>
+<li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#评价学习"><i class="fa fa-check"></i><b>8.10.3</b> 评价学习</a></li>
+<li class="chapter" data-level="8.10.4" data-path="life.html"><a href="life.html#课程设计"><i class="fa fa-check"></i><b>8.10.4</b> 课程设计</a></li>
+<li class="chapter" data-level="8.10.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.10.5</b> 互动学习</a></li>
+<li class="chapter" data-level="8.10.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.10.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.10" data-path="life.html"><a href="life.html#课题组管理"><i class="fa fa-check"></i><b>8.10</b> 课题组管理</a><ul>
-<li class="chapter" data-level="8.10.1" data-path="life.html"><a href="life.html#课题组规章"><i class="fa fa-check"></i><b>8.10.1</b> 课题组规章</a></li>
-<li class="chapter" data-level="8.10.2" data-path="life.html"><a href="life.html#实验室规章"><i class="fa fa-check"></i><b>8.10.2</b> 实验室规章</a></li>
-<li class="chapter" data-level="8.10.3" data-path="life.html"><a href="life.html#经费管理"><i class="fa fa-check"></i><b>8.10.3</b> 经费管理</a></li>
-</ul></li>
-<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#学术评价"><i class="fa fa-check"></i><b>8.11</b> 学术评价</a></li>
-<li class="chapter" data-level="8.12" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.12</b> 案例</a></li>
+<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
 <li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>

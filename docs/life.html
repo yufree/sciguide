@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-10-17" />
+<meta name="date" content="2020-10-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,13 +50,12 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -65,16 +64,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -83,9 +80,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -284,7 +281,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.10.5" data-path="life.html"><a href="life.html#互动学习"><i class="fa fa-check"></i><b>8.10.5</b> 互动学习</a></li>
 <li class="chapter" data-level="8.10.6" data-path="life.html"><a href="life.html#教学理念"><i class="fa fa-check"></i><b>8.10.6</b> 教学理念</a></li>
 </ul></li>
-<li class="chapter" data-level="8.11" data-path="life.html"><a href="life.html#案例"><i class="fa fa-check"></i><b>8.11</b> 案例</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="career.html"><a href="career.html"><i class="fa fa-check"></i><b>9</b> 就业</a><ul>
 <li class="chapter" data-level="9.1" data-path="career.html"><a href="career.html#商业与学术"><i class="fa fa-check"></i><b>9.1</b> 商业与学术</a></li>
@@ -444,7 +440,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>使用强有力的动词。把中性动词+形容词改为动词，这样不罗嗦，少用to be，用了to be就可参照上面改成一个动词，简化句式。不要把动词改成动名词，可结合主动语态理解。主语跟动词要靠近，不要让读者找动词，不易于表意。</p>
 <p>标点符号也不仅仅用逗号与句号。分号用来表示一个句子的从句，有主谓语，有强调的效果，也可用来连接两个短句。作为内标点分隔清单，在冒号之后使用（冒号是colon，分号是semicolon）。括号表解释，可去掉不妨碍理解。冒号表示清单（至少三个）、结论、详述、引用与解释。破折号表示强调、定义与描述。</p>
 <p>论文中分段很重要，分段不清表意不明。论文写作中，最好一个段落解释一个问题，每个段落不超过5句。一般第一句是主题句（读者有时候只看这一句），然后展开讨论，总结不总结看论述长度，但最好强调下自己最得意的发现。一个段落一定要有内部逻辑结构，或平行或递近，读起来会明了。也许这看起来像是八股文，但论文不是文学作品，让读者快速明白你的意思是最重要的。过渡词很有必要时再用，转折用but就够了。说到底，标点分句子，段落分文章。在这个分割过程中一定有理有据，读起来不突兀。</p>
-<p>论文写作时要进行版本控制，不要多人同时离线修改，可以在线同步修稿。论文相关的代码、数据、软件要公开，被重复有利于提高学术影响力。博客文章、软件包在传播上与论文一样重要，甚至更重要。阴性结果也是结果，对其他科研人员也有参考价值，也要考虑发表，哪怕是博客发表。论文也可采用<a href="https://deevybee.blogspot.com/2018/06/preprint-publication-as-karaoke.html">预印本</a>（会有简单的技术审核）与开放获取来提高影响力，前者要选对服务器，后者要资金充沛。值得注意的是预印本是在同行评议前的版本，同行评议后发表前未排版的版本叫做作者接受手稿，这个只能在正式发表后依照期刊政策在个人或研究机构网站公开。但不论如何，这些版本的稿件都要给出正式发表稿件的链接。选期刊可以通过自己的引用文献来源期刊来选，投稿到你设想中读者会读到的地方，可通过社交网络传播你的发现，延长论文的半衰期。发表难度一般排序是全学科综合期刊（CNS）&gt; 大学科综合期刊（JACS） &gt; 子学科综合期刊（AC） &gt; 子学科专业期刊（JASMS），伴随读者越来越广泛，研究内容的难度与重要性不断上升，很多方向因为公众关注度不高，所以子学科综合期刊可能就是最难发的了，想出圈得依赖对全学科研究前沿的把握。在拿到审稿意见后，要逐条回复且指明文中修改的位置，行文要礼貌，尊重审稿人的努力。</p>
+<p>论文写作时要进行版本控制，不要多人同时离线修改，可以在线同步修稿。论文相关的代码、数据、软件要公开，被重复有利于提高学术影响力。博客文章、软件包在传播上与论文一样重要，甚至更重要。阴性结果也是结果，对其他科研人员也有参考价值，也要考虑发表，哪怕是博客发表。论文也可采用<a href="https://deevybee.blogspot.com/2018/06/preprint-publication-as-karaoke.html">预印本</a>（会有简单的技术审核）与开放获取来提高影响力，前者要选对服务器，后者要资金充沛。值得注意的是预印本是在同行评议前的版本，同行评议后发表前未排版的版本叫做作者接受手稿，这个只能在正式发表后依照期刊政策在个人或研究机构网站公开。但不论如何，这些版本的稿件都要给出正式发表稿件的链接。选期刊可以通过自己的引用文献来源期刊来选，投稿到你设想中读者会读到的地方，可通过社交网络传播你的发现，延长论文的半衰期。发表难度一般排序是全学科综合期刊（CNS）&gt; 大学科综合期刊（JACS） &gt; 子学科综合期刊（AC） &gt; 子学科专业期刊（JASMS），伴随读者越来越广泛，研究内容的难度与重要性不断上升，很多方向因为公众关注度不高，所以子学科综合期刊可能就是最难发的了，想出圈得依赖对全学科研究前沿的把握。如果实在不清楚期刊投哪里，也可以通过文本分析在线<a href="https://jane.biosemantics.org/index.php">查询</a>适合的期刊。在拿到审稿意见后，要逐条回复且指明文中修改的位置，行文要礼貌，尊重审稿人的努力。</p>
 <p>参考资料</p>
 <ul>
 <li><a href="https://class.coursera.org/sciwrite-2012-001/class">c站</a></li>
@@ -564,18 +560,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>有害化学品包括腐蚀性的（corrosive）、急性毒性的（acutely toxic）、可燃性的（flammable）、氧化物（oxidizer/reactive）、爆炸性的（explosive）、有害健康的（health hazard）、压缩气体（compressed gas）、刺激性的（warning/irritant）、有害环境的（environmental hazard）</li>
 <li>标记物图示</li>
 </ul>
-<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="life.html#cb88-1"></a>cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png&#39;</span></span>
-<span id="cb88-2"><a href="life.html#cb88-2"></a><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig1.png&#39;</span>))</span>
-<span id="cb88-3"><a href="life.html#cb88-3"></a>  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</span>
-<span id="cb88-4"><a href="life.html#cb88-4"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb89-1" data-line-number="1">cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png&#39;</span></a>
+<a class="sourceLine" id="cb89-2" data-line-number="2"><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig1.png&#39;</span>))</a>
+<a class="sourceLine" id="cb89-3" data-line-number="3">  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</a>
+<a class="sourceLine" id="cb89-4" data-line-number="4">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</a></code></pre></div>
 <p><img src="https://i.loli.net/2020/10/03/lfHvOdRuwoGSBU8.png" /><!-- --></p>
 <ul>
 <li>使用化学品要进行标记，购买的药品会有厂家标注，但自己转移到其他容器的药品要自己标注，至少包括名称、危险性、CAS#、过期日期。</li>
 </ul>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="life.html#cb89-1"></a>cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png&#39;</span></span>
-<span id="cb89-2"><a href="life.html#cb89-2"></a><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig2.png&#39;</span>))</span>
-<span id="cb89-3"><a href="life.html#cb89-3"></a>  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</span>
-<span id="cb89-4"><a href="life.html#cb89-4"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</span></code></pre></div>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb90-1" data-line-number="1">cover_url =<span class="st"> &#39;https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png&#39;</span></a>
+<a class="sourceLine" id="cb90-2" data-line-number="2"><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(cover_file &lt;-<span class="st"> &#39;fig2.png&#39;</span>))</a>
+<a class="sourceLine" id="cb90-3" data-line-number="3">  <span class="kw">download.file</span>(cover_url, cover_file, <span class="dt">mode =</span> <span class="st">&#39;wb&#39;</span>)</a>
+<a class="sourceLine" id="cb90-4" data-line-number="4">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="cf">if</span> (<span class="kw">identical</span>(knitr<span class="op">:::</span><span class="kw">pandoc_to</span>(), <span class="st">&#39;html&#39;</span>)) cover_url <span class="cf">else</span> cover_file)</a></code></pre></div>
 <p><img src="https://i.loli.net/2020/10/03/2e1CVSz9OIDpoc5.png" /><!-- --></p>
 <ul>
 <li>化学品要登记到实验室备查，注明名称、储存位置、过期日期、危险性等信息，危险性高的药品要对每次使用进行登记，记录使用量</li>
@@ -671,20 +667,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="教学理念" class="section level3">
 <h3><span class="header-section-number">8.10.6</span> 教学理念</h3>
 <p>教学理念是教学档案的一部分，常用来作为简历教学经历的补充。一般一页，说明三个声明，更多是理念不是行为。整理教学理念常用来整理自己关于教学的理解，作为教学的行动指南，也可以用到工作申请上去。首先去思考理念的来源与如何起源，然后可以采用隐喻，例如园丁、教练、瑞士军刀，说明目标-方法-评价-改进。</p>
-</div>
-</div>
-<div id="案例" class="section level2">
-<h2><span class="header-section-number">8.11</span> 案例</h2>
-<ul>
-<li><p><a href="http://www.statschat.org.nz/2017/02/04/tracing-a-science-story/">科学新闻探索</a></p></li>
-<li><p><a href="http://andrewgelman.com/2017/09/19/2010s-never-happened/">华盛顿邮报根据一项研究成果写了篇科学报道，然后捅了统计学家的马蜂窝，Gelman称之为“beauty” ，因为这项研究基本把实验设计中常见的错误犯了个遍，而作为普利策奖得主的记者完全没看出来</a></p></li>
-<li><p><a href="http://wordpress.mrreid.org/2013/08/20/the-equation-for-the-perfect-equation/">学科是存在鄙视链的，例如这位物理学家看到皇家化学会发表一篇烤面包公式的论文后不但马上发明了一个 bullshit 公式，还声称如果物理学会敢发表这种东西，自己马上放弃会员</a></p></li>
-<li><p><a href="http://andrewgelman.com/2018/04/01/april-fools-post-dead-serious/">巫毒娃娃的PNAS</a></p></li>
-<li><p><a href="https://liorpachter.wordpress.com/2018/09/17/mathematics-matters/">数学家关于进化的争论</a></p></li>
-<li><p><a href="http://www.qstheory.cn/science/2018-06/25/c_1123030022.htm">公民科学家</a></p></li>
-<li><p><a href="https://deevybee.blogspot.com/2018/07/one-big-study-or-two-small-studies.html">发表一篇好还是多篇好的讨论</a></p></li>
-</ul>
 
+</div>
 </div>
 </div>
             </section>

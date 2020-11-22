@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 5 实验 | 现代科研指北</title>
-  <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 5 实验 | 现代科研指北" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
+  <meta property="og:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="坑 5 实验 | 现代科研指北" />
   
-  <meta name="twitter:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
+  <meta name="twitter:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
   
 
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-10-21" />
+<meta name="date" content="2020-11-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,15 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +67,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -310,7 +315,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html"><i class="fa fa-check"></i>附录一：现代科研兵刃谱</a><ul>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文本编辑"><i class="fa fa-check"></i>文本编辑</a></li>
-<li class="chapter" data-level="" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i>文献管理</a></li>
+<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文献管理-1"><i class="fa fa-check"></i>文献管理</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据处理与绘图"><i class="fa fa-check"></i>数据处理与绘图</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据同步"><i class="fa fa-check"></i>数据同步</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#实验室管理"><i class="fa fa-check"></i>实验室管理</a></li>
@@ -380,30 +385,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">5.4</span> 控制实验</h2>
 <p>与观察实验相对应的是控制实验，在控制实验的语境下，除了需要考察的过程或因素外所有其他因素都做随机化处理。最常见的控制变量法就是一组实验只考察一个因素的影响。当然，如果打算同时考察多因素多水平的影响，可以理解为一个寻优问题，翻译成数学语言就是 <span class="math inline">\(y = f(x)\)</span> 中，y代表了你期望最优的东西，x代表了会对y产生影响的自变量，如果你的问题可以抽象成 <span class="math inline">\(y = f(x)\)</span>，那就可以通过构建模型来解决。实验设计主要关心的是方差分析这个视角，简单说就是y的变异可以拆分成不同x之间的独立变异或交互作用的线性组合。通过方差分析可以找到对y影响最大的x或所有x的影响方式，了解了影响方式，寻优什么的就比较简单了。不过此时的难点在于如何定义一个综合指标来描述多因素水平下整体的表现。</p>
 <p>一般而言，想找出多因素的最优组合，第一步是要确定哪些因素重要而哪些因素不重要，这是PB设计的应用场景。在不考虑交互作用的前提下，通过PB设计的表头进行两水平试验，然后进行方差分析并可视化就可以筛选出重要因素了。PB设计的试验次数一定是4的倍数，而且最大适合因子数会比试验次数少1。打个比方，我打算找出9个因素中哪个影响目标最大，那么我的试验次数至少选12，下面是个演示，这里我们使用 <code>FrF2</code>包：</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">suppressMessages</span>(<span class="kw">library</span>(FrF2))</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exp.html#cb2-1"></a><span class="kw">suppressMessages</span>(<span class="kw">library</span>(FrF2))</span>
+<span id="cb2-2"><a href="exp.html#cb2-2"></a><span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>##     A  B  C  D  E  F  G  H  J
-## 1  -1  1  1  1 -1 -1 -1  1 -1
-## 2  -1  1 -1  1  1 -1  1  1  1
-## 3  -1 -1 -1  1 -1  1  1 -1  1
-## 4   1  1 -1 -1 -1  1 -1  1  1
-## 5  -1  1  1 -1  1  1  1 -1 -1
-## 6  -1 -1  1 -1  1  1 -1  1  1
-## 7   1 -1 -1 -1  1 -1  1  1 -1
-## 8   1 -1  1  1  1 -1 -1 -1  1
-## 9   1  1 -1  1  1  1 -1 -1 -1
-## 10 -1 -1 -1 -1 -1 -1 -1 -1 -1
-## 11  1  1  1 -1 -1 -1  1 -1  1
-## 12  1 -1  1  1 -1  1  1  1 -1
+## 1   1  1 -1 -1 -1  1 -1  1  1
+## 2  -1  1  1  1 -1 -1 -1  1 -1
+## 3  -1 -1 -1 -1 -1 -1 -1 -1 -1
+## 4  -1 -1 -1  1 -1  1  1 -1  1
+## 5   1  1 -1  1  1  1 -1 -1 -1
+## 6   1 -1  1  1  1 -1 -1 -1  1
+## 7  -1  1  1 -1  1  1  1 -1 -1
+## 8   1  1  1 -1 -1 -1  1 -1  1
+## 9   1 -1  1  1 -1  1  1  1 -1
+## 10 -1  1 -1  1  1 -1  1  1  1
+## 11  1 -1 -1 -1  1 -1  1  1 -1
+## 12 -1 -1  1 -1  1  1 -1  1  1
 ## class=design, type= pb</code></pre>
 <p>这里面1与-1分别代表两个水平，当然试验设计牵扯到分辨率问题，可以理解为对该试验设计的评价，分辨率高，能区分的影响就更细致，可以用<code>FrF2</code>包中的<code>GR</code>函数来计算。需要注意的是，<code>FrF2</code>包也可以用 <code>FrF2</code> 函数来进行两水平试验设计，这里是分辨率高时是可以考察交互作用的。</p>
 <p>那么当你收集了数据，该如何分析呢？<code>FrF2</code>包实际继承了 <code>DoE.base</code> 包的S3对象类型，你只需要用 <code>add.response</code> 增加你的试验结果到设计出的S3对象上，然后就可以用方差分析或线性回归进行分析了。结果同样可以用<code>MEPlot</code>函数来进行可视化。当然，也可以用<code>halfnormal</code>函数来评价因子影响。</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">plan.annotated &lt;-<span class="st"> </span><span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">response &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">35</span>, <span class="dv">36</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">36</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">41</span>, <span class="dv">32</span>, <span class="dv">42</span>, <span class="dv">37</span>)</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">plan.resp &lt;-<span class="st"> </span><span class="kw">add.response</span>(plan.annotated, response)</a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw">MEPlot</span>(plan.resp, <span class="dt">abbrev =</span> <span class="dv">5</span>, <span class="dt">cex.xax =</span> <span class="fl">1.6</span>, <span class="dt">cex.main =</span> <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exp.html#cb4-1"></a>plan.annotated &lt;-<span class="st"> </span><span class="kw">pb</span>(<span class="dv">12</span>,<span class="dt">nfactors =</span> <span class="dv">9</span>)</span>
+<span id="cb4-2"><a href="exp.html#cb4-2"></a>response &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">35</span>, <span class="dv">36</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">36</span>, <span class="dv">39</span>, <span class="dv">37</span>, <span class="dv">41</span>, <span class="dv">32</span>, <span class="dv">42</span>, <span class="dv">37</span>)</span>
+<span id="cb4-3"><a href="exp.html#cb4-3"></a>plan.resp &lt;-<span class="st"> </span><span class="kw">add.response</span>(plan.annotated, response)</span>
+<span id="cb4-4"><a href="exp.html#cb4-4"></a><span class="kw">MEPlot</span>(plan.resp, <span class="dt">abbrev =</span> <span class="dv">5</span>, <span class="dt">cex.xax =</span> <span class="fl">1.6</span>, <span class="dt">cex.main =</span> <span class="dv">2</span>)</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/pba-1.png" width="672" /></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">summary</span>(<span class="kw">lm</span>(plan.resp))</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="exp.html#cb5-1"></a><span class="kw">summary</span>(<span class="kw">lm</span>(plan.resp))</span></code></pre></div>
 <pre><code>## Number of observations used: 12 
 ## Formula:
 ## response ~ A + B + C + D + E + F + G + H + J
@@ -412,77 +417,85 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## lm.default(formula = fo, data = model.frame(fo, data = formula))
 ## 
 ## Residuals:
-##       1       2       3       4       5       6       7       8       9      10      11      12 
-##  1.3333 -0.1667  1.3333  0.1667  0.1667 -0.1667  0.1667 -1.3333  1.3333 -1.3333 -0.1667 -1.3333 
+##       1       2       3       4       5       6       7       8       9      10 
+## -0.3333 -0.3333  0.3333  0.3333  0.1667 -0.3333  0.1667 -0.1667  0.1667  0.3333 
+##      11      12 
+## -0.1667 -0.1667 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  37.4167     0.6719  55.692 0.000322 ***
-## A1            1.5833     0.6719   2.357 0.142542    
-## B1           -0.5833     0.6719  -0.868 0.476795    
-## C1           -0.7500     0.6719  -1.116 0.380414    
-## D1           -0.2500     0.6719  -0.372 0.745543    
-## E1           -0.5833     0.6719  -0.868 0.476795    
-## F1           -1.2500     0.6719  -1.861 0.203883    
-## G1            0.4167     0.6719   0.620 0.598390    
-## H1            0.2500     0.6719   0.372 0.745543    
-## J1           -0.2500     0.6719  -0.372 0.745543    
+## (Intercept) 37.41667    0.18634 200.799 2.48e-05 ***
+## A1           0.91667    0.18634   4.919   0.0389 *  
+## B1           0.91667    0.18634   4.919   0.0389 *  
+## C1           0.58333    0.18634   3.130   0.0887 .  
+## D1           1.25000    0.18634   6.708   0.0215 *  
+## E1           1.41667    0.18634   7.603   0.0169 *  
+## F1           0.75000    0.18634   4.025   0.0565 .  
+## G1          -0.08333    0.18634  -0.447   0.6985    
+## H1          -0.41667    0.18634  -2.236   0.1548    
+## J1           0.41667    0.18634   2.236   0.1548    
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 2.327 on 2 degrees of freedom
-## Multiple R-squared:  0.8627,	Adjusted R-squared:  0.245 
-## F-statistic: 1.397 on 9 and 2 DF,  p-value: 0.4855</code></pre>
+## Residual standard error: 0.6455 on 2 degrees of freedom
+## Multiple R-squared:  0.9894, Adjusted R-squared:  0.9419 
+## F-statistic: 20.82 on 9 and 2 DF,  p-value: 0.04665</code></pre>
 <p>在这里PB设计实际上是一种预选法，如果结果显示某些变量影响显著，那么事实上就可以针对这些变量进行进一步的精细筛选，其余的变量可以直接固定为一个水平进行进一步设计。PB法在工业届用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。</p>
 <p>当选出重要因素时，下一步常见是正交试验或响应面分析，用来优选参数。正交表这玩意我在书中没找到，文献里用得多的也是亚洲人，老外统一用析因试验来进行考察。其实正交表的设计原理就是用尽量少的步骤遍历掉因子空间，这样进行一定次数试验就可以发现最优组合。R中的实现基本都在<code>DoE.base</code> 包里，这个包内置了一堆可以直接调用的正交表，可以根据需求进行查询。例如我有6个因素，水平数分别是2，3，3，2，2，6，然后我只打算做不超过54次试验，这时可以直接调用<code>show.oas</code>函数进行查询，给出的正交表随意选一个就可以继续。</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">show.oas</span>(<span class="dt">nruns =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">showmetrics =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exp.html#cb7-1"></a><span class="kw">show.oas</span>(<span class="dt">nruns =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">showmetrics =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
 <pre><code>## no suitable  resolution IV or more  array found
 ## 5  orthogonal  arrays found
-##                name nruns lineage   GR GRind regular SCones    A3    A4   A5    A6      A7      A8
-## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426  1010  1753.2  2306.8
-## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063 11096 31380.8 68828.1
-## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2 1025  2828  5507.5  7780.0
-## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2  912  2404  4354.2  5793.4
-## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1  120   125    63.5    13.9</code></pre>
+##                name nruns lineage   GR GRind regular SCones    A3    A4   A5
+## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426
+## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063
+## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2 1025
+## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2  912
+## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1  120
+##       A6      A7      A8
+## 78  1010  1753.2  2306.8
+## 81 11096 31380.8 68828.1
+## 83  2828  5507.5  7780.0
+## 87  2404  4354.2  5793.4
+## 88   125    63.5    13.9</code></pre>
 <p>这里我们选分辨率略高的<code>L36.2.10.3.8.6.1</code>，从名字上看，这是一个36次试验表，可以包含10个两水平，8个三水平与1个六水平因子，这也是唯一一个分辨率高于3，可以排除交互作用的设计方法。这里我反复提到分辨率，实际上就是一种考察试验设计合理性的指标，分辨率3一般指只能区分没有交互作用的各因子贡献差异，高于3就可以区分一定的因子交互作用，可以用<code>GR</code>去计算一个广义分辨率并用<code>oa.design</code>来进一步优化这个设计，因为其实符合正交表只是众多选择的一个子集，不过根据优化方法的不同，优化时间也不太一样。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">columns =</span> <span class="st">&quot;min34&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="exp.html#cb9-1"></a><span class="kw">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="dt">nlevels =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="dt">columns =</span> <span class="st">&quot;min34&quot;</span>)</span></code></pre></div>
 <pre><code>##    A B C D E F
-## 1  2 2 1 2 2 3
+## 1  1 3 1 2 2 1
 ## 2  1 2 2 2 2 2
-## 3  1 3 1 2 2 1
-## 4  1 1 3 1 2 2
-## 5  1 1 2 2 2 3
-## 6  1 2 3 1 1 1
-## 7  1 2 3 2 2 5
-## 8  1 2 1 1 2 4
-## 9  2 2 3 1 2 6
-## 10 2 1 2 1 1 6
-## 11 1 3 3 2 2 4
-## 12 2 2 1 2 1 5
-## 13 2 1 1 2 1 2
-## 14 1 1 2 1 1 5
-## 15 1 3 2 2 1 2
-## 16 2 1 3 2 1 3
-## 17 1 2 1 2 1 6
-## 18 2 3 1 1 1 4
-## 19 1 3 1 1 1 3
-## 20 2 3 3 1 2 3
-## 21 1 1 1 2 2 6
-## 22 2 2 3 1 1 2
-## 23 2 3 3 2 1 6
-## 24 2 1 2 1 2 4
-## 25 2 2 2 2 1 4
-## 26 1 1 1 1 1 1
-## 27 2 3 1 1 2 2
-## 28 1 3 2 1 2 6
-## 29 1 3 3 1 1 5
-## 30 2 1 1 1 2 5
-## 31 2 1 3 2 2 1
-## 32 2 2 2 1 2 1
-## 33 2 3 2 2 2 5
-## 34 2 3 2 2 1 1
-## 35 1 2 2 1 1 3
-## 36 1 1 3 2 1 4
+## 3  1 2 3 2 2 5
+## 4  1 3 2 1 2 6
+## 5  2 1 2 1 2 4
+## 6  2 2 2 1 2 1
+## 7  1 1 1 1 1 1
+## 8  2 2 3 1 2 6
+## 9  2 2 1 2 1 5
+## 10 2 3 2 2 1 1
+## 11 2 1 1 1 2 5
+## 12 1 3 3 1 1 5
+## 13 1 2 3 1 1 1
+## 14 1 3 3 2 2 4
+## 15 2 1 2 1 1 6
+## 16 2 3 1 1 2 2
+## 17 1 1 3 2 1 4
+## 18 2 2 1 2 2 3
+## 19 1 2 2 1 1 3
+## 20 2 1 3 2 2 1
+## 21 2 3 2 2 2 5
+## 22 2 1 3 2 1 3
+## 23 2 3 3 1 2 3
+## 24 2 3 3 2 1 6
+## 25 2 3 1 1 1 4
+## 26 1 1 3 1 2 2
+## 27 1 2 1 2 1 6
+## 28 2 2 2 2 1 4
+## 29 1 1 1 2 2 6
+## 30 1 1 2 2 2 3
+## 31 1 3 1 1 1 3
+## 32 2 2 3 1 1 2
+## 33 1 3 2 2 1 2
+## 34 2 1 1 2 1 2
+## 35 1 1 2 1 1 5
+## 36 1 2 1 1 2 4
 ## class=design, type= oa</code></pre>
 <p>使用这个函数你就不用费力去套正交表了，直接可以用输出的设计方案，记得要说明你的分辨率优化方案。如果你坚持套正交表，一定要理解如何去套，因为正交表的排列是很讲究的，特别是你要考虑交互作用的影响。如果一个表最多14个因子而你就设计了14个因子，那么分辨率不会超过3。正交设计的分析与前面PB设计是一致的，都是沿用添加响应，然后方差分析或线性分析随意来就是了，<code>DoE.base</code> 包为<code>design</code>这个对象类型设置了<code>lm</code>与<code>aov</code>方法。</p>
 <p>在进行数据分析时，有时会遇到方差分析与线性回归的区别问题，打比方你用线性回归来做分析，会有审稿人问你lack of fit检验有没有做。这个检验实质上也是个F检验，用来衡量线性模型之外残差里分组变异与纯误差变异的比值，如果分组变异还是比较大，那么线性假设可能就不合理。</p>

@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 3 科研现状概览 | 现代科研指北</title>
-  <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 3 科研现状概览 | 现代科研指北" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
+  <meta property="og:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="坑 3 科研现状概览 | 现代科研指北" />
   
-  <meta name="twitter:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北" />
+  <meta name="twitter:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
   
 
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2020-10-21" />
+<meta name="date" content="2020-11-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,15 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +67,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -310,7 +315,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html"><i class="fa fa-check"></i>附录一：现代科研兵刃谱</a><ul>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文本编辑"><i class="fa fa-check"></i>文本编辑</a></li>
-<li class="chapter" data-level="" data-path="lib.html"><a href="lib.html#文献管理"><i class="fa fa-check"></i>文献管理</a></li>
+<li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#文献管理-1"><i class="fa fa-check"></i>文献管理</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据处理与绘图"><i class="fa fa-check"></i>数据处理与绘图</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#数据同步"><i class="fa fa-check"></i>数据同步</a></li>
 <li class="chapter" data-level="" data-path="tool.html"><a href="tool.html#实验室管理"><i class="fa fa-check"></i>实验室管理</a></li>
@@ -535,13 +540,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="可重复性危机" class="section level2">
 <h2><span class="header-section-number">3.6</span> 可重复性危机</h2>
 <p>实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(scifigure)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">hide_stages =<span class="st"> </span><span class="ot">NULL</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">sci_figure</span>(exps)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="view.html#cb1-1"></a><span class="kw">library</span>(scifigure)</span>
+<span id="cb1-2"><a href="view.html#cb1-2"></a>exps &lt;-<span class="st"> </span><span class="kw">init_experiments</span>(<span class="dv">2</span>)</span>
+<span id="cb1-3"><a href="view.html#cb1-3"></a>exps[<span class="kw">c</span>(<span class="st">&quot;analysis_plan&quot;</span>,<span class="st">&quot;data&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;unobserved&quot;</span></span>
+<span id="cb1-4"><a href="view.html#cb1-4"></a>exps[<span class="kw">c</span>(<span class="st">&quot;experimenter&quot;</span>, <span class="st">&quot;analyst&quot;</span>, <span class="st">&quot;estimate&quot;</span>,<span class="st">&quot;claim&quot;</span>), <span class="dv">2</span>] &lt;-<span class="st"> &quot;different&quot;</span></span>
+<span id="cb1-5"><a href="view.html#cb1-5"></a>exps[<span class="st">&quot;code&quot;</span>, <span class="dv">2</span>] &lt;-<span class="st"> &quot;incorrect&quot;</span></span>
+<span id="cb1-6"><a href="view.html#cb1-6"></a>hide_stages =<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb1-7"><a href="view.html#cb1-7"></a><span class="kw">sci_figure</span>(exps)</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>可重复性危机是当前科研领域里最大的问题，这里我们从空假设显著性检验（NHST）这一核心开始聊一下。NHST更常见的形式是p值，也就是在空假设成立的条件下某事件发生的概率。p值有多流行呢？根据 Jeff Leek 的<a href="https://docs.google.com/presentation/d/1hzdSDaPPSE9xUYZHhOVfQIRPPdwe0A9SdE7QDsK3bOA/edit#slide=id.g255a5ace66_3_796">估计</a>，如果把p值当成一篇文献，那么其被引次数已经超过300万次了，当之无愧的史上被引次数之王，甩<a href="http://www.nature.com/news/the-top-100-papers-1.16224">第二名</a>一个数量级。原因其实很简单，p值已经渗透到几乎所有学科的研究中了，特别是实验学科。可想而知，如果产生p值的 NHST 出了问题其影响力有多大。</p>
 <p>如果一个假设对另一个假设来说很稀少，NHST会在很低的条件概率下拒绝掉，然后那些稀少的事情在NHST里就成了无法被检验的事情。这个例子最早是 Cohen <a href="http://ist-socrates.berkeley.edu/~maccoun/PP279_Cohen1.pdf">提出</a>用来说明人们在使用NHST时的问题。空假设是某人是美国人，备择假设是非美国人。我们知道某人是国会议员的概率是百万分之二，空假设里很难发生，备择假设里无法发生。空假设我们拒绝了某人是美国人，那么根据NHST，他不是美国人。但问题是议员一定要是美国人，在此类问题里，NHST永远无法认定稀有事件，也就是功效永远不足，并会给出错误答案。稀有事件总会发生，NHST总会把此类事件当成显著，即使不那么稀有，例如小概率事件如果发生了，我们就可以拒绝了。本质上是多数人在使用p值时搞混了条件概率，拿上面美国国会议员的例子来说，我们的假设 H0 在面对张三这个数据 D 时给出了拒绝 p(H0|D) = 0，这个决定是构建在假设 H0 成立时出现 D 的概率太低（即p(D|H0)之上，也就是说NHST下，我们默认下面的概率是成立的：
@@ -561,7 +566,7 @@ p(D|H_0) = p(H_0|D)
 <p>另外一种隐性p值选择性报道是通过模型选择来实现的，不同的统计模型会产生不同的假设检验结果，研究人员通常只会报道那些有阳性结果的统计模型。这个非常难识别，因为统计模型通常比较复杂且研究人员有可能是先上船后买票，也就是先发现这个模型结果有利然后根据模型组织文章。这里面会牵扯到探索性数据分析与论证的差异，如果研究人员把新模型当成了文章亮点，那读者是完全看不出来这里面的不恰当行为的。此时还是要依赖数据公开，如果大家都能下载到数据，标准化后然后同时跑多个模型，只有共存结果才有可能可靠。不过，这里面的问题在于多个模型的假设是不一样的，只有符合数据本身统计特征的模型才能被加入到评价体系里。</p>
 <p>关于 NHST 虽然问题一大把，但系统去看，p值也有着自己的生命力，我想更多人关心的是如果我不用 NHST ，拿什么证明我的结果可靠？如果没得选，这剂毒药还是得吃啊。答案其实上面都大概提到了，你如果坚持使用p值，那么就也请同时报告参数估计与置信区间，虽然这个方法也被人喷过。如果你打算完全开一条新路，那就去学贝叶斯统计，贝叶斯统计有自己成套的处理体系，简单说就是先假设参数分布，然后用数据更新分布，后验分布计算出来就同时有点估计跟方差估计，同时多重比较问题也不存在，但随机错误无法避免，此时参数估计方差大也能体现，后续研究可以使用这次的后验数据作为下次先验数据，这样你可以实现完全的 N + 1 模式科研，其验证与预测性也很大程度依赖采样与模拟技术，之前贝叶斯方法不能流行很重要的一个原因就在于计算比较贵，现在就便宜很多了。</p>
 <p>NHST其实是科研可重复性危机的核心，但科学家的人性也不可忽视。科学本身是构建在错误校正过程上的，但科学家评价却是人性化的，良好的评价很多时候成了科学家追求的标的。不论是对影响因子的追求还是学术明星的打造，非科学的评价与评优其实影响到了科研结果的报道。科学家正在作为一个团体来维护自己的利益与社会地位，其副作用就是对失败的低容忍度，年龄限制与成果限制使得探索必须要符合效率原则，很多年轻人在年富力强的时候做了大量排列组合而非探索性的工作来确保个人的生存无虞，这样造成的损失目前我们无法衡量。随之伴生的学术不规范、不端与造假则是层出不穷，很多人开始利用一些规则上的漏洞来实现非科研目的，例如审稿流程与评优。科学家的形象要由团体的文化来体现，阳光底下没有新鲜事，除了开放获取的研究成果，研究整体流程也应该实现透明化，这样可以很大程度防止暗箱操作。</p>
-<p>所谓流程透明，指的是从基金申请到修改到进度报告到结题报告到文章的投稿接受与后续跟进研究及评优都要有公开的记录可以查询，文书都要经过版本控制方便返溯，所有研究人员都要实名负责对应的项目。学术团体接受公众舆论监督与同行监督，日常学术交流也要有公开的记录与反馈机制，所有的记录不直接对外公开但接受实名查询并留存查询记录。这样透明化的流程可以保证学术团体除了发表论文之外还有其他的结果展示途径，进而避免实验结果的选择性汇报与资源的过度集中。打破自我包装与人脉对科研的束缚，让结果更直白地展示给所有人。此外，关于可重复性，nature就近年来的科研可重复性危机采访了五组科学家，分别从认知、NHST、FDR、数据共享与范式转化的角度进行了<a href="https://www.nature.com/articles/d41586-017-07522-z">论述</a>，值得一读。在医疗领域也有了一些有意思的讨论，例如认为基于人群的归纳式诊断会被个性化精准医疗所替代，此时可重复性里内含的平均律就会被彻底颠覆，分子水平的因果逻辑可能成为未来的主要知识探索方向。预印本、开放获取与审稿、科研社交媒体及数据共享等新<a href="https://theoreticalecology.wordpress.com/2019/01/22/tree-species-richness-and-its-effects-on-productivity-neither-global-nor-consistent/">趋势</a>也孕育着新的问题解决方法。</p>
+<p>流程透明的开放科学趋势是一种解决方案。所谓流程透明，指的是从基金申请到修改到进度报告到结题报告到文章的投稿接受与后续跟进研究及评优都要有公开的记录可以查询，文书都要经过版本控制方便返溯，所有研究人员都要实名负责对应的项目。学术团体接受公众舆论监督与同行监督，日常学术交流也要有公开的记录与反馈机制，所有的记录不直接对外公开但接受实名查询并留存查询记录。这样透明化的流程可以保证学术团体除了发表论文之外还有其他的结果展示途径，进而避免实验结果的选择性汇报与资源的过度集中。打破自我包装与人脉对科研的束缚，让结果更直白地展示给所有人。此外，关于可重复性，nature就近年来的科研可重复性危机采访了五组科学家，分别从认知、NHST、FDR、数据共享与范式转化的角度进行了<a href="https://www.nature.com/articles/d41586-017-07522-z">论述</a>，值得一读。在医疗领域也有了一些有意思的讨论，例如认为基于人群的归纳式诊断会被个性化精准医疗所替代，此时可重复性里内含的平均律就会被彻底颠覆，分子水平的因果逻辑可能成为未来的主要知识探索方向。预印本、开放获取与审稿、科研社交媒体及数据共享等新<a href="https://theoreticalecology.wordpress.com/2019/01/22/tree-species-richness-and-its-effects-on-productivity-neither-global-nor-consistent/">趋势</a>也孕育着新的问题解决方法。</p>
 <p>这次的危机能不能解决？什么时候解决？现在谁也不知道，但了解问题是解决问题的第一步，而路还很长。</p>
 </div>
 <div id="科学问题" class="section level2">

@@ -415,18 +415,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exp.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(FrF2))</span>
 <span id="cb2-2"><a href="exp.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pb</span>(<span class="dv">12</span>,<span class="at">nfactors =</span> <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>##     A  B  C  D  E  F  G  H  J
-## 1  -1  1 -1  1  1 -1  1  1  1
-## 2  -1  1  1  1 -1 -1 -1  1 -1
-## 3   1  1 -1  1  1  1 -1 -1 -1
-## 4  -1 -1  1 -1  1  1 -1  1  1
-## 5   1 -1 -1 -1  1 -1  1  1 -1
-## 6  -1  1  1 -1  1  1  1 -1 -1
+## 1   1 -1  1  1  1 -1 -1 -1  1
+## 2  -1 -1 -1 -1 -1 -1 -1 -1 -1
+## 3   1 -1 -1 -1  1 -1  1  1 -1
+## 4  -1  1 -1  1  1 -1  1  1  1
+## 5   1 -1  1  1 -1  1  1  1 -1
+## 6  -1 -1 -1  1 -1  1  1 -1  1
 ## 7   1  1  1 -1 -1 -1  1 -1  1
-## 8   1  1 -1 -1 -1  1 -1  1  1
-## 9   1 -1  1  1  1 -1 -1 -1  1
-## 10 -1 -1 -1 -1 -1 -1 -1 -1 -1
-## 11 -1 -1 -1  1 -1  1  1 -1  1
-## 12  1 -1  1  1 -1  1  1  1 -1
+## 8  -1 -1  1 -1  1  1 -1  1  1
+## 9   1  1 -1  1  1  1 -1 -1 -1
+## 10 -1  1  1  1 -1 -1 -1  1 -1
+## 11  1  1 -1 -1 -1  1 -1  1  1
+## 12 -1  1  1 -1  1  1  1 -1 -1
 ## class=design, type= pb</code></pre>
 <p>这里面1与-1分别代表两个水平，当然试验设计牵扯到分辨率问题，可以理解为对该试验设计的评价，分辨率高，能区分的影响就更细致，可以用<code>FrF2</code>包中的<code>GR</code>函数来计算。需要注意的是，<code>FrF2</code>包也可以用 <code>FrF2</code> 函数来进行两水平试验设计，这里是分辨率高时是可以考察交互作用的。</p>
 <p>那么当你收集了数据，该如何分析呢？<code>FrF2</code>包实际继承了 <code>DoE.base</code> 包的S3对象类型，你只需要用 <code>add.response</code> 增加你的试验结果到设计出的S3对象上，然后就可以用方差分析或线性回归进行分析了。结果同样可以用<code>MEPlot</code>函数来进行可视化。当然，也可以用<code>halfnormal</code>函数来评价因子影响。</p>
@@ -444,29 +444,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## lm.default(formula = fo, data = model.frame(fo, data = formula))
 ## 
 ## Residuals:
-##          1          2          3          4          5          6          7 
-##  3.643e-15  1.667e-01 -3.625e-15  3.737e-15  3.633e-15 -3.701e-15 -1.667e-01 
-##          8          9         10         11         12 
-## -3.625e-15  1.667e-01 -1.667e-01 -1.667e-01  1.667e-01 
+##      1      2      3      4      5      6      7      8      9     10     11 
+## -1.667 -0.500  0.500 -0.500  1.667  0.500 -1.667 -0.500  0.500 -1.667  1.667 
+##     12 
+##  1.667 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept) 37.41667    0.08333     449 4.96e-06 ***
-## A1          -1.41667    0.08333     -17  0.00344 ** 
-## B1           0.75000    0.08333       9  0.01212 *  
-## C1           0.41667    0.08333       5  0.03775 *  
-## D1          -1.08333    0.08333     -13  0.00587 ** 
-## E1          -0.25000    0.08333      -3  0.09547 .  
-## F1           1.41667    0.08333      17  0.00344 ** 
-## G1          -0.25000    0.08333      -3  0.09547 .  
-## H1           0.41667    0.08333       5  0.03775 *  
-## J1          -0.58333    0.08333      -7  0.01980 *  
+## (Intercept) 37.41667    0.87003  43.006  0.00054 ***
+## A1           1.41667    0.87003   1.628  0.24500    
+## B1          -0.91667    0.87003  -1.054  0.40256    
+## C1          -0.08333    0.87003  -0.096  0.93243    
+## D1          -0.75000    0.87003  -0.862  0.47952    
+## E1           0.08333    0.87003   0.096  0.93243    
+## F1           0.75000    0.87003   0.862  0.47952    
+## G1           0.25000    0.87003   0.287  0.80088    
+## H1           0.91667    0.87003   1.054  0.40256    
+## J1           0.41667    0.87003   0.479  0.67925    
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.2887 on 2 degrees of freedom
-## Multiple R-squared:  0.9979, Adjusted R-squared:  0.9884 
-## F-statistic:   105 on 9 and 2 DF,  p-value: 0.009469</code></pre>
+## Residual standard error: 3.014 on 2 degrees of freedom
+## Multiple R-squared:  0.7698, Adjusted R-squared:  -0.2661 
+## F-statistic: 0.7431 on 9 and 2 DF,  p-value: 0.6919</code></pre>
 <p>在这里PB设计实际上是一种预选法，如果结果显示某些变量影响显著，那么事实上就可以针对这些变量进行进一步的精细筛选，其余的变量可以直接固定为一个水平进行进一步设计。PB法在工业届用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。</p>
 <p>当选出重要因素时，下一步常见是正交试验或响应面分析，用来优选参数。正交表这玩意我在书中没找到，文献里用得多的也是亚洲人，老外统一用析因试验来进行考察。其实正交表的设计原理就是用尽量少的步骤遍历掉因子空间，这样进行一定次数试验就可以发现最优组合。R中的实现基本都在<code>DoE.base</code> 包里，这个包内置了一堆可以直接调用的正交表，可以根据需求进行查询。例如我有6个因素，水平数分别是2，3，3，2，2，6，然后我只打算做不超过54次试验，这时可以直接调用<code>show.oas</code>函数进行查询，给出的正交表随意选一个就可以继续。</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exp.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show.oas</span>(<span class="at">nruns =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">showmetrics =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
@@ -487,42 +487,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>这里我们选分辨率略高的<code>L36.2.10.3.8.6.1</code>，从名字上看，这是一个36次试验表，可以包含10个两水平，8个三水平与1个六水平因子，这也是唯一一个分辨率高于3，可以排除交互作用的设计方法。这里我反复提到分辨率，实际上就是一种考察试验设计合理性的指标，分辨率3一般指只能区分没有交互作用的各因子贡献差异，高于3就可以区分一定的因子交互作用，可以用<code>GR</code>去计算一个广义分辨率并用<code>oa.design</code>来进一步优化这个设计，因为其实符合正交表只是众多选择的一个子集，不过根据优化方法的不同，优化时间也不太一样。</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="exp.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">columns =</span> <span class="st">&quot;min34&quot;</span>)</span></code></pre></div>
 <pre><code>##    A B C D E F
-## 1  2 1 1 2 1 2
-## 2  1 2 1 2 1 6
-## 3  1 1 1 1 1 1
-## 4  2 2 1 2 2 3
-## 5  2 3 2 2 2 5
-## 6  2 1 1 1 2 5
-## 7  1 2 3 1 1 1
-## 8  2 1 3 2 2 1
-## 9  1 3 2 2 1 2
-## 10 2 3 1 1 2 2
-## 11 1 2 2 1 1 3
-## 12 2 3 3 1 2 3
-## 13 1 1 3 2 1 4
-## 14 1 1 1 2 2 6
-## 15 2 1 3 2 1 3
-## 16 1 1 3 1 2 2
-## 17 1 1 2 2 2 3
-## 18 2 3 3 2 1 6
-## 19 1 1 2 1 1 5
-## 20 1 3 3 2 2 4
-## 21 1 3 1 1 1 3
-## 22 1 2 1 1 2 4
-## 23 2 2 3 1 1 2
-## 24 2 3 1 1 1 4
-## 25 1 3 3 1 1 5
-## 26 2 3 2 2 1 1
-## 27 2 1 2 1 2 4
-## 28 2 2 3 1 2 6
-## 29 2 2 2 2 1 4
-## 30 2 2 1 2 1 5
-## 31 2 2 2 1 2 1
-## 32 1 2 2 2 2 2
-## 33 2 1 2 1 1 6
-## 34 1 3 1 2 2 1
-## 35 1 2 3 2 2 5
-## 36 1 3 2 1 2 6
+## 1  1 1 2 1 1 5
+## 2  1 1 3 2 1 4
+## 3  1 2 2 2 2 2
+## 4  1 2 3 1 1 1
+## 5  1 3 1 1 1 3
+## 6  2 3 3 1 2 3
+## 7  2 2 2 2 1 4
+## 8  2 2 1 2 2 3
+## 9  2 2 3 1 2 6
+## 10 1 2 3 2 2 5
+## 11 2 1 2 1 1 6
+## 12 1 2 1 2 1 6
+## 13 2 3 3 2 1 6
+## 14 2 3 1 1 1 4
+## 15 1 3 3 2 2 4
+## 16 2 1 3 2 2 1
+## 17 2 2 2 1 2 1
+## 18 1 3 3 1 1 5
+## 19 1 3 2 1 2 6
+## 20 2 3 2 2 1 1
+## 21 2 3 1 1 2 2
+## 22 2 3 2 2 2 5
+## 23 2 1 1 1 2 5
+## 24 1 1 3 1 2 2
+## 25 2 2 3 1 1 2
+## 26 1 2 2 1 1 3
+## 27 1 1 1 1 1 1
+## 28 1 1 1 2 2 6
+## 29 2 1 1 2 1 2
+## 30 1 3 1 2 2 1
+## 31 2 2 1 2 1 5
+## 32 1 3 2 2 1 2
+## 33 1 1 2 2 2 3
+## 34 2 1 2 1 2 4
+## 35 2 1 3 2 1 3
+## 36 1 2 1 1 2 4
 ## class=design, type= oa</code></pre>
 <p>使用这个函数你就不用费力去套正交表了，直接可以用输出的设计方案，记得要说明你的分辨率优化方案。如果你坚持套正交表，一定要理解如何去套，因为正交表的排列是很讲究的，特别是你要考虑交互作用的影响。如果一个表最多14个因子而你就设计了14个因子，那么分辨率不会超过3。正交设计的分析与前面PB设计是一致的，都是沿用添加响应，然后方差分析或线性分析随意来就是了，<code>DoE.base</code> 包为<code>design</code>这个对象类型设置了<code>lm</code>与<code>aov</code>方法。</p>
 <p>在进行数据分析时，有时会遇到方差分析与线性回归的区别问题，打比方你用线性回归来做分析，会有审稿人问你lack of fit检验有没有做。这个检验实质上也是个F检验，用来衡量线性模型之外残差里分组变异与纯误差变异的比值，如果分组变异还是比较大，那么线性假设可能就不合理。</p>

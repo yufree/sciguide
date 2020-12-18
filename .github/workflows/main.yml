@@ -38,6 +38,8 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+          R -e 'install.packages("tufte")'
+           
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "all", quiet = TRUE)'
 

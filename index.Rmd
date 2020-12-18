@@ -8,6 +8,9 @@ description: 才疏学浅，不知何为真，仅通少错之法，故不敢言�
 cover-image: "cover.png"
 link-citations: yes
 site: bookdown::bookdown_site
+mainfontoptions: STHeiti
+sansfontoptions: STFangsong
+monofontoptions: STKaiti
 ---
 
 献给那些勤于思考的科研探索者。

@@ -39,7 +39,7 @@ jobs:
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
       - name: Build site
-        run: Rscript -e 'bookdown::render_book('index.Rmd', output_format = 'all', quiet = TRUE)'
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "all", quiet = TRUE)'
 
       - name: Update website
         uses: actions-go/push@master

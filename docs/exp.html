@@ -24,7 +24,11 @@
 <meta name="author" content="于淼" />
 
 
+<<<<<<< HEAD
 <meta name="date" content="2021-06-11" />
+=======
+<meta name="date" content="2021-01-02" />
+>>>>>>> ad95690798253b7a273f1cd94dd9f2d5fac5a92c
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -453,6 +457,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="exp.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(FrF2))</span>
 <span id="cb9-2"><a href="exp.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pb</span>(<span class="dv">12</span>,<span class="at">nfactors =</span> <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>##     A  B  C  D  E  F  G  H  J
+<<<<<<< HEAD
 ## 1   1  1 -1  1  1  1 -1 -1 -1
 ## 2   1  1 -1 -1 -1  1 -1  1  1
 ## 3   1 -1 -1 -1  1 -1  1  1 -1
@@ -465,6 +470,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 10 -1 -1 -1 -1 -1 -1 -1 -1 -1
 ## 11 -1  1  1  1 -1 -1 -1  1 -1
 ## 12 -1  1  1 -1  1  1  1 -1 -1
+=======
+## 1   1  1  1 -1 -1 -1  1 -1  1
+## 2   1  1 -1 -1 -1  1 -1  1  1
+## 3  -1  1 -1  1  1 -1  1  1  1
+## 4  -1  1  1 -1  1  1  1 -1 -1
+## 5  -1 -1 -1 -1 -1 -1 -1 -1 -1
+## 6  -1 -1  1 -1  1  1 -1  1  1
+## 7   1 -1  1  1  1 -1 -1 -1  1
+## 8   1  1 -1  1  1  1 -1 -1 -1
+## 9  -1 -1 -1  1 -1  1  1 -1  1
+## 10 -1  1  1  1 -1 -1 -1  1 -1
+## 11  1 -1  1  1 -1  1  1  1 -1
+## 12  1 -1 -1 -1  1 -1  1  1 -1
+>>>>>>> ad95690798253b7a273f1cd94dd9f2d5fac5a92c
 ## class=design, type= pb</code></pre>
 <p>这里面1与-1分别代表两个水平，当然试验设计牵扯到分辨率问题，可以理解为对该试验设计的评价，分辨率高，能区分的影响就更细致，可以用<code>FrF2</code>包中的<code>GR</code>函数来计算实验设计的广义分辨率。例如刚才那个设计的分辨率就是 3.67。需要注意的是，<code>FrF2</code>包也可以用 <code>FrF2</code> 函数来进行两水平试验设计，这里分辨率高时是可以考察交互作用的。</p>
 <p>那么当你收集了实验数据，该如何分析呢？<code>FrF2</code>包里可以用 <code>add.response</code> 函数增加你的试验结果到设计出的S3对象上，然后就可以用方差分析或线性回归进行分析了。结果同样可以用<code>MEPlot</code>函数来进行可视化。当然，也可以用<code>halfnormal</code>函数来评价因子影响。</p>
@@ -483,6 +502,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Residuals:
 ##       1       2       3       4       5       6       7       8       9      10 
+<<<<<<< HEAD
 ## -0.1667  2.3333 -0.1667  0.1667  0.1667 -2.3333 -0.1667  0.1667  2.3333 -2.3333 
 ##      11      12 
 ##  2.3333 -2.3333 
@@ -512,6 +532,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>PB法在工业场景里用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。</p>
 <p>当选出重要因素时，下一步常见是正交试验或响应面分析，用来优选参数。正交表这玩意文献里用得多的也是亚洲人，老外统一用析因试验来描述这个考察过程。其实正交表的设计原理就是用尽量少的步骤遍历掉因子空间，这样进行一定次数试验就可以发现最优组合。R中的实现基本都在<code>DoE.base</code> 包里，这个包内置了一堆可以直接调用的正交表，可以根据需求进行查询。例如我有6个因素，水平数分别是2，3，3，2，2，6，然后我只打算做不超过54次试验，这时可以直接调用<code>show.oas</code>函数进行查询，给出的正交表随意选一个就可以继续。</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="exp.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show.oas</span>(<span class="at">nruns =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">showmetrics =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+=======
+## -0.3333  0.3333 -2.1667  2.1667  0.3333 -0.3333 -2.1667 -0.3333  2.1667 -2.1667 
+##      11      12 
+##  2.1667  0.3333 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 37.41667    1.09608  34.137 0.000857 ***
+## A1          -1.25000    1.09608  -1.140 0.372270    
+## B1           0.41667    1.09608   0.380 0.740413    
+## C1          -0.08333    1.09608  -0.076 0.946317    
+## D1           1.08333    1.09608   0.988 0.427152    
+## E1          -0.91667    1.09608  -0.836 0.490981    
+## F1          -0.58333    1.09608  -0.532 0.647792    
+## G1           0.08333    1.09608   0.076 0.946317    
+## H1          -0.25000    1.09608  -0.228 0.840777    
+## J1           0.08333    1.09608   0.076 0.946317    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.797 on 2 degrees of freedom
+## Multiple R-squared:  0.6346, Adjusted R-squared:  -1.01 
+## F-statistic: 0.386 on 9 and 2 DF,  p-value: 0.8708</code></pre>
+<p>在这里PB设计实际上是一种预选法，如果结果显示某些变量影响显著，那么事实上就可以针对这些变量进行进一步的精细筛选，其余的变量可以直接固定为一个水平进行进一步设计。PB法在工业届用的比较多，但你应该想到了，如果只是进行变量选择，为啥不用随机森林或lasso？其实都可以，但这些方法不是设计而更多是数据分析通用方法，设计上除了最重要的随机性也是要考虑各因子贡献或者说重复数尽量平衡些的，否则会过分偏重某个因子，或者干脆配对或组成区组。像这样不做预设去设计对各个因子都公平，如果有预设或现实条件不允许，也可以裂区设计。</p>
+<p>当选出重要因素时，下一步常见是正交试验或响应面分析，用来优选参数。正交表这玩意我在书中没找到，文献里用得多的也是亚洲人，老外统一用析因试验来进行考察。其实正交表的设计原理就是用尽量少的步骤遍历掉因子空间，这样进行一定次数试验就可以发现最优组合。R中的实现基本都在<code>DoE.base</code> 包里，这个包内置了一堆可以直接调用的正交表，可以根据需求进行查询。例如我有6个因素，水平数分别是2，3，3，2，2，6，然后我只打算做不超过54次试验，这时可以直接调用<code>show.oas</code>函数进行查询，给出的正交表随意选一个就可以继续。</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exp.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show.oas</span>(<span class="at">nruns =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">showmetrics =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+>>>>>>> ad95690798253b7a273f1cd94dd9f2d5fac5a92c
 <pre><code>## no suitable  resolution IV or more  array found
 ## 5  orthogonal  arrays found
 ##                name nruns lineage   GR GRind regular SCones    A3    A4   A5
@@ -532,6 +579,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>使用这个函数你就不用费力去套正交表了，直接可以用输出的设计方案，记得要说明你的分辨率优化方案。如果你坚持套正交表，一定要理解如何去套，因为正交表的排列是很讲究的，特别是你要考虑交互作用的影响。如果一个表最多14个因子而你就设计了14个因子，那么分辨率不会超过3。正交设计的分析与前面PB设计是一致的，都是沿用添加响应，然后方差分析或线性分析随意来就是了，<code>DoE.base</code> 包为<code>design</code>这个表示实验设计的对象类型设置了方差分析或线性分析的分析方法。</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="exp.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">columns =</span> <span class="st">&quot;min34&quot;</span>)</span></code></pre></div>
 <pre><code>##    A B C D E F
+<<<<<<< HEAD
 ## 1  1 3 3 1 1 5
 ## 2  2 1 1 2 1 2
 ## 3  1 1 3 2 1 4
@@ -567,6 +615,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 33 2 3 1 1 1 4
 ## 34 1 2 1 1 2 4
 ## 35 2 3 2 2 1 1
+=======
+## 1  1 1 1 1 1 1
+## 2  2 1 2 1 1 6
+## 3  1 3 1 1 1 3
+## 4  1 2 2 2 2 2
+## 5  2 2 2 1 2 1
+## 6  2 2 2 2 1 4
+## 7  2 2 1 2 1 5
+## 8  2 1 1 2 1 2
+## 9  2 3 3 2 1 6
+## 10 2 1 1 1 2 5
+## 11 2 2 3 1 1 2
+## 12 1 1 1 2 2 6
+## 13 2 1 2 1 2 4
+## 14 2 3 1 1 1 4
+## 15 2 1 3 2 1 3
+## 16 1 2 2 1 1 3
+## 17 1 2 1 1 2 4
+## 18 2 2 1 2 2 3
+## 19 2 1 3 2 2 1
+## 20 1 3 3 1 1 5
+## 21 1 1 3 1 2 2
+## 22 1 3 2 2 1 2
+## 23 2 3 1 1 2 2
+## 24 1 1 2 2 2 3
+## 25 1 3 3 2 2 4
+## 26 2 3 2 2 1 1
+## 27 1 1 2 1 1 5
+## 28 1 3 1 2 2 1
+## 29 2 3 3 1 2 3
+## 30 1 3 2 1 2 6
+## 31 2 2 3 1 2 6
+## 32 1 2 3 1 1 1
+## 33 2 3 2 2 2 5
+## 34 1 1 3 2 1 4
+## 35 1 2 1 2 1 6
+>>>>>>> ad95690798253b7a273f1cd94dd9f2d5fac5a92c
 ## 36 1 2 3 2 2 5
 ## class=design, type= oa</code></pre>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="exp.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 这里我们故意设计一个A因素无影响，B与C因素有影响但C影响大的响应</span></span>

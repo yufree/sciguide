@@ -87,21 +87,26 @@
 对于单次比较，当我们看到显著差异的p值脑子里想的是零假设为真时发生的概率，当我们置信水平设定在0.95而p值低于对应的阈值，那么我们应该拒绝零假设。但对比次数多了从概率上就会出现已经被拒绝的假设实际是错误的而你不知道是哪一个。整体错误率控制的思路就是我不管单次比较了，我只对你这所有的对比次数的总错误率进行控制。还是上面的例子，对于10000次假设检验我只能接受1个错误，整体犯错概率为0.0001，那么对于单次比较，其假阳性也得设定在这个水平上去进行假设检验，结果整体上错误率是控制住了，但对于单次比较就显得十分严格了。下面用一个仿真实验来说明：
 
 ```{r}
-# 随机数的10000次比较
 set.seed(42)
+# 随机数的10000次比较
 pvalue <- NULL
-for (i in 1:10000){
+for (i in 1:10000) {
   a <- rnorm(10)
   b <- rnorm(10)
-  c <- t.test(a,b)
+  c <- t.test(a, b)
   pvalue[i] <- c$p.value
 }
 # 看下p值分布
-hist(pvalue)
+hist(
+  pvalue,
+  main = substitute(paste(italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
 # 小于0.05的个数
-sum(pvalue<0.05)
+sum(pvalue < 0.05)
 # 小于0.0001的个数
-sum(pvalue<0.0001)
+sum(pvalue < 0.0001)
 ```
 
 这样我们会看到进行了整体的控制之后，确实是找不到有差异的了，而且此时我们也可以看到p值的分布应该是0到1之间的均匀分布。但假如里面本来就有有差异的呢？
@@ -109,18 +114,23 @@ sum(pvalue<0.0001)
 ```{r}
 set.seed(42)
 pvalue <- NULL
-for (i in 1:10000){
-  a <- rnorm(10,1)
-  b <- a+1
-  c <- t.test(a,b)
+for (i in 1:10000) {
+  a <- rnorm(10, 1)
+  b <- a + 1
+  c <- t.test(a, b)
   pvalue[i] <- c$p.value
 }
 # 看下p值分布
-hist(pvalue)
-# 小于0.05的个数
-sum(pvalue<0.05)
-# 小于0.0001的个数
-sum(pvalue<0.0001)
+hist(
+  pvalue,
+  main = substitute(paste(italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
+# 显示p值里小于0.05的个数
+sum(pvalue < 0.05)
+# 显示p值里小于0.0001的个数
+sum(pvalue < 0.0001)
 ```
 
 上面我们模拟了10000次有真实差异的假设检验，结果按照单次检验0.05的阈值能发现约7000有差异，而使用0.0001却只能发现不到100次有显著差异。那么问题很明显，或许控制整体错误率可以让我们远离假阳性，但假阴性就大幅提高了或者说功效降低了，最后的结果可能是什么差异也看不到。
@@ -130,24 +140,29 @@ sum(pvalue<0.0001)
 ```{r}
 set.seed(42)
 pvalue <- NULL
-for (i in 1:5000){
-  a <- rnorm(10,1)
-  b <- a+1
-  c <- t.test(a,b)
+for (i in 1:5000) {
+  a <- rnorm(10, 1)
+  b <- a + 1
+  c <- t.test(a, b)
   pvalue[i] <- c$p.value
 }
-for (i in 1:5000){
-  a <- rnorm(10,1)
-  b <- rnorm(10,1)
-  c <- t.test(a,b)
-  pvalue[i+5000] <- c$p.value
+for (i in 1:5000) {
+  a <- rnorm(10, 1)
+  b <- rnorm(10, 1)
+  c <- t.test(a, b)
+  pvalue[i + 5000] <- c$p.value
 }
 # 看下p值分布
-hist(pvalue)
-# 小于0.05的个数
-sum(pvalue<0.05)
-# 小于0.0001的个数
-sum(pvalue<0.0001)
+hist(
+  pvalue,
+  main = substitute(paste(italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
+# 显示p值里小于0.05的个数
+sum(pvalue < 0.05)
+# 显示p值里小于0.0001的个数
+sum(pvalue < 0.0001)
 ```
 
 此时结果就更有意思了，明明应该有5000次是有差异的，但阈值设定在0.05只能看到约3500次，而0.0001只能看到24次。
@@ -164,16 +179,25 @@ $$
 
 ```{r}
 # 比较次数
-n <- c(1:10 %o% 10^(1:2))
+n <- c(1:10 %o% 10 ^ (1:2))
 # 整体出现假阳性概率
-p0 <- 1-(1-0.05)^n
+p0 <- 1 - (1 - 0.05) ^ n
 # Bonferroni方法控制后的整体假阳性概率
-p <- 1-(1-0.05/n)^n
+p <- 1 - (1 - 0.05 / n) ^ n
 # 不进行控制
-plot(p0~n,ylim = c(0,1),xlab='numbers of tests',ylab = 'FWER')
+plot(
+  p0 ~ n,
+  ylim = c(0, 1),
+  pch = 19,
+  xlab = '测试数',
+  ylab = '整体错误率（FWER）'
+)
 # Bonferroni方法控制
-points(p~n,pch=19,col='red')
-legend('right',c('Bonferroni','Raw'),col = c('red','black'),pch = 1,cex=1)
+points(p ~ n, pch = 19, col = 'red')
+legend('right',
+       c('Bonferroni法', '无矫正'),
+       col = c('red', 'black'),
+       pch = 19)
 ```
 
 其实，这样的控制得到的整体错误率是略低于0.05的，并且数目越大，整体错误率越低。这个方法十分保守，有可能什么差异你都看不到，因为都变成假阴性了。在实际应用中一般不调节p值的假阳性比率而直接调节p值，取原始p值跟整体检验数目的乘积与1的最小值作为调节p值，还可以用0.05或0.01进行判断，不过这时候控制的整体而不是单一检验了。
@@ -230,12 +254,18 @@ $$
 
 ```{r}
 # BH法控制错误发现率
-pbh <- p.adjust(pvalue,method = 'BH')
+pbh <- p.adjust(pvalue, method = 'BH')
 # holm法控制错误发现率
-ph <- p.adjust(pvalue,method = 'holm')
-plot(pbh~pvalue,ylab = 'FDR',xlab = 'p value')
-points(ph~pvalue,col='red')
-legend('bottomright',c('Holm','BH'),col = c('red','black'),pch = 1,cex=1)
+ph <- p.adjust(pvalue, method = 'holm')
+plot(pbh ~ pvalue,
+     ylab = '错误发现率（FDR）',
+     xlab = substitute(paste(italic('p'), "值")),
+     pch = 19)
+points(ph ~ pvalue, col = 'red', pch = 19)
+legend('bottomright',
+       c('Holm 法', 'BH 法'),
+       col = c('red', 'black'),
+       pch = 19)
 ```
 
 从上面图我们可以看出，如果控制整体错误率（红色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。
@@ -251,8 +281,13 @@ $$
 ```{r}
 library(qvalue)
 q <- qvalue(pvalue)
-# Q值
-plot(q$qvalues~pvalue,col='blue',ylab = 'Q',xlab = 'p value')
+# q值
+plot(
+  q$qvalues ~ pvalue,
+  col = 'blue',
+  ylab = substitute(paste(italic('q'), "值")),
+  xlab = substitute(paste(italic('p'), "值"))
+)
 ```
 
 如上图所示，q值增大后会最终逼近到0.5，而我们的模拟中零假设的比例就设定就是50%。我们重新模拟一个零假设比例5%的实验：
@@ -260,27 +295,37 @@ plot(q$qvalues~pvalue,col='blue',ylab = 'Q',xlab = 'p value')
 ```{r}
 set.seed(42)
 pvalue <- NULL
-for (i in 1:500){
-  a <- rnorm(10,1)
-  b <- a+1
-  c <- t.test(a,b)
+for (i in 1:500) {
+  a <- rnorm(10, 1)
+  b <- a + 1
+  c <- t.test(a, b)
   pvalue[i] <- c$p.value
 }
-for (i in 1:9500){
-  a <- rnorm(10,1)
-  b <- rnorm(10,1)
-  c <- t.test(a,b)
-  pvalue[i+500] <- c$p.value
+for (i in 1:9500) {
+  a <- rnorm(10, 1)
+  b <- rnorm(10, 1)
+  c <- t.test(a, b)
+  pvalue[i + 500] <- c$p.value
 }
-pbh <- p.adjust(pvalue,method = 'BH')
-ph <- p.adjust(pvalue,method = 'holm')
+pbh <- p.adjust(pvalue, method = 'BH')
+ph <- p.adjust(pvalue, method = 'holm')
 q <- qvalue(pvalue)
-plot(pbh~pvalue,ylab = 'FDR',xlab = 'p value')
+plot(pbh ~ pvalue,
+     ylab = '错误发现率（FDR）',
+     xlab = substitute(paste(italic('p'), "值")),
+     pch = 19)
 # Holm 方法
-points(ph~pvalue,col='red')
+points(ph ~ pvalue, col = 'red', pch = 19)
 # Q值
-points(q$qvalues~pvalue,col='blue')
-legend('bottomright',c('Q','Holm','BH'),col = c('blue','red','black'),pch = 1,cex=1)
+points(q$qvalues ~ pvalue, col = 'blue', pch = 19)
+legend(
+  'bottomright',
+  c(expression(paste(italic(
+    "q"
+  ), " 值")), 'Holm 法', 'BH 法'),
+  col = c('blue', 'red', 'black'),
+  pch = 19
+)
 ```
 
 此时我们可以看到两者结果较为接近，q值理论上更完备，功效也更强，但算法上对$\hat\pi_0$的估计并不稳定，特别是比例靠近1的时候，所以BH方法可能还是更容易让人接受的保守错误发现率控制方法。

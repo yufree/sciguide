@@ -100,23 +100,54 @@
 
 ### 毕业延期问题
 
-根据最近 20 年研究生招生情况可以看出，研究生人数比例 研究所跟高校比例大概在 1:3，硕士的扩招力度是远高于博士的，但两者都在扩，20 年前一共 6 万多，现在仅博士每年录取就有 7 万多，硕士则扩张了 10 倍有余，达到每年六七十万的录取人数。从研究生毕业状况看，伴随扩招，每年招生人数与毕业人数有相当的差距，但比较吊诡的是博士招生在增长而毕业人数却趋稳了，这基本暗示延期，特别是博士延期的常态化。从在读人数上看，研究生这个临时身份群体在不断扩大，这造成了前文所述的研究生导师矛盾的激化，除了扩招影响，另一个自然就是前面提到的延期问题。
+根据教育部的公开数据，近20年研究所与高校的研究生录取比例均大概为1:3，硕士和博士都在扩招，但对硕士的扩招力度远高于博士。20年前我国每年一共招收6万多研究生，现在仅博士每年就录取10万多人，硕士则扩张了10倍有余，录取人数达到每年接近一百万，研究生在校生规模也在快速增长。从研究生毕业状况看，伴随扩招，每年的招生人数与毕业人数有相当的差距。但比较奇怪的是，博士招生人数在不断增长但毕业人数的增长幅度却增长有限且长期少于前几年的录取人数了，这基本暗示延期，特别是博士延期的常态化。
 
-从教育部公布的数据推算，基本上博士延期概率超过 50%，硕士延期概率是个位数，也就是说没有延期毕业的硕士，没有按期毕业的博士，而且延期超过50%的时间已经超过10年了。同时另一个现象也值得关注，那就是女性研究生的延期概率是普遍低于平均水平的，那么对应的男性研究生延期概率会更加惨不忍睹。
+```{r}
+graduate <- read.csv('data/graduate.csv', check.names = F)
+graduate2 <- graduate[graduate$category == 'Total',]
+library(showtext)
+showtext::showtext_auto()
+par(mfrow=c(1,2))
+plot(graduate2$year,graduate2$`Enrolment(Master)`,xlab = '年份',ylab = '人数',pch=19,col='black',ylim=c(min(graduate2$`Admitted(Master)`),max(graduate2$`Enrolment(Master)`)),main='硕士研究生')
+points(graduate2$year,graduate2$`Graduates(Master)`,pch=19,col = 'red')
+points(graduate2$year,graduate2$`Admitted(Master)`,pch=19,col='blue')
+legend('topleft',legend = c('在校生','录取人数','毕业人数'), col = c('black','blue','red'),pch=19)
 
-如果我们用在校生去除当年毕业生，会得到一个预估的毕业年限，结果显示博士需要 6 年多毕业而硕士也需要 3 年多毕业，硕士那个考虑到延期概率不高还可以接受，博士那个就有点反人类了，而且从近几年情况看这个毕业年限还在增加。其实答案很简单，就是扩招导致的人口在高校或研究机构的滞留，那么如何去除这个影响呢？考虑到博士硕士其实应该是 2到4 年内毕业，我们只要用当年录取的人数去对比 2到4 年后毕业的人数就可以了。考虑到博士毕业率应该低于硕士且硕士毕业率不应该超过 100%，应该是 3 年毕业的数据比较可信，这里我们会发现 3 年毕业率要远高于延期概率，这又是怎么回事？
+plot(graduate2$year,graduate2$`Enrolment(Doctor)`,xlab = '年份',ylab = '人数',pch=19,col='black',ylim=c(min(graduate2$`Entrants(Doctor)`),max(graduate2$`Enrolment(Doctor)`)),main='博士研究生')
+points(graduate2$year,graduate2$`Graduates(Doctor)`,pch=19,col = 'red')
+points(graduate2$year,graduate2$`Entrants(Doctor)`,pch=19,col='blue')
+legend('topleft',legend = c('在校生','录取人数','毕业人数'), col = c('black','blue','red'),pch=19)
+```
 
-这里就没数据支持了，但大多数研究生都听过硕博连读这个概念，其实如果三年毕业为真，那么硕博加起来应该是 6 年，而硕博连读应该是 5 年，如果博士延期是常态化的，那么我想这里面很大一部分比例是硕博连读。估计再过几年，考博的比率可能会更低而硕博 6 年将成为默认的学习年限。有打算硕士毕业出国读博的可以考虑下了，年限上其实吃亏不多而且国外会有老板没钱了逼着早点毕业的情况。
+前面说了研究生的供给端，下面看看需求端也就是教职的变化，这里只考虑博士，因为当前教职对学历的要求已经比较高了。同样看来自教育部的数据，由于本科生从1999年开始扩招，教职数也一直增加。不过，高级职称的增加速度明显低于教职总数的增加速度而中级职称教职在快速增加。同时，从年龄分布上看，当前教职年龄高峰在 55~59岁，大概是二十年前大学扩招时入职的。如果退休年龄没有明显推迟的话，那么在10年内应该可以看到一个因为退休高峰导致的教职空缺期。10年内什么年龄段的人会博士毕业呢？大概是当前的本科生，考虑到本科4年加硕博连读6年，每个高校都有义务在学生刚接触高等教育或研究时给他们能实时吸纳研究进展的教学大纲，否则要是学生10年前选了小灵通网络优化专业，那么等到博士毕业基本就只有转行了。
 
-刚才说了研究生毕业的供给端，下面看看需求端也就是教职的变化。国内教职因为 1999 年开始的扩招导致在 21 世纪的第一个 5 年大量的扩展教职，这样的后果就是有一个 5 年的教职年龄高峰，这个高峰占据了大量的教职。从数据上看，目前这个高峰年龄段在 51-55 岁，都算是当打之年，如果退休年龄没有明显推迟的话，那么在 10-15 年后应该可以看到一个因为退休高峰导致的教职空缺期。那么 10-15 年后谁博士毕业呢？大概是现在读中学的孩子。其实考虑硕博 6 年加本科 4 年，每个高校都有义务在学生刚接触高等教育或研究时给他们领先当前技术 10 年的教材与方法，否则学生 10 年前选了小灵通网络优化专业，博士毕业基本就只有转行了。这里再看下性别问题，数据显示女性教职前期扩张的要更厉害，平均年龄也更低，大概要 20 年左右才能迎来退休高峰的教职空缺，如果校方固定当前男女比，那么其实对有更低概率延期的女性并没有什么优势。
+```{r}
+faculty <- read.csv('data/faculty.csv', check.names = F)
+faculty2 <- faculty[faculty$category == 'Total', ]
 
-教职中教授的年龄分布状况也很有意思，当前教授主流年龄是 51-55 岁，反推下基本是刚改革开放后上的大学，经历应该挺丰富的。副教授整体要比教授年轻 10 岁，大概 90 年前后上大学，46-50 岁这个年龄段人数基本稳定，说明升教授基本就是前一个年龄段，从年龄分布上看 35-45 岁人多，不同代际间竞争会激烈些。
+par(mfrow=c(1,2))
+plot(faculty$year[faculty$category == 'Total'],faculty$total[faculty$category == 'Total'],pch=19, main='教职数',ylim=c(0,max(faculty$total)),xlab = '年份', ylab = '人数')
+points(faculty$year[faculty$category == 'Professors'], faculty$total[faculty$category == 'Professors'],pch=19,col='blue')
+points(faculty$year[faculty$category == 'Asso. Professors'],faculty$total[faculty$category == 'Asso. Professors'],pch=19,col='red')
+points(faculty$year[faculty$category == 'middle'],faculty$total[faculty$category == 'middle'],pch=19,col='orange')
+legend('topleft',legend = c('总数','教授','副教授','中级职称'), col = c('black','blue','red','orange'),pch=19)
 
-前面着重强调年龄分布可能带来的教职空缺，另一种空缺就是所谓扩张期或窗口期，我们不考虑退休，从年龄分布上看这一部分的人数似乎比较稳定。每年的教职数一直在提高，而是似乎斜率比较稳定。但是女性的教职数增长的回归斜率只有总数的 1/3，也就是说每增长 3 个教职才会有一个是女性的，这说明教职市场存在一定的性别歧视。但这个问题不好直接下结论，因为辛普森悖论也是同样的语境。同时，教授与副教授教职增长的斜率低于总体，暗示了教职里存在的层级结构。总之，目前还算是一个稳定的窗口期，教职数不断增长，属于利好；但成长空间不算大，别忘了博士毕业生可是年年增长，所以以后熬年限是肯定不行的，31-35 岁的副教授人数逐年下降，不是升迁（概率低）就是收紧了要求转而直接从海外引进人才，诸君努力吧。
+col = RColorBrewer::brewer.pal(8,'Set2')
+plot(faculty2$year,faculty2$`30 Years & Under`,pch=19, main='教职数',ylim=c(0,110000),xlab = '年份', ylab = '人数',col=col[1])
+points(faculty2$year,faculty2$`31-35years`,pch=19,col=col[2])
+points(faculty2$year,faculty2$`36-40years`,pch=19,col=col[3])
+points(faculty2$year,faculty2$`41-45years`,pch=19,col=col[4])
+points(faculty2$year,faculty2$`46-50years`,pch=19,col=col[5])
+points(faculty2$year,faculty2$`51-55years`,pch=19,col=col[6])
+points(faculty2$year,faculty2$`56-60years`,pch=19,col=col[7])
+points(faculty2$year,faculty2$`61 Years & Over`,pch=19,col=col[8])
+legend('topleft',legend = c('30岁以下','30-34','35-39','40-44','45-49','50-54','55-59','60岁以上'), col = col,pch=19)
+```
 
-我们都知道研究生学历在贬值，那么究竟贬到什么状况了呢？我计算了同年毕业的博士与硕士人数比例，发现硕士的贬值效果更强，博士相比之下反而在升值，女博士升值更高。当然，大前提是五十步笑百步，都是贬值。基本的情况就是 1 个博士大概对应 10 个硕士，显然硕士作为一个学位扩的有点太猛了。后面的分析就不考虑硕士找教职了，基本没戏。
+除了退休带来教职的空缺外，教职数也在扩增。每年的教职数一直在稳定增长，但成长空间不算大，别忘了博士毕业生数可是逐年增长的，所以以后熬年限评职称是肯定不行的，目前30-34岁这个年龄段的教职人数在快速上升而前一个年龄段的人数并不多也比较稳定，这说明取得教职大概率是而立之年之后的事。这种较长的培养年限显著区别于其他行业，因为很多行业从业人员进入30-34岁基本进入了中层，而从事教职这个年龄刚刚入行。
+这些年新增的教职数基本稳定在2万这个水平，但最近几年显著增加，2019年与2020甚至超过3万。同期每年新增博士毕业生超过6万而录取数超过了10万，也就是说，教职市场在今后可预期的时间里撑死也就能解决一半博士毕业生的就业问题，另外一半肯定要转行。
 
-新增教职数这些年基本稳定在 2 万这个水平，博士毕业生大概超过 5 万，也就是说教职市场在今后可预期的时间里撑死也就能解决一半博士的就业，另外有一半肯定会转行。考虑到博士学位对硕士学位是升值的，估计非教职市场上应该挺容易就业的，当然看你干不干了。新教职里女性比例是低于人口比例的，但这二十年却一直在增长，同样在增长的则是博士毕业生中女性的比例，伴随这个趋势，教职里对女性的歧视似乎是要好于社会其他行业的。
+总之，目前博士研究生会长期面临毕业延期问题，同时教职市场的增长也无法消化当前的毕业生，需要同时考虑非教职的就业。
 
 ### 学术职业路径
 
@@ -257,32 +288,60 @@ NHST 还有个问题在于 p 值的选择性报道或者说发表歧视，研究
 ```{r}
 set.seed(1)
 # 真实差异
-x <- c(rep(100,260),rep(200,260))
+x <- c(rep(100, 260), rep(200, 260))
 # 随机差异
 xr <- rnorm(520)
 # 考虑误差的真实差异
-xm <- c(rep(100,260),rep(200,260))+rnorm(520)
+xm <- c(rep(100, 260), rep(200, 260)) + rnorm(520)
 p <- pr <- pm <- c()
-for(i in 1:10000){
-        # 随机化分组
-        g <- factor(sample(c(1,2),520,replace = T))
-        p[i] <- t.test(x~g)$p.value
-        pr[i] <- t.test(xr~g)$p.value
-        pm[i] <- t.test(xm~g)$p.value
+for (i in 1:10000) {
+  # 随机化分组
+  g <- factor(sample(c(1, 2), 520, replace = T))
+  p[i] <- t.test(x ~ g)$p.value
+  pr[i] <- t.test(xr ~ g)$p.value
+  pm[i] <- t.test(xm ~ g)$p.value
 }
-hist(p,breaks = 100)
-hist(pr,breaks = 100)
-hist(pm,breaks = 100)
+# 显示中文
+library('showtext')
+showtext_auto()
+par(mfrow = c(1, 3))
+# 展示真实差异t检验下p值的分布
+hist(
+  p,
+  breaks = 100,
+  main = substitute(paste('存在真实差异时', italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
+# 展示随机差异t检验下p值的分布
+hist(
+  pr,
+  breaks = 100,
+  main = substitute(paste('不存在真实差异时', italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
+# 展示考虑误差的真实差异t检验下p值的分布
+hist(
+  pm,
+  breaks = 100,
+  main = substitute(paste('存在真实差异与噪音时', italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
 ```
 
 这个结果非常有意思，第一个能看到的现象是如果数据本身存在规律性，那么p值的分布是一个离散分布。这个分布介于0到1之间，越接近0的部分越密集，越接近1的的部分越稀疏，但是如果计算小于0.05，0.5，0.9的比例情况，会发现这种稀疏分布依旧符合均匀分布的概率分布特征。如果数据不存在规律性，那么p值的分布就是很均匀的。如果数据混合了规律性与噪音，依然会显示出这种离散分布特征。下面我用qq图来观察下这个分布跟均匀分布的区别：
 
 ```{r}
 set.seed(42)
+# 生成均匀分布
 ref <- runif(10000)
-qqplot(ref,p)
-qqplot(ref,pr)
-qqplot(ref,pm)
+par(mfrow = c(1, 3))
+# 用分位图对比均匀分布与不同的p值分布
+qqplot(ref, p, xlab = '均匀分布', ylab = substitute(paste('存在真实差异时', italic('p'), "值分布")))
+qqplot(ref, pr, xlab = '均匀分布', ylab = substitute(paste('不存在真实差异时', italic('p'), "值分布")))
+qqplot(ref, pm, xlab = '均匀分布', ylab = substitute(paste('存在真实差异与噪音时', italic('p'), "值分布")))
 ```
 
 可以看到，如果数据本身存在规律性，其随机化分组后的p值虽然跟均匀分布很接近，但qq图上确实会表现出前密后舒的螺旋延伸状态。这里为了区别我再做一个仿真，这次我不是对分组随机而是对采样随机：
@@ -290,15 +349,22 @@ qqplot(ref,pm)
 ```{r}
 set.seed(1)
 # 固定分组
-g <- factor(c(rep(1,260),rep(2,260)))
+g <- factor(c(rep(1, 260), rep(2, 260)))
 p <- c()
-for(i in 1:10000){
-        # 随机化采样
-        x <-  sample(c(rep(100,260),rep(200,260))+rnorm(520),520)
-        p[i] <- t.test(x~g)$p.value
+for (i in 1:10000) {
+  # 随机化采样
+  x <-  sample(c(rep(100, 260), rep(200, 260)) + rnorm(520), 520)
+  p[i] <- t.test(x ~ g)$p.value
 }
-hist(p,breaks = 100)
-qqplot(ref,p)
+par(mfrow = c(1, 2))
+hist(
+  p,
+  breaks = 100,
+  main = substitute(paste('采样随机时', italic('p'), "值分布")),
+  xlab = substitute(paste(italic('p'), "值")),
+  ylab = '频率'
+)
+qqplot(ref, p, xlab = '均匀分布', ylab = substitute(paste('采样随机时', italic('p'), "值分布")))
 ```
 
 这里我们同样能看到这种蛇形走位，而且似乎随机化样品看到的趋势更明显。但同样的，这里模拟逻辑还是保持数据不变，只是随机化过程。

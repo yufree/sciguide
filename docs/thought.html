@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 4 思维工具 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 4 思维工具 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-12-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="view.html"/>
 <link rel="next" href="exp.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -42,7 +43,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -59,6 +59,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -475,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="因果" class="section level3" number="4.3.4">
 <h3><span class="header-section-number">4.3.4</span> 因果</h3>
-<p>因果问题很长一段时间一直是统计禁区，从学统计第一天我们就知道相关不代表因果，那么问题来了：如果相关性是个逻辑死胡同，知识如何增长？打个比方，我看到人群中某个基因的高表达与某种疾病的发病率存在相关性，怎么解释？是发病导致基因突变还是基因突变导致发病？一般到这一步就需要控制实验了，也就是说我们把控制实验当成因果关系的确认而对观测数据持谨慎态度。但这实验怎么做？找一组人，用 RNA 干扰 沉默掉他们的基因看是不是得病？现代伦理不允许。用动物模型？物种差异咋办？。仿真？我们搞清楚分子层面的构建机制了吗？目前相对公认的结果来自分析流行病学，金标是队列研究、临床实验与病例对照实验。严格意义上只有临床实验最靠谱，但那就真成了拿人做实验了，治疗目的问题不大，但研究目的就存在伦理问题。自然科学里控制实验容易些，很多时候因果性不言而喻（也因为这个缺乏了统计思维）。社会科学与医学就必须解决从观察结果中发现因果性的问题，不然永远只能讨论现象，因果分析就来源于此。</p>
+<p>因果问题很长一段时间一直是统计禁区，从学统计第一天我们就知道相关不代表因果，那么问题来了：如果相关性是个逻辑死胡同，知识如何增长？打个比方，我看到人群中某个基因的高表达与某种疾病的发病率存在相关性，怎么解释？是发病导致基因突变还是基因突变导致发病？一般到这一步就需要控制实验了，也就是说我们把控制实验当成因果关系的确认而对观测数据持谨慎态度。但这实验怎么做？找一组人，用 RNA 干扰 沉默掉他们的基因看是不是得病？现代伦理不允许。用动物模型？物种差异咋办？仿真？我们搞清楚分子层面的构建机制了吗？目前相对公认的结果来自分析流行病学，金标是队列研究、临床实验与病例对照实验。严格意义上只有临床实验最靠谱，但那就真成了拿人做实验了，治疗目的问题不大，但研究目的就存在伦理问题。自然科学里控制实验容易些，很多时候因果性不言而喻（也因为这个缺乏了统计思维）。社会科学与医学就必须解决从观察结果中发现因果性的问题，不然永远只能讨论现象，因果分析就来源于此。</p>
 <p>其实在研究回归问题时，高尔顿曾为此迷惑不解，主要是遗传意义上讲不通，高了后还是高，但没那么高，后者暗示遗传上的因果并不完全成立。但他学生皮尔逊则很简单认为这种回归也好或相关也好就是概率的，因果关系是相关的一个特例，统计学不能也不应该讨论因果性，进而奠定了后面研究中相关不代表因果的基调，用严谨性与概率锁死了观察研究，这个表述到今天还活跃在科学研究的各个领域。</p>
 <p>其实皮尔逊虽然从概率角度澄清了单一因素在解释现象的局限性，但他自己也发现了很多伪相关或随机相关，更麻烦的是他的学生赖特在豚鼠研究中构建了多因素路径模型来解释遗传问题。赖特在豚鼠遗传问题上假设了遗传、发育、环境与随机四种来源并用路径代数分析估计了各自影响的比重，虽然赖特自己并不认为他在用相关推导因果，但 Juder Pearl 认为这是第一次用图论来进行因果关系的探索。赖特定量算出了豚鼠子代体重增长中遗传的贡献，然而这个方法在之后的50年里被统计学界打压了。统计学家认为赖特的方法只能就事论事构建逻辑关系来进行考察，但当时的统计学主流是用“固定程序”解决问题，而大量的精力耗费在了“固定程序”的理论与细节构建。统计学家在跟别人合作时通常会让对方把数据转化为他们能处理的分布进而应用标准方法来分析，但这严重忽视了现实世界的复杂性并造成了大量统计方法的误用。现在我们知道赖特实际做的是把专业知识形成的假设因果关系进行了定量分析，而脱离专业知识的统计学正是其目前被应用导向的计算机科学超越的一个原因。在我看来，因果分析是联系统计学、专业知识与计算机科学的一个关键方法与思维工具，科研里探索的就是因果与机制，定量考察因素影响的因果分析方法是一个重要步骤。</p>
 <p>到此我们回顾下相关，如果不能说明因果，又能说明什么？两个因素之间因果也就是一个到另一个，但相关之所以说明不了因果，其实是因为存在第三种因素或更多。但简化下三个因素之间的关系其实大概就下面这四种：</p>
@@ -614,7 +615,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -654,6 +654,10 @@ gitbook.start({
 "text": null
 },
 "download": ["sciguide.pdf", "sciguide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

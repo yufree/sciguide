@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 3 科研现状概览 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 3 科研现状概览 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-12-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="know.html"/>
 <link rel="next" href="thought.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -42,7 +43,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -59,6 +59,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -391,9 +392,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>定居后的社会出现了更细致的分工，例如一个村落需要祭祀、防卫、生产、医疗等部门维持生存结构，这种分工有着自己的生命力，一旦产生会让整体受益，同时也会让这种结构加强。同样的，这种分工模式并不惟一，但如果两个定居的社会共同体产生利益矛盾，最后剩下来的总是一种更有利群体生存的模式。这个模式下的行为规则形成了社会道德的起源。这同时也是一个路径依赖的过程，总会带有一些副产品例如民俗，很多时候我们就是通过副产品来回溯过去。如同对进化过程的研究一致，使用幸存者就是最好的或最合理的逻辑是不恰当的，我们需要通过回溯来发现一些制度历史上的合理性与偶然性，逻辑自洽并不代表历史真相，这点对科研认识也是很重要的。然而，这个阶段的社会政治经济体制依然很大程度被自然条件所控制，多数规则要么偏向农业社会，要么偏向商业经济。人类的视野逐渐开阔，但基于血缘与地域的多样化依然可以保留，直到更追求效率的技术与体制规则进一步交互作用，孕育出近代工业社会。</p>
 <p>近代工业社会将分工与效率推向了极致，影响的范围从多个国家推广到了全球。伴随而来的就是一套基于陌生人交流法则的法制社会而不再依赖熟人社会里宗法或潜规则。交通技术例如航海、汽车、火车的进步打破了先进知识的区域内传播，所有国家都会倾向于遵循同样的工业标准，知识传播语言也尽可能一致例如使用阿拉伯数字计数或标准计量单位，法律也会去遵循共通的法则来处理陌生人间的关系。科学研究在这个过程中起了很重要的作用，而工业化也不断向科研提出需求，此时科学研究从精英们的兴趣爱好变成了巨大的财富来源，每一次技术革新都服务了社会，而几乎所有的社会经济体都会拿出资金支持科研。务实一点的国家或企业会对工程学优先发展，而对自然科学的支持则颇有情怀意味，毕竟一旦经济下滑，最先拿不到钱的都是基础科研等见效慢的学科。这种社会整体的功利主义自产生之时就展示了巨大的生命力，甚至不断影响了社会中个体的决策行为。</p>
 <p>现代社会基本是延续了近代工业社会对分工与效率的追求且交流限制进一步被信息技术打破。现代社会的进步往往是构建在前人开拓领域之上的而不是像近代社会那样开拓全新的领域，特别在技术领域，新技术往往是很多现有技术的叠加或组合。对分工的追求导致工业品的生产与消费不再由一个人完成，人越来越嵌入到社会机器运转的齿轮之中，不用关心所需之物如何产生而更多关注其功用，而很多技术的使用者并不清楚原理，此时技术黑箱与魔法差异不大。而新产生的职业带有明显的目的性，例如心理咨询师就是要解决心理问题、营养师就是要给出最好的营养搭配、财务顾问就是能给个稳定的投资回报率、经济学家就是要能预警经济危机、科学家就是要能把核聚变搞成可控的等。不过，很多新产生的职业虽然事实上发展出了自己的术语或黑话体系，但并不能真的解决问题而仅仅是用专业感给现代人确定性与安全感，毕竟作为个体的现代人遇到自己知识外的问题除了寻求专家并信任专家外似乎也没有了探索其他知识领域的勇气。</p>
-<p>这种分工导致的个体角色工具化或目的话经常给现代人带来困惑，现代人会很难理解科学结论里的概率而很快把概率转化为有用或没用这样的定性判断，例如传染病出现后现代分工制度会很快给出疫苗，但如果打了疫苗依然被感染就会被舆论放大，只是事实上疫苗的有效率从来都到不了100%，现代人的世界观是决定论的而科学需要概率化的世界观。现代人会认为总存在专业人士来解决发生的问题，但事实上很多现在发生的问题历史上虽有类似，但需要因地制宜解决。我们的现代教育系统并不能及时提供解决新问题的人才而更多是传授有客观标准评判的知识，创新、灵感还有教材外自由发挥的内容很难培养与评价，但这些对解决问题很重要。</p>
-<p>现代社会已经不存在真正意义上通才了，甚至历史上的所谓通才知道的内容也不比现在完成义务教育的人多多少。唯一比较接近这个概念的是学者，不过学者现在如果不挂个专家头衔也很难发声。职业人士与专家看似一致但内核不同。职业人士追求的是标准化可持续的行业利益，专家则是从知识量来判断。职业化行业可以为了内部利益向大众营销价值观与品牌感，但专家更多是就事论事，远离利益讨论。很多现代人尽力维护的专家形象其实是为了维护自己的职业化饭碗别被时代甩开，但目光长远的专家学者则时刻准备迎接新时代。</p>
-<p>分工对人的异化或者工具化既促进了现代社会经济发展效率，也制造了大量的现代社会特有的问题。现代社会对效率的追求主要是为了迎合工业革命以来的增长现象。现代社会犹如一台机器，能源供应以化石燃料为主，在几百年的时间里把植物上亿年从大气中固定的碳重新释放回大气。伴随技术进步，能源的供应似乎是有其他解决方案的，例如可再生能源与核能。在解决动力问题后，机器的生产出的产品还需要被消费掉，支持消费需求的则同样是过去几百年，甚至更具体说就是二战以来才出现的人口大爆炸，近似指数增长的人口带来了巨大的需求与创造新需求的空间。不过，目前几乎可以确定伴随经济发展，全球人口增长的趋势将在几十年内终结，很多发达国家如果排除掉来自生育率较高的发展中国家新移民，人口事实上也早就停止增长了。或许现代社会会不断给现代人新的需求增长点，但人数只要不涨了，人口总需求端疲软的现象是一定会发生的，这会直接终结掉现代社会的增长逻辑。不过全局性衰退可能并不影响局部繁荣，当前人口虽然下降但依然向大都市圈集中，局部增长的代价是更大范围的衰退。</p>
+<p>这种分工导致的个体角色工具化或目的化经常给现代人带来困惑，现代人会很难理解科学结论里的概率而很快把概率转化为有用或没用这样的定性判断，例如传染病出现后现代分工制度会很快给出疫苗，但如果打了疫苗依然被感染就会被舆论放大，只是事实上疫苗的有效率从来都到不了100%，现代人的世界观是决定论的而科学需要概率化的世界观。现代人会认为总存在专业人士来解决发生的问题，但事实上很多现在发生的问题历史上虽有类似，但需要因地制宜解决。我们的现代教育系统并不能及时提供解决新问题的人才而更多是传授有客观标准评判的知识，创新、灵感还有教材外自由发挥的内容很难培养与评价，但这些对解决问题很重要。</p>
+<p>现代社会已经不存在真正意义上的通才了，甚至历史上的所谓通才知道的内容也不比现在完成义务教育的人多多少。唯一比较接近这个概念的是学者，不过学者现在如果不挂个专家头衔也很难发声。职业人士与专家看似一致但内核不同。职业人士追求的是标准化可持续的行业利益，专家则是从知识量来判断。职业化行业可以为了内部利益向大众营销价值观与品牌感，但专家更多是就事论事，远离利益讨论。很多现代人尽力维护的专家形象其实是为了维护自己的职业化饭碗别被时代甩开，但目光长远的专家学者则时刻准备迎接新时代。</p>
+<p>分工对人的异化或者工具化既促进了现代社会经济发展效率，也制造了大量的现代社会特有的问题。现代社会对效率的追求主要是为了迎合工业革命以来的增长现象。现代社会犹如一台机器，能源供应以化石燃料为主，在几百年的时间里把植物上亿年从大气中固定的碳重新释放回大气。伴随技术进步，能源的供应似乎是有其他解决方案的，例如可再生能源与核能。在解决动力问题后，机器生产出的产品还需要被消费掉，支持消费需求的则同样是过去几百年，甚至更具体说就是二战以来才出现的人口大爆炸，近似指数增长的人口带来了巨大的需求与创造新需求的空间。不过，目前几乎可以确定伴随经济发展，全球人口增长的趋势将在几十年内终结，很多发达国家如果排除掉来自生育率较高的发展中国家新移民，人口事实上也早就停止增长了。或许现代社会会不断给现代人新的需求增长点，但人数只要不涨了，人口总需求端疲软的现象是一定会发生的，这会直接终结掉现代社会的增长逻辑。不过全局性衰退可能并不影响局部繁荣，当前人口虽然下降但依然向大都市圈集中，局部增长的代价是更大范围的衰退。</p>
 <p>追求增长的发展逻辑其实自发破坏掉了很多农业社会以来形成的宗教世界观。现代人的伦理道德大都起源于农业社会甚至更早的狩猎采集社会，很多世界观跟增长是内在矛盾的，例如前现代社会的民俗宗教喜欢用轮回的概念，但轮回是需要收支平衡的，在信息交流效率低下的时代你可以说轮回到别处了也没法考证，但现在世界人口就摆那里了，农业出现前世界人口1500万左右，农业社会出现后到第一次工业革命中的1804年，世界人口才到达10亿。之后的两百多年里，这个数字变成了70亿。但并不是说1900年到40亿，事实上这个时间是1974年，甚至到达30亿都是1959年的事。这个快速增长时期的人口需要的前世从哪里来？清末四亿人口死了都别转去凑中国现在人口都得累积上几代人，阎王爷必须要掌握未来几百上千的人口变化才能在此时此刻凑够轮回总数，孟婆汤也得增加防腐剂来应对每天人数的波动。也许有人又要搬出六道轮回的理论补丁让人畜互相转生来凑数，但现代社会的绿色革命又不只是推动人口增长，畜牧业增长更是惊人，更不用说我们的生物制药行业为了提取某些不方面化学合成的物质而使用的工业级培养皿。物种虽然在经历大灭绝但数量上可一直都在增长，毕竟自从人掌握固氮技术以来人工固氮总量上已经超过了自然固氮，而有机氮是氨基酸的必要组成部分，因此现代社会里我们事实上“生产”出了自己形成了人口大爆炸。说白了轮回机制的提出者囿于时代根本预见不到一个增长主导的现代社会，后面无论怎么打补丁也会被统计事实打脸。</p>
 <p>此外，为了解决对未知而恐惧而构建的算命系统也经不起现代社会的检验，毕竟八字算命一共就能容纳561600种人，当今世界人口70亿，平均来看，每个八字有一万多人，也就是说八字其实不够用了，重复率太高，天煞孤星都不孤独，当然这类理论也有些打补丁的理论但明显是后来人意识到问题了增加的解释。现在保留下来的宗教都有一定世俗化趋势，模糊规避掉这些脱离实际的东西。现代社会的新宗教表现形式则更多是品牌崇拜、时间旅行、外星人这一类起码不会直接被经验事实证伪的行为与理念，否则根本经不起推敲。现代社会的增长逻辑是一种进步，起码对旧时代的破坏是很彻底的。</p>
 <p>今天，增长逻辑还深深植入到现代社会的经济运转之中了，金融行业发展推动了资本的全球流动。资本所到之处会在区域内投资建厂、提供工作岗位、提升基础设施并创造繁荣景象，但同时当资本发现无法获益时就会毫不犹豫流向下一个价值洼地。这个过程之前会被限制在国家之内推动全行业进步，但全球化信息化的现代社会之中，资本流动更多考虑的是低成本高收益，因此我们会看到很多国家特别是小国家的行业门类是不全的。他们嵌在全球供应链上去发展，而具体品类产品的生产总是会集中到利润最高的几个区域或国家里且通过不断扩大规模降低边际成本，这同样是资本驱动，经济学上叫做比较优势。资本永远是逐利的，但当全球所有行业或区域因为各种限制或风险无法产生足够的利润，资本将会自行退出历史舞台。不过，现代社会目前还没有提出一个增长逻辑之外的经济运行方式与科技发展模型，以美元为中心的世界货币价值流通体系目前也遭受了很多新技术与保守主义的冲击，现代社会需要给出解决方案。更深远的影响则是个体对增长逻辑的信仰，现代人普遍展示出了对新技术与美好未来的向往且过去几十年这个现象也是符合增长信仰的，但从科学视角看增长更多是一种现象而非规律，会因为时代背景的不同而出现变化。</p>
@@ -431,7 +432,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>研究生虽然在学术圈里地位最低但却是现代科研的主力军，因为社会对高学历人才的需求、高校对就业率的追求及社会中普遍存在的“深造”思维，在读研究生群体这两年在快速壮大，甚至超过了1999年大学扩招前本专科生群体总人数，而很多研究项目事实上是劳动密集型产业而培养欠缺。这就造成了研究生教育的学历贬值、毕业延期、学术职业发展越来越难及解决问题综合性能力不足的问题。</p>
 <div id="研究生蓄水池" class="section level3" number="3.2.1">
 <h3><span class="header-section-number">3.2.1</span> 研究生蓄水池</h3>
-<p>2020 年国内研究生入学考试报名人数刷了新高，达到 341 多万，而这里面应届生与往届生人数相当，报录比在扩招的大背景下还在不断降低。有一个很有意思的现象，报考研究生的人数并不是一直上升的，事实上，2007 年、2013 年都出现过报考高峰然后下一年回落的情况，回落可能跟当时经济形势上行有关，当社会岗位需求旺盛时，两三年的学位投资就可能是一笔很高的机会成本。但 2016 年起，研究生入学考试报名人数重新上升，这侧面体现了毕业生对就业的担忧。而且往届生与应届生报录人数同时增长，说明毕业生普遍认为学位比工作更有价值，或者说本科就业形势不佳。</p>
+<p>2020 年国内研究生入学考试报名人数刷了新高，达到 341 万，而这里面应届生与往届生人数相当，报录比在扩招的大背景下还在不断降低。有一个很有意思的现象，报考研究生的人数并不是一直上升的，事实上，2007 年、2013 年都出现过报考高峰然后下一年回落的情况，回落可能跟当时经济形势上行有关，当社会岗位需求旺盛时，两三年的学位投资就可能是一笔很高的机会成本。但 2016 年起，研究生入学考试报名人数重新上升，这侧面体现了毕业生对就业的担忧。而且往届生与应届生报录人数同时增长，说明毕业生普遍认为学位比工作更有价值，或者说本科就业形势不佳。</p>
 <p>我们再看看高考，中国高考报名人数在 07-09 这三年都突破了千万，此后人数稳定在九百四五十万的样子，录取则是在 2016 年达到巅峰的 705 万。对比高考录取人数与研究生录取人数就会发现高校中本科生规模已经见顶，但研究生规模持续增长，录取难度整体下降可能也是吸引考生报名的重要因素。</p>
 <p>可以预计如果研究生持续扩招（推测十年内见顶，因为应届生快不够用了），搞考研培训、出国培训、期刊校稿还有高校教职将出现最后的快速发展窗口，之后将进入稳定或衰退期。然而，这之前我们体会更明显的则会是更多关于研究生团体的讨论与新闻调查，我们的研究生教育发展可能还跟不上研究生团体扩大的速度，中间的差距是一头典型灰犀牛，潜伏巨大系统性危机。</p>
 <p>从学生角度看，眼下的研究生报考热潮跟经济压力有关而跟科研兴趣没啥关系，所以很有可能出现学生自认打工仔的情况而在混日子等就业的情况，高校或研究所的心理辅导如果跟不上会出不少极端问题。从导师角度看，近二十年的高校扩张吸收了大量新导师，而持续增加的劳动力所需要的管理经验基本都比较欠缺，毕竟他们读研时周围没那么多学生，研究生无指导或指导过激情况会不断出现。我们会在近几年看到一系列因为研究生极端事件而采取的改进，但能否做到预防，就看高校研究所的领导团队是否有意识了。</p>
@@ -442,15 +443,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="毕业延期问题" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> 毕业延期问题</h3>
-<p>根据最近 20 年研究生招生情况可以看出，研究生人数比例 研究所跟高校比例大概在 1:3，硕士的扩招力度是远高于博士的，但两者都在扩，20 年前一共 6 万多，现在仅博士每年录取就有 7 万多，硕士则扩张了 10 倍有余，达到每年六七十万的录取人数。从研究生毕业状况看，伴随扩招，每年招生人数与毕业人数有相当的差距，但比较吊诡的是博士招生在增长而毕业人数却趋稳了，这基本暗示延期，特别是博士延期的常态化。从在读人数上看，研究生这个临时身份群体在不断扩大，这造成了前文所述的研究生导师矛盾的激化，除了扩招影响，另一个自然就是前面提到的延期问题。</p>
-<p>从教育部公布的数据推算，基本上博士延期概率超过 50%，硕士延期概率是个位数，也就是说没有延期毕业的硕士，没有按期毕业的博士，而且延期超过50%的时间已经超过10年了。同时另一个现象也值得关注，那就是女性研究生的延期概率是普遍低于平均水平的，那么对应的男性研究生延期概率会更加惨不忍睹。</p>
-<p>如果我们用在校生去除当年毕业生，会得到一个预估的毕业年限，结果显示博士需要 6 年多毕业而硕士也需要 3 年多毕业，硕士那个考虑到延期概率不高还可以接受，博士那个就有点反人类了，而且从近几年情况看这个毕业年限还在增加。其实答案很简单，就是扩招导致的人口在高校或研究机构的滞留，那么如何去除这个影响呢？考虑到博士硕士其实应该是 2到4 年内毕业，我们只要用当年录取的人数去对比 2到4 年后毕业的人数就可以了。考虑到博士毕业率应该低于硕士且硕士毕业率不应该超过 100%，应该是 3 年毕业的数据比较可信，这里我们会发现 3 年毕业率要远高于延期概率，这又是怎么回事？</p>
-<p>这里就没数据支持了，但大多数研究生都听过硕博连读这个概念，其实如果三年毕业为真，那么硕博加起来应该是 6 年，而硕博连读应该是 5 年，如果博士延期是常态化的，那么我想这里面很大一部分比例是硕博连读。估计再过几年，考博的比率可能会更低而硕博 6 年将成为默认的学习年限。有打算硕士毕业出国读博的可以考虑下了，年限上其实吃亏不多而且国外会有老板没钱了逼着早点毕业的情况。</p>
-<p>刚才说了研究生毕业的供给端，下面看看需求端也就是教职的变化。国内教职因为 1999 年开始的扩招导致在 21 世纪的第一个 5 年大量的扩展教职，这样的后果就是有一个 5 年的教职年龄高峰，这个高峰占据了大量的教职。从数据上看，目前这个高峰年龄段在 51-55 岁，都算是当打之年，如果退休年龄没有明显推迟的话，那么在 10-15 年后应该可以看到一个因为退休高峰导致的教职空缺期。那么 10-15 年后谁博士毕业呢？大概是现在读中学的孩子。其实考虑硕博 6 年加本科 4 年，每个高校都有义务在学生刚接触高等教育或研究时给他们领先当前技术 10 年的教材与方法，否则学生 10 年前选了小灵通网络优化专业，博士毕业基本就只有转行了。这里再看下性别问题，数据显示女性教职前期扩张的要更厉害，平均年龄也更低，大概要 20 年左右才能迎来退休高峰的教职空缺，如果校方固定当前男女比，那么其实对有更低概率延期的女性并没有什么优势。</p>
-<p>教职中教授的年龄分布状况也很有意思，当前教授主流年龄是 51-55 岁，反推下基本是刚改革开放后上的大学，经历应该挺丰富的。副教授整体要比教授年轻 10 岁，大概 90 年前后上大学，46-50 岁这个年龄段人数基本稳定，说明升教授基本就是前一个年龄段，从年龄分布上看 35-45 岁人多，不同代际间竞争会激烈些。</p>
-<p>前面着重强调年龄分布可能带来的教职空缺，另一种空缺就是所谓扩张期或窗口期，我们不考虑退休，从年龄分布上看这一部分的人数似乎比较稳定。每年的教职数一直在提高，而是似乎斜率比较稳定。但是女性的教职数增长的回归斜率只有总数的 1/3，也就是说每增长 3 个教职才会有一个是女性的，这说明教职市场存在一定的性别歧视。但这个问题不好直接下结论，因为辛普森悖论也是同样的语境。同时，教授与副教授教职增长的斜率低于总体，暗示了教职里存在的层级结构。总之，目前还算是一个稳定的窗口期，教职数不断增长，属于利好；但成长空间不算大，别忘了博士毕业生可是年年增长，所以以后熬年限是肯定不行的，31-35 岁的副教授人数逐年下降，不是升迁（概率低）就是收紧了要求转而直接从海外引进人才，诸君努力吧。</p>
-<p>我们都知道研究生学历在贬值，那么究竟贬到什么状况了呢？我计算了同年毕业的博士与硕士人数比例，发现硕士的贬值效果更强，博士相比之下反而在升值，女博士升值更高。当然，大前提是五十步笑百步，都是贬值。基本的情况就是 1 个博士大概对应 10 个硕士，显然硕士作为一个学位扩的有点太猛了。后面的分析就不考虑硕士找教职了，基本没戏。</p>
-<p>新增教职数这些年基本稳定在 2 万这个水平，博士毕业生大概超过 5 万，也就是说教职市场在今后可预期的时间里撑死也就能解决一半博士的就业，另外有一半肯定会转行。考虑到博士学位对硕士学位是升值的，估计非教职市场上应该挺容易就业的，当然看你干不干了。新教职里女性比例是低于人口比例的，但这二十年却一直在增长，同样在增长的则是博士毕业生中女性的比例，伴随这个趋势，教职里对女性的歧视似乎是要好于社会其他行业的。</p>
+<p>根据教育部的公开数据，近20年研究所与高校的研究生录取比例均大概为1:3，硕士和博士都在扩招，但对硕士的扩招力度远高于博士。20年前我国每年一共招收6万多研究生，现在仅博士每年就录取10万多人，硕士则扩张了10倍有余，录取人数达到每年接近一百万，研究生在校生规模也在快速增长。从研究生毕业状况看，伴随扩招，每年的招生人数与毕业人数有相当的差距。但比较奇怪的是，博士招生人数在不断增长但毕业人数的增长幅度却增长有限且长期少于前几年的录取人数了，这基本暗示延期，特别是博士延期的常态化。</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="view.html#cb1-1" aria-hidden="true" tabindex="-1"></a>graduate <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;data/graduate.csv&#39;</span>, <span class="at">check.names =</span> F)</span>
+<span id="cb1-2"><a href="view.html#cb1-2" aria-hidden="true" tabindex="-1"></a>graduate2 <span class="ot">&lt;-</span> graduate[graduate<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Total&#39;</span>,]</span>
+<span id="cb1-3"><a href="view.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(showtext)</span></code></pre></div>
+<pre><code>## Loading required package: sysfonts</code></pre>
+<pre><code>## Loading required package: showtextdb</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="view.html#cb4-1" aria-hidden="true" tabindex="-1"></a>showtext<span class="sc">::</span><span class="fu">showtext_auto</span>()</span>
+<span id="cb4-2"><a href="view.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb4-3"><a href="view.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Enrolment(Master)</span><span class="st">`</span>,<span class="at">xlab =</span> <span class="st">&#39;年份&#39;</span>,<span class="at">ylab =</span> <span class="st">&#39;人数&#39;</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;black&#39;</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="fu">min</span>(graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Admitted(Master)</span><span class="st">`</span>),<span class="fu">max</span>(graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Enrolment(Master)</span><span class="st">`</span>)),<span class="at">main=</span><span class="st">&#39;硕士研究生&#39;</span>)</span>
+<span id="cb4-4"><a href="view.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Graduates(Master)</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col =</span> <span class="st">&#39;red&#39;</span>)</span>
+<span id="cb4-5"><a href="view.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Admitted(Master)</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb4-6"><a href="view.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;topleft&#39;</span>,<span class="at">legend =</span> <span class="fu">c</span>(<span class="st">&#39;在校生&#39;</span>,<span class="st">&#39;录取人数&#39;</span>,<span class="st">&#39;毕业人数&#39;</span>), <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;black&#39;</span>,<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;red&#39;</span>),<span class="at">pch=</span><span class="dv">19</span>)</span>
+<span id="cb4-7"><a href="view.html#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="view.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Enrolment(Doctor)</span><span class="st">`</span>,<span class="at">xlab =</span> <span class="st">&#39;年份&#39;</span>,<span class="at">ylab =</span> <span class="st">&#39;人数&#39;</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;black&#39;</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="fu">min</span>(graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Entrants(Doctor)</span><span class="st">`</span>),<span class="fu">max</span>(graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Enrolment(Doctor)</span><span class="st">`</span>)),<span class="at">main=</span><span class="st">&#39;博士研究生&#39;</span>)</span>
+<span id="cb4-9"><a href="view.html#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Graduates(Doctor)</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col =</span> <span class="st">&#39;red&#39;</span>)</span>
+<span id="cb4-10"><a href="view.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(graduate2<span class="sc">$</span>year,graduate2<span class="sc">$</span><span class="st">`</span><span class="at">Entrants(Doctor)</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb4-11"><a href="view.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;topleft&#39;</span>,<span class="at">legend =</span> <span class="fu">c</span>(<span class="st">&#39;在校生&#39;</span>,<span class="st">&#39;录取人数&#39;</span>,<span class="st">&#39;毕业人数&#39;</span>), <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;black&#39;</span>,<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;red&#39;</span>),<span class="at">pch=</span><span class="dv">19</span>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>前面说了研究生的供给端，下面看看需求端也就是教职的变化，这里只考虑博士，因为当前教职对学历的要求已经比较高了。同样看来自教育部的数据，由于本科生从1999年开始扩招，教职数也一直增加。不过，高级职称的增加速度明显低于教职总数的增加速度而中级职称教职在快速增加。同时，从年龄分布上看，当前教职年龄高峰在 55~59岁，大概是二十年前大学扩招时入职的。如果退休年龄没有明显推迟的话，那么在10年内应该可以看到一个因为退休高峰导致的教职空缺期。10年内什么年龄段的人会博士毕业呢？大概是当前的本科生，考虑到本科4年加硕博连读6年，每个高校都有义务在学生刚接触高等教育或研究时给他们能实时吸纳研究进展的教学大纲，否则要是学生10年前选了小灵通网络优化专业，那么等到博士毕业基本就只有转行了。</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="view.html#cb5-1" aria-hidden="true" tabindex="-1"></a>faculty <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;data/faculty.csv&#39;</span>, <span class="at">check.names =</span> F)</span>
+<span id="cb5-2"><a href="view.html#cb5-2" aria-hidden="true" tabindex="-1"></a>faculty2 <span class="ot">&lt;-</span> faculty[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Total&#39;</span>, ]</span>
+<span id="cb5-3"><a href="view.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="view.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb5-5"><a href="view.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(faculty<span class="sc">$</span>year[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Total&#39;</span>],faculty<span class="sc">$</span>total[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Total&#39;</span>],<span class="at">pch=</span><span class="dv">19</span>, <span class="at">main=</span><span class="st">&#39;教职数&#39;</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="fu">max</span>(faculty<span class="sc">$</span>total)),<span class="at">xlab =</span> <span class="st">&#39;年份&#39;</span>, <span class="at">ylab =</span> <span class="st">&#39;人数&#39;</span>)</span>
+<span id="cb5-6"><a href="view.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty<span class="sc">$</span>year[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Professors&#39;</span>], faculty<span class="sc">$</span>total[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Professors&#39;</span>],<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb5-7"><a href="view.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty<span class="sc">$</span>year[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Asso. Professors&#39;</span>],faculty<span class="sc">$</span>total[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;Asso. Professors&#39;</span>],<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb5-8"><a href="view.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty<span class="sc">$</span>year[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;middle&#39;</span>],faculty<span class="sc">$</span>total[faculty<span class="sc">$</span>category <span class="sc">==</span> <span class="st">&#39;middle&#39;</span>],<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;orange&#39;</span>)</span>
+<span id="cb5-9"><a href="view.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;topleft&#39;</span>,<span class="at">legend =</span> <span class="fu">c</span>(<span class="st">&#39;总数&#39;</span>,<span class="st">&#39;教授&#39;</span>,<span class="st">&#39;副教授&#39;</span>,<span class="st">&#39;中级职称&#39;</span>), <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;black&#39;</span>,<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;red&#39;</span>,<span class="st">&#39;orange&#39;</span>),<span class="at">pch=</span><span class="dv">19</span>)</span>
+<span id="cb5-10"><a href="view.html#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="view.html#cb5-11" aria-hidden="true" tabindex="-1"></a>col <span class="ot">=</span> RColorBrewer<span class="sc">::</span><span class="fu">brewer.pal</span>(<span class="dv">8</span>,<span class="st">&#39;Set2&#39;</span>)</span>
+<span id="cb5-12"><a href="view.html#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">30 Years &amp; Under</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>, <span class="at">main=</span><span class="st">&#39;教职数&#39;</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">110000</span>),<span class="at">xlab =</span> <span class="st">&#39;年份&#39;</span>, <span class="at">ylab =</span> <span class="st">&#39;人数&#39;</span>,<span class="at">col=</span>col[<span class="dv">1</span>])</span>
+<span id="cb5-13"><a href="view.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">31-35years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">2</span>])</span>
+<span id="cb5-14"><a href="view.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">36-40years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">3</span>])</span>
+<span id="cb5-15"><a href="view.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">41-45years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">4</span>])</span>
+<span id="cb5-16"><a href="view.html#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">46-50years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">5</span>])</span>
+<span id="cb5-17"><a href="view.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">51-55years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">6</span>])</span>
+<span id="cb5-18"><a href="view.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">56-60years</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">7</span>])</span>
+<span id="cb5-19"><a href="view.html#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(faculty2<span class="sc">$</span>year,faculty2<span class="sc">$</span><span class="st">`</span><span class="at">61 Years &amp; Over</span><span class="st">`</span>,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span>col[<span class="dv">8</span>])</span>
+<span id="cb5-20"><a href="view.html#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;topleft&#39;</span>,<span class="at">legend =</span> <span class="fu">c</span>(<span class="st">&#39;30岁以下&#39;</span>,<span class="st">&#39;30-34&#39;</span>,<span class="st">&#39;35-39&#39;</span>,<span class="st">&#39;40-44&#39;</span>,<span class="st">&#39;45-49&#39;</span>,<span class="st">&#39;50-54&#39;</span>,<span class="st">&#39;55-59&#39;</span>,<span class="st">&#39;60岁以上&#39;</span>), <span class="at">col =</span> col,<span class="at">pch=</span><span class="dv">19</span>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>除了退休带来教职的空缺外，教职数也在扩增。每年的教职数一直在稳定增长，但成长空间不算大，别忘了博士毕业生数可是逐年增长的，所以以后熬年限评职称是肯定不行的，目前30-34岁这个年龄段的教职人数在快速上升而前一个年龄段的人数并不多也比较稳定，这说明取得教职大概率是而立之年之后的事。这种较长的培养年限显著区别于其他行业，因为很多行业从业人员进入30-34岁基本进入了中层，而从事教职这个年龄刚刚入行。
+这些年新增的教职数基本稳定在2万这个水平，但最近几年显著增加，2019年与2020甚至超过3万。同期每年新增博士毕业生超过6万而录取数超过了10万，也就是说，教职市场在今后可预期的时间里撑死也就能解决一半博士毕业生的就业问题，另外一半肯定要转行。</p>
+<p>总之，目前博士研究生会长期面临毕业延期问题，同时教职市场的增长也无法消化当前的毕业生，需要同时考虑非教职的就业。</p>
 </div>
 <div id="学术职业路径" class="section level3" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> 学术职业路径</h3>
@@ -463,7 +498,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>下面是一个图表，可用来评估不同阶段的状态。</p>
 <table>
-<caption><span id="tab:unnamed-chunk-1">Table 3.1: </span>理想学术路径</caption>
+<caption><span id="tab:unnamed-chunk-3">Table 3.1: </span>理想学术路径</caption>
 <thead>
 <tr class="header">
 <th align="left">指标</th>
@@ -564,7 +599,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>另一个算法可以用博导数量估计，毕竟每个博士背后都有一个博导。那么全国博导能有多少呢，乐观估计 6 万，年龄分布从 35 岁到 65 岁，如果是均匀分布的话且保证 65 岁退休，那么每年能产生出 2 千正高岗位，除以当年大约 7 万的博士人数，这个比例不到百分之三。就算我把那些做学术但不培养博士的岗位算上，这个比例也不会超过 5%。硕士毕业生 15 年大概 50 万，说明副高大概最多也就这个数，每年也就 1-2 万岗位，也就是说大概 20% 的博士最终能走到副高，其实这个比例也不算高，不过可以作为大多数人可以预想的目标。而副高里其实也就四分之一的人是真正可以独立科研的，其余的都是小老板，有自己独立课题组的人占当年毕业生的比例都是 5% 以下。</p>
 <p>也就是说，留在学术界的博士里面大部分人最后都是没法继续攀爬到学术带头人甚至独立课题组的。或者错过了年龄，或者需要照顾家庭，这才是常态，绝大部分博士止步副高二十年是很正常的事，上面那条学术路径只适合千分之一的人走完。所以说选了科研的很多人最后会有副业或其他重心，通过咨询、培训与职业化路径例如教书、律师、医生还有工程师来实现社会价值与自我价值，在前沿努力的科学家固然可敬，但机会总数固定后人数增加就会造成人才外溢。</p>
 <p>你可能会说做学术要有一定理想，不能这么功利，说这话的有相当比例站着说话不腰疼。如果你已经走到教授研究员这个档次自然可以跟人谈理想，但坦白说现在的博导平均拿到学位都是 20 年前的事了，那个时候博士一年毕业 7 千多人，而现在博士毕业生数目翻了 10 倍，换句话在目前的晋升条件下你成为教授的概率大概是 50%，如果有一半不做学术，几乎可以肯定就是教授了。10 年前一年博士毕业人数大概是现在的一半多，这意味着其晋升教授可能性也有十分之一，尚算合理。但 10 年后如果博士年毕业生达到 10 万，那么其成为教授将跟现在成为优青差不多难度，代际不平衡是十分严重的。不了解基础状况就把人往坑里带的后果挺严重的，自上而下，金字塔顶端人数就那么多，一味扩大底端几乎意味着大量博士要陷入无尽的博后循环之中去拉伸等级。</p>
-<p>所以其实我挺理解很多劝博士毕业转行的看法的，那怕你手握博士学位，目前在国内想走到独立课题组也是个5%概率的事，大概 20 个人里有一个。考虑到一般博士同学同院系大概也就是 20 个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？</p>
+<p>所以其实我挺理解很多劝博士毕业转行的看法的，哪怕你手握博士学位，目前在国内想走到独立课题组也是个5%概率的事，大概 20 个人里有一个。考虑到一般博士同学同院系大概也就是 20 个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？</p>
 <p>同时要注意，国内博士毕业生人数还在不断上升，一方面说明教职还是有空间的，另一方面则暗示了今后博士毕业生生存环境将会更加恶劣，竞争会更加激烈。同时，目前教职数目会逐渐趋稳，如果你没赶上新学科新方向的窗口期大爆发，基本就是始终要接纳这个竞争强度了，只会更强不会更弱。而且有些研究方向必然因为学科发展走向没落，没必要跟一伙老气横秋的人抱团取暖，该转方向就转，反正大家都没基础。</p>
 <p>同时我们看一下美国，美国生物医药博士最终走上常任轨的比例大概 7-15%，另外那些人并不是人间蒸发，而是去了业界做研发（R&amp;D）、中间人（产品支持、技术支持、销售、科学写作等）、运营（制造业、分析人、产品经理等）、商业（融资、投资等）以及法律相关行业（专利、技术转移等）。这个比例比国内要低，也就是转行对于美国博士而言是正常的职业选择，也是为社会输送人才的重要途径。我们将在本书最后一章详细讨论转行的职业选择问题。</p>
 <p>读博转行可能也是个好事，早点把青春奉献到知识洼地去才更能实现自己的价值，相比学术界科研，业界科研可能是一个很好的选择，毕竟能磕下博士学位，搞点别的也应该没啥问题。博士及后面的博后阶段可以很好锻炼自己的专业技能并正确评价自己，通过投稿开会获取业内同行人脉联系并掌握面向社会寻求资源解决问题的能力，这种对自己了解对业内有认可且向外界拿许可的经历在各行各业都是相通的，关于怎么转换技能与额外的就业技能我们会在第九章讨论。</p>
@@ -621,50 +656,80 @@ p(D|H_0) = p(H_0|D)
 <li>固定的真实差异加上随机数</li>
 </ul>
 <p>第一种情况是规律完全成立；第二种是完全无规律；第三种是可观察或可测量的数据。生成三组数据后我们对其分组（简单二分）进行10000次随机化操作，然后进行t检验，记录并观察p值。</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="view.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb1-2"><a href="view.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 真实差异</span></span>
-<span id="cb1-3"><a href="view.html#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>,<span class="dv">260</span>),<span class="fu">rep</span>(<span class="dv">200</span>,<span class="dv">260</span>))</span>
-<span id="cb1-4"><a href="view.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 随机差异</span></span>
-<span id="cb1-5"><a href="view.html#cb1-5" aria-hidden="true" tabindex="-1"></a>xr <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">520</span>)</span>
-<span id="cb1-6"><a href="view.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 考虑误差的真实差异</span></span>
-<span id="cb1-7"><a href="view.html#cb1-7" aria-hidden="true" tabindex="-1"></a>xm <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>,<span class="dv">260</span>),<span class="fu">rep</span>(<span class="dv">200</span>,<span class="dv">260</span>))<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">520</span>)</span>
-<span id="cb1-8"><a href="view.html#cb1-8" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> pr <span class="ot">&lt;-</span> pm <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb1-9"><a href="view.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>){</span>
-<span id="cb1-10"><a href="view.html#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 随机化分组</span></span>
-<span id="cb1-11"><a href="view.html#cb1-11" aria-hidden="true" tabindex="-1"></a>        g <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="dv">520</span>,<span class="at">replace =</span> T))</span>
-<span id="cb1-12"><a href="view.html#cb1-12" aria-hidden="true" tabindex="-1"></a>        p[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(x<span class="sc">~</span>g)<span class="sc">$</span>p.value</span>
-<span id="cb1-13"><a href="view.html#cb1-13" aria-hidden="true" tabindex="-1"></a>        pr[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(xr<span class="sc">~</span>g)<span class="sc">$</span>p.value</span>
-<span id="cb1-14"><a href="view.html#cb1-14" aria-hidden="true" tabindex="-1"></a>        pm[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(xm<span class="sc">~</span>g)<span class="sc">$</span>p.value</span>
-<span id="cb1-15"><a href="view.html#cb1-15" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-16"><a href="view.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(p,<span class="at">breaks =</span> <span class="dv">100</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="view.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pr,<span class="at">breaks =</span> <span class="dv">100</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="view.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pm,<span class="at">breaks =</span> <span class="dv">100</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-2-3.png" width="672" /></p>
-<p>这个结果非常有意思，第一个能看到的现象是如果数据本身存在规律性，那么p值的分布是一个离散分布。这个分布介于0到1之间，越接近0的部分越密集，越接近1的的部分越稀疏，但是如果计算小于0.05，0.5，0.9的比例情况，会发现这种稀疏分布依旧符合均匀分布的概率分布特征。如果数据不存在规律性，那么p值的分布就是很均匀的。如果数据混合了规律性与噪音，依然会显示出这种离散分布特征。下面我用qq图来观察下这个分布跟均匀分布的区别：</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="view.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb4-2"><a href="view.html#cb4-2" aria-hidden="true" tabindex="-1"></a>ref <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>)</span>
-<span id="cb4-3"><a href="view.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref,p)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="view.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref,pr)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="view.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref,pm)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-3-3.png" width="672" /></p>
-<p>可以看到，如果数据本身存在规律性，其随机化分组后的p值虽然跟均匀分布很接近，但qq图上确实会表现出前密后舒的螺旋延伸状态。这里为了区别我再做一个仿真，这次我不是对分组随机而是对采样随机：</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="view.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb7-2"><a href="view.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 固定分组</span></span>
-<span id="cb7-3"><a href="view.html#cb7-3" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">260</span>),<span class="fu">rep</span>(<span class="dv">2</span>,<span class="dv">260</span>)))</span>
-<span id="cb7-4"><a href="view.html#cb7-4" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb7-5"><a href="view.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>){</span>
-<span id="cb7-6"><a href="view.html#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 随机化采样</span></span>
-<span id="cb7-7"><a href="view.html#cb7-7" aria-hidden="true" tabindex="-1"></a>        x <span class="ot">&lt;-</span>  <span class="fu">sample</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>,<span class="dv">260</span>),<span class="fu">rep</span>(<span class="dv">200</span>,<span class="dv">260</span>))<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">520</span>),<span class="dv">520</span>)</span>
-<span id="cb7-8"><a href="view.html#cb7-8" aria-hidden="true" tabindex="-1"></a>        p[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(x<span class="sc">~</span>g)<span class="sc">$</span>p.value</span>
-<span id="cb7-9"><a href="view.html#cb7-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-10"><a href="view.html#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(p,<span class="at">breaks =</span> <span class="dv">100</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="view.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb6-2"><a href="view.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 真实差异</span></span>
+<span id="cb6-3"><a href="view.html#cb6-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>, <span class="dv">260</span>), <span class="fu">rep</span>(<span class="dv">200</span>, <span class="dv">260</span>))</span>
+<span id="cb6-4"><a href="view.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 随机差异</span></span>
+<span id="cb6-5"><a href="view.html#cb6-5" aria-hidden="true" tabindex="-1"></a>xr <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">520</span>)</span>
+<span id="cb6-6"><a href="view.html#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 考虑误差的真实差异</span></span>
+<span id="cb6-7"><a href="view.html#cb6-7" aria-hidden="true" tabindex="-1"></a>xm <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>, <span class="dv">260</span>), <span class="fu">rep</span>(<span class="dv">200</span>, <span class="dv">260</span>)) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">520</span>)</span>
+<span id="cb6-8"><a href="view.html#cb6-8" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> pr <span class="ot">&lt;-</span> pm <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb6-9"><a href="view.html#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>) {</span>
+<span id="cb6-10"><a href="view.html#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 随机化分组</span></span>
+<span id="cb6-11"><a href="view.html#cb6-11" aria-hidden="true" tabindex="-1"></a>  g <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="dv">520</span>, <span class="at">replace =</span> T))</span>
+<span id="cb6-12"><a href="view.html#cb6-12" aria-hidden="true" tabindex="-1"></a>  p[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(x <span class="sc">~</span> g)<span class="sc">$</span>p.value</span>
+<span id="cb6-13"><a href="view.html#cb6-13" aria-hidden="true" tabindex="-1"></a>  pr[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(xr <span class="sc">~</span> g)<span class="sc">$</span>p.value</span>
+<span id="cb6-14"><a href="view.html#cb6-14" aria-hidden="true" tabindex="-1"></a>  pm[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(xm <span class="sc">~</span> g)<span class="sc">$</span>p.value</span>
+<span id="cb6-15"><a href="view.html#cb6-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-16"><a href="view.html#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 显示中文</span></span>
+<span id="cb6-17"><a href="view.html#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&#39;showtext&#39;</span>)</span>
+<span id="cb6-18"><a href="view.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">showtext_auto</span>()</span>
+<span id="cb6-19"><a href="view.html#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>))</span>
+<span id="cb6-20"><a href="view.html#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 展示真实差异t检验下p值的分布</span></span>
+<span id="cb6-21"><a href="view.html#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb6-22"><a href="view.html#cb6-22" aria-hidden="true" tabindex="-1"></a>  p,</span>
+<span id="cb6-23"><a href="view.html#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">breaks =</span> <span class="dv">100</span>,</span>
+<span id="cb6-24"><a href="view.html#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;存在真实差异时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb6-25"><a href="view.html#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb6-26"><a href="view.html#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb6-27"><a href="view.html#cb6-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-28"><a href="view.html#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co"># 展示随机差异t检验下p值的分布</span></span>
+<span id="cb6-29"><a href="view.html#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb6-30"><a href="view.html#cb6-30" aria-hidden="true" tabindex="-1"></a>  pr,</span>
+<span id="cb6-31"><a href="view.html#cb6-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">breaks =</span> <span class="dv">100</span>,</span>
+<span id="cb6-32"><a href="view.html#cb6-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;不存在真实差异时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb6-33"><a href="view.html#cb6-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb6-34"><a href="view.html#cb6-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb6-35"><a href="view.html#cb6-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-36"><a href="view.html#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co"># 展示考虑误差的真实差异t检验下p值的分布</span></span>
+<span id="cb6-37"><a href="view.html#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb6-38"><a href="view.html#cb6-38" aria-hidden="true" tabindex="-1"></a>  pm,</span>
+<span id="cb6-39"><a href="view.html#cb6-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">breaks =</span> <span class="dv">100</span>,</span>
+<span id="cb6-40"><a href="view.html#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;存在真实差异与噪音时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb6-41"><a href="view.html#cb6-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb6-42"><a href="view.html#cb6-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb6-43"><a href="view.html#cb6-43" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="view.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref,p)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<p>这个结果非常有意思，第一个能看到的现象是如果数据本身存在规律性，那么p值的分布是一个离散分布。这个分布介于0到1之间，越接近0的部分越密集，越接近1的的部分越稀疏，但是如果计算小于0.05，0.5，0.9的比例情况，会发现这种稀疏分布依旧符合均匀分布的概率分布特征。如果数据不存在规律性，那么p值的分布就是很均匀的。如果数据混合了规律性与噪音，依然会显示出这种离散分布特征。下面我用qq图来观察下这个分布跟均匀分布的区别：</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="view.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb7-2"><a href="view.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 生成均匀分布</span></span>
+<span id="cb7-3"><a href="view.html#cb7-3" aria-hidden="true" tabindex="-1"></a>ref <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10000</span>)</span>
+<span id="cb7-4"><a href="view.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>))</span>
+<span id="cb7-5"><a href="view.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 用分位图对比均匀分布与不同的p值分布</span></span>
+<span id="cb7-6"><a href="view.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref, p, <span class="at">xlab =</span> <span class="st">&#39;均匀分布&#39;</span>, <span class="at">ylab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;存在真实差异时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)))</span>
+<span id="cb7-7"><a href="view.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref, pr, <span class="at">xlab =</span> <span class="st">&#39;均匀分布&#39;</span>, <span class="at">ylab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;不存在真实差异时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)))</span>
+<span id="cb7-8"><a href="view.html#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref, pm, <span class="at">xlab =</span> <span class="st">&#39;均匀分布&#39;</span>, <span class="at">ylab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;存在真实差异与噪音时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)))</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>可以看到，如果数据本身存在规律性，其随机化分组后的p值虽然跟均匀分布很接近，但qq图上确实会表现出前密后舒的螺旋延伸状态。这里为了区别我再做一个仿真，这次我不是对分组随机而是对采样随机：</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="view.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb8-2"><a href="view.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 固定分组</span></span>
+<span id="cb8-3"><a href="view.html#cb8-3" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">260</span>), <span class="fu">rep</span>(<span class="dv">2</span>, <span class="dv">260</span>)))</span>
+<span id="cb8-4"><a href="view.html#cb8-4" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb8-5"><a href="view.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>) {</span>
+<span id="cb8-6"><a href="view.html#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 随机化采样</span></span>
+<span id="cb8-7"><a href="view.html#cb8-7" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span>  <span class="fu">sample</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">100</span>, <span class="dv">260</span>), <span class="fu">rep</span>(<span class="dv">200</span>, <span class="dv">260</span>)) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">520</span>), <span class="dv">520</span>)</span>
+<span id="cb8-8"><a href="view.html#cb8-8" aria-hidden="true" tabindex="-1"></a>  p[i] <span class="ot">&lt;-</span> <span class="fu">t.test</span>(x <span class="sc">~</span> g)<span class="sc">$</span>p.value</span>
+<span id="cb8-9"><a href="view.html#cb8-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-10"><a href="view.html#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb8-11"><a href="view.html#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb8-12"><a href="view.html#cb8-12" aria-hidden="true" tabindex="-1"></a>  p,</span>
+<span id="cb8-13"><a href="view.html#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">breaks =</span> <span class="dv">100</span>,</span>
+<span id="cb8-14"><a href="view.html#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;采样随机时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb8-15"><a href="view.html#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb8-16"><a href="view.html#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb8-17"><a href="view.html#cb8-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-18"><a href="view.html#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(ref, p, <span class="at">xlab =</span> <span class="st">&#39;均匀分布&#39;</span>, <span class="at">ylab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="st">&#39;采样随机时&#39;</span>, <span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)))</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>这里我们同样能看到这种蛇形走位，而且似乎随机化样品看到的趋势更明显。但同样的，这里模拟逻辑还是保持数据不变，只是随机化过程。</p>
 <p>这个规律性数据的p值分布可能对实验学科非常有意义。如果规律会造成数据异质性而我们的分组过程就是试图发现这种规律性，那么不可避免的会在p值分布上造成离散分布的状态。相反，随机相关则不会呈现出这种p值的离散分布而是均匀分布。这个均匀与离散分布的差异如果能用一个统计量来描述，那么我们事实上就能根据这个统计量区别出真实规律与随机相关。</p>
 <p>在这个语境下，我们就不用搞这些多重检验下p值的阈值矫正了，直接对每一次假设检验进行分组随机化模拟过程，然后生成p值分布。如果其对应分布统计量表示为离散均匀分布，那么这一组假设检验的规律性就是有保证的，如果指示为均匀分布，那么这组数据本身就可以判定为无法检测规律而排除。这样我们可以对数据在进行统计推断前做一个规律性测试，只有通过了规律性测试的数据才值得进行统计推断。而且，只要单次统计推断给出小于0.05的p值，我们就可以直接相信，因为那些可能出现随机相关的数据已经被我们排除掉了。</p>
@@ -673,7 +738,7 @@ p(D|H_0) = p(H_0|D)
 <div id="可重复性研究" class="section level3" number="3.3.3">
 <h3><span class="header-section-number">3.3.3</span> 可重复性研究</h3>
 <p>实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。不同学科对可重复性的要求也并不一致，实验学科如果是验证简单体系要求会特别高，例如理论物理，而复杂体系考察综合指标要求就可能降到结果数量级上可重复就可以了，例如环境痕量污染物的分析，因为样品前处理复杂待测物含量经常逼近检出限，此时要求很高的可重复性意义不大而含量数量级通常就能反映足够的环境信息。下图是一个常见的可重复性研究需要考虑的步骤，想完整重现别人的研究需要对方提供每一步的信息。</p>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>不过，狭义的可重复性研究仅关心数据产生后步骤的可重复性，包括但不限于原始数据共享与数据处理代码共享。当前很多学科的期刊都开始要求论文作者共享原始数据，这是一个很好的起点，但更重要的是数据分析步骤。科研用图形化界面软件的流行降低了科研数据分析的门槛，但因为大多数软件并不同时提供用户数据分析的脚本，一个副作用就是使数据分析重现变得很困难。从科研角度来看，保证数据分析的透明度很关键，因此现代科研人员应该花时间去掌握一门高级编程语言，在公布论文的同时也公布论文中分析推断的生成源码，这样既方便自己的成果传播也提高了研究可信度。从原始数据到成果这一阶段的可重复性是应该开放给整个学术圈进行检验的，这样机制的存在会使可重复性效果低的研究成果能被快速排除而不是消耗资源去验证一个数据处理问题，毕竟也很少有基金是支持验证别人研究成果的。</p>
 <p>NHST 是科研可重复性危机的核心，但科学家的人性也不可忽视。科学本身是构建在错误校正过程上的，但科学家评价却是人性化的，良好的评价很多时候成了科学家追求的标的。不论是对影响因子的追求还是学术明星的打造，非科学的评价与评优其实影响到了科研结果的报道。科学家正在作为一个团体来维护自己的利益与社会地位，其副作用就是对失败的低容忍度，年龄限制与成果限制使得探索必须要符合效率原则，很多年轻人在年富力强的时候做了大量排列组合而非探索性的工作来确保个人的生存无虞，这样造成的损失目前我们无法衡量。随之伴生的学术不规范、不端与造假则是层出不穷，很多人开始利用一些规则上的漏洞来实现非科研目的，例如审稿流程与评优。科学家的形象要由团体的文化来体现，阳光底下没有新鲜事，除了开放获取的研究成果，研究整体流程也应该实现透明化，这样可以很大程度防止暗箱操作。</p>
 <p>流程透明的开放科学趋势也是一种正在流行的解决方案。所谓流程透明，指的是从基金申请到修改到进度报告到结题报告到文章的投稿接受与后续跟进研究及评优都要有公开的记录可以查询，文书都要经过版本控制方便返溯，所有研究人员都要实名负责对应的项目。学术团体接受公众舆论监督与同行监督，日常学术交流也要有公开的记录与反馈机制，所有的记录不直接对外公开但接受实名查询并留存查询记录。这样透明化的流程可以保证学术团体除了发表论文之外还有其他的结果展示途径，进而避免实验结果的选择性汇报与资源的过度集中。打破自我包装与人脉对科研的束缚，让结果更直白地展示给所有人。此外，关于可重复性，Nature 就近年来的科研可重复性危机采访了五组科学家，分别从认知、NHST、FDR、数据共享与范式转化的角度进行了<a href="https://www.nature.com/articles/d41586-017-07522-z">论述</a>，值得一读。在医疗领域也有了一些有意思的讨论，例如认为基于人群的归纳式诊断会被个性化精准医疗所替代，此时可重复性里内含的平均律就会被彻底颠覆，分子水平的因果逻辑可能成为未来的主要知识探索方向。预印本、开放获取与审稿、科研社交媒体及数据共享等新<a href="https://theoreticalecology.wordpress.com/2019/01/22/tree-species-richness-and-its-effects-on-productivity-neither-global-nor-consistent/">趋势</a>也孕育着新的问题解决方法。</p>
@@ -824,7 +889,6 @@ p(D|H_0) = p(H_0|D)
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -864,6 +928,10 @@ gitbook.start({
 "text": null
 },
 "download": ["sciguide.pdf", "sciguide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

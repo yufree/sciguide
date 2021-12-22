@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 6 数据处理 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 6 数据处理 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2021-12-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="exp.html"/>
 <link rel="next" href="lib.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -42,7 +43,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -59,6 +59,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -438,66 +439,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>与多重比较类似的一个统计推断问题是多重检验问题。多重检验指的是同时进行多次假设检验的场景，其实多重比较可以看作多重检验在方差分析里的一个特例。举例而言，我对两组样品（暴露组跟对照组）中每一个样品测定了10000个指标，每组有10个样品，那么如果我想知道差异有多大就需要对比10000次，具体说就是10000次双样本t检验。那么如果我对t检验的置信水平设置在95%，也就是5%假阳性，做完这10000次检验，我会期望看到500个假阳性，而这500个有显著差异的指标其实对分组不敏感也可以随机生成。假如真实测到了600个有显著差异的指标，那么如何区分其中哪些是对分组敏感？哪些又仅仅只是随机的呢？随机的会不会只有500个整呢？这个场景在组学技术与传感器技术采集高通量高维数据的今天变得越来越普遍。</p>
 <p>这个问题在做经典科研实验时往往会忽略，深层次的原因是经典的科研实验往往是理论或经验主导需要进行检验的假说。例如，我测定血液中白血球的数目就可以知道你是不是处于炎症中，其背后是医学知识的支撑。然而，在组学或其他高通量实验中，研究实际是数据导向的，也就是不管有用没用反正我测了一堆指标，然后就去对比差异，然后就是上面的问题了，我们可能分不清楚哪些是真的相关，哪些又是随机出现的。</p>
 <p>对于单次比较，当我们看到显著差异的p值脑子里想的是零假设为真时发生的概率，当我们置信水平设定在0.95而p值低于对应的阈值，那么我们应该拒绝零假设。但对比次数多了从概率上就会出现已经被拒绝的假设实际是错误的而你不知道是哪一个。整体错误率控制的思路就是我不管单次比较了，我只对你这所有的对比次数的总错误率进行控制。还是上面的例子，对于10000次假设检验我只能接受1个错误，整体犯错概率为0.0001，那么对于单次比较，其假阳性也得设定在这个水平上去进行假设检验，结果整体上错误率是控制住了，但对于单次比较就显得十分严格了。下面用一个仿真实验来说明：</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 随机数的10000次比较</span></span>
-<span id="cb27-2"><a href="data.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb27-3"><a href="data.html#cb27-3" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb27-4"><a href="data.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>){</span>
-<span id="cb27-5"><a href="data.html#cb27-5" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
-<span id="cb27-6"><a href="data.html#cb27-6" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
-<span id="cb27-7"><a href="data.html#cb27-7" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb27-8"><a href="data.html#cb27-8" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb27-9"><a href="data.html#cb27-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb27-10"><a href="data.html#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb27-11"><a href="data.html#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="data.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb28-2"><a href="data.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="data.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb28-2"><a href="data.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 随机数的10000次比较</span></span>
+<span id="cb28-3"><a href="data.html#cb28-3" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb28-4"><a href="data.html#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>) {</span>
+<span id="cb28-5"><a href="data.html#cb28-5" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
+<span id="cb28-6"><a href="data.html#cb28-6" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
+<span id="cb28-7"><a href="data.html#cb28-7" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb28-8"><a href="data.html#cb28-8" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb28-9"><a href="data.html#cb28-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb28-10"><a href="data.html#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
+<span id="cb28-11"><a href="data.html#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb28-12"><a href="data.html#cb28-12" aria-hidden="true" tabindex="-1"></a>  pvalue,</span>
+<span id="cb28-13"><a href="data.html#cb28-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb28-14"><a href="data.html#cb28-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb28-15"><a href="data.html#cb28-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb28-16"><a href="data.html#cb28-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.05的个数</span></span>
+<span id="cb29-2"><a href="data.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 477</code></pre>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="data.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb30-2"><a href="data.html#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.0001的个数</span></span>
+<span id="cb31-2"><a href="data.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.0001</span>)</span></code></pre></div>
 <pre><code>## [1] 0</code></pre>
 <p>这样我们会看到进行了整体的控制之后，确实是找不到有差异的了，而且此时我们也可以看到p值的分布应该是0到1之间的均匀分布。但假如里面本来就有有差异的呢？</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="data.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb32-2"><a href="data.html#cb32-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb32-3"><a href="data.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>){</span>
-<span id="cb32-4"><a href="data.html#cb32-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb32-5"><a href="data.html#cb32-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a<span class="sc">+</span><span class="dv">1</span></span>
-<span id="cb32-6"><a href="data.html#cb32-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb32-7"><a href="data.html#cb32-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb32-8"><a href="data.html#cb32-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb32-9"><a href="data.html#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb32-10"><a href="data.html#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb33-2"><a href="data.html#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb33-2"><a href="data.html#cb33-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb33-3"><a href="data.html#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10000</span>) {</span>
+<span id="cb33-4"><a href="data.html#cb33-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb33-5"><a href="data.html#cb33-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb33-6"><a href="data.html#cb33-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb33-7"><a href="data.html#cb33-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb33-8"><a href="data.html#cb33-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb33-9"><a href="data.html#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
+<span id="cb33-10"><a href="data.html#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb33-11"><a href="data.html#cb33-11" aria-hidden="true" tabindex="-1"></a>  pvalue,</span>
+<span id="cb33-12"><a href="data.html#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb33-13"><a href="data.html#cb33-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb33-14"><a href="data.html#cb33-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb33-15"><a href="data.html#cb33-15" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="data.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 显示p值里小于0.05的个数</span></span>
+<span id="cb34-2"><a href="data.html#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 6559</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb35-2"><a href="data.html#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="data.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 显示p值里小于0.0001的个数</span></span>
+<span id="cb36-2"><a href="data.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.0001</span>)</span></code></pre></div>
 <pre><code>## [1] 45</code></pre>
 <p>上面我们模拟了10000次有真实差异的假设检验，结果按照单次检验0.05的阈值能发现约7000有差异，而使用0.0001却只能发现不到100次有显著差异。那么问题很明显，或许控制整体错误率可以让我们远离假阳性，但假阴性就大幅提高了或者说功效降低了，最后的结果可能是什么差异也看不到。</p>
 <p>下面我们尝试一个更切合实际的模拟，混合有差异跟无差异的检验：</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb37-2"><a href="data.html#cb37-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb37-3"><a href="data.html#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>){</span>
-<span id="cb37-4"><a href="data.html#cb37-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb37-5"><a href="data.html#cb37-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a<span class="sc">+</span><span class="dv">1</span></span>
-<span id="cb37-6"><a href="data.html#cb37-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb37-7"><a href="data.html#cb37-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb37-8"><a href="data.html#cb37-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb37-9"><a href="data.html#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>){</span>
-<span id="cb37-10"><a href="data.html#cb37-10" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb37-11"><a href="data.html#cb37-11" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb37-12"><a href="data.html#cb37-12" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb37-13"><a href="data.html#cb37-13" aria-hidden="true" tabindex="-1"></a>  pvalue[i<span class="sc">+</span><span class="dv">5000</span>] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb37-14"><a href="data.html#cb37-14" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb37-15"><a href="data.html#cb37-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
-<span id="cb37-16"><a href="data.html#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pvalue)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="data.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.05的个数</span></span>
-<span id="cb38-2"><a href="data.html#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.05</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="data.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb38-2"><a href="data.html#cb38-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb38-3"><a href="data.html#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>) {</span>
+<span id="cb38-4"><a href="data.html#cb38-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb38-5"><a href="data.html#cb38-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb38-6"><a href="data.html#cb38-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb38-7"><a href="data.html#cb38-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb38-8"><a href="data.html#cb38-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb38-9"><a href="data.html#cb38-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>) {</span>
+<span id="cb38-10"><a href="data.html#cb38-10" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb38-11"><a href="data.html#cb38-11" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb38-12"><a href="data.html#cb38-12" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb38-13"><a href="data.html#cb38-13" aria-hidden="true" tabindex="-1"></a>  pvalue[i <span class="sc">+</span> <span class="dv">5000</span>] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb38-14"><a href="data.html#cb38-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb38-15"><a href="data.html#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 看下p值分布</span></span>
+<span id="cb38-16"><a href="data.html#cb38-16" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb38-17"><a href="data.html#cb38-17" aria-hidden="true" tabindex="-1"></a>  pvalue,</span>
+<span id="cb38-18"><a href="data.html#cb38-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值分布&quot;</span>)),</span>
+<span id="cb38-19"><a href="data.html#cb38-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb38-20"><a href="data.html#cb38-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;频率&#39;</span></span>
+<span id="cb38-21"><a href="data.html#cb38-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 显示p值里小于0.05的个数</span></span>
+<span id="cb39-2"><a href="data.html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## [1] 3499</code></pre>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="data.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 小于0.0001的个数</span></span>
-<span id="cb40-2"><a href="data.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.0001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 显示p值里小于0.0001的个数</span></span>
+<span id="cb41-2"><a href="data.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.0001</span>)</span></code></pre></div>
 <pre><code>## [1] 21</code></pre>
 <p>此时结果就更有意思了，明明应该有5000次是有差异的，但阈值设定在0.05只能看到约3500次，而0.0001只能看到24次。</p>
 <p>上面的模拟告诉我们，降低假阳性的方法会提高假阴性的比率，也就是功效不足，无法发现本来就有的差异。而且似乎本来0.05的阈值对于真阳性也是偏小的。同时，面对假设检验概率低于0.05的那些差异，我们也没有很好的方法区别哪些是真的，哪些是随机的。其实很多人都知道整体错误率控制是比较严格的，会损失统计功效。但也不是完全没人用，例如寻找生物标记物做重大疾病诊断时就不太能接受假阳性而可以接受一定的假阴性，此时如果标准放宽就会找到一大堆假信号，到时候标记不准就会对诊断产生负面影响。</p>
@@ -506,18 +522,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha/n)^n
 \]</span></p>
 <p>我们来看下<span class="math inline">\(\alpha = 0.05\)</span>随比较数增加的效果：</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="data.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 比较次数</span></span>
-<span id="cb42-2"><a href="data.html#cb42-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="sc">%o%</span> <span class="dv">10</span><span class="sc">^</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>))</span>
-<span id="cb42-3"><a href="data.html#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 整体出现假阳性概率</span></span>
-<span id="cb42-4"><a href="data.html#cb42-4" aria-hidden="true" tabindex="-1"></a>p0 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">-</span>(<span class="dv">1</span><span class="fl">-0.05</span>)<span class="sc">^</span>n</span>
-<span id="cb42-5"><a href="data.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Bonferroni方法控制后的整体假阳性概率</span></span>
-<span id="cb42-6"><a href="data.html#cb42-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">-</span>(<span class="dv">1</span><span class="fl">-0.05</span><span class="sc">/</span>n)<span class="sc">^</span>n</span>
-<span id="cb42-7"><a href="data.html#cb42-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 不进行控制</span></span>
-<span id="cb42-8"><a href="data.html#cb42-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p0<span class="sc">~</span>n,<span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),<span class="at">xlab=</span><span class="st">&#39;numbers of tests&#39;</span>,<span class="at">ylab =</span> <span class="st">&#39;FWER&#39;</span>)</span>
-<span id="cb42-9"><a href="data.html#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Bonferroni方法控制</span></span>
-<span id="cb42-10"><a href="data.html#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(p<span class="sc">~</span>n,<span class="at">pch=</span><span class="dv">19</span>,<span class="at">col=</span><span class="st">&#39;red&#39;</span>)</span>
-<span id="cb42-11"><a href="data.html#cb42-11" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;right&#39;</span>,<span class="fu">c</span>(<span class="st">&#39;Bonferroni&#39;</span>,<span class="st">&#39;Raw&#39;</span>),<span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;red&#39;</span>,<span class="st">&#39;black&#39;</span>),<span class="at">pch =</span> <span class="dv">1</span>,<span class="at">cex=</span><span class="dv">1</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 比较次数</span></span>
+<span id="cb43-2"><a href="data.html#cb43-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="sc">%o%</span> <span class="dv">10</span> <span class="sc">^</span> (<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>))</span>
+<span id="cb43-3"><a href="data.html#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 整体出现假阳性概率</span></span>
+<span id="cb43-4"><a href="data.html#cb43-4" aria-hidden="true" tabindex="-1"></a>p0 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.05</span>) <span class="sc">^</span> n</span>
+<span id="cb43-5"><a href="data.html#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Bonferroni方法控制后的整体假阳性概率</span></span>
+<span id="cb43-6"><a href="data.html#cb43-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.05</span> <span class="sc">/</span> n) <span class="sc">^</span> n</span>
+<span id="cb43-7"><a href="data.html#cb43-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 不进行控制</span></span>
+<span id="cb43-8"><a href="data.html#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb43-9"><a href="data.html#cb43-9" aria-hidden="true" tabindex="-1"></a>  p0 <span class="sc">~</span> n,</span>
+<span id="cb43-10"><a href="data.html#cb43-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
+<span id="cb43-11"><a href="data.html#cb43-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb43-12"><a href="data.html#cb43-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">&#39;测试数&#39;</span>,</span>
+<span id="cb43-13"><a href="data.html#cb43-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&#39;整体错误率（FWER）&#39;</span></span>
+<span id="cb43-14"><a href="data.html#cb43-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb43-15"><a href="data.html#cb43-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Bonferroni方法控制</span></span>
+<span id="cb43-16"><a href="data.html#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(p <span class="sc">~</span> n, <span class="at">pch =</span> <span class="dv">19</span>, <span class="at">col =</span> <span class="st">&#39;red&#39;</span>)</span>
+<span id="cb43-17"><a href="data.html#cb43-17" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;right&#39;</span>,</span>
+<span id="cb43-18"><a href="data.html#cb43-18" aria-hidden="true" tabindex="-1"></a>       <span class="fu">c</span>(<span class="st">&#39;Bonferroni法&#39;</span>, <span class="st">&#39;无矫正&#39;</span>),</span>
+<span id="cb43-19"><a href="data.html#cb43-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;red&#39;</span>, <span class="st">&#39;black&#39;</span>),</span>
+<span id="cb43-20"><a href="data.html#cb43-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>其实，这样的控制得到的整体错误率是略低于0.05的，并且数目越大，整体错误率越低。这个方法十分保守，有可能什么差异你都看不到，因为都变成假阴性了。在实际应用中一般不调节p值的假阳性比率而直接调节p值，取原始p值跟整体检验数目的乘积与1的最小值作为调节p值，还可以用0.05或0.01进行判断，不过这时候控制的整体而不是单一检验了。</p>
 <p>当然这只是最原始的 Bonferroni 方法，后来Holm改进了这种一步法为逐步法，此时我们需要首先对原始p值进行排序，然后每个原始p值乘上其排序作为调节p值。例如三次多重检验的p值分别是0.01、0.03与0.06，排序为3、2、1，其调节后的p值为0.03，0.06，0.06。如果我们控制整体假阳性比率低于0.05，那么调解后只有第一个检验可以拒绝零假设。值得注意的是Holm的改进是全面优于原始方法的，也就是说当你一定要去用Bonferroni方法控制整体错误率，优先选Holm的改进版。</p>
 <p>上面那种方法其实有点非参的意思，其实数学上我们是可以精确的把假阳性比率控制在某个数值的，也就是Sidak方法：</p>
@@ -526,30 +551,30 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha&#39;)^n = 0.05
 \]</span></p>
 <p>求解可得到<span class="math inline">\(\alpha&#39; = 1-0.95^{\frac{1}{n}}\)</span>，此时我们就可以比较精确的控制整体错误率了，但是，这个方法有个前提就是各个检验必须是独立的，这在生物学实验里几乎不可能，所以这个方法的应用远没有Bonferroni方法广。</p>
 <p>刚才的模拟中我们可以看到，控制整体错误率比较严格，假阴性比率高，那么有没有办法找到假阴性比率低或者说功效高的呢？要知道我们其实只关心有差异的那部分中那些是真的，哪些是假的，无差异的可以完全不用考虑。那么我们可以尝试控制错误发现率（FDR），也就是在有差异的那一部分指标中控制错误率低于某一水平。</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 所有有差异的</span></span>
-<span id="cb43-2"><a href="data.html#cb43-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.05</span>)</span>
-<span id="cb43-3"><a href="data.html#cb43-3" aria-hidden="true" tabindex="-1"></a>R</span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="data.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 所有有差异的</span></span>
+<span id="cb44-2"><a href="data.html#cb44-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.05</span>)</span>
+<span id="cb44-3"><a href="data.html#cb44-3" aria-hidden="true" tabindex="-1"></a>R</span></code></pre></div>
 <pre><code>## [1] 3499</code></pre>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 假阳性</span></span>
-<span id="cb45-2"><a href="data.html#cb45-2" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue[<span class="dv">5001</span><span class="sc">:</span><span class="dv">10000</span>]<span class="sc">&lt;</span><span class="fl">0.05</span>)</span>
-<span id="cb45-3"><a href="data.html#cb45-3" aria-hidden="true" tabindex="-1"></a>V</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="data.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 假阳性</span></span>
+<span id="cb46-2"><a href="data.html#cb46-2" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue[<span class="dv">5001</span><span class="sc">:</span><span class="dv">10000</span>]<span class="sc">&lt;</span><span class="fl">0.05</span>)</span>
+<span id="cb46-3"><a href="data.html#cb46-3" aria-hidden="true" tabindex="-1"></a>V</span></code></pre></div>
 <pre><code>## [1] 225</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 错误发现率</span></span>
-<span id="cb47-2"><a href="data.html#cb47-2" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> V<span class="sc">/</span>R</span>
-<span id="cb47-3"><a href="data.html#cb47-3" aria-hidden="true" tabindex="-1"></a>Q</span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="data.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 错误发现率</span></span>
+<span id="cb48-2"><a href="data.html#cb48-2" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> V<span class="sc">/</span>R</span>
+<span id="cb48-3"><a href="data.html#cb48-3" aria-hidden="true" tabindex="-1"></a>Q</span></code></pre></div>
 <pre><code>## [1] 0.06430409</code></pre>
 <p>上面的计算显示虽然我们漏掉了很多阳性结果，但错误发现率并不高。事实上如果我们控制错误率到0.01，错误发现率会更低：</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 所有有差异的</span></span>
-<span id="cb49-2"><a href="data.html#cb49-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.01</span>)</span>
-<span id="cb49-3"><a href="data.html#cb49-3" aria-hidden="true" tabindex="-1"></a>R</span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="data.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 所有有差异的</span></span>
+<span id="cb50-2"><a href="data.html#cb50-2" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue<span class="sc">&lt;</span><span class="fl">0.01</span>)</span>
+<span id="cb50-3"><a href="data.html#cb50-3" aria-hidden="true" tabindex="-1"></a>R</span></code></pre></div>
 <pre><code>## [1] 999</code></pre>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 假阳性</span></span>
-<span id="cb51-2"><a href="data.html#cb51-2" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue[<span class="dv">5001</span><span class="sc">:</span><span class="dv">10000</span>]<span class="sc">&lt;</span><span class="fl">0.01</span>)</span>
-<span id="cb51-3"><a href="data.html#cb51-3" aria-hidden="true" tabindex="-1"></a>V</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="data.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 假阳性</span></span>
+<span id="cb52-2"><a href="data.html#cb52-2" aria-hidden="true" tabindex="-1"></a>V <span class="ot">&lt;-</span> <span class="fu">sum</span>(pvalue[<span class="dv">5001</span><span class="sc">:</span><span class="dv">10000</span>]<span class="sc">&lt;</span><span class="fl">0.01</span>)</span>
+<span id="cb52-3"><a href="data.html#cb52-3" aria-hidden="true" tabindex="-1"></a>V</span></code></pre></div>
 <pre><code>## [1] 34</code></pre>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 错误发现率</span></span>
-<span id="cb53-2"><a href="data.html#cb53-2" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> V<span class="sc">/</span>R</span>
-<span id="cb53-3"><a href="data.html#cb53-3" aria-hidden="true" tabindex="-1"></a>Q</span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="data.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 错误发现率</span></span>
+<span id="cb54-2"><a href="data.html#cb54-2" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> V<span class="sc">/</span>R</span>
+<span id="cb54-3"><a href="data.html#cb54-3" aria-hidden="true" tabindex="-1"></a>Q</span></code></pre></div>
 <pre><code>## [1] 0.03403403</code></pre>
 <p>其实出现这个问题不难理解，零假设检验里p值是均匀分布的而有差异检验的p值是有偏分布且偏向于较小的数值，所以假阳性控制的越小，有偏分布占比例就越高，但同时会造成假阴性提高的问题。</p>
 <p>那么错误发现率会不会比整体错误率的控制更好呢？这里通过两种常见的控制方法进行说明。</p>
@@ -558,50 +583,71 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha&#39;)^n = 0.05
 p_i \leq \frac{i}{m} \alpha
 \]</span></p>
 <p>举例来说就是假设三次多重检验的p值分别是0.01、0.03与0.06，其调节后的p值为0.03，0.45，0.06。那么为什么说这种方法控制的是错误发现率呢？我们来看下<span class="math inline">\(\alpha\)</span>是如何得到的：p值乘总数m得到的是在该p值下理论发现数，而除以其排序实际是该p值下实际发现数，理论发现数基于在这里的分布是均匀分布，也就是零假设的分布，这两个的比值自然就是错误发现率。下面我用仿真实验来说明一下：</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BH法控制错误发现率</span></span>
-<span id="cb55-2"><a href="data.html#cb55-2" aria-hidden="true" tabindex="-1"></a>pbh <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue,<span class="at">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
-<span id="cb55-3"><a href="data.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="co"># holm法控制错误发现率</span></span>
-<span id="cb55-4"><a href="data.html#cb55-4" aria-hidden="true" tabindex="-1"></a>ph <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue,<span class="at">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
-<span id="cb55-5"><a href="data.html#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pbh<span class="sc">~</span>pvalue,<span class="at">ylab =</span> <span class="st">&#39;FDR&#39;</span>,<span class="at">xlab =</span> <span class="st">&#39;p value&#39;</span>)</span>
-<span id="cb55-6"><a href="data.html#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(ph<span class="sc">~</span>pvalue,<span class="at">col=</span><span class="st">&#39;red&#39;</span>)</span>
-<span id="cb55-7"><a href="data.html#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;bottomright&#39;</span>,<span class="fu">c</span>(<span class="st">&#39;Holm&#39;</span>,<span class="st">&#39;BH&#39;</span>),<span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;red&#39;</span>,<span class="st">&#39;black&#39;</span>),<span class="at">pch =</span> <span class="dv">1</span>,<span class="at">cex=</span><span class="dv">1</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="data.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BH法控制错误发现率</span></span>
+<span id="cb56-2"><a href="data.html#cb56-2" aria-hidden="true" tabindex="-1"></a>pbh <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue, <span class="at">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
+<span id="cb56-3"><a href="data.html#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="co"># holm法控制错误发现率</span></span>
+<span id="cb56-4"><a href="data.html#cb56-4" aria-hidden="true" tabindex="-1"></a>ph <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue, <span class="at">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
+<span id="cb56-5"><a href="data.html#cb56-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pbh <span class="sc">~</span> pvalue,</span>
+<span id="cb56-6"><a href="data.html#cb56-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&#39;错误发现率（FDR）&#39;</span>,</span>
+<span id="cb56-7"><a href="data.html#cb56-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb56-8"><a href="data.html#cb56-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">19</span>)</span>
+<span id="cb56-9"><a href="data.html#cb56-9" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(ph <span class="sc">~</span> pvalue, <span class="at">col =</span> <span class="st">&#39;red&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span>
+<span id="cb56-10"><a href="data.html#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;bottomright&#39;</span>,</span>
+<span id="cb56-11"><a href="data.html#cb56-11" aria-hidden="true" tabindex="-1"></a>       <span class="fu">c</span>(<span class="st">&#39;Holm 法&#39;</span>, <span class="st">&#39;BH 法&#39;</span>),</span>
+<span id="cb56-12"><a href="data.html#cb56-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;red&#39;</span>, <span class="st">&#39;black&#39;</span>),</span>
+<span id="cb56-13"><a href="data.html#cb56-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>从上面图我们可以看出，如果控制整体错误率（红色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。</p>
 <p>如果说BH方法还算是调节了p值，那么Storey提出的方法则直接去估计了错误发现率本身。刚才介绍BH算法时我提到总数m与p值的乘积是基于这里的分布是均匀分布，但实际上按照错误发现率的定义，这里应该出现的是零假设总数。直接使用所有检验数会造成一个问题，那就是对错误发现率的高估，为了保证功效，这里应该去估计零假设的总体比例。这里我们去观察混合分布会发现在p值较大的时候基本可以认为这里分布的都是零假设的p值，那么我们可以用：</p>
 <p><span class="math display">\[
 \hat\pi_0 = \frac{\#\{p_i&gt;\lambda\}}{(1-\lambda)m}
 \]</span></p>
 <p>估计这个比例<span class="math inline">\(\hat\pi_0\)</span>，其中参数<span class="math inline">\(\lambda\)</span>的跟<span class="math inline">\(\hat\pi_0\)</span>的关系可以用一个三阶方程拟合，然后计算出整体假阳性比例。有了这个比例，我们再去按照BH方法计算p值，然后两个相乘就会得到q值，而q值的理论含义就是在某一概率上低于这个概率所有数里假阳性的比重。打个比方，我测到某个指标的q值是0.05，这意味着q值低于这个数所有检验中我有0.05的可能性得到的是假阳性。。但我们会发现当零假设比重较高时BH结果跟q值很接近，而比重很低的话q值会变得更小，功效会提高，基本也符合我们对错误发现率的预期。</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="data.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(qvalue)</span>
-<span id="cb56-2"><a href="data.html#cb56-2" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="fu">qvalue</span>(pvalue)</span>
-<span id="cb56-3"><a href="data.html#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Q值</span></span>
-<span id="cb56-4"><a href="data.html#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(q<span class="sc">$</span>qvalues<span class="sc">~</span>pvalue,<span class="at">col=</span><span class="st">&#39;blue&#39;</span>,<span class="at">ylab =</span> <span class="st">&#39;Q&#39;</span>,<span class="at">xlab =</span> <span class="st">&#39;p value&#39;</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(qvalue)</span>
+<span id="cb57-2"><a href="data.html#cb57-2" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="fu">qvalue</span>(pvalue)</span>
+<span id="cb57-3"><a href="data.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="co"># q值</span></span>
+<span id="cb57-4"><a href="data.html#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb57-5"><a href="data.html#cb57-5" aria-hidden="true" tabindex="-1"></a>  q<span class="sc">$</span>qvalues <span class="sc">~</span> pvalue,</span>
+<span id="cb57-6"><a href="data.html#cb57-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">&#39;blue&#39;</span>,</span>
+<span id="cb57-7"><a href="data.html#cb57-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;q&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb57-8"><a href="data.html#cb57-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>))</span>
+<span id="cb57-9"><a href="data.html#cb57-9" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p>如上图所示，q值增大后会最终逼近到0.5，而我们的模拟中零假设的比例就设定就是50%。我们重新模拟一个零假设比例5%的实验：</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb57-2"><a href="data.html#cb57-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb57-3"><a href="data.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>){</span>
-<span id="cb57-4"><a href="data.html#cb57-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb57-5"><a href="data.html#cb57-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a<span class="sc">+</span><span class="dv">1</span></span>
-<span id="cb57-6"><a href="data.html#cb57-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb57-7"><a href="data.html#cb57-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb57-8"><a href="data.html#cb57-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb57-9"><a href="data.html#cb57-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9500</span>){</span>
-<span id="cb57-10"><a href="data.html#cb57-10" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb57-11"><a href="data.html#cb57-11" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">1</span>)</span>
-<span id="cb57-12"><a href="data.html#cb57-12" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a,b)</span>
-<span id="cb57-13"><a href="data.html#cb57-13" aria-hidden="true" tabindex="-1"></a>  pvalue[i<span class="sc">+</span><span class="dv">500</span>] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
-<span id="cb57-14"><a href="data.html#cb57-14" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb57-15"><a href="data.html#cb57-15" aria-hidden="true" tabindex="-1"></a>pbh <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue,<span class="at">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
-<span id="cb57-16"><a href="data.html#cb57-16" aria-hidden="true" tabindex="-1"></a>ph <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue,<span class="at">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
-<span id="cb57-17"><a href="data.html#cb57-17" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="fu">qvalue</span>(pvalue)</span>
-<span id="cb57-18"><a href="data.html#cb57-18" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pbh<span class="sc">~</span>pvalue,<span class="at">ylab =</span> <span class="st">&#39;FDR&#39;</span>,<span class="at">xlab =</span> <span class="st">&#39;p value&#39;</span>)</span>
-<span id="cb57-19"><a href="data.html#cb57-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Holm 方法</span></span>
-<span id="cb57-20"><a href="data.html#cb57-20" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(ph<span class="sc">~</span>pvalue,<span class="at">col=</span><span class="st">&#39;red&#39;</span>)</span>
-<span id="cb57-21"><a href="data.html#cb57-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Q值</span></span>
-<span id="cb57-22"><a href="data.html#cb57-22" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(q<span class="sc">$</span>qvalues<span class="sc">~</span>pvalue,<span class="at">col=</span><span class="st">&#39;blue&#39;</span>)</span>
-<span id="cb57-23"><a href="data.html#cb57-23" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&#39;bottomright&#39;</span>,<span class="fu">c</span>(<span class="st">&#39;Q&#39;</span>,<span class="st">&#39;Holm&#39;</span>,<span class="st">&#39;BH&#39;</span>),<span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;blue&#39;</span>,<span class="st">&#39;red&#39;</span>,<span class="st">&#39;black&#39;</span>),<span class="at">pch =</span> <span class="dv">1</span>,<span class="at">cex=</span><span class="dv">1</span>)</span></code></pre></div>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="data.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb58-2"><a href="data.html#cb58-2" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb58-3"><a href="data.html#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>) {</span>
+<span id="cb58-4"><a href="data.html#cb58-4" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb58-5"><a href="data.html#cb58-5" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb58-6"><a href="data.html#cb58-6" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb58-7"><a href="data.html#cb58-7" aria-hidden="true" tabindex="-1"></a>  pvalue[i] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb58-8"><a href="data.html#cb58-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-9"><a href="data.html#cb58-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9500</span>) {</span>
+<span id="cb58-10"><a href="data.html#cb58-10" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb58-11"><a href="data.html#cb58-11" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">1</span>)</span>
+<span id="cb58-12"><a href="data.html#cb58-12" aria-hidden="true" tabindex="-1"></a>  c <span class="ot">&lt;-</span> <span class="fu">t.test</span>(a, b)</span>
+<span id="cb58-13"><a href="data.html#cb58-13" aria-hidden="true" tabindex="-1"></a>  pvalue[i <span class="sc">+</span> <span class="dv">500</span>] <span class="ot">&lt;-</span> c<span class="sc">$</span>p.value</span>
+<span id="cb58-14"><a href="data.html#cb58-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-15"><a href="data.html#cb58-15" aria-hidden="true" tabindex="-1"></a>pbh <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue, <span class="at">method =</span> <span class="st">&#39;BH&#39;</span>)</span>
+<span id="cb58-16"><a href="data.html#cb58-16" aria-hidden="true" tabindex="-1"></a>ph <span class="ot">&lt;-</span> <span class="fu">p.adjust</span>(pvalue, <span class="at">method =</span> <span class="st">&#39;holm&#39;</span>)</span>
+<span id="cb58-17"><a href="data.html#cb58-17" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="fu">qvalue</span>(pvalue)</span>
+<span id="cb58-18"><a href="data.html#cb58-18" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pbh <span class="sc">~</span> pvalue,</span>
+<span id="cb58-19"><a href="data.html#cb58-19" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&#39;错误发现率（FDR）&#39;</span>,</span>
+<span id="cb58-20"><a href="data.html#cb58-20" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="fu">substitute</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(<span class="st">&#39;p&#39;</span>), <span class="st">&quot;值&quot;</span>)),</span>
+<span id="cb58-21"><a href="data.html#cb58-21" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">19</span>)</span>
+<span id="cb58-22"><a href="data.html#cb58-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Holm 方法</span></span>
+<span id="cb58-23"><a href="data.html#cb58-23" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(ph <span class="sc">~</span> pvalue, <span class="at">col =</span> <span class="st">&#39;red&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span>
+<span id="cb58-24"><a href="data.html#cb58-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Q值</span></span>
+<span id="cb58-25"><a href="data.html#cb58-25" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(q<span class="sc">$</span>qvalues <span class="sc">~</span> pvalue, <span class="at">col =</span> <span class="st">&#39;blue&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span>
+<span id="cb58-26"><a href="data.html#cb58-26" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(</span>
+<span id="cb58-27"><a href="data.html#cb58-27" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;bottomright&#39;</span>,</span>
+<span id="cb58-28"><a href="data.html#cb58-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="fu">expression</span>(<span class="fu">paste</span>(<span class="fu">italic</span>(</span>
+<span id="cb58-29"><a href="data.html#cb58-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;q&quot;</span></span>
+<span id="cb58-30"><a href="data.html#cb58-30" aria-hidden="true" tabindex="-1"></a>  ), <span class="st">&quot; 值&quot;</span>)), <span class="st">&#39;Holm 法&#39;</span>, <span class="st">&#39;BH 法&#39;</span>),</span>
+<span id="cb58-31"><a href="data.html#cb58-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&#39;blue&#39;</span>, <span class="st">&#39;red&#39;</span>, <span class="st">&#39;black&#39;</span>),</span>
+<span id="cb58-32"><a href="data.html#cb58-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">19</span></span>
+<span id="cb58-33"><a href="data.html#cb58-33" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="sciguide_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>此时我们可以看到两者结果较为接近，q值理论上更完备，功效也更强，但算法上对<span class="math inline">\(\hat\pi_0\)</span>的估计并不稳定，特别是比例靠近1的时候，所以BH方法可能还是更容易让人接受的保守错误发现率控制方法。</p>
 <p>多重检验问题是高通量数据里逃不掉的问题，要想找出真正的差异数据就要面对假阳性跟假阴性问题，这是一个不可兼得的过程，看重假阳性就用整体错误率，看重假阴性或功效就用错误发现率控制。并不是说哪种方法会好一些，更本质的问题在于你对实际问题的了解程度及统计方法的适用范围。实验设计本身就会影响数据的统计行为，而这个恰恰是最容易被忽视的。</p>
 </div>
@@ -611,13 +657,13 @@ p_i \leq \frac{i}{m} \alpha
 <p>线性模型的基本形式就是因变量是由自变量作用加和而成，在这个语境下，其实把自变量改为变量，放宽独立性限制，也能将一些非线性部分，例如高幂次的自变量及变量间的乘积或交互作用考虑进去。在实际问题的抽象上，只要可以把目标数值的变动用其他数值的拆解或组合表示出来，那么可以粗略认为标准化后其他数值的回归系数可用来比较不同数值间的贡献，而对于该系数的显著性检验则可以说明该系数的影响是否显著。</p>
 <p>打个比方，流行病学里常说的某种疾病发病率或风险比在考虑了人群性别、年龄、BMI、吸烟史等的影响后发现某污染物起了显著影响，这就是说在一个目标变量为病发病率或风险比的线性模型中，性别、年龄、BMI、吸烟史作为协变量而污染物作为自变量，模型拟合结束后发现污染物的系数经假设检验为显著差异于零，也就是没影响。这里，协变量与自变量在回归上是平等的，可以把协变量理解为控制变量，如果你考察吸烟的影响，那么吸烟与否就是自变量，包含污染物在内其他项就成了协变量。不过所有考察变量选择的原则在于其理论上或经验上被认为与目标变量有关系且无法通过随机采样、配对等手段消除影响，这种情况对于观测数据比较常见。</p>
 <p>在线性模型中，如果我们将两个共相关的变量放到同一个线性回归模型之中，那么这两个变量的系数估计的标准误都会扩大。下面我们展示下这个干扰过程：</p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="data.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb58-2"><a href="data.html#cb58-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">100</span>,<span class="at">min=</span><span class="dv">0</span>,<span class="at">max=</span><span class="dv">10</span>)<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb58-3"><a href="data.html#cb58-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> a<span class="sc">*</span><span class="fl">1.2</span><span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb58-4"><a href="data.html#cb58-4" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> b<span class="sc">*</span><span class="fl">1.2</span><span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb58-5"><a href="data.html#cb58-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> a<span class="sc">+</span>b<span class="sc">+</span>c<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb59-2"><a href="data.html#cb59-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">100</span>,<span class="at">min=</span><span class="dv">0</span>,<span class="at">max=</span><span class="dv">10</span>)<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb59-3"><a href="data.html#cb59-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> a<span class="sc">*</span><span class="fl">1.2</span><span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb59-4"><a href="data.html#cb59-4" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> b<span class="sc">*</span><span class="fl">1.2</span><span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb59-5"><a href="data.html#cb59-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> a<span class="sc">+</span>b<span class="sc">+</span>c<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span></code></pre></div>
 <p>上面我们由两个变量生成了一个新变量，然而这两个变量是相关的，此时我们进行回归分析：</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>a))</span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="data.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>a))</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm.default(formula = y ~ a)
@@ -631,13 +677,12 @@ p_i \leq \frac{i}{m} \alpha
 ## (Intercept) -0.14295    0.44101  -0.324    0.747    
 ## a            3.65619    0.07162  51.048   &lt;2e-16 ***
 ## ---
-## Signif. codes:  
-## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 2.339 on 98 degrees of freedom
 ## Multiple R-squared:  0.9638, Adjusted R-squared:  0.9634 
 ## F-statistic:  2606 on 1 and 98 DF,  p-value: &lt; 2.2e-16</code></pre>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="data.html#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>a<span class="sc">+</span>b<span class="sc">+</span>c))</span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="data.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(y<span class="sc">~</span>a<span class="sc">+</span>b<span class="sc">+</span>c))</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm.default(formula = y ~ a + b + c)
@@ -653,8 +698,7 @@ p_i \leq \frac{i}{m} \alpha
 ## b            0.69905    0.16038   4.359 3.28e-05 ***
 ## c            1.11364    0.10523  10.583  &lt; 2e-16 ***
 ## ---
-## Signif. codes:  
-## 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
 ## Residual standard error: 0.9716 on 96 degrees of freedom
 ## Multiple R-squared:  0.9939, Adjusted R-squared:  0.9937 
@@ -733,7 +777,6 @@ t = Wx + \mu + \epsilon
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -773,6 +816,10 @@ gitbook.start({
 "text": null
 },
 "download": ["sciguide.pdf", "sciguide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

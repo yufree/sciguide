@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 9 就业 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 9 就业 | 现代科研指北" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2021-06-11" />
+<meta name="date" content="2022-03-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="life.html"/>
 <link rel="next" href="appendix.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -42,7 +43,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -59,6 +59,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -415,6 +416,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>在于陌生人建立联系时，可通过亲朋好友或校友老乡等入手，也可以参与主题聚会并通过共同场景建立联系。不同于学术界，社会职场每个人的知识背景是不一样的，不要使用专业术语来跟非专业人士交流。一个合格博士需要有能力用通俗语言跟他人交流，特别是你的研究内容，全是专业术语更多显示的是对本质的不理解。事物可以是复杂的，但不能是说不清楚的。</p>
 <p>在与人交流时一定要意识到每个人都是独立的个体，有自己的性格与处事方式，即使跟你不一样也不代表就更厉害或不好。这种对他人的理解首先要建立在对自己的理解上，在你眼里也许自己很完美，但在别人眼里可能存在不同解读，你可以不在乎但不能不知道这种可能性的存在。同样，对别人也不要轻易评价与人云亦云，要能体会尊重他人的独特性或制定相应高效交流方式。你建立联系的人要提供其建立联系后额外的价值或引起兴趣，如果一味放低姿态，对方可能不会尊重你。</p>
 <p>商业培训里喜欢用MTBI测试来对职场中人格进行分类。你可以先做一套测试，然后你会得到四个字母来描述你。每个字母代表一种二分法，例如I代表内向而E代表外向，N代表直觉而S代表感觉，T代表思考而F代表情感，J代表判断而P代表感知。虽然学界对这个没有统一意见但不妨碍很多人在用这个对人进行预判与交流方式的试探，例如对于一个TJ的人随意改变计划几乎是不可接受的。</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="career.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 数据来自 https://www.themyersbriggs.com/-/media/Myers-Briggs/Files/Manual-Supplements/MBTIGlobalManualSuppCNS.pdf</span></span>
+<span id="cb87-2"><a href="career.html#cb87-2" aria-hidden="true" tabindex="-1"></a>mtbi <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;data/mtbicn.csv&#39;</span>)</span>
+<span id="cb87-3"><a href="career.html#cb87-3" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(mtbi<span class="sc">$</span>percentage<span class="sc">~</span>mtbi<span class="sc">$</span>type,<span class="at">xlab=</span><span class="st">&#39;人格&#39;</span>,<span class="at">ylab=</span><span class="st">&#39;人群中比例（N=521）&#39;</span>,<span class="at">las=</span><span class="dv">2</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
+<img src="sciguide_files/figure-html/unnamed-chunk-43-1.png" alt="16种MTBI人格在中国人样本中的比例" width="672" />
+<p class="caption">
+图 9.1: 16种MTBI人格在中国人样本中的比例
+</p>
+</div>
 <p>职场人对外交流有三个标签：机构、职业与个人。陌生人间的交流最好从个人经历出发而不是社会机构角色出发，后者是机械且标签化的，不利于有效沟通。对外交流要了解镜像神经元理论，也就是交流双方都会在交流中不自觉尝试模拟对方促进交流，而镜像神经元更多依赖行为与语言引导。一个常见的技巧就是专家到学习者的角色转换，当别人问你问题时，不要着急堆砌专业词汇，而可以反问对方问题来切换为学习者角色来更多了解事实并最终提供其原始问题的答案。</p>
 <p>具体训练交际技能可参考3M&amp;M方法。当A问B一个问题时，B反问A三个问题，问问题前吃一颗糖豆来给自己思考时间而不是用本能去情绪化回答问题，得到答案后再回答A最初问题，提问过程中要注意对方性格类型与情感诉求，然后用个人角色出发在理解同情角度解决或回答对方提出的问题。另一种练习的方式就是准备电梯报告，请参考前一章相关内容。</p>
 <p>在建立了有效的联系后，你需要一定的维护，可以通过邮件往来或社交网络关注。注意，你不需要很密切的联系而是更多让对方对你有一个角色标签，这样对方遇到合适职位时会联想到你。而另一种联系方式就是信息面试（ information interview），当你特别想取得一个职位时，需要通过人脉来非正式了解情况，此时可以约下相关人来聊天。首先你要自己进行一定调研，这样不浪费双方时间，然后准备好帮助对方想起你的自我介绍，然后对话以寻求建议与背景信息为主而非针对职位，可以涉及对方的背景、日常工作及其建议，特别是在招聘信息或官方网站上没有提及的内容，对话后发送邮件表示感谢。</p>
@@ -448,6 +458,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>你当前研究项目最贵的组成部分是什么</li>
 <li>讲一个你管理时间的案例</li>
 <li>你当前工作的里程碑是什么</li>
+<li>你入职五年的职业计划是什么</li>
 </ul>
 <p>从面试官角度，他们会重点关注回答的内容是否容易理解，是否完整且会记录时间，不同面试官打分的项目不同，他们会根据结果整体去考察候选人，直接拍板的招聘要警惕。</p>
 </div>
@@ -467,7 +478,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>下面列举一些博士的就业方向，仅供参考。</p>
 <div id="博后" class="section level3" number="9.6.1">
 <h3><span class="header-section-number">9.6.1</span> 博后</h3>
-<p>欧洲有玛丽居里博后与洪堡学者，日本有学术振兴会（JSPS），美国国立卫生研究院有 T32 与 K99 博后。博后要搞清楚经费来源是软钱（soft money）还是硬钱（hard money）。前者 是教授申请项目中用来支持博后的经费，一旦用光了位置就没了。后者是学校从学生学费或研究机构募集后分给课题组用来研究的经费，用光风险比较小。博后自己申到软钱可摆脱课题组对课题限制。企业博后则有较高收入且与业界结合紧密，但转回学术界会略有困难。</p>
+<p>欧洲有玛丽居里博后与洪堡学者，日本有学术振兴会（JSPS），美国国立卫生研究院有 T32 （美国毕业2年内的博士，30%通过率）与 K99 博后（博士毕业4年内，23%通过率）。博后要搞清楚经费来源是软钱（soft money）还是硬钱（hard money）。前者 是教授申请项目中用来支持博后的经费，一旦用光了位置就没了。后者是学校从学生学费或研究机构募集后分给课题组用来研究的经费，用光风险比较小。博后自己申到软钱可摆脱课题组对课题限制。企业博后则有较高收入且与业界结合紧密，但转回学术界会略有困难。此外，如果是，可以申请F32</p>
 <p>博后是学术界犯错有人兜底的最后一站，如果不出结果可以选择退出学术界，毕竟现在的博士毕业人数根本不可能都在学术界内消化掉。说白了博后是就业前的临时身份，所有博后阶段都要围绕就业规划。如果把博后当成推迟接触社会的避风港保持象牙塔的生存状态，就业所需要的能力得不到提高，那么很难成为学术界的独立研究人员，更不用提转行跨界所需要的能力了。</p>
 </div>
 <div id="常任轨" class="section level3" number="9.6.2">
@@ -549,7 +560,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -578,7 +588,7 @@ gitbook.start({
 },
 "edit": {
 "link": "https://github.com/yufree/sciguide/edit/master/09-zhuanhang.Rmd",
-"text": "Edit"
+"text": "编辑"
 },
 "history": {
 "link": null,
@@ -588,7 +598,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["sciguide.pdf", "sciguide.epub"],
+"download": ["sciguide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

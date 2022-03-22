@@ -86,8 +86,17 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
 
-% longtable
-\usepackage{longtable,booktabs}
+% table with pandoc
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 
 % multiplecol
 \usepackage{multicol}
@@ -106,7 +115,7 @@
 % title / author / date
 \title{现代科研指北}
 \author{于淼}
-\date{2021-06-11}
+\date{2022-03-22}
 
 \usepackage{booktabs}
 \usepackage[fontset=mac]{ctex}
@@ -142,7 +151,7 @@
 
 本书初稿写作于我处于学生与独立科研人员或转行的过渡期，也就是博士后阶段。在这一阶段身处海外的我意识到了现代科研的一些趋势与这个年龄段科研人员的种种迷茫，为了铭记，也为了启迪，我将这一阶段对于现代科研的一些思考整合为一本书。这本书是开源的，在初稿完成后开放协作，我也鼓励科研人员能记录自己的成长经历，如果实在不知从哪下手，可以参考这本书来整理。是否认可本书观点并不重要，但没有自己的科研思考过程对于科研人员是一种悲哀。
 
-本书的出发点是 Jeef Leek \href{https://leanpub.com/modernscientist}{《How to be a modern scientist》}与 Phillip J. Guo 的\href{https://www.goodreads.com/en/book/show/15731248-the-ph-d-grind}{《The Ph.D Grind》} 读后感，前者介绍了当前科研过程中的一些趋势而后者完整给出了个人读博士成长的经历，本书则更像是两者的结合体。由于文化差异与技术进步，当2017年我整理前一本书笔记时发现有些内容已经需要更新了。这样我开始是保留其框架然后填上新的内容，有的内容直接是其他书的笔记，如同忒修斯的船一样，当零件换到一定程度结构也就需要重新调整，调到最后已经看不出跟原书有多大关系了，整体思路收敛到了我的个人经验上，此时就更像是后一本书了。
+本书的出发点是 Jeef Leek \href{https://leanpub.com/modernscientist}{\emph{How to be a modern scientist}}与 Phillip J. Guo 的\href{https://www.goodreads.com/en/book/show/15731248-the-ph-d-grind}{\emph{The Ph.D Grind}} 读后感，前者介绍了当前科研过程中的一些趋势而后者完整给出了个人读博士成长的经历，本书则更像是两者的结合体。由于文化差异与技术进步，当2017年我整理前一本书笔记时发现有些内容已经需要更新了。这样我开始是保留其框架然后填上新的内容，有的内容直接是其他书的笔记，如同忒修斯的船一样，当零件换到一定程度结构也就需要重新调整，调到最后已经看不出跟原书有多大关系了，整体思路收敛到了我的个人经验上，此时就更像是后一本书了。
 
 没错，这本书的一个重要来源就是我从事科研工作十年的实际感受。我非常重视从源头思考或第一推动原理，希望找到科学问题的最原始的出发点去探索，过程中会对比其他人的思路去验证或优化。这个重复造轮子的过程虽然效率不高，但会保证思路的清晰与独立性，在不断试错中步步为营，扎实推进。与之对比的是简单模仿前人的做法，这样虽然比较快，但一方面会失去探索乐趣，另一方面很难产生新洞见。很多章节我倾向于在给出解决方案前阐述这样做的原因，科研需要黑箱模型，但思路不能单纯照搬别人黑箱。这部分内容在第二章现代科研、第四章思维工具和第五章实验上有所体现。
 
@@ -227,12 +236,30 @@
 
 总结下就是职业化的现代科研知识集中在探索各自学科已知的未知内容不过也在逐渐转到未知的已知这类面向问题的工程化科研的阶段。至于未知的未知，大概只能从人的虚构能力里发现些端倪吧。
 
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-1}已知-未知列联表}
+\centering
+\begin{tabular}[t]{lll}
+\toprule
+  & 已知 & 未知\\
+\midrule
+已知 & 大学教材 & 职业科研\\
+未知 & 系统科学 & 科学幻想\\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \hypertarget{ux77e5ux8bc6ux4f53ux7cfbux7684ux65f6ux95f4ux6784ux5efa}{%
 \section{知识体系的时间构建}\label{ux77e5ux8bc6ux4f53ux7cfbux7684ux65f6ux95f4ux6784ux5efa}}
 
 除了基于已知未知这种简单的面向科研既有知识的划分方法，个人知识还需要一个时间与逻辑上的累积与构建，这样可以自洽于其他非科研知识，毕竟科研是有噪音边界的，但更广义的知识却不一定有噪音来指出不确定性。
 
-《四库全书》采用了经史子集的划分方法，内在逻辑是把经典的普世规律、过往的经验事实、学科专业知识与个人文集或观点进行了区分。这种分法从可靠性上逐渐降低但多样性逐渐升高，样我们可以很容易把自己的知识架构在这个划分方法上。从个人知识角度，知识可以分为形而上的观点理论与形而下的事实经验。日常所见都是事实，前人所见则为历史，幻想与虚构的故事也是未来的存在，所以一个基础的形而下知识体系要有个人经验与历史，侧重对事实的准确描述，而关于未来则可单独开列，因为这类事实并不存在但不妨碍有思考的乐趣。至于形而上的东西，没必要确立经典，要按照逻辑自洽的原则去整理，包括有证据有逻辑的强理论；有逻辑无证据或弱证据的观点及个人经验；如果仅有证据没有观点，可移到形而下部分；仅有逻辑的理论是很危险的，若是科幻小说还值得看，否则不要随意吸收，因为这部分内容尚属于探索中的高风险理论，如果你不打算从政或成为企业家，可参考，但如果打算，就要考验个人决策能力了。科学探索恰恰可能也在这个地方，所以得学会用从观察与实验中提炼知识的能力，至于是否改变世界，那是你的自由。
+《四库全书》采用了经史子集的划分方法，内在逻辑是把经典的普世规律、过往的经验事实、学科专业知识与个人文集或观点进行了区分。这种分法从可靠性上逐渐降低但多样性逐渐升高，让我们可以很容易把自己的知识架构在这个划分方法上。从个人知识角度，知识可以分为形而上的观点理论与形而下的事实经验。日常所见都是事实，前人所见则为历史，幻想与虚构的故事也是未来的存在，所以一个基础的形而下知识体系要有个人经验与历史，侧重对事实的准确描述，而关于未来则可单独开列，因为这类事实并不存在但不妨碍有思考的乐趣。至于形而上的东西，没必要确立经典，要按照逻辑自洽的原则去整理，包括有证据有逻辑的强理论；有逻辑无证据或弱证据的观点及个人经验；如果仅有证据没有观点，可移到形而下部分；仅有逻辑的理论是很危险的，若是科幻小说还值得看，否则不要随意吸收，因为这部分内容尚属于探索中的高风险理论，如果你不打算从政或成为企业家，可参考，但如果打算，就要考验个人决策能力了。科学探索恰恰可能也在这个地方，所以得学会用从观察与实验中提炼知识的能力，至于是否改变世界，那是你的自由。
+
+\begin{figure}
+\includegraphics{data/knowledge} \caption[知识体系的构建]{知识体系的构建}\label{fig:unnamed-chunk-2}
+\end{figure}
 
 简单说就是你可以在知识层次超过背景组后就创建一个笔记系统来整合你的知识：形而下的基础数据与案例库、历史沿革及信息检索方法与形而上的理论观点库，区分强理论与弱理论并学会总结理论。要学会把新信息整合到这个知识体系中去并持续整合，形成完整独立的知识库，这样就不容易被新思想所迷惑，总能找到位置。如同世界观一样，你自己的知识体系也会被其他人的知识体系所冲击，此时要学习别人优点来丰富自己的知识边界而不是直接彻底否定与全盘接纳，后者常发生在宗教皈依过程之中。
 
@@ -278,13 +305,27 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 
 现代社会基本是延续了近代工业社会对分工与效率的追求且交流限制进一步被信息技术打破。现代社会的进步往往是构建在前人开拓领域之上的而不是像近代社会那样开拓全新的领域，特别在技术领域，新技术往往是很多现有技术的叠加或组合。对分工的追求导致工业品的生产与消费不再由一个人完成，人越来越嵌入到社会机器运转的齿轮之中，不用关心所需之物如何产生而更多关注其功用，而很多技术的使用者并不清楚原理，此时技术黑箱与魔法差异不大。而新产生的职业带有明显的目的性，例如心理咨询师就是要解决心理问题、营养师就是要给出最好的营养搭配、财务顾问就是能给个稳定的投资回报率、经济学家就是要能预警经济危机、科学家就是要能把核聚变搞成可控的等。不过，很多新产生的职业虽然事实上发展出了自己的术语或黑话体系，但并不能真的解决问题而仅仅是用专业感给现代人确定性与安全感，毕竟作为个体的现代人遇到自己知识外的问题除了寻求专家并信任专家外似乎也没有了探索其他知识领域的勇气。
 
-这种分工导致的个体角色工具化或目的话经常给现代人带来困惑，现代人会很难理解科学结论里的概率而很快把概率转化为有用或没用这样的定性判断，例如传染病出现后现代分工制度会很快给出疫苗，但如果打了疫苗依然被感染就会被舆论放大，只是事实上疫苗的有效率从来都到不了100\%，现代人的世界观是决定论的而科学需要概率化的世界观。现代人会认为总存在专业人士来解决发生的问题，但事实上很多现在发生的问题历史上虽有类似，但需要因地制宜解决。我们的现代教育系统并不能及时提供解决新问题的人才而更多是传授有客观标准评判的知识，创新、灵感还有教材外自由发挥的内容很难培养与评价，但这些对解决问题很重要。
+这种分工导致的个体角色工具化或目的化经常给现代人带来困惑，现代人会很难理解科学结论里的概率而很快把概率转化为有用或没用这样的定性判断，例如传染病出现后现代分工制度会很快给出疫苗，但如果打了疫苗依然被感染就会被舆论放大，只是事实上疫苗的有效率从来都到不了100\%，现代人的世界观是决定论的而科学需要概率化的世界观。现代人会认为总存在专业人士来解决发生的问题，但事实上很多现在发生的问题历史上虽有类似，但需要因地制宜解决。我们的现代教育系统并不能及时提供解决新问题的人才而更多是传授有客观标准评判的知识，创新、灵感还有教材外自由发挥的内容很难培养与评价，但这些对解决问题很重要。
 
-现代社会已经不存在真正意义上通才了，甚至历史上的所谓通才知道的内容也不比现在完成义务教育的人多多少。唯一比较接近这个概念的是学者，不过学者现在如果不挂个专家头衔也很难发声。职业人士与专家看似一致但内核不同。职业人士追求的是标准化可持续的行业利益，专家则是从知识量来判断。职业化行业可以为了内部利益向大众营销价值观与品牌感，但专家更多是就事论事，远离利益讨论。很多现代人尽力维护的专家形象其实是为了维护自己的职业化饭碗别被时代甩开，但目光长远的专家学者则时刻准备迎接新时代。
+现代社会已经不存在真正意义上的通才了，甚至历史上的所谓通才知道的内容也不比现在完成义务教育的人多多少。唯一比较接近这个概念的是学者，不过学者现在如果不挂个专家头衔也很难发声。职业人士与专家看似一致但内核不同。职业人士追求的是标准化可持续的行业利益，专家则是从知识量来判断。职业化行业可以为了内部利益向大众营销价值观与品牌感，但专家更多是就事论事，远离利益讨论。很多现代人尽力维护的专家形象其实是为了维护自己的职业化饭碗别被时代甩开，但目光长远的专家学者则时刻准备迎接新时代。
 
-分工对人的异化或者工具化既促进了现代社会经济发展效率，也制造了大量的现代社会特有的问题。现代社会对效率的追求主要是为了迎合工业革命以来的增长现象。现代社会犹如一台机器，能源供应以化石燃料为主，在几百年的时间里把植物上亿年从大气中固定的碳重新释放回大气。伴随技术进步，能源的供应似乎是有其他解决方案的，例如可再生能源与核能。在解决动力问题后，机器的生产出的产品还需要被消费掉，支持消费需求的则同样是过去几百年，甚至更具体说就是二战以来才出现的人口大爆炸，近似指数增长的人口带来了巨大的需求与创造新需求的空间。不过，目前几乎可以确定伴随经济发展，全球人口增长的趋势将在几十年内终结，很多发达国家如果排除掉来自生育率较高的发展中国家新移民，人口事实上也早就停止增长了。或许现代社会会不断给现代人新的需求增长点，但人数只要不涨了，人口总需求端疲软的现象是一定会发生的，这会直接终结掉现代社会的增长逻辑。不过全局性衰退可能并不影响局部繁荣，当前人口虽然下降但依然向大都市圈集中，局部增长的代价是更大范围的衰退。
+分工对人的异化或者工具化既促进了现代社会经济发展效率，也制造了大量的现代社会特有的问题。现代社会对效率的追求主要是为了迎合工业革命以来的增长现象。现代社会犹如一台机器，能源供应以化石燃料为主，在几百年的时间里把植物上亿年从大气中固定的碳重新释放回大气。伴随技术进步，能源的供应似乎是有其他解决方案的，例如可再生能源与核能。在解决动力问题后，机器生产出的产品还需要被消费掉，支持消费需求的则同样是过去几百年，甚至更具体说就是二战以来才出现的人口大爆炸，近似指数增长的人口带来了巨大的需求与创造新需求的空间。不过，目前几乎可以确定伴随经济发展，全球人口增长的趋势将在几十年内终结，很多发达国家如果排除掉来自生育率较高的发展中国家新移民，人口事实上也早就停止增长了。或许现代社会会不断给现代人新的需求增长点，但人数只要不涨了，人口总需求端疲软的现象是一定会发生的，这会直接终结掉现代社会的增长逻辑。不过全局性衰退可能并不影响局部繁荣，当前人口虽然下降但依然向大都市圈集中，局部增长的代价是更大范围的衰退。
 
 追求增长的发展逻辑其实自发破坏掉了很多农业社会以来形成的宗教世界观。现代人的伦理道德大都起源于农业社会甚至更早的狩猎采集社会，很多世界观跟增长是内在矛盾的，例如前现代社会的民俗宗教喜欢用轮回的概念，但轮回是需要收支平衡的，在信息交流效率低下的时代你可以说轮回到别处了也没法考证，但现在世界人口就摆那里了，农业出现前世界人口1500万左右，农业社会出现后到第一次工业革命中的1804年，世界人口才到达10亿。之后的两百多年里，这个数字变成了70亿。但并不是说1900年到40亿，事实上这个时间是1974年，甚至到达30亿都是1959年的事。这个快速增长时期的人口需要的前世从哪里来？清末四亿人口死了都别转去凑中国现在人口都得累积上几代人，阎王爷必须要掌握未来几百上千的人口变化才能在此时此刻凑够轮回总数，孟婆汤也得增加防腐剂来应对每天人数的波动。也许有人又要搬出六道轮回的理论补丁让人畜互相转生来凑数，但现代社会的绿色革命又不只是推动人口增长，畜牧业增长更是惊人，更不用说我们的生物制药行业为了提取某些不方面化学合成的物质而使用的工业级培养皿。物种虽然在经历大灭绝但数量上可一直都在增长，毕竟自从人掌握固氮技术以来人工固氮总量上已经超过了自然固氮，而有机氮是氨基酸的必要组成部分，因此现代社会里我们事实上``生产''出了自己形成了人口大爆炸。说白了轮回机制的提出者囿于时代根本预见不到一个增长主导的现代社会，后面无论怎么打补丁也会被统计事实打脸。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(showtext)}
+\NormalTok{showtext}\SpecialCharTok{::}\FunctionTok{showtext\_auto}\NormalTok{()}
+\CommentTok{\# 数据来自维基百科}
+\NormalTok{wp }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/wp.csv\textquotesingle{}}\NormalTok{, }\AttributeTok{check.names =}\NormalTok{ F)}
+\FunctionTok{plot}\NormalTok{(wp}\SpecialCharTok{$}\NormalTok{population}\SpecialCharTok{\textasciitilde{}}\NormalTok{wp}\SpecialCharTok{$}\NormalTok{year,}\AttributeTok{pch =} \DecValTok{19}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}万人\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-3-1} \caption[世界人口变化]{世界人口变化}\label{fig:unnamed-chunk-3}
+\end{figure}
 
 此外，为了解决对未知而恐惧而构建的算命系统也经不起现代社会的检验，毕竟八字算命一共就能容纳561600种人，当今世界人口70亿，平均来看，每个八字有一万多人，也就是说八字其实不够用了，重复率太高，天煞孤星都不孤独，当然这类理论也有些打补丁的理论但明显是后来人意识到问题了增加的解释。现在保留下来的宗教都有一定世俗化趋势，模糊规避掉这些脱离实际的东西。现代社会的新宗教表现形式则更多是品牌崇拜、时间旅行、外星人这一类起码不会直接被经验事实证伪的行为与理念，否则根本经不起推敲。现代社会的增长逻辑是一种进步，起码对旧时代的破坏是很彻底的。
 
@@ -296,6 +337,18 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 \subsection{现代社会的结构}\label{ux73b0ux4ee3ux793eux4f1aux7684ux7ed3ux6784}}
 
 当前社会运行方式也可通过基本经济指标这个角度来进行整体解读。2020年中国人均国内生产总值达到了一万美元，也就是一年全国创造价值总和大概14万亿美元。全国有约不到8亿就业人口，另外有6亿多或老或小目前没法创造劳动价值，学龄前跟上学的、家庭主妇/夫还有吃退休金的老年人与无劳动能力的群体事实上还是靠家庭与政府补贴养的。在发达国家美国，也有大约超过一半的人口是不领工资不就业的（这个数据川普竞选总统时曾经用过，吃准了普通人算不清楚就业人口与总人口的差异，失业率其实只算满足就业条件人口与实际就业人口），毕竟美国年龄结构比中国更老龄化一些。同时，伴随老龄化与少子化，中国就业人口规模事实上在2017年已经见顶，未来就业人口比例会更低。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 数据来自世界银行}
+\NormalTok{e2p }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/e2p.csv\textquotesingle{}}\NormalTok{, }\AttributeTok{check.names =}\NormalTok{ F)}
+\FunctionTok{plot}\NormalTok{(e2p}\SpecialCharTok{$}\NormalTok{World}\SpecialCharTok{\textasciitilde{}}\NormalTok{e2p}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Country Name}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch =} \DecValTok{19}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}世界就业人口比(\%)\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-4-1} \caption[世界就业人口比的下滑趋势]{世界就业人口比的下滑趋势}\label{fig:unnamed-chunk-4}
+\end{figure}
 
 另外，人均国内生产总值一万美金跟人均收入一万美金也是两个概念，企业的支出成本比绝大多数人拿到手的薪资要多，要考虑物料磨损、税费等开支。虽然这个比例不太固定，但一般认为大概五到六成是人均收入，美国2019年人均国内生产总值大概6.5万美元而家庭人均收入则成了3.3万美元，中国人均年收入也就大概5000美元，这个人均的基数是总人口而不是就业人口，把儿童老人也给算进去了。因为就业人口恰好也是总人口的五六成，所以人均GDP其实歪打正着跟就业人均工资其实差不多。
 
@@ -346,11 +399,37 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 \hypertarget{ux7814ux7a76ux751fux84c4ux6c34ux6c60}{%
 \subsection{研究生蓄水池}\label{ux7814ux7a76ux751fux84c4ux6c34ux6c60}}
 
-2020 年国内研究生入学考试报名人数刷了新高，达到 341 多万，而这里面应届生与往届生人数相当，报录比在扩招的大背景下还在不断降低。有一个很有意思的现象，报考研究生的人数并不是一直上升的，事实上，2007 年、2013 年都出现过报考高峰然后下一年回落的情况，回落可能跟当时经济形势上行有关，当社会岗位需求旺盛时，两三年的学位投资就可能是一笔很高的机会成本。但 2016 年起，研究生入学考试报名人数重新上升，这侧面体现了毕业生对就业的担忧。而且往届生与应届生报录人数同时增长，说明毕业生普遍认为学位比工作更有价值，或者说本科就业形势不佳。
+2020 年国内研究生入学考试报名人数刷了新高，达到 341 万，而这里面应届生与往届生人数相当，报录比在扩招的大背景下还在不断降低。有一个很有意思的现象，报考研究生的人数并不是一直上升的，事实上，2007 年、2013 年都出现过报考高峰然后下一年回落的情况，回落可能跟当时经济形势上行有关，当社会岗位需求旺盛时，两三年的学位投资就可能是一笔很高的机会成本。但 2016 年起，研究生入学考试报名人数重新上升，这侧面体现了毕业生对就业的担忧。而且往届生与应届生报录人数同时增长，说明毕业生普遍认为学位比工作更有价值，或者说本科就业形势不佳。
 
-我们再看看高考，中国高考报名人数在 07-09 这三年都突破了千万，此后人数稳定在九百四五十万的样子，录取则是在 2016 年达到巅峰的 705 万。对比高考录取人数与研究生录取人数就会发现高校中本科生规模已经见顶，但研究生规模持续增长，录取难度整体下降可能也是吸引考生报名的重要因素。
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 数据来自中国考研网 http://www.chinakaoyan.com/info/article/id/77817.shtml}
+\NormalTok{gradapply }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/gradapply.csv\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(gradapply}\SpecialCharTok{$}\NormalTok{application}\SpecialCharTok{\textasciitilde{}}\NormalTok{gradapply}\SpecialCharTok{$}\NormalTok{year,}\AttributeTok{pch =} \DecValTok{19}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}研究生报名人数（万人）\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-可以预计如果研究生持续扩招（推测十年内见顶，因为应届生快不够用了），搞考研培训、出国培训、期刊校稿还有高校教职将出现最后的快速发展窗口，之后将进入稳定或衰退期。然而，这之前我们体会更明显的则会是更多关于研究生团体的讨论与新闻调查，我们的研究生教育发展可能还跟不上研究生团体扩大的速度，中间的差距是一头典型灰犀牛，潜伏巨大系统性危机。
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-5-1} \caption[中国研究生报名人数变化]{中国研究生报名人数变化}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+我们再看看高考，中国高考报名人数在 07-09 这三年都突破了千万，此后人数有所，但最近几年又突破千万。不过高考录取人数则持续上升，因此如果就业形势不变，报考研究生的人群基数也会增长。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 高考报名与录取数据来自教育部网站}
+\NormalTok{cee }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/cee.csv\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(cee}\SpecialCharTok{$}\NormalTok{application}\SpecialCharTok{\textasciitilde{}}\NormalTok{cee}\SpecialCharTok{$}\NormalTok{year,}\AttributeTok{pch =} \DecValTok{19}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}人数（万人）\textquotesingle{}}\NormalTok{,}\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1100}\NormalTok{))}
+\FunctionTok{points}\NormalTok{(cee}\SpecialCharTok{$}\NormalTok{entrants}\SpecialCharTok{\textasciitilde{}}\NormalTok{cee}\SpecialCharTok{$}\NormalTok{year,}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\AttributeTok{pch =} \DecValTok{15}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}bottomright\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}报名人数\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}录取人数\textquotesingle{}}\NormalTok{),}\AttributeTok{pch=}\FunctionTok{c}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{15}\NormalTok{),}\AttributeTok{col=}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-6-1} \caption[中国高考报名与录取人数变化]{中国高考报名与录取人数变化}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+可以预计如果研究生持续扩招，搞考研培训、出国培训、期刊校稿还有高校教职将出现最后的快速发展窗口，之后将进入稳定或衰退期。然而，这之前我们体会更明显的则会是更多关于研究生团体的讨论与新闻调查，我们的研究生教育发展可能还跟不上研究生团体扩大的速度，中间的差距是一头典型灰犀牛，潜伏巨大系统性危机。
 
 从学生角度看，眼下的研究生报考热潮跟经济压力有关而跟科研兴趣没啥关系，所以很有可能出现学生自认打工仔的情况而在混日子等就业的情况，高校或研究所的心理辅导如果跟不上会出不少极端问题。从导师角度看，近二十年的高校扩张吸收了大量新导师，而持续增加的劳动力所需要的管理经验基本都比较欠缺，毕竟他们读研时周围没那么多学生，研究生无指导或指导过激情况会不断出现。我们会在近几年看到一系列因为研究生极端事件而采取的改进，但能否做到预防，就看高校研究所的领导团队是否有意识了。
 
@@ -365,23 +444,66 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 \hypertarget{ux6bd5ux4e1aux5ef6ux671fux95eeux9898}{%
 \subsection{毕业延期问题}\label{ux6bd5ux4e1aux5ef6ux671fux95eeux9898}}
 
-根据最近 20 年研究生招生情况可以看出，研究生人数比例 研究所跟高校比例大概在 1:3，硕士的扩招力度是远高于博士的，但两者都在扩，20 年前一共 6 万多，现在仅博士每年录取就有 7 万多，硕士则扩张了 10 倍有余，达到每年六七十万的录取人数。从研究生毕业状况看，伴随扩招，每年招生人数与毕业人数有相当的差距，但比较吊诡的是博士招生在增长而毕业人数却趋稳了，这基本暗示延期，特别是博士延期的常态化。从在读人数上看，研究生这个临时身份群体在不断扩大，这造成了前文所述的研究生导师矛盾的激化，除了扩招影响，另一个自然就是前面提到的延期问题。
+根据教育部的公开数据，近20年研究所与高校的研究生录取比例均大概为1:3，硕士和博士都在扩招，但对硕士的扩招力度远高于博士。20年前我国每年一共招收6万多研究生，现在仅博士每年就录取10万多人，硕士则扩张了10倍有余，录取人数达到每年接近一百万，研究生在校生规模也在快速增长。从研究生毕业状况看，伴随扩招，每年的招生人数与毕业人数有相当的差距。但比较奇怪的是，博士招生人数在不断增长但毕业人数的增长幅度却增长有限且长期少于前几年的录取人数了，这基本暗示延期，特别是博士延期的常态化。
 
-从教育部公布的数据推算，基本上博士延期概率超过 50\%，硕士延期概率是个位数，也就是说没有延期毕业的硕士，没有按期毕业的博士，而且延期超过50\%的时间已经超过10年了。同时另一个现象也值得关注，那就是女性研究生的延期概率是普遍低于平均水平的，那么对应的男性研究生延期概率会更加惨不忍睹。
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 数据来自教育部}
+\NormalTok{graduate }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/graduate.csv\textquotesingle{}}\NormalTok{, }\AttributeTok{check.names =}\NormalTok{ F)}
+\NormalTok{graduate2 }\OtherTok{\textless{}{-}}\NormalTok{ graduate[graduate}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Total\textquotesingle{}}\NormalTok{,]}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Enrolment(Master)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}人数\textquotesingle{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{19}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\FunctionTok{min}\NormalTok{(graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Admitted(Master)}\StringTok{\textasciigrave{}}\NormalTok{),}\FunctionTok{max}\NormalTok{(graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Enrolment(Master)}\StringTok{\textasciigrave{}}\NormalTok{)),}\AttributeTok{main=}\StringTok{\textquotesingle{}硕士研究生\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Admitted(Master)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{18}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Graduates(Master)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{17}\NormalTok{,}\AttributeTok{col =} \StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}topleft\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}在校生\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}录取人数\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}毕业人数\textquotesingle{}}\NormalTok{),}\AttributeTok{pch=}\FunctionTok{c}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{17}\NormalTok{), }\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{))}
 
-如果我们用在校生去除当年毕业生，会得到一个预估的毕业年限，结果显示博士需要 6 年多毕业而硕士也需要 3 年多毕业，硕士那个考虑到延期概率不高还可以接受，博士那个就有点反人类了，而且从近几年情况看这个毕业年限还在增加。其实答案很简单，就是扩招导致的人口在高校或研究机构的滞留，那么如何去除这个影响呢？考虑到博士硕士其实应该是 2到4 年内毕业，我们只要用当年录取的人数去对比 2到4 年后毕业的人数就可以了。考虑到博士毕业率应该低于硕士且硕士毕业率不应该超过 100\%，应该是 3 年毕业的数据比较可信，这里我们会发现 3 年毕业率要远高于延期概率，这又是怎么回事？
+\FunctionTok{plot}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Enrolment(Doctor)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}人数\textquotesingle{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{19}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\FunctionTok{min}\NormalTok{(graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Entrants(Doctor)}\StringTok{\textasciigrave{}}\NormalTok{),}\FunctionTok{max}\NormalTok{(graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Enrolment(Doctor)}\StringTok{\textasciigrave{}}\NormalTok{)),}\AttributeTok{main=}\StringTok{\textquotesingle{}博士研究生\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Entrants(Doctor)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{18}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(graduate2}\SpecialCharTok{$}\NormalTok{year,graduate2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Graduates(Doctor)}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{17}\NormalTok{,}\AttributeTok{col =} \StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}topleft\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}在校生\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}录取人数\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}毕业人数\textquotesingle{}}\NormalTok{), }\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{),}\AttributeTok{pch=}\FunctionTok{c}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{17}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
-这里就没数据支持了，但大多数研究生都听过硕博连读这个概念，其实如果三年毕业为真，那么硕博加起来应该是 6 年，而硕博连读应该是 5 年，如果博士延期是常态化的，那么我想这里面很大一部分比例是硕博连读。估计再过几年，考博的比率可能会更低而硕博 6 年将成为默认的学习年限。有打算硕士毕业出国读博的可以考虑下了，年限上其实吃亏不多而且国外会有老板没钱了逼着早点毕业的情况。
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-7-1} \caption[中国硕士博士研究生录取、毕业与在校人数变化]{中国硕士博士研究生录取、毕业与在校人数变化}\label{fig:unnamed-chunk-7}
+\end{figure}
 
-刚才说了研究生毕业的供给端，下面看看需求端也就是教职的变化。国内教职因为 1999 年开始的扩招导致在 21 世纪的第一个 5 年大量的扩展教职，这样的后果就是有一个 5 年的教职年龄高峰，这个高峰占据了大量的教职。从数据上看，目前这个高峰年龄段在 51-55 岁，都算是当打之年，如果退休年龄没有明显推迟的话，那么在 10-15 年后应该可以看到一个因为退休高峰导致的教职空缺期。那么 10-15 年后谁博士毕业呢？大概是现在读中学的孩子。其实考虑硕博 6 年加本科 4 年，每个高校都有义务在学生刚接触高等教育或研究时给他们领先当前技术 10 年的教材与方法，否则学生 10 年前选了小灵通网络优化专业，博士毕业基本就只有转行了。这里再看下性别问题，数据显示女性教职前期扩张的要更厉害，平均年龄也更低，大概要 20 年左右才能迎来退休高峰的教职空缺，如果校方固定当前男女比，那么其实对有更低概率延期的女性并没有什么优势。
+前面说了研究生的供给端，下面看看需求端也就是教职的变化，这里只考虑博士，因为当前教职对学历的要求已经比较高了。同样看来自教育部的数据，由于本科生从1999年开始扩招，教职数也一直增加。不过，高级职称的增加速度明显低于教职总数的增加速度而中级职称教职在快速增加。同时，从年龄分布上看，当前教职年龄高峰在 55\textasciitilde59岁，大概是二十年前大学扩招时入职的。如果退休年龄没有明显推迟的话，那么在10年内应该可以看到一个因为退休高峰导致的教职空缺期。10年内什么年龄段的人会博士毕业呢？大概是当前的本科生，考虑到本科4年加硕博连读6年，每个高校都有义务在学生刚接触高等教育或研究时给他们能实时吸纳研究进展的教学大纲，否则要是学生10年前选了小灵通网络优化专业，那么等到博士毕业基本就只有转行了。
 
-教职中教授的年龄分布状况也很有意思，当前教授主流年龄是 51-55 岁，反推下基本是刚改革开放后上的大学，经历应该挺丰富的。副教授整体要比教授年轻 10 岁，大概 90 年前后上大学，46-50 岁这个年龄段人数基本稳定，说明升教授基本就是前一个年龄段，从年龄分布上看 35-45 岁人多，不同代际间竞争会激烈些。
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 数据来自教育部}
+\NormalTok{faculty }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/faculty.csv\textquotesingle{}}\NormalTok{, }\AttributeTok{check.names =}\NormalTok{ F)}
+\NormalTok{faculty2 }\OtherTok{\textless{}{-}}\NormalTok{ faculty[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Total\textquotesingle{}}\NormalTok{, ]}
 
-前面着重强调年龄分布可能带来的教职空缺，另一种空缺就是所谓扩张期或窗口期，我们不考虑退休，从年龄分布上看这一部分的人数似乎比较稳定。每年的教职数一直在提高，而是似乎斜率比较稳定。但是女性的教职数增长的回归斜率只有总数的 1/3，也就是说每增长 3 个教职才会有一个是女性的，这说明教职市场存在一定的性别歧视。但这个问题不好直接下结论，因为辛普森悖论也是同样的语境。同时，教授与副教授教职增长的斜率低于总体，暗示了教职里存在的层级结构。总之，目前还算是一个稳定的窗口期，教职数不断增长，属于利好；但成长空间不算大，别忘了博士毕业生可是年年增长，所以以后熬年限是肯定不行的，31-35 岁的副教授人数逐年下降，不是升迁（概率低）就是收紧了要求转而直接从海外引进人才，诸君努力吧。
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(faculty}\SpecialCharTok{$}\NormalTok{year[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Total\textquotesingle{}}\NormalTok{],faculty}\SpecialCharTok{$}\NormalTok{total[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Total\textquotesingle{}}\NormalTok{],}\AttributeTok{pch=}\DecValTok{19}\NormalTok{, }\AttributeTok{main=}\StringTok{\textquotesingle{}教职数\textquotesingle{}}\NormalTok{,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\FunctionTok{max}\NormalTok{(faculty}\SpecialCharTok{$}\NormalTok{total)),}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \StringTok{\textquotesingle{}人数\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(faculty}\SpecialCharTok{$}\NormalTok{year[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Professors\textquotesingle{}}\NormalTok{], faculty}\SpecialCharTok{$}\NormalTok{total[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Professors\textquotesingle{}}\NormalTok{],}\AttributeTok{pch=}\DecValTok{18}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(faculty}\SpecialCharTok{$}\NormalTok{year[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Asso. Professors\textquotesingle{}}\NormalTok{],faculty}\SpecialCharTok{$}\NormalTok{total[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}Asso. Professors\textquotesingle{}}\NormalTok{],}\AttributeTok{pch=}\DecValTok{17}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(faculty}\SpecialCharTok{$}\NormalTok{year[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}middle\textquotesingle{}}\NormalTok{],faculty}\SpecialCharTok{$}\NormalTok{total[faculty}\SpecialCharTok{$}\NormalTok{category }\SpecialCharTok{==} \StringTok{\textquotesingle{}middle\textquotesingle{}}\NormalTok{],}\AttributeTok{pch=}\DecValTok{15}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}orange\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}topleft\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}总数\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}教授\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}副教授\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}中级职称\textquotesingle{}}\NormalTok{), }\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}orange\textquotesingle{}}\NormalTok{),}\AttributeTok{pch=}\FunctionTok{c}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{17}\NormalTok{,}\DecValTok{15}\NormalTok{))}
 
-我们都知道研究生学历在贬值，那么究竟贬到什么状况了呢？我计算了同年毕业的博士与硕士人数比例，发现硕士的贬值效果更强，博士相比之下反而在升值，女博士升值更高。当然，大前提是五十步笑百步，都是贬值。基本的情况就是 1 个博士大概对应 10 个硕士，显然硕士作为一个学位扩的有点太猛了。后面的分析就不考虑硕士找教职了，基本没戏。
+\NormalTok{col }\OtherTok{=}\NormalTok{ RColorBrewer}\SpecialCharTok{::}\FunctionTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{,}\StringTok{\textquotesingle{}Set2\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{30 Years \& Under}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{19}\NormalTok{, }\AttributeTok{main=}\StringTok{\textquotesingle{}教职数\textquotesingle{}}\NormalTok{,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{110000}\NormalTok{),}\AttributeTok{xlab =} \StringTok{\textquotesingle{}年份\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \StringTok{\textquotesingle{}人数\textquotesingle{}}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{1}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{31{-}35years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{18}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{2}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{36{-}40years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{17}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{3}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{41{-}45years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{15}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{4}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{46{-}50years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{14}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{5}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{51{-}55years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{13}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{6}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{56{-}60years}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{12}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{7}\NormalTok{])}
+\FunctionTok{points}\NormalTok{(faculty2}\SpecialCharTok{$}\NormalTok{year,faculty2}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{61 Years \& Over}\StringTok{\textasciigrave{}}\NormalTok{,}\AttributeTok{pch=}\DecValTok{11}\NormalTok{,}\AttributeTok{col=}\NormalTok{col[}\DecValTok{8}\NormalTok{])}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}topleft\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}30岁以下\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}30{-}34\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}35{-}39\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}40{-}44\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}45{-}49\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}50{-}54\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}55{-}59\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}60岁以上\textquotesingle{}}\NormalTok{), }\AttributeTok{col =}\NormalTok{ col,}\AttributeTok{pch=}\FunctionTok{c}\NormalTok{(}\DecValTok{19}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{17}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{14}\NormalTok{,}\DecValTok{13}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{11}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
 
-新增教职数这些年基本稳定在 2 万这个水平，博士毕业生大概超过 5 万，也就是说教职市场在今后可预期的时间里撑死也就能解决一半博士的就业，另外有一半肯定会转行。考虑到博士学位对硕士学位是升值的，估计非教职市场上应该挺容易就业的，当然看你干不干了。新教职里女性比例是低于人口比例的，但这二十年却一直在增长，同样在增长的则是博士毕业生中女性的比例，伴随这个趋势，教职里对女性的歧视似乎是要好于社会其他行业的。
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-8-1} \caption[中国不同教职人数变化及年龄构成]{中国不同教职人数变化及年龄构成}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+除了退休带来教职的空缺外，教职数也在扩增。每年的教职数一直在稳定增长，但成长空间不算大，别忘了博士毕业生数可是逐年增长的，所以以后熬年限评职称是肯定不行的，目前30-34岁这个年龄段的教职人数在快速上升而前一个年龄段的人数并不多也比较稳定，这说明取得教职大概率是而立之年之后的事。这种较长的培养年限显著区别于其他行业，因为很多行业从业人员进入30-34岁基本进入了中层，而从事教职这个年龄刚刚入行。
+这些年新增的教职数基本稳定在2万这个水平，但最近几年显著增加，2019年与2020甚至超过3万。同期每年新增博士毕业生超过6万而录取数超过了10万，也就是说，教职市场在今后可预期的时间里撑死也就能解决一半博士毕业生的就业问题，另外一半肯定要转行。
+
+总之，目前博士研究生会长期面临毕业延期问题，同时教职市场的增长也无法消化当前的毕业生，需要同时考虑非教职的就业。
 
 \hypertarget{ux5b66ux672fux804cux4e1aux8defux5f84}{%
 \subsection{学术职业路径}\label{ux5b66ux672fux804cux4e1aux8defux5f84}}
@@ -402,7 +524,7 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 下面是一个图表，可用来评估不同阶段的状态。
 
 \begin{longtable}[t]{lllll}
-\caption{\label{tab:unnamed-chunk-1}理想学术路径}\\
+\caption{\label{tab:unnamed-chunk-9}理想学术路径}\\
 \toprule
 指标 & 博士博后 & 独立课题组 & 学术带头人 & 学科带头人\\
 \midrule
@@ -431,7 +553,7 @@ I cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaon
 
 你可能会说做学术要有一定理想，不能这么功利，说这话的有相当比例站着说话不腰疼。如果你已经走到教授研究员这个档次自然可以跟人谈理想，但坦白说现在的博导平均拿到学位都是 20 年前的事了，那个时候博士一年毕业 7 千多人，而现在博士毕业生数目翻了 10 倍，换句话在目前的晋升条件下你成为教授的概率大概是 50\%，如果有一半不做学术，几乎可以肯定就是教授了。10 年前一年博士毕业人数大概是现在的一半多，这意味着其晋升教授可能性也有十分之一，尚算合理。但 10 年后如果博士年毕业生达到 10 万，那么其成为教授将跟现在成为优青差不多难度，代际不平衡是十分严重的。不了解基础状况就把人往坑里带的后果挺严重的，自上而下，金字塔顶端人数就那么多，一味扩大底端几乎意味着大量博士要陷入无尽的博后循环之中去拉伸等级。
 
-所以其实我挺理解很多劝博士毕业转行的看法的，那怕你手握博士学位，目前在国内想走到独立课题组也是个5\%概率的事，大概 20 个人里有一个。考虑到一般博士同学同院系大概也就是 20 个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？
+所以其实我挺理解很多劝博士毕业转行的看法的，哪怕你手握博士学位，目前在国内想走到独立课题组也是个5\%概率的事，大概 20 个人里有一个。考虑到一般博士同学同院系大概也就是 20 个人，如果学术水平不在前面，基本可以重新考虑下人生规划了，因为此时你选择科研就真的需要兴趣激发了，不然身边的落差会折磨你几十年。而且上面的估计有个严重的问题，那就是大量使用了均匀分布，但真实的情况却是极不均匀分布，你的师承关系跟毕业院校都会把这个分布搞得更加极端，而且后发者优势在科研里面非常常见，但前面的坑都满了你怎么让后发者上？
 
 同时要注意，国内博士毕业生人数还在不断上升，一方面说明教职还是有空间的，另一方面则暗示了今后博士毕业生生存环境将会更加恶劣，竞争会更加激烈。同时，目前教职数目会逐渐趋稳，如果你没赶上新学科新方向的窗口期大爆发，基本就是始终要接纳这个竞争强度了，只会更强不会更弱。而且有些研究方向必然因为学科发展走向没落，没必要跟一伙老气横秋的人抱团取暖，该转方向就转，反正大家都没基础。
 
@@ -534,68 +656,72 @@ NHST 还有个问题在于 p 值的选择性报道或者说发表歧视，研究
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{1}\NormalTok{)}
 \CommentTok{\# 真实差异}
-\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{,}\DecValTok{260}\NormalTok{),}\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{,}\DecValTok{260}\NormalTok{))}
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DecValTok{260}\NormalTok{), }\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{, }\DecValTok{260}\NormalTok{))}
 \CommentTok{\# 随机差异}
 \NormalTok{xr }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{520}\NormalTok{)}
 \CommentTok{\# 考虑误差的真实差异}
-\NormalTok{xm }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{,}\DecValTok{260}\NormalTok{),}\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{,}\DecValTok{260}\NormalTok{))}\SpecialCharTok{+}\FunctionTok{rnorm}\NormalTok{(}\DecValTok{520}\NormalTok{)}
+\NormalTok{xm }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DecValTok{260}\NormalTok{), }\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{, }\DecValTok{260}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{520}\NormalTok{)}
 \NormalTok{p }\OtherTok{\textless{}{-}}\NormalTok{ pr }\OtherTok{\textless{}{-}}\NormalTok{ pm }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{()}
-\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{)\{}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{) \{}
         \CommentTok{\# 随机化分组}
-\NormalTok{        g }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(}\FunctionTok{sample}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{),}\DecValTok{520}\NormalTok{,}\AttributeTok{replace =}\NormalTok{ T))}
-\NormalTok{        p[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(x}\SpecialCharTok{\textasciitilde{}}\NormalTok{g)}\SpecialCharTok{$}\NormalTok{p.value}
-\NormalTok{        pr[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(xr}\SpecialCharTok{\textasciitilde{}}\NormalTok{g)}\SpecialCharTok{$}\NormalTok{p.value}
-\NormalTok{        pm[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(xm}\SpecialCharTok{\textasciitilde{}}\NormalTok{g)}\SpecialCharTok{$}\NormalTok{p.value}
+\NormalTok{        g }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(}\FunctionTok{sample}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{), }\DecValTok{520}\NormalTok{, }\AttributeTok{replace =}\NormalTok{ T))}
+\NormalTok{        p[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(x }\SpecialCharTok{\textasciitilde{}}\NormalTok{ g)}\SpecialCharTok{$}\NormalTok{p.value}
+\NormalTok{        pr[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(xr }\SpecialCharTok{\textasciitilde{}}\NormalTok{ g)}\SpecialCharTok{$}\NormalTok{p.value}
+\NormalTok{        pm[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(xm }\SpecialCharTok{\textasciitilde{}}\NormalTok{ g)}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
-\FunctionTok{hist}\NormalTok{(p,}\AttributeTok{breaks =} \DecValTok{100}\NormalTok{)}
+\CommentTok{\# 显示中文}
+\FunctionTok{library}\NormalTok{(}\StringTok{\textquotesingle{}showtext\textquotesingle{}}\NormalTok{)}
+\FunctionTok{showtext\_auto}\NormalTok{()}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{3}\NormalTok{))}
+\CommentTok{\# 展示真实差异t检验下p值的分布}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{        p,}
+        \AttributeTok{breaks =} \DecValTok{100}\NormalTok{,}
+        \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}存在真实差异时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+        \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+        \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
+\CommentTok{\# 展示随机差异t检验下p值的分布}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{        pr,}
+        \AttributeTok{breaks =} \DecValTok{100}\NormalTok{,}
+        \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}不存在真实差异时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+        \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+        \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
+\CommentTok{\# 展示考虑误差的真实差异t检验下p值的分布}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{        pm,}
+        \AttributeTok{breaks =} \DecValTok{100}\NormalTok{,}
+        \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}存在真实差异与噪音时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+        \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+        \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-2-1}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{hist}\NormalTok{(pr,}\AttributeTok{breaks =} \DecValTok{100}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-2-2}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{hist}\NormalTok{(pm,}\AttributeTok{breaks =} \DecValTok{100}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-2-3}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-10-1} \caption[p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布]{p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布}\label{fig:unnamed-chunk-10}
+\end{figure}
 
 这个结果非常有意思，第一个能看到的现象是如果数据本身存在规律性，那么p值的分布是一个离散分布。这个分布介于0到1之间，越接近0的部分越密集，越接近1的的部分越稀疏，但是如果计算小于0.05，0.5，0.9的比例情况，会发现这种稀疏分布依旧符合均匀分布的概率分布特征。如果数据不存在规律性，那么p值的分布就是很均匀的。如果数据混合了规律性与噪音，依然会显示出这种离散分布特征。下面我用qq图来观察下这个分布跟均匀分布的区别：
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
+\CommentTok{\# 生成均匀分布}
 \NormalTok{ref }\OtherTok{\textless{}{-}} \FunctionTok{runif}\NormalTok{(}\DecValTok{10000}\NormalTok{)}
-\FunctionTok{qqplot}\NormalTok{(ref,p)}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{3}\NormalTok{))}
+\CommentTok{\# 用分位图对比均匀分布与不同的p值分布}
+\FunctionTok{qqplot}\NormalTok{(ref, p, }\AttributeTok{xlab =} \StringTok{\textquotesingle{}均匀分布\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}存在真实差异时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)))}
+\FunctionTok{qqplot}\NormalTok{(ref, pr, }\AttributeTok{xlab =} \StringTok{\textquotesingle{}均匀分布\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}不存在真实差异时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)))}
+\FunctionTok{qqplot}\NormalTok{(ref, pm, }\AttributeTok{xlab =} \StringTok{\textquotesingle{}均匀分布\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}存在真实差异与噪音时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)))}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-3-1}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{qqplot}\NormalTok{(ref,pr)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-3-2}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{qqplot}\NormalTok{(ref,pm)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-3-3}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-11-1} \caption[分位图观察p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布跟均匀分布的区别]{分位图观察p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布跟均匀分布的区别}\label{fig:unnamed-chunk-11}
+\end{figure}
 
 可以看到，如果数据本身存在规律性，其随机化分组后的p值虽然跟均匀分布很接近，但qq图上确实会表现出前密后舒的螺旋延伸状态。这里为了区别我再做一个仿真，这次我不是对分组随机而是对采样随机：
 
@@ -603,26 +729,28 @@ NHST 还有个问题在于 p 值的选择性报道或者说发表歧视，研究
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{1}\NormalTok{)}
 \CommentTok{\# 固定分组}
-\NormalTok{g }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{260}\NormalTok{),}\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{260}\NormalTok{)))}
+\NormalTok{g }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{260}\NormalTok{), }\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{260}\NormalTok{)))}
 \NormalTok{p }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{()}
-\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{)\{}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{) \{}
         \CommentTok{\# 随机化采样}
-\NormalTok{        x }\OtherTok{\textless{}{-}}  \FunctionTok{sample}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{,}\DecValTok{260}\NormalTok{),}\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{,}\DecValTok{260}\NormalTok{))}\SpecialCharTok{+}\FunctionTok{rnorm}\NormalTok{(}\DecValTok{520}\NormalTok{),}\DecValTok{520}\NormalTok{)}
-\NormalTok{        p[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(x}\SpecialCharTok{\textasciitilde{}}\NormalTok{g)}\SpecialCharTok{$}\NormalTok{p.value}
+\NormalTok{        x }\OtherTok{\textless{}{-}}  \FunctionTok{sample}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DecValTok{260}\NormalTok{), }\FunctionTok{rep}\NormalTok{(}\DecValTok{200}\NormalTok{, }\DecValTok{260}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{520}\NormalTok{), }\DecValTok{520}\NormalTok{)}
+\NormalTok{        p[i] }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(x }\SpecialCharTok{\textasciitilde{}}\NormalTok{ g)}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
-\FunctionTok{hist}\NormalTok{(p,}\AttributeTok{breaks =} \DecValTok{100}\NormalTok{)}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{        p,}
+        \AttributeTok{breaks =} \DecValTok{100}\NormalTok{,}
+        \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}采样随机时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+        \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+        \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
+\FunctionTok{qqplot}\NormalTok{(ref, p, }\AttributeTok{xlab =} \StringTok{\textquotesingle{}均匀分布\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}采样随机时\textquotesingle{}}\NormalTok{, }\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)))}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-4-1}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{qqplot}\NormalTok{(ref,p)}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-4-2}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-12-1} \caption[采样随机时p值的分布与均匀分布的分位图]{采样随机时p值的分布与均匀分布的分位图}\label{fig:unnamed-chunk-12}
+\end{figure}
 
 这里我们同样能看到这种蛇形走位，而且似乎随机化样品看到的趋势更明显。但同样的，这里模拟逻辑还是保持数据不变，只是随机化过程。
 
@@ -637,7 +765,9 @@ NHST 还有个问题在于 p 值的选择性报道或者说发表歧视，研究
 
 实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。不同学科对可重复性的要求也并不一致，实验学科如果是验证简单体系要求会特别高，例如理论物理，而复杂体系考察综合指标要求就可能降到结果数量级上可重复就可以了，例如环境痕量污染物的分析，因为样品前处理复杂待测物含量经常逼近检出限，此时要求很高的可重复性意义不大而含量数量级通常就能反映足够的环境信息。下图是一个常见的可重复性研究需要考虑的步骤，想完整重现别人的研究需要对方提供每一步的信息。
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-5-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-13-1} \caption[可重复性研究的步骤]{可重复性研究的步骤}\label{fig:unnamed-chunk-13}
+\end{figure}
 
 不过，狭义的可重复性研究仅关心数据产生后步骤的可重复性，包括但不限于原始数据共享与数据处理代码共享。当前很多学科的期刊都开始要求论文作者共享原始数据，这是一个很好的起点，但更重要的是数据分析步骤。科研用图形化界面软件的流行降低了科研数据分析的门槛，但因为大多数软件并不同时提供用户数据分析的脚本，一个副作用就是使数据分析重现变得很困难。从科研角度来看，保证数据分析的透明度很关键，因此现代科研人员应该花时间去掌握一门高级编程语言，在公布论文的同时也公布论文中分析推断的生成源码，这样既方便自己的成果传播也提高了研究可信度。从原始数据到成果这一阶段的可重复性是应该开放给整个学术圈进行检验的，这样机制的存在会使可重复性效果低的研究成果能被快速排除而不是消耗资源去验证一个数据处理问题，毕竟也很少有基金是支持验证别人研究成果的。
 
@@ -1038,6 +1168,77 @@ NHST 是科研可重复性危机的核心，但科学家的人性也不可忽视
 
 这个问题最早被高尔顿钉板所发现的。高尔顿板现在虽然常用来解释正态分布，但当年高尔顿设计这个是为了展示一个遗传悖论：如果第一代的后代会产生一个分布，那么多代之后这个分布会越来越宽。打个比方，父母身高170，孩子180，孙子185，那么如果存在长高遗传的话，总有个N代孙子身高一层楼，毕竟每一代都会产生一个均值为这一代身高的分布，你肯定找的到更高的下一代，如此反复就应该出现巨人子孙。现实则是不论哪一代，身高分布基本稳定，人群中很高的人后代也高但不会那么高，很矮的人后代也矮但不会那么矮，这就是向群体均值回归与两代人身高相关的现象。如果关注极端小部分会发现其主要来源是不极端的部分；相反不极端的部分也会有来自极端部分的回归。
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 代码源自animation包quincunx函数}
+\NormalTok{op }\OtherTok{=} \FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\FloatTok{0.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\AttributeTok{mfcol =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+\NormalTok{nmax }\OtherTok{=} \DecValTok{10000}\SpecialCharTok{+}\DecValTok{15{-}2}
+\CommentTok{\# 15层钉板}
+\NormalTok{layers }\OtherTok{=} \DecValTok{15}
+\CommentTok{\# 10000个小球}
+\NormalTok{balls }\OtherTok{=} \DecValTok{10000}
+\CommentTok{\# 模拟三层钉板}
+\NormalTok{layerx }\OtherTok{=}\NormalTok{ layery }\OtherTok{=}\NormalTok{ newlayerx }\OtherTok{=}\NormalTok{ newlayery }\OtherTok{=} \ConstantTok{NULL}
+\NormalTok{flagi }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(layers}\SpecialCharTok{\%\%}\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{layers) \{}
+        \ControlFlowTok{if}\NormalTok{ (flagi) \{}
+\NormalTok{                newi }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(i}\SpecialCharTok{\%\%}\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{)}
+\NormalTok{        \}}
+        \ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{                newi }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(i}\SpecialCharTok{\%\%}\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{        \}}
+\NormalTok{        layerx }\OtherTok{=} \FunctionTok{c}\NormalTok{(layerx, }\FunctionTok{seq}\NormalTok{(}\FloatTok{0.5} \SpecialCharTok{*}\NormalTok{ (i }\SpecialCharTok{+} \DecValTok{1}\NormalTok{), layers }\SpecialCharTok{{-}} \FloatTok{0.5} \SpecialCharTok{*} 
+\NormalTok{                                       (i }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{), }\DecValTok{1}\NormalTok{))}
+\NormalTok{        layery }\OtherTok{=} \FunctionTok{c}\NormalTok{(layery, }\FunctionTok{rep}\NormalTok{(i, layers }\SpecialCharTok{{-}}\NormalTok{ i }\SpecialCharTok{+} \DecValTok{1}\NormalTok{))}
+        \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{\textgreater{}} \DecValTok{1}\NormalTok{) \{}
+\NormalTok{                newlayerx }\OtherTok{=} \FunctionTok{c}\NormalTok{(newlayerx, }\FunctionTok{seq}\NormalTok{(}\FloatTok{0.5} \SpecialCharTok{*}\NormalTok{ (newi }\SpecialCharTok{+} \DecValTok{1}\NormalTok{), layers }\SpecialCharTok{{-}} 
+                                                     \FloatTok{0.5} \SpecialCharTok{*}\NormalTok{ (newi }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{), }\DecValTok{1}\NormalTok{))}
+\NormalTok{                newlayery }\OtherTok{=} \FunctionTok{c}\NormalTok{(newlayery, }\FunctionTok{rep}\NormalTok{(i, layers }\SpecialCharTok{{-}}\NormalTok{ newi }\SpecialCharTok{+} \DecValTok{1}\NormalTok{))}
+\NormalTok{        \}}
+\NormalTok{\}}
+\CommentTok{\# 模拟小球过钉板}
+\NormalTok{ballx }\OtherTok{=}\NormalTok{ bally }\OtherTok{=} \FunctionTok{matrix}\NormalTok{(}\AttributeTok{nrow =}\NormalTok{ balls, }\AttributeTok{ncol =}\NormalTok{ nmax)}
+\NormalTok{finalx }\OtherTok{=}\NormalTok{ newfinalx }\OtherTok{=} \FunctionTok{numeric}\NormalTok{(balls)}
+\CommentTok{\# 第一层钉板}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{balls) \{}
+\NormalTok{        ballx[i, i] }\OtherTok{=}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{+}\NormalTok{ layers)}\SpecialCharTok{/}\DecValTok{2}
+        \ControlFlowTok{if}\NormalTok{ (layers }\SpecialCharTok{\textgreater{}} \DecValTok{2}\NormalTok{) \{}
+\NormalTok{                tmp }\OtherTok{=} \FunctionTok{rbinom}\NormalTok{(layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{, }\FloatTok{0.5}\NormalTok{) }\SpecialCharTok{*} \DecValTok{2} \SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                ballx[i, i }\SpecialCharTok{+} \DecValTok{1}\SpecialCharTok{:}\NormalTok{(layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{)] }\OtherTok{=} \FunctionTok{cumsum}\NormalTok{(tmp) }\SpecialCharTok{*} \FloatTok{0.5} \SpecialCharTok{+} 
+\NormalTok{                        (}\DecValTok{1} \SpecialCharTok{+}\NormalTok{ layers)}\SpecialCharTok{/}\DecValTok{2}
+\NormalTok{        \}}
+\NormalTok{        bally[i, (i }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+} \DecValTok{1}\SpecialCharTok{:}\NormalTok{(layers }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{)] }\OtherTok{=}\NormalTok{ (layers }\SpecialCharTok{{-}} \DecValTok{1}\NormalTok{)}\SpecialCharTok{:}\DecValTok{1}
+\NormalTok{        finalx[i] }\OtherTok{=}\NormalTok{ ballx[i, i }\SpecialCharTok{+}\NormalTok{ layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{]}
+\NormalTok{\}}
+\CommentTok{\# 第二层钉板}
+\NormalTok{rgx }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, layers)}
+\NormalTok{rgy }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\FunctionTok{max}\NormalTok{(}\FunctionTok{table}\NormalTok{(finalx)))}
+\NormalTok{newballx }\OtherTok{=}\NormalTok{ ballx}
+\FunctionTok{diag}\NormalTok{(newballx) }\OtherTok{=}\NormalTok{ finalx}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{balls) \{}
+\NormalTok{        tmp }\OtherTok{=} \FunctionTok{rbinom}\NormalTok{(layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{, }\FloatTok{0.5}\NormalTok{) }\SpecialCharTok{*} \DecValTok{2} \SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{        tmp }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(newballx[i, i] }\SpecialCharTok{+} \FunctionTok{cumsum}\NormalTok{(tmp) }\SpecialCharTok{\textless{}}\NormalTok{ rgx[}\DecValTok{2}\NormalTok{], tmp, }
+                     \SpecialCharTok{{-}}\DecValTok{1}\NormalTok{)}
+\NormalTok{        tmp }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(newballx[i, i] }\SpecialCharTok{+} \FunctionTok{cumsum}\NormalTok{(tmp) }\SpecialCharTok{\textgreater{}}\NormalTok{ rgx[}\DecValTok{1}\NormalTok{], tmp, }
+                     \SpecialCharTok{+}\DecValTok{1}\NormalTok{)}
+\NormalTok{        newballx[i, i }\SpecialCharTok{+} \DecValTok{1}\SpecialCharTok{:}\NormalTok{(layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{)] }\OtherTok{=}\NormalTok{ newballx[i, i] }\SpecialCharTok{+} \FunctionTok{cumsum}\NormalTok{(tmp) }\SpecialCharTok{*} 
+                \FloatTok{0.5}
+\NormalTok{        newfinalx[i] }\OtherTok{=}\NormalTok{ newballx[i, i }\SpecialCharTok{+}\NormalTok{ layers }\SpecialCharTok{{-}} \DecValTok{2}\NormalTok{]}
+\NormalTok{\}}
+\CommentTok{\# 绘制钉板与分布图}
+\FunctionTok{plot}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{layers, }\AttributeTok{type =} \StringTok{"n"}\NormalTok{, }\AttributeTok{ann =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{axes =} \ConstantTok{FALSE}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(layerx, layery, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\FunctionTok{hist}\NormalTok{(finalx,}\AttributeTok{breaks =} \DecValTok{1}\SpecialCharTok{:}\NormalTok{layers,}\AttributeTok{main =} \StringTok{""}\NormalTok{, }\AttributeTok{xlab =} \StringTok{""}\NormalTok{, }\AttributeTok{ylab =} \StringTok{""}\NormalTok{, }\AttributeTok{ann =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{axes =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{xlim =}\NormalTok{ rgx, }\AttributeTok{ylim =}\NormalTok{ rgy)}
+\FunctionTok{plot}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{layers, }\AttributeTok{type =} \StringTok{"n"}\NormalTok{, }\AttributeTok{ann =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{axes =} \ConstantTok{FALSE}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(newlayerx, newlayery, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\FunctionTok{hist}\NormalTok{(newfinalx,}\AttributeTok{breaks =} \DecValTok{1}\SpecialCharTok{:}\NormalTok{layers,}\AttributeTok{main =} \StringTok{""}\NormalTok{, }\AttributeTok{xlab =} \StringTok{""}\NormalTok{, }\AttributeTok{ylab =} \StringTok{""}\NormalTok{, }\AttributeTok{ann =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{axes =} \ConstantTok{FALSE}\NormalTok{, }\AttributeTok{xlim =}\NormalTok{ rgx, }\AttributeTok{ylim =}\NormalTok{ rgy)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-14-1} \caption[双层高尔顿钉板对回归现象的演示，第一层产生的离散分布通过第二层钉板并未出现进一步的分散]{双层高尔顿钉板对回归现象的演示，第一层产生的离散分布通过第二层钉板并未出现进一步的分散}\label{fig:unnamed-chunk-14}
+\end{figure}
+
 另一种理解方法是：每个人的身高都有固定部分跟变动部分，固定部分是都一样的，遗传来决定，这样代际变化可以用亲代子代变动部分的不完全相关来解释。同时，达尔文的自然选择就可以构建在遗传上了，至此人口平衡与代际变异就可以有统计模型来和谐相处了，否则不论是强相关还是不相关都不能解释现实数据。回归思想可以说是统计学的中庸之道，这个将效应区分为固定跟临时两部分的思想也构成了经济学里消费函数的根基，人们消费固定部分是收入而不是短期刺激，因而政府短期加大开支并不能刺激消费，这个指导思想帮助弗里德曼拿了诺奖。
 
 多元回归问题在多元统计方法之前都是用几何学跟数据分析来解，最多两元，高尔顿提出相关系数后，皮尔逊等人发扬光大为多元分析。
@@ -1045,7 +1246,7 @@ NHST 是科研可重复性危机的核心，但科学家的人性也不可忽视
 \hypertarget{ux56e0ux679c}{%
 \subsection{因果}\label{ux56e0ux679c}}
 
-因果问题很长一段时间一直是统计禁区，从学统计第一天我们就知道相关不代表因果，那么问题来了：如果相关性是个逻辑死胡同，知识如何增长？打个比方，我看到人群中某个基因的高表达与某种疾病的发病率存在相关性，怎么解释？是发病导致基因突变还是基因突变导致发病？一般到这一步就需要控制实验了，也就是说我们把控制实验当成因果关系的确认而对观测数据持谨慎态度。但这实验怎么做？找一组人，用 RNA 干扰 沉默掉他们的基因看是不是得病？现代伦理不允许。用动物模型？物种差异咋办？。仿真？我们搞清楚分子层面的构建机制了吗？目前相对公认的结果来自分析流行病学，金标是队列研究、临床实验与病例对照实验。严格意义上只有临床实验最靠谱，但那就真成了拿人做实验了，治疗目的问题不大，但研究目的就存在伦理问题。自然科学里控制实验容易些，很多时候因果性不言而喻（也因为这个缺乏了统计思维）。社会科学与医学就必须解决从观察结果中发现因果性的问题，不然永远只能讨论现象，因果分析就来源于此。
+因果问题很长一段时间一直是统计禁区，从学统计第一天我们就知道相关不代表因果，那么问题来了：如果相关性是个逻辑死胡同，知识如何增长？打个比方，我看到人群中某个基因的高表达与某种疾病的发病率存在相关性，怎么解释？是发病导致基因突变还是基因突变导致发病？一般到这一步就需要控制实验了，也就是说我们把控制实验当成因果关系的确认而对观测数据持谨慎态度。但这实验怎么做？找一组人，用 RNA 干扰 沉默掉他们的基因看是不是得病？现代伦理不允许。用动物模型？物种差异咋办？仿真？我们搞清楚分子层面的构建机制了吗？目前相对公认的结果来自分析流行病学，金标是队列研究、临床实验与病例对照实验。严格意义上只有临床实验最靠谱，但那就真成了拿人做实验了，治疗目的问题不大，但研究目的就存在伦理问题。自然科学里控制实验容易些，很多时候因果性不言而喻（也因为这个缺乏了统计思维）。社会科学与医学就必须解决从观察结果中发现因果性的问题，不然永远只能讨论现象，因果分析就来源于此。
 
 其实在研究回归问题时，高尔顿曾为此迷惑不解，主要是遗传意义上讲不通，高了后还是高，但没那么高，后者暗示遗传上的因果并不完全成立。但他学生皮尔逊则很简单认为这种回归也好或相关也好就是概率的，因果关系是相关的一个特例，统计学不能也不应该讨论因果性，进而奠定了后面研究中相关不代表因果的基调，用严谨性与概率锁死了观察研究，这个表述到今天还活跃在科学研究的各个领域。
 
@@ -1101,7 +1302,38 @@ NHST 是科研可重复性危机的核心，但科学家的人性也不可忽视
 
 又因为先天缺陷跟婴儿死亡率相关，所以吸烟与婴儿死亡率间存在了一条控制后的非直接因果通路。具体来说，如果先天缺陷比吸烟对低体重影响更大，造成高死亡率，那么我们只看低体重婴儿的话就容易把原因归结到吸烟而不是先天缺陷之上，到此观察数据的矛盾就解决了。本质上因果图可以帮我们探索新知识，而传统统计分析则更多就事论事而导致矛盾。不过直观归直观，其实 RCM 在推导上更严谨，不过我估计外学科理解因果分析还是会收敛到因果图上，直观可视化在技术推广上总是占优。这个阶段工具很关键，哪个软件简单易用，其背后的模型就可能最终胜出。
 
-接下来知名案例就是辛普森悖论了。当我们整体看两组数据时会有差异，然而当我们将数据分层后这个差异就会消失或逆转。具体到辛普森悖论就是一组新药对人群整体有益，然而当我们按性别区分时，这个药对男性也好女性也好都没了益处。现在比较流行的解释是基于一个数学事实：部分的比例之和与整体的比例之间没有必然联系。在辛普森悖论中，对照组发病率女性为1:19，男性为12:28，服药组女性为3:37，男性为8:12，这样我们看到 \(1:19 < 3:27\)，\(12:28 < 8:12\)，这样不论男性女性，对照组发病率都低于服药组，药物无效。然而我们不看性别时，整体是\(13/47>11/49\)，对照组发病率比服药组高，药物又有效了。这里形成悖论的关键在于人们会理所当然认为部分比例的差异结果会传递到整体，其实 \(\frac{A}{B}<\frac{C}{D}\)， \(\frac{E}{F}<\frac{G}{H}\)，但\(\frac{A+E}{B+F}\)跟\(\frac{C+G}{D+H}\)间是不能传递这种关系的，数学上就不成立，所以我们的直觉给出的悖论是惯性思维的错误。
+接下来知名案例就是辛普森悖论了。当我们整体看两组数据时会有差异，然而当我们将数据分层后这个差异就会消失或逆转。具体到辛普森悖论就是一组新药对人群整体有益，然而当我们按性别区分时，这个药对男性也好女性也好都没了益处。现在比较流行的解释是基于一个数学事实：部分的比例之和与整体的比例之间没有必然联系。在辛普森悖论中，对照组病死率女性为1:19，男性为12:28，服药组女性为3:37，男性为8:12，这样我们看到 \(1:19 < 3:27\)，\(12:28 < 8:12\)，这样不论男性女性，对照组病死率都低于服药组，药物无效。然而我们不看性别时，整体是\(13/47>11/49\)，对照组病死率比服药组高，药物又有效了。这里形成悖论的关键在于人们会理所当然认为部分比例的差异结果会传递到整体，其实 \(\frac{A}{B}<\frac{C}{D}\)， \(\frac{E}{F}<\frac{G}{H}\)，但\(\frac{A+E}{B+F}\)跟\(\frac{C+G}{D+H}\)间是不能传递这种关系的，数学上就不成立，所以我们的直觉给出的悖论是惯性思维的错误。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tb }\OtherTok{\textless{}{-}} \FunctionTok{rbind.data.frame}\NormalTok{(}
+        \AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{,}
+\NormalTok{        对照组 }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{34}\NormalTok{,}\DecValTok{13}\NormalTok{,}\DecValTok{13}\SpecialCharTok{/}\DecValTok{47}\NormalTok{,}\DecValTok{16}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{12}\SpecialCharTok{/}\DecValTok{28}\NormalTok{,}\DecValTok{18}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\SpecialCharTok{/}\DecValTok{19}\NormalTok{),}
+\NormalTok{        服药组 }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{38}\NormalTok{,}\DecValTok{11}\NormalTok{,}\DecValTok{11}\SpecialCharTok{/}\DecValTok{49}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{8}\SpecialCharTok{/}\DecValTok{12}\NormalTok{,}\DecValTok{34}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{3}\SpecialCharTok{/}\DecValTok{37}\NormalTok{)}
+\NormalTok{        )}
+\NormalTok{tb }\OtherTok{\textless{}{-}} \FunctionTok{round}\NormalTok{(tb,}\DecValTok{2}\NormalTok{)}
+\FunctionTok{colnames}\NormalTok{(tb) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}总康复\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}总死亡\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}总病死率\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}男性康复\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}男性死亡\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}男性病死率\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}女性康复\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}女性死亡\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}女性病死率\textquotesingle{}}\NormalTok{)}
+\FunctionTok{rownames}\NormalTok{(tb) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}对照组\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}服药组\textquotesingle{}}\NormalTok{)}
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(tb}
+\NormalTok{             , }\AttributeTok{booktabs =} \ConstantTok{TRUE}\NormalTok{,}
+             \AttributeTok{caption =} \StringTok{\textquotesingle{}辛普森悖论\textquotesingle{}}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-15}辛普森悖论}
+\centering
+\begin{tabular}[t]{lrrrrrrrrr}
+\toprule
+  & 总康复 & 总死亡 & 总病死率 & 男性康复 & 男性死亡 & 男性病死率 & 女性康复 & 女性死亡 & 女性病死率\\
+\midrule
+对照组 & 34 & 13 & 0.28 & 16 & 12 & 0.43 & 18 & 1 & 0.05\\
+服药组 & 38 & 11 & 0.22 & 4 & 8 & 0.67 & 34 & 3 & 0.08\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 不过这只是解释，不解决最初的问题，到底这药有用没用。这里就又牵扯到因果图了，我们得知道性别对服药与结果的影响，也就是说得知道性别的角色。首先，性别不是服药与发病结果的结果，毕竟不是变性药；其次，性别是否决定服药？经过调查发现，女性确实比男性更容易记得服药；最后，性别是不是会导致结果，调查也发现男性容易患病。好，这样分析后性别就是服药与患病的混杂因素，因此服药与患病间不形成 do 分离，我们需要控制性别。怎么控制呢？很简单，就是分开性别讨论然后按性别在人群中比例加权，最后的结果就是辛普森悖论中的新药对整体其实是有害无益的，悖论解决。我们回顾下这个过程会发现，悖论的解决实际上是依赖了因果图构建过程中外部信息的整合，单纯看数据不看背景知识的纯统计探索在这种场景下会陷入悖论。所以说因果图或因果分析其实就是引入更多的背景知识，只是当前懂专业知识的与懂统计学的还没进行很好的学科融合。
 
@@ -1122,6 +1354,10 @@ NHST 是科研可重复性危机的核心，但科学家的人性也不可忽视
 这条 A 与 B 间的因果路径打通，结果就是 A 对 B 的估计中还是存在混杂。这里我们也能看到悖论的魅力，如果条件发生改变，解决悖论的方法也要随之改变而不是简单控制就能搞定的。有时候完全不控制可能就是最好解决方案而过多的控制会让结论无法被理解，这点对机器学习里 \(y = f(x)\) 的简单逻辑框架来说是灾难性的，更多的特征值不见得拟合效果更好，反而让你说不清楚结果与变量的关系。当然，现在主流似乎也不打算说清楚。
 
 既然说到辛普森悖论，就顺道聊下这个悖论的变体。最古老的变体是田忌赛马，为了保证整体上取胜，我们可以在部分作战采取放弃策略，这个在军事学发展中阵地战战术中比较常用，说白了就是在战力不占优的条件下通过兵力在防线上的调配来取得一定效果。这种作战方式个太古典了，现代战争的变体是海陆空高科技兵种配合作战，早就脱离了电视剧里对着砍的策略（但对着砍有戏剧性与视觉冲击力），当前作战形式基本都是地面小队配合空中扫荡与坦克掩护，你要是敢把几千人排到一个开阔阵地上等对砍搞决斗，就等着无人机包饺子吧。这很可能是互相博弈的一个结果，因为双方将领如果都明白辛普森悖论原理，那么肯定会最大化自己的优势去打对方的弱势。而现代战争是科技战，人数啥也说明不了而更多是劣势，所以不超过10人的小队突击在对战中灵活性最高且容易发挥科技领先优势。现代公司发展中，很多大公司采用传统上的多级体制其实就是在搞阵地战，技术上如果信息流通顺畅，小组制应该是整体取胜策略，我们已经看到很多互联网爆款产品最初其实都是来自小组而不是靠人数，当然后期巩固成果是完全另一类可持续策略了。在政治学里也存在辛普森悖论：杰利蝾螈。这个概念指的是通过划分选区来操纵选举结果的一种策略，通过把铁票仓分到对方的边缘选区可以在代议制选区民主里赢得多数票，民主的一人一票不代表整体不能被操纵，这对大杂居小聚居的西方移民国家尤其重要，如果争夺中间派不切实际，那就把极端分子渗透到中间派选区搞事情。
+
+\begin{figure}
+\includegraphics{data/gerrymandering} \caption[杰利蝾螈示意图(两个党派的30人分为3个10人组投票，按分组结果得两票以上获胜。如果分组按照党派在人群中的比例（中间图）则蓝党会在三个分组里都获胜，但如果控制分组（右边图）则可让红党派在两个分组里获胜，从而整体上获胜)]{杰利蝾螈示意图(两个党派的30人分为3个10人组投票，按分组结果得两票以上获胜。如果分组按照党派在人群中的比例（中间图）则蓝党会在三个分组里都获胜，但如果控制分组（右边图）则可让红党派在两个分组里获胜，从而整体上获胜)}\label{fig:unnamed-chunk-16}
+\end{figure}
 
 前面说的都是辛普森悖论的分类变量比例版，很自然，这个悖论也存在线性模型版。也就是说，一组数据做回归，变量系数是正的，但是我们把数据切成两部分，其同一变量的系数就会变成负的。这个线性版的成因除了跟前面比例版一样外还存在另一个成因，那就是噪音。当参与回归的变量只能解释数据变异中一小部分时，其回归估计参数的不确定性会被未知变异所主导，如果分割数据的方法与未知变异混杂，那么变量的方向就会不稳定。这里还是要强调下参数估计一定要包含不确定性，如果不确定性高不代表结果不靠谱而更可能是数据结构还没搞清楚或数据量不够。其实这种信噪比不够的问题与前一章所述的可重复性危机有关，也许我们花大力气估计清楚了一个微弱变量的效益，这是否值得？学术上当然值但现实意义就不好说了。
 
@@ -1232,6 +1468,138 @@ C的核心地位还体现在很多高级语言的编译器是构建在C之上的
 社会有时为了整体利益会奖励个体的行为，荣誉、品牌、学历等社会信号就是这类机制。这些信号可能对个体生存没有意义，但可以塑造社会地位。无私的捐赠、浪费式消费与精美的手工艺品都属于这类信号，奢侈品的营销策略就如此，通过营造氛围让普通商品玩不起这个游戏，也就是有钱不如有闲。我们可以利用社会信号这一非生存需求设计规则来募捐或促进社会公益事业发展，各取所需而不是简单嘲讽或批判。个体的进步可以来自自我认同，也可以来自社会认同，一个纯自我认同的个体很可能对社会公益毫无兴趣，此时要设计机制让其了解社会认同的优点，内部激励靠钱带来的个人欲望，外部激励靠名带来的模仿效应。
 
 个体行为在群体中有两种形态，一种是同群效应，也就是被群体同化，细分也有两种，一种是直接服从整体，另一种是在周围环境压力达到自己设定时被同化，例如起立鼓掌模型；另一种则是物以类聚，也就是只跟自己相似的人聚集，如果被群体排斥就离开，例如谢林模型，这里微观的动机不同于宏观的表现。这两种状态宏观上都会造成隔离，但形成原因差异很大，一个是入乡随俗，另一个是回归舒适区。存在引导群体行为的策略，入乡随俗的可以加强引导而回归舒适区的可以强调区别，传销的人两种方法是交替使用的。在一个群体中，个人阈值的分布很重要，如果阈值多样性大且是正反馈的，那就容易出现爆炸或崩溃，然而，当是负反馈时，个体多样性阈值会让系统趋于平衡或循环，两者都有就会是复杂的。谢林的《微观动机与宏观行为》值得作为这个问题的参考。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 谢林隔离模型，代码源于 https://simulatingcomplexity.wordpress.com/2016/01/06/building{-}a{-}schelling{-}segregation{-}model{-}in{-}r/}
+\CommentTok{\# 生成单元格矩阵，两种颜色随机分布}
+\NormalTok{number}\OtherTok{\textless{}{-}}\DecValTok{2000}
+\NormalTok{group}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,(}\DecValTok{51}\SpecialCharTok{*}\DecValTok{51}\NormalTok{)}\SpecialCharTok{{-}}\NormalTok{number),}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{,number}\SpecialCharTok{/}\DecValTok{2}\NormalTok{),}\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{,number}\SpecialCharTok{/}\DecValTok{2}\NormalTok{))}
+\NormalTok{grid}\OtherTok{\textless{}{-}}\FunctionTok{matrix}\NormalTok{(}\FunctionTok{sample}\NormalTok{(group,}\DecValTok{2601}\NormalTok{,}\AttributeTok{replace=}\NormalTok{F), }\AttributeTok{ncol=}\DecValTok{51}\NormalTok{)}
+\CommentTok{\# 找邻居函数}
+\NormalTok{get\_neighbors}\OtherTok{\textless{}{-}}\ControlFlowTok{function}\NormalTok{(coords) \{}
+\NormalTok{        n}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{()}
+        \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{8}\NormalTok{)) \{}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{1}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{]}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{2}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{3}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{]}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{4}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{5}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{]}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{6}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{7}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{]}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==} \DecValTok{8}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\NormalTok{coords[}\DecValTok{2}\NormalTok{] }\SpecialCharTok{{-}} \DecValTok{1}
+\NormalTok{                \}}
+                
+                \ControlFlowTok{if}\NormalTok{ (x }\SpecialCharTok{\textless{}} \DecValTok{1}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\DecValTok{51}
+\NormalTok{                \}}
+                \ControlFlowTok{if}\NormalTok{ (x }\SpecialCharTok{\textgreater{}} \DecValTok{51}\NormalTok{) \{}
+\NormalTok{                        x}\OtherTok{\textless{}{-}}\DecValTok{1}
+\NormalTok{                \}}
+                \ControlFlowTok{if}\NormalTok{ (y }\SpecialCharTok{\textless{}} \DecValTok{1}\NormalTok{) \{}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\DecValTok{51}
+\NormalTok{                \}}
+                \ControlFlowTok{if}\NormalTok{ (y }\SpecialCharTok{\textgreater{}} \DecValTok{51}\NormalTok{) \{}
+\NormalTok{                        y}\OtherTok{\textless{}{-}}\DecValTok{1}
+\NormalTok{                \}}
+\NormalTok{                n}\OtherTok{\textless{}{-}}\FunctionTok{rbind}\NormalTok{(n,}\FunctionTok{c}\NormalTok{(x,y))}
+\NormalTok{        \}}
+\NormalTok{        n}
+\NormalTok{\}}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{image}\NormalTok{(grid,}\AttributeTok{col=}\FunctionTok{c}\NormalTok{(}\StringTok{"black"}\NormalTok{,}\StringTok{"blue"}\NormalTok{,}\StringTok{"yellow"}\NormalTok{),}\AttributeTok{axes=}\NormalTok{F)}
+\CommentTok{\# 设定喜好度，此处设定为50\%，也就是单元格里人周围少于四个单元格的人与自己颜色相同时，这个人就会随机搬家到另一个单元格}
+\NormalTok{alike\_preference}\OtherTok{\textless{}{-}}\FloatTok{0.5}
+\CommentTok{\# 模拟搬家十次}
+\ControlFlowTok{for}\NormalTok{ (t }\ControlFlowTok{in} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{))\{}
+\NormalTok{        happy\_cells}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{()}
+\NormalTok{        unhappy\_cells}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{()}
+        \ControlFlowTok{for}\NormalTok{ (j }\ControlFlowTok{in} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{)) \{}
+                \ControlFlowTok{for}\NormalTok{ (k }\ControlFlowTok{in} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{)) \{}
+\NormalTok{                        current}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(j,k)}
+\NormalTok{                        value}\OtherTok{\textless{}{-}}\NormalTok{grid[j,k] }
+                        \ControlFlowTok{if}\NormalTok{ (value }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{) \{}
+\NormalTok{                                like\_neighbors}\OtherTok{\textless{}{-}}\DecValTok{0}
+\NormalTok{                                all\_neighbors}\OtherTok{\textless{}{-}}\DecValTok{0}
+\NormalTok{                                neighbors}\OtherTok{\textless{}{-}}\FunctionTok{get\_neighbors}\NormalTok{(current)}
+                                \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\FunctionTok{nrow}\NormalTok{(neighbors)))\{}
+\NormalTok{                                        x}\OtherTok{\textless{}{-}}\NormalTok{neighbors[i,}\DecValTok{1}\NormalTok{]}
+\NormalTok{                                        y}\OtherTok{\textless{}{-}}\NormalTok{neighbors[i,}\DecValTok{2}\NormalTok{]}
+                                        \ControlFlowTok{if}\NormalTok{ (grid[x,y] }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{) \{}
+\NormalTok{                                                all\_neighbors}\OtherTok{\textless{}{-}}\NormalTok{all\_neighbors }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                                        \}}
+                                        \ControlFlowTok{if}\NormalTok{ (grid[x,y] }\SpecialCharTok{==}\NormalTok{ value) \{}
+\NormalTok{                                                like\_neighbors}\OtherTok{\textless{}{-}}\NormalTok{like\_neighbors }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{                                        \}}
+\NormalTok{                                \}}
+                                \ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.nan}\NormalTok{(like\_neighbors }\SpecialCharTok{/}\NormalTok{ all\_neighbors)}\SpecialCharTok{==}\ConstantTok{FALSE}\NormalTok{) \{}
+                                        \ControlFlowTok{if}\NormalTok{ ((like\_neighbors }\SpecialCharTok{/}\NormalTok{ all\_neighbors) }\SpecialCharTok{\textless{}}\NormalTok{ alike\_preference) \{}
+\NormalTok{                                                unhappy\_cells}\OtherTok{\textless{}{-}}\FunctionTok{rbind}\NormalTok{(unhappy\_cells,}\FunctionTok{c}\NormalTok{(current[}\DecValTok{1}\NormalTok{],current[}\DecValTok{2}\NormalTok{]))}
+\NormalTok{                                        \}}
+                                        \ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{                                                happy\_cells}\OtherTok{\textless{}{-}}\FunctionTok{rbind}\NormalTok{(happy\_cells,}\FunctionTok{c}\NormalTok{(current[}\DecValTok{1}\NormalTok{],current[}\DecValTok{2}\NormalTok{]))}
+\NormalTok{                                        \}}
+\NormalTok{                                \}}
+                                
+                                \ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{                                        happy\_cells}\OtherTok{\textless{}{-}}\FunctionTok{rbind}\NormalTok{(happy\_cells,}\FunctionTok{c}\NormalTok{(current[}\DecValTok{1}\NormalTok{],current[}\DecValTok{2}\NormalTok{]))}
+\NormalTok{                                \}}
+\NormalTok{                        \}}
+\NormalTok{                \}}
+\NormalTok{        \} }
+\NormalTok{        rand}\OtherTok{\textless{}{-}}\FunctionTok{sample}\NormalTok{(}\FunctionTok{nrow}\NormalTok{(unhappy\_cells))}
+        \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ rand) \{}
+\NormalTok{                mover}\OtherTok{\textless{}{-}}\NormalTok{unhappy\_cells[i,]}
+\NormalTok{                mover\_val}\OtherTok{\textless{}{-}}\NormalTok{grid[mover[}\DecValTok{1}\NormalTok{],mover[}\DecValTok{2}\NormalTok{]]}
+\NormalTok{                move\_to}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{,}\DecValTok{1}\NormalTok{),}\FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\NormalTok{                move\_to\_val}\OtherTok{\textless{}{-}}\NormalTok{grid[move\_to[}\DecValTok{1}\NormalTok{],move\_to[}\DecValTok{2}\NormalTok{]]}
+                \ControlFlowTok{while}\NormalTok{ (move\_to\_val }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{ )\{}
+\NormalTok{                        move\_to}\OtherTok{\textless{}{-}}\FunctionTok{c}\NormalTok{(}\FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{,}\DecValTok{1}\NormalTok{),}\FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{51}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\NormalTok{                        move\_to\_val}\OtherTok{\textless{}{-}}\NormalTok{grid[move\_to[}\DecValTok{1}\NormalTok{],move\_to[}\DecValTok{2}\NormalTok{]]}
+\NormalTok{                \}}
+\NormalTok{                grid[mover[}\DecValTok{1}\NormalTok{],mover[}\DecValTok{2}\NormalTok{]]}\OtherTok{\textless{}{-}}\DecValTok{0}
+\NormalTok{                grid[move\_to[}\DecValTok{1}\NormalTok{],move\_to[}\DecValTok{2}\NormalTok{]]}\OtherTok{\textless{}{-}}\NormalTok{mover\_val}
+\NormalTok{        \}}
+\NormalTok{\}}
+\CommentTok{\# 观察此时的单元格颜色分布状况}
+\FunctionTok{image}\NormalTok{(grid,}\AttributeTok{col=}\FunctionTok{c}\NormalTok{(}\StringTok{"black"}\NormalTok{,}\StringTok{"blue"}\NormalTok{,}\StringTok{"yellow"}\NormalTok{),}\AttributeTok{axes=}\NormalTok{F)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-17-1} \caption[谢林隔离模型模拟]{谢林隔离模型模拟}\label{fig:unnamed-chunk-17}
+\end{figure}
 
 个人群体的另一个重要模型是关于外部性或公共物品的，公共物品非排他也非竞争，其总效用函数是递减的，也就是后来的人可以享受公共物品但不用贡献，这会导致公共物品在人口增加后会紧缺但个人贡献意愿却因为后来者低贡献而降低。如果没有利他主义的人存在，公共物品或外部危机就会让群体不能持续维持正常运转。最常见的外部性解决方案就是税收或法律，如果不同群体间存在不同的税率会出现隔离与割裂，例如阶级固化后富人区内部大方而对外割裂，穷人区因为没有公共物品其法制也无法贯彻。单纯提供外部性并不一定会提高整体收益，存在反馈，更多的路引入了更多的车，阻塞问题可能依旧，系统分析是很有必要的，找出本质问题而不是解决表面问题。最麻烦的外部性问题是资源类问题，当资源开采速率超过一定速率后，平衡将不可逆走向崩溃，复活节岛就是一个例子，这类问题需要优先预防监控，不能等事情发生。当然，预防的悖论在于你做的越好，实际地位就越不重要。
 
@@ -1403,18 +1771,18 @@ C的核心地位还体现在很多高级语言的编译器是构建在C之上的
 
 \begin{verbatim}
 ##     A  B  C  D  E  F  G  H  J
-## 1   1  1 -1  1  1  1 -1 -1 -1
-## 2   1  1 -1 -1 -1  1 -1  1  1
-## 3   1 -1 -1 -1  1 -1  1  1 -1
+## 1  -1  1  1  1 -1 -1 -1  1 -1
+## 2   1  1 -1  1  1  1 -1 -1 -1
+## 3   1  1  1 -1 -1 -1  1 -1  1
 ## 4  -1 -1 -1  1 -1  1  1 -1  1
-## 5   1 -1  1  1 -1  1  1  1 -1
-## 6   1 -1  1  1  1 -1 -1 -1  1
+## 5  -1 -1  1 -1  1  1 -1  1  1
+## 6   1 -1 -1 -1  1 -1  1  1 -1
 ## 7  -1  1 -1  1  1 -1  1  1  1
-## 8   1  1  1 -1 -1 -1  1 -1  1
-## 9  -1 -1  1 -1  1  1 -1  1  1
-## 10 -1 -1 -1 -1 -1 -1 -1 -1 -1
-## 11 -1  1  1  1 -1 -1 -1  1 -1
-## 12 -1  1  1 -1  1  1  1 -1 -1
+## 8   1  1 -1 -1 -1  1 -1  1  1
+## 9  -1  1  1 -1  1  1  1 -1 -1
+## 10  1 -1  1  1 -1  1  1  1 -1
+## 11  1 -1  1  1  1 -1 -1 -1  1
+## 12 -1 -1 -1 -1 -1 -1 -1 -1 -1
 ## class=design, type= pb
 \end{verbatim}
 
@@ -1449,28 +1817,28 @@ C的核心地位还体现在很多高级语言的编译器是构建在C之上的
 ## 
 ## Residuals:
 ##       1       2       3       4       5       6       7       8       9      10 
-## -0.1667  2.3333 -0.1667  0.1667  0.1667 -2.3333 -0.1667  0.1667  2.3333 -2.3333 
+##  0.1667 -0.1667 -0.1667 -2.0000  2.0000 -0.1667  0.1667 -2.0000  2.0000 -2.0000 
 ##      11      12 
-##  2.3333 -2.3333 
+##  2.0000  0.1667 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(>|t|)    
-## (Intercept) 37.41667    1.16964  31.990 0.000976 ***
-## A1           0.41667    1.16964   0.356 0.755734    
-## B1          -0.75000    1.16964  -0.641 0.587052    
-## C1           0.91667    1.16964   0.784 0.515282    
-## D1          -0.91667    1.16964  -0.784 0.515282    
-## E1          -0.08333    1.16964  -0.071 0.949685    
-## F1          -0.75000    1.16964  -0.641 0.587052    
-## G1          -0.58333    1.16964  -0.499 0.667420    
-## H1           0.41667    1.16964   0.356 0.755734    
-## J1          -0.58333    1.16964  -0.499 0.667420    
+## (Intercept)  37.4167     1.0035  37.287 0.000718 ***
+## A1            0.7500     1.0035   0.747 0.532743    
+## B1            0.5833     1.0035   0.581 0.619812    
+## C1           -0.2500     1.0035  -0.249 0.826506    
+## D1            0.2500     1.0035   0.249 0.826506    
+## E1            1.0833     1.0035   1.080 0.393212    
+## F1           -0.2500     1.0035  -0.249 0.826506    
+## G1            0.7500     1.0035   0.747 0.532743    
+## H1           -1.2500     1.0035  -1.246 0.339021    
+## J1           -0.4167     1.0035  -0.415 0.718282    
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 4.052 on 2 degrees of freedom
-## Multiple R-squared:  0.5839, Adjusted R-squared:  -1.288 
-## F-statistic: 0.3119 on 9 and 2 DF,  p-value: 0.9111
+## Residual standard error: 3.476 on 2 degrees of freedom
+## Multiple R-squared:  0.6938, Adjusted R-squared:  -0.6843 
+## F-statistic: 0.5034 on 9 and 2 DF,  p-value: 0.807
 \end{verbatim}
 
 \begin{Shaded}
@@ -1478,16 +1846,6 @@ C的核心地位还体现在很多高级语言的编译器是构建在C之上的
 \FunctionTok{halfnormal}\NormalTok{(plan.resp)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-## Warning in title(...): conversion failure on 'Plot for response, method = Lenth,
-## α = 0.05' in 'mbcsToSbcs': dot substituted for <ce>
-\end{verbatim}
-
-\begin{verbatim}
-## Warning in title(...): conversion failure on 'Plot for response, method = Lenth,
-## α = 0.05' in 'mbcsToSbcs': dot substituted for <b1>
-\end{verbatim}
 
 \begin{verbatim}
 ## no significant effects
@@ -1510,18 +1868,18 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \begin{verbatim}
 ## no suitable  resolution IV or more  array found
 ## 5  orthogonal  arrays found
-##                name nruns lineage   GR GRind regular SCones    A3    A4   A5
-## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426
-## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063
-## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2 1025
-## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2  912
-## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1  120
-##       A6      A7      A8
-## 78  1010  1753.2  2306.8
-## 81 11096 31380.8 68828.1
-## 83  2828  5507.5  7780.0
-## 87  2404  4354.2  5793.4
-## 88   125    63.5    13.9
+##                name nruns lineage   GR GRind regular SCones    A3    A4   A5    A6
+## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426  1010
+## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063 11096
+## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2 1025  2828
+## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2  912  2404
+## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1  120   125
+##         A7      A8
+## 78  1753.2  2306.8
+## 81 31380.8 68828.1
+## 83  5507.5  7780.0
+## 87  4354.2  5793.4
+## 88    63.5    13.9
 \end{verbatim}
 
 这里我们选分辨率略高的\texttt{L36.2.10.3.8.6.1}，从名字上看，这是一个36次试验表，可以包含10个两水平，8个三水平与1个六水平因子，这也是唯一一个分辨率高于3，可以排除交互作用的设计方法。这里我反复提到分辨率，实际上就是一种考察试验设计合理性的指标，分辨率3一般指只能区分没有交互作用的各因子贡献差异，高于3就可以区分一定的因子交互作用，可以用\texttt{GR}去计算一个广义分辨率并用\texttt{oa.design}来进一步优化这个设计，因为其实符合正交表只是众多选择的一个子集，不过根据优化方法的不同，优化时间也不太一样。
@@ -1543,42 +1901,42 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 
 \begin{verbatim}
 ##    A B C D E F
-## 1  1 3 3 1 1 5
-## 2  2 1 1 2 1 2
-## 3  1 1 3 2 1 4
-## 4  1 1 1 2 2 6
-## 5  2 2 2 1 2 1
-## 6  2 2 1 2 1 5
-## 7  1 3 2 2 1 2
-## 8  1 3 1 1 1 3
-## 9  1 1 2 1 1 5
-## 10 1 2 1 2 1 6
-## 11 2 1 1 1 2 5
-## 12 1 1 3 1 2 2
-## 13 2 2 2 2 1 4
-## 14 1 2 2 2 2 2
-## 15 1 2 2 1 1 3
-## 16 2 1 2 1 1 6
-## 17 1 3 3 2 2 4
-## 18 1 1 2 2 2 3
-## 19 2 3 3 2 1 6
-## 20 1 2 3 1 1 1
-## 21 2 3 2 2 2 5
+## 1  2 3 3 2 1 6
+## 2  1 2 1 1 2 4
+## 3  2 2 2 1 2 1
+## 4  1 2 2 2 2 2
+## 5  2 1 2 1 1 6
+## 6  2 1 1 2 1 2
+## 7  2 1 2 1 2 4
+## 8  2 1 3 2 1 3
+## 9  2 1 1 1 2 5
+## 10 1 3 3 1 1 5
+## 11 1 2 3 2 2 5
+## 12 2 3 3 1 2 3
+## 13 2 3 1 1 1 4
+## 14 1 2 3 1 1 1
+## 15 1 1 1 2 2 6
+## 16 2 3 2 2 1 1
+## 17 1 2 2 1 1 3
+## 18 1 3 3 2 2 4
+## 19 1 2 1 2 1 6
+## 20 1 3 1 2 2 1
+## 21 2 2 2 2 1 4
 ## 22 2 2 1 2 2 3
-## 23 2 2 3 1 1 2
-## 24 2 2 3 1 2 6
-## 25 1 3 2 1 2 6
-## 26 2 1 3 2 2 1
-## 27 2 1 2 1 2 4
-## 28 2 3 1 1 2 2
-## 29 2 3 3 1 2 3
-## 30 2 1 3 2 1 3
-## 31 1 3 1 2 2 1
-## 32 1 1 1 1 1 1
-## 33 2 3 1 1 1 4
-## 34 1 2 1 1 2 4
-## 35 2 3 2 2 1 1
-## 36 1 2 3 2 2 5
+## 23 2 1 3 2 2 1
+## 24 1 1 3 1 2 2
+## 25 2 2 3 1 2 6
+## 26 1 1 2 1 1 5
+## 27 1 1 1 1 1 1
+## 28 2 2 3 1 1 2
+## 29 1 1 3 2 1 4
+## 30 1 1 2 2 2 3
+## 31 2 2 1 2 1 5
+## 32 1 3 1 1 1 3
+## 33 2 3 2 2 2 5
+## 34 1 3 2 1 2 6
+## 35 1 3 2 2 1 2
+## 36 2 3 1 1 2 2
 ## class=design, type= oa
 \end{verbatim}
 
@@ -1596,9 +1954,9 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 ## Formula:
 ## response ~ A + B + C
 ##             Df Sum Sq Mean Sq   F value Pr(>F)    
-## A            2      0       0 3.970e-01  0.676    
-## B            2   9600    4800 4.298e+30 <2e-16 ***
-## C            2 240000  120000 1.074e+32 <2e-16 ***
+## A            2      0       0 7.020e-01  0.504    
+## B            2   9600    4800 1.867e+30 <2e-16 ***
+## C            2 240000  120000 4.668e+31 <2e-16 ***
 ## Residuals   29      0       0                     
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -1611,8 +1969,7 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \end{Shaded}
 
 \begin{verbatim}
-## Warning in summary.lm(object): essentially perfect fit: summary may be
-## unreliable
+## Warning in summary.lm(object): essentially perfect fit: summary may be unreliable
 \end{verbatim}
 
 \begin{verbatim}
@@ -1625,23 +1982,23 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 ## 
 ## Residuals:
 ##        Min         1Q     Median         3Q        Max 
-## -1.245e-13 -4.452e-15  7.634e-15  1.300e-14  4.141e-14 
+## -2.363e-13 -5.872e-15  1.022e-15  2.142e-14  5.624e-14 
 ## 
 ## Coefficients:
 ##               Estimate Std. Error    t value Pr(>|t|)    
-## (Intercept)  2.400e+02  5.570e-15  4.309e+16   <2e-16 ***
-## A.L         -2.180e-14  9.647e-15 -2.260e+00   0.0315 *  
-## A.Q         -9.220e-15  9.647e-15 -9.560e-01   0.3471    
-## B.L          2.828e+01  9.647e-15  2.932e+15   <2e-16 ***
-## B.Q         -7.200e-15  9.647e-15 -7.460e-01   0.4615    
-## C.L          1.414e+02  9.647e-15  1.466e+16   <2e-16 ***
-## C.Q         -6.472e-15  9.647e-15 -6.710e-01   0.5076    
+## (Intercept)  2.400e+02  8.450e-15  2.840e+16   <2e-16 ***
+## A.L          2.129e-14  1.464e-14  1.455e+00    0.156    
+## A.Q         -2.029e-16  1.464e-14 -1.400e-02    0.989    
+## B.L          2.828e+01  1.464e-14  1.933e+15   <2e-16 ***
+## B.Q          2.726e-16  1.464e-14  1.900e-02    0.985    
+## C.L          1.414e+02  1.464e-14  9.663e+15   <2e-16 ***
+## C.Q          9.344e-16  1.464e-14  6.400e-02    0.950    
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 3.342e-14 on 29 degrees of freedom
+## Residual standard error: 5.07e-14 on 29 degrees of freedom
 ## Multiple R-squared:      1,  Adjusted R-squared:      1 
-## F-statistic: 3.725e+31 on 6 and 29 DF,  p-value: < 2.2e-16
+## F-statistic: 1.618e+31 on 6 and 29 DF,  p-value: < 2.2e-16
 \end{verbatim}
 
 \begin{Shaded}
@@ -1650,7 +2007,11 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-8-1}
+\begin{verbatim}
+## The first four factors were selected. Use argument select for choosing what is plotted.
+\end{verbatim}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-20-1}
 
 这里我们可以看出结果与我们设计的响应是能对应上的，也能从图上看出哪个影响更大。在进行数据分析时，有时会遇到方差分析与线性回归的区别问题，打比方你用线性回归来做分析，会有审稿人问你 lack of fit 检验有没有做。这个检验实质上也是个F检验，用来衡量线性模型之外残差里分组变异与纯误差变异的比值，如果分组变异还是比较大，那么线性假设可能就不合理。
 
@@ -1714,6 +2075,55 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 高维数据的探索需要先降维，基本思路是趋势相对一致的维度重新整合为一个独立维度，提取出一个新维度。最常见的降维方式是主成分分析或因子分析，可理解为通过坐标轴映射让方差方向相对一致的因子重组为单一因子。另外的降维方式则有流形分析的一些技术例如 t-SNE、UMAP或基于人工神经网络的SOM等，都可以用来非线性降维。这里一定要清楚降维的前提是维度间存在某种相似性可以被降维，如果都是相对独立的，例如第一主成分对方差解释连5\%都不到，那么优先要做的不是降维，而是冗余分析，把不相关的维度先筛掉。大量不相关的维度会增加数据整体方差且降低发现真正规律的统计方法功效，因此不要盲目迷信方法，根据探索的方向来保留有意义的数据维度。
 
 除了在样品维度上进行探索，样本间的关系可能也不是独立的。此时可以引入聚类分析来探索样本间的关系，聚类分析的核心在于样品间距离的定义，要根据数据本身的情况来定，但欧式距离比较常见。除了聚类分析，也可以考虑探索样本间层级关系或更一般的网络关系，此时要定义好层级间或节点间的连接条件，例如最常见的相关性，这样就可以对样品间的相互关系进行探索，看是否存在样本聚类的情况。当然，该方法也可用来探索维度间关系。
+
+下面演示下常见可视化方法：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 读入鸢尾花数据集，150个样本及其花萼长度/宽度，花瓣长度/宽度还有种属}
+\FunctionTok{data}\NormalTok{(}\StringTok{"iris"}\NormalTok{)}
+\CommentTok{\# 一维可视化花萼长度}
+\FunctionTok{hist}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Sepal.Length, }\AttributeTok{xlab =} \StringTok{\textquotesingle{}花萼长度\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \StringTok{\textquotesingle{}频数\textquotesingle{}}\NormalTok{, }\AttributeTok{main =} \StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-21-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 二维可视化花萼长度与宽度的关系}
+\FunctionTok{plot}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Sepal.Length}\SpecialCharTok{\textasciitilde{}}\NormalTok{iris}\SpecialCharTok{$}\NormalTok{Sepal.Width,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}花萼宽度\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \StringTok{\textquotesingle{}花萼长度\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-21-2}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 三维可视化花萼长度、宽度及种属的关系}
+\FunctionTok{plot}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Sepal.Length}\SpecialCharTok{\textasciitilde{}}\NormalTok{iris}\SpecialCharTok{$}\NormalTok{Sepal.Width,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}花萼宽度\textquotesingle{}}\NormalTok{, }\AttributeTok{ylab =} \StringTok{\textquotesingle{}花萼长度\textquotesingle{}}\NormalTok{, }\AttributeTok{col=}\NormalTok{ iris}\SpecialCharTok{$}\NormalTok{Species, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}topright\textquotesingle{}}\NormalTok{,}\AttributeTok{legend =} \FunctionTok{unique}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Species), }\AttributeTok{col =} \FunctionTok{unique}\NormalTok{(iris}\SpecialCharTok{$}\NormalTok{Species), }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-21-3}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 利用样本相关性探索样本间关系，这里用32辆车的10维测试数据}
+\NormalTok{cor }\OtherTok{\textless{}{-}} \FunctionTok{cor}\NormalTok{(}\FunctionTok{t}\NormalTok{(mtcars))}
+\CommentTok{\# 相关系数阈值0.99}
+\NormalTok{cor[cor}\SpecialCharTok{\textless{}}\FloatTok{0.99}\NormalTok{] }\OtherTok{\textless{}{-}} \DecValTok{0}
+\NormalTok{df }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{from=}\FunctionTok{rownames}\NormalTok{(mtcars)[}\FunctionTok{which}\NormalTok{(}\FunctionTok{lower.tri}\NormalTok{(cor), }\AttributeTok{arr.ind =}\NormalTok{ T)[, }\DecValTok{1}\NormalTok{]],}\AttributeTok{to=}\FunctionTok{rownames}\NormalTok{(mtcars)[}\FunctionTok{which}\NormalTok{(}\FunctionTok{lower.tri}\NormalTok{(cor), }\AttributeTok{arr.ind =}\NormalTok{ T)[, }\DecValTok{2}\NormalTok{]],}\AttributeTok{cor=}\NormalTok{cor[}\FunctionTok{lower.tri}\NormalTok{(cor)])}
+\NormalTok{df }\OtherTok{\textless{}{-}}\NormalTok{ df[}\FunctionTok{abs}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{cor)}\SpecialCharTok{\textgreater{}}\DecValTok{0}\NormalTok{,]}
+\CommentTok{\# 用网络可视化}
+\FunctionTok{library}\NormalTok{(igraph)}
+\NormalTok{net }\OtherTok{\textless{}{-}} \FunctionTok{graph\_from\_data\_frame}\NormalTok{(df,}\AttributeTok{directed =}\NormalTok{ F)}
+\FunctionTok{plot}\NormalTok{(net, }\AttributeTok{vertex.label.cex =} \FloatTok{0.5}\NormalTok{, }\AttributeTok{vertex.cex =} \FloatTok{1.5}\NormalTok{,}\AttributeTok{layout =}\NormalTok{ layout\_nicely)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-21-4}
 
 探索性分析不同于基于假设的统计推断，往往更侧重直观展示与形成假设，后者则侧重验证与预测。探索性数据分析对于科研非常重要，因为很多新现象规律的发现都是在这阶段完成的。相应的，科研人员应掌握足够多的可视化工具，了解其探索的关系与原理，基于 R 语言可参考\href{https://bookdown.org/xiangyun/msg/}{《现代统计图形》}。
 
@@ -1780,26 +2190,33 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# 随机数的10000次比较}
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
+\CommentTok{\# 随机数的10000次比较}
 \NormalTok{pvalue }\OtherTok{\textless{}{-}} \ConstantTok{NULL}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{)\{}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{) \{}
 \NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{)}
 \NormalTok{  b }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{)}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
 \NormalTok{  pvalue[i] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
 \CommentTok{\# 看下p值分布}
-\FunctionTok{hist}\NormalTok{(pvalue)}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{  pvalue,}
+  \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+  \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+  \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-9-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-22-1} \caption[随机数进行t检验后p值分布]{随机数进行t检验后p值分布}\label{fig:unnamed-chunk-22}
+\end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# 小于0.05的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.05}\NormalTok{)}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.05}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1810,7 +2227,7 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# 小于0.0001的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.0001}\NormalTok{)}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.0001}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1824,23 +2241,30 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
 \NormalTok{pvalue }\OtherTok{\textless{}{-}} \ConstantTok{NULL}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{)\{}
-\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a}\SpecialCharTok{+}\DecValTok{1}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{10000}\NormalTok{) \{}
+\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
 \NormalTok{  pvalue[i] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
 \CommentTok{\# 看下p值分布}
-\FunctionTok{hist}\NormalTok{(pvalue)}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{  pvalue,}
+  \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+  \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+  \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-10-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-23-1} \caption[存在真实差异时p值的分布]{存在真实差异时p值的分布}\label{fig:unnamed-chunk-23}
+\end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# 小于0.05的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.05}\NormalTok{)}
+\CommentTok{\# 显示p值里小于0.05的个数}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.05}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1850,8 +2274,8 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# 小于0.0001的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.0001}\NormalTok{)}
+\CommentTok{\# 显示p值里小于0.0001的个数}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.0001}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1867,29 +2291,36 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
 \NormalTok{pvalue }\OtherTok{\textless{}{-}} \ConstantTok{NULL}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5000}\NormalTok{)\{}
-\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a}\SpecialCharTok{+}\DecValTok{1}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5000}\NormalTok{) \{}
+\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
 \NormalTok{  pvalue[i] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5000}\NormalTok{)\{}
-\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  b }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
-\NormalTok{  pvalue[i}\SpecialCharTok{+}\DecValTok{5000}\NormalTok{] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5000}\NormalTok{) \{}
+\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  b }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
+\NormalTok{  pvalue[i }\SpecialCharTok{+} \DecValTok{5000}\NormalTok{] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
 \CommentTok{\# 看下p值分布}
-\FunctionTok{hist}\NormalTok{(pvalue)}
+\FunctionTok{hist}\NormalTok{(}
+\NormalTok{  pvalue,}
+  \AttributeTok{main =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值分布"}\NormalTok{)),}
+  \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+  \AttributeTok{ylab =} \StringTok{\textquotesingle{}频率\textquotesingle{}}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-11-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-24-1} \caption[混合有差异与无差异的检验时p值的分布]{混合有差异与无差异的检验时p值的分布}\label{fig:unnamed-chunk-24}
+\end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# 小于0.05的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.05}\NormalTok{)}
+\CommentTok{\# 显示p值里小于0.05的个数}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.05}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1899,8 +2330,8 @@ PB法在工业场景里用的比较多，但你应该想到了，如果只是进
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# 小于0.0001的个数}
-\FunctionTok{sum}\NormalTok{(pvalue}\SpecialCharTok{\textless{}}\FloatTok{0.0001}\NormalTok{)}
+\CommentTok{\# 显示p值里小于0.0001的个数}
+\FunctionTok{sum}\NormalTok{(pvalue }\SpecialCharTok{\textless{}} \FloatTok{0.0001}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1923,20 +2354,31 @@ P(至少一个显著)=1-P(无显著差异) = 1-(1-\alpha/n)^n
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# 比较次数}
-\NormalTok{n }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10} \SpecialCharTok{\%o\%} \DecValTok{10}\SpecialCharTok{\^{}}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{))}
+\NormalTok{n }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10} \SpecialCharTok{\%o\%} \DecValTok{10} \SpecialCharTok{\^{}}\NormalTok{ (}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{))}
 \CommentTok{\# 整体出现假阳性概率}
-\NormalTok{p0 }\OtherTok{\textless{}{-}} \DecValTok{1}\SpecialCharTok{{-}}\NormalTok{(}\DecValTok{1}\FloatTok{{-}0.05}\NormalTok{)}\SpecialCharTok{\^{}}\NormalTok{n}
+\NormalTok{p0 }\OtherTok{\textless{}{-}} \DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}} \FloatTok{0.05}\NormalTok{) }\SpecialCharTok{\^{}}\NormalTok{ n}
 \CommentTok{\# Bonferroni方法控制后的整体假阳性概率}
-\NormalTok{p }\OtherTok{\textless{}{-}} \DecValTok{1}\SpecialCharTok{{-}}\NormalTok{(}\DecValTok{1}\FloatTok{{-}0.05}\SpecialCharTok{/}\NormalTok{n)}\SpecialCharTok{\^{}}\NormalTok{n}
+\NormalTok{p }\OtherTok{\textless{}{-}} \DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}} \FloatTok{0.05} \SpecialCharTok{/}\NormalTok{ n) }\SpecialCharTok{\^{}}\NormalTok{ n}
 \CommentTok{\# 不进行控制}
-\FunctionTok{plot}\NormalTok{(p0}\SpecialCharTok{\textasciitilde{}}\NormalTok{n,}\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{),}\AttributeTok{xlab=}\StringTok{\textquotesingle{}numbers of tests\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}FWER\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(}
+\NormalTok{  p0 }\SpecialCharTok{\textasciitilde{}}\NormalTok{ n,}
+  \AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{),}
+  \AttributeTok{pch =} \DecValTok{19}\NormalTok{,}
+  \AttributeTok{xlab =} \StringTok{\textquotesingle{}测试数\textquotesingle{}}\NormalTok{,}
+  \AttributeTok{ylab =} \StringTok{\textquotesingle{}整体错误率（FWER）\textquotesingle{}}
+\NormalTok{)}
 \CommentTok{\# Bonferroni方法控制}
-\FunctionTok{points}\NormalTok{(p}\SpecialCharTok{\textasciitilde{}}\NormalTok{n,}\AttributeTok{pch=}\DecValTok{19}\NormalTok{,}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
-\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Bonferroni\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}Raw\textquotesingle{}}\NormalTok{),}\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{),}\AttributeTok{pch =} \DecValTok{1}\NormalTok{,}\AttributeTok{cex=}\DecValTok{1}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(p }\SpecialCharTok{\textasciitilde{}}\NormalTok{ n, }\AttributeTok{pch =} \DecValTok{17}\NormalTok{, }\AttributeTok{col =} \StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{,}
+       \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Bonferroni方法\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}无矫正\textquotesingle{}}\NormalTok{),}
+       \AttributeTok{pch =} \FunctionTok{c}\NormalTok{(}\DecValTok{17}\NormalTok{,}\DecValTok{19}\NormalTok{),}
+       \AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-12-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-25-1} \caption[对比Bonferroni方法与无矫正时整体错误率的变化]{对比Bonferroni方法与无矫正时整体错误率的变化}\label{fig:unnamed-chunk-25}
+\end{figure}
 
 其实，这样的控制得到的整体错误率是略低于0.05的，并且数目越大，整体错误率越低。这个方法十分保守，有可能什么差异你都看不到，因为都变成假阴性了。在实际应用中一般不调节p值的假阳性比率而直接调节p值，取原始p值跟整体检验数目的乘积与1的最小值作为调节p值，还可以用0.05或0.01进行判断，不过这时候控制的整体而不是单一检验了。
 
@@ -2041,18 +2483,26 @@ p_i \leq \frac{i}{m} \alpha
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# BH法控制错误发现率}
-\NormalTok{pbh }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue,}\AttributeTok{method =} \StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{)}
+\NormalTok{pbh }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue, }\AttributeTok{method =} \StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{)}
 \CommentTok{\# holm法控制错误发现率}
-\NormalTok{ph }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue,}\AttributeTok{method =} \StringTok{\textquotesingle{}holm\textquotesingle{}}\NormalTok{)}
-\FunctionTok{plot}\NormalTok{(pbh}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}FDR\textquotesingle{}}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}p value\textquotesingle{}}\NormalTok{)}
-\FunctionTok{points}\NormalTok{(ph}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
-\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}bottomright\textquotesingle{}}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Holm\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{),}\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{),}\AttributeTok{pch =} \DecValTok{1}\NormalTok{,}\AttributeTok{cex=}\DecValTok{1}\NormalTok{)}
+\NormalTok{ph }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue, }\AttributeTok{method =} \StringTok{\textquotesingle{}holm\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(pbh }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pvalue,}
+     \AttributeTok{ylab =} \StringTok{\textquotesingle{}错误发现率（FDR）\textquotesingle{}}\NormalTok{,}
+     \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+     \AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(ph }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pvalue, }\AttributeTok{pch =} \DecValTok{17}\NormalTok{, }\AttributeTok{col =} \StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}bottomright\textquotesingle{}}\NormalTok{,}
+       \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Holm 法\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}BH 法\textquotesingle{}}\NormalTok{),}
+       \AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{),}
+       \AttributeTok{pch =} \FunctionTok{c}\NormalTok{(}\DecValTok{17}\NormalTok{,}\DecValTok{19}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-15-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-28-1} \caption[p值的Holm 法与 BH 法与控制错误发现率的变化]{p值的Holm 法与 BH 法与控制错误发现率的变化}\label{fig:unnamed-chunk-28}
+\end{figure}
 
-从上面图我们可以看出，如果控制整体错误率（红色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。
+从上面图我们可以看出，如果控制整体错误率（浅色），那么p值很容易就到1了，过于严格。而如果用BH方法控制错误发现率，那么原始p值越大，调节后的错误发现率也逐渐递增，这就符合了区分真实差异与随机差异就要假设真实差异更可能出现更小的p值这个现象。值得注意的是这个错误发现率求的是有差异存在的情况，不然零发现就出现除数为零了。
 
 如果说BH方法还算是调节了p值，那么Storey提出的方法则直接去估计了错误发现率本身。刚才介绍BH算法时我提到总数m与p值的乘积是基于这里的分布是均匀分布，但实际上按照错误发现率的定义，这里应该出现的是零假设总数。直接使用所有检验数会造成一个问题，那就是对错误发现率的高估，为了保证功效，这里应该去估计零假设的总体比例。这里我们去观察混合分布会发现在p值较大的时候基本可以认为这里分布的都是零假设的p值，那么我们可以用：
 
@@ -2066,12 +2516,18 @@ p_i \leq \frac{i}{m} \alpha
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(qvalue)}
 \NormalTok{q }\OtherTok{\textless{}{-}} \FunctionTok{qvalue}\NormalTok{(pvalue)}
-\CommentTok{\# Q值}
-\FunctionTok{plot}\NormalTok{(q}\SpecialCharTok{$}\NormalTok{qvalues}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{col=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}Q\textquotesingle{}}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}p value\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# q值}
+\FunctionTok{plot}\NormalTok{(}
+\NormalTok{  q}\SpecialCharTok{$}\NormalTok{qvalues }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pvalue,}
+  \AttributeTok{ylab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}q\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+  \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{))}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-16-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-29-1} \caption[p值与q值的变化]{p值与q值的变化}\label{fig:unnamed-chunk-29}
+\end{figure}
 
 如上图所示，q值增大后会最终逼近到0.5，而我们的模拟中零假设的比例就设定就是50\%。我们重新模拟一个零假设比例5\%的实验：
 
@@ -2079,31 +2535,40 @@ p_i \leq \frac{i}{m} \alpha
 \begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
 \NormalTok{pvalue }\OtherTok{\textless{}{-}} \ConstantTok{NULL}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{500}\NormalTok{)\{}
-\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a}\SpecialCharTok{+}\DecValTok{1}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{500}\NormalTok{) \{}
+\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  b }\OtherTok{\textless{}{-}}\NormalTok{ a }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
 \NormalTok{  pvalue[i] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
-\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{9500}\NormalTok{)\{}
-\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  b }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{,}\DecValTok{1}\NormalTok{)}
-\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a,b)}
-\NormalTok{  pvalue[i}\SpecialCharTok{+}\DecValTok{500}\NormalTok{] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{9500}\NormalTok{) \{}
+\NormalTok{  a }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  b }\OtherTok{\textless{}{-}} \FunctionTok{rnorm}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\NormalTok{  c }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(a, b)}
+\NormalTok{  pvalue[i }\SpecialCharTok{+} \DecValTok{500}\NormalTok{] }\OtherTok{\textless{}{-}}\NormalTok{ c}\SpecialCharTok{$}\NormalTok{p.value}
 \NormalTok{\}}
-\NormalTok{pbh }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue,}\AttributeTok{method =} \StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{)}
-\NormalTok{ph }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue,}\AttributeTok{method =} \StringTok{\textquotesingle{}holm\textquotesingle{}}\NormalTok{)}
+\NormalTok{pbh }\OtherTok{\textless{}{-}} \FunctionTok{p.adjust}\NormalTok{(pvalue, }\AttributeTok{method =} \StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{)}
 \NormalTok{q }\OtherTok{\textless{}{-}} \FunctionTok{qvalue}\NormalTok{(pvalue)}
-\FunctionTok{plot}\NormalTok{(pbh}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{ylab =} \StringTok{\textquotesingle{}FDR\textquotesingle{}}\NormalTok{,}\AttributeTok{xlab =} \StringTok{\textquotesingle{}p value\textquotesingle{}}\NormalTok{)}
-\CommentTok{\# Holm 方法}
-\FunctionTok{points}\NormalTok{(ph}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\FunctionTok{plot}\NormalTok{(pbh }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pvalue,}
+     \AttributeTok{ylab =} \StringTok{\textquotesingle{}错误发现率（FDR）\textquotesingle{}}\NormalTok{,}
+     \AttributeTok{xlab =} \FunctionTok{substitute}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}\StringTok{\textquotesingle{}p\textquotesingle{}}\NormalTok{), }\StringTok{"值"}\NormalTok{)),}
+     \AttributeTok{pch =} \DecValTok{15}\NormalTok{)}
 \CommentTok{\# Q值}
-\FunctionTok{points}\NormalTok{(q}\SpecialCharTok{$}\NormalTok{qvalues}\SpecialCharTok{\textasciitilde{}}\NormalTok{pvalue,}\AttributeTok{col=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{)}
-\FunctionTok{legend}\NormalTok{(}\StringTok{\textquotesingle{}bottomright\textquotesingle{}}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}Q\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}Holm\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}BH\textquotesingle{}}\NormalTok{),}\AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{),}\AttributeTok{pch =} \DecValTok{1}\NormalTok{,}\AttributeTok{cex=}\DecValTok{1}\NormalTok{)}
+\FunctionTok{points}\NormalTok{(q}\SpecialCharTok{$}\NormalTok{qvalues }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pvalue, }\AttributeTok{pch =} \DecValTok{16}\NormalTok{, }\AttributeTok{col =} \StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}
+  \StringTok{\textquotesingle{}bottomright\textquotesingle{}}\NormalTok{,}
+  \FunctionTok{c}\NormalTok{(}\FunctionTok{expression}\NormalTok{(}\FunctionTok{paste}\NormalTok{(}\FunctionTok{italic}\NormalTok{(}
+    \StringTok{"q"}
+\NormalTok{  ), }\StringTok{" 值"}\NormalTok{)), }\StringTok{\textquotesingle{}BH 法\textquotesingle{}}\NormalTok{),}
+  \AttributeTok{pch =} \FunctionTok{c}\NormalTok{(}\DecValTok{16}\NormalTok{,}\DecValTok{15}\NormalTok{),}
+  \AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}lightgrey\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{)}
+\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-17-1}
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-30-1} \caption[q值与BH法下p值与错误发现率的变化]{q值与BH法下p值与错误发现率的变化}\label{fig:unnamed-chunk-30}
+\end{figure}
 
 此时我们可以看到两者结果较为接近，q值理论上更完备，功效也更强，但算法上对\(\hat\pi_0\)的估计并不稳定，特别是比例靠近1的时候，所以BH方法可能还是更容易让人接受的保守错误发现率控制方法。
 
@@ -2266,6 +2731,10 @@ p_i \leq \frac{i}{m} \alpha
 
 主成分分析经常用来可视化，这里我们回到二维平面降维的场景仔细看看我们究竟可视化了什么。首先我们有一个二维点A，这个点投影到一维线上得到点B，这个点跟所有点的均值C连线就是到0维的投影。目前我们已知AC这个线，同时A到一维线的距离又要最小也就是垂直，这样A、B及C构成一个直角三角形。此时根据勾股定理BC这个距离最大，也就是一维到0维时所有投影点的距离之和最长，在这个方向中各点间方差最大程度保留，也就是找到了方差最大的方向。事实上，因为前面提到的直角三角形，每降低一次维度，点之间的距离比高维度都不可避免的减少，如果此时点聚到一起不一定相似度很高，但如果主成分占总方差比重比较大，那么这些点就很有可能十分相似。
 
+\begin{figure}
+\includegraphics{data/PCA} \caption[二维对一维的投影示例（A为二维数据点，C为所有点在一维上的投影均值，AC固定下AB垂直于一维时AB最短，勾股定理下BC最长，也就是方差最大的方向）]{二维对一维的投影示例（A为二维数据点，C为所有点在一维上的投影均值，AC固定下AB垂直于一维时AB最短，勾股定理下BC最长，也就是方差最大的方向）}\label{fig:unnamed-chunk-33}
+\end{figure}
+
 说到距离，其实主成分分析也是多维标度分析（MDS）的一种。在经典多维标度分析中，测定点很困难，但可以测到点之间欧式距离并构建距离矩阵，因为其映射子空间里点之间方差最大时可以证明点之间的距离也是最大的，这个特性保证了当我们只有距离矩阵时进行主成分分析得到的低维映射也可以保证两个空间间距离最短，这样主成分分析事实上符合经典多维标度分析。也就是说，在你能够测到欧式距离而不是点时，是有可能重构出原始标度的。
 
 主成分分析在求解上基本都走了矩阵运算的捷径，结果也是等价的。但这个过程不算是一个概率模型，因为可能产生不确定度的白噪音根本没出现在求解模型中。此时，我们应该意识到，这个子空间可能是某个概率模型的解，但如同我们只求了均值没求方差一样，似乎我们没有考虑模型的不确定度。这样我们需要从统计角度把主成分分析统一到基于统计学的数据分析中，这样也许会对将来构建相关假设检验模型有用，当然这也意味着我们可能不太方便再用矩阵运算来求解了。
@@ -2362,45 +2831,7 @@ t = Wx + \mu + \epsilon
 \CommentTok{\# remotes::install\_github("yufree/scifetch")}
 \FunctionTok{library}\NormalTok{(scifetch)}
 \FunctionTok{library}\NormalTok{(lubridate)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 
-## Attaching package: 'lubridate'
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:base':
-## 
-##     date, intersect, setdiff, union
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(dplyr)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 
-## Attaching package: 'dplyr'
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(tidytext)}
 \FunctionTok{library}\NormalTok{(stringr)}
 \FunctionTok{library}\NormalTok{(ggplot2)}
@@ -2408,22 +2839,6 @@ t = Wx + \mu + \epsilon
 \FunctionTok{library}\NormalTok{(broom)}
 \FunctionTok{library}\NormalTok{(purrr)}
 \FunctionTok{library}\NormalTok{(scales)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 
-## Attaching package: 'scales'
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from 'package:purrr':
-## 
-##     discard
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \CommentTok{\# 10年跨度 MeSH 关键词 期刊ES\&T}
 \NormalTok{query }\OtherTok{\textless{}{-}} \StringTok{\textquotesingle{}"mass spectrometry"[MeSH Terms] AND 2010/01:2020/01[DP] AND 0013{-}936X[TA]\textquotesingle{}}
 \NormalTok{tmdf }\OtherTok{\textless{}{-}} \FunctionTok{getpubmed}\NormalTok{(query, }\AttributeTok{start =} \DecValTok{1}\NormalTok{, }\AttributeTok{end =} \DecValTok{10000}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
@@ -2466,12 +2881,14 @@ t = Wx + \mu + \epsilon
         \FunctionTok{mutate}\NormalTok{(}\AttributeTok{word =} \FunctionTok{reorder}\NormalTok{(word, n)) }\SpecialCharTok{\%\textgreater{}\%}
         \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(word, n)) }\SpecialCharTok{+}
   \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{ylab}\NormalTok{(}\StringTok{"Top 20 commonly used words in abstracts"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"摘要中前20常见词"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ylab}\NormalTok{(}\StringTok{"词频"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{xlab}\NormalTok{(}\StringTok{"词"}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{coord\_flip}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-20-1}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-34-1}
 
 我们找到了822篇文献，从词频前20的结果看浓度、水、产物、方法、色谱、鉴定等词出现频率比较高。同时我们可以看下这10年关键词的变化趋势。
 
@@ -2519,15 +2936,14 @@ t = Wx + \mu + \epsilon
   \FunctionTok{scale\_y\_continuous}\NormalTok{(}\AttributeTok{labels =} \FunctionTok{percent\_format}\NormalTok{()) }\SpecialCharTok{+}
   \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ word, }\AttributeTok{scales =} \StringTok{"free\_y"}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{expand\_limits}\NormalTok{(}\AttributeTok{y =} \DecValTok{0}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Year"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{,}
-       \AttributeTok{title =} \StringTok{"9 fastest growing words"}\NormalTok{,}
-       \AttributeTok{subtitle =} \StringTok{"Judged by growth rate"}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"年份"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"摘要中含有该关键词的百分比"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"增长率最快的9个词"}
 \NormalTok{              )}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-21-1}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-35-1}
 
 这里我们看到分辨率跟液相色谱的使用词频在逐渐上升。那么相应的我们也可以看下那些关键词在衰退。
 
@@ -2543,15 +2959,14 @@ t = Wx + \mu + \epsilon
   \FunctionTok{scale\_y\_continuous}\NormalTok{(}\AttributeTok{labels =} \FunctionTok{percent\_format}\NormalTok{()) }\SpecialCharTok{+}
   \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ word, }\AttributeTok{scales =} \StringTok{"free\_y"}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{expand\_limits}\NormalTok{(}\AttributeTok{y =} \DecValTok{0}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Year"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{,}
-       \AttributeTok{title =} \StringTok{"9 fastest shrinking words"}\NormalTok{,}
-       \AttributeTok{subtitle =} \StringTok{"Judged by growth rate"}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"年份"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"摘要中含有该关键词的百分比"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"衰退最快的9个词"}
 \NormalTok{              )}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-22-1}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-36-1}
 
 这里可以看到PAHs、砷、芳香族、酸等词在质谱相关的环境研究中逐渐减少。同时，我们也可以利用词频相关来研究关键词聚类情况。
 
@@ -2559,74 +2974,13 @@ t = Wx + \mu + \epsilon
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(widyr)}
 \FunctionTok{library}\NormalTok{(igraph)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 
-## Attaching package: 'igraph'
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:purrr':
-## 
-##     compose, simplify
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from 'package:tidyr':
-## 
-##     crossing
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:dplyr':
-## 
-##     as_data_frame, groups, union
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:lubridate':
-## 
-##     %--%, union
-\end{verbatim}
-
-\begin{verbatim}
-## The following objects are masked from 'package:stats':
-## 
-##     decompose, spectrum
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from 'package:base':
-## 
-##     union
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(ggraph)}
-
-\NormalTok{title\_word\_pairs }\OtherTok{\textless{}{-}}\NormalTok{ wordfabs }\SpecialCharTok{\%\textgreater{}\%}
+\CommentTok{\# 计算两个词同时出现在摘要的频率，词频用边的宽度来表示}
+\NormalTok{word\_pairs }\OtherTok{\textless{}{-}}\NormalTok{ wordfabs }\SpecialCharTok{\%\textgreater{}\%}
         \FunctionTok{pairwise\_count}\NormalTok{(word,line,}\AttributeTok{sort =} \ConstantTok{TRUE}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-## Warning: `distinct_()` was deprecated in dplyr 0.7.0.
-## Please use `distinct()` instead.
-## See vignette('programming') for more help
-\end{verbatim}
-
-\begin{verbatim}
-## Warning: `tbl_df()` was deprecated in dplyr 1.0.0.
-## Please use `tibble::as_tibble()` instead.
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{42}\NormalTok{)}
-\NormalTok{title\_word\_pairs }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{word\_pairs }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{filter}\NormalTok{(n }\SpecialCharTok{\textgreater{}=} \DecValTok{150}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{graph\_from\_data\_frame}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{ggraph}\NormalTok{(}\AttributeTok{layout =} \StringTok{"fr"}\NormalTok{) }\SpecialCharTok{+}
@@ -2634,12 +2988,12 @@ t = Wx + \mu + \epsilon
   \FunctionTok{geom\_node\_point}\NormalTok{(}\AttributeTok{size =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{geom\_node\_text}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label =}\NormalTok{ name), }\AttributeTok{repel =} \ConstantTok{TRUE}\NormalTok{, }
                  \AttributeTok{point.padding =} \FunctionTok{unit}\NormalTok{(}\FloatTok{0.2}\NormalTok{, }\StringTok{"lines"}\NormalTok{)) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Bigrams in title"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"摘要中的词对（Bigrams）"}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{theme\_void}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-23-1}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-37-1}
 
 这样我们就直接生成了质谱环境应用的关键词网络。当然，更直接的方法是用主题模型来寻找子领域，例如我们可以指定6个子领域输出其前10关键词。
 
@@ -2649,7 +3003,9 @@ t = Wx + \mu + \epsilon
         \FunctionTok{count}\NormalTok{(line, word, }\AttributeTok{sort =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
         \FunctionTok{ungroup}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
         \FunctionTok{cast\_dtm}\NormalTok{(line, word, n)}
+
 \FunctionTok{library}\NormalTok{(topicmodels)}
+\CommentTok{\# 潜在狄利克雷分布模型寻找6个潜在的子领域}
 \NormalTok{desc\_lda }\OtherTok{\textless{}{-}} \FunctionTok{LDA}\NormalTok{(desc\_dtm, }\AttributeTok{k =} \DecValTok{6}\NormalTok{, }\AttributeTok{control =} \FunctionTok{list}\NormalTok{(}\AttributeTok{seed =} \DecValTok{42}\NormalTok{))}
 \NormalTok{tidy\_lda }\OtherTok{\textless{}{-}} \FunctionTok{tidy}\NormalTok{(desc\_lda)}
 
@@ -2670,20 +3026,20 @@ t = Wx + \mu + \epsilon
   \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
   \FunctionTok{coord\_flip}\NormalTok{() }\SpecialCharTok{+}
   \FunctionTok{scale\_x\_discrete}\NormalTok{(}\AttributeTok{labels =} \ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{gsub}\NormalTok{(}\StringTok{"\_\_.+$"}\NormalTok{, }\StringTok{""}\NormalTok{, x)) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Top 10 terms in each LDA topic"}\NormalTok{,}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"6个子领域主题的前10关键词"}\NormalTok{,}
        \AttributeTok{x =} \ConstantTok{NULL}\NormalTok{, }\AttributeTok{y =} \FunctionTok{expression}\NormalTok{(beta)) }\SpecialCharTok{+}
   \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ topic, }\AttributeTok{ncol =} \DecValTok{2}\NormalTok{, }\AttributeTok{scales =} \StringTok{"free"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-24-1}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-38-1}
 
 主题模型会尝试将相关性高的词归为一个主题，这里我们大体可以推测出第一个主题是关于气相色谱物质鉴定的；第二个主题是关于水中天然溶解性有机物分析；第三个大概是水样灰尘样中污染物定量研究；第四个大概是土壤降解转化产物；第五个是气溶胶反应产物；第六个则是水样的分析方法研究。这样，通过文本挖掘我们就可以推测出一些通常需要阅读很多文献才能形成的学科发展趋势。
 
 \hypertarget{ux4f5cux8005}{%
 \subsection{作者}\label{ux4f5cux8005}}
 
-同样的，我们也可以研究某个作者的研究主题与变化趋势。这里用加拿大滑铁卢大学 Jaunsz Pawliszyn 教授的数据来说明下。
+同样的，我们也可以研究某个作者的研究主题与变化趋势。下面是获取加拿大滑铁卢大学 Jaunsz Pawliszyn 教授的数据的代码，其数据分析部分与前一章节关键词相同。
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2700,122 +3056,11 @@ t = Wx + \mu + \epsilon
 ## 195 records founds
 \end{verbatim}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# 摘要分词}
-\NormalTok{wordfabs }\OtherTok{\textless{}{-}}\NormalTok{ tmdf }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{filter}\NormalTok{(}\FunctionTok{nchar}\NormalTok{(abstract) }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{unnest\_tokens}\NormalTok{(word, abstract,}\AttributeTok{drop =}\NormalTok{ F) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{anti\_join}\NormalTok{(stop\_words) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{filter}\NormalTok{(}\FunctionTok{str\_detect}\NormalTok{(word, }\StringTok{"[\^{}}\SpecialCharTok{\textbackslash{}\textbackslash{}}\StringTok{d]"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{str\_detect}\NormalTok{(word, }\StringTok{"abs"}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{group\_by}\NormalTok{(word) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{mutate}\NormalTok{(}\AttributeTok{word\_total =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{ungroup}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{mutate}\NormalTok{(}\AttributeTok{source =} \StringTok{\textquotesingle{}abstract\textquotesingle{}}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Joining, by = "word"
-\end{verbatim}
+此外，我们用下面代码输出其发表学术期刊的偏好。
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{papers\_per\_month }\OtherTok{\textless{}{-}}\NormalTok{ tmdf }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{group\_by}\NormalTok{(month) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarize}\NormalTok{(}\AttributeTok{month\_total =} \FunctionTok{n}\NormalTok{())}
-\CommentTok{\# 可视化词频前20的关键词}
-\NormalTok{wordfabs }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{count}\NormalTok{(word, }\AttributeTok{sort =} \ConstantTok{TRUE}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{top\_n}\NormalTok{(}\DecValTok{20}\NormalTok{,n) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{mutate}\NormalTok{(}\AttributeTok{word =} \FunctionTok{reorder}\NormalTok{(word, n)) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(word, n)) }\SpecialCharTok{+}
-  \FunctionTok{geom\_col}\NormalTok{(}\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{ylab}\NormalTok{(}\StringTok{"Top 20 commonly used words in abstracts"}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{coord\_flip}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-25-1}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# 摘要中关键词}
-\NormalTok{word\_month\_counts }\OtherTok{\textless{}{-}}\NormalTok{ wordfabs }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(word\_total }\SpecialCharTok{\textgreater{}=} \DecValTok{100}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{count}\NormalTok{(word, month) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{complete}\NormalTok{(word, month, }\AttributeTok{fill =} \FunctionTok{list}\NormalTok{(}\AttributeTok{n =} \DecValTok{0}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{inner\_join}\NormalTok{(papers\_per\_month, }\AttributeTok{by =} \StringTok{"month"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{percent =}\NormalTok{ n }\SpecialCharTok{/}\NormalTok{ month\_total) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{year =} \FunctionTok{year}\NormalTok{(month) }\SpecialCharTok{+} \FunctionTok{yday}\NormalTok{(month) }\SpecialCharTok{/} \DecValTok{365}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-        \FunctionTok{filter}\NormalTok{(percent}\SpecialCharTok{\textless{}}\DecValTok{1}\NormalTok{)}
-\CommentTok{\# 计数数据广义二项回归}
-\NormalTok{mod }\OtherTok{\textless{}{-}} \ErrorTok{\textasciitilde{}} \FunctionTok{glm}\NormalTok{(}\FunctionTok{cbind}\NormalTok{(n, month\_total }\SpecialCharTok{{-}}\NormalTok{ n) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ year, ., }\AttributeTok{family =} \StringTok{"binomial"}\NormalTok{)}
-\CommentTok{\# 计算斜率}
-\NormalTok{slopes }\OtherTok{\textless{}{-}}\NormalTok{ word\_month\_counts }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{nest}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{word) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{model =} \FunctionTok{map}\NormalTok{(data, mod)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{models =} \FunctionTok{map}\NormalTok{(model,tidy)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{unnest}\NormalTok{(}\AttributeTok{cols =} \FunctionTok{c}\NormalTok{(models)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(term }\SpecialCharTok{==} \StringTok{"year"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(estimate))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Warning: All elements of `...` must be named.
-## Did you want `data = c(month, n, month_total, percent, year)`?
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# 快速成长关键词}
-\NormalTok{slopes }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{head}\NormalTok{(}\DecValTok{9}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{inner\_join}\NormalTok{(word\_month\_counts, }\AttributeTok{by =} \StringTok{"word"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{word =} \FunctionTok{reorder}\NormalTok{(word, }\SpecialCharTok{{-}}\NormalTok{estimate)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(month, n }\SpecialCharTok{/}\NormalTok{ month\_total, }\AttributeTok{color =}\NormalTok{ word)) }\SpecialCharTok{+}
-  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{scale\_y\_continuous}\NormalTok{(}\AttributeTok{labels =} \FunctionTok{percent\_format}\NormalTok{()) }\SpecialCharTok{+}
-  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ word, }\AttributeTok{scales =} \StringTok{"free\_y"}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{expand\_limits}\NormalTok{(}\AttributeTok{y =} \DecValTok{0}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Year"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{,}
-       \AttributeTok{title =} \StringTok{"9 fastest growing words"}\NormalTok{,}
-       \AttributeTok{subtitle =} \StringTok{"Judged by growth rate"}
-\NormalTok{              )}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-25-2}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# 衰退关键词}
-\NormalTok{slopes }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{tail}\NormalTok{(}\DecValTok{9}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{inner\_join}\NormalTok{(word\_month\_counts, }\AttributeTok{by =} \StringTok{"word"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{word =} \FunctionTok{reorder}\NormalTok{(word, estimate)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(month, n }\SpecialCharTok{/}\NormalTok{ month\_total, }\AttributeTok{color =}\NormalTok{ word)) }\SpecialCharTok{+}
-  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{show.legend =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{scale\_y\_continuous}\NormalTok{(}\AttributeTok{labels =} \FunctionTok{percent\_format}\NormalTok{()) }\SpecialCharTok{+}
-  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ word, }\AttributeTok{scales =} \StringTok{"free\_y"}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{expand\_limits}\NormalTok{(}\AttributeTok{y =} \DecValTok{0}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Year"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Percentage of abstracts containing this term"}\NormalTok{,}
-       \AttributeTok{title =} \StringTok{"9 fastest shrinking words"}\NormalTok{,}
-       \AttributeTok{subtitle =} \StringTok{"Judged by growth rate"}
-\NormalTok{              )}
-\end{Highlighting}
-\end{Shaded}
-
-\includegraphics{sciguide_files/figure-latex/unnamed-chunk-25-3}
-
-同样，我们可以研究下其发表的期刊偏好。
-
-\begin{Shaded}
-\begin{Highlighting}[]
+\CommentTok{\# 给出发表数前10的期刊}
 \FunctionTok{table}\NormalTok{(tmdf}\SpecialCharTok{$}\NormalTok{journal)[}\FunctionTok{order}\NormalTok{(}\FunctionTok{table}\NormalTok{(tmdf}\SpecialCharTok{$}\NormalTok{journal),}\AttributeTok{decreasing =}\NormalTok{ T)][}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{]   }
 \end{Highlighting}
 \end{Shaded}
@@ -3117,7 +3362,7 @@ t = Wx + \mu + \epsilon
 \hypertarget{ux6d77ux62a5ux62a5ux544a}{%
 \subsection{海报报告}\label{ux6d77ux62a5ux62a5ux544a}}
 
-海报报告是非常好的锻炼机会，你可能要在两三个小时里把同一段内容重复七八遍。要减少文字描述，使用列表来概括研究。遵守从左到右，从上到下的阅读顺序。做信息图可以加分，但比较费精力。可以使用 \href{https://www.insidehighered.com/news/2019/06/24/theres-movement-better-scientific-posters-are-they-really-better}{betterposter} 设计风格：左侧表示研究细节，中间放关键词加大加粗的结论配上论文QR码，右侧放回答问题所需要的图表，制作时间可以极大缩短，用色块来提高识别度。也可以使用 \href{https://derekcrowe.net/butterposter}{butterpoposter} 设计风格：上述风格的改进版，引入图形摘要，标题占右上1/4，右下是图形摘要，左边是模块化的高亮点或细节。
+海报报告是非常好的锻炼机会，你可能要在两三个小时里把同一段内容重复七八遍。要减少文字描述，使用列表来概括研究。遵守从左到右，从上到下的阅读顺序。做信息图可以加分，但比较费精力。可以使用 \href{https://www.insidehighered.com/news/2019/06/24/theres-movement-better-scientific-posters-are-they-really-better}{betterposter} 设计风格：左侧表示研究细节，中间放关键词加大加粗的结论配上论文QR码，右侧放回答问题所需要的图表，制作时间可以极大缩短，用色块来提高识别度。也可以使用 \href{https://derekcrowe.net/butterposter}{butterposter} 设计风格：上述风格的改进版，引入图形摘要，标题占右上1/4，右下是图形摘要，左边是模块化的高亮点或细节。
 
 做海报报告可以准备一页纸的小宣传页面，如果有人感兴趣可以通过这个找到你的联系方式与最直观的结果图表。
 
@@ -3129,7 +3374,7 @@ t = Wx + \mu + \epsilon
 \hypertarget{ux542cux62a5ux544a}{%
 \subsection{听报告}\label{ux542cux62a5ux544a}}
 
-听报告要携带名片，要记笔记或录音。当天晚上会住所消化，用邮件追踪。交流要礼貌，提问题不要讲太多自己的故事，另外不要问与学术无关的事。
+听报告要携带名片，要记笔记或录音。当天晚上回住所消化，用邮件追踪。交流要礼貌，提问题不要讲太多自己的故事，另外不要问与学术无关的事。
 
 \hypertarget{ux4e3bux6301ux62a5ux544a}{%
 \subsection{主持报告}\label{ux4e3bux6301ux62a5ux544a}}
@@ -3139,7 +3384,7 @@ t = Wx + \mu + \epsilon
 \hypertarget{ux5ba1ux7a3f}{%
 \section{审稿}\label{ux5ba1ux7a3f}}
 
-审稿是学术交流的重要一环。1665年伦敦皇家学会出版《The Philosophical Transactions of the Royal Society of London》，巴黎科学院出版《Journal des Scavans》，这是最早两份学术期刊。1752年伦敦皇家学会意识到有些文章质量不高，开始启用同行评议。1830s 皇家协会正式引入同行评议来控制文章质量。1937年，美国国立癌症研究所首先启用同行评议来评审基金，后逐渐流行。审稿分为开方式、单盲（主流）与双盲三种。开放审稿会提高同行评议\href{https://doi.org/10.1371/journal.pone.0026895}{准确率}，可以进行发表后审稿或公开评论来进行学术交流。不过盲审也有优势，例如双盲审稿会\href{https://www.sciencedirect.com/science/article/pii/S0169534707002704}{提高}女性审稿人的影响力，且盲审可以让审稿人更自由发表批判性意见。
+审稿是学术交流的重要一环。1665年伦敦皇家学会出版\emph{The Philosophical Transactions of the Royal Society of London}，巴黎科学院出版\emph{Journal des Scavans}，这是最早两份学术期刊。1752年伦敦皇家学会意识到有些文章质量不高，开始启用同行评议。1830s 皇家协会正式引入同行评议来控制文章质量。1937年，美国国立癌症研究所首先启用同行评议来评审基金，后逐渐流行。审稿分为开放式、单盲（主流）与双盲三种。开放审稿会提高同行评议\href{https://doi.org/10.1371/journal.pone.0026895}{准确率}，可以进行发表后审稿或公开评论来进行学术交流。不过盲审也有优势，例如双盲审稿会\href{https://www.sciencedirect.com/science/article/pii/S0169534707002704}{提高}女性审稿人的影响力，且盲审可以让审稿人更自由发表批判性意见。
 
 审稿流程是主编确认投稿是否合乎范围，分配给专业副主编，副主编寻找审稿人。审稿人审稿要尽快，否则不做。如果对方改了也不能达到你认为的标准，拒绝而不是大修或小修。不要在审稿意见中推广自己的观点，就事论事，目的是提高研究质量，把一个科学问题搞清楚而不要掺杂个人情绪。如果你跟稿件作者有利益冲突但作者没有把你列成需要回避的审稿人，请联系编辑拒绝审稿，不能把审稿作为打压手段或牟利工具。请牢记审稿是为学术内容负责的，优质但有瑕疵的内容请帮助作者把内容理顺，提高读者也就是学术圈对内容的理解，即使文章最终无法发表在投稿期刊，但如果达到学术发表标准就应该给出详尽的意见与建议，使作者能从审稿中收益而不是简单给出判断而不给任何具体理由，这样的无效审稿意见既不能帮到作者也会给编辑留下负面印象，不如直接不审稿。
 
@@ -3310,7 +3555,15 @@ t = Wx + \mu + \epsilon
 
 想开展项目，搞清楚研究目的，项目的进行一定是推动个人或课题组成长的，与目的违背的项目源头上否定。要先对自己跟同行有清晰的了解，知道优势跟局限性。这里推荐 \href{https://zh.wikipedia.org/wiki/\%E5\%BC\%B7\%E5\%BC\%B1\%E5\%8D\%B1\%E6\%A9\%9F\%E5\%88\%86\%E6\%9E\%90}{SWOT分析}：先列举自己技术的优势与劣势，再列举外部环境的机会与威胁，对内外进行组合，设置对策，优势机会要扩张，劣势机会要补充不足，优势威胁要有预案，劣势威胁要对冲风险。
 
-每一个项目事先要进行规划。项目规划期间要发挥团队作用，进行内部头脑风暴，每个人都提出跟主题相关的内容，做成思维导图。然后对事项按工作量与影响力进行区分，选取工作量低但影响力大的方案。计划的目的是了解情况而不是制定教条，要预留结果不理想后的其他方案或灵活度。然后分拆出具体有时间期限的可执行的步骤，时间安排上可根据\href{https://wiki.mbalib.com/wiki/\%E6\%97\%B6\%E9\%97\%B4\%E2\%80\%9C\%E5\%9B\%9B\%E8\%B1\%A1\%E9\%99\%90\%E2\%80\%9D\%E6\%B3\%95}{紧急重要四象限}来设计，优化步骤让所有事都在重要但不紧急的阶段完成。然后对项目的安全与经济风险进行列表，设计紧急预案，做到执行成本可控。
+\begin{figure}
+\includegraphics{data/SWOT} \caption[SWOT分析法演示（这里演示的是一个新课题组长的分析过程，列举优势劣势机会威胁后下一步要对其进行排列组合思考对策）]{SWOT分析法演示（这里演示的是一个新课题组长的分析过程，列举优势劣势机会威胁后下一步要对其进行排列组合思考对策）}\label{fig:unnamed-chunk-41}
+\end{figure}
+
+每一个项目事先要进行规划。项目规划期间要发挥团队作用，进行内部头脑风暴，每个人都提出跟主题相关的内容，做成思维导图。然后对事项按工作量与影响力进行区分，选取工作量低但影响力大的方案。计划的目的是了解情况而不是制定教条，要预留结果不理想后的其他方案或灵活度。然后分拆出具体有时间期限的可执行的步骤，时间安排上可根据\href{https://wiki.mbalib.com/wiki/\%E6\%97\%B6\%E9\%97\%B4\%E2\%80\%9C\%E5\%9B\%9B\%E8\%B1\%A1\%E9\%99\%90\%E2\%80\%9D\%E6\%B3\%95}{紧急重要四象限}来设计，优化步骤让所有事都在重要但不紧急的阶段完成。然后对项目的安全与经济风险进行列表，设计紧急预案，做到执行成本可控。这个方法又称作艾森豪威尔法则，因为艾森豪威尔说过：我手中的待办事项可分为两个种类，``紧急''和``重要''，重要的事情永远不会紧急，紧急的事情不会重要。
+
+\begin{figure}
+\includegraphics{data/Eisenhower} \caption[紧急-重要四象限及其对策]{紧急-重要四象限及其对策}\label{fig:unnamed-chunk-42}
+\end{figure}
 
 实际科研并不是围绕单一项目，每个个体会有自己主导的课题，也会参与其他人的项目或同时主导多个课题。此时要做好整体时间安排，利用不同研究项目切换来转移压力放松，保证时间都浪费在有意义的事上，这里可以使用\href{https://zh.wikipedia.org/wiki/\%E7\%94\%98\%E7\%89\%B9\%E5\%9B\%BE}{甘特图}来做时间规划。以项目为中心的管理是不同于被安排分工的传统模式的，需要扁平化管理，每个项目立项后有独立责任人与分工，项目完成则解散项目组。团队超过10人就要分拆，项目由需求与进展来指定或轮转个体角色，更好锻炼团队每个成员的综合能力，也避免个体螺丝钉化。
 
@@ -3500,6 +3753,18 @@ t = Wx + \mu + \epsilon
 
 商业培训里喜欢用MTBI测试来对职场中人格进行分类。你可以先做一套测试，然后你会得到四个字母来描述你。每个字母代表一种二分法，例如I代表内向而E代表外向，N代表直觉而S代表感觉，T代表思考而F代表情感，J代表判断而P代表感知。虽然学界对这个没有统一意见但不妨碍很多人在用这个对人进行预判与交流方式的试探，例如对于一个TJ的人随意改变计划几乎是不可接受的。
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 数据来自 https://www.themyersbriggs.com/{-}/media/Myers{-}Briggs/Files/Manual{-}Supplements/MBTIGlobalManualSuppCNS.pdf}
+\NormalTok{mtbi }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{\textquotesingle{}data/mtbicn.csv\textquotesingle{}}\NormalTok{)}
+\FunctionTok{barplot}\NormalTok{(mtbi}\SpecialCharTok{$}\NormalTok{percentage}\SpecialCharTok{\textasciitilde{}}\NormalTok{mtbi}\SpecialCharTok{$}\NormalTok{type,}\AttributeTok{xlab=}\StringTok{\textquotesingle{}人格\textquotesingle{}}\NormalTok{,}\AttributeTok{ylab=}\StringTok{\textquotesingle{}人群中比例（N=521）\textquotesingle{}}\NormalTok{,}\AttributeTok{las=}\DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics{sciguide_files/figure-latex/unnamed-chunk-43-1} \caption[16种MTBI人格在中国人样本中的比例]{16种MTBI人格在中国人样本中的比例}\label{fig:unnamed-chunk-43}
+\end{figure}
+
 职场人对外交流有三个标签：机构、职业与个人。陌生人间的交流最好从个人经历出发而不是社会机构角色出发，后者是机械且标签化的，不利于有效沟通。对外交流要了解镜像神经元理论，也就是交流双方都会在交流中不自觉尝试模拟对方促进交流，而镜像神经元更多依赖行为与语言引导。一个常见的技巧就是专家到学习者的角色转换，当别人问你问题时，不要着急堆砌专业词汇，而可以反问对方问题来切换为学习者角色来更多了解事实并最终提供其原始问题的答案。
 
 具体训练交际技能可参考3M\&M方法。当A问B一个问题时，B反问A三个问题，问问题前吃一颗糖豆来给自己思考时间而不是用本能去情绪化回答问题，得到答案后再回答A最初问题，提问过程中要注意对方性格类型与情感诉求，然后用个人角色出发在理解同情角度解决或回答对方提出的问题。另一种练习的方式就是准备电梯报告，请参考前一章相关内容。
@@ -3563,6 +3828,8 @@ t = Wx + \mu + \epsilon
   讲一个你管理时间的案例
 \item
   你当前工作的里程碑是什么
+\item
+  你入职五年的职业计划是什么
 \end{itemize}
 
 从面试官角度，他们会重点关注回答的内容是否容易理解，是否完整且会记录时间，不同面试官打分的项目不同，他们会根据结果整体去考察候选人，直接拍板的招聘要警惕。
@@ -3594,7 +3861,7 @@ t = Wx + \mu + \epsilon
 \hypertarget{ux535aux540e}{%
 \subsection{博后}\label{ux535aux540e}}
 
-欧洲有玛丽居里博后与洪堡学者，日本有学术振兴会（JSPS），美国国立卫生研究院有 T32 与 K99 博后。博后要搞清楚经费来源是软钱（soft money）还是硬钱（hard money）。前者 是教授申请项目中用来支持博后的经费，一旦用光了位置就没了。后者是学校从学生学费或研究机构募集后分给课题组用来研究的经费，用光风险比较小。博后自己申到软钱可摆脱课题组对课题限制。企业博后则有较高收入且与业界结合紧密，但转回学术界会略有困难。
+欧洲有玛丽居里博后与洪堡学者，日本有学术振兴会（JSPS），美国国立卫生研究院有 T32 （美国毕业2年内的博士，30\%通过率）与 K99 博后（博士毕业4年内，23\%通过率）。博后要搞清楚经费来源是软钱（soft money）还是硬钱（hard money）。前者 是教授申请项目中用来支持博后的经费，一旦用光了位置就没了。后者是学校从学生学费或研究机构募集后分给课题组用来研究的经费，用光风险比较小。博后自己申到软钱可摆脱课题组对课题限制。企业博后则有较高收入且与业界结合紧密，但转回学术界会略有困难。此外，如果是，可以申请F32
 
 博后是学术界犯错有人兜底的最后一站，如果不出结果可以选择退出学术界，毕竟现在的博士毕业人数根本不可能都在学术界内消化掉。说白了博后是就业前的临时身份，所有博后阶段都要围绕就业规划。如果把博后当成推迟接触社会的避风港保持象牙塔的生存状态，就业所需要的能力得不到提高，那么很难成为学术界的独立研究人员，更不用提转行跨界所需要的能力了。
 
@@ -4056,17 +4323,17 @@ Good writers borrow from other authors, great authors steal outright
 \begin{itemize}
 \tightlist
 \item
-  研究生：本科生用来缓解找不到工作尴尬的高虚荣底薪工作，导师的廉价劳动力，20世纪中后期中国社会对本科生前景预计的21世纪版
+  研究生：本科生用来缓解找不到工作尴尬的高虚荣低薪工作，导师的廉价劳动力，20世纪中后期中国社会对本科生前景预计的21世纪版
 \item
-  博后：博士生用来缓解找不到工作尴尬的高虚荣底薪工作，导师的廉价高产劳动力，北京落户捷径
+  博后：博士生用来缓解找不到工作尴尬的高虚荣低薪工作，导师的廉价高产劳动力，北京落户捷径
 \item
   本研：本科来实验室加素质发展分或套瓷推研或拿留学推荐信的进步正能量免费劳动力，外表天真可爱背景完全神秘的NPC，研究生获取外界流行趋势的主要途径
 \item
-  师兄：猥琐全能型NPC，口头禅多为``给你挂个二作''，部分具有强社会人属性，部分则从大学阶段就与社会脱节，格子衬衫蓝球鞋迷
+  师兄：猥琐全能型NPC，口头禅多为``给你挂个二作''，部分具有强社会人属性，部分则从大学阶段就与社会脱节，格子衬衫篮球鞋迷
 \item
   师姐：已婚的为大姐大型NPC，已育后口头禅多为``我家XX''，XX为孩子小名，未婚的则多徘徊在实验与父母逼婚压力之间，轻度忧郁症晚期患者，匿名出没于晋江起点看言情小说
 \item
-  师弟：师姐最常使唤的劳动力，单身优质的属濒危物种，单身普通的则属前者的NPC，格子衬衫蓝球迷
+  师弟：师姐最常使唤的劳动力，单身优质的属濒危物种，单身普通的则属前者的NPC，格子衬衫篮球迷
 \item
   师妹：最常使唤师兄的非劳动力，大城市单身的不属于但自认属于的濒危物种，匿名出没于晋江起点写言情小说
 \item

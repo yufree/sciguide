@@ -24,11 +24,7 @@
 <meta name="author" content="于淼" />
 
 
-<<<<<<< HEAD
 <meta name="date" content="2022-03-22" />
-=======
-<meta name="date" content="2021-12-22" />
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -488,15 +484,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Residuals:
 ##       1       2       3       4       5       6       7       8       9      10 
-<<<<<<< HEAD
 ##  0.1667 -0.1667 -0.1667 -2.0000  2.0000 -0.1667  0.1667 -2.0000  2.0000 -2.0000 
 ##      11      12 
 ##  2.0000  0.1667 
-=======
-## -0.1667  2.3333 -0.1667  0.1667  0.1667 -2.3333 -0.1667  0.1667  2.3333 -2.3333 
-##      11      12 
-##  2.3333 -2.3333 
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
@@ -525,7 +515,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="exp.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show.oas</span>(<span class="at">nruns =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">54</span>), <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">6</span>), <span class="at">showmetrics =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## no suitable  resolution IV or more  array found
 ## 5  orthogonal  arrays found
-<<<<<<< HEAD
 ##                name nruns lineage   GR GRind regular SCones    A3    A4   A5    A6
 ## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426  1010
 ## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063 11096
@@ -538,20 +527,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 83  5507.5  7780.0
 ## 87  4354.2  5793.4
 ## 88    63.5    13.9</code></pre>
-=======
-##                name nruns lineage   GR GRind regular SCones    A3    A4   A5
-## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE      6  45.3 158.4  426
-## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE      0 130.3 737.2 3063
-## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE     17  82.3 338.2 1025
-## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE     12  73.8 300.2  912
-## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE     37  35.6  73.1  120
-##       A6      A7      A8
-## 78  1010  1753.2  2306.8
-## 81 11096 31380.8 68828.1
-## 83  2828  5507.5  7780.0
-## 87  2404  4354.2  5793.4
-## 88   125    63.5    13.9</code></pre>
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 <p>这里我们选分辨率略高的<code>L36.2.10.3.8.6.1</code>，从名字上看，这是一个36次试验表，可以包含10个两水平，8个三水平与1个六水平因子，这也是唯一一个分辨率高于3，可以排除交互作用的设计方法。这里我反复提到分辨率，实际上就是一种考察试验设计合理性的指标，分辨率3一般指只能区分没有交互作用的各因子贡献差异，高于3就可以区分一定的因子交互作用，可以用<code>GR</code>去计算一个广义分辨率并用<code>oa.design</code>来进一步优化这个设计，因为其实符合正交表只是众多选择的一个子集，不过根据优化方法的不同，优化时间也不太一样。</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="exp.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 设计一个三因素三水平的实验</span></span>
 <span id="cb22-2"><a href="exp.html#cb22-2" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">oa.design</span>(L36.<span class="dv">2</span>.<span class="dv">10</span>.<span class="dv">3</span>.<span class="dv">8</span>.<span class="fl">6.1</span>, <span class="at">nlevels =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>),<span class="at">columns =</span> <span class="st">&quot;min34&quot;</span>)</span></code></pre></div>
@@ -609,14 +584,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Residuals   29      0       0                     
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<<<<<<< HEAD
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="exp.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(test.resp, <span class="at">response =</span> <span class="st">&quot;response&quot;</span>))</span></code></pre></div>
 <pre><code>## Warning in summary.lm(object): essentially perfect fit: summary may be unreliable</code></pre>
-=======
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="exp.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(test.resp, <span class="at">response =</span> <span class="st">&quot;response&quot;</span>))</span></code></pre></div>
-<pre><code>## Warning in summary.lm(object): essentially perfect fit: summary may be
-## unreliable</code></pre>
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 <pre><code>## Number of observations used: 36 
 ## Formula:
 ## response ~ A + B + C
@@ -642,17 +611,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Residual standard error: 5.07e-14 on 29 degrees of freedom
 ## Multiple R-squared:      1,  Adjusted R-squared:      1 
-<<<<<<< HEAD
 ## F-statistic: 1.618e+31 on 6 and 29 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="exp.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test.resp)</span></code></pre></div>
 <pre><code>## The first four factors were selected. Use argument select for choosing what is plotted.</code></pre>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
-=======
-## F-statistic: 3.725e+31 on 6 and 29 DF,  p-value: &lt; 2.2e-16</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="exp.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test.resp)</span></code></pre></div>
-<pre><code>## The first four factors were selected. Use argument select for choosing what is plotted.</code></pre>
-<p><img src="sciguide_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 <p>这里我们可以看出结果与我们设计的响应是能对应上的，也能从图上看出哪个影响更大。在进行数据分析时，有时会遇到方差分析与线性回归的区别问题，打比方你用线性回归来做分析，会有审稿人问你 lack of fit 检验有没有做。这个检验实质上也是个F检验，用来衡量线性模型之外残差里分组变异与纯误差变异的比值，如果分组变异还是比较大，那么线性假设可能就不合理。</p>
 <p>不过，目前实验设计结果分析更精细的会用响应面分析。顾名思义，响应面有点梯度下降迭代寻优的意思，而且如果是曲面通常考虑了二阶甚至更高阶的交互作用，可以看做多元函数的高阶泰勒展开。在R中可以通过 <code>rsm</code> 包来进行的，这个包也是囊括了设计与分析两个部分，设计部分有常见的 Box-Wilson Central Composite Designs（CCD） 与 Box-Behnken designs，分析部分自然还是基于线性回归或方差分析那一套。好的CCD设计意味着一些表征设计均衡的因素与水平统计量。</p>
 <p>这里要清楚不论正交表还是响应面分析，都不会是一锤子买卖，第一批实验数据出来以后马上进行分析，然后找出较好的因素与水平，之后再以此为中心设计第二批实验，不断反复直到待优化的指标不再产生变化。如果你面临多响应同步优化问题也可以进行优化，例如R中开源<code>desirability</code>包就可以处理这个问题，本质上是定义了一个多响应的联合满意度作为目标统计量，然后用响应面分析进行寻优。另外说个小八卦，狭义正交表也就是田口设计其实最初是两响应优化，只不过另一个响应是无法控制的噪音，田口搞了个信噪比来解决问题，熟悉了这套统计量构建策略，你也应该能做到根据实际情况构建指标体系。</p>
@@ -718,11 +680,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-<<<<<<< HEAD
 "download": ["sciguide.epub"],
-=======
-"download": ["sciguide.pdf", "sciguide.epub"],
->>>>>>> a321e23bc860eea45e5e74615f078c6b1f346243
 "search": {
 "engine": "fuse",
 "options": null

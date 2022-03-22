@@ -1,6 +1,10 @@
 book_filename: "sciguide"
 language:
+  label:
+    fig: "图 "
+    tab: "表 "
   ui:
+    edit: "编辑"
     chapter_name: "坑 "
 output_dir: docs
 delete_merged_file: true

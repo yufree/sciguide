@@ -26,6 +26,14 @@
 
 追求增长的发展逻辑其实自发破坏掉了很多农业社会以来形成的宗教世界观。现代人的伦理道德大都起源于农业社会甚至更早的狩猎采集社会，很多世界观跟增长是内在矛盾的，例如前现代社会的民俗宗教喜欢用轮回的概念，但轮回是需要收支平衡的，在信息交流效率低下的时代你可以说轮回到别处了也没法考证，但现在世界人口就摆那里了，农业出现前世界人口1500万左右，农业社会出现后到第一次工业革命中的1804年，世界人口才到达10亿。之后的两百多年里，这个数字变成了70亿。但并不是说1900年到40亿，事实上这个时间是1974年，甚至到达30亿都是1959年的事。这个快速增长时期的人口需要的前世从哪里来？清末四亿人口死了都别转去凑中国现在人口都得累积上几代人，阎王爷必须要掌握未来几百上千的人口变化才能在此时此刻凑够轮回总数，孟婆汤也得增加防腐剂来应对每天人数的波动。也许有人又要搬出六道轮回的理论补丁让人畜互相转生来凑数，但现代社会的绿色革命又不只是推动人口增长，畜牧业增长更是惊人，更不用说我们的生物制药行业为了提取某些不方面化学合成的物质而使用的工业级培养皿。物种虽然在经历大灭绝但数量上可一直都在增长，毕竟自从人掌握固氮技术以来人工固氮总量上已经超过了自然固氮，而有机氮是氨基酸的必要组成部分，因此现代社会里我们事实上“生产”出了自己形成了人口大爆炸。说白了轮回机制的提出者囿于时代根本预见不到一个增长主导的现代社会，后面无论怎么打补丁也会被统计事实打脸。
 
+```{r fig.cap='世界人口变化'}
+library(showtext)
+showtext::showtext_auto()
+# 数据来自维基百科
+wp <- read.csv('data/wp.csv', check.names = F)
+plot(wp$population~wp$year,pch = 19,xlab = '年份',ylab = '万人')
+```
+
 此外，为了解决对未知而恐惧而构建的算命系统也经不起现代社会的检验，毕竟八字算命一共就能容纳561600种人，当今世界人口70亿，平均来看，每个八字有一万多人，也就是说八字其实不够用了，重复率太高，天煞孤星都不孤独，当然这类理论也有些打补丁的理论但明显是后来人意识到问题了增加的解释。现在保留下来的宗教都有一定世俗化趋势，模糊规避掉这些脱离实际的东西。现代社会的新宗教表现形式则更多是品牌崇拜、时间旅行、外星人这一类起码不会直接被经验事实证伪的行为与理念，否则根本经不起推敲。现代社会的增长逻辑是一种进步，起码对旧时代的破坏是很彻底的。
 
 今天，增长逻辑还深深植入到现代社会的经济运转之中了，金融行业发展推动了资本的全球流动。资本所到之处会在区域内投资建厂、提供工作岗位、提升基础设施并创造繁荣景象，但同时当资本发现无法获益时就会毫不犹豫流向下一个价值洼地。这个过程之前会被限制在国家之内推动全行业进步，但全球化信息化的现代社会之中，资本流动更多考虑的是低成本高收益，因此我们会看到很多国家特别是小国家的行业门类是不全的。他们嵌在全球供应链上去发展，而具体品类产品的生产总是会集中到利润最高的几个区域或国家里且通过不断扩大规模降低边际成本，这同样是资本驱动，经济学上叫做比较优势。资本永远是逐利的，但当全球所有行业或区域因为各种限制或风险无法产生足够的利润，资本将会自行退出历史舞台。不过，现代社会目前还没有提出一个增长逻辑之外的经济运行方式与科技发展模型，以美元为中心的世界货币价值流通体系目前也遭受了很多新技术与保守主义的冲击，现代社会需要给出解决方案。更深远的影响则是个体对增长逻辑的信仰，现代人普遍展示出了对新技术与美好未来的向往且过去几十年这个现象也是符合增长信仰的，但从科学视角看增长更多是一种现象而非规律，会因为时代背景的不同而出现变化。
@@ -35,6 +43,12 @@
 ### 现代社会的结构
 
 当前社会运行方式也可通过基本经济指标这个角度来进行整体解读。2020年中国人均国内生产总值达到了一万美元，也就是一年全国创造价值总和大概14万亿美元。全国有约不到8亿就业人口，另外有6亿多或老或小目前没法创造劳动价值，学龄前跟上学的、家庭主妇/夫还有吃退休金的老年人与无劳动能力的群体事实上还是靠家庭与政府补贴养的。在发达国家美国，也有大约超过一半的人口是不领工资不就业的（这个数据川普竞选总统时曾经用过，吃准了普通人算不清楚就业人口与总人口的差异，失业率其实只算满足就业条件人口与实际就业人口），毕竟美国年龄结构比中国更老龄化一些。同时，伴随老龄化与少子化，中国就业人口规模事实上在2017年已经见顶，未来就业人口比例会更低。
+
+```{r fig.cap='世界就业人口比的下滑趋势'}
+# 数据来自世界银行
+e2p <- read.csv('data/e2p.csv', check.names = F)
+plot(e2p$World~e2p$`Country Name`,pch = 19,xlab = '年份',ylab = '世界就业人口比(%)')
+```
 
 另外，人均国内生产总值一万美金跟人均收入一万美金也是两个概念，企业的支出成本比绝大多数人拿到手的薪资要多，要考虑物料磨损、税费等开支。虽然这个比例不太固定，但一般认为大概五到六成是人均收入，美国2019年人均国内生产总值大概6.5万美元而家庭人均收入则成了3.3万美元，中国人均年收入也就大概5000美元，这个人均的基数是总人口而不是就业人口，把儿童老人也给算进去了。因为就业人口恰好也是总人口的五六成，所以人均GDP其实歪打正着跟就业人均工资其实差不多。
 
@@ -84,9 +98,23 @@
 
 2020 年国内研究生入学考试报名人数刷了新高，达到 341 万，而这里面应届生与往届生人数相当，报录比在扩招的大背景下还在不断降低。有一个很有意思的现象，报考研究生的人数并不是一直上升的，事实上，2007 年、2013 年都出现过报考高峰然后下一年回落的情况，回落可能跟当时经济形势上行有关，当社会岗位需求旺盛时，两三年的学位投资就可能是一笔很高的机会成本。但 2016 年起，研究生入学考试报名人数重新上升，这侧面体现了毕业生对就业的担忧。而且往届生与应届生报录人数同时增长，说明毕业生普遍认为学位比工作更有价值，或者说本科就业形势不佳。
 
-我们再看看高考，中国高考报名人数在 07-09 这三年都突破了千万，此后人数稳定在九百四五十万的样子，录取则是在 2016 年达到巅峰的 705 万。对比高考录取人数与研究生录取人数就会发现高校中本科生规模已经见顶，但研究生规模持续增长，录取难度整体下降可能也是吸引考生报名的重要因素。
+```{r fig.cap='中国研究生报名人数变化'}
+# 数据来自中国考研网 http://www.chinakaoyan.com/info/article/id/77817.shtml
+gradapply <- read.csv('data/gradapply.csv')
+plot(gradapply$application~gradapply$year,pch = 19,xlab = '年份',ylab = '研究生报名人数（万人）')
+```
 
-可以预计如果研究生持续扩招（推测十年内见顶，因为应届生快不够用了），搞考研培训、出国培训、期刊校稿还有高校教职将出现最后的快速发展窗口，之后将进入稳定或衰退期。然而，这之前我们体会更明显的则会是更多关于研究生团体的讨论与新闻调查，我们的研究生教育发展可能还跟不上研究生团体扩大的速度，中间的差距是一头典型灰犀牛，潜伏巨大系统性危机。
+我们再看看高考，中国高考报名人数在 07-09 这三年都突破了千万，此后人数有所，但最近几年又突破千万。不过高考录取人数则持续上升，因此如果就业形势不变，报考研究生的人群基数也会增长。
+
+```{r fig.cap='中国高考报名与录取人数变化'}
+# 高考报名与录取数据来自教育部网站
+cee <- read.csv('data/cee.csv')
+plot(cee$application~cee$year,pch = 19,xlab = '年份',ylab = '人数（万人）',ylim = c(0,1100))
+points(cee$entrants~cee$year,col='red',pch = 15)
+legend('bottomright',legend = c('报名人数','录取人数'),pch=c(19,15),col=c('black','red'))
+```
+
+可以预计如果研究生持续扩招，搞考研培训、出国培训、期刊校稿还有高校教职将出现最后的快速发展窗口，之后将进入稳定或衰退期。然而，这之前我们体会更明显的则会是更多关于研究生团体的讨论与新闻调查，我们的研究生教育发展可能还跟不上研究生团体扩大的速度，中间的差距是一头典型灰犀牛，潜伏巨大系统性危机。
 
 从学生角度看，眼下的研究生报考热潮跟经济压力有关而跟科研兴趣没啥关系，所以很有可能出现学生自认打工仔的情况而在混日子等就业的情况，高校或研究所的心理辅导如果跟不上会出不少极端问题。从导师角度看，近二十年的高校扩张吸收了大量新导师，而持续增加的劳动力所需要的管理经验基本都比较欠缺，毕竟他们读研时周围没那么多学生，研究生无指导或指导过激情况会不断出现。我们会在近几年看到一系列因为研究生极端事件而采取的改进，但能否做到预防，就看高校研究所的领导团队是否有意识了。
 
@@ -102,46 +130,46 @@
 
 根据教育部的公开数据，近20年研究所与高校的研究生录取比例均大概为1:3，硕士和博士都在扩招，但对硕士的扩招力度远高于博士。20年前我国每年一共招收6万多研究生，现在仅博士每年就录取10万多人，硕士则扩张了10倍有余，录取人数达到每年接近一百万，研究生在校生规模也在快速增长。从研究生毕业状况看，伴随扩招，每年的招生人数与毕业人数有相当的差距。但比较奇怪的是，博士招生人数在不断增长但毕业人数的增长幅度却增长有限且长期少于前几年的录取人数了，这基本暗示延期，特别是博士延期的常态化。
 
-```{r}
+```{r fig.cap='中国硕士博士研究生录取、毕业与在校人数变化'}
+# 数据来自教育部
 graduate <- read.csv('data/graduate.csv', check.names = F)
 graduate2 <- graduate[graduate$category == 'Total',]
-library(showtext)
-showtext::showtext_auto()
 par(mfrow=c(1,2))
 plot(graduate2$year,graduate2$`Enrolment(Master)`,xlab = '年份',ylab = '人数',pch=19,col='black',ylim=c(min(graduate2$`Admitted(Master)`),max(graduate2$`Enrolment(Master)`)),main='硕士研究生')
-points(graduate2$year,graduate2$`Graduates(Master)`,pch=19,col = 'red')
-points(graduate2$year,graduate2$`Admitted(Master)`,pch=19,col='blue')
-legend('topleft',legend = c('在校生','录取人数','毕业人数'), col = c('black','blue','red'),pch=19)
+points(graduate2$year,graduate2$`Admitted(Master)`,pch=18,col='blue')
+points(graduate2$year,graduate2$`Graduates(Master)`,pch=17,col = 'red')
+legend('topleft',legend = c('在校生','录取人数','毕业人数'),pch=c(19,18,17), col = c('black','blue','red'))
 
 plot(graduate2$year,graduate2$`Enrolment(Doctor)`,xlab = '年份',ylab = '人数',pch=19,col='black',ylim=c(min(graduate2$`Entrants(Doctor)`),max(graduate2$`Enrolment(Doctor)`)),main='博士研究生')
-points(graduate2$year,graduate2$`Graduates(Doctor)`,pch=19,col = 'red')
-points(graduate2$year,graduate2$`Entrants(Doctor)`,pch=19,col='blue')
-legend('topleft',legend = c('在校生','录取人数','毕业人数'), col = c('black','blue','red'),pch=19)
+points(graduate2$year,graduate2$`Entrants(Doctor)`,pch=18,col='blue')
+points(graduate2$year,graduate2$`Graduates(Doctor)`,pch=17,col = 'red')
+legend('topleft',legend = c('在校生','录取人数','毕业人数'), col = c('black','blue','red'),pch=c(19,18,17))
 ```
 
 前面说了研究生的供给端，下面看看需求端也就是教职的变化，这里只考虑博士，因为当前教职对学历的要求已经比较高了。同样看来自教育部的数据，由于本科生从1999年开始扩招，教职数也一直增加。不过，高级职称的增加速度明显低于教职总数的增加速度而中级职称教职在快速增加。同时，从年龄分布上看，当前教职年龄高峰在 55~59岁，大概是二十年前大学扩招时入职的。如果退休年龄没有明显推迟的话，那么在10年内应该可以看到一个因为退休高峰导致的教职空缺期。10年内什么年龄段的人会博士毕业呢？大概是当前的本科生，考虑到本科4年加硕博连读6年，每个高校都有义务在学生刚接触高等教育或研究时给他们能实时吸纳研究进展的教学大纲，否则要是学生10年前选了小灵通网络优化专业，那么等到博士毕业基本就只有转行了。
 
-```{r}
+```{r fig.cap='中国不同教职人数变化及年龄构成'}
+# 数据来自教育部
 faculty <- read.csv('data/faculty.csv', check.names = F)
 faculty2 <- faculty[faculty$category == 'Total', ]
 
 par(mfrow=c(1,2))
 plot(faculty$year[faculty$category == 'Total'],faculty$total[faculty$category == 'Total'],pch=19, main='教职数',ylim=c(0,max(faculty$total)),xlab = '年份', ylab = '人数')
-points(faculty$year[faculty$category == 'Professors'], faculty$total[faculty$category == 'Professors'],pch=19,col='blue')
-points(faculty$year[faculty$category == 'Asso. Professors'],faculty$total[faculty$category == 'Asso. Professors'],pch=19,col='red')
-points(faculty$year[faculty$category == 'middle'],faculty$total[faculty$category == 'middle'],pch=19,col='orange')
-legend('topleft',legend = c('总数','教授','副教授','中级职称'), col = c('black','blue','red','orange'),pch=19)
+points(faculty$year[faculty$category == 'Professors'], faculty$total[faculty$category == 'Professors'],pch=18,col='blue')
+points(faculty$year[faculty$category == 'Asso. Professors'],faculty$total[faculty$category == 'Asso. Professors'],pch=17,col='red')
+points(faculty$year[faculty$category == 'middle'],faculty$total[faculty$category == 'middle'],pch=15,col='orange')
+legend('topleft',legend = c('总数','教授','副教授','中级职称'), col = c('black','blue','red','orange'),pch=c(19,18,17,15))
 
 col = RColorBrewer::brewer.pal(8,'Set2')
 plot(faculty2$year,faculty2$`30 Years & Under`,pch=19, main='教职数',ylim=c(0,110000),xlab = '年份', ylab = '人数',col=col[1])
-points(faculty2$year,faculty2$`31-35years`,pch=19,col=col[2])
-points(faculty2$year,faculty2$`36-40years`,pch=19,col=col[3])
-points(faculty2$year,faculty2$`41-45years`,pch=19,col=col[4])
-points(faculty2$year,faculty2$`46-50years`,pch=19,col=col[5])
-points(faculty2$year,faculty2$`51-55years`,pch=19,col=col[6])
-points(faculty2$year,faculty2$`56-60years`,pch=19,col=col[7])
-points(faculty2$year,faculty2$`61 Years & Over`,pch=19,col=col[8])
-legend('topleft',legend = c('30岁以下','30-34','35-39','40-44','45-49','50-54','55-59','60岁以上'), col = col,pch=19)
+points(faculty2$year,faculty2$`31-35years`,pch=18,col=col[2])
+points(faculty2$year,faculty2$`36-40years`,pch=17,col=col[3])
+points(faculty2$year,faculty2$`41-45years`,pch=15,col=col[4])
+points(faculty2$year,faculty2$`46-50years`,pch=14,col=col[5])
+points(faculty2$year,faculty2$`51-55years`,pch=13,col=col[6])
+points(faculty2$year,faculty2$`56-60years`,pch=12,col=col[7])
+points(faculty2$year,faculty2$`61 Years & Over`,pch=11,col=col[8])
+legend('topleft',legend = c('30岁以下','30-34','35-39','40-44','45-49','50-54','55-59','60岁以上'), col = col,pch=c(19,18,17,15,14,13,12,11))
 ```
 
 除了退休带来教职的空缺外，教职数也在扩增。每年的教职数一直在稳定增长，但成长空间不算大，别忘了博士毕业生数可是逐年增长的，所以以后熬年限评职称是肯定不行的，目前30-34岁这个年龄段的教职人数在快速上升而前一个年龄段的人数并不多也比较稳定，这说明取得教职大概率是而立之年之后的事。这种较长的培养年限显著区别于其他行业，因为很多行业从业人员进入30-34岁基本进入了中层，而从事教职这个年龄刚刚入行。
@@ -165,28 +193,27 @@ legend('topleft',legend = c('30岁以下','30-34','35-39','40-44','45-49','50-54
 
 ```{r,echo=F}
 tb <- data.frame(
-  stringsAsFactors = FALSE,
-                指标 = c("年产文章","文章档次","年龄","规模",
-                       "课程","会议","职称","期刊","帽子","年新增人数/总人数","基金/年审批数目","行政"),
-              博士博后 = c("1","专业期刊","32","1","带学生",
-                       "口头报告","讲师/研究员","审稿人","百篇优博","10万/100万","青基 /20000",
-                       "跑腿"),
-             独立课题组 = c("2","一超多强","35","<10",
-                       "本科研究生教学","keynote","副教授","编委","百人/优青/青千","2000/50万",
-                       "面上 /20000","自给自足"),
-             学术带头人 = c("～10","综述","45","20-30/有梯队",
-                       "学位培养计划","分会场主席","教授","副主编","长江/杰青/千人","500/2万",
-                       "重点 /1000","院系领导"),
-             学科带头人 = c(">10","CNS","70",
-                       "50-100/有传承","学科前沿指导","大会报告","学生教授","主编","院士","50/2000",
-                       "重大 /个位数","院长校长")
+        stringsAsFactors = FALSE,
+        指标 = c("年产文章","文章档次","年龄","规模",
+               "课程","会议","职称","期刊","帽子","年新增人数/总人数","基金/年审批数目","行政"),
+        博士博后 = c("1","专业期刊","32","1","带学生",
+                 "口头报告","讲师/研究员","审稿人","百篇优博","10万/100万","青基 /20000",
+                 "跑腿"),
+        独立课题组 = c("2","一超多强","35","<10",
+                  "本科研究生教学","keynote","副教授","编委","百人/优青/青千","2000/50万",
+                  "面上 /20000","自给自足"),
+        学术带头人 = c("～10","综述","45","20-30/有梯队",
+                  "学位培养计划","分会场主席","教授","副主编","长江/杰青/千人","500/2万",
+                  "重点 /1000","院系领导"),
+        学科带头人 = c(">10","CNS","70",
+                  "50-100/有传承","学科前沿指导","大会报告","学生教授","主编","院士","50/2000",
+                  "重大 /个位数","院长校长")
 )
 knitr::kable(tb
-  , longtable = TRUE, booktabs = TRUE,
-  caption = '理想学术路径'
+             , longtable = TRUE, booktabs = TRUE,
+             caption = '理想学术路径'
 )
 ```
-
 
 如果成为院士（中国科学院／中国工程院）算学术巅峰的话，那么院士的选拔可以看作到达顶峰的路径。选拔方法是什么呢？两年一次，一次总共大概 150 人，工程科学对半分，平均一年 75 人。我们假定若干年后每年还是 75 人，因为两院院士总规模这么些年并未有很大规模的变化，就算加上文科一级教授也就是 100 这个数量级。那么若干年后竞争这个数的人选平均看大概都是同年级的博士同学。目前每年全国土鳖博士毕业生 6 万多人，算上海归，同一年龄组大概 7 万人应该比较合理。也就是说，你需要在同年级博士毕业生里成为千分之一左右的精英才算有希望成为院士级别的学者。
 
@@ -285,7 +312,7 @@ NHST 还有个问题在于 p 值的选择性报道或者说发表歧视，研究
 
 第一种情况是规律完全成立；第二种是完全无规律；第三种是可观察或可测量的数据。生成三组数据后我们对其分组（简单二分）进行10000次随机化操作，然后进行t检验，记录并观察p值。
 
-```{r}
+```{r fig.cap='p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布'}
 set.seed(1)
 # 真实差异
 x <- c(rep(100, 260), rep(200, 260))
@@ -295,11 +322,11 @@ xr <- rnorm(520)
 xm <- c(rep(100, 260), rep(200, 260)) + rnorm(520)
 p <- pr <- pm <- c()
 for (i in 1:10000) {
-  # 随机化分组
-  g <- factor(sample(c(1, 2), 520, replace = T))
-  p[i] <- t.test(x ~ g)$p.value
-  pr[i] <- t.test(xr ~ g)$p.value
-  pm[i] <- t.test(xm ~ g)$p.value
+        # 随机化分组
+        g <- factor(sample(c(1, 2), 520, replace = T))
+        p[i] <- t.test(x ~ g)$p.value
+        pr[i] <- t.test(xr ~ g)$p.value
+        pm[i] <- t.test(xm ~ g)$p.value
 }
 # 显示中文
 library('showtext')
@@ -307,33 +334,33 @@ showtext_auto()
 par(mfrow = c(1, 3))
 # 展示真实差异t检验下p值的分布
 hist(
-  p,
-  breaks = 100,
-  main = substitute(paste('存在真实差异时', italic('p'), "值分布")),
-  xlab = substitute(paste(italic('p'), "值")),
-  ylab = '频率'
+        p,
+        breaks = 100,
+        main = substitute(paste('存在真实差异时', italic('p'), "值分布")),
+        xlab = substitute(paste(italic('p'), "值")),
+        ylab = '频率'
 )
 # 展示随机差异t检验下p值的分布
 hist(
-  pr,
-  breaks = 100,
-  main = substitute(paste('不存在真实差异时', italic('p'), "值分布")),
-  xlab = substitute(paste(italic('p'), "值")),
-  ylab = '频率'
+        pr,
+        breaks = 100,
+        main = substitute(paste('不存在真实差异时', italic('p'), "值分布")),
+        xlab = substitute(paste(italic('p'), "值")),
+        ylab = '频率'
 )
 # 展示考虑误差的真实差异t检验下p值的分布
 hist(
-  pm,
-  breaks = 100,
-  main = substitute(paste('存在真实差异与噪音时', italic('p'), "值分布")),
-  xlab = substitute(paste(italic('p'), "值")),
-  ylab = '频率'
+        pm,
+        breaks = 100,
+        main = substitute(paste('存在真实差异与噪音时', italic('p'), "值分布")),
+        xlab = substitute(paste(italic('p'), "值")),
+        ylab = '频率'
 )
 ```
 
 这个结果非常有意思，第一个能看到的现象是如果数据本身存在规律性，那么p值的分布是一个离散分布。这个分布介于0到1之间，越接近0的部分越密集，越接近1的的部分越稀疏，但是如果计算小于0.05，0.5，0.9的比例情况，会发现这种稀疏分布依旧符合均匀分布的概率分布特征。如果数据不存在规律性，那么p值的分布就是很均匀的。如果数据混合了规律性与噪音，依然会显示出这种离散分布特征。下面我用qq图来观察下这个分布跟均匀分布的区别：
 
-```{r}
+```{r fig.cap='分位图观察p值在存在真实差异、不存在真实差异及同时存在真实差异与噪音的分布跟均匀分布的区别'}
 set.seed(42)
 # 生成均匀分布
 ref <- runif(10000)
@@ -346,23 +373,23 @@ qqplot(ref, pm, xlab = '均匀分布', ylab = substitute(paste('存在真实差�
 
 可以看到，如果数据本身存在规律性，其随机化分组后的p值虽然跟均匀分布很接近，但qq图上确实会表现出前密后舒的螺旋延伸状态。这里为了区别我再做一个仿真，这次我不是对分组随机而是对采样随机：
 
-```{r}
+```{r fig.cap='采样随机时p值的分布与均匀分布的分位图'}
 set.seed(1)
 # 固定分组
 g <- factor(c(rep(1, 260), rep(2, 260)))
 p <- c()
 for (i in 1:10000) {
-  # 随机化采样
-  x <-  sample(c(rep(100, 260), rep(200, 260)) + rnorm(520), 520)
-  p[i] <- t.test(x ~ g)$p.value
+        # 随机化采样
+        x <-  sample(c(rep(100, 260), rep(200, 260)) + rnorm(520), 520)
+        p[i] <- t.test(x ~ g)$p.value
 }
 par(mfrow = c(1, 2))
 hist(
-  p,
-  breaks = 100,
-  main = substitute(paste('采样随机时', italic('p'), "值分布")),
-  xlab = substitute(paste(italic('p'), "值")),
-  ylab = '频率'
+        p,
+        breaks = 100,
+        main = substitute(paste('采样随机时', italic('p'), "值分布")),
+        xlab = substitute(paste(italic('p'), "值")),
+        ylab = '频率'
 )
 qqplot(ref, p, xlab = '均匀分布', ylab = substitute(paste('采样随机时', italic('p'), "值分布")))
 ```
@@ -379,7 +406,7 @@ qqplot(ref, p, xlab = '均匀分布', ylab = substitute(paste('采样随机时',
 
 实验结果的可重复性研究不是个新鲜概念，上个世纪就开始有讨论了，最早是心理学，现在已经蔓延到多个学科。但可重复性研究的流程其实比想象的要复杂，完整的可重复性研究包含多个步骤，例如人群可重复性、科学问题是否一致、假设是否一致、实验设计是否一致、实验人员是否一致、数据分析流程是否一致、代码是否可公开、推断的合理性与结论是否一致。新闻里常说的可重复性不好主要是最后一项结论的差异，但整体流程的任何一个环节都可能出问题。不同学科对可重复性的要求也并不一致，实验学科如果是验证简单体系要求会特别高，例如理论物理，而复杂体系考察综合指标要求就可能降到结果数量级上可重复就可以了，例如环境痕量污染物的分析，因为样品前处理复杂待测物含量经常逼近检出限，此时要求很高的可重复性意义不大而含量数量级通常就能反映足够的环境信息。下图是一个常见的可重复性研究需要考虑的步骤，想完整重现别人的研究需要对方提供每一步的信息。
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.cap='可重复性研究的步骤'}
 library(scifigure)
 exps <- init_experiments(2)
 exps[c("analysis_plan","data"), 2] <- "unobserved"

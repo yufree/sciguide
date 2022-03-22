@@ -207,7 +207,7 @@ top_terms %>%
   geom_col(show.legend = FALSE) +
   coord_flip() +
   scale_x_discrete(labels = function(x) gsub("__.+$", "", x)) +
-  labs(title = "6个子领域主题的前10个关键词",
+  labs(title = "6个子领域主题的前10关键词",
        x = NULL, y = expression(beta)) +
   facet_wrap(~ topic, ncol = 2, scales = "free")
 ```

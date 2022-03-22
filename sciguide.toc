@@ -8,160 +8,160 @@
 \contentsline {subsection}{\numberline {2.1.4}未知的已知组}{15}{subsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.1.5}未知的未知组}{15}{subsection.2.1.5}%
 \contentsline {section}{\numberline {2.2}知识体系的时间构建}{16}{section.2.2}%
-\contentsline {section}{\numberline {2.3}认知偏误}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.3}认知偏误}{17}{section.2.3}%
 \contentsline {chapter}{\numberline {3}科研现状概览}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}现代社会}{21}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}现代社会的形成}{21}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}现代社会的结构}{25}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}现代科研的定位}{29}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}研究生教育}{31}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}研究生蓄水池}{31}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}毕业延期问题}{33}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}学术职业路径}{35}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}全栈科学家}{38}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}可重复性危机}{40}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}零假设显著性检验（NHST）}{40}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}规律性}{46}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}可重复性研究}{51}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}掠夺性期刊}{53}{section.3.4}%
-\contentsline {section}{\numberline {3.5}论文八股化}{53}{section.3.5}%
-\contentsline {section}{\numberline {3.6}公众科学}{54}{section.3.6}%
-\contentsline {section}{\numberline {3.7}科普}{55}{section.3.7}%
-\contentsline {section}{\numberline {3.8}科学问题}{56}{section.3.8}%
-\contentsline {chapter}{\numberline {4}思维工具}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}科学思维}{61}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}古希腊}{62}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}中世纪}{62}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}文艺复兴之后}{63}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}逻辑实证主义}{65}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}否证主义}{66}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}历史主义}{66}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}无政府主义}{67}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}实用主义}{68}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}其他}{68}{subsection.4.1.9}%
-\contentsline {section}{\numberline {4.2}数学思维}{69}{section.4.2}%
-\contentsline {section}{\numberline {4.3}统计思维}{70}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}抽象}{70}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}似然度}{71}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}回归}{72}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}因果}{73}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}残差}{82}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}模型思维}{82}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}编程}{82}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}决策模型}{86}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}个体-整体模型}{87}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}动力学模型}{89}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}启发法}{90}{section.4.5}%
-\contentsline {chapter}{\numberline {5}实验}{93}{chapter.5}%
-\contentsline {section}{\numberline {5.1}思想实验}{94}{section.5.1}%
-\contentsline {section}{\numberline {5.2}仿真实验}{97}{section.5.2}%
-\contentsline {section}{\numberline {5.3}观察实验}{97}{section.5.3}%
-\contentsline {section}{\numberline {5.4}控制实验}{98}{section.5.4}%
-\contentsline {section}{\numberline {5.5}因素选择}{99}{section.5.5}%
-\contentsline {section}{\numberline {5.6}效应指标}{100}{section.5.6}%
-\contentsline {section}{\numberline {5.7}采样与样品预处理}{101}{section.5.7}%
-\contentsline {section}{\numberline {5.8}预实验}{102}{section.5.8}%
-\contentsline {section}{\numberline {5.9}质量保证/质量控制}{110}{section.5.9}%
-\contentsline {chapter}{\numberline {6}数据处理}{113}{chapter.6}%
-\contentsline {section}{\numberline {6.1}探索性数据分析}{113}{section.6.1}%
-\contentsline {section}{\numberline {6.2}统计推断}{115}{section.6.2}%
-\contentsline {section}{\numberline {6.3}线性模型}{128}{section.6.3}%
-\contentsline {section}{\numberline {6.4}模型组合}{133}{section.6.4}%
-\contentsline {section}{\numberline {6.5}计算方法}{134}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}并行计算}{134}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}容器技术}{135}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}云}{135}{subsection.6.5.3}%
-\contentsline {section}{\numberline {6.6}主成分分析}{136}{section.6.6}%
-\contentsline {chapter}{\numberline {7}文献}{141}{chapter.7}%
-\contentsline {section}{\numberline {7.1}文献管理}{141}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}从无到有}{141}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}从有到精}{142}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}从精到用}{143}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}文本挖掘}{144}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}关键词}{145}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}作者}{153}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}全学科评价}{157}{section.7.3}%
-\contentsline {section}{\numberline {7.4}荟萃分析}{159}{section.7.4}%
-\contentsline {chapter}{\numberline {8}学术生活}{163}{chapter.8}%
-\contentsline {section}{\numberline {8.1}学术道德／伦理}{163}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}剽窃}{163}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}文章挂名}{164}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}双重发表}{164}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}数据造假}{165}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}有害研究实践}{165}{subsection.8.1.5}%
-\contentsline {subsection}{\numberline {8.1.6}合规性}{165}{subsection.8.1.6}%
-\contentsline {subsection}{\numberline {8.1.7}性骚扰}{165}{subsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.1.8}歧视}{165}{subsection.8.1.8}%
-\contentsline {subsection}{\numberline {8.1.9}伦理}{166}{subsection.8.1.9}%
-\contentsline {section}{\numberline {8.2}邮件}{167}{section.8.2}%
-\contentsline {section}{\numberline {8.3}学术出版}{167}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}期刊论文}{167}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}会议摘要}{172}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}专著}{172}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}专利}{172}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}软件}{173}{subsection.8.3.5}%
-\contentsline {section}{\numberline {8.4}学术会议}{173}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}口头报告}{173}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}海报报告}{174}{subsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.4.3}电梯报告}{175}{subsection.8.4.3}%
-\contentsline {subsection}{\numberline {8.4.4}听报告}{175}{subsection.8.4.4}%
-\contentsline {subsection}{\numberline {8.4.5}主持报告}{175}{subsection.8.4.5}%
-\contentsline {section}{\numberline {8.5}审稿}{175}{section.8.5}%
-\contentsline {section}{\numberline {8.6}学术合作}{176}{section.8.6}%
-\contentsline {section}{\numberline {8.7}利益冲突}{177}{section.8.7}%
-\contentsline {subsection}{\numberline {8.7.1}数据共享}{178}{subsection.8.7.1}%
-\contentsline {subsection}{\numberline {8.7.2}社交网络}{178}{subsection.8.7.2}%
-\contentsline {section}{\numberline {8.8}学术评价}{178}{section.8.8}%
-\contentsline {section}{\numberline {8.9}课题组管理}{179}{section.8.9}%
-\contentsline {subsection}{\numberline {8.9.1}课题组规章（示例）}{179}{subsection.8.9.1}%
-\contentsline {subsection}{\numberline {8.9.2}实验室规章（示例）}{181}{subsection.8.9.2}%
-\contentsline {subsection}{\numberline {8.9.3}项目管理}{182}{subsection.8.9.3}%
-\contentsline {subsection}{\numberline {8.9.4}经费管理}{184}{subsection.8.9.4}%
-\contentsline {subsection}{\numberline {8.9.5}心理辅导}{185}{subsection.8.9.5}%
-\contentsline {section}{\numberline {8.10}讲课}{186}{section.8.10}%
-\contentsline {subsection}{\numberline {8.10.1}学生如何学习？}{186}{subsection.8.10.1}%
-\contentsline {subsection}{\numberline {8.10.2}如何激励学生？}{186}{subsection.8.10.2}%
-\contentsline {subsection}{\numberline {8.10.3}评价学习}{186}{subsection.8.10.3}%
-\contentsline {subsection}{\numberline {8.10.4}课程设计}{187}{subsection.8.10.4}%
-\contentsline {subsection}{\numberline {8.10.5}互动学习}{187}{subsection.8.10.5}%
-\contentsline {subsection}{\numberline {8.10.6}教学理念}{187}{subsection.8.10.6}%
-\contentsline {chapter}{\numberline {9}就业}{189}{chapter.9}%
-\contentsline {section}{\numberline {9.1}商业与学术}{189}{section.9.1}%
-\contentsline {section}{\numberline {9.2}简历}{190}{section.9.2}%
-\contentsline {section}{\numberline {9.3}人脉}{191}{section.9.3}%
-\contentsline {section}{\numberline {9.4}面试}{192}{section.9.4}%
-\contentsline {section}{\numberline {9.5}职场}{193}{section.9.5}%
-\contentsline {section}{\numberline {9.6}职业}{195}{section.9.6}%
-\contentsline {subsection}{\numberline {9.6.1}博后}{195}{subsection.9.6.1}%
-\contentsline {subsection}{\numberline {9.6.2}常任轨}{195}{subsection.9.6.2}%
-\contentsline {subsection}{\numberline {9.6.3}非常任轨}{195}{subsection.9.6.3}%
-\contentsline {subsection}{\numberline {9.6.4}非高等教育}{196}{subsection.9.6.4}%
-\contentsline {subsection}{\numberline {9.6.5}科学顾问}{196}{subsection.9.6.5}%
-\contentsline {subsection}{\numberline {9.6.6}科学传播}{196}{subsection.9.6.6}%
-\contentsline {subsection}{\numberline {9.6.7}政府公务员}{197}{subsection.9.6.7}%
-\contentsline {subsection}{\numberline {9.6.8}非营利组织与基金会}{197}{subsection.9.6.8}%
-\contentsline {subsection}{\numberline {9.6.9}编辑/出版社}{198}{subsection.9.6.9}%
-\contentsline {subsection}{\numberline {9.6.10}应用专家及销售}{198}{subsection.9.6.10}%
-\contentsline {subsection}{\numberline {9.6.11}企业科研/药企}{199}{subsection.9.6.11}%
-\contentsline {subsection}{\numberline {9.6.12}医药交流}{199}{subsection.9.6.12}%
-\contentsline {subsection}{\numberline {9.6.13}咨询}{199}{subsection.9.6.13}%
-\contentsline {subsection}{\numberline {9.6.14}金融}{199}{subsection.9.6.14}%
-\contentsline {subsection}{\numberline {9.6.15}数据科学家}{200}{subsection.9.6.15}%
-\contentsline {subsection}{\numberline {9.6.16}创业}{200}{subsection.9.6.16}%
-\contentsline {chapter}{附录}{201}{chapter*.3}%
-\contentsline {section}{现代科研兵刃谱}{201}{section*.4}%
-\contentsline {subsection}{文本编辑}{201}{section*.4}%
-\contentsline {subsection}{文献管理}{202}{section*.4}%
-\contentsline {subsection}{数据处理与绘图}{203}{section*.4}%
-\contentsline {subsection}{数据同步}{204}{section*.4}%
-\contentsline {subsection}{实验室管理}{204}{section*.4}%
-\contentsline {subsection}{幻灯片制作}{204}{section*.4}%
-\contentsline {subsection}{学术交流}{205}{section*.4}%
-\contentsline {subsection}{数据分享}{206}{section*.4}%
-\contentsline {subsection}{代码管理}{206}{section*.4}%
-\contentsline {section}{全栈科学家自测题}{207}{section*.4}%
-\contentsline {section}{科研日常词典}{211}{section*.4}%
-\contentsline {subsection}{研究生版}{211}{section*.4}%
-\contentsline {subsection}{留学生版}{217}{section*.4}%
-\contentsline {subsection}{创业版}{221}{section*.4}%
+\contentsline {subsection}{\numberline {3.1.2}现代社会的结构}{26}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}现代科研的定位}{30}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}研究生教育}{32}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}研究生蓄水池}{32}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}毕业延期问题}{35}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}学术职业路径}{38}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}全栈科学家}{40}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}可重复性危机}{42}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}零假设显著性检验（NHST）}{42}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}规律性}{48}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}可重复性研究}{53}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}掠夺性期刊}{55}{section.3.4}%
+\contentsline {section}{\numberline {3.5}论文八股化}{55}{section.3.5}%
+\contentsline {section}{\numberline {3.6}公众科学}{56}{section.3.6}%
+\contentsline {section}{\numberline {3.7}科普}{57}{section.3.7}%
+\contentsline {section}{\numberline {3.8}科学问题}{58}{section.3.8}%
+\contentsline {chapter}{\numberline {4}思维工具}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}科学思维}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}古希腊}{64}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}中世纪}{64}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}文艺复兴之后}{65}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}逻辑实证主义}{67}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}否证主义}{68}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}历史主义}{68}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}无政府主义}{69}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}实用主义}{70}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}其他}{70}{subsection.4.1.9}%
+\contentsline {section}{\numberline {4.2}数学思维}{71}{section.4.2}%
+\contentsline {section}{\numberline {4.3}统计思维}{72}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}抽象}{72}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}似然度}{73}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}回归}{74}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}因果}{77}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}残差}{86}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}模型思维}{87}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}编程}{87}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}决策模型}{91}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}个体-整体模型}{92}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}动力学模型}{98}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}启发法}{98}{section.4.5}%
+\contentsline {chapter}{\numberline {5}实验}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}思想实验}{102}{section.5.1}%
+\contentsline {section}{\numberline {5.2}仿真实验}{105}{section.5.2}%
+\contentsline {section}{\numberline {5.3}观察实验}{105}{section.5.3}%
+\contentsline {section}{\numberline {5.4}控制实验}{106}{section.5.4}%
+\contentsline {section}{\numberline {5.5}因素选择}{107}{section.5.5}%
+\contentsline {section}{\numberline {5.6}效应指标}{108}{section.5.6}%
+\contentsline {section}{\numberline {5.7}采样与样品预处理}{109}{section.5.7}%
+\contentsline {section}{\numberline {5.8}预实验}{110}{section.5.8}%
+\contentsline {section}{\numberline {5.9}质量保证/质量控制}{118}{section.5.9}%
+\contentsline {chapter}{\numberline {6}数据处理}{121}{chapter.6}%
+\contentsline {section}{\numberline {6.1}探索性数据分析}{121}{section.6.1}%
+\contentsline {section}{\numberline {6.2}统计推断}{125}{section.6.2}%
+\contentsline {section}{\numberline {6.3}线性模型}{139}{section.6.3}%
+\contentsline {section}{\numberline {6.4}模型组合}{144}{section.6.4}%
+\contentsline {section}{\numberline {6.5}计算方法}{145}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}并行计算}{145}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}容器技术}{146}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}云}{146}{subsection.6.5.3}%
+\contentsline {section}{\numberline {6.6}主成分分析}{146}{section.6.6}%
+\contentsline {chapter}{\numberline {7}文献}{153}{chapter.7}%
+\contentsline {section}{\numberline {7.1}文献管理}{153}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}从无到有}{153}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}从有到精}{154}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}从精到用}{155}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}文本挖掘}{156}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}关键词}{157}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}作者}{163}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}全学科评价}{164}{section.7.3}%
+\contentsline {section}{\numberline {7.4}荟萃分析}{166}{section.7.4}%
+\contentsline {chapter}{\numberline {8}学术生活}{169}{chapter.8}%
+\contentsline {section}{\numberline {8.1}学术道德／伦理}{169}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}剽窃}{169}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}文章挂名}{170}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}双重发表}{170}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}数据造假}{171}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}有害研究实践}{171}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}合规性}{171}{subsection.8.1.6}%
+\contentsline {subsection}{\numberline {8.1.7}性骚扰}{171}{subsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.1.8}歧视}{171}{subsection.8.1.8}%
+\contentsline {subsection}{\numberline {8.1.9}伦理}{172}{subsection.8.1.9}%
+\contentsline {section}{\numberline {8.2}邮件}{173}{section.8.2}%
+\contentsline {section}{\numberline {8.3}学术出版}{173}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}期刊论文}{173}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}会议摘要}{178}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}专著}{178}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}专利}{178}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}软件}{179}{subsection.8.3.5}%
+\contentsline {section}{\numberline {8.4}学术会议}{179}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}口头报告}{179}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}海报报告}{180}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}电梯报告}{181}{subsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.4.4}听报告}{181}{subsection.8.4.4}%
+\contentsline {subsection}{\numberline {8.4.5}主持报告}{181}{subsection.8.4.5}%
+\contentsline {section}{\numberline {8.5}审稿}{181}{section.8.5}%
+\contentsline {section}{\numberline {8.6}学术合作}{182}{section.8.6}%
+\contentsline {section}{\numberline {8.7}利益冲突}{183}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}数据共享}{184}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}社交网络}{184}{subsection.8.7.2}%
+\contentsline {section}{\numberline {8.8}学术评价}{184}{section.8.8}%
+\contentsline {section}{\numberline {8.9}课题组管理}{185}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}课题组规章（示例）}{185}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}实验室规章（示例）}{187}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}项目管理}{188}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.4}经费管理}{191}{subsection.8.9.4}%
+\contentsline {subsection}{\numberline {8.9.5}心理辅导}{192}{subsection.8.9.5}%
+\contentsline {section}{\numberline {8.10}讲课}{193}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}学生如何学习？}{193}{subsection.8.10.1}%
+\contentsline {subsection}{\numberline {8.10.2}如何激励学生？}{193}{subsection.8.10.2}%
+\contentsline {subsection}{\numberline {8.10.3}评价学习}{193}{subsection.8.10.3}%
+\contentsline {subsection}{\numberline {8.10.4}课程设计}{194}{subsection.8.10.4}%
+\contentsline {subsection}{\numberline {8.10.5}互动学习}{194}{subsection.8.10.5}%
+\contentsline {subsection}{\numberline {8.10.6}教学理念}{194}{subsection.8.10.6}%
+\contentsline {chapter}{\numberline {9}就业}{197}{chapter.9}%
+\contentsline {section}{\numberline {9.1}商业与学术}{197}{section.9.1}%
+\contentsline {section}{\numberline {9.2}简历}{198}{section.9.2}%
+\contentsline {section}{\numberline {9.3}人脉}{199}{section.9.3}%
+\contentsline {section}{\numberline {9.4}面试}{201}{section.9.4}%
+\contentsline {section}{\numberline {9.5}职场}{202}{section.9.5}%
+\contentsline {section}{\numberline {9.6}职业}{203}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}博后}{203}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.6.2}常任轨}{204}{subsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.6.3}非常任轨}{204}{subsection.9.6.3}%
+\contentsline {subsection}{\numberline {9.6.4}非高等教育}{204}{subsection.9.6.4}%
+\contentsline {subsection}{\numberline {9.6.5}科学顾问}{205}{subsection.9.6.5}%
+\contentsline {subsection}{\numberline {9.6.6}科学传播}{205}{subsection.9.6.6}%
+\contentsline {subsection}{\numberline {9.6.7}政府公务员}{206}{subsection.9.6.7}%
+\contentsline {subsection}{\numberline {9.6.8}非营利组织与基金会}{206}{subsection.9.6.8}%
+\contentsline {subsection}{\numberline {9.6.9}编辑/出版社}{206}{subsection.9.6.9}%
+\contentsline {subsection}{\numberline {9.6.10}应用专家及销售}{207}{subsection.9.6.10}%
+\contentsline {subsection}{\numberline {9.6.11}企业科研/药企}{207}{subsection.9.6.11}%
+\contentsline {subsection}{\numberline {9.6.12}医药交流}{207}{subsection.9.6.12}%
+\contentsline {subsection}{\numberline {9.6.13}咨询}{208}{subsection.9.6.13}%
+\contentsline {subsection}{\numberline {9.6.14}金融}{208}{subsection.9.6.14}%
+\contentsline {subsection}{\numberline {9.6.15}数据科学家}{208}{subsection.9.6.15}%
+\contentsline {subsection}{\numberline {9.6.16}创业}{209}{subsection.9.6.16}%
+\contentsline {chapter}{附录}{211}{chapter*.3}%
+\contentsline {section}{现代科研兵刃谱}{211}{section*.4}%
+\contentsline {subsection}{文本编辑}{211}{section*.4}%
+\contentsline {subsection}{文献管理}{212}{section*.4}%
+\contentsline {subsection}{数据处理与绘图}{213}{section*.4}%
+\contentsline {subsection}{数据同步}{214}{section*.4}%
+\contentsline {subsection}{实验室管理}{214}{section*.4}%
+\contentsline {subsection}{幻灯片制作}{214}{section*.4}%
+\contentsline {subsection}{学术交流}{215}{section*.4}%
+\contentsline {subsection}{数据分享}{216}{section*.4}%
+\contentsline {subsection}{代码管理}{216}{section*.4}%
+\contentsline {section}{全栈科学家自测题}{217}{section*.4}%
+\contentsline {section}{科研日常词典}{221}{section*.4}%
+\contentsline {subsection}{研究生版}{221}{section*.4}%
+\contentsline {subsection}{留学生版}{227}{section*.4}%
+\contentsline {subsection}{创业版}{231}{section*.4}%
 \contentsfinish 

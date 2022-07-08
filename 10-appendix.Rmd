@@ -46,6 +46,8 @@
 
 此外，互联网上也有一些在线应用可以很方便地生成特殊图形例如[百度脑图](http://naotu.baidu.com/)可以用来生成流程图或思维导图、[Autodraw](https://www.autodraw.com/)可以用来画简笔画、[plotly](https://plot.ly/)可以在线完成绘图等。甚至网上还有直接上传数据后自动猜测你需要进行分析与制图的[Charted](https://www.charted.co/)。这样的工具只要搜索你所需要的分析然后加上“online”作为关键词就可以找到。
 
+如果是偏生物的示意图，可以考虑[BioRender](https://biorender.com/)。
+
 总结一下，作为现代科研工具，理想数据分析与绘图软件至少有以下功能：
     
 - 支持科研用统计分析
@@ -601,3 +603,10 @@
 - 路演：项目申请书
 - 估值：学术影响力
 - 竞争公司：研究方向
+
+## 书中所有代码 {-}
+
+```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
+
+```
+

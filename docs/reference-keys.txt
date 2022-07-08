@@ -25,7 +25,6 @@ fig:unnamed-chunk-30
 fig:unnamed-chunk-33
 fig:unnamed-chunk-41
 fig:unnamed-chunk-42
-fig:unnamed-chunk-43
 intro
 know
 科学知识的五个层次

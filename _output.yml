@@ -10,14 +10,10 @@ bookdown::gitbook:
       link: https://github.com/yufree/sciguide/edit/master/%s
     sharing:
       weibo: yes
-
 bookdown::tufte_book2:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: yes
-
 bookdown::epub_book: default
-
 bookdown::word_document2: default

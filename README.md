@@ -1,13 +1,15 @@
-[![Travis-CI Build Status](https://travis-ci.org/yufree/sciguide.svg?branch=master)](https://travis-ci.org/yufree/sciguide) [![DOI](https://zenodo.org/badge/94931373.svg)](https://zenodo.org/badge/latestdoi/94931373) [![saythanks](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/yufree)
+[![bookdown](https://github.com/yufree/sciguide/actions/workflows/main.yml/badge.svg)](https://github.com/yufree/sciguide/actions/workflows/main.yml)[![DOI](https://zenodo.org/badge/94931373.svg)](https://zenodo.org/badge/latestdoi/94931373) [![saythanks](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/yufree)
 
 
 这本电子书包括但不限于下面的主题及内容：
 
 - yufree.cn 上科研主题博文汇编
 - 现代科研趋势探索
-- Jeef Leek 《How to be a modern scientist》
+- Jeef Leek *How to be a modern scientist*
 
 预览地址：https://yufree.github.io/sciguide/
+
+[吐槽收集工程](https://wj.qq.com/s2/10408005/9374/)
 
 # 更新日志（2.7版后）
 
@@ -33,3 +35,4 @@
 - 图片中文化
 - 增加图片与数据提高可读性
 - 错别字，感谢 @jerrylususu #12
+- 文末增加代码附录

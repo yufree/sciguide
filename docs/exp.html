@@ -579,14 +579,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Formula:
 ## response ~ A + B + C
 ##             Df Sum Sq Mean Sq   F value Pr(&gt;F)    
-## A            2      0       0 7.020e-01  0.504    
-## B            2   9600    4800 1.867e+30 &lt;2e-16 ***
-## C            2 240000  120000 4.668e+31 &lt;2e-16 ***
+## A            2      0       0 4.950e-01  0.615    
+## B            2   9600    4800 1.176e+30 &lt;2e-16 ***
+## C            2 240000  120000 2.939e+31 &lt;2e-16 ***
 ## Residuals   29      0       0                     
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="exp.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(test.resp, <span class="at">response =</span> <span class="st">&quot;response&quot;</span>))</span></code></pre></div>
+<<<<<<< HEAD
 <pre><code>## Warning in summary.lm(object): essentially perfect fit: summary may be unreliable</code></pre>
+=======
+<pre><code>## Warning in summary.lm(object): essentially perfect fit: summary may be
+## unreliable</code></pre>
+>>>>>>> 98538b217944eca61420da258f9ad937c4bde851
 <pre><code>## Number of observations used: 36 
 ## Formula:
 ## response ~ A + B + C
@@ -596,23 +601,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Residuals:
 ##        Min         1Q     Median         3Q        Max 
-## -2.363e-13 -5.872e-15  1.022e-15  2.142e-14  5.624e-14 
+## -2.437e-13 -8.362e-15  1.402e-14  2.708e-14  7.146e-14 
 ## 
 ## Coefficients:
 ##               Estimate Std. Error    t value Pr(&gt;|t|)    
-## (Intercept)  2.400e+02  8.450e-15  2.840e+16   &lt;2e-16 ***
-## A.L          2.129e-14  1.464e-14  1.455e+00    0.156    
-## A.Q         -2.029e-16  1.464e-14 -1.400e-02    0.989    
-## B.L          2.828e+01  1.464e-14  1.933e+15   &lt;2e-16 ***
-## B.Q          2.726e-16  1.464e-14  1.900e-02    0.985    
-## C.L          1.414e+02  1.464e-14  9.663e+15   &lt;2e-16 ***
-## C.Q          9.344e-16  1.464e-14  6.400e-02    0.950    
+## (Intercept)  2.400e+02  1.065e-14  2.254e+16   &lt;2e-16 ***
+## A.L          1.550e-14  1.845e-14  8.400e-01    0.408    
+## A.Q         -1.999e-14  1.845e-14 -1.084e+00    0.287    
+## B.L          2.828e+01  1.845e-14  1.533e+15   &lt;2e-16 ***
+## B.Q         -2.094e-14  1.845e-14 -1.135e+00    0.266    
+## C.L          1.414e+02  1.845e-14  7.667e+15   &lt;2e-16 ***
+## C.Q          7.580e-15  1.845e-14  4.110e-01    0.684    
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 5.07e-14 on 29 degrees of freedom
+## Residual standard error: 6.39e-14 on 29 degrees of freedom
 ## Multiple R-squared:      1,  Adjusted R-squared:      1 
+<<<<<<< HEAD
 ## F-statistic: 1.618e+31 on 6 and 29 DF,  p-value: &lt; 2.2e-16</code></pre>
+=======
+## F-statistic: 1.019e+31 on 6 and 29 DF,  p-value: &lt; 2.2e-16</code></pre>
+>>>>>>> 98538b217944eca61420da258f9ad937c4bde851
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="exp.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(test.resp)</span></code></pre></div>
 <pre><code>## The first four factors were selected. Use argument select for choosing what is plotted.</code></pre>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>

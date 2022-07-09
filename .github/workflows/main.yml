@@ -36,7 +36,7 @@ jobs:
 
       - name: Install packages
         run: |
-          R -e 'install.packages("renv")'
+          R -e 'install.packages(c("renv","rsconnect"))'
           R -e 'renv::restore()'
           
       - name: Build site

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>坑 7 文献 | 现代科研指北</title>
   <meta name="description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="坑 7 文献 | 现代科研指北" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/cover.png" />
   <meta property="og:description" content="才疏学浅，不知何为真，仅通少错之法，故不敢言南，仅指北。或曰：现代科研挖坑／跳坑指南。" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="于淼" />
 
 
-<meta name="date" content="2022-03-22" />
+<meta name="date" content="2022-07-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="data.html"/>
 <link rel="next" href="life.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -358,6 +357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#留学生版"><i class="fa fa-check"></i>留学生版</a></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#创业版"><i class="fa fa-check"></i>创业版</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#书中所有代码"><i class="fa fa-check"></i>书中所有代码</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/yufree/sciguide" target="blank">Published with bookdown</a></li>
@@ -379,26 +379,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lib" class="section level1" number="7">
-<h1><span class="header-section-number">坑 7</span> 文献</h1>
+<div id="lib" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">坑 7</span> 文献<a href="lib.html#lib" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>设计实验处理数据是科研的基本单元，但现代科研是需要互相借鉴参考的，文献就是最重要的参考依据。本章将首先讨论文献管理的步骤，然后通过实例讲解下现代文本挖掘技术在文献分析中的应用，之后会讨论下如何利用文献数据库进行全学科评价，了解自己研究在整体科研中的定位，最后会讨论下文献综述里最常用到的荟萃分析方法。</p>
-<div id="文献管理" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> 文献管理</h2>
+<div id="文献管理" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> 文献管理<a href="lib.html#文献管理" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>文献管理方面主要包括文献收集、整理、分析与追踪，目的是获取当前研究趋势。用认知过程阶段可以分成三个：从无到有、从有到精与从精到用，从无到有是指刚进入一个新领域时的状态，绝大多数研究生跟转行的科研人员都要通过这个阶段构建自己的文献知识库；从有到精指维护与整理与追踪新文献；从精到用阶段指文献知识库体系直接参与科研过程形成产出的过程。</p>
-<div id="从无到有" class="section level3" number="7.1.1">
-<h3><span class="header-section-number">7.1.1</span> 从无到有</h3>
+<div id="从无到有" class="section level3 hasAnchor" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> 从无到有<a href="lib.html#从无到有" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>刚开展研究工作的第一步就是背景知识的了解，除非你研究生转行，一般本科阶段的学习应该已经掌握了学科基础，这个是共通的背景知识。基于此你要从教科书上相对确定的知识走向文献资料中相对不那么确定的知识，此时最好的开端是一本英文教材，一方面锻炼英文，另一方面英文教材的更新比国内要快（你大概率可以从图书馆借到，而且多数图书馆都有根据你需求订书的服务，不要浪费）。如果你精力足够，甚至可以联系作者问下是否可以翻译，这样一举多得，不过我没操作过，只是建议。另一个思路是通过网络公开课 来系统学习，国内外很多高校放到网上的课程授课老师都属于接受新思想比较快的人，讲义也比较前沿，系统性比较高。还有一个不太通用的方法是阅读近些年的博士论文，其文献部分一般都是相关信息，不过能不能找到就不好说了。这个阶段一般要两三个月，不要心急，先把基础打好。前面掉的坑越多，后面跳坑就更有经验。</p>
 <p>一般而言，一项学术成果要先发表，然后被综述评论，然后进入研究生课程讨论班，然后进入本科生课程讲义，最后才进入学科经典教材的更新。所以你可以倒着去走这个流程，越往后可能越不容易懂，但循序渐进总比一下读前沿论文被搞晕要好。有了相对前沿的教材或讲义作为知识框架，你的脑子里此时应该比较清楚导师让你做的东西或自己打算做的东西在学科中的定位，解决的是什么科学或工程问题，此时可以进行基于关键词检索的文献收集了。</p>
 <p>一个良好的搜索返回的结果应该在10篇以内，首先要是综述，然后关键词检索方面建议学点逻辑运算符来过滤掉不相关信息，如果你上一阶段看的书是5年前更新的，那就只去关注最近5年的综述；如果你做的领域实在太新，那就把关键词信息的同义词跟近义词也加到搜索里；如果你能找到一篇写的特别好的综述或者有高人指点的论文，那是最高效的方法，可遇不可求。这10篇论文请按年为单位每1-2年选一篇综述去看，一月内读完，要求是精读，也就是论文里提到的研究都加到你的文献库里并阅读细节，同时可参考综述章节对文献库进行分组。一定要做笔记，而且要进行结构化的笔记或思维导图，这个阶段时间可能比较长也比较累，成果是当你去听系里的报告时，你大概能将报告定位到你的笔记框架里。考虑引用可以准备事实笔记与观点笔记，事实笔记是为了方便引用一个现象来论证你的问题而观点笔记则是方便引用结论来对比你的结论或讨论，后一种要特别小心，避免误会。到此文献库就从无到有了。</p>
 </div>
-<div id="从有到精" class="section level3" number="7.1.2">
-<h3><span class="header-section-number">7.1.2</span> 从有到精</h3>
+<div id="从有到精" class="section level3 hasAnchor" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> 从有到精<a href="lib.html#从有到精" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>有了文献库不代表就不用读了，你要建立一个体系来整理并追踪最新文献，可以通过加入邮件列表、新闻组或订阅期刊或数据库关键词的 RSS 来完成。信息收集有三个层次，最低就是关键词相关文献，这个主要依赖 RSS 或追踪重点课题组，关注这个可以保证对自己研究方向的掌握，不仅是期刊论文，预印本与会议论文也要关注到；中间层就是专业类顶级期刊，关注这部分信息可以对学科发展趋势有所了解；如果还有时间精力，可以关注综合类期刊，例如nature、pnas、science、NEJM、JAMA等，了解重大科学问题。</p>
 <p>阅读文献时，要合理分配时间，科技文献已经<a href="https://www.alternet.org/news-amp-politics/science-has-outgrown-human-mind-and-its-limited-capacities-process-information">超越</a>了人脑处理信息的能力了。一般而言都要读题目， 20-50%读摘要，5-10%看图，1-3%读全文。网上一般都可以找到摘要，如果需要全文，可以在 twitter 上用 #icanhazpdf 标签找、可以用开源的<a href="https://github.com/ropensci/fulltext">fulltext</a>包找、可以用 <a href="https://unpaywall.org/">unpaywall</a> 的 API <a href="https://cran.r-project.org/web/packages/roadoi/vignettes/intro.html">找</a>、可以用<a href="https://openaccessbutton.org/">Open Access Button</a>的 API 来找、当然也可以找作者要或者找有权限的朋友帮忙。</p>
 <p>文献管理可以借助专业文献管理软件，有收费的也有免费的，一般而言可通过咨询自己所在科研机构的图书馆来获取是否购买了相应的软件，一般图书馆也提供使用培训。早期文献管理软件之间差异还是明显的，但到今天基本同质化了。这里我要提示一下，一般文献库管理工具都提供针对单篇文献的笔记功能，不要用。请自建按研究主题的笔记，把新的有意思的新论文连同你以后可能引用的语句直接摘到相关主题的笔记里，而且要让你的笔记可以反链到数据库或通过 doi 可以直接找到原文（推荐后者）。没别的意思，我希望你的笔记稍加整理就可以作为综述发表，省的你次次重返工。建议文献追新频率每周或每月一次，固定时间，看到好的文章就马上消化掉。</p>
 </div>
-<div id="从精到用" class="section level3" number="7.1.3">
-<h3><span class="header-section-number">7.1.3</span> 从精到用</h3>
+<div id="从精到用" class="section level3 hasAnchor" number="7.1.3">
+<h3><span class="header-section-number">7.1.3</span> 从精到用<a href="lib.html#从精到用" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>文献信息的收集与整理不是为了写笔记，是为了需要用的时候瞬间能够用到，例如写一个技术报告，给别人审稿，还有最重要的：写科技论文。科技论文不同于其他文体一个最显著的特点就是参考文献体系的支撑：所有的讨论都要起于前人的发现，参考文献事实上经常是考察作者知识面的关键，对前人工作的遗漏会严重降低文章的系统性与创新性，经常会被审稿人一票否决，哪怕其实你做的跟前人是不一样的。另外的使用就是报告幻灯片跟其他学术交流场景，如果你能做到在大脑或笔记中快速定位到一个观点或现象然后几句话说清楚，这个习惯能帮你离开学术界后在其他行业直接展开降维打击。绝大多数离开学术界的人都不会继续保持了解前沿动态的习惯而更多依赖过往经验，一个人的经验如何去抗衡一堆参考文献背后成百上千人的经验？当然有些东西那些成百上千人也许都不知道，特别是工程上的。不过这种学院派的研究习惯最大的好处就是让人更谦逊些，知道一山更比一山高，处处重峦叠嶂。那些上来就趾高气昂且沉醉于自己小圈子的人，不管在学术界还是其他行业，九成以上是鼠目寸光之辈，请远离这些人。</p>
 <p>在论文写作中，当你想参考别人的研究结论或研究数据时，要在相应位置插入参考文献（引文）。然后，在论文的结尾或章节页面结尾要对引用过的参考文献进行列表，方便读者按图索骥。引文与列表要有定位功能，引文要有对应列表展示题录信息，列表要保证读者可以根据期刊、作者等信息可检索到原始文献。现在很多出版商都会提供富文本的论文，里面的参考文献都可以直接链接到原文网页，当然作者不必要实现这个功能，但作者一般要保证自己初稿是符合待投期刊格式的，这些在投稿指南中都会写的很清楚。</p>
 <p>如何保证引用符合格式要求是研究人员要注意的，期刊格式要求其实主要就是限定页面布局与参考文献格式。主流期刊会提供 Word 文档模版与 LaTeX 宏包两种方式，前者很难限定参考文献格式，后者使用难度很高，都是要配合文献管理软件的对应插件来实现。文献排版的底层逻辑是在插入文献时在论文里生成一个针对该文献的锚点，当编译或格式化时，通过锚点查找你文献库（一般是独立的文件保存，不同文献管理软件不一样，bib文件相对通用性好些）里的题录信息，然后按照特定格式要求生成论文里的引文与文末的文献列表。引文有时是数字，有时是人名与年份，一般都很简短；文献列表信息量更大些，更方便读者查找源头，格式与排序不同期刊的要求也差距很大。</p>
@@ -412,179 +412,217 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>以人之渺小，所有的时间都是浪费，但你要为自己浪费的时光赋值。</p>
 </div>
 </div>
-<div id="文本挖掘" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> 文本挖掘</h2>
+<div id="文本挖掘" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> 文本挖掘<a href="lib.html#文本挖掘" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>文献信息学工具可以拿来进行学术趋势的挖掘，因为文献题录是高度结构化的数据，所以文献间关系可以用结构化数据来构建联系。基于引用关系我们可以找到某个关键词或期刊的节点论文。引用也可以跟文本分析相联系，用来寻找高引论文的文本写作风格。而基于研究人员的时空分布我们可以评估研究国际化与合作水平。文献信息学中也有专门的指标用来评估研究趋势或文章/学者影响力，可了解相关概念与使用，但不要过度解读与依赖，学科前沿并不稳定，量化指标通常只能描述一部分趋势。本节重点讲述文本挖掘技术。</p>
 <p>文本挖掘相当于我们让机器替我们读文献并探索大量文献中的趋势，这对快速了解某期刊或某关键词的学术界研究趋势很有帮助，也可以作为论文前言的论据。文本挖掘不依赖逐字逐篇阅读文献，更多是依赖文献标题或摘要甚至全文中词汇的词频与相关性等统计指标来推测研究趋势。</p>
 <p>文本挖掘目前技术上虽然成熟但精度上并不高，要谨慎使用该技术。一般而言，文本挖掘的时间跨度不超过10年且最好5年以内，因为综述跨度一般不超过10年，可以直接依赖10年内出版的综述来了解研究现状。在实战上，我们可以直接使用支持自然语言学习的统计软件来进行文本挖掘，也可以通过文献信息学软件来做，前提是准备好搜索语句或文献题录库。这里我们用案例来理解下这种文献分析方法。</p>
-<div id="关键词" class="section level3" number="7.2.1">
-<h3><span class="header-section-number">7.2.1</span> 关键词</h3>
+<div id="关键词" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> 关键词<a href="lib.html#关键词" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>以关键词为核心的文本挖掘旨在寻找所有该关键词相关研究的时间变化趋势与相关子领域。技术上首先利用关键词去寻找在线文摘数据库中的论文题录，然后提取摘要部分进行分词并统计词频。这里我们用“mass spectrometry”作为关键词搜索2010到2020年间发表在 ES&amp;T 上的论文做演示。</p>
-<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="lib.html#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github(&quot;yufree/scifetch&quot;)</span></span>
-<span id="cb72-2"><a href="lib.html#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scifetch)</span>
-<span id="cb72-3"><a href="lib.html#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb72-4"><a href="lib.html#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb72-5"><a href="lib.html#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
-<span id="cb72-6"><a href="lib.html#cb72-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
-<span id="cb72-7"><a href="lib.html#cb72-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb72-8"><a href="lib.html#cb72-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb72-9"><a href="lib.html#cb72-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
-<span id="cb72-10"><a href="lib.html#cb72-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
-<span id="cb72-11"><a href="lib.html#cb72-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
-<span id="cb72-12"><a href="lib.html#cb72-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 10年跨度 MeSH 关键词 期刊ES&amp;T</span></span>
-<span id="cb72-13"><a href="lib.html#cb72-13" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="st">&#39;&quot;mass spectrometry&quot;[MeSH Terms] AND 2010/01:2020/01[DP] AND 0013-936X[TA]&#39;</span></span>
-<span id="cb72-14"><a href="lib.html#cb72-14" aria-hidden="true" tabindex="-1"></a>tmdf <span class="ot">&lt;-</span> <span class="fu">getpubmed</span>(query, <span class="at">start =</span> <span class="dv">1</span>, <span class="at">end =</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb72-15"><a href="lib.html#cb72-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">getpubmedtbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb72-16"><a href="lib.html#cb72-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">time =</span> <span class="fu">as.POSIXct</span>(date, <span class="at">origin =</span> <span class="st">&quot;1970-01-01&quot;</span>),</span>
-<span id="cb72-17"><a href="lib.html#cb72-17" aria-hidden="true" tabindex="-1"></a>         <span class="at">month =</span> <span class="fu">round_date</span>(date, <span class="st">&quot;month&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="lib.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github(&quot;yufree/scifetch&quot;)</span></span>
+<span id="cb80-2"><a href="lib.html#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scifetch)</span>
+<span id="cb80-3"><a href="lib.html#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     %--%, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     date, intersect, setdiff, union</code></pre>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="lib.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     as_data_frame, groups, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="lib.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
+<span id="cb89-2"><a href="lib.html#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb89-3"><a href="lib.html#cb89-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb89-4"><a href="lib.html#cb89-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;tidyr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:igraph&#39;:
+## 
+##     crossing</code></pre>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="lib.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb92-2"><a href="lib.html#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;purrr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     compose, simplify</code></pre>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="lib.html#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     discard</code></pre>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="lib.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 10年跨度 MeSH 关键词 期刊ES&amp;T</span></span>
+<span id="cb98-2"><a href="lib.html#cb98-2" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="st">&#39;&quot;mass spectrometry&quot;[MeSH Terms] AND 2010/01:2020/01[DP] AND 0013-936X[TA]&#39;</span></span>
+<span id="cb98-3"><a href="lib.html#cb98-3" aria-hidden="true" tabindex="-1"></a>tmdf <span class="ot">&lt;-</span> <span class="fu">getpubmed</span>(query, <span class="at">start =</span> <span class="dv">1</span>, <span class="at">end =</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb98-4"><a href="lib.html#cb98-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">getpubmedtbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb98-5"><a href="lib.html#cb98-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">time =</span> <span class="fu">as.POSIXct</span>(date, <span class="at">origin =</span> <span class="st">&quot;1970-01-01&quot;</span>),</span>
+<span id="cb98-6"><a href="lib.html#cb98-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">month =</span> <span class="fu">round_date</span>(date, <span class="st">&quot;month&quot;</span>))</span></code></pre></div>
 <pre><code>## 822 records founds</code></pre>
-<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="lib.html#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 摘要分词</span></span>
-<span id="cb74-2"><a href="lib.html#cb74-2" aria-hidden="true" tabindex="-1"></a>wordfabs <span class="ot">&lt;-</span> tmdf <span class="sc">%&gt;%</span></span>
-<span id="cb74-3"><a href="lib.html#cb74-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">nchar</span>(abstract) <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb74-4"><a href="lib.html#cb74-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unnest_tokens</span>(word, abstract,<span class="at">drop =</span> F) <span class="sc">%&gt;%</span></span>
-<span id="cb74-5"><a href="lib.html#cb74-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">anti_join</span>(stop_words) <span class="sc">%&gt;%</span></span>
-<span id="cb74-6"><a href="lib.html#cb74-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">str_detect</span>(word, <span class="st">&quot;[^</span><span class="sc">\\</span><span class="st">d]&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb74-7"><a href="lib.html#cb74-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(word, <span class="st">&quot;abs&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb74-8"><a href="lib.html#cb74-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(word) <span class="sc">%&gt;%</span></span>
-<span id="cb74-9"><a href="lib.html#cb74-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">word_total =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb74-10"><a href="lib.html#cb74-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb74-11"><a href="lib.html#cb74-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">source =</span> <span class="st">&#39;abstract&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="lib.html#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 摘要分词</span></span>
+<span id="cb100-2"><a href="lib.html#cb100-2" aria-hidden="true" tabindex="-1"></a>wordfabs <span class="ot">&lt;-</span> tmdf <span class="sc">%&gt;%</span></span>
+<span id="cb100-3"><a href="lib.html#cb100-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">nchar</span>(abstract) <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb100-4"><a href="lib.html#cb100-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unnest_tokens</span>(word, abstract,<span class="at">drop =</span> F) <span class="sc">%&gt;%</span></span>
+<span id="cb100-5"><a href="lib.html#cb100-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">anti_join</span>(stop_words) <span class="sc">%&gt;%</span></span>
+<span id="cb100-6"><a href="lib.html#cb100-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">str_detect</span>(word, <span class="st">&quot;[^</span><span class="sc">\\</span><span class="st">d]&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb100-7"><a href="lib.html#cb100-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(word, <span class="st">&quot;abs&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb100-8"><a href="lib.html#cb100-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(word) <span class="sc">%&gt;%</span></span>
+<span id="cb100-9"><a href="lib.html#cb100-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">word_total =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb100-10"><a href="lib.html#cb100-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb100-11"><a href="lib.html#cb100-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">source =</span> <span class="st">&#39;abstract&#39;</span>)</span></code></pre></div>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="lib.html#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化词频前20的关键词</span></span>
-<span id="cb76-2"><a href="lib.html#cb76-2" aria-hidden="true" tabindex="-1"></a>wordfabs <span class="sc">%&gt;%</span></span>
-<span id="cb76-3"><a href="lib.html#cb76-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">count</span>(word, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb76-4"><a href="lib.html#cb76-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">top_n</span>(<span class="dv">20</span>,n) <span class="sc">%&gt;%</span></span>
-<span id="cb76-5"><a href="lib.html#cb76-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, n)) <span class="sc">%&gt;%</span></span>
-<span id="cb76-6"><a href="lib.html#cb76-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, n)) <span class="sc">+</span></span>
-<span id="cb76-7"><a href="lib.html#cb76-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb76-8"><a href="lib.html#cb76-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;摘要中前20常见词&quot;</span>) <span class="sc">+</span></span>
-<span id="cb76-9"><a href="lib.html#cb76-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;词频&quot;</span>) <span class="sc">+</span></span>
-<span id="cb76-10"><a href="lib.html#cb76-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;词&quot;</span>) <span class="sc">+</span></span>
-<span id="cb76-11"><a href="lib.html#cb76-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="lib.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 可视化词频前20的关键词</span></span>
+<span id="cb102-2"><a href="lib.html#cb102-2" aria-hidden="true" tabindex="-1"></a>wordfabs <span class="sc">%&gt;%</span></span>
+<span id="cb102-3"><a href="lib.html#cb102-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">count</span>(word, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb102-4"><a href="lib.html#cb102-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">top_n</span>(<span class="dv">20</span>,n) <span class="sc">%&gt;%</span></span>
+<span id="cb102-5"><a href="lib.html#cb102-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, n)) <span class="sc">%&gt;%</span></span>
+<span id="cb102-6"><a href="lib.html#cb102-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ggplot</span>(<span class="fu">aes</span>(word, n)) <span class="sc">+</span></span>
+<span id="cb102-7"><a href="lib.html#cb102-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb102-8"><a href="lib.html#cb102-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;摘要中前20常见词&quot;</span>) <span class="sc">+</span></span>
+<span id="cb102-9"><a href="lib.html#cb102-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;词频&quot;</span>) <span class="sc">+</span></span>
+<span id="cb102-10"><a href="lib.html#cb102-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;词&quot;</span>) <span class="sc">+</span></span>
+<span id="cb102-11"><a href="lib.html#cb102-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
 <p>我们找到了822篇文献，从词频前20的结果看浓度、水、产物、方法、色谱、鉴定等词出现频率比较高。同时我们可以看下这10年关键词的变化趋势。</p>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="lib.html#cb77-1" aria-hidden="true" tabindex="-1"></a>papers_per_month <span class="ot">&lt;-</span> tmdf <span class="sc">%&gt;%</span></span>
-<span id="cb77-2"><a href="lib.html#cb77-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(month) <span class="sc">%&gt;%</span></span>
-<span id="cb77-3"><a href="lib.html#cb77-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">month_total =</span> <span class="fu">n</span>())</span>
-<span id="cb77-4"><a href="lib.html#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 摘要中关键词</span></span>
-<span id="cb77-5"><a href="lib.html#cb77-5" aria-hidden="true" tabindex="-1"></a>word_month_counts <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
-<span id="cb77-6"><a href="lib.html#cb77-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(word_total <span class="sc">&gt;=</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb77-7"><a href="lib.html#cb77-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, month) <span class="sc">%&gt;%</span></span>
-<span id="cb77-8"><a href="lib.html#cb77-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">complete</span>(word, month, <span class="at">fill =</span> <span class="fu">list</span>(<span class="at">n =</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb77-9"><a href="lib.html#cb77-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(papers_per_month, <span class="at">by =</span> <span class="st">&quot;month&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb77-10"><a href="lib.html#cb77-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> n <span class="sc">/</span> month_total) <span class="sc">%&gt;%</span></span>
-<span id="cb77-11"><a href="lib.html#cb77-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">year</span>(month) <span class="sc">+</span> <span class="fu">yday</span>(month) <span class="sc">/</span> <span class="dv">365</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb77-12"><a href="lib.html#cb77-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(percent<span class="sc">&lt;</span><span class="dv">1</span>)</span>
-<span id="cb77-13"><a href="lib.html#cb77-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 计数数据广义二项回归</span></span>
-<span id="cb77-14"><a href="lib.html#cb77-14" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="er">~</span> <span class="fu">glm</span>(<span class="fu">cbind</span>(n, month_total <span class="sc">-</span> n) <span class="sc">~</span> year, ., <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>)</span>
-<span id="cb77-15"><a href="lib.html#cb77-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算斜率</span></span>
-<span id="cb77-16"><a href="lib.html#cb77-16" aria-hidden="true" tabindex="-1"></a>slopes <span class="ot">&lt;-</span> word_month_counts <span class="sc">%&gt;%</span></span>
-<span id="cb77-17"><a href="lib.html#cb77-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span>(<span class="sc">-</span>word) <span class="sc">%&gt;%</span></span>
-<span id="cb77-18"><a href="lib.html#cb77-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, mod)) <span class="sc">%&gt;%</span></span>
-<span id="cb77-19"><a href="lib.html#cb77-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">models =</span> <span class="fu">map</span>(model,tidy)) <span class="sc">%&gt;%</span></span>
-<span id="cb77-20"><a href="lib.html#cb77-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(<span class="at">cols =</span> <span class="fu">c</span>(models)) <span class="sc">%&gt;%</span></span>
-<span id="cb77-21"><a href="lib.html#cb77-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;year&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb77-22"><a href="lib.html#cb77-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(estimate))</span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="lib.html#cb103-1" aria-hidden="true" tabindex="-1"></a>papers_per_month <span class="ot">&lt;-</span> tmdf <span class="sc">%&gt;%</span></span>
+<span id="cb103-2"><a href="lib.html#cb103-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(month) <span class="sc">%&gt;%</span></span>
+<span id="cb103-3"><a href="lib.html#cb103-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">month_total =</span> <span class="fu">n</span>())</span>
+<span id="cb103-4"><a href="lib.html#cb103-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 摘要中关键词</span></span>
+<span id="cb103-5"><a href="lib.html#cb103-5" aria-hidden="true" tabindex="-1"></a>word_month_counts <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
+<span id="cb103-6"><a href="lib.html#cb103-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(word_total <span class="sc">&gt;=</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb103-7"><a href="lib.html#cb103-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(word, month) <span class="sc">%&gt;%</span></span>
+<span id="cb103-8"><a href="lib.html#cb103-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">complete</span>(word, month, <span class="at">fill =</span> <span class="fu">list</span>(<span class="at">n =</span> <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb103-9"><a href="lib.html#cb103-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(papers_per_month, <span class="at">by =</span> <span class="st">&quot;month&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb103-10"><a href="lib.html#cb103-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> n <span class="sc">/</span> month_total) <span class="sc">%&gt;%</span></span>
+<span id="cb103-11"><a href="lib.html#cb103-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">year</span>(month) <span class="sc">+</span> <span class="fu">yday</span>(month) <span class="sc">/</span> <span class="dv">365</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb103-12"><a href="lib.html#cb103-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(percent<span class="sc">&lt;</span><span class="dv">1</span>)</span>
+<span id="cb103-13"><a href="lib.html#cb103-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 计数数据广义二项回归</span></span>
+<span id="cb103-14"><a href="lib.html#cb103-14" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="er">~</span> <span class="fu">glm</span>(<span class="fu">cbind</span>(n, month_total <span class="sc">-</span> n) <span class="sc">~</span> year, ., <span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>)</span>
+<span id="cb103-15"><a href="lib.html#cb103-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算斜率</span></span>
+<span id="cb103-16"><a href="lib.html#cb103-16" aria-hidden="true" tabindex="-1"></a>slopes <span class="ot">&lt;-</span> word_month_counts <span class="sc">%&gt;%</span></span>
+<span id="cb103-17"><a href="lib.html#cb103-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span>(<span class="sc">-</span>word) <span class="sc">%&gt;%</span></span>
+<span id="cb103-18"><a href="lib.html#cb103-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, mod)) <span class="sc">%&gt;%</span></span>
+<span id="cb103-19"><a href="lib.html#cb103-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">models =</span> <span class="fu">map</span>(model,tidy)) <span class="sc">%&gt;%</span></span>
+<span id="cb103-20"><a href="lib.html#cb103-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(<span class="at">cols =</span> <span class="fu">c</span>(models)) <span class="sc">%&gt;%</span></span>
+<span id="cb103-21"><a href="lib.html#cb103-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">&quot;year&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb103-22"><a href="lib.html#cb103-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(estimate))</span></code></pre></div>
 <pre><code>## Warning: All elements of `...` must be named.
-## Did you want `data = c(month, n, month_total, percent, year)`?</code></pre>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="lib.html#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 快速成长关键词</span></span>
-<span id="cb79-2"><a href="lib.html#cb79-2" aria-hidden="true" tabindex="-1"></a>slopes <span class="sc">%&gt;%</span></span>
-<span id="cb79-3"><a href="lib.html#cb79-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">9</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb79-4"><a href="lib.html#cb79-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(word_month_counts, <span class="at">by =</span> <span class="st">&quot;word&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb79-5"><a href="lib.html#cb79-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, <span class="sc">-</span>estimate)) <span class="sc">%&gt;%</span></span>
-<span id="cb79-6"><a href="lib.html#cb79-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(month, n <span class="sc">/</span> month_total, <span class="at">color =</span> word)) <span class="sc">+</span></span>
-<span id="cb79-7"><a href="lib.html#cb79-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb79-8"><a href="lib.html#cb79-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
-<span id="cb79-9"><a href="lib.html#cb79-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> word, <span class="at">scales =</span> <span class="st">&quot;free_y&quot;</span>) <span class="sc">+</span></span>
-<span id="cb79-10"><a href="lib.html#cb79-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb79-11"><a href="lib.html#cb79-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;年份&quot;</span>,</span>
-<span id="cb79-12"><a href="lib.html#cb79-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;摘要中含有该关键词的百分比&quot;</span>,</span>
-<span id="cb79-13"><a href="lib.html#cb79-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">&quot;增长率最快的9个词&quot;</span></span>
-<span id="cb79-14"><a href="lib.html#cb79-14" aria-hidden="true" tabindex="-1"></a>              )</span></code></pre></div>
+## Did you want `data = -word`?</code></pre>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="lib.html#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 快速成长关键词</span></span>
+<span id="cb105-2"><a href="lib.html#cb105-2" aria-hidden="true" tabindex="-1"></a>slopes <span class="sc">%&gt;%</span></span>
+<span id="cb105-3"><a href="lib.html#cb105-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">9</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb105-4"><a href="lib.html#cb105-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(word_month_counts, <span class="at">by =</span> <span class="st">&quot;word&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb105-5"><a href="lib.html#cb105-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, <span class="sc">-</span>estimate)) <span class="sc">%&gt;%</span></span>
+<span id="cb105-6"><a href="lib.html#cb105-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(month, n <span class="sc">/</span> month_total, <span class="at">color =</span> word)) <span class="sc">+</span></span>
+<span id="cb105-7"><a href="lib.html#cb105-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb105-8"><a href="lib.html#cb105-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb105-9"><a href="lib.html#cb105-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> word, <span class="at">scales =</span> <span class="st">&quot;free_y&quot;</span>) <span class="sc">+</span></span>
+<span id="cb105-10"><a href="lib.html#cb105-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb105-11"><a href="lib.html#cb105-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;年份&quot;</span>,</span>
+<span id="cb105-12"><a href="lib.html#cb105-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;摘要中含有该关键词的百分比&quot;</span>,</span>
+<span id="cb105-13"><a href="lib.html#cb105-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">&quot;增长率最快的9个词&quot;</span></span>
+<span id="cb105-14"><a href="lib.html#cb105-14" aria-hidden="true" tabindex="-1"></a>              )</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
 <p>这里我们看到分辨率跟液相色谱的使用词频在逐渐上升。那么相应的我们也可以看下那些关键词在衰退。</p>
-<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="lib.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 衰退关键词</span></span>
-<span id="cb80-2"><a href="lib.html#cb80-2" aria-hidden="true" tabindex="-1"></a>slopes <span class="sc">%&gt;%</span></span>
-<span id="cb80-3"><a href="lib.html#cb80-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(<span class="dv">9</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb80-4"><a href="lib.html#cb80-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(word_month_counts, <span class="at">by =</span> <span class="st">&quot;word&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb80-5"><a href="lib.html#cb80-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, estimate)) <span class="sc">%&gt;%</span></span>
-<span id="cb80-6"><a href="lib.html#cb80-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(month, n <span class="sc">/</span> month_total, <span class="at">color =</span> word)) <span class="sc">+</span></span>
-<span id="cb80-7"><a href="lib.html#cb80-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb80-8"><a href="lib.html#cb80-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
-<span id="cb80-9"><a href="lib.html#cb80-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> word, <span class="at">scales =</span> <span class="st">&quot;free_y&quot;</span>) <span class="sc">+</span></span>
-<span id="cb80-10"><a href="lib.html#cb80-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb80-11"><a href="lib.html#cb80-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;年份&quot;</span>,</span>
-<span id="cb80-12"><a href="lib.html#cb80-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;摘要中含有该关键词的百分比&quot;</span>,</span>
-<span id="cb80-13"><a href="lib.html#cb80-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">&quot;衰退最快的9个词&quot;</span></span>
-<span id="cb80-14"><a href="lib.html#cb80-14" aria-hidden="true" tabindex="-1"></a>              )</span></code></pre></div>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="lib.html#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 衰退关键词</span></span>
+<span id="cb106-2"><a href="lib.html#cb106-2" aria-hidden="true" tabindex="-1"></a>slopes <span class="sc">%&gt;%</span></span>
+<span id="cb106-3"><a href="lib.html#cb106-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(<span class="dv">9</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb106-4"><a href="lib.html#cb106-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(word_month_counts, <span class="at">by =</span> <span class="st">&quot;word&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb106-5"><a href="lib.html#cb106-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">word =</span> <span class="fu">reorder</span>(word, estimate)) <span class="sc">%&gt;%</span></span>
+<span id="cb106-6"><a href="lib.html#cb106-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(month, n <span class="sc">/</span> month_total, <span class="at">color =</span> word)) <span class="sc">+</span></span>
+<span id="cb106-7"><a href="lib.html#cb106-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb106-8"><a href="lib.html#cb106-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">percent_format</span>()) <span class="sc">+</span></span>
+<span id="cb106-9"><a href="lib.html#cb106-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> word, <span class="at">scales =</span> <span class="st">&quot;free_y&quot;</span>) <span class="sc">+</span></span>
+<span id="cb106-10"><a href="lib.html#cb106-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb106-11"><a href="lib.html#cb106-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;年份&quot;</span>,</span>
+<span id="cb106-12"><a href="lib.html#cb106-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;摘要中含有该关键词的百分比&quot;</span>,</span>
+<span id="cb106-13"><a href="lib.html#cb106-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">&quot;衰退最快的9个词&quot;</span></span>
+<span id="cb106-14"><a href="lib.html#cb106-14" aria-hidden="true" tabindex="-1"></a>              )</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
 <p>这里可以看到PAHs、砷、芳香族、酸等词在质谱相关的环境研究中逐渐减少。同时，我们也可以利用词频相关来研究关键词聚类情况。</p>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="lib.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(widyr)</span>
-<span id="cb81-2"><a href="lib.html#cb81-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(igraph)</span>
-<span id="cb81-3"><a href="lib.html#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggraph)</span>
-<span id="cb81-4"><a href="lib.html#cb81-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算两个词同时出现在摘要的频率，词频用边的宽度来表示</span></span>
-<span id="cb81-5"><a href="lib.html#cb81-5" aria-hidden="true" tabindex="-1"></a>word_pairs <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
-<span id="cb81-6"><a href="lib.html#cb81-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">pairwise_count</span>(word,line,<span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb81-7"><a href="lib.html#cb81-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb81-8"><a href="lib.html#cb81-8" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb81-9"><a href="lib.html#cb81-9" aria-hidden="true" tabindex="-1"></a>word_pairs <span class="sc">%&gt;%</span></span>
-<span id="cb81-10"><a href="lib.html#cb81-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;=</span> <span class="dv">150</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb81-11"><a href="lib.html#cb81-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">graph_from_data_frame</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb81-12"><a href="lib.html#cb81-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggraph</span>(<span class="at">layout =</span> <span class="st">&quot;fr&quot;</span>) <span class="sc">+</span></span>
-<span id="cb81-13"><a href="lib.html#cb81-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_edge_link</span>(<span class="fu">aes</span>(<span class="at">edge_alpha =</span> n, <span class="at">edge_width =</span> n), <span class="at">edge_colour =</span> <span class="st">&quot;cyan4&quot;</span>) <span class="sc">+</span></span>
-<span id="cb81-14"><a href="lib.html#cb81-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_node_point</span>(<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb81-15"><a href="lib.html#cb81-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_node_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> name), <span class="at">repel =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb81-16"><a href="lib.html#cb81-16" aria-hidden="true" tabindex="-1"></a>                 <span class="at">point.padding =</span> <span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">&quot;lines&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb81-17"><a href="lib.html#cb81-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;摘要中的词对（Bigrams）&quot;</span>) <span class="sc">+</span></span>
-<span id="cb81-18"><a href="lib.html#cb81-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="lib.html#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(widyr)</span>
+<span id="cb107-2"><a href="lib.html#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(igraph)</span>
+<span id="cb107-3"><a href="lib.html#cb107-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggraph)</span>
+<span id="cb107-4"><a href="lib.html#cb107-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算两个词同时出现在摘要的频率，词频用边的宽度来表示</span></span>
+<span id="cb107-5"><a href="lib.html#cb107-5" aria-hidden="true" tabindex="-1"></a>word_pairs <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
+<span id="cb107-6"><a href="lib.html#cb107-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">pairwise_count</span>(word,line,<span class="at">sort =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## Warning: `distinct_()` was deprecated in dplyr 0.7.0.
+## Please use `distinct()` instead.
+## See vignette(&#39;programming&#39;) for more help
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.</code></pre>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="lib.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb109-2"><a href="lib.html#cb109-2" aria-hidden="true" tabindex="-1"></a>word_pairs <span class="sc">%&gt;%</span></span>
+<span id="cb109-3"><a href="lib.html#cb109-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;=</span> <span class="dv">150</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb109-4"><a href="lib.html#cb109-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">graph_from_data_frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb109-5"><a href="lib.html#cb109-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggraph</span>(<span class="at">layout =</span> <span class="st">&quot;fr&quot;</span>) <span class="sc">+</span></span>
+<span id="cb109-6"><a href="lib.html#cb109-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_edge_link</span>(<span class="fu">aes</span>(<span class="at">edge_alpha =</span> n, <span class="at">edge_width =</span> n), <span class="at">edge_colour =</span> <span class="st">&quot;cyan4&quot;</span>) <span class="sc">+</span></span>
+<span id="cb109-7"><a href="lib.html#cb109-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_node_point</span>(<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb109-8"><a href="lib.html#cb109-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_node_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> name), <span class="at">repel =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb109-9"><a href="lib.html#cb109-9" aria-hidden="true" tabindex="-1"></a>                 <span class="at">point.padding =</span> <span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">&quot;lines&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb109-10"><a href="lib.html#cb109-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;摘要中的词对（Bigrams）&quot;</span>) <span class="sc">+</span></span>
+<span id="cb109-11"><a href="lib.html#cb109-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
 <p>这样我们就直接生成了质谱环境应用的关键词网络。当然，更直接的方法是用主题模型来寻找子领域，例如我们可以指定6个子领域输出其前10关键词。</p>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="lib.html#cb82-1" aria-hidden="true" tabindex="-1"></a>desc_dtm <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
-<span id="cb82-2"><a href="lib.html#cb82-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">count</span>(line, word, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb82-3"><a href="lib.html#cb82-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb82-4"><a href="lib.html#cb82-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cast_dtm</span>(line, word, n)</span>
-<span id="cb82-5"><a href="lib.html#cb82-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-6"><a href="lib.html#cb82-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(topicmodels)</span>
-<span id="cb82-7"><a href="lib.html#cb82-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 潜在狄利克雷分布模型寻找6个潜在的子领域</span></span>
-<span id="cb82-8"><a href="lib.html#cb82-8" aria-hidden="true" tabindex="-1"></a>desc_lda <span class="ot">&lt;-</span> <span class="fu">LDA</span>(desc_dtm, <span class="at">k =</span> <span class="dv">6</span>, <span class="at">control =</span> <span class="fu">list</span>(<span class="at">seed =</span> <span class="dv">42</span>))</span>
-<span id="cb82-9"><a href="lib.html#cb82-9" aria-hidden="true" tabindex="-1"></a>tidy_lda <span class="ot">&lt;-</span> <span class="fu">tidy</span>(desc_lda)</span>
-<span id="cb82-10"><a href="lib.html#cb82-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-11"><a href="lib.html#cb82-11" aria-hidden="true" tabindex="-1"></a>top_terms <span class="ot">&lt;-</span> tidy_lda <span class="sc">%&gt;%</span></span>
-<span id="cb82-12"><a href="lib.html#cb82-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(topic) <span class="sc">%&gt;%</span></span>
-<span id="cb82-13"><a href="lib.html#cb82-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">10</span>, beta) <span class="sc">%&gt;%</span></span>
-<span id="cb82-14"><a href="lib.html#cb82-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb82-15"><a href="lib.html#cb82-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(topic, <span class="sc">-</span>beta)</span>
-<span id="cb82-16"><a href="lib.html#cb82-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-17"><a href="lib.html#cb82-17" aria-hidden="true" tabindex="-1"></a>top_terms <span class="sc">%&gt;%</span></span>
-<span id="cb82-18"><a href="lib.html#cb82-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">term =</span> <span class="fu">reorder</span>(term, beta)) <span class="sc">%&gt;%</span></span>
-<span id="cb82-19"><a href="lib.html#cb82-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(topic, term) <span class="sc">%&gt;%</span>    </span>
-<span id="cb82-20"><a href="lib.html#cb82-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(beta)) <span class="sc">%&gt;%</span>  </span>
-<span id="cb82-21"><a href="lib.html#cb82-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb82-22"><a href="lib.html#cb82-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">term =</span> <span class="fu">factor</span>(<span class="fu">paste</span>(term, topic, <span class="at">sep =</span> <span class="st">&quot;__&quot;</span>), </span>
-<span id="cb82-23"><a href="lib.html#cb82-23" aria-hidden="true" tabindex="-1"></a>                       <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">paste</span>(term, topic, <span class="at">sep =</span> <span class="st">&quot;__&quot;</span>)))) <span class="sc">%&gt;%</span></span>
-<span id="cb82-24"><a href="lib.html#cb82-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(term, beta, <span class="at">fill =</span> <span class="fu">as.factor</span>(topic))) <span class="sc">+</span></span>
-<span id="cb82-25"><a href="lib.html#cb82-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb82-26"><a href="lib.html#cb82-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb82-27"><a href="lib.html#cb82-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">gsub</span>(<span class="st">&quot;__.+$&quot;</span>, <span class="st">&quot;&quot;</span>, x)) <span class="sc">+</span></span>
-<span id="cb82-28"><a href="lib.html#cb82-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;6个子领域主题的前10关键词&quot;</span>,</span>
-<span id="cb82-29"><a href="lib.html#cb82-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="fu">expression</span>(beta)) <span class="sc">+</span></span>
-<span id="cb82-30"><a href="lib.html#cb82-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> topic, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="lib.html#cb110-1" aria-hidden="true" tabindex="-1"></a>desc_dtm <span class="ot">&lt;-</span> wordfabs <span class="sc">%&gt;%</span></span>
+<span id="cb110-2"><a href="lib.html#cb110-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">count</span>(line, word, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb110-3"><a href="lib.html#cb110-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb110-4"><a href="lib.html#cb110-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cast_dtm</span>(line, word, n)</span>
+<span id="cb110-5"><a href="lib.html#cb110-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-6"><a href="lib.html#cb110-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(topicmodels)</span>
+<span id="cb110-7"><a href="lib.html#cb110-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 潜在狄利克雷分布模型寻找6个潜在的子领域</span></span>
+<span id="cb110-8"><a href="lib.html#cb110-8" aria-hidden="true" tabindex="-1"></a>desc_lda <span class="ot">&lt;-</span> <span class="fu">LDA</span>(desc_dtm, <span class="at">k =</span> <span class="dv">6</span>, <span class="at">control =</span> <span class="fu">list</span>(<span class="at">seed =</span> <span class="dv">42</span>))</span>
+<span id="cb110-9"><a href="lib.html#cb110-9" aria-hidden="true" tabindex="-1"></a>tidy_lda <span class="ot">&lt;-</span> <span class="fu">tidy</span>(desc_lda)</span>
+<span id="cb110-10"><a href="lib.html#cb110-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-11"><a href="lib.html#cb110-11" aria-hidden="true" tabindex="-1"></a>top_terms <span class="ot">&lt;-</span> tidy_lda <span class="sc">%&gt;%</span></span>
+<span id="cb110-12"><a href="lib.html#cb110-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(topic) <span class="sc">%&gt;%</span></span>
+<span id="cb110-13"><a href="lib.html#cb110-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">10</span>, beta) <span class="sc">%&gt;%</span></span>
+<span id="cb110-14"><a href="lib.html#cb110-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb110-15"><a href="lib.html#cb110-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(topic, <span class="sc">-</span>beta)</span>
+<span id="cb110-16"><a href="lib.html#cb110-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-17"><a href="lib.html#cb110-17" aria-hidden="true" tabindex="-1"></a>top_terms <span class="sc">%&gt;%</span></span>
+<span id="cb110-18"><a href="lib.html#cb110-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">term =</span> <span class="fu">reorder</span>(term, beta)) <span class="sc">%&gt;%</span></span>
+<span id="cb110-19"><a href="lib.html#cb110-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(topic, term) <span class="sc">%&gt;%</span>    </span>
+<span id="cb110-20"><a href="lib.html#cb110-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(beta)) <span class="sc">%&gt;%</span>  </span>
+<span id="cb110-21"><a href="lib.html#cb110-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb110-22"><a href="lib.html#cb110-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">term =</span> <span class="fu">factor</span>(<span class="fu">paste</span>(term, topic, <span class="at">sep =</span> <span class="st">&quot;__&quot;</span>), </span>
+<span id="cb110-23"><a href="lib.html#cb110-23" aria-hidden="true" tabindex="-1"></a>                       <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">paste</span>(term, topic, <span class="at">sep =</span> <span class="st">&quot;__&quot;</span>)))) <span class="sc">%&gt;%</span></span>
+<span id="cb110-24"><a href="lib.html#cb110-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(term, beta, <span class="at">fill =</span> <span class="fu">as.factor</span>(topic))) <span class="sc">+</span></span>
+<span id="cb110-25"><a href="lib.html#cb110-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb110-26"><a href="lib.html#cb110-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb110-27"><a href="lib.html#cb110-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">gsub</span>(<span class="st">&quot;__.+$&quot;</span>, <span class="st">&quot;&quot;</span>, x)) <span class="sc">+</span></span>
+<span id="cb110-28"><a href="lib.html#cb110-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;6个子领域主题的前10关键词&quot;</span>,</span>
+<span id="cb110-29"><a href="lib.html#cb110-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="fu">expression</span>(beta)) <span class="sc">+</span></span>
+<span id="cb110-30"><a href="lib.html#cb110-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> topic, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">&quot;free&quot;</span>)</span></code></pre></div>
 <p><img src="sciguide_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
 <p>主题模型会尝试将相关性高的词归为一个主题，这里我们大体可以推测出第一个主题是关于气相色谱物质鉴定的；第二个主题是关于水中天然溶解性有机物分析；第三个大概是水样灰尘样中污染物定量研究；第四个大概是土壤降解转化产物；第五个是气溶胶反应产物；第六个则是水样的分析方法研究。这样，通过文本挖掘我们就可以推测出一些通常需要阅读很多文献才能形成的学科发展趋势。</p>
 </div>
-<div id="作者" class="section level3" number="7.2.2">
-<h3><span class="header-section-number">7.2.2</span> 作者</h3>
+<div id="作者" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> 作者<a href="lib.html#作者" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>同样的，我们也可以研究某个作者的研究主题与变化趋势。下面是获取加拿大滑铁卢大学 Jaunsz Pawliszyn 教授的数据的代码，其数据分析部分与前一章节关键词相同。</p>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="lib.html#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 10年跨度</span></span>
-<span id="cb83-2"><a href="lib.html#cb83-2" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="st">&#39;janusz pawliszyn[AU] AND 2010/01:2020/01[DP]&#39;</span></span>
-<span id="cb83-3"><a href="lib.html#cb83-3" aria-hidden="true" tabindex="-1"></a>tmdf <span class="ot">&lt;-</span> <span class="fu">getpubmed</span>(query, <span class="at">start =</span> <span class="dv">1</span>, <span class="at">end =</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb83-4"><a href="lib.html#cb83-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">getpubmedtbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb83-5"><a href="lib.html#cb83-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">time =</span> <span class="fu">as.POSIXct</span>(date, <span class="at">origin =</span> <span class="st">&quot;1970-01-01&quot;</span>),</span>
-<span id="cb83-6"><a href="lib.html#cb83-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">month =</span> <span class="fu">round_date</span>(date, <span class="st">&quot;month&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="lib.html#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 10年跨度</span></span>
+<span id="cb111-2"><a href="lib.html#cb111-2" aria-hidden="true" tabindex="-1"></a>query <span class="ot">&lt;-</span> <span class="st">&#39;janusz pawliszyn[AU] AND 2010/01:2020/01[DP]&#39;</span></span>
+<span id="cb111-3"><a href="lib.html#cb111-3" aria-hidden="true" tabindex="-1"></a>tmdf <span class="ot">&lt;-</span> <span class="fu">getpubmed</span>(query, <span class="at">start =</span> <span class="dv">1</span>, <span class="at">end =</span> <span class="dv">10000</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb111-4"><a href="lib.html#cb111-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">getpubmedtbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb111-5"><a href="lib.html#cb111-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">time =</span> <span class="fu">as.POSIXct</span>(date, <span class="at">origin =</span> <span class="st">&quot;1970-01-01&quot;</span>),</span>
+<span id="cb111-6"><a href="lib.html#cb111-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">month =</span> <span class="fu">round_date</span>(date, <span class="st">&quot;month&quot;</span>))</span></code></pre></div>
 <pre><code>## 195 records founds</code></pre>
 <p>此外，我们用下面代码输出其发表学术期刊的偏好。</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="lib.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 给出发表数前10的期刊</span></span>
-<span id="cb85-2"><a href="lib.html#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(tmdf<span class="sc">$</span>journal)[<span class="fu">order</span>(<span class="fu">table</span>(tmdf<span class="sc">$</span>journal),<span class="at">decreasing =</span> T)][<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]   </span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="lib.html#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 给出发表数前10的期刊</span></span>
+<span id="cb113-2"><a href="lib.html#cb113-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(tmdf<span class="sc">$</span>journal)[<span class="fu">order</span>(<span class="fu">table</span>(tmdf<span class="sc">$</span>journal),<span class="at">decreasing =</span> T)][<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]   </span></code></pre></div>
 <pre><code>## 
 ##              Anal Chem         Anal Chim Acta         J Chromatogr A 
 ##                     44                     33                     32 
@@ -596,8 +634,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                      4</code></pre>
 </div>
 </div>
-<div id="全学科评价" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> 全学科评价</h2>
+<div id="全学科评价" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> 全学科评价<a href="lib.html#全学科评价" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>除了了解本学科知识，我们还要知道本学科在所有学科中的分量。虽然很多人批评文章数量不代表学科热度，但我觉得起码每篇论文都在解决一个科学问题，所以这里的比较就统一用文章数量。为了进一步简化评价，我们这里就用 PubMed 数据库的结果来说明，也就是说探索的是生物医药领域内不同研究领域的发展状况。方法也极为简单，就是关键词搜索。下面这个过程大家可以自行验证，其实用 Web of Science 更合理。</p>
 <p>首先要了解自己的信息处理能力。我自己追踪的学科内紧密相关研究一年发文量不超过 100，也就是一个周一两篇的样子。这个知识更新频率应该是比较符合科研人员个体信息处理能力的。如果你关注的领域非常热，发文量很高，那么大概率你也会自主把文献查新的量通过关键词叠加来缩小到一周一两篇，大概一季度甚至一年出现一篇小领域综述的状态。而且这个量我觉得对大多数科研人员还是超载了，很多研究人员的研究方向非常精细，一年内同行发文量个位数，全世界也就几个课题组在做。那么此时应适当眼界放宽些，否则你的研究会被视野限制住。</p>
 <p>当一个关键词年同行发文数量超过一百时，围绕这个关键词的全国性年会就会召开，也可能会拥有自己的专业期刊与学会，小型国际会议也可以组建了，例如纳米毒理学或持久性有机污染物。这个状态下的学科要么快速发展，要么快速衰退，全球相关课题组数量不会超过三位数，这类学科一年内如果频繁登上 CNS(Cell, Nature, Science)等综合性期刊，那么很可能进入指数增长期，但如果一年内一篇都没有，那消退也很快。如果低于这个量，那么关键词对应研究组可能还从属于某个大学科，属于大课题下的边缘课题，绝大多数退学的博士生都是挂在这类几乎看不到发展希望的项目上了。顺带一提，国内的杰青级评选的候选人至少要在国内是这个量级领域下的数一数二的人物，这样的领域整体看大概 1000 个左右。</p>
@@ -616,8 +654,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>这个应该就是大多数科研人员的天梯系统了，研究在D级，关注到C级的研究动态，参与B级领域的会议，蹭A级的热点，然后远远看下S级开心就好。通过这种简单但可能不靠谱的分析，科研人员应该可以实现一个对自己的清楚定位，然后合理规划自己的视野，防止见树木不见森林，也防止迷失在过大的森林里。上世纪科研界花费了大量精力去构建术语体系与专业学科的墙，这个世纪我们该尝试打破这些意义不大的墙去解决一些复杂而现实的问题了。</p>
 </div>
-<div id="荟萃分析" class="section level2" number="7.4">
-<h2><span class="header-section-number">7.4</span> 荟萃分析</h2>
+<div id="荟萃分析" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> 荟萃分析<a href="lib.html#荟萃分析" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>荟萃分析常用来对已发表的实验结果进行二次分析得到一个更全面的结论，常用于心理学、流行病学与经济学研究等。其应用场景通常是想回答一个被重复研究过的科学问题，例如某种疾病在不同人群中的风险比等。不过，不同实验精度不同、样本量不同、方差不同、效应也会不同，此时荟萃分析就可以用来汇总出一个关于结论的结论，本质上是一个层级模型。</p>
 <p>荟萃分析有两种基本模型，一种是固定效应模型，一种是随机效应模型。前者只有确认不同研究都针对同一群体时才适合用，然而绝大多数情况下不同研究的群体是不一样的，因此实际使用中随机效应模型用的更多，因为其考虑了不同研究自身的随机性。</p>
 <p>固定效应模型对总效应的估计是基于对不同研究方差的倒数加权来计算的，也就是说研究的标准误越高，其对总效应的贡献就越小，具体公式是：</p>

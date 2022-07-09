@@ -47,28 +47,13 @@ jobs:
         with:
           commit-message: '[Auto] update github online book preview'
           remote: origin  
-      - name: Build site
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
-      - uses: actions/upload-artifact@v1
-        with:
-          name: docs
-          path: docs
-  checkout-and-deploy:  
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Download artifact
-        uses: actions/download-artifact@v1.0.0
-        with:
-          name: docs
-          path: docs
-      - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@v3
+      - name: Deploy book to bookdown.org
+        if: github.event_name == 'push'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          email: yufree@live.cn
-          build_dir: docs
-      
+          CONNECT_API_KEY: ${{ secrets.RSC_BOOKDOWN_ORG_TOKEN }}
+          CONTENT_ID: 647
+        run: |
+          rsconnect::addConnectServer("https://bookdown.org", "bookdown.org")
+          rsconnect::connectApiUser(account = "yufree", server = "bookdown.org", apiKey = Sys.getenv("CONNECT_API_KEY"))
+          rsconnect::deploySite(appId = Sys.getenv("CONTENT_ID"), server = "bookdown.org", render = "none", logLevel = "verbose", forceUpdate = TRUE)
+        shell: Rscript {0}

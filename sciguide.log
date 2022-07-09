@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 MAR 2022 12:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 APR 2022 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,24 +1185,24 @@ Package fontspec Info: Font family 'STFangsong(0)' created for font
 pping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+LaTeX Font Info:    Font shape `TU/STFangsong(0)/m/n' will be
+(Font)              scaled to size 10.23074pt on input line 322.
 
 LaTeX Font Warning: Font shape `TU/STFangsong(0)/m/it' undefined
-(Font)              using `TU/STFangsong(0)/m/n' instead on input line 320.
+(Font)              using `TU/STFangsong(0)/m/n' instead on input line 333.
 
-LaTeX Font Info:    Font shape `TU/STFangsong(0)/m/n' will be
-(Font)              scaled to size 10.23074pt on input line 320.
 File: sciguide_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-3-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 332.
+This message occurred on input line 344.
 
 [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1210,21 +1210,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 335.
+This message occurred on input line 348.
 
 [25]
 File: sciguide_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-4-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 354.
+This message occurred on input line 367.
 
 [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1232,7 +1232,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 362.
+This message occurred on input line 373.
 
 [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1240,7 +1240,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 368.
+This message occurred on input line 381.
 
 [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1248,13 +1248,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 374.
+This message occurred on input line 387.
 
 [29]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 383.
+This message occurred on input line 396.
 
 [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1262,20 +1262,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 391.
+This message occurred on input line 402.
 
 [31]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 409.
+This message occurred on input line 416.
 
 [32]
 File: sciguide_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-5-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
@@ -1283,66 +1283,66 @@ File: sciguide_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-6-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 433.
+This message occurred on input line 448.
 
 [33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4254) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 441.
+This message occurred on input line 452.
 
 [34]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 464.
+This message occurred on input line 472.
 
 [35]
 File: sciguide_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-7-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--469
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 487.
+This message occurred on input line 495.
 
 [36]
 File: sciguide_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use sciguide_files/figure-latex/unnamed-chunk-8-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 512.
+This message occurred on input line 518.
 
 [37]
-Overfull \hbox (102.73657pt too wide) in alignment at lines 526--546
+Overfull \hbox (102.73657pt too wide) in alignment at lines 539--559
  [] [] [] [] [] 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 549.
+This message occurred on input line 562.
 
 [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1350,13 +1350,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 557.
+This message occurred on input line 569.
 
 [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 570.
+This message occurred on input line 583.
 
 [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1364,13 +1366,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 578.
+This message occurred on input line 589.
 
 [41]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 592.
+This message occurred on input line 603.
 
 [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1378,7 +1380,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 603.
+This message occurred on input line 614.
 
 [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1386,7 +1388,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 609.
+This message occurred on input line 620.
 
 [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1394,7 +1396,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 615.
+This message occurred on input line 628.
 
 [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1402,7 +1404,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 623.
+This message occurred on input line 634.
 
 [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1410,79 +1412,77 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 629.
+This message occurred on input line 640.
 
 [47]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 650.
+This message occurred on input line 655.
 
 [48]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.53937> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 665.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 678.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 691.
+This message occurred on input line 696.
 
 [49]
 File: sciguide_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-10-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 719.
+This message occurred on input line 723.
 
 [50]
 File: sciguide_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-11-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
  []
 
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 755.
+
+[51]
 File: sciguide_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-12-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--753
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 756.
-
-[51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 767.
+This message occurred on input line 774.
 
 [52]
 File: sciguide_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-13-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--770
+Underfull \hbox (badness 10000) in paragraph at lines 782--783
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 773.
+This message occurred on input line 786.
 
 [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1490,15 +1490,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 782.
+This message occurred on input line 790.
 
 [54]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 793.
-
-[55]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
@@ -1506,19 +1500,25 @@ Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
 This message occurred on input line 806.
 
+[55]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 819.
+
 [56]
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 817.
+This message occurred on input line 829.
 
 [57]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 872.
+This message occurred on input line 877.
 
 [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1526,7 +1526,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 946.
+This message occurred on input line 951.
 
 [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1534,13 +1534,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1018.
+This message occurred on input line 1023.
 
 [60]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1030.
+This message occurred on input line 1043.
 
 [61] [62
 
@@ -1550,13 +1550,13 @@ Chapter 4.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1056.
+This message occurred on input line 1069.
 
 [64]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1065.
+This message occurred on input line 1078.
 
 [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1564,7 +1564,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1076.
+This message occurred on input line 1089.
 
 [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1572,13 +1572,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1087.
+This message occurred on input line 1100.
 
 [67]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1095.
+This message occurred on input line 1108.
 
 [68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1586,7 +1586,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1108.
+This message occurred on input line 1121.
 
 [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1594,7 +1594,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1122.
+This message occurred on input line 1135.
 
 [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1602,57 +1602,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1132.
+This message occurred on input line 1145.
 
 [71]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1146.
+This message occurred on input line 1159.
 
 [72]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1159.
+This message occurred on input line 1172.
 
 [73]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1169.
+This message occurred on input line 1182.
 
 [74]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1200.
+This message occurred on input line 1213.
 
 [75]
 File: sciguide_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-14-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1240
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1243.
+This message occurred on input line 1256.
 
 [76]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1250.
+This message occurred on input line 1263.
 
 [77]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1270.
+This message occurred on input line 1283.
 
 [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1660,7 +1660,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1280.
+This message occurred on input line 1293.
 
 [79]
 Missing character: There is no 遗 (U+9057) in font [lmroman10-regular]:mapping=t
@@ -1677,7 +1677,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1296.
+This message occurred on input line 1309.
 
 [80]
 Missing character: There is no 吸 (U+5438) in font [lmroman10-regular]:mapping=t
@@ -1733,46 +1733,49 @@ ex-text;!
 Missing character: There is no 率 (U+7387) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1311.
-
-[81]
-Overfull \hbox (205.21208pt too wide) in paragraph at lines 1328--1336
+Overfull \hbox (205.21208pt too wide) in paragraph at lines 1324--1332
  [][] 
  []
 
 
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 1345.
-
-[82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1357.
+This message occurred on input line 1335.
 
-[83]
-File: data/gerrymandering.png Graphic file (type bmp)
-<data/gerrymandering.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1360
-
- []
-
-
-Underfull \vbox (badness 2941) has occurred while \output is active []
+[81]
+Underfull \vbox (badness 2409) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1367.
+This message occurred on input line 1346.
+
+[82]
+File: data/gerrymandering.png Graphic file (type bmp)
+<data/gerrymandering.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1359.
+
+[83]
+Underfull \vbox (badness 7796) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 1371.
 
 [84]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1780,13 +1783,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1379.
+This message occurred on input line 1377.
 
 [85]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1390.
+This message occurred on input line 1389.
 
 [86]
 
@@ -1795,12 +1798,10 @@ Class tufte-book Warning: Proper spacing of small-caps letters has not been set
 This message occurred on input line 1404.
 
 [87]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1414.
+This message occurred on input line 1421.
 
 [88]
 
@@ -1809,18 +1810,22 @@ Class tufte-book Warning: Proper spacing of small-caps letters has not been set
 This message occurred on input line 1437.
 
 [89]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1445.
+This message occurred on input line 1447.
 
 [90]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1458.
+This message occurred on input line 1461.
 
 [91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
@@ -1830,7 +1835,7 @@ This message occurred on input line 1467.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1488.
+This message occurred on input line 1498.
 
 [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1838,7 +1843,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1525.
+This message occurred on input line 1535.
 
 [94]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1846,31 +1851,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1562.
+This message occurred on input line 1572.
 
 [95]
 File: sciguide_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-17-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1601--1602
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1598
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1605.
+This message occurred on input line 1601.
 
 [96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1611.
+This message occurred on input line 1614.
 
 [97]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
@@ -1888,7 +1893,7 @@ This message occurred on input line 1637.
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1645.
+This message occurred on input line 1641.
 
 [100]
 Chapter 5.
@@ -1903,7 +1908,7 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1677.
+This message occurred on input line 1673.
 
 [102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1911,7 +1916,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1685.
+This message occurred on input line 1681.
 
 [103]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1919,13 +1924,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1693.
+This message occurred on input line 1689.
 
 [104]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1709.
+This message occurred on input line 1705.
 
 [105]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -1933,7 +1938,7 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1720.
+This message occurred on input line 1716.
 
 [106]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -1941,7 +1946,7 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1733.
+This message occurred on input line 1729.
 
 [107]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -1949,7 +1954,7 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1743.
+This message occurred on input line 1739.
 
 [108]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -1957,24 +1962,24 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1757.
+This message occurred on input line 1753.
 
 [109]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1787.
+This message occurred on input line 1783.
 
 [110]
 File: sciguide_files/figure-latex/pba-1.pdf Graphic file (type pdf)
 <use sciguide_files/figure-latex/pba-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 1802--1803
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 1798--1799
 [][]  
  []
 
 
-Overfull \hbox (58.72232pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (58.72232pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
  = formula))[] 
  []
@@ -1982,34 +1987,34 @@ Overfull \hbox (58.72232pt too wide) in paragraph at lines 1842--1842
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1842.
+This message occurred on input line 1838.
 
 [111]
-Overfull \hbox (141.72012pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (141.72012pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ##       1       2       3       4       5       6     
   7       8       9      10[] 
  []
 
 
-Overfull \hbox (141.71983pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (141.71983pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ##  0.1667 -0.1667 -0.1667 -2.0000  2.0000 -0.1667  0.1
 667 -2.0000  2.0000 -2.0000[] 
  []
 
 
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
  0.1 ' ' 1[] 
  []
 
 
-Overfull \hbox (3.39063pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (3.39063pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ## Residual standard error: 3.476 on 2 degrees of freed
 om[] 
  []
 
 
-Overfull \hbox (19.99013pt too wide) in paragraph at lines 1842--1842
+Overfull \hbox (19.99013pt too wide) in paragraph at lines 1838--1838
 []\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.6938, Adjusted R-squared:  -0
 .6843[] 
  []
@@ -2017,7 +2022,7 @@ Overfull \hbox (19.99013pt too wide) in paragraph at lines 1842--1842
 File: sciguide_files/figure-latex/pba-2.pdf Graphic file (type pdf)
 <use sciguide_files/figure-latex/pba-2.pdf>
 
-Overfull \hbox (11.99786pt too wide) in paragraph at lines 1854--1855
+Overfull \hbox (11.99786pt too wide) in paragraph at lines 1850--1851
 [][]  
  []
 
@@ -2027,159 +2032,178 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1856.
+This message occurred on input line 1852.
 
 [112]
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ##                name nruns lineage   GR GRind regular
- SCones    A3    A4   A5    A6[] 
+ SCones    A3    A4   A5[] 
  []
 
 
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ## 78 L36.2.13.3.2.6.1    36         3.00  3.00   FALSE
-      6  45.3 158.4  426  1010[] 
+      6  45.3 158.4  426[] 
  []
 
 
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ## 81 L36.2.10.3.8.6.1    36         3.18  3.18   FALSE
-      0 130.3 737.2 3063 11096[] 
+      0 130.3 737.2 3063[] 
  []
 
 
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ## 83  L36.2.9.3.4.6.2    36         3.00  3.00   FALSE
-     17  82.3 338.2 1025  2828[] 
+     17  82.3 338.2 1025[] 
  []
 
 
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ## 87  L36.2.3.3.9.6.1    36         3.18  3.00   FALSE
-     12  73.8 300.2  912  2404[] 
+     12  73.8 300.2  912[] 
  []
 
 
-Overfull \hbox (158.31944pt too wide) in paragraph at lines 1883--1883
+Overfull \hbox (125.12042pt too wide) in paragraph at lines 1879--1879
 []\TU/lmtt/m/n/10.53937 ## 88  L36.2.3.3.2.6.3    36         3.00  3.00   FALSE
-     37  35.6  73.1  120   125[] 
+     37  35.6  73.1  120[] 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1883.
+This message occurred on input line 1879.
 
 [113]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1941.
+This message occurred on input line 1937.
 
 [114]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 1963.
+This message occurred on input line 1959.
 
 [115]
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 1963--1963
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 1959--1959
 []\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
  0.1 ' ' 1[] 
  []
 
 
-Overfull \hbox (152.78616pt too wide) in paragraph at lines 1973--1973
+Overfull \hbox (91.92131pt too wide) in paragraph at lines 1970--1970
 []\TU/lmtt/m/n/10.53937 ## Warning in summary.lm(object): essentially perfect f
-it: summary may be unreliable[] 
+it: summary may be[] 
  []
 
 
-Overfull \hbox (58.72232pt too wide) in paragraph at lines 2002--2002
+Overfull \hbox (58.72232pt too wide) in paragraph at lines 1999--1999
 []\TU/lmtt/m/n/10.53937 ## lm.default(formula = fo, data = model.frame(fo, data
  = formula))[] 
  []
 
 
-Overfull \hbox (3.39073pt too wide) in paragraph at lines 2002--2002
+Overfull \hbox (3.39073pt too wide) in paragraph at lines 1999--1999
 []\TU/lmtt/m/n/10.53937 ##        Min         1Q     Median         3Q        M
 ax[] 
  []
 
 
-Overfull \hbox (3.3906pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## -2.363e-13 -5.872e-15  1.022e-15  2.142e-14  5.624e-
+Overfull \hbox (3.3906pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## -1.214e-13 -7.130e-15  5.948e-15  1.444e-14  4.553e-
 14[] 
  []
 
 
-Overfull \hbox (19.99011pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## (Intercept)  2.400e+02  8.450e-15  2.840e+16   <2e-1
+Overfull \hbox (19.99011pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## (Intercept)  2.400e+02  5.284e-15  4.542e+16  < 2e-1
 6 ***[] 
  []
 
 
-Overfull \hbox (19.99014pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## B.L          2.828e+01  1.464e-14  1.933e+15   <2e-1
+Overfull \hbox (8.92381pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## A.L          2.210e-14  9.152e-15  2.414e+00  0.0223
+0 *[] 
+ []
+
+
+Overfull \hbox (8.92381pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## A.Q         -2.089e-14  9.152e-15 -2.282e+00  0.0300
+1 *[] 
+ []
+
+
+Overfull \hbox (19.99014pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## B.L          2.828e+01  9.152e-15  3.091e+15  < 2e-1
 6 ***[] 
  []
 
 
-Overfull \hbox (19.99014pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## C.L          1.414e+02  1.464e-14  9.663e+15   <2e-1
+Overfull \hbox (19.99014pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## C.L          1.414e+02  9.152e-15  1.545e+16  < 2e-1
 6 ***[] 
  []
 
 
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 2002--2002
+Overfull \hbox (14.45697pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## C.Q          3.119e-14  9.152e-15  3.408e+00  0.0019
+4 **[] 
+ []
+
+
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 1999--1999
 []\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
  0.1 ' ' 1[] 
  []
 
 
-Overfull \hbox (25.52328pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 5.07e-14 on 29 degrees of f
+Overfull \hbox (25.52328pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## Residual standard error: 3.17e-14 on 29 degrees of f
 reedom[] 
  []
 
 
-Overfull \hbox (8.92384pt too wide) in paragraph at lines 2002--2002
+Overfull \hbox (8.92384pt too wide) in paragraph at lines 1999--1999
 []\TU/lmtt/m/n/10.53937 ## Multiple R-squared:      1,  Adjusted R-squared:    
   1[] 
  []
 
 
-Overfull \hbox (25.5233pt too wide) in paragraph at lines 2002--2002
-[]\TU/lmtt/m/n/10.53937 ## F-statistic: 1.618e+31 on 6 and 29 DF,  p-value: < 2
+Overfull \hbox (25.5233pt too wide) in paragraph at lines 1999--1999
+[]\TU/lmtt/m/n/10.53937 ## F-statistic: 4.139e+31 on 6 and 29 DF,  p-value: < 2
 .2e-16[] 
  []
 
 
-Overfull \hbox (185.9852pt too wide) in paragraph at lines 2012--2012
+Overfull \hbox (185.9852pt too wide) in paragraph at lines 2009--2009
 []\TU/lmtt/m/n/10.53937 ## The first four factors were selected. Use argument s
 elect for choosing what is plotted.[] 
- []
-
-File: sciguide_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf
-)
-<use sciguide_files/figure-latex/unnamed-chunk-20-1.pdf>
-
-Overfull \hbox (12.0201pt too wide) in paragraph at lines 2014--2015
-[][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2016.
+This message occurred on input line 2009.
 
 [116]
+File: sciguide_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf
+)
+<use sciguide_files/figure-latex/unnamed-chunk-20-1.pdf>
+
+Overfull \hbox (12.0201pt too wide) in paragraph at lines 2011--2012
+[][]  
+ []
+
+
 Underfull \vbox (badness 3386) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2023.
+This message occurred on input line 2020.
 
 [117]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -2187,13 +2211,13 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2034.
+This message occurred on input line 2031.
 
 [118]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2042.
+This message occurred on input line 2039.
 
 [119] [120
 
@@ -2205,14 +2229,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2078.
+This message occurred on input line 2075.
 
 [122]
 File: sciguide_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-21-1.pdf>
 
-Overfull \hbox (12.00026pt too wide) in paragraph at lines 2090--2091
+Overfull \hbox (12.00026pt too wide) in paragraph at lines 2087--2088
 [][]  
  []
 
@@ -2220,7 +2244,7 @@ File: sciguide_files/figure-latex/unnamed-chunk-21-2.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-21-2.pdf>
 
-Overfull \hbox (12.0243pt too wide) in paragraph at lines 2099--2100
+Overfull \hbox (12.0243pt too wide) in paragraph at lines 2096--2097
 [][]  
  []
 
@@ -2228,7 +2252,7 @@ File: sciguide_files/figure-latex/unnamed-chunk-21-3.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-21-3.pdf>
 
-Overfull \hbox (12.0243pt too wide) in paragraph at lines 2109--2110
+Overfull \hbox (12.0243pt too wide) in paragraph at lines 2106--2107
 [][]  
  []
 
@@ -2238,24 +2262,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2112.
+This message occurred on input line 2109.
 
 [123]
+Overfull \hbox (3.3906pt too wide) in paragraph at lines 2130--2130
+[]\TU/lmtt/m/n/10.53937 ## The following objects are masked from 'package:stats
+':[] 
+ []
+
+
+Overfull \hbox (102.98766pt too wide) in paragraph at lines 2162--2162
+[]\TU/lmtt/m/n/10.53937 ## Warning: ggrepel: 20 unlabeled data points (too many
+ overlaps). Consider[] 
+ []
+
 File: sciguide_files/figure-latex/unnamed-chunk-21-4.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-21-4.pdf>
 
-Overfull \hbox (12.01389pt too wide) in paragraph at lines 2126--2127
+Overfull \hbox (12.02031pt too wide) in paragraph at lines 2164--2165
 [][]  
  []
 
 
-Underfull \vbox (badness 7256) has occurred while \output is active []
-
-
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2134.
+This message occurred on input line 2166.
 
 [124]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2263,7 +2295,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2157.
+This message occurred on input line 2185.
 
 [125]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2271,18 +2303,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2165.
+This message occurred on input line 2200.
 
 [126]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 2173.
+(amsmath)                 on input line 2211.
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2180.
+This message occurred on input line 2213.
 
 [127]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2290,55 +2322,55 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2188.
+This message occurred on input line 2224.
 
 [128]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2242.
+
+[129]
 File: sciguide_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-22-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2213--2214
+Underfull \hbox (badness 10000) in paragraph at lines 2251--2252
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2241.
+This message occurred on input line 2289.
 
-[129]
+[130]
 File: sciguide_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-23-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2262
+Underfull \hbox (badness 10000) in paragraph at lines 2299--2300
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2284.
-
-[130]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2311.
+This message occurred on input line 2332.
 
 [131]
 File: sciguide_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-24-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2317--2318
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2356
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2348.
+This message occurred on input line 2373.
 
 [132]
 Missing character: There is no 至 (U+81F3) in font [lmroman10-regular]:mapping=t
@@ -2363,20 +2395,20 @@ Missing character: There is no 差 (U+5DEE) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 异 (U+5F02) in font [lmroman10-regular]:mapping=t
 ex-text;!
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2412.
+
+[133]
 File: sciguide_files/figure-latex/unnamed-chunk-25-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-25-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2380--2381
+Underfull \hbox (badness 10000) in paragraph at lines 2418--2419
 
  []
 
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2386.
-
-[133]
 Missing character: There is no 至 (U+81F3) in font [lmroman10-regular]:mapping=t
 ex-text;!
 Missing character: There is no 少 (U+5C11) in font [lmroman10-regular]:mapping=t
@@ -2402,119 +2434,117 @@ ex-text;!
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2425.
+This message occurred on input line 2433.
 
 [134]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2488.
+This message occurred on input line 2510.
 
 [135]
 File: sciguide_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-28-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2502--2503
+Underfull \hbox (badness 10000) in paragraph at lines 2540--2541
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2509.
+This message occurred on input line 2546.
 
 [136]
 File: sciguide_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-29-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2529--2530
+Underfull \hbox (badness 10000) in paragraph at lines 2567--2568
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2529--2530
+Underfull \hbox (badness 10000) in paragraph at lines 2567--2568
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2543.
+This message occurred on input line 2568.
 
 [137]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2601.
+
+[138]
 File: sciguide_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-30-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2570--2571
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2609
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2581.
-
-[138]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2589.
+This message occurred on input line 2621.
 
 [139]
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 2625--2625
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2663.
+
+[140]
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 2663--2663
 []\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
  0.1 ' ' 1[] 
  []
 
 
-Overfull \hbox (8.92378pt too wide) in paragraph at lines 2625--2625
+Overfull \hbox (8.92378pt too wide) in paragraph at lines 2663--2663
 []\TU/lmtt/m/n/10.53937 ## Residual standard error: 2.339 on 98 degrees of free
 dom[] 
  []
 
 
-Overfull \hbox (14.45695pt too wide) in paragraph at lines 2625--2625
+Overfull \hbox (14.45695pt too wide) in paragraph at lines 2663--2663
 []\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.9638, Adjusted R-squared:  0.
 9634[] 
  []
 
 
-Overfull \hbox (3.39064pt too wide) in paragraph at lines 2625--2625
+Overfull \hbox (3.39064pt too wide) in paragraph at lines 2663--2663
 []\TU/lmtt/m/n/10.53937 ## F-statistic:  2606 on 1 and 98 DF,  p-value: < 2.2e-
 16[] 
  []
 
 
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2654.
-
-[140]
-Overfull \hbox (47.65602pt too wide) in paragraph at lines 2654--2654
+Overfull \hbox (47.65602pt too wide) in paragraph at lines 2692--2692
 []\TU/lmtt/m/n/10.53937 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.'
  0.1 ' ' 1[] 
  []
 
 
-Overfull \hbox (14.45694pt too wide) in paragraph at lines 2654--2654
+Overfull \hbox (14.45694pt too wide) in paragraph at lines 2692--2692
 []\TU/lmtt/m/n/10.53937 ## Residual standard error: 0.9716 on 96 degrees of fre
 edom[] 
  []
 
 
-Overfull \hbox (14.45695pt too wide) in paragraph at lines 2654--2654
+Overfull \hbox (14.45695pt too wide) in paragraph at lines 2692--2692
 []\TU/lmtt/m/n/10.53937 ## Multiple R-squared:  0.9939, Adjusted R-squared:  0.
 9937[] 
  []
 
 
-Overfull \hbox (3.39064pt too wide) in paragraph at lines 2654--2654
+Overfull \hbox (3.39064pt too wide) in paragraph at lines 2692--2692
 []\TU/lmtt/m/n/10.53937 ## F-statistic:  5194 on 3 and 96 DF,  p-value: < 2.2e-
 16[] 
  []
@@ -2522,7 +2552,7 @@ Overfull \hbox (3.39064pt too wide) in paragraph at lines 2654--2654
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2660.
+This message occurred on input line 2697.
 
 [141]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2530,7 +2560,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2669.
+This message occurred on input line 2703.
 
 [142]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2538,7 +2568,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2677.
+This message occurred on input line 2712.
 
 [143]
 Underfull \vbox (badness 1546) has occurred while \output is active []
@@ -2546,53 +2576,56 @@ Underfull \vbox (badness 1546) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2688.
+This message occurred on input line 2722.
 
 [144]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2702.
+This message occurred on input line 2736.
 
 [145]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2723.
+This message occurred on input line 2752.
 
 [146]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2731.
+This message occurred on input line 2765.
 
 [147]
 File: data/PCA.png Graphic file (type bmp)
 <data/PCA.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2735--2736
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2735--2736
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
 
  []
 
 
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 2739.
-
-[148]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2751.
+This message occurred on input line 2777.
+
+[148]
+Underfull \vbox (badness 3536) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2787.
 
 [149]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2600,48 +2633,84 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2759.
+This message occurred on input line 2793.
 
 [150]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2763.
+This message occurred on input line 2799.
 
-[151] [152
+[151]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2801.
+
+[152]
+Chapter 7.
+[153
 
 ]
-Chapter 7.
-[153]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2787.
+This message occurred on input line 2825.
 
 [154]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2796.
+This message occurred on input line 2834.
 
 [155]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2819.
+This message occurred on input line 2857.
 
 [156]
+Overfull \hbox (8.92377pt too wide) in paragraph at lines 2884--2884
+[]\TU/lmtt/m/n/10.53937 ## The following objects are masked from 'package:igrap
+h':[] 
+ []
+
+
+Overfull \hbox (8.92377pt too wide) in paragraph at lines 2907--2907
+[]\TU/lmtt/m/n/10.53937 ## The following objects are masked from 'package:igrap
+h':[] 
+ []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2848.
+This message occurred on input line 2907.
 
 [157]
+Overfull \hbox (3.3906pt too wide) in paragraph at lines 2913--2913
+[]\TU/lmtt/m/n/10.53937 ## The following objects are masked from 'package:stats
+':[] 
+ []
+
+
+Overfull \hbox (8.92377pt too wide) in paragraph at lines 2957--2957
+[]\TU/lmtt/m/n/10.53937 ## The following objects are masked from 'package:igrap
+h':[] 
+ []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 2983.
+
+[158]
 File: sciguide_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-34-1.pdf>
 
-Overfull \hbox (12.01303pt too wide) in paragraph at lines 2891--2892
+Overfull \hbox (12.01303pt too wide) in paragraph at lines 3027--3028
 [][]  
  []
 
@@ -2651,107 +2720,108 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2893.
+This message occurred on input line 3029.
 
-[158]
+[159]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2925.
+This message occurred on input line 3061.
 
-[159]
-Overfull \hbox (47.656pt too wide) in paragraph at lines 2925--2925
-[]\TU/lmtt/m/n/10.53937 ## Did you want `data = c(month, n, month_total, percen
-t, year)`?[] 
- []
-
+[160]
 File: sciguide_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-35-1.pdf>
 
-Overfull \hbox (11.99786pt too wide) in paragraph at lines 2946--2947
+Overfull \hbox (11.99786pt too wide) in paragraph at lines 3082--3083
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2961.
+This message occurred on input line 3097.
 
-[160]
+[161]
 File: sciguide_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-36-1.pdf>
 
-Overfull \hbox (11.99786pt too wide) in paragraph at lines 2969--2970
+Overfull \hbox (11.99786pt too wide) in paragraph at lines 3105--3106
 [][]  
+ []
+
+
+Overfull \hbox (169.38567pt too wide) in paragraph at lines 3126--3126
+[]\TU/lmtt/m/n/10.53937 ## Call `lifecycle::last_lifecycle_warnings()` to see w
+here this warning was generated.[] 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 2993.
+This message occurred on input line 3137.
 
-[161]
+[162]
 File: sciguide_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-37-1.pdf>
 
-Overfull \hbox (12.01646pt too wide) in paragraph at lines 2996--2997
+Overfull \hbox (12.01646pt too wide) in paragraph at lines 3144--3145
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3024.
+This message occurred on input line 3167.
 
-[162]
+[163]
 File: sciguide_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file (type pdf
 )
 <use sciguide_files/figure-latex/unnamed-chunk-38-1.pdf>
 
-Overfull \hbox (12.03053pt too wide) in paragraph at lines 3035--3036
+Overfull \hbox (12.03053pt too wide) in paragraph at lines 3183--3184
 [][]  
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3052.
+This message occurred on input line 3193.
 
-[163]
-Overfull \hbox (80.85512pt too wide) in paragraph at lines 3078--3078
+[164]
+Overfull \hbox (80.85512pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ##              Anal Chem         Anal Chim Acta       
   J Chromatogr A[] 
  []
 
 
-Overfull \hbox (80.8552pt too wide) in paragraph at lines 3078--3078
+Overfull \hbox (80.8552pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ##                     44                     33       
               32[] 
  []
 
 
-Overfull \hbox (80.85509pt too wide) in paragraph at lines 3078--3078
+Overfull \hbox (80.85509pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ##            Bioanalysis    Environ Sci Technol       
        J Sep Sci[] 
  []
 
 
-Overfull \hbox (80.85524pt too wide) in paragraph at lines 3078--3078
+Overfull \hbox (80.85524pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ##                      9                      7       
                7[] 
  []
 
 
-Overfull \hbox (80.8551pt too wide) in paragraph at lines 3078--3078
+Overfull \hbox (80.8551pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ## Angew Chem Int Ed Engl                Sci Rep       
          Talanta[] 
  []
 
 
-Overfull \hbox (80.85524pt too wide) in paragraph at lines 3078--3078
+Overfull \hbox (80.85524pt too wide) in paragraph at lines 3226--3226
 []\TU/lmtt/m/n/10.53937 ##                      6                      6       
                6[] 
  []
@@ -2759,124 +2829,68 @@ Overfull \hbox (80.85524pt too wide) in paragraph at lines 3078--3078
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3088.
+This message occurred on input line 3234.
 
-[164]
+[165]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3098.
-
-[165]
-Underfull \vbox (badness 1231) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3126.
+This message occurred on input line 3244.
 
 [166]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3141.
+This message occurred on input line 3272.
 
-[167] [168
+[167]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3287.
+
+[168]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3289.
+
+[169] [170
 
 ]
 Chapter 8.
 
 Underfull \vbox (badness 2486) has occurred while \output is active []
 
-[169]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3199.
-
-[170]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3223.
-
 [171]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3234.
+This message occurred on input line 3347.
 
 [172]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3251.
+This message occurred on input line 3371.
 
 [173]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3265.
+This message occurred on input line 3382.
 
 [174]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3279.
-
-[175]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3305.
-
-[176]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3313.
-
-[177]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3336.
-
-[178]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3356.
-
-[179]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3368.
-
-[180]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3390.
-
-[181]
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
 This message occurred on input line 3399.
 
-[182]
+[175]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2884,55 +2898,117 @@ Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
 This message occurred on input line 3413.
 
-[183]
+[176]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3425.
+This message occurred on input line 3427.
 
-[184]
+[177]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
 This message occurred on input line 3453.
 
-[185]
+[178]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3491.
+This message occurred on input line 3461.
+
+[179]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3484.
+
+[180]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3504.
+
+[181]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3516.
+
+[182]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3538.
+
+[183]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3547.
+
+[184]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3561.
+
+[185]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3573.
 
 [186]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3532.
+This message occurred on input line 3601.
 
 [187]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3639.
+
+[188]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3680.
+
+[189]
 File: data/SWOT.png Graphic file (type bmp)
 <data/SWOT.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3559--3560
+Underfull \hbox (badness 10000) in paragraph at lines 3707--3708
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3559--3560
+Underfull \hbox (badness 10000) in paragraph at lines 3707--3708
 
  []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3563.
+This message occurred on input line 3711.
 
-[188]
+[190]
 File: data/Eisenhower.png Graphic file (type bmp)
 <data/Eisenhower.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3565--3566
+Underfull \hbox (badness 10000) in paragraph at lines 3713--3714
 
  []
 
@@ -2942,93 +3018,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3571.
-
-[189]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3589.
-
-[190]
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3612.
+This message occurred on input line 3719.
 
 [191]
-Underfull \vbox (badness 7558) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3632.
+This message occurred on input line 3737.
 
 [192]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3668.
+This message occurred on input line 3760.
 
 [193]
+Underfull \vbox (badness 7558) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3689.
+This message occurred on input line 3780.
 
 [194]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3691.
+This message occurred on input line 3816.
 
-[195] [196
+[195]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3837.
+
+[196]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3839.
+
+[197] [198
 
 ]
 Chapter 9.
-[197]
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3742.
-
-[198]
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
-
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3755.
-
 [199]
-File: sciguide_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf
-)
-<use sciguide_files/figure-latex/unnamed-chunk-43-1.pdf>
-
-Underfull \hbox (badness 10000) in paragraph at lines 3765--3766
-
- []
+Underfull \vbox (badness 1546) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3773.
+This message occurred on input line 3890.
 
 [200]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3832.
+This message occurred on input line 3903.
 
 [201]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3845.
+This message occurred on input line 3926.
 
 [202]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 3979.
+
+[203]
 Missing character: There is no 成 (U+6210) in font [lmroman10-regular]:mapping=t
 ex-text;!
 Missing character: There is no 功 (U+529F) in font [lmroman10-regular]:mapping=t
@@ -3046,116 +3108,117 @@ ex-text;!
 Missing character: There is no 气 (U+6C14) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Class tufte-book Warning: Proper spacing of small-caps letters has not been set
- up.
-This message occurred on input line 3872.
-
-[203]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3889.
+This message occurred on input line 3998.
 
 [204]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3903.
+This message occurred on input line 4013.
 
 [205]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3915.
+This message occurred on input line 4030.
 
 [206]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3936.
+This message occurred on input line 4044.
 
 [207]
+Underfull \vbox (badness 2529) has occurred while \output is active []
+
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3950.
+This message occurred on input line 4061.
 
 [208]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3955.
+This message occurred on input line 4077.
 
-[209] [210
-
-]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 3960.
-
-[211]
+[209]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 3994.
+This message occurred on input line 4091.
+
+[210]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 4096.
+
+[211
+
+]
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 4130.
 
 [212]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4025.
+This message occurred on input line 4161.
 
 [213]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4059.
+This message occurred on input line 4195.
 
 [214]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4087.
+This message occurred on input line 4223.
 
 [215]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4107.
+This message occurred on input line 4243.
 
 [216]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4150.
+This message occurred on input line 4286.
 
 [217]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4204.
+This message occurred on input line 4340.
 
 [218]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4254.
+This message occurred on input line 4390.
 
 [219]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4306.
+This message occurred on input line 4442.
 
 [220]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4346.
+This message occurred on input line 4482.
 
 [221]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3163,7 +3226,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4392.
+This message occurred on input line 4528.
 
 [222]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3171,7 +3234,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4446.
+This message occurred on input line 4582.
 
 [223]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3179,7 +3242,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4496.
+This message occurred on input line 4632.
 
 [224]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3187,7 +3250,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4558.
+This message occurred on input line 4694.
 
 [225]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3195,13 +3258,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4610.
+This message occurred on input line 4746.
 
 [226]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4668.
+This message occurred on input line 4804.
 
 [227]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3209,7 +3272,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4732.
+This message occurred on input line 4868.
 
 [228]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3217,7 +3280,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4784.
+This message occurred on input line 4920.
 
 [229]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3225,15 +3288,167 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4836.
+This message occurred on input line 4972.
 
 [230]
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4902.
+This message occurred on input line 5038.
 
 [231]
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5090.
+
+[232]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5127.
+
+[233]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5164.
+
+[234]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5201.
+
+[235]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5238.
+
+[236]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5275.
+
+[237]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5312.
+
+[238]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5349.
+
+[239]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5386.
+
+[240]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5423.
+
+[241]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5460.
+
+[242]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5497.
+
+[243]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5534.
+
+[244]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5571.
+
+[245]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5608.
+
+[246]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5645.
+
+[247]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5682.
+
+[248]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5719.
+
+[249]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Class tufte-book Warning: Proper spacing of small-caps letters has not been set
+ up.
+This message occurred on input line 5756.
+
+[250]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3245,22 +3460,22 @@ Package bibentry Warning: You have used \nobibliography*
 
 Class tufte-book Warning: Proper spacing of small-caps letters has not been set
  up.
-This message occurred on input line 4925.
+This message occurred on input line 5776.
 
-[232] (./sciguide.aux)
+[251] (./sciguide.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `sciguide.out' has not changed.
-(rerunfilecheck)             Checksum: 7A362E8C7FCF57AFF312FAC26DE068EE;5629.
+(rerunfilecheck)             Checksum: B279AA507613E2D2EB7D986DB87E3D89;5732.
  ) 
 Here is how much of TeX's memory you used:
  20677 strings out of 478179
- 449439 string characters out of 5853623
- 775770 words of memory out of 5000000
- 40827 multiletter control sequences out of 15000+600000
+ 449701 string characters out of 5853623
+ 778105 words of memory out of 5000000
+ 40828 multiletter control sequences out of 15000+600000
  474622 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,12n,140p,1741b,1038s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,12n,140p,1741b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sciguide.pdf (232 pages).
+Output written on sciguide.pdf (251 pages).
